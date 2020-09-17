@@ -1,0 +1,47 @@
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% \usepackage{float}
+
+\usepackage[spanish, es-tabla]{babel}
+\addto\shorthandsspanish{\spanishdeactivate{~<>}}
+\def\spanishoptions{argentina}
+% \usepackage{babelbib}
+% \selectbiblanguage{spanish}
+
+\usepackage{graphicx}
+% \graphicspath{{./graphs/}}
+
+\usepackage[arrowdel]{physics}
+\usepackage[separate-uncertainty=true, multi-part-units=single, locale=FR]{siunitx}
+\usepackage{isotope} % $\isotope[A][Z]{X}\to\isotope[A-4][Z-2]{Y}+\isotope[4][2]{\alpha}
+
+\usepackage{tasks}
+\usepackage[inline]{enumitem}
+\usepackage{hyperref}
+% \usepackage{float}
+% \usepackage{amsmath}
+% \usepackage{amstext}
+% \usepackage{amssymb}
+
+\usepackage{tikz}
+\usepackage{tikz-dimline}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{patterns}
+
+\usepackage[hmargin=1cm,vmargin=1.6cm,nohead]{geometry}
+% \voffset-3.5cm
+% \hoffset-3cm
+% \setlength{\textwidth}{17.5cm}
+% \setlength{\textheight}{27cm}
+
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead{}
+\fancyfoot{{\tiny \textcopyright DIIT - UNLaM}}
+% \fancyfoot{{\tiny \textcopyright Departamento de Ingeniería e Investigaciones Tecnológicas - UNLaM}}
+\fancyfoot[C]{ {\tiny Actualizado al \today} }
+\fancyfoot[RO, LE]{Pág. \thepage/\pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}

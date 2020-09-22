@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.9.3)  10 SEP 2020 16:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.9.3)  22 SEP 2020 15:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -21,10 +21,9 @@ File: size11.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) (./introUNLaM.tex
-(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+)
+(../../introUNLaM.tex (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
-
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
@@ -1271,10 +1270,10 @@ your preamble.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 5.
-<aranaFrisbee.png, id=7, 265.9536pt x 231.7458pt>
-File: aranaFrisbee.png Graphic file (type png)
-<use aranaFrisbee.png>
-Package pdftex.def Info: aranaFrisbee.png  used on input line 32.
+<../graphs/aranaFrisbee.png, id=7, 265.9536pt x 231.7458pt>
+File: ../graphs/aranaFrisbee.png Graphic file (type png)
+<use ../graphs/aranaFrisbee.png>
+Package pdftex.def Info: ../graphs/aranaFrisbee.png  used on input line 32.
 (pdftex.def)             Requested size: 162.18236pt x 141.32936pt.
 
 Overfull \hbox (2.7649pt too wide) in paragraph at lines 20--34
@@ -1285,21 +1284,22 @@ LaTeX Font Info:    Try loading font information for T1+cmtt on input line 46.
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-<MIT2_003SCF11_pset2_figure5.png, id=10, 260.6538pt x 219.219pt>
-File: MIT2_003SCF11_pset2_figure5.png Graphic file (type png)
-<use MIT2_003SCF11_pset2_figure5.png>
-Package pdftex.def Info: MIT2_003SCF11_pset2_figure5.png  used on input line 59
-.
+<../graphs/MIT2_003SCF11_pset2_figure5.png, id=10, 260.6538pt x 219.219pt>
+File: ../graphs/MIT2_003SCF11_pset2_figure5.png Graphic file (type png)
+<use ../graphs/MIT2_003SCF11_pset2_figure5.png>
+Package pdftex.def Info: ../graphs/MIT2_003SCF11_pset2_figure5.png  used on inp
+ut line 59.
 (pdftex.def)             Requested size: 162.18236pt x 136.40607pt.
 
 Overfull \hbox (2.7649pt too wide) in paragraph at lines 37--64
 [][] $[]$
  []
 
-<MIT2_003SCF11_pset2_e01.png, id=11, 218.8175pt x 245.91875pt>
-File: MIT2_003SCF11_pset2_e01.png Graphic file (type png)
-<use MIT2_003SCF11_pset2_e01.png>
-Package pdftex.def Info: MIT2_003SCF11_pset2_e01.png  used on input line 88.
+<../graphs/MIT2_003SCF11_pset2_e01.png, id=11, 218.8175pt x 245.91875pt>
+File: ../graphs/MIT2_003SCF11_pset2_e01.png Graphic file (type png)
+<use ../graphs/MIT2_003SCF11_pset2_e01.png>
+Package pdftex.def Info: ../graphs/MIT2_003SCF11_pset2_e01.png  used on input l
+ine 88.
 (pdftex.def)             Requested size: 162.18236pt x 182.2697pt.
 
 Overfull \hbox (2.7649pt too wide) in paragraph at lines 74--90
@@ -1314,22 +1314,24 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 94.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./aranaFrisbee.png> <./MIT
-2_003SCF11_pset2_figure5.png>]
-<MIT2_003SCF11_pset3_e02.pdf, id=42, 340.80814pt x 204.0613pt>
-File: MIT2_003SCF11_pset3_e02.pdf Graphic file (type pdf)
-<use MIT2_003SCF11_pset3_e02.pdf>
-Package pdftex.def Info: MIT2_003SCF11_pset3_e02.pdf  used on input line 111.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../graphs/aranaFrisbee.png
+> <../graphs/MIT2_003SCF11_pset2_figure5.png>]
+<../graphs/MIT2_003SCF11_pset3_e02.pdf, id=42, 340.80814pt x 204.0613pt>
+File: ../graphs/MIT2_003SCF11_pset3_e02.pdf Graphic file (type pdf)
+<use ../graphs/MIT2_003SCF11_pset3_e02.pdf>
+Package pdftex.def Info: ../graphs/MIT2_003SCF11_pset3_e02.pdf  used on input l
+ine 111.
 (pdftex.def)             Requested size: 243.26941pt x 145.66295pt.
 
 Overfull \hbox (2.7649pt too wide) in paragraph at lines 94--113
 [][] $[]$ 
  []
 
-<MIT2_003SCF11_pset3_e05.png, id=43, 425.59pt x 243.91125pt>
-File: MIT2_003SCF11_pset3_e05.png Graphic file (type png)
-<use MIT2_003SCF11_pset3_e05.png>
-Package pdftex.def Info: MIT2_003SCF11_pset3_e05.png  used on input line 148.
+<../graphs/MIT2_003SCF11_pset3_e05.png, id=43, 425.59pt x 243.91125pt>
+File: ../graphs/MIT2_003SCF11_pset3_e05.png Graphic file (type png)
+<use ../graphs/MIT2_003SCF11_pset3_e05.png>
+Package pdftex.def Info: ../graphs/MIT2_003SCF11_pset3_e05.png  used on input l
+ine 148.
 (pdftex.def)             Requested size: 243.26941pt x 139.42163pt.
 
 Overfull \hbox (2.7649pt too wide) in paragraph at lines 139--150
@@ -1338,11 +1340,12 @@ Overfull \hbox (2.7649pt too wide) in paragraph at lines 139--150
 
 
 AED: lastpage setting LastPage
-[2 <./MIT2_003SCF11_pset2_e01.png (PNG copy)> <./MIT2_003SCF11_pset3_e02.pdf> <
-./MIT2_003SCF11_pset3_e05.png (PNG copy)>]
+[2 <../graphs/MIT2_003SCF11_pset2_e01.png (PNG copy)> <../graphs/MIT2_003SCF11_
+pset3_e02.pdf> <../graphs/MIT2_003SCF11_pset3_e05.png (PNG copy)>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 170.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 170.
- (./g02rotatorio.aux
+
+(./g02rotatorio.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
@@ -1352,13 +1355,13 @@ Package rerunfilecheck Info: File `g02rotatorio.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 42077 strings out of 494426
- 964539 string characters out of 6173935
- 1132505 words of memory out of 5000000
+ 42079 strings out of 494426
+ 964763 string characters out of 6173935
+ 1132527 words of memory out of 5000000
  45147 multiletter control sequences out of 15000+600000
  544814 words of font info for 55 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
- 71i,15n,98p,879b,1030s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,15n,98p,883b,1030s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/vbettachini/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm06
 00.600pk> </home/vbettachini/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec
 /ectt1095.600pk> </home/vbettachini/.texlive2018/texmf-var/fonts/pk/ljfour/jkna
@@ -1372,9 +1375,9 @@ c/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on g02rotatorio.pdf (2 pages, 222488 bytes).
+Output written on g02rotatorio.pdf (2 pages, 222303 bytes).
 PDF statistics:
- 265 PDF objects out of 1000 (max. 8388607)
+ 264 PDF objects out of 1000 (max. 8388607)
  100 compressed objects within 1 object stream
  28 named destinations out of 1000 (max. 500000)
  38 words of extra memory for PDF output out of 10000 (max. 10000000)

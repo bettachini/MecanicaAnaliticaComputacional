@@ -1,0 +1,92 @@
+\documentclass[11pt,spanish,a4paper]{article}
+
+\input{../introUNLaM}
+
+\begin{document}
+\begin{center}
+  \textsc{\large Mecánica general}\\
+  \textsc{\large Multiplicadores de Lagrange}
+\end{center}
+
+\begin{enumerate}
+
+\item 
+% \textbf{Taylor 7.50}
+Una elemento de masa \(m_1\) está posado sobre una mesa horizontal.
+Atado a este una cuerda está dispuesta horizontalmente hasta una pequeña polea (masa despreciable) que no ofrece fricción en el borde de la mesa.
+En el otro extremo de la cuerda cuelga un elemento de masa \(m_2\).
+
+Use como coordenadas \(x\) e \(y\), las distancias a\(m_1\) y \(m_2\) desde la polea.
+Estas satisfacen la ecuación de restricción \(f (x, y) = x + y = \mathrm{const}\).
+\begin{enumerate}
+\item Escriba las dos ecuaciones de Lagrange modificadas y resuélvalas (juntos con la ecuación de restricción) para \(x, y\) y para el multiplicador de Lagrange \(\lambda\).
+\item Encuentre las fuerzas de tensión sobre ambas masas.
+\item Verifique sus respuestas resolviendo el problema con la metodología Newtoniana.
+\end{enumerate}
+
+
+\item 
+    \begin{minipage}[t][7.5cm]{0.55\textwidth}
+%		\textbf{Marion ejemplo 7-8 y ejercicio 7-37} Doble máquina de Atwood.
+
+Utilice el sistema de coordenadas indicadas para el sistema de poleas y determine las ecuaciones de movimiento.
+
+Obtenga las tensiones de ambas cuerdas utilizando el método de multiplicadores de Lagrange.
+    \end{minipage}
+    \begin{minipage}[c][4cm][t]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{marion7_8}
+    \end{minipage}
+
+
+\item 
+    \begin{minipage}[t][3cm]{0.65\textwidth}
+%		\textbf{Marion ejemplo 7-10} Masa resbaland sobre semi-esfera. 
+
+		La partícula de masa \(m\) cae desde la cima de la semi-esfera de radio \(R\).
+		Encuentre: 
+		\begin{enumerate}
+			\item la fuerza del vínculo, 
+			\item y el ángulo en que la partícula se despega de la semi-esfera.
+		\end{enumerate}
+    \end{minipage}
+    \begin{minipage}[c][0cm][t]{0.3\textwidth}
+		% \includegraphics[width=\textwidth]{marion7_10}
+		\begin{tikzpicture}[scale= 1]
+            \draw [ultra thick] (-3,0) -- (3,0);
+            % \draw [ultra thick] (-3,0) -- (3,0);
+            \fill [pattern = north east lines] (-3,0) rectangle (3,-0.2); % piso
+            \draw [ultra thick] (-2,0) .. controls (-2,2*0.555) and (-2*0.555,2) .. (0,2)
+            .. controls (2*0.555,2) and (2,2*0.555) .. (2,0); % semi esfera
+            % \filldraw (0,2.2) circle (0.2); % masa superior
+            % \fill (2*0.5+.12,1.732+.18) circle [radius=0.25] node [midway, text=white] { \( m \) };
+			\filldraw (2*0.5+.12,1.732+.18) circle (0.2) node [above, right=5] {\(m\)}; % masa a la derecha
+			% \draw (2,2) circle [radius=0.3, color=white, fill=black] node {$T_1$};
+			\draw (0,0) -- (0,2); % linea vertical
+            \draw [-stealth] (0,0) -- (1,1.732) node [midway, anchor=west] {\(R\)}; % linea hacia la derecha
+            \draw [-stealth] (0,1) arc (90:60:1) node [above left] {\(\theta\)}; % arco c/ flecha comenzando en (0,1), de 90 a 60 grados, 1...
+            % \node [circle,draw,label=60:$60^\circ$,label=below:$-90^\circ$] {\(m\)}; 
+            % \node at (-2*0.5+.15,1.732+.15) [circle,draw,fill=black] {\(m\)}; 
+            \draw [-stealth] (-2.5,2) -> (-2.5,1) node [above=15, right=2] {\(\vec{g}\)}; % g vertical
+        \end{tikzpicture}
+    \end{minipage}
+
+
+
+\item \textbf{Marion Ej. 7.5} Disco que rueda por un plano inclinado
+% English \textbf{Marion ejemplo 6-5 y ejemplo 7-9} Disco rodando en un plano inclinado.
+    \begin{minipage}[t][3.5cm]{0.52\textwidth}
+	Un disco rueda en un plano inclinado.
+		\begin{enumerate}
+			\item Encuentre las ecuaciones de movimiento, 
+			\item la aceleración angular,
+			\item y la fuerzas de vínculo. 
+		\end{enumerate}
+    \end{minipage}
+    \begin{minipage}[c][10mm][t]{0.34\textwidth}
+        \includegraphics[width=\textwidth]{marion6_5}
+    \end{minipage}
+%\vspace{1.8cm}
+
+
+\end{enumerate}
+\end{document}

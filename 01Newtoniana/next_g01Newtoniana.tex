@@ -23,10 +23,10 @@
 %\textbf{Péndulo} [Marion () ex. 7.2] \\
 Obtenga la ecuación diferencial que describe la dinámica de una pesa que pendulea en el extremo de una cuerda.
 \begin{enumerate}
-	\item Suponga que el péndulo oscila dentro de un plano.
+	\item Asumiendo que el péndulo oscila dentro del plano \(\hat{x}, \hat{y}\).
 		¿En que sistema de coordenadas resolverá el problema? 
 		¿Cuál coordenada es relevante para describir la dinámica? 
-	\item Enumere las aproximaciones del modela de péndulo que resolverá que lo diferencian de uno que puede armar en el laboratorio.
+	\item Enumere las aproximaciones del modelo de péndulo que resolverá que lo diferencian de uno que puede armar en el laboratorio.
 	\item Calcule la energía potencial de la pesa en el campo gravitatorio. ¿Para qué? Pues para calcular la fuerza actuando sobre la pesa a partir de \(\vec{F} = - \vec{\nabla} V\), es decir ``la fuerza es igual al negativo del gradiente del potencial''.
 	\item Escriba la 2.a ley de Newton y proyecte en la dirección de la coordenada relevante.
 	\item Resuelva la ecuación de la dinámica y obtenga la frecuencia de oscilación.
@@ -122,35 +122,42 @@ Si se la deja en libertad, ¿donde golpea \(m_2\) a la superficie?
 
 \subsection*{Coordenadas polares}
 
-% Vizcaino 1.12
-\item Una masa m, considerada puntual, desliza sobre una semiesfera de radio R sin fricción.
-	\begin{center}
-  		\begin{tikzpicture}[scale= 1.3]
-			\draw [ultra thick] (-3.5,0) -- (3.5,0);
-			\fill [pattern = north east lines] (-3.5,0) rectangle (3.5,-0.2); % piso
-			\draw [ultra thick] (-2,0) .. controls (-2,2*0.555) and (-2*0.555,2) .. (0,2)
-			.. controls (2*0.555,2) and (2,2*0.555) .. (2,0); % semi esfera
-			% \filldraw (0,2.2) circle (0.2); % masa superior
-			\filldraw (2*0.5+.15,1.732+.15) circle (0.2) node [above, right=5] {\(m\)}; % masa a la derecha
-			\draw (0,0) -- (0,2); % linea vertical
-			\draw [->] (0,0) -- (1,1.732) node [anchor=center, below=10] {\(R\)}; % linea hacia la derecha
-			\draw [->] (0,1) arc (90:60:1) node [above left] {\(\theta\)}; % arco c/ flecha comenzando en (0,1), de 90 a 60 grados, 1...
-			% \node [circle,draw,label=60:$60^\circ$,label=below:$-90^\circ$] {\(m\)}; 
-			% \node at (-2*0.5+.15,1.732+.15) [circle,draw,fill=black] {\(m\)}; 
-			\draw [->] (-2.5,2) -> (-2.5,1) node [above=15, right=2] {\(\vec{g}\)}; % g vertical
-	    \end{tikzpicture}
-	\end{center}
-  \begin{enumerate}
-  \item Calcular el ángulo \(\theta\) para el cual se separa de semi-esfera si inicialmente la masa es apartada en un ángulo muy pequeño de \(\theta= 0\) y su velocidad inicial es nula.
-  \item Si la masa \(m\) se engarza en el riel semicircular sin fricción de radio \(R\), hallar la velocidad con que llega al suelo.
-¿Qué aceleración tangencial tiene \(m\) en ese momento?
-  \end{enumerate}
+\item
+\begin{minipage}[t][5cm]{0.65\textwidth}
+\textbf{Masa resbalando sobre semi-esfera}\\ 
+La partícula de masa \(m\), considerada puntual, desliza sobre una semi-esfera de radio \(R\) sin fricción.
+\begin{enumerate}
+	\item Calcular el ángulo \(\theta\) para el cual se separa de semi-esfera si inicialmente es apartada en un ángulo muy pequeño de \(\theta= 0\) y su velocidad inicial es nula.
+	\item Si la partícula estuviera engarzada sin fricción en un riel semi-circular de radio \(R\), hallar la velocidad con que llega al suelo.
+¿Qué aceleración tangencial tiene en ese momento?
+\end{enumerate}
+\end{minipage}
+\begin{minipage}[c][0cm][t]{0.3\textwidth}
+	% \includegraphics[width=\textwidth]{marion7_10}
+	\begin{tikzpicture}[scale= 1]
+		\draw [ultra thick] (-3,0) -- (3,0);
+		% \draw [ultra thick] (-3,0) -- (3,0);
+		\fill [pattern = north east lines] (-3,0) rectangle (3,-0.2); % piso
+		\draw [ultra thick] (-2,0) .. controls (-2,2*0.555) and (-2*0.555,2) .. (0,2) .. controls (2*0.555,2) and (2,2*0.555) .. (2,0); % semi esfera
+		% \filldraw (0,2.2) circle (0.2); % masa superior
+		% \fill (2*0.5+.12,1.732+.18) circle [radius=0.25] node [midway, text=white] { \( m \) };
+		\filldraw (2*0.5+.12,1.732+.18) circle (0.2) node [above, right=5] {\(m\)}; % masa a la derecha
+		% \draw (2,2) circle [radius=0.3, color=white, fill=black] node {$T_1$};
+		\draw (0,0) -- (0,2); % linea vertical
+		\draw [-stealth] (0,0) -- (1,1.732) node [midway, anchor=west] {\(R\)}; % linea hacia la derecha
+		\draw [-stealth] (0,1) arc (90:60:1) node [above left] {\(\theta\)}; % arco c/ flecha comenzando en (0,1), de 90 a 60 grados, 1...
+		% \node [circle,draw,label=60:$60^\circ$,label=below:$-90^\circ$] {\(m\)}; 
+		% \node at (-2*0.5+.15,1.732+.15) [circle,draw,fill=black] {\(m\)}; 
+		\draw [-stealth] (-2.5,2) -> (-2.5,1) node [above=15, right=2] {\(\vec{g}\)}; % g vertical
+        \end{tikzpicture}
+\end{minipage}
+
 
 
 
 \subsection*{Conservación del momento angular}
 
-\item \textbf{Ratón en ventilador de techo} [Marion (e) ex. 2.9]\\
+\item \textbf{Ratón en ventilador de techo} [Marion (e) ex. 2.11]\\
 El conjunto de aspas de un ventilador de techo tiene momento de inercia \(I\) y radio \(R\).
 Mientras estas giran a velocidad constante en el borde externo de una de ellas asoma un ratón de masa \(m\).
 En un dado momento este salta.
@@ -188,17 +195,18 @@ A causa de esto, ¿cuanto cambiará la velocidad angular del ventilador respecto
 % \textbf{MIT2_003SCF11_pset3_e02}
 El cabrestante, que se muestra en la figura, entrega una fuerza de tirado horizontal, $T(t)$, a su cable en $D$.
 La fuerza varía con el tiempo, como se muestra en el gráfico.
-La masa \(M\) de \SI{80}{\kilo\gram} en \(t=0\) estaba en reposo.
-Determine su velocidad en $t=\SI{24}{\second}$.
+La pesa de masa \(M\) de \SI{80}{\kilo\gram} en \(t=0\) estaba en reposo.
 Para simplificar el problema se asume que las poleas y cables tienen masa despreciable.
-
-Pregunta conceptual:
-¿Espera que la velocidad de la masa sea constante mientras la fuerza es constante durante el intervalo de 0 a 12 segundos?\\
-\begin{enumerate*}[label=\alph*),itemjoin={,\quad}]
-	\item Sí
-	\item No
-	\item No sé qué principio aplicar.
-\end{enumerate*}
+\begin{enumerate}
+	\item Pregunta conceptual:
+	¿Espera que la velocidad de la masa sea constante mientras la fuerza es constante durante el intervalo de 0 a 12 segundos?\\
+	\begin{enumerate*}[label=\alph*),itemjoin={,\quad}]
+		\item Sí
+		\item No
+		\item No sé qué principio aplicar.
+	\end{enumerate*}
+	\item Determine la velocidad de la pesa en $t=\SI{24}{\second}$.
+\end{enumerate}
 \end{minipage}
 \begin{minipage}[c][0cm][t]{0.45\textwidth}
 	\includegraphics[width=\textwidth]{MIT2_003SCF11_pset3_e02}

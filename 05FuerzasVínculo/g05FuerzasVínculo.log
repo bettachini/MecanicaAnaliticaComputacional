@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.9.3)  26 SEP 2020 23:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.9.3)  26 SEP 2020 23:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1271,11 +1271,11 @@ your preamble.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 5.
-<./notebooks/marion7_8.pdf, id=7, 206.2104pt x 238.97281pt>
-File: ./notebooks/marion7_8.pdf Graphic file (type pdf)
-<use ./notebooks/marion7_8.pdf>
-Package pdftex.def Info: ./notebooks/marion7_8.pdf  used on input line 22.
-(pdftex.def)             Requested size: 189.21413pt x 219.28151pt.
+<./notebooks/marion_fig7_6.png, id=7, 409.53pt x 484.81125pt>
+File: ./notebooks/marion_fig7_6.png Graphic file (type png)
+<use ./notebooks/marion_fig7_6.png>
+Package pdftex.def Info: ./notebooks/marion_fig7_6.png  used on input line 22.
+(pdftex.def)             Requested size: 189.21413pt x 223.99976pt.
 
 Overfull \hbox (2.77315pt too wide) in paragraph at lines 15--24
 [][] $[]$ 
@@ -1291,11 +1291,11 @@ Overfull \hbox (2.7649pt too wide) in paragraph at lines 45--73
 [][] $[]$ 
  []
 
-<./notebooks/marion6_5.pdf, id=9, 163.812pt x 148.3944pt>
-File: ./notebooks/marion6_5.pdf Graphic file (type pdf)
-<use ./notebooks/marion6_5.pdf>
-Package pdftex.def Info: ./notebooks/marion6_5.pdf  used on input line 87.
-(pdftex.def)             Requested size: 162.18236pt x 146.93127pt.
+<./notebooks/marion_fig6_7.png, id=9, 408.77719pt x 362.85562pt>
+File: ./notebooks/marion_fig6_7.png Graphic file (type png)
+<use ./notebooks/marion_fig6_7.png>
+Package pdftex.def Info: ./notebooks/marion_fig6_7.png  used on input line 87.
+(pdftex.def)             Requested size: 162.18236pt x 143.96588pt.
 
 Overfull \hbox (2.7649pt too wide) in paragraph at lines 76--89
 [] $[]$ 
@@ -1311,12 +1311,8 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 93.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./notebooks/marion7_8.pdf>
- <./notebooks/marion6_5.pdf
-
-pdfTeX warning: pdflatex (file ./notebooks/marion6_5.pdf): PDF inclusion: multi
-ple pdfs with page group included in a single page
->]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./notebooks/marion_fig7_6.
+png (PNG copy)> <./notebooks/marion_fig6_7.png (PNG copy)>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 93.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 93.
  (./g05FuerzasVínculo.aux
@@ -1329,9 +1325,9 @@ Package rerunfilecheck Info: File `g05FuerzasVínculo.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 42139 strings out of 494426
- 966257 string characters out of 6173935
- 1130535 words of memory out of 5000000
+ 42140 strings out of 494426
+ 966253 string characters out of 6173935
+ 1131535 words of memory out of 5000000
  45232 multiletter control sequences out of 15000+600000
  541518 words of font info for 48 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
@@ -1346,10 +1342,10 @@ pk/ljfour/jknappen/ec/eccc1200.600pk></usr/share/texlive/texmf-dist/fonts/type1
 c/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy6.pfb>
-Output written on g05FuerzasVínculo.pdf (1 page, 90823 bytes).
+Output written on g05FuerzasVínculo.pdf (1 page, 133415 bytes).
 PDF statistics:
- 219 PDF objects out of 1000 (max. 8388607)
- 73 compressed objects within 1 object stream
+ 200 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
  14 named destinations out of 1000 (max. 500000)
  27 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.9.3)  28 SEP 2020 11:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.9.3)  2 OCT 2020 11:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**next_g02rotatorio.tex
-(./next_g02rotatorio.tex
+**next_g02NoInercial.tex
+(./next_g02NoInercial.tex
 LaTeX2e <2018-12-01>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
@@ -1067,11 +1067,11 @@ s
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
 less on input line 46.
 
-) (./next_g02rotatorio.aux
+) (./next_g02NoInercial.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-\openout1 = `next_g02rotatorio.aux'.
+\openout1 = `next_g02NoInercial.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
@@ -1222,9 +1222,9 @@ LaTeX Info: Redefining \ref on input line 5.
 LaTeX Info: Redefining \pageref on input line 5.
 LaTeX Info: Redefining \nameref on input line 5.
 
-(./next_g02rotatorio.out) (./next_g02rotatorio.out)
+(./next_g02NoInercial.out) (./next_g02NoInercial.out)
 \@outlinefile=\write4
-\openout4 = `next_g02rotatorio.out'.
+\openout4 = `next_g02NoInercial.out'.
 
 
 ABD: EveryShipout initializing macros
@@ -1335,23 +1335,23 @@ AED: lastpage setting LastPage
 F11_pset3_e05.png (PNG copy)>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 148.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 148.
- (./next_g02rotatorio.aux
+ (./next_g02NoInercial.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 148.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 148.
-Package rerunfilecheck Info: File `next_g02rotatorio.out' has not changed.
+Package rerunfilecheck Info: File `next_g02NoInercial.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
  42070 strings out of 494426
- 964607 string characters out of 6173935
- 1132533 words of memory out of 5000000
+ 964620 string characters out of 6173935
+ 1132535 words of memory out of 5000000
  45143 multiletter control sequences out of 15000+600000
  544814 words of font info for 55 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
- 71i,15n,98p,885b,1029s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,15n,98p,886b,1029s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/vbettachini/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm06
 00.600pk> </home/vbettachini/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec
 /ectt1095.600pk> </home/vbettachini/.texlive2018/texmf-var/fonts/pk/ljfour/jkna
@@ -1365,9 +1365,9 @@ c/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on next_g02rotatorio.pdf (2 pages, 210400 bytes).
+Output written on next_g02NoInercial.pdf (2 pages, 209435 bytes).
 PDF statistics:
- 247 PDF objects out of 1000 (max. 8388607)
+ 243 PDF objects out of 1000 (max. 8388607)
  89 compressed objects within 1 object stream
  24 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)

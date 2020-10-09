@@ -16,16 +16,16 @@
 \textbf{Barra que pende de un carro}\\
 
 Obtenga las ecuaciones que describen la dinámica del sistema.
-El momento de inercia para una barra de masa \(m\) y longitud \(l\) para una rotación desde uno de sus extremos es \(\frac{m}{12} l^2\). 
-\begin{enumerate}
-	\item Calcule la descomposición en fuerzas generalizadas de las no conservativas que actúan sobre el sistema:
+El momento de incercia para una barra de masa \(m\) y longitud \(l\) para una rotación desde uno de sus extremos es \(\frac{m}{12} l^2\). 
+\begin{tasks}(1)
+	\task Calcule la descomposición en fuerzas generalizadas de las no convervtivas que actúan sobre el sistema:
 	\begin{itemize}
 		\item el forzado externo \(\vec{F}(t)\),
 		\item y la que hace ejerce amortiguador de constante \(b\) en función de la velocidad del carro,  \(- b \dot{x} \hat{x}\).
 	\end{itemize}
-	\item Genere el Lagrangiano.
-	\item Calcule las ecuaciones de Euler-Lagrange. 
-\end{enumerate}
+	\task Genere el lagrangiano.
+	\task Calcule las ecuaciones de Euler-Lagrange. 
+\end{tasks}
 \end{minipage}
 \begin{minipage}[c][0cm][t]{0.4\textwidth}
 	\includegraphics[width=\textwidth]{zweite}
@@ -77,7 +77,7 @@ Sobre la superficie inclinada en $\theta_0$ del carro de masa $m_0$ rueda sin de
 Este no se sale de la superficie a pesar de que al centro del mismo se aplica una fuerza $\vec{F}= F(t) \hat{x}$ gracias a un resorte de constante elástica $K_1$ que une este centro con el carro.
 Limita el alcance de este un resorte de constante elástica $K_2$ fijado a la pared y un amortiguador proporcional a la velocidad de constante proporcional $b$.
 Se descarta la fricción del carro con el suelo.
-Todo el sistema está sometido a la aceleración gravitatoria $\vec{g}= - g \hat{y}$.\\
+Todo el sistema está sometido a la acelación gravitatoria $\vec{g}= - g \hat{y}$.\\
 Pregunta conceptual: ¿Qué es la fuerza generalizada asociada al desplazamiento virtual $\delta x$ debida a $\vec{F}$?\\
 \begin{tasks}(1)
 	\task $F(t) \cos(\theta)$

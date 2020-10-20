@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.9.3)  8 OCT 2020 21:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.9.3)  20 OCT 2020 17:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1289,64 +1289,64 @@ Overfull \hbox (2.7649pt too wide) in paragraph at lines 15--33
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 51.
+(amsmath)                 on input line 53.
 
 <./notebooks/pset7ex2.png, id=9, 557.08125pt x 549.05125pt>
 File: ./notebooks/pset7ex2.png Graphic file (type png)
 <use ./notebooks/pset7ex2.png>
-Package pdftex.def Info: ./notebooks/pset7ex2.png  used on input line 55.
+Package pdftex.def Info: ./notebooks/pset7ex2.png  used on input line 57.
 (pdftex.def)             Requested size: 216.23764pt x 213.1154pt.
 
-Overfull \hbox (2.7649pt too wide) in paragraph at lines 39--57
+Overfull \hbox (2.7649pt too wide) in paragraph at lines 39--59
 [][] $[]$ 
  []
 
 <./notebooks/pset7ex4.png, id=10, 589.20125pt x 592.2125pt>
 File: ./notebooks/pset7ex4.png Graphic file (type png)
 <use ./notebooks/pset7ex4.png>
-Package pdftex.def Info: ./notebooks/pset7ex4.png  used on input line 69.
+Package pdftex.def Info: ./notebooks/pset7ex4.png  used on input line 72.
 (pdftex.def)             Requested size: 189.21413pt x 190.18056pt.
 
-Overfull \hbox (2.77315pt too wide) in paragraph at lines 61--71
+Overfull \hbox (2.77315pt too wide) in paragraph at lines 64--74
 [][] $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--87
+Underfull \hbox (badness 10000) in paragraph at lines 80--91
 
  []
 
 <./notebooks/pset7ex6.png, id=11, 532.99126pt x 367.3725pt>
 File: ./notebooks/pset7ex6.png Graphic file (type png)
 <use ./notebooks/pset7ex6.png>
-Package pdftex.def Info: ./notebooks/pset7ex6.png  used on input line 91.
+Package pdftex.def Info: ./notebooks/pset7ex6.png  used on input line 95.
 (pdftex.def)             Requested size: 243.26941pt x 167.67606pt.
 
-Overfull \hbox (2.7649pt too wide) in paragraph at lines 75--93
+Overfull \hbox (2.7649pt too wide) in paragraph at lines 79--97
 [][] $[]$ 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 97.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 101.
+
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 97.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 101.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./notebooks/zweite.png> <.
-/notebooks/pset7ex2.png (PNG copy)> <./notebooks/pset7ex4.png (PNG copy)>]
-
+/notebooks/pset7ex2.png> <./notebooks/pset7ex4.png (PNG copy)>] 
 AED: lastpage setting LastPage
 [2 <./notebooks/pset7ex6.png (PNG copy)>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 98.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 98.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 102.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 102.
  (./g06NoConservativas.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 98.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 98.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 102.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 102.
 Package rerunfilecheck Info: File `g06NoConservativas.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
@@ -1357,7 +1357,7 @@ Here is how much of TeX's memory you used:
  45122 multiletter control sequences out of 15000+600000
  541518 words of font info for 48 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
- 71i,15n,98p,886b,1202s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,15n,98p,886b,1193s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/vbettachini/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm06
 00.600pk> </home/vbettachini/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec
 /ecti1095.600pk> </home/vbettachini/.texlive2018/texmf-var/fonts/pk/ljfour/jkna
@@ -1369,7 +1369,7 @@ c/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
-Output written on g06NoConservativas.pdf (2 pages, 424336 bytes).
+Output written on g06NoConservativas.pdf (2 pages, 413491 bytes).
 PDF statistics:
  192 PDF objects out of 1000 (max. 8388607)
  65 compressed objects within 1 object stream

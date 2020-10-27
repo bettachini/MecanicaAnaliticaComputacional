@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.9.3)  20 OCT 2020 17:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.9.3)  27 OCT 2020 10:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1312,17 +1312,17 @@ Overfull \hbox (2.77315pt too wide) in paragraph at lines 64--74
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--91
+Underfull \hbox (badness 10000) in paragraph at lines 80--92
 
  []
 
 <./notebooks/pset7ex6.png, id=11, 532.99126pt x 367.3725pt>
 File: ./notebooks/pset7ex6.png Graphic file (type png)
 <use ./notebooks/pset7ex6.png>
-Package pdftex.def Info: ./notebooks/pset7ex6.png  used on input line 95.
+Package pdftex.def Info: ./notebooks/pset7ex6.png  used on input line 96.
 (pdftex.def)             Requested size: 243.26941pt x 167.67606pt.
 
-Overfull \hbox (2.7649pt too wide) in paragraph at lines 79--97
+Overfull \hbox (2.7649pt too wide) in paragraph at lines 79--98
 [][] $[]$ 
  []
 
@@ -1353,7 +1353,7 @@ Package rerunfilecheck Info: File `g06NoConservativas.out' has not changed.
 Here is how much of TeX's memory you used:
  42028 strings out of 494426
  963493 string characters out of 6173935
- 1134535 words of memory out of 5000000
+ 1135535 words of memory out of 5000000
  45122 multiletter control sequences out of 15000+600000
  541518 words of font info for 48 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
@@ -1369,9 +1369,9 @@ c/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
-Output written on g06NoConservativas.pdf (2 pages, 413491 bytes).
+Output written on g06NoConservativas.pdf (2 pages, 414195 bytes).
 PDF statistics:
- 192 PDF objects out of 1000 (max. 8388607)
+ 194 PDF objects out of 1000 (max. 8388607)
  65 compressed objects within 1 object stream
  10 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)

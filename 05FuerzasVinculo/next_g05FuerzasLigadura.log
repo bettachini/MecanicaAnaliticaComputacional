@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.9.3)  28 OCT 2020 11:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.9.3)  28 OCT 2020 14:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**g05FuerzasVínculo.tex
-(./g05FuerzasVínculo.tex
+**next_g05FuerzasLigadura.tex
+(./next_g05FuerzasLigadura.tex
 LaTeX2e <2018-12-01>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
@@ -1067,11 +1067,11 @@ s
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
 less on input line 46.
 
-) (./g05FuerzasVínculo.aux
+) (./next_g05FuerzasLigadura.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-\openout1 = `g05FuerzasVínculo.aux'.
+\openout1 = `next_g05FuerzasLigadura.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
@@ -1222,9 +1222,9 @@ LaTeX Info: Redefining \ref on input line 5.
 LaTeX Info: Redefining \pageref on input line 5.
 LaTeX Info: Redefining \nameref on input line 5.
 
-(./g05FuerzasVínculo.out) (./g05FuerzasVínculo.out)
+(./next_g05FuerzasLigadura.out) (./next_g05FuerzasLigadura.out)
 \@outlinefile=\write4
-\openout4 = `g05FuerzasVínculo.out'.
+\openout4 = `next_g05FuerzasLigadura.out'.
 
 
 ABD: EveryShipout initializing macros
@@ -1327,23 +1327,24 @@ png (PNG copy)> <./notebooks/marion_fig6_7.png (PNG copy)> <./notebooks/marion_
 fig7_6.png (PNG copy)>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 109.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 109.
- (./g05FuerzasVínculo.aux
+ (./next_g05FuerzasLigadura.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 109.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 109.
-Package rerunfilecheck Info: File `g05FuerzasVínculo.out' has not changed.
+Package rerunfilecheck Info: File `next_g05FuerzasLigadura.out' has not changed
+.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
  42148 strings out of 494426
- 966426 string characters out of 6173935
- 1132535 words of memory out of 5000000
+ 966491 string characters out of 6173935
+ 1132545 words of memory out of 5000000
  45236 multiletter control sequences out of 15000+600000
  541518 words of font info for 48 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
- 71i,15n,98p,886b,786s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,15n,98p,891b,786s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/vbettachini/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm06
 00.600pk> </home/vbettachini/.texlive2018/texmf-var/fonts/pk/ljfour/jknappen/ec
 /ecti1095.600pk> </home/vbettachini/.texlive2018/texmf-var/fonts/pk/ljfour/jkna
@@ -1355,9 +1356,9 @@ c/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.p
 fb>
-Output written on g05FuerzasVínculo.pdf (1 page, 149261 bytes).
+Output written on next_g05FuerzasLigadura.pdf (1 page, 148695 bytes).
 PDF statistics:
- 213 PDF objects out of 1000 (max. 8388607)
+ 211 PDF objects out of 1000 (max. 8388607)
  66 compressed objects within 1 object stream
  17 named destinations out of 1000 (max. 500000)
  32 words of extra memory for PDF output out of 10000 (max. 10000000)

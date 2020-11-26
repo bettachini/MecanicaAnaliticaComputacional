@@ -35,7 +35,7 @@ Las \href{https://www.audi.de/de/brand/de/neuwagen/tt/tt-coupe.html#layer=/de/br
 Utilice el modelo de cuarto de coche (\emph{quarter car model}), en el que se asume que cada amortiguador soporta un cuatro del peso.
 Simplificará aún más este modelo eliminando el neumático, tanto su masa y su capacidad de operar como amortiguador, para encargar esta última tarea únicamente en la suspensión.
 
-Puesto que manejar en el régimen de sobre-amortiguación es incomodo, pues tras un bache puede producirse un violento rebote, debe ajustar la suspensión en consecuencia.
+Puesto que manejar en el régimen de sobreamortiguación es incomodo, pues tras un bache puede producirse un violento rebote, debe ajustar la suspensión en consecuencia.
 De \href{https://journals.sagepub.com/doi/pdf/10.1177/1687814016648638}{un paper en \emph{Advances in Mechanical Engineering}} tomamos un valor estándar de $k_s = \SI{12500}{\newton\per\metre}$ para el amortiguador
 \end{minipage}
 \begin{minipage}[c][0cm][t]{0.3\textwidth}
@@ -48,7 +48,7 @@ De \href{https://journals.sagepub.com/doi/pdf/10.1177/1687814016648638}{un paper
 \begin{minipage}[t][3.5cm]{0.75\textwidth}
 Un motor eléctrico de \SI{15}{\kilo\gram} presenta un desbalance de su carga de \SI{20}{\gram} a \SI{125}{\milli\metre} de su eje.
 Se lo abulona a un soporte que limita su movimiento a la vertical.
-Para morigerar su vibración está amortiguado por cuatro resortes de \SI{40}{\kilo\newton\per\metre}, y un amortiguador de aceite con un coeficiente con lineal con la velocidad ajustado para que $c = 0.4 C_c$ ($C_c$, coeficiente de amortiguamiento crítico).
+Para amorigerar su vibración está amortiguado por cuatro resortes de \SI{40}{\kilo\newton\per\metre}, y un amortiguador de aceite con un coeficiente con lineal con la velocidad ajustado para que $c = 0.4 C_c$ ($C_c$, coeficiente de amortiguamiento crítico).
 
 Obtenga un rango aproximado de frecuencias de operación del motor en que la vibración es menor a \SI{0.2}{\milli\metre}.
 \end{minipage}
@@ -60,11 +60,12 @@ Obtenga un rango aproximado de frecuencias de operación del motor en que la vib
 
 \item 
 \begin{minipage}[t][3.5cm]{0.75\textwidth}
-Las levas se caracterizan con los mapas de desplazamiento, que \emph{mapean} la función de su radio en un desplazamiento lineal del seguidor.
+Las levas se caracterizan con los mapas de desplazamiento, que \emph{mapean} la función de su radio en un desplazamiento lineal del segudidor.
 La figura muestra como una leva con forma similar a una corazón permite que el desplazamiento de este último crezca y decrezca linealmente desde un pico.
 				
-Asuma que en el pico el desplazamiento es de \SI{5}{\centi\metre} y en el mínimo es nulo, y que un motor hace que la leva describa $6\,\mathrm{rpm}$.  
-Suponiendo que este sistema se utiliza para forzar el sistema del ejemplo dado en clase, gráfique el desplazamiento de $m$ en el estado estacionario en función del tiempo durante cuatro rotaciones de la leva.
+Asuma que en el pico el desplazamiento es de \SI{5}{\centi\metre} y en el mínimo es nulo.
+Suponga que este sistema se utiliza para forzar el sistema del ejemplo dado en clase.
+Genera una gráfica del desplazamiento de $m$ en el estado estacionario.
 \end{minipage}
 \begin{minipage}[c][2cm][t]{0.2\textwidth}
 	\includegraphics[width=\textwidth]{nok_wikkelmachine}

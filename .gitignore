@@ -1,2 +1,7 @@
 *Solved.*
 .ipynb_checkpoints/
+*.log
+*.aux
+*.out
+*.bak
+*.swp

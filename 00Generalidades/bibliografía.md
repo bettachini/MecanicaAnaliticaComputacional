@@ -9,7 +9,7 @@ Universidad Nacional de La Matanza
 ___
 
 Todos son enlaces de descarga de archivos en formato `pdf` o `djvu`.
-Haga _doble clic_ en ellos y abrirá el navegador.
+Descárgue este listado a su dispositivo y haga _doble clic_ en ellos para abrirles en el navegador.
 
 
 ## Básica

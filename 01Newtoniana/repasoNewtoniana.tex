@@ -30,7 +30,8 @@
 
 \title[Mecánica Newtoniana]{Mecánica general\\[0.5cm] {\Huge Mecánica Newtoniana}}
 \author[V. A. Bettachini]{\emph{Víctor A. Bettachini} }
-\date{2.o cuatrimestre 2020}
+\date{}
+% \date{2.o cuatrimestre 2020}
 \institute{
 \includegraphics[height=1.9cm]{unlam}
 \hspace{0.2cm}
@@ -48,7 +49,7 @@
 \end{frame}
 
 
-\section{Vectorial}
+\section{Magnitudes vectoriales}
 
 \begin{frame}{Un repaso sobre vectores}
 
@@ -95,9 +96,11 @@ En coordenadas cartesianas: \(x,y,z\)
 \[
 \vec{r}= x \hat{x}+ y \hat{y}+ z \hat{z}
 \]
+\pause
 - \(y\) componente de coordenada\\
-- \(\hat{y}\) versor de cada eje.
-
+- \(\hat{y}\) versor de cada eje\\
+\bigskip
+\pause
 A veces se sintetiza
 \(\vec{r}= (x,y,z)\)
 \end{column}
@@ -109,6 +112,43 @@ En general: \(\vec{r}= r_1 \hat{e}_1 +  r_2 \hat{e}_2 + r_3 \hat{e}_3\) con \(\h
 Por ahora seguimos con cartesianas.
 \end{block}
 \end{frame}
+
+
+\begin{frame}{Operando con vectores}
+	\begin{block}{Operación suma}
+		\[
+			\vec{a}= a_i \hat{i} + a_j \hat{j}+ a_k \hat{k}
+		\]
+		\[
+			\vec{b}= b_i \hat{i} + b_j \hat{j}+ b_k \hat{k}
+		\]
+		\[
+			\vec{c} = \vec{a} + \vec{b} = (a_i+b_i) \hat{i} + (a_j+b_j) \hat{j}+ (a_k+c_k) \hat{k}
+		\]
+	\end{block}
+
+\pause 
+
+\begin{block}{Operación producto}
+\begin{itemize}
+	\item por un escalar: \(c \vec{r}= c r_i \hat{i} + c c_j \hat{j}+ c r_k \hat{k}\)
+	\pause 
+	\item escalar: \(\vec{r} \vec{s} = r s \cos(\theta) = r_i s_i+ r_j s_j + r_k s_k \)
+	\begin{itemize}
+		\item así el módulo es \(r = |\vec{r}| = \sqrt{\vec{r} \vec{r}}\) 
+	\end{itemize}
+	\pause 
+	\item vectorial: \(\vec{r} \cross \vec{s} = \mdet{
+	\hat{i} & \hat{j} & \hat{k} \\
+	r_i & r_j & r_k\\
+	s_i & s_j & s_k
+	}
+	= (r_j s_k - r_k s_j) \hat{i} + (r_k s_i - r_i s_k) \hat{j} + (r_i s_j - r_j s_i) \hat{k} 
+	\)
+\end{itemize}
+\end{block}
+\end{frame}
+
 
 
 \begin{frame}
@@ -151,6 +191,9 @@ Pero \(\hat{x}, \hat{y}, \hat{z}\) no varían con \(t\) y por tanto
 \end{frame}
 
 
+\section{Leyes de Newton}
+
+
 \begin{frame}
 \begin{block}{1.a ley: inercia}
 Si la suma de fuerzas \(\sum \vec{F} = 0\) una partícula se mueve con \(\vec{v}\) constante.
@@ -160,7 +203,8 @@ Si la suma de fuerzas \(\sum \vec{F} = 0\) una partícula se mueve con \(\vec{v}
 \[
 \vec{F}= m \vec{a}
 \]
-En terminos del momento (\emph{ímpetu} en libro de Marion) \(\vec{p}= m \vec{v}\)
+\pause
+En términos del momento {\tiny (ímpetu)}  \(\vec{p}= m \vec{v}\)
 \[
 \vec{F} = m \dot{\vec{v}}= \dot{\vec{p}}\qquad (\dot{m}=0 )
 \]
@@ -172,7 +216,7 @@ En terminos del momento (\emph{ímpetu} en libro de Marion) \(\vec{p}= m \vec{v}
 		\includegraphics[width=\textwidth]{taylor1_5}
 	\end{column}
 	\begin{column}{0.65\textwidth}
-		Si \textbf{1} ejerce \(\vec{F}_{21}\)  \textbf{2} este ejerce \(\vec{F}_{12}\) a \textbf{1}, y
+		Si \textbf{1} ejerce \(\vec{F}_{21}\)  \textbf{2} este ejerce \(\vec{F}_{12}\) a \textbf{1}
 		\[
 			\vec{F}_{12} = - \vec{F}_{21}
 		\]
@@ -194,7 +238,7 @@ Para un objeto sobre el eje \(\hat{x}\) sometido a \(\vec{F}= F_o \hat{x}\)
 \pause
 \begin{itemize}				
 \item<2-> Generando una ecuación diferencial para describir la dinámica, y conociendo \(x_0, v_0\) en \(t_0\), se predicen \(x(t), \dot{x}(t)\) y \(\ddot{x}(t)\).
-\item<3-> Esta asignatura apunta a desarrolar la habilidad de modelar con ecuaciones diferenciales la dinámica de sistemas simples.
+\item<3-> Esta asignatura apunta a desarrollar la habilidad de modelar con ecuaciones diferenciales la dinámica de sistemas simples.
 \item<4-> Posteriores asignaturas (e.g. Estática, Máquinas) aprovechan esta herramienta para el análisis de sistemas mecánicos.
 \end{itemize}				
 \end{block}
@@ -233,11 +277,12 @@ Para un objeto sobre el eje \(\hat{x}\) sometido a \(\vec{F}= F_o \hat{x}\)
 			F_z = m \ddot{z}
 		\end{cases}
 		\]
+		\pause
 		\begin{align*}
 			F_y &= N - \mu m g \cos{\theta} = 0\\
 			F_x &= w_x- f = m g \sen{\theta} - \mu m g \cos{\theta} = m \ddot{x}\\
 			\ddot{x} &= g \left(\sen{\theta} - \mu \cos{\theta}\right)\\
-			x(t) &= \frac{g}{2} \left(\sen{\theta} - \mu \cos{\theta}\right) t^2 \quad [\dot{x}(0)=0, x(0)=0]
+			x(t) &= \frac{g}{2} \left(\sen{\theta} - \mu \cos{\theta}\right) t^2 \, [\dot{x}(0)=0, x(0)=0]
 		\end{align*}
 	\end{column}
 \end{columns}
@@ -295,24 +340,26 @@ Para un objeto sobre el eje \(\hat{x}\) sometido a \(\vec{F}= F_o \hat{x}\)
 	\end{column}
   \begin{column}{0.45\textwidth}
 		\alt<4>{
-		\[
-		\highlight{
-			\dot{\vec{r}}= \dot{r} \hat{r} + r \dot{\phi} \hat{\phi}
-		}
-		\]
+			\[
+				\highlight{
+					\dot{\vec{r}}= \dot{r} \hat{r} + r \dot{\phi} \hat{\phi}
+				}
+			\]
 		}
 		{
-		\[
-			\dot{\vec{r}}= \dot{r} \hat{r} + r \dv{\hat{r}}{t}
-		\]
+			\[
+				\dot{\vec{r}}= \dot{r} \hat{r} + r \dv{\hat{r}}{t}
+			\]
 		}
-		\onslide<2->{\[
-			\Delta \hat{r} \sim \Delta \phi \hat{\phi} \sim \dot{\phi} \Delta t \hat{\phi}
-		\]
+		\onslide<2->{
+			\[
+				\Delta \hat{r} \sim \Delta \phi \hat{\phi} \sim \dot{\phi} \Delta t \hat{\phi}
+			\]
 		}
-		\onslide<3->{\[
-			\dv{\hat{r}}{t}= \lim_{\Delta t \to 0} \frac{\Delta \hat{r}}{\Delta t} =  \dot{\phi} \hat{\phi}
-		\]
+		\onslide<3->{
+			\[
+				\dv{\hat{r}}{t}= \lim_{\Delta t \to 0} \frac{\Delta \hat{r}}{\Delta t} =  \dot{\phi} \hat{\phi}
+			\]
 		}
 	\end{column}
 \end{columns}
@@ -344,6 +391,9 @@ Para un objeto sobre el eje \(\hat{x}\) sometido a \(\vec{F}= F_o \hat{x}\)
 \end{frame}
 
 
+\section{Dinámica}
+
+
 \begin{frame}
 \begin{block}{Dinámica de un movimiento circular}
 \begin{columns}[c]
@@ -358,6 +408,7 @@ Para un objeto sobre el eje \(\hat{x}\) sometido a \(\vec{F}= F_o \hat{x}\)
 				F_\phi = m R \ddot{\phi}= -m g \sen{\phi}
 			\end{cases}
 		\]
+		\pause
 		\begin{align*}
 			m R \ddot{\phi} & = -m g \sen{\phi} \\
 			\ddot{\phi} & = - \frac{g}{R} \sen{\phi} \simeq - \frac{g}{R} \phi\, (\phi \simeq 0)\\
@@ -372,7 +423,7 @@ Para un objeto sobre el eje \(\hat{x}\) sometido a \(\vec{F}= F_o \hat{x}\)
 
 
 
-\begin{frame}{Movimiento angular}
+\begin{frame}{Movimiento angular} 
 \begin{columns}[c]
 	\begin{column}{0.35\textwidth}
 		\begin{block}{}
@@ -380,23 +431,31 @@ Para un objeto sobre el eje \(\hat{x}\) sometido a \(\vec{F}= F_o \hat{x}\)
 		\end{block}
 	\end{column}
   \begin{column}{0.6\textwidth}
-		\begin{block}{Momento angular}
+		\begin{block}{Momento angular {\tiny (momento cinético)}}
 		\[
 			\vec{L}=  \vec{r} \cp \vec{p}
 		\]
-		(\emph{momento cinético} en el Marion)
 		\end{block}
-		\pause
-		\begin{block}{Torque}
-		\[
-			\dot{\vec{L}} = \cancel{ \dot{\vec{r}} \cp \vec{p}} + \vec{r} \cp \dot{\vec{p}}
-		\]
-		Como \(\vec{p}= m \dot{\vec{r}}\) y \(\dot{\vec{r}} || \dot{\vec{r}}\) ese término se anula.
-		\[
-			\vec{\tau} = \dot{\vec{L}}= \vec{r} \cp \vec{F}
-		\]
-		(\emph{momento} en el Marion, \(\vec{N}\))
+		\uncover<2>{
+		\begin{block}{Torque {\tiny (momento, \(\vec{N}\))}}
+		%\alt<2>{
+		%\only<2>{
+		%	\[
+		%		\dot{\vec{L}} = \dot{\vec{r}} \cp \vec{p} + \vec{r} \cp \dot{\vec{p}}
+		%	\]
+		%}
+		%{
+			\[
+				\dot{\vec{L}} = \cancel{ \dot{\vec{r}} \cp \vec{p}} + \vec{r} \cp \dot{\vec{p}}
+			\]
+			pues \(\vec{p}= m \dot{\vec{r}} \implies \vec{p} || \dot{\vec{r}} \implies \dot{\vec{r}} \cp \vec{p} = 0 \)
+			\pause
+			\[
+				\vec{\tau} = \dot{\vec{L}}= \vec{r} \cp \vec{F}
+			\]
+		%}
 		\end{block}
+		}
 	\end{column}
 \end{columns}
 \end{frame}
@@ -433,11 +492,11 @@ Para un objeto sobre el eje \(\hat{x}\) sometido a \(\vec{F}= F_o \hat{x}\)
 	\begin{block}{Momento de inercia de sólidos}
 		Para una \(\vec{\omega}= \omega \hat{z}\)
 		\[
-			I_{zz}= \int \rho(x^2+y^2) \dd{V}
+			I_{zz}= \iiint \rho(x,y,z) \left[ x^2+y^2 \right] \dd{V}
 		\]
-		Son los elementos diagonales del tensor de inercia \(I_{ij}\).
-
-		E.g. cilindro: Para \(\vec{\omega}= \omega \hat{z}\) (eje) \(I_{zz}= \frac{m}{2}R^2\), para \(\vec{\omega}= \omega \hat{x}\ \rightarrow I_{xx}= \frac{m}{12} l^2\)
+		Son los elementos diagonales del tensor de inercia \(I_{ij}\).\\
+		\pause
+		E.g. cilindro | si \(\vec{\omega}= \omega \hat{z}\) (eje) \(I_{zz}= \frac{m}{2}R^2\) | si \(\vec{\omega}= \omega \hat{x}\ \rightarrow I_{xx}= \frac{m}{12} l^2\)
 	\end{block}
 
 \end{frame}

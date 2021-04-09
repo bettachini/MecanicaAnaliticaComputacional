@@ -270,17 +270,17 @@ Para un objeto sobre el eje \(\hat{x}\) sometido a \(\vec{F}= F_o \hat{x}\)
 	\end{column}
   \begin{column}{0.65\textwidth}
 		\[
-		\vec{F}= m \ddot{\vec{x}} \iff
+		m \ddot{\vec{x}} = \vec{F} \iff
 		\begin{cases}
-			F_x = m \ddot{x} \\
-			F_y = m \ddot{y} \\
-			F_z = m \ddot{z}
+			m \ddot{x} = F_x\\
+			m \ddot{y} = F_y\\
+			m \ddot{z} = F_z
 		\end{cases}
 		\]
 		\pause
 		\begin{align*}
-			F_y &= N - \mu m g \cos{\theta} = 0\\
-			F_x &= w_x- f = m g \sen{\theta} - \mu m g \cos{\theta} = m \ddot{x}\\
+			0 &= F_y = N - m g \cos{\theta}\\
+			m \ddot{x} &= F_x = w_x- f = m g \sen{\theta} - \mu m g \cos{\theta}\\
 			\ddot{x} &= g \left(\sen{\theta} - \mu \cos{\theta}\right)\\
 			x(t) &= \frac{g}{2} \left(\sen{\theta} - \mu \cos{\theta}\right) t^2 \, [\dot{x}(0)=0, x(0)=0]
 		\end{align*}
@@ -376,7 +376,7 @@ Para un objeto sobre el eje \(\hat{x}\) sometido a \(\vec{F}= F_o \hat{x}\)
   \begin{column}{0.45\textwidth}
 		\onslide<2->{
 		\[
-			\dv{\hat{\phi}}{t} = - \dot{\phi} \hat{r}
+			\dv{\hat{\phi}}{t} = \lim_{\Delta t \to 0} \frac{\Delta \hat{\phi}}{\Delta t} = - \dot{\phi} \hat{r}
 		\]
 		}
 		\onslide<3->{
@@ -496,7 +496,7 @@ Para un objeto sobre el eje \(\hat{x}\) sometido a \(\vec{F}= F_o \hat{x}\)
 		\]
 		Son los elementos diagonales del tensor de inercia \(I_{ij}\).\\
 		\pause
-		E.g. cilindro | si \(\vec{\omega}= \omega \hat{z}\) (eje) \(I_{zz}= \frac{m}{2}R^2\) | si \(\vec{\omega}= \omega \hat{x}\ \rightarrow I_{xx}= \frac{m}{12} l^2\)
+		E.g. cilindro | si \(\vec{\omega}= \omega_z \hat{z}\) (eje) \(I_{zz}= \frac{m}{2}R^2\) | si \(\vec{\omega}= \omega_x \hat{x}\ \rightarrow I_{xx}= \frac{m}{12} l^2\)
 	\end{block}
 
 \end{frame}

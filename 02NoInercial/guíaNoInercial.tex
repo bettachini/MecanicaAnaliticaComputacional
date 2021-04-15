@@ -17,7 +17,7 @@
 \section*{Movimiento rotatorio}
 
 \item
-\begin{minipage}[t][6cm]{0.65\textwidth}
+\begin{minipage}[t][5.5cm]{0.65\textwidth}
 % \textbf{FCEyN g01e03 | MIT2_003SCF11Kinematic.pdf}
 Un frisbee tiene su masa $M$ distribuida en forma uniforme en su radio $R$.
 Mientras gira manteniendo su horizontalidad una araña que estaba originalmente en su centro camina en dirección radial a velocidad constante $v_a$.
@@ -34,7 +34,7 @@ Mientras gira manteniendo su horizontalidad una araña que estaba originalmente 
 
 
 \item
-\begin{minipage}[t][9cm]{0.65\textwidth}
+\begin{minipage}[t][4.5cm]{0.65\textwidth}
 % \textbf{MIT2_003SCF11_pset2.pdf ej5}
 Un bloque de masa $M_b$ está restringido a un movimiento horizontal por rodillos.
 Designemos la aceleración horizontal del bloque en un marco de referencia inercial $O_{xyz}$ como $\vec{a}_{A/O} = \ddot{x} \hat{x}$ que asumiremos conocida.
@@ -45,18 +45,11 @@ Una masa puntual $m$ está conectada al final de la barra en el punto $B$.
 Este problema presenta uno de los problemas más comunes en ingeniería mecánica - el rotor mal balanceado.
 Pueden ver una ilustración extrema de este efecto en este video: \url{https://youtu.be/R2hO--TIjjA}.
 
-\begin{enumerate}[label=\alph*)]
-	\item Encuentre una expresión para la aceleración de la masa $m$ en el sistema de referencia inercial $O_{xyz}$.
-	Esto es encontrar $\vec{a}_{B/O}$.
-	Exprese el resultado en términos de las componentes $x$ e $y$ en el sistema $O_{xyz}$.
-	Recuerde incluir la contribución de $\vec{a}_{A/O}= \ddot{x} \hat{x}$ en su respuesta.
-	\item ¿Cuál es la magnitud y dirección de la fuerza que la barra aplica a la masa $m$?
-	¿Cuál es la fuerza y dirección de la misma que la barra hace sobre el punto de pivot A?
-\end{enumerate}
 \end{minipage}
-\begin{minipage}[c][0cm][t]{0.3\textwidth}
+\begin{minipage}[c][1cm][t]{0.3\textwidth}
 	\includegraphics[width=\textwidth]{MIT2_003SCF11_pset2_figure5}
 \end{minipage}
+
 Pregunta conceptual:
 La posición del centro de masa del sistema que conforman el bloque y la masa en rotación puede calcularse en función de la posición de la barra a medida que esta rota.
 Cuando se lo analiza desde un sistema de referencia inercial externo al bloque, este centro de masa: 
@@ -65,6 +58,30 @@ Cuando se lo analiza desde un sistema de referencia inercial externo al bloque, 
 	\item se mueve a la derecha cuando la bola está en la mitad izquierda del recorrido circular,
 	\item o no se mueve ni a izquierda ni a derecha.
 \end{enumerate}
+
+Determine:
+\begin{enumerate}[label=\alph*)]
+	\item Una expresión para la aceleración de la masa $m$ en el sistema de referencia inercial $O_{xyz}$.
+	Esto es encontrar $\vec{a}_{B/O}$.
+	Exprese el resultado en términos de las componentes $x$ e $y$ en el sistema $O_{xyz}$.
+	Recuerde incluir la contribución de $\vec{a}_{A/O}= \ddot{x} \hat{x}$ en su respuesta.
+	\item ¿Cuál es la magnitud y dirección de la fuerza que la barra aplica a la masa $m$?
+	¿Cuál es la fuerza y dirección de la misma que la barra hace sobre el punto de pivot A?
+\end{enumerate}
+
+
+
+\item
+\begin{minipage}[t][3.5cm]{0.65\textwidth}
+El perno $B$ está engarzado tanto en su guía recta, a una distancia $P$ del punto en torno al que gira con libertad, así como a una guía circular de radio $R$.
+El conjunto rota en torno al eje de simetría, línea discontinua horizontal en el croquis, con velocidad angular constante $\omega$.
+
+Determine $\dot{\vec{r}}$ y $\ddot{\vec{r}}$ del perno suponiéndolo puntual.
+\end{minipage}
+\begin{minipage}[c][1cm][t]{0.3\textwidth}
+	\includegraphics[width=\textwidth]{\detokenize{pernoGuíaDescentrada}}
+\end{minipage}
+
 
 
 
@@ -78,11 +95,13 @@ Dos instrumentos científicos $P$ están originalmente a $R=\SI{1,2}{\metre}$ de
 La posterior extensión de su longitud $l$ se produce a una tasa constante hasta alcanzar los \SI{3}{\metre}.
 Durante el procedimiento opera un mecanismo interno que mantiene constante la velocidad de rotación del satélite.
 La máxima aceleración total que estos instrumentos pueden ser sometidos es \SI{0,011}{\metre\per\second\squared}.
-Determinar la máxima tasa de extensión de las barras.
 
 Pregunta conceptual:
 ¿Cambia el momento angular total del satélite como resultado de la extensión de las barras que soportan los instrumentos?
 Asumamos que el momento angular se calcula con respecto al centro de masa del satélite.
+
+Determinar la máxima tasa de extensión de las barras.
+
 \end{minipage}
 \begin{minipage}[c][1cm][t]{0.3\textwidth}
 	\includegraphics[width=\textwidth]{MIT2_003SCF11_pset2_e01}
@@ -115,7 +134,7 @@ Asumamos que el momento angular se calcula con respecto al centro de masa del sa
 
 
 \item
-\begin{minipage}[t][4.5cm]{0.5\textwidth}
+\begin{minipage}[t][4cm]{0.5\textwidth}
 % \textbf{MIT2_003SCF11_pset3_e03}
 Un brazo de longitud $\SI{4}{\metre}$ sin masa gira sobre un eje vertical.
 En el borde exterior del mismo hay un carro que para este problema consideraremos como una partícula puntual de masa $\SI{100}{\kilo\gram}$.
@@ -127,14 +146,6 @@ La fuerza y el torque se aplican a partir de $t=0$.
 	\includegraphics[width=\textwidth]{MIT2_003SCF11_pset3_e05}
 \end{minipage}
 
-\begin{enumerate}[label=\alph*)]
-	\item Calcule el momento angular del carro con respecto al punto del eje de rotación donde la varilla se une al pivote.
-	\item A $t= \SI{5}{\second}$ las fuerzas motrices externas y los torques se apagan, dejando el brazo y carro con una velocidad de rotación constante.
-	Calcule el momento lineal del carro $\vec{p}$ para $t>\SI{5}{\second}$.
-	\item Calcule la derivada temporal de $\vec{p}$ con respecto al marco inercial de $O_{xyz}$ en $t> \SI{5}{\second}$.
-	Explique el significado físico de lo obtenido.
-\end{enumerate}
-
 Pregunta conceptual:
 ¿Qué espera produzca $\dv{\vec{p}}{t}$?
 \begin{enumerate*}[label=\alph*),itemjoin={,\quad}]
@@ -143,6 +154,14 @@ Pregunta conceptual:
 	\item Fuerza tangencial
 	\item Fuerza radial
 \end{enumerate*}
+
+\begin{enumerate}[label=\alph*)]
+	\item Calcule el momento angular del carro con respecto al punto del eje de rotación donde la varilla se une al pivote.
+	\item A $t= \SI{5}{\second}$ las fuerzas motrices externas y los torques se apagan, dejando el brazo y carro con una velocidad de rotación constante.
+	Calcule el momento lineal del carro $\vec{p}$ para $t>\SI{5}{\second}$.
+	\item Calcule la derivada temporal de $\vec{p}$ con respecto al marco inercial de $O_{xyz}$ en $t> \SI{5}{\second}$.
+	Explique el significado físico de lo obtenido.
+\end{enumerate}
 
 
 \end{enumerate}

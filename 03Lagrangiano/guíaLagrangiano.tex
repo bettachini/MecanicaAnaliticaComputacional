@@ -16,18 +16,32 @@ Los problemas marcados con (*) tienen alguna dificultad adicional, no dude en co
 \begin{enumerate}
 
 
-\item \begin{minipage}[t][6cm]{0.75\textwidth}
-\textbf{Péndulo ideal rígido} [Marion ex. 7.2]\\
-Escriba y resuelva la ecuación que describe la dinámica de un péndulo de longitud $l$ en presencia de un campo gravitatorio de constante $g$. Discuta todas las aproximaciones que realiza.
-\end{minipage}
-\begin{minipage}[c][1cm][t]{0.25\textwidth}
-	\includegraphics[width=0.75\textwidth]{marion_fig7_1}
-\end{minipage}
+%\item \begin{minipage}[t][3cm]{0.7\textwidth}
+%\textbf{Péndulo ideal rígido} [Marion ex. 7.2]\\
+%Escriba y resuelva la ecuación que describe la dinámica de un péndulo de longitud $\ell$ en presencia de un campo gravitatorio de constante $g$. Discuta todas las aproximaciones que realiza.
+%\end{minipage}
+%\begin{minipage}[c][1cm][t]{0.25\textwidth}
+%%	\includegraphics[width=0.75\textwidth]{marion_fig7_1}
+%%	\includegraphics[width=\textwidth]{\detokenize{pénduloHorizontal}}
+%	\begin{tikzpicture}
+%	%\begin{tikzpicture}[scale= 1.2]
+%  	\draw [arrows=- triangle 45] (-1,2) -> (-1,1) node [above=15, right=2] {\(\vec{g}\)}; % g vertical
+%		\draw [ultra thick] (-1.5,3) -- (2.5,3);
+%		\fill [pattern = north east lines] (-1.5,3) rectangle (2.5,3.2); % techo
+%		\draw [dashed] (0,3) -- (0,0);	% vertical
+%		\draw [thick] (0,3) -- +(-60:3) node[midway,above,right=2] {\(\ell\)};	% inclinada +:relativa, -60 grados, longitud 3
+%		% \draw [thick] (0,3) -- +(-60:3) node[midway,above,sloped] {\(l\)};	% inclinada +:relativa, -60 grados, longitud 3
+%    \fill (0,3)+(-60:3) circle [radius=0.25] node [text=white] { \( \mathrm{m} \) }; % masa izq
+%    \draw [thin, arrows=- triangle 45] (0,.4) -> (1.25,.4) node [midway, above] {\( \psi \)}; % desplazamiento horizontal
+%    % \draw [thin, arrows=- triangle 45] (0,.4) -> (1.25,.4) node [above=8, left=8] {\( \psi \)}; % desplazamiento horizontal
+%		\draw [thin, arrows=- triangle 45] (0,0) arc [start angle=-90, end angle=-65, radius=3] node [below=12, left=8] {\( \varphi \)};
+%	\end{tikzpicture}
+%\end{minipage}
 
 
 
 
-\item \begin{minipage}[t][3.5cm]{0.7\textwidth}
+\item \begin{minipage}[t][3cm]{0.7\textwidth}
 \textbf{Péndulo de punto de suspensión libre} [Landau \S5 ej. 2]\\
 Escriba el Lagrangiano en función de las coordenadas generalizadas sugeridas por las figura para un péndulo oscilando en un plano de masa \(m_2\) cuyo punto de suspensión, de masa \(m_1\), puede desplazarse sobre una recta horizontal.
 
@@ -40,13 +54,13 @@ Verifique que recupera el Lagrangiano de un péndulo simple de asumir fija la ma
 
 
 
-\item \begin{minipage}[t][4.5cm]{0.7\textwidth}
+\item \begin{minipage}[t][3.5cm]{0.7\textwidth}
 \textbf{Péndulo doble} [Landau \S5 ej. 1]\\
 Escriba el Lagrangiano para un péndulo doble oscilando en un plano en función de las coordenadas generalizadas sugeridas por las figura.
 
 Ayuda: \( \cos{\alpha \pm \beta }=\cos{ \alpha} \cos{ \beta \mp \sin \alpha} \sin{ \beta } \)
 
-Verifique que recupera el Lagrangiano de un péndulo simple de asumir \(m_1=0\), \(\varphi_1 = \varphi_2 = \varphi\) y \(l_1 = l_2 = \frac{l}{2}\).
+Verifique que recupera el Lagrangiano de un péndulo simple de asumir \(m_1=0\), \(\varphi_1 = \varphi_2 = \varphi\) y \(\ell_1 = \ell_2 = \frac{l}{2}\).
 \end{minipage}
 	\begin{minipage}[c][2.5cm][t]{0.3\textwidth}
 	\includegraphics[width=0.75\textwidth]{landauS52_fig1.png}
@@ -54,11 +68,11 @@ Verifique que recupera el Lagrangiano de un péndulo simple de asumir \(m_1=0\),
 
 
 
-\item \begin{minipage}[t][4.5cm]{0.6\textwidth}
+\item \begin{minipage}[t][7cm]{0.5\textwidth}
 (*) \textbf{Péndulo con punto de suspensión en rotación} [Marion (e) ex. 7.5] [Landau \S5 ej. 3]\\
 Calcular el Lagrangiano para un péndulo plano cuyo punto de suspensión se desplaza en un círculo vertical de radio \(a\) con una frecuencia \(\omega\).
 \end{minipage}
-	\begin{minipage}[c][2.5cm][t]{0.4\textwidth}
+	\begin{minipage}[c][5cm][t]{0.5\textwidth}
 	\includegraphics[width=0.75\textwidth]{marion_fig7_3.png}
 	% \includegraphics[width=0.75\textwidth]{landauS52_fig3.png}
 \end{minipage}
@@ -69,7 +83,7 @@ Calcular el Lagrangiano para un péndulo plano cuyo punto de suspensión se desp
 (*) \textbf{Pesas acopladas rotando en torno a eje} [Landau \S5 ej. 4]\\
 Calcular el Lagrangiano para el sistema de figura donde la partícula con \(m_2\) se desplaza sobre un eje vertical, y todo el sistema gira con una velocidad angular constante \(\Omega\) en torno a ese eje.
 \end{minipage}
-	\begin{minipage}[c][2.5cm][t]{0.35\textwidth}
+	\begin{minipage}[c][5cm][t]{0.35\textwidth}
 	\includegraphics[width=0.75\textwidth]{landauS52_fig4.png}
 \end{minipage}
 

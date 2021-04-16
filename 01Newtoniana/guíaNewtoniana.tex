@@ -14,14 +14,29 @@
 \begin{enumerate}
 
 
-\subsection*{Ecuaciones de la dinámica - 2"a ley de Newton}
+\section*{Ecuaciones de la dinámica - 2"a ley de Newton}
 
 
 \item
 \textbf{Las fuerzas conservativas, las dependientes de un potencial | Péndulo}\\
-\begin{minipage}[t][10cm]{0.8\textwidth}
+\begin{minipage}[t][1.8cm]{0.73\textwidth}
 %\textbf{Péndulo} [Marion () ex. 7.2] \\
 Obtenga la ecuación diferencial que describe la dinámica de una pesa que ``pendulea'' en el extremo de una cuerda.
+\end{minipage}
+\begin{minipage}[c][3.2cm][t]{0.2\textwidth}
+%	\includegraphics[width=\textwidth]{marion_fig7_1}
+%	\includegraphics[width=\textwidth]{\detokenize{pénduloHorizontal}}
+	\begin{tikzpicture}[scale= 1.0]
+  	\draw [arrows=-latex] (-1,2) -> (-1,1) node [above=15, right=2] {\(\vec{g}\)}; % g vertical
+		\draw [ultra thick] (-1.5,3) -- (2,3);
+		\fill [pattern = north east lines] (-1.5,3) rectangle (2,3.2); % techo
+		\draw [dashed] (0,3) -- (0,-.25);	% vertical
+		\draw [thick] (0,3) -- +(-60:3) node[midway,above,right=2] {\(\ell\)};	% inclinada +:relativa, -60 grados, longitud 3
+		\shade [ball color=black!80] ($(0,3)+(-60:3)$) circle(0.25) node [] {\color{white} $m$};
+    \draw [arrows=-latex] (0,.4) -> (1.25,.4) node [midway, above] {\( \psi \)}; % desplazamiento horizontal
+		\draw [arrows=-latex] (0,0) arc [start angle=-90, end angle=-65, radius=3] node [below=12, left=8] {\( \varphi \)};
+	\end{tikzpicture}
+\end{minipage}
 \begin{enumerate}
 	\item Asumiendo que el péndulo oscila dentro del plano \(\hat{x}, \hat{y}\).
 		¿En que sistema de coordenadas resolverá el problema? 
@@ -33,10 +48,8 @@ Obtenga la ecuación diferencial que describe la dinámica de una pesa que ``pen
 	\item Escriba la 2.a ley de Newton y proyecte en la dirección de la coordenada relevante.
 	\item Resuelva la ecuación de la dinámica y obtenga la frecuencia de oscilación.
 \end{enumerate}
-\end{minipage}
-\begin{minipage}[c][0cm][t]{0.15\textwidth}
-	\includegraphics[width=\textwidth]{marion_fig7_1}
-\end{minipage}
+%\vspace{-2.5cm}
+
 
 %\subsection*{Fuerza como gradiente de un potencial}
 %% Vizcaino carpeta
@@ -66,13 +79,12 @@ Obtenga la ecuación diferencial que describe la dinámica de una pesa que ``pen
 %	\includegraphics[width=\textwidth]{marionFig2_12.png}
 %\end{minipage}
 %
-\vspace{-2.5cm}
 
 
 
-\subsection*{Condiciones de vínculo}
+\section*{Condiciones de vínculo}
 \item
-\begin{minipage}[t][4cm]{0.4\textwidth}
+\begin{minipage}[t][5cm]{0.4\textwidth}
 \textbf{Máquina de Atwood} [Marion (e) ex. 2.9]\\
 Esta máquina consiste de una polea sin fricción de la que suspenden dos masas al final de cada extremo de un hilo.
 Encuentre la aceleración de las masas y la tensión de las cuerda:
@@ -81,11 +93,11 @@ Encuentre la aceleración de las masas y la tensión de las cuerda:
 	\item y cuando la polea desciende en un ascensor con aceleración constante \(a\).
   \end{enumerate}
 \end{minipage}
-\begin{minipage}[c][0cm][t]{0.55\textwidth}
+\begin{minipage}[c][1cm][t]{0.55\textwidth}
 	\includegraphics[width=\textwidth]{marionFig2_11.png}
 \end{minipage}
+%\vspace{1cm}
 
-%
 %\item
 %\begin{minipage}[t][3.5cm]{0.75\textwidth}
 %Máquina de Atwood % \textbf{Vizcaino 1.1} 
@@ -100,13 +112,43 @@ Encuentre la aceleración de las masas y la tensión de las cuerda:
 %        \includegraphics[width=\textwidth]{atwood-prob}
 %\end{minipage}
 
-\vspace{1cm}
-\subsection*{Conservación del momento lineal}
+
+\section*{Conservación del momento lineal}
 
 % FCEyN 0.1
-\item Dos masas \(m_1\) y \(m_2\) están unidas por una barra.
-Se la coloca sobre una superficie horizontal sin rozamiento tal que la masa \(m_1\) la toque pero no la \(m_2\). 
-Si se la deja en libertad, ¿donde golpea \(m_2\) a la superficie?
+\item 
+\begin{minipage}[t][1.8cm]{0.65\textwidth}
+Una barra rígida de longitud \(\ell\) conecta dos esferas de masa \(m_1\) y \(m_2\).
+Sobre una superficie se apoya la de \(m_1\) pero se sostiene la barra formando un ángulo \(\theta\) con la horizontal.
+La superficie no presenta rozamiento a las esferas.
+Considere las esferas puntuales y despreciable la masa de la barra.
+\end{minipage}
+\begin{minipage}[c][0.3cm][t]{0.3\textwidth}
+	\begin{tikzpicture}[scale= 1]
+		\def \radioEsfera{0.25};
+		\def \barraAngulo{15};
+		\coordinate (m1) at (-2,0);
+		% \coordinate (m2) at (2,1);
+		\coordinate (m2) at ($(m1) + (\barraAngulo:4)$);
+		\draw [dashed] (m1) -- ($(m1) + (4,0) $); % referencia theta
+		\draw [-latex] ($(m1) + (3,0) $) arc(0 : \barraAngulo : 3) node [midway, right] {$\theta$};
+		\draw [very thick](m1)--(m2) node [midway, above] {$\ell$}; % barra
+		\shade [ball color=black!80] (m1) circle(\radioEsfera) node [] {\color{white} $m_1$};
+		\shade [ball color=black!80] (m2) circle(\radioEsfera) node [] {\color{white} $m_2$};
+		\def \sueloLargo{5.25};
+		\def \sueloProfundidad{0.15};
+		\coordinate (sueloArribaIzquierda) at (-2.75, -\radioEsfera);
+		\draw [ultra thick] (sueloArribaIzquierda) -- ($(sueloArribaIzquierda) + (\sueloLargo,0) $); % suelo
+		\fill [pattern = north east lines] (sueloArribaIzquierda) rectangle ($ (sueloArribaIzquierda) + (\sueloLargo, -\sueloProfundidad) $); % suelo
+	\end{tikzpicture}
+\end{minipage}
+
+Pregunta coneceptual:
+No hay rozamiento. ¿Qué sucede entonces con el momento en la dirección horizontal?
+¿Qué consecuencia tiene esto en la coordenada horizontal del centro de masa?
+
+\textbf{Determine}:
+Donde golpea \(m_2\) a la superficie tras dejar en libertad a la barra.
 
 
 
@@ -120,21 +162,17 @@ Si se la deja en libertad, ¿donde golpea \(m_2\) a la superficie?
 %    \item Dar la velocidad de las partículas en función de su distancia al anillo.
 %    \item Hallar la tensión de la cuerda en función de la distancia de una masa al anillo.
 %\end{enumerate}
-%
 
-\subsection*{Coordenadas polares}
+
+
+\section*{Coordenadas polares}
 
 \item
-\begin{minipage}[t][5cm]{0.65\textwidth}
+\begin{minipage}[t][2cm]{0.6\textwidth}
 \textbf{Masa resbalando sobre semi-esfera}\\ 
 La partícula de masa \(m\), considerada puntual, desliza sobre una semi-esfera de radio \(R\) sin fricción.
-\begin{enumerate}
-	\item Calcular el ángulo \(\theta\) para el cual se separa de semi-esfera si inicialmente es apartada en un ángulo muy pequeño de \(\theta= 0\) y su velocidad inicial es nula.
-	\item Si la partícula estuviera engarzada sin fricción en un riel semi-circular de radio \(R\), hallar la velocidad con que llega al suelo.
-¿Qué aceleración tangencial tiene en ese momento?
-\end{enumerate}
 \end{minipage}
-\begin{minipage}[c][0cm][t]{0.3\textwidth}
+\begin{minipage}[c][1cm][t]{0.3\textwidth}
 	% \includegraphics[width=\textwidth]{marion7_10}
 	\begin{tikzpicture}[scale= 1]
 		\draw [ultra thick] (-3,0) -- (3,0);
@@ -143,21 +181,27 @@ La partícula de masa \(m\), considerada puntual, desliza sobre una semi-esfera 
 		\draw [ultra thick] (-2,0) .. controls (-2,2*0.555) and (-2*0.555,2) .. (0,2) .. controls (2*0.555,2) and (2,2*0.555) .. (2,0); % semi esfera
 		% \filldraw (0,2.2) circle (0.2); % masa superior
 		% \fill (2*0.5+.12,1.732+.18) circle [radius=0.25] node [midway, text=white] { \( m \) };
-		\filldraw (2*0.5+.12,1.732+.18) circle (0.2) node [above, right=5] {\(m\)}; % masa a la derecha
+		% \filldraw (2*0.5+.12,1.732+.18) circle (0.2) node [above, right=5] {\(m\)}; % masa a la derecha
+		\shade [ball color=black!80] (2*0.5+.12,1.732+.18) circle(0.2) node [] {\color{white} $m$};
 		% \draw (2,2) circle [radius=0.3, color=white, fill=black] node {$T_1$};
-		\draw (0,0) -- (0,2); % linea vertical
-		\draw [-stealth] (0,0) -- (1,1.732) node [midway, anchor=west] {\(R\)}; % linea hacia la derecha
+		\draw [dashed] (0,0) -- (0,2); % linea vertical
+		\draw [-LaTeX] (0,0) -- (1,1.732) node [midway, anchor=west] {\(R\)}; % linea hacia la derecha
 		\draw [-stealth] (0,1) arc (90:60:1) node [above left] {\(\theta\)}; % arco c/ flecha comenzando en (0,1), de 90 a 60 grados, 1...
 		% \node [circle,draw,label=60:$60^\circ$,label=below:$-90^\circ$] {\(m\)}; 
 		% \node at (-2*0.5+.15,1.732+.15) [circle,draw,fill=black] {\(m\)}; 
-		\draw [-stealth] (-2.5,2) -> (-2.5,1) node [above=15, right=2] {\(\vec{g}\)}; % g vertical
-        \end{tikzpicture}
+		\draw [-stealth, thick] (-2.5,2) -> (-2.5,1) node [above=15, right=2] {\(\vec{g}\)}; % g vertical
+	\end{tikzpicture}
 \end{minipage}
+\begin{enumerate}
+	\item Calcular el ángulo \(\theta\) para el cual se separa de semi-esfera si inicialmente es apartada en un ángulo muy pequeño de \(\theta= 0\) y su velocidad inicial es nula.
+	\item Si la partícula estuviera engarzada sin fricción en un riel semi-circular de radio \(R\), hallar la velocidad con que llega al suelo.
+¿Qué aceleración tangencial tiene en ese momento?
+\end{enumerate}
 
 
 
 
-\subsection*{Conservación del momento angular}
+\section*{Conservación del momento angular}
 
 \item \textbf{Ratón en ventilador de techo} [Marion (e) ex. 2.11]\\
 El conjunto de aspas de un ventilador de techo tiene momento de inercia \(I\) y radio \(R\).

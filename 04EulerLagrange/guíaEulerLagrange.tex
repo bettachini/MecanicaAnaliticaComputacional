@@ -16,19 +16,30 @@ Los problemas marcados con (*) tienen alguna dificultad adicional, no dude en co
 \begin{enumerate}
 
 
-\item \textbf{Péndulo rígido ideal} [Marion (english) ex. 7.2] \\
-	\textbf{Péndulo de punto de suspensión libre y péndulo doble} [Landau \S5 ejs. 1 y 2]\\ 
-Aplique en la ecuación de Euler-Lagrange los Lagrangianos obtenidos en la guía anterior para obtener las ecuaciones de la dinámica de los sistemas:\\
-\begin{enumerate*}
-	\item \includegraphics[height=0.3\textwidth]{marion_fig7_1}
-	\item \includegraphics[height=0.3\textwidth]{landauS52_fig2}
-	\item \includegraphics[height=0.3\textwidth]{landauS52_fig1}
-\end{enumerate*}
+\item
+\textbf{Péndulo rígido ideal} [Marion (english) ex. 7.2] \\
+\textbf{Péndulo de punto de suspensión libre y péndulo doble} [Landau \S5 ejs. 1 y 2]\\ 
+Aplique en la ecuación de Euler-Lagrange los Lagrangianos obtenidos en la guía anterior para obtener las ecuaciones de la dinámica de los sistemas:
+\begin{tasks}(3)
+	\task \begin{tikzpicture}[scale= 1.0]
+  	\draw [arrows=-latex] (-1,2) -> (-1,1) node [above=15, right=2] {\(\vec{g}\)}; % g vertical
+		\draw [ultra thick] (-1.5,3) -- (2,3);
+		\fill [pattern = north east lines] (-1.5,3) rectangle (2,3.2); % techo
+		\draw [dashed] (0,3) -- (0,-.25);	% vertical
+		\draw [thick] (0,3) -- +(-60:3) node[midway,above,right=2] {\(\ell\)};	% inclinada +:relativa, -60 grados, longitud 3
+		\shade [ball color=black!80] ($(0,3)+(-60:3)$) circle(0.25) node [] {\color{white} $m$};
+    \draw [arrows=-latex] (0,.4) -> (1.25,.4) node [midway, above] {\( \psi \)}; % desplazamiento horizontal
+		\draw [arrows=-latex] (0,0) arc [start angle=-90, end angle=-65, radius=3] node [below=12, left=8] {\( \varphi \)};
+	\end{tikzpicture}
+	\task \includegraphics[height=0.2\textwidth]{landauS52_fig2}
+	\task \includegraphics[height=0.2\textwidth]{landauS52_fig1}
+\end{tasks}
 
 
 
-\item \textbf{Péndulo de masas acopladas en movimiento restringido}\\ 
-\begin{minipage}[t][5.3cm]{0.6\textwidth}
+\item 
+\begin{minipage}[t][4cm]{0.7\textwidth}
+\textbf{Péndulo de masas acopladas en movimiento restringido}\\ 
 Dos partículas de masa \(m_1\) y \(m_2\) están unidas por un hilo inextensible de longitud \(l\); \(m_1\) se mueve solo sobre el eje \(x\) y \(m_2\) solo sobre el \(y\).
 Las condiciones iniciales son las que indica la figura.
 \begin{enumerate}
@@ -38,7 +49,7 @@ Las condiciones iniciales son las que indica la figura.
 	\item (*) Resuelva la ecuación de la dinámica para obtener \(\theta(t)\) en el caso que el sistema parte del reposo con un \(\theta_0 \neq 0\).
 \end{enumerate}
 \end{minipage}
-\begin{minipage}[c][2em][t]{0.4\textwidth}
+\begin{minipage}[c][0cm][t]{0.3\textwidth}
 	\hspace{0.5cm}
    \includegraphics[width=0.75\textwidth]{fcen1-004}
 \end{minipage}
@@ -57,22 +68,24 @@ Las condiciones iniciales son las que indica la figura.
 %
 
 
-\item \textbf{Máquina de Atwood simple}\\
-\begin{minipage}[t][5.3cm]{0.6\textwidth}
+\item 
+\begin{minipage}[t][4.5cm]{0.6\textwidth}
+\textbf{Máquina de Atwood simple}\\
 \begin{enumerate}
 	\item Obtenga con la ecuación de Euler-Lagrange la ecuación de la dinámica.
 	Simplifique el problema considerando que la poleas de radio \(R\) tiene masa nula (\(M=0\)).
 	\item Compare las aceleraciones con las obtenidas usando ecuaciones de Newton.
 \end{enumerate}
 \end{minipage}
-\begin{minipage}[c][2em][t]{0.4\textwidth}
+\begin{minipage}[c][3.5cm][t]{0.4\textwidth}
 	\hspace{0.5cm}
 	\includegraphics[width=0.75\textwidth]{marion_fig2_1a}
 \end{minipage}
 
 
 
-\item \begin{minipage}[t][11cm]{0.65\textwidth}
+\item
+\begin{minipage}[t][6cm]{0.65\textwidth}
 \textbf{Maquina de Atwood compuesta} [Marion (english) ex. 7.8]\\ 
 \begin{enumerate}
 	\item Obtenga las aceleraciones en este sistema resolviendo las ecuaciones de Euler-Lagrange.

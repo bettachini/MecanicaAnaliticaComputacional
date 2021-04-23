@@ -12,9 +12,8 @@
 
 \item 
 %\textbf{MIT Pset ? ex ?} 
-\begin{minipage}[t][7.5cm]{0.55\textwidth}
+\begin{minipage}[t][6.5cm]{0.55\textwidth}
 \textbf{Barra que pende de un carro}\\
-
 Obtenga las ecuaciones que describen la dinámica del sistema.
 El momento de inercia para una barra de masa \(m\) y longitud \(l\) para una rotación desde uno de sus extremos es \(\frac{m}{12} l^2\). 
 \begin{enumerate}
@@ -36,7 +35,7 @@ El momento de inercia para una barra de masa \(m\) y longitud \(l\) para una rot
 
 \item 
 %\textbf{MIT Pset 7 ex 2} 
-\begin{minipage}[t][7.5cm]{0.55\textwidth}
+\begin{minipage}[t][6cm]{0.6\textwidth}
 Dos pesos de masa idéntica $m$ están unidos al extremo de brazos de masa despreciable.
 Uno de los brazos describe una inclinación fija con la horizontal de $\phi$.
 Descartamos la fricción con los rodamientos que mantiene vertical el eje de donde parten los brazos.
@@ -53,7 +52,7 @@ Pregunta conceptual:
 \end{tasks}
 Obtenga las ecuaciones de la dinámica de Euler-Lagrange. 
 \end{minipage}
-\begin{minipage}[c][0cm][t]{0.4\textwidth}
+\begin{minipage}[c][1cm][t]{0.35\textwidth}
 	\includegraphics[width=\textwidth]{pset7ex2}
 \end{minipage}
 
@@ -64,11 +63,17 @@ Obtenga las ecuaciones de la dinámica de Euler-Lagrange.
 \begin{minipage}[t][6cm]{0.6\textwidth}
 Dos barriles cilíndricos homogéneos de respectivas masas y radios $m_1$,$m_2$, $R_1$ y $R_2$ están soldados.
 Este armado rota sin fricción en torno a un eje.
-Una cuerda de masa despreciable envuelve al cilindro externo y sus extremos conectan un resorte de constante elástica $k$ y un amortiguador en función de la velocidad (constante de proporcionalidad $b$).
+
+Una cuerda de masa despreciable envuelve al cilindro externo y sus extremos conectan un resorte de constante elástica $k$ y un amortiguador.
+Tal amortiguador ejerce una fuerza de resistencia al movimiento lineal con la velocidad,
+$$
+\vec{F}_\mathrm{amortiguador} = - c \dot{\vec{r}}.
+$$
+
 Una correa de masa despreciable envuelve al cilindro de menor radio y de ella pende vertical un bloque de masa $m_o$.\\
 Obtenga las ecuaciones de la dinámica de Euler-Lagrange. 
 \end{minipage}
-\begin{minipage}[c][2cm][t]{0.35\textwidth}
+\begin{minipage}[c][1cm][t]{0.35\textwidth}
 	\includegraphics[width=\textwidth]{pset7ex4}
 \end{minipage}
 
@@ -76,25 +81,25 @@ Obtenga las ecuaciones de la dinámica de Euler-Lagrange.
 
 \item
 %\textbf{MIT Pset 7 ex 6} 
-\begin{minipage}[t][7.5cm]{0.5\textwidth}
+\begin{minipage}[t][6cm]{0.5\textwidth}
 Sobre la superficie inclinada en $\theta_0$ del carro de masa $m_0$ rueda sin deslizar un disco de radio $R$ y masa $m$.
 Este no se sale de la superficie a pesar de que al centro del mismo se aplica una fuerza $\vec{F}= F(t) \hat{x}$ gracias a un resorte de constante elástica $K_1$ que une este centro con el carro.
 Limita el alcance de este un resorte de constante elástica $K_2$ fijado a la pared y un amortiguador proporcional a la velocidad de constante proporcional $b$.
 Ambos resortes tienen originalmente su longitud de equilibrio $l_{10}$ y $l_{20}$.
 Se descarta la fricción del carro con el suelo.
 Todo el sistema está sometido a la aceleración gravitatoria $\vec{g}= - g \hat{y}$.\\
+\end{minipage}
+\begin{minipage}[c][0cm][t]{0.45\textwidth}
+	\includegraphics[width=\textwidth]{pset7ex6}
+\end{minipage}
 Pregunta conceptual: ¿Qué es la fuerza generalizada asociada al desplazamiento virtual $\delta x$ debida a $\vec{F}$?\\
-\begin{tasks}(1)
+\begin{tasks}(4)
 	\task $F(t) \cos(\theta)$
 	\task $F(t)$
 	\task $F(t) \delta x$
 	\task $0$
 \end{tasks}
 Obtenga las ecuaciones de la dinámica de Euler-Lagrange. 
-\end{minipage}
-\begin{minipage}[c][0cm][t]{0.45\textwidth}
-	\includegraphics[width=\textwidth]{pset7ex6}
-\end{minipage}
 
 
 

@@ -10,7 +10,7 @@
 % \addto\shorthandsspanish{\spanishdeactivate{~<>}}
 
 \usepackage{graphicx}
-\graphicspath{{./figuras/}}
+\graphicspath{{./figuras/}{../LaTeX/}}
 % \usepackage{float}
 
 \usepackage[arrowdel]{physics}
@@ -31,24 +31,24 @@
 
 \usepackage{tikz}
 \usepackage{tikz-dimline}
-%\usetikzlibrary{math}
 \usetikzlibrary{calc}
+% \usetikzlibrary{math}
 \usetikzlibrary{arrows.meta}
-%\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{snakes}
+\usetikzlibrary{decorations}
+\usetikzlibrary{decorations.pathmorphing}
 \usetikzlibrary{patterns}
 
-\usepackage[hmargin=1cm,vmargin=1.6cm,nohead]{geometry}
-% \voffset-3.5cm
-% \hoffset-3cm
-% \setlength{\textwidth}{17.5cm}
-% \setlength{\textheight}{27cm}
+\usepackage[hmargin=1cm,vmargin=3cm, top= 0.75cm,nohead]{geometry}
 
 \usepackage{lastpage}
 \usepackage{fancyhdr}
 \pagestyle{fancyplain}
-\fancyhead{}
-\fancyfoot{{\tiny \textcopyright DIIT - UNLaM}}
-% \fancyfoot{{\tiny \textcopyright Departamento de Ingeniería e Investigaciones Tecnológicas - UNLaM}}
+\fancyhf{}
+\setlength\headheight{28.7pt} 
+\fancyhead[LE, LO]{\textbf{Mecánica General} }
+\fancyhead[RE, RO]{\href{https://ingenieria.unlam.edu.ar/}{$\vcenter{\hbox{\includegraphics[height=1cm]{ambos.pdf}}}$}}
+\fancyfoot{\href{https://creativecommons.org/licenses/by-sa/4.0/deed.es/}{$\vcenter{\hbox{\includegraphics[height=0.4cm]{cc-by-sa.pdf}}}$} \href{https://ingenieria.unlam.edu.ar/}{DIIT - UNLaM}}
 \fancyfoot[C]{ {\tiny Actualizado al \today} }
 \fancyfoot[RO, LE]{Pág. \thepage/\pageref{LastPage}}
 \renewcommand{\headrulewidth}{0pt}

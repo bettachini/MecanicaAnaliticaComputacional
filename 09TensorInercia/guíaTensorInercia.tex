@@ -41,10 +41,10 @@ Dibuje sistemas de ejes conveniente para calcular momentos de inercia.
 \begin{minipage}[t][4.5cm]{0.7\textwidth}
 Calcule para el sistema de ambas $m$ (la masa de brazos y ejes es despreciable)
 \begin{tasks} 
-	\task momento de inercia \(\overline{\overline{I}}\) respecto a A,
+	\task tensor de inercia \(\overline{\overline{I}}\) respecto a A,
 	\task momento angular $\vec{L}\bigg\rvert_A = \overline{\overline{I}} \vec{\Omega}$ y torque $\vec{\tau} = \dot{\vec{L}}$.
 \end{tasks}
-La porción vertical de la barra se mantiene con rulemanes que impiden su movimiento vertical, pero posibilitan que el eje rote sin fricción con velocidad angular $\Omega$ respecto el marco inercial $O_{xyz}$.
+La porción vertical de la barra se mantiene con rulemanes que impiden su movimiento vertical, pero posibilitan que el eje rote sin fricción con velocidad angular $\Omega$, que puede no ser constante, respecto el marco inercial $O_{xyz}$.
 \end{minipage}
 \begin{minipage}[c][0cm][t]{0.25\textwidth}
 	\includegraphics[width=\textwidth]{o-021}
@@ -65,8 +65,8 @@ Tensor de inercia de un cubo con arista \(b\).
 	
 Encuentre: 
 \begin{enumerate}
-	\item Calcule el tensor de inercia desde el sistema con origen en el vértice \(Q\) en el sistema \(X_i\).
-	\item Use la forma general del teorema de ejes paralelos de Steiner para calcularlo ahora desde el centro de masa \(O\) para el sistema \(x_i\).
+	\item Calcule el tensor de inercia desde el sistema de ejes \(x_i\) con origen enel centro de masa \(O\).
+	\item Use la forma general del teorema de ejes paralelos de Steiner para calcularlo ahora en el sistema \(X_i\) con origen en el vértice \(Q\) 
 	\end{enumerate}
 \end{minipage}
 \begin{minipage}[c][1.2cm][t]{0.35\textwidth}
@@ -101,11 +101,12 @@ Calcule \(I_{zz}\) desde A en función de esos datos.
 
 \item 
 \begin{minipage}[t][3.5cm]{0.5\textwidth}
-(*) Calcule:
+Calcule:
 	\begin{enumerate}
 		% \item \textbf{Landau \S 32 2e} Calcule los momentos principales de inercia de un cono homogéneo de altura \(h\) y radio \(R\).
-		\item Momentos principales de inercia de un cono homogéneo de altura \(h\) y radio en su base \(R\).
-		\item Energía cinética de dicho cono rodando sobre un plano.
+		\item Elija un sistema de ejes conveniente y calcule el tensor de inercia de este cono homogéneo de altura \(h\) y radio en su base \(R\).
+		\item Energía cinética de dicho cono rodando sobre el plano \(X Y\).
+		El ángulo \(\theta\) es entre \(\hat{X}\) y el segmento \(\overline{O A}\) que es el contacto instantáneo del cono en el plano.
 		% \textbf{Landau \S 32 7} Hallar la energía cinética de un cono homogéneo que rueda sobre un plano.
 	\end{enumerate}
 \end{minipage}

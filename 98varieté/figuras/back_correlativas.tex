@@ -1,0 +1,36 @@
+% A simple Tree
+% Author: Stefan Kottwitz
+% https://www.packtpub.com/hardware-and-creative/latex-cookbook
+% \documentclass[a4paper, portrait, 10pt]{article}
+\documentclass[a4paper, 10pt, border=10pt]{standalone}
+\usepackage{tikz}
+% \usetikzlibrary{trees}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+
+
+\begin{document}
+\begin{tikzpicture}[sibling distance=5cm,
+latex-,
+% edge from parent path={(\tikzparentnode.south) |- (\tikzchildnode.west)},
+every node/.style = {
+shape=rectangle, rounded corners, draw, align=center,
+top color=white, bottom color=blue!20}]
+	\node (mg) {Mecánica General\\{\tiny 3024} }
+		child { node (fI) {Física I\\{\tiny 1031} } 
+			}
+		child { node {Matemática avanzada\\{\tiny 3022} }
+			child { node {Cálculo Numérico\\{\tiny 3019} }
+				child { node {Análisis Matemático II\\{\tiny 1033} } 
+					child { node (AMI) {Análisis Matemático I\\{\tiny 1023} } 
+					}
+				}
+			}
+			child { node {Álgebra y Geometría Analítica II\\{\tiny 1032} }
+				child { node {Álgebra y Geometría Analítica I\\{\tiny 1027} }
+				} 
+			}
+		};
+		\path [draw, latex-] (fI) -- +(0,-4.49) -- (AMI);
+\end{tikzpicture}
+\end{document}

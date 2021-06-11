@@ -1,0 +1,42 @@
+\documentclass[a4paper, 10pt, border=10pt]{standalone}
+% \documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{fit,arrows,calc,positioning}
+
+\begin{document}
+\tikzstyle{b} = [rectangle, draw, top color=white, bottom color=blue!20, node distance=.8cm, align=center, rounded corners]
+\tikzstyle{c} = [rectangle, draw, inner sep=0.5cm, dashed]
+\tikzstyle{red} = [rectangle, draw, top color=white, bottom color=red!60, node distance=.8cm, align=center, rounded corners]
+\tikzstyle{l} = [draw, -latex',thick]
+
+\begin{tikzpicture}[auto]
+    \node [red] (MG) {Mecánica General\\{\tiny 3024}};
+    \node [b, above =of MG ] (EM) {Elementos de Máquinas\\{\tiny 3032}};
+    \path [l] (MG) -- (EM);
+    \node [b, above left=of MG ] (MF) {Mecánica de fluidos\\{\tiny 3028}};
+    \path [l] (MG.west) -| (MF.south);
+    \node [b, above right=of MG ] (EIII) {Estabilidad III\\{\tiny 3029}};
+    \path [l] (MG) -| (EIII);
+    \node [b, below left =of MG, xshift=-0.9cm] (FI) {Física I\\{\tiny 1031}};
+    \path [l] (FI) -- (MG);
+    \node [b, below =of MG] (MA) {Matemática avanzada\\{\tiny 3022}};
+    % \node [b, below right =of MG, xshift=-1cm] (MA) {Matemática avanzada\\{\tiny 3022}};
+    \path [l] (MA) -- (MG);
+    \node [b, below right =of MA, xshift=-3cm] (AGAII) {Álgebra y Geometría Analítica II\\{\tiny 1032}};
+    \path [l] (AGAII) -- (MA);
+    \node [b, below =of AGAII] (AGAI) {Álgebra y Geometría Analítica I\\{\tiny 1027}};
+    \path [l] (AGAI) -- (AGAII);
+    \node [b, below left =of MA, xshift=1cm] (CN) {Cálculo Numérico\\{\tiny 3019}};
+    \path [l] (CN) -- (MA);
+    \node [b, below =of CN] (AMII) {Análisis Matemático II\\{\tiny 1023}};
+    \path [l] (AMII) -- (CN);
+    \node [b, below =of AMII] (AMI) {Análisis Matemático I\\{\tiny 1023}};
+    \path [l] (AMI) -- (AMII);
+    \draw [l] (AMI.west) -- ++(-0.5,0) node(lowerleft){} |- (FI.west);
+    % \path [l] (AMI.west) |- (FI.west);
+    % \path [l] (AMI.west) -| (FI.south);
+
+    % \draw [l] (AMI.west) -- ++(0,0) node(lowerleft){} |- (FI.south);
+    % \draw [l] (AMI.west) -- ++(-2,0) node(lowerleft){} |- (FI.south);
+\end{tikzpicture}
+\end{document}

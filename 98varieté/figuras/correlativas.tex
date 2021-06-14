@@ -13,13 +13,13 @@
     \node [red] (MG) {Mecánica General\\{\tiny 3024}};
     \node [b, above =of MG ] (EM) {Elementos de Máquinas\\{\tiny 3032}};
     \path [l] (MG) -- (EM);
-    \node [b, above left=of MG ] (MF) {Mecánica de fluidos\\{\tiny 3028}};
+    \node [b, above left=of MG ] (MF) {Mecánica de Fluidos\\{\tiny 3028}};
     \path [l] (MG.west) -| (MF.south);
     \node [b, above right=of MG ] (EIII) {Estabilidad III\\{\tiny 3029}};
     \path [l] (MG) -| (EIII);
     \node [b, below left =of MG, xshift=-0.9cm] (FI) {Física I\\{\tiny 1031}};
     \path [l] (FI) -- (MG);
-    \node [b, below =of MG] (MA) {Matemática avanzada\\{\tiny 3022}};
+    \node [b, below =of MG] (MA) {Matemática Avanzada\\{\tiny 3022}};
     % \node [b, below right =of MG, xshift=-1cm] (MA) {Matemática avanzada\\{\tiny 3022}};
     \path [l] (MA) -- (MG);
     \node [b, below right =of MA, xshift=-3cm] (AGAII) {Álgebra y Geometría Analítica II\\{\tiny 1032}};

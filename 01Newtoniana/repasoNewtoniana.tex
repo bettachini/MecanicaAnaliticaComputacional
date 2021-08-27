@@ -63,26 +63,47 @@ El vector \(\vec{r}\) tiene
 \item y una dirección y sentido denotado por un versor \(\hat{r}\).
 \end{itemize}
 \end{block}
+
+% \pause 
+
+\end{frame}
+
+
+
+\begin{frame}{Operando con vectores}
+	\begin{block}{Operación suma}
+		\[
+			\vec{a}= a_i \hat{i} + a_j \hat{j}+ a_k \hat{k}
+		\]
+		\[
+			\vec{b}= b_i \hat{i} + b_j \hat{j}+ b_k \hat{k}
+		\]
+		\[
+			\vec{c} = \vec{a} + \vec{b} = (a_i+b_i) \hat{i} + (a_j+b_j) \hat{j}+ (a_k+c_k) \hat{k}
+		\]
+	\end{block}
+
 \pause 
 
 \begin{block}{Operación producto}
 \begin{itemize}
-	\item por un escalar: \(c \vec{r}= c r_i \hat{i} + c c_j \hat{j}+ c r_k \hat{k}\)
+	\item por un escalar: \(c \vec{r}= c r_i \hat{i} + c r_j \hat{j}+ c r_k \hat{k}\)
+	\pause 
 	\item escalar: \(\vec{r} \vec{s} = r s \cos(\theta) = r_i s_i+ r_j s_j + r_k s_k \)
 	\begin{itemize}
 		\item así el módulo es \(r = |\vec{r}| = \sqrt{\vec{r} \vec{r}}\) 
 	\end{itemize}
+	\pause 
 	\item vectorial: \(\vec{r} \cross \vec{s} = \mdet{
 	\hat{i} & \hat{j} & \hat{k} \\
 	r_i & r_j & r_k\\
 	s_i & s_j & s_k
 	}
+	= (r_j s_k - r_k s_j) \hat{i} + (r_k s_i - r_i s_k) \hat{j} + (r_i s_j - r_j s_i) \hat{k} 
 	\)
 \end{itemize}
 \end{block}
 \end{frame}
-
-
 
 
 \begin{frame}
@@ -114,41 +135,6 @@ El vector \(\vec{r}\) tiene
 \end{frame}
 
 
-\begin{frame}{Operando con vectores}
-	\begin{block}{Operación suma}
-		\[
-			\vec{a}= a_i \hat{i} + a_j \hat{j}+ a_k \hat{k}
-		\]
-		\[
-			\vec{b}= b_i \hat{i} + b_j \hat{j}+ b_k \hat{k}
-		\]
-		\[
-			\vec{c} = \vec{a} + \vec{b} = (a_i+b_i) \hat{i} + (a_j+b_j) \hat{j}+ (a_k+c_k) \hat{k}
-		\]
-	\end{block}
-
-\pause 
-
-\begin{block}{Operación producto}
-\begin{itemize}
-	\item por un escalar: \(c \vec{r}= c r_i \hat{i} + c c_j \hat{j}+ c r_k \hat{k}\)
-	\pause 
-	\item escalar: \(\vec{r} \vec{s} = r s \cos(\theta) = r_i s_i+ r_j s_j + r_k s_k \)
-	\begin{itemize}
-		\item así el módulo es \(r = |\vec{r}| = \sqrt{\vec{r} \vec{r}}\) 
-	\end{itemize}
-	\pause 
-	\item vectorial: \(\vec{r} \cross \vec{s} = \mdet{
-	\hat{i} & \hat{j} & \hat{k} \\
-	r_i & r_j & r_k\\
-	s_i & s_j & s_k
-	}
-	= (r_j s_k - r_k s_j) \hat{i} + (r_k s_i - r_i s_k) \hat{j} + (r_i s_j - r_j s_i) \hat{k} 
-	\)
-\end{itemize}
-\end{block}
-\end{frame}
-
 
 
 \begin{frame}
@@ -168,7 +154,7 @@ El vector \(\vec{r}\) tiene
 Tendríamos seis términos según la regla de la cadena.\\
 }
 \onslide<3->{
-Pero \(\hat{x}, \hat{y}, \hat{z}\) no varían con \(t\) y por tanto
+Pero los versores cartesianos \(\hat{x}, \hat{y}\) y \(\hat{z}\) no varían con \(t\) y por tanto
 \[
 \vec{v}= \dot{\vec{r}}= 
 \dv{x}{t} \hat{x}+
@@ -404,8 +390,8 @@ Para un objeto sobre el eje \(\hat{x}\) sometido a \(\vec{F}= F_o \hat{x}\)
 		\[
 			\vec{F}= m \ddot{\vec{r}} \Rightarrow
 			\begin{cases}
-				F_r = -m R \dot{\phi}^2= m g \cos{\phi} - N \\
-				F_\phi = m R \ddot{\phi}= -m g \sen{\phi}
+				F_r = m g \cos{\phi} - N = -m R \dot{\phi}^2\\
+				F_\phi = -m g \sen{\phi} = m R \ddot{\phi}
 			\end{cases}
 		\]
 		\pause
@@ -470,7 +456,9 @@ Para un objeto sobre el eje \(\hat{x}\) sometido a \(\vec{F}= F_o \hat{x}\)
 			\dot{\vec{r}} = \dot{r} \hat{r} + r \dot{\phi} \hat{\phi}
 		\]
 		suele escribirse
-		\[ v_r = \dot{r} \quad v_\phi= r \omega \]
+		\[
+			v_r = \dot{r} \quad v_\phi = r \dot{\phi} = r \omega
+		\]
 		\(v_\phi\): velocidad tangencial
 		\end{block}
 	\end{column}

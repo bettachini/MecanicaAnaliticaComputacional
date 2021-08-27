@@ -108,29 +108,28 @@ El vector \(\vec{r}\) tiene
 
 \begin{frame}
 \begin{block}{Vector posición}
-    \begin{columns}[c]
-        \begin{column}{0.65\textwidth}
-            \includegraphics[width=\textwidth]{taylor1_1}
-        \end{column}
-        \begin{column}{0.35\textwidth}
-            En coordenadas cartesianas: \(x,y,z\)
-            \[
-                \vec{r}= x \hat{x}+ y \hat{y}+ z \hat{z}
-            \]
-            \pause
-            - \(y\) componente de coordenada\\
-            - \(\hat{y}\) versor de cada eje\\
-            \bigskip
-            \pause
-            A veces se sintetiza
-            \(\vec{r}= (x,y,z)\)
-        \end{column}
-    \end{columns}
+	\begin{columns}[c]
+		\begin{column}{0.65\textwidth}
+			\includegraphics[width=\textwidth]{taylor1_1}
+		\end{column}
+		\begin{column}{0.35\textwidth}
+			En coordenadas cartesianas: \(x,y,z\)
+			\[
+				\vec{r}= x \hat{x}+ y \hat{y}+ z \hat{z}
+			\]
+			\pause
+			- \(y\) componente de coordenada\\
+			- \(\hat{y}\) versor de cada eje\\
+			\bigskip
+			\pause
+			A veces se sintetiza
+			\(\vec{r}= (x,y,z)\)
+		\end{column}
+	\end{columns}
 \end{block}
 \pause
 \begin{block}{}
-    En general: \(\vec{r}= r_1 \hat{e}_1 +  r_2 \hat{e}_2 + r_3 \hat{e}_3\) con \(\hat{e}_i\) de cada sistema de coordenadas.
-    Por ahora seguimos con cartesianas.
+    En general: \(\vec{r}= r_1 \hat{e}_1 +  r_2 \hat{e}_2 + r_3 \hat{e}_3\) con los \(\hat{e}_i\) de cilíndricas, esféricas, etc.
 \end{block}
 \end{frame}
 
@@ -147,14 +146,15 @@ El vector \(\vec{r}\) tiene
 \onslide<2->{
 \[
 % \vec{v}= \dot{\vec{r}}= \dv{\vec{r}}{t}=
-\vec{v}= \dv{x}{t} \hat{x}+ x \dv{\hat{x}}{t} + 
-\dv{y}{t} \hat{y}+ y \dv{\hat{y}}{t} + 
-\dv{z}{t} \hat{z}+ z \dv{\hat{z}}{t}
+\vec{v} = 
+\dv{r_1}{t} \hat{e}_1 + r_1 \dv{\hat{e}_1}{t} + 
+\dv{r_2}{t} \hat{e}_2 + r_2 \dv{\hat{e}_2}{t} + 
+\dv{r_3}{t} \hat{e}_3 + r_3 \dv{\hat{e}_3}{t}
 \]
 Tendríamos seis términos según la regla de la cadena.\\
 }
 \onslide<3->{
-Pero los versores cartesianos \(\hat{x}, \hat{y}\) y \(\hat{z}\) no varían con \(t\) y por tanto
+En el caso cartesiano \(\hat{x}, \hat{y}\) y \(\hat{z}\) no varían con \(t\)
 \[
 \vec{v}= \dot{\vec{r}}= 
 \dv{x}{t} \hat{x}+
@@ -419,7 +419,7 @@ Para un objeto sobre el eje \(\hat{x}\) sometido a \(\vec{F}= F_o \hat{x}\)
   \begin{column}{0.6\textwidth}
 		\begin{block}{Momento angular {\tiny (momento cinético)}}
 		\[
-			\vec{L}=  \vec{r} \cp \vec{p}
+			\vec{L} = \vec{r} \cp \vec{p}
 		\]
 		\end{block}
 		\uncover<2>{
@@ -432,9 +432,9 @@ Para un objeto sobre el eje \(\hat{x}\) sometido a \(\vec{F}= F_o \hat{x}\)
 		%}
 		%{
 			\[
-				\dot{\vec{L}} = \cancel{ \dot{\vec{r}} \cp \vec{p}} + \vec{r} \cp \dot{\vec{p}}
+							\dot{\vec{L}} = \cancel{ \dot{\vec{r}} \cp \vec{p}} + \vec{r} \cp \dot{\vec{p}}
 			\]
-			pues \(\vec{p}= m \dot{\vec{r}} \implies \vec{p} || \dot{\vec{r}} \implies \dot{\vec{r}} \cp \vec{p} = 0 \)
+			pues \( \vec{p}= m \dot{\vec{r}} \implies \vec{p} || \dot{\vec{r}} \implies \dot{\vec{r}} \cp \vec{p} = 0 \)
 			\pause
 			\[
 				\vec{\tau} = \dot{\vec{L}}= \vec{r} \cp \vec{F}
@@ -469,7 +469,7 @@ Para un objeto sobre el eje \(\hat{x}\) sometido a \(\vec{F}= F_o \hat{x}\)
 		\begin{block}{Momento de inercia}
 			Para una partícula
 			\[
-				\vec{L}= \vec{r} \cp m \dot{\vec{r}} = m r^2 \omega= I \omega
+				\vec{L}= \vec{r} \cp m \dot{\vec{r}} = m r^2 \vec{\omega} = I \vec{\omega}
 			\]
 			% \(I\): momento de inercia. 
 		\end{block}

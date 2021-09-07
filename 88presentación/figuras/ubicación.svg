@@ -14,7 +14,10 @@
    version="1.2"
    id="svg2811"
    sodipodi:docname="ubicación.svg"
-   inkscape:version="1.0.2 (e86c870879, 2021-01-15)">
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
+   inkscape:export-filename="/home/vbettachini/documents/universitet/unlam/gitMecánicaGeneral/88presentación/figuras/ubicación.png"
+   inkscape:export-xdpi="72.900002"
+   inkscape:export-ydpi="72.900002">
   <metadata
      id="metadata2815">
     <rdf:RDF>
@@ -23,7 +26,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -41,7 +44,7 @@
      id="namedview2813"
      showgrid="false"
      inkscape:zoom="0.7642239"
-     inkscape:cx="388.45796"
+     inkscape:cx="52.823338"
      inkscape:cy="209.79256"
      inkscape:window-x="0"
      inkscape:window-y="2"
@@ -50,7 +53,8 @@
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-bottom="0"
+     inkscape:document-rotation="0" />
   <defs
      id="defs2012">
     <g
@@ -6687,7 +6691,7 @@
        x="294.06845"
        y="142.65657"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:helvetica;-inkscape-font-specification:helvetica;stroke-width:0.75"
-       id="tspan2876"></tspan><tspan
+       id="tspan2876" /><tspan
        sodipodi:role="line"
        x="294.06845"
        y="168.27188"

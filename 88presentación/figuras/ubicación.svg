@@ -8,9 +8,9 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="711.10767pt"
-   height="275.09311pt"
-   viewBox="0 0 711.10765 275.09313"
+   width="816.72766pt"
+   height="348.12698pt"
+   viewBox="0 0 816.72764 348.12701"
    version="1.2"
    id="svg2811"
    sodipodi:docname="ubicación.svg"
@@ -26,7 +26,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -44,8 +44,8 @@
      id="namedview2813"
      showgrid="false"
      inkscape:zoom="0.7642239"
-     inkscape:cx="52.823338"
-     inkscape:cy="209.79256"
+     inkscape:cx="262.13871"
+     inkscape:cy="311.4599"
      inkscape:window-x="0"
      inkscape:window-y="2"
      inkscape:window-maximized="1"
@@ -4234,7 +4234,7 @@
   </defs>
   <g
      id="surface2481"
-     transform="translate(-23.24216,-3.5276555)"
+     transform="matrix(1.3275807,0,0,1.3275807,-30.855843,-13.223907)"
      inkscape:export-xdpi="64.800003"
      inkscape:export-ydpi="64.800003">
     <g
@@ -6657,64 +6657,64 @@
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:20px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75"
-     x="294.06845"
-     y="14.58"
+     x="399.68845"
+     y="51.096939"
      id="text2837"
      inkscape:export-xdpi="64.800003"
      inkscape:export-ydpi="64.800003"><tspan
        sodipodi:role="line"
-       x="294.06845"
-       y="14.58"
+       x="399.68845"
+       y="51.096939"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:helvetica;-inkscape-font-specification:helvetica;stroke-width:0.75"
        id="tspan2839">Nexo entre</tspan><tspan
        sodipodi:role="line"
-       x="294.06845"
-       y="40.195312"
+       x="399.68845"
+       y="76.71225"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:helvetica;-inkscape-font-specification:helvetica;stroke-width:0.75"
        id="tspan2841">- básicas: las instrumenta </tspan><tspan
        sodipodi:role="line"
-       x="294.06845"
-       y="65.810623"
+       x="399.68845"
+       y="102.32757"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:helvetica;-inkscape-font-specification:helvetica;stroke-width:0.75"
        id="tspan2845">- aplicadas: provee herramientas </tspan><tspan
        sodipodi:role="line"
-       x="294.06845"
-       y="91.425941"
+       x="399.68845"
+       y="127.94288"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:helvetica;-inkscape-font-specification:helvetica;stroke-width:0.75"
        id="tspan2870" /><tspan
        sodipodi:role="line"
-       x="294.06845"
-       y="117.04125"
+       x="399.68845"
+       y="153.5582"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:helvetica;-inkscape-font-specification:helvetica;stroke-width:0.75"
        id="tspan2847">Objetivo: describir la dinámica de sistemas</tspan><tspan
        sodipodi:role="line"
-       x="294.06845"
-       y="142.65657"
+       x="399.68845"
+       y="179.17351"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:helvetica;-inkscape-font-specification:helvetica;stroke-width:0.75"
        id="tspan2876" /><tspan
        sodipodi:role="line"
-       x="294.06845"
-       y="168.27188"
+       x="399.68845"
+       y="204.78882"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:helvetica;-inkscape-font-specification:helvetica;stroke-width:0.75"
        id="tspan2878">Modelizar ⇒ simplificar la física</tspan><tspan
        sodipodi:role="line"
-       x="294.06845"
-       y="193.88719"
+       x="399.68845"
+       y="230.40413"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:helvetica;-inkscape-font-specification:helvetica;stroke-width:0.75"
        id="tspan3014" /><tspan
        sodipodi:role="line"
-       x="294.06845"
-       y="219.5025"
+       x="399.68845"
+       y="256.01944"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:helvetica;-inkscape-font-specification:helvetica;stroke-width:0.75"
        id="tspan2849">Generar ecuaciones diferenciales de</tspan><tspan
        sodipodi:role="line"
-       x="294.06845"
-       y="245.11781"
+       x="399.68845"
+       y="281.63477"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:helvetica;-inkscape-font-specification:helvetica;stroke-width:0.75"
        id="tspan2851">         - dinámica de cada parte del sistema</tspan><tspan
        sodipodi:role="line"
-       x="294.06845"
-       y="270.73312"
+       x="399.68845"
+       y="307.25006"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;font-family:helvetica;-inkscape-font-specification:helvetica;stroke-width:0.75"
        id="tspan2853">         - esfuerzos que cada parte debe soportar</tspan></text>
 </svg>

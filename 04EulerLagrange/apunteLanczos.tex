@@ -476,18 +476,20 @@ Lo único que cambia en cada enfoque es como se escribe el Lagrangiano.
 %    L= L(q_i, \dot{q}_i, t) = T - V,
 %    \label{Landau11}
 %\end{equation}
-¿Como obtener el valor estacionario de la acción \(S\)?
+¿Cómo obtener el valor estacionario de la acción \(S\)?
 La respuesta a como asegurar la condición \(\delta S= 0\) está ligada al concepto de desplazamientos virtuales (ver sección \ref{desplazamientoVirtual}).
 Se trata justamente de explorar el conjunto de variaciones sobre \((q_i, \dot{q}_i, t)\) que efectivamente aseguren minimizar \(S= \int L(q_i, \dot{q}_i, t) \dd t\).
 
 Empezamos analizando la variación del integrando de \(S\), es decir el Lagrangiano ante una variación de coordenadas generalizadas, \(\overline{q_i (t)}= q_i(t) + \delta q_i = q_i (t)+ \epsilon \tilde{q}_i (t)\), y velocidades generalizadas
-\begin{equation}\label{Lanczos210.1}
-    \delta L(q_i, \dot{q}_i, t) = 
-    L(q_i+ \epsilon \tilde{q}_i, \dot{q}_i+ \epsilon \dot{\tilde{q}}_i, t) - L(q_i, \dot{q}_i, t)=
-    \epsilon \pqty{\pdv{L}{q_i} \tilde{q}_i + \pdv{L}{\dot{q}_i} \dot{\tilde{q}}_i }.
+\begin{align}\label{Lanczos210.1}
+	\delta L(q_i, \dot{q}_i, t)
+		&= L(q_i+ \delta{q}_i, \dot{q}_i+ \delta \dot{q}_i, t) - L(q_i, \dot{q}_i, t)
+    = \pqty{\pdv{L}{q_i} \delta q_i + \pdv{L}{\dot{q}_i} \delta \dot{q}_i } \notag \\
+		&= L(q_i+ \epsilon \tilde{q}_i, \dot{q}_i+ \epsilon \dot{\tilde{q}}_i, t) - L(q_i, \dot{q}_i, t)
+    = \epsilon \pqty{\pdv{L}{q_i} \tilde{q}_i + \pdv{L}{\dot{q}_i} \dot{\tilde{q}}_i }.
     \tag{Lanczos 210.1}
-\end{equation}
-En tal caso la variación de \(S\) queda
+\end{align}
+Con esto puede escribirse la variación de \(S\) como
 \begin{equation}\label{Lanczos210.2}
     \delta S= \delta \int_{t_1}^{t_2 } L \dd{t} = \int_{t_1}^{t_2 } \delta L \dd{t} =
     \epsilon \int_{t_1}^{t_2 } \pqty{\pdv{L}{q_i} \tilde{q}_i + \pdv{L}{\dot{q}_i} \dot{\tilde{q}}_i } \dd{t}.
@@ -511,11 +513,12 @@ El primer término de la ecuación \eqref{Lanczos210.4} se anula pues evalúa en
 % \end{equation}
 Si \(S\) debe ser estacionaria, es decir \(\delta S=0\), es claro que la integral debe ser nula ante \(\delta q_i\) arbitrarios.
 Esto se cumple si y solo si\footnote{
-Si buscamos que \(S\) sea estacionaria, es decir \(\delta S=0\), tenemos que asegurar que la integral a la derecha de la ecuación \eqref{Lanczos210.5} sea nula para valores arbitrarios de \(\tilde{q}_i (t)\), y que esto se cumplirá solo si la cantidad entre paréntesis \(E(t)= \pdv{L}{q_i} - \dv{t} \pdv{L}{\dot{q}_i}\), se anula entre \(t_1\) y \(t_2\).
+Si buscamos que \(S\) sea estacionaria, es decir \(\delta S=0\), tenemos que asegurar que la integral a la derecha de la ecuación \eqref{Lanczos210.5} sea nula para valores arbitrarios de \(\tilde{q}_i (t)\), y esto se cumplirá solo si la cantidad entre paréntesis \(E(t)= \pdv{L}{q_i} - \dv{t} \pdv{L}{\dot{q}_i}\), se anula entre \(t_1\) y \(t_2\).
 % Si buscamos que \(S\) sea estacionaria, es decir \(\delta S=0\), tenemos que asegurar que la integral sea nula para valores arbitrarios de \(\tilde{q}_i (t)\), y esto se cumplirá solo si la cantidad entre paréntesis \(E(t)= \pdv{L}{q_i} - \dv{t} \pdv{L}{\dot{q}_i}\), se anula entre \(t_1\) y \(t_2\).
 
-La demostración matemática aprovecha el hecho de que podemos elegir un caso particular de de todas las arbitrarias \(\tilde{q}_i (t)\) para que esta sea nula tal vez a excepción de un pequeño intervalo en torno a \(t= \xi\), es decir que ya no podemos variar \(q_i(t)\) mas que excepto allí.
-En un intervalo corto cualquier función continua es casi constante, y por tanto \(E(t)\) podría sacarse de la integral para aproximar la igualdad de la ecuación \eqref{Lanczos210.5} como
+La demostración matemática aprovecha el hecho de que podemos elegir un caso particular de de todas las arbitrarias \(\tilde{q}_i (t)\) para que esta sea nula tal vez a excepción de un corto intervalo \(\xi\) en torno a un determinado \(t\) de todo el intervalo (\(t_1 < t < t_2\)).
+Esto haría que solo en este intervalo \(q_i(t)\) pueda variar.
+En un intervalo corto de \(t\) cualquier función continua es casi constante, y por tanto \(E(t)\) podría sacarse de la integral para aproximar la igualdad de la ecuación \eqref{Lanczos210.5} como
 \begin{equation}\label{Lanczos210.8}
     \delta S \simeq \epsilon E(\xi) \int_{\xi+ \rho}^{\xi - \rho} \tilde{q}_i (t) \dd{t}.
     \tag{Lanczos 210.8}

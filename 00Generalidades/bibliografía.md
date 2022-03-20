@@ -1,7 +1,11 @@
 # Bibliografía
 
+![UNLaM | DIIT](../LaTeX/ambos.png "UNLaM | DIIT")  
+![by-nc-sa.png](../LaTeX/by-nc-sa.png "CC-BY-NC-SA") 2022 [Víctor A. Bettachini](mailto:vbettachini@unlam.edu.ar)  
+<!---
 ![UNLaM | DIIT](figuras/ambos.png "UNLaM | DIIT")  
 © 2021 [Víctor A. Bettachini](mailto:vbettachini@unlam.edu.ar)  
+-->
 Mecánica General  
 Departamento de Ingeniería e Investigación Tecnológica  
 Universidad Nacional de La Matanza   

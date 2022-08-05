@@ -1,0 +1,21 @@
+\babel@toc {spanish}{}
+\contentsline {section}{\numberline {1}Mecánica: enfoque vectorial vs. analítico}{2}{section.1}%
+\contentsline {section}{\numberline {2}El enfoque analítico de la mecánica }{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Trabajo de una fuerza}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Coordenadas generalizadas}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Función trabajo | Fuerzas mono y poligénicas}{5}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Principio de trabajos virtuales}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}¿Qué es un desplazamiento virtual? | Valor estacionario}{6}{subsection.3.1}%
+\contentsline {section}{\numberline {4}Principio de d'Alembert}{7}{section.4}%
+\contentsline {section}{\numberline {5}Principio de Hamilton: de d'Alembert al Lagrangiano}{7}{section.5}%
+\contentsline {section}{\numberline {6}Ecuación de Euler-Lagrange}{10}{section.6}%
+\contentsline {section}{\numberline {7}Cantidades conservadas}{11}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Coordenadas ignorables| Momentos generalizados}{11}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Conservación de la energía}{12}{subsection.7.2}%
+\contentsline {section}{\numberline {8}De la formulación Lagrangiana a la Hamiltoniana}{13}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Ecuaciones canónicas del movimiento | Hamiltoniano}{13}{subsection.8.1}%
+\contentsline {section}{\numberline {A}Notas}{14}{appendix.Alph1}%
+\contentsline {subsection}{\numberline {A.1}Sistemas holónomos y no holónomos}{14}{subsection.Alph1.1}%
+\contentsline {subsubsection}{\numberline {A.1.1}Multiplicador de Lagrange}{14}{subsubsection.Alph1.1.1}%
+\contentsline {subsection}{\numberline {A.2}Fuerzas poligénicas vs. monogénicas}{14}{subsection.Alph1.2}%
+\contentsline {subsection}{\numberline {A.3}Sistemas reónomos y esclerónomos, conservación de la energía}{15}{subsection.Alph1.3}%

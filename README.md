@@ -1,6 +1,6 @@
 # UNLaM_MecanicaGeneral
 
-Repositorio de la asignatura [Mecánica General](https://ingenieria.unlam.edu.ar/preview.php?seccion=3&idArticulo=510)  
+Repositorio de la asignatura [Mecánica Analítica Computacional](https://ingenieria.unlam.edu.ar/preview.php?seccion=3&idArticulo=510)  
 Carrera de grado en [Ingeniería Mecánica](https://ingenieria.unlam.edu.ar/index.php?seccion=3&idArticulo=371)  
 [Departamento de Ingeniería e Investigaciones Tecnológícas](https://ingenieria.unlam.edu.ar/)  
 Universidad Nacional de La Matanza  

@@ -79,7 +79,7 @@ El vector \(\vec{r}\) tiene
 			\vec{b}= b_i \hat{i} + b_j \hat{j}+ b_k \hat{k}
 		\]
 		\[
-			\vec{c} = \vec{a} + \vec{b} = (a_i+b_i) \hat{i} + (a_j+b_j) \hat{j}+ (a_k+c_k) \hat{k}
+			\vec{c} = \vec{a} + \vec{b} = (a_i+b_i) \hat{i} + (a_j+b_j) \hat{j}+ (a_k+b_k) \hat{k}
 		\]
 	\end{block}
 
@@ -94,11 +94,12 @@ El vector \(\vec{r}\) tiene
 		\item así el módulo es \(r = |\vec{r}| = \sqrt{\vec{r} \vec{r}}\) 
 	\end{itemize}
 	\pause 
-	\item vectorial: \(\vec{r} \cross \vec{s} = \mdet{
-	\hat{i} & \hat{j} & \hat{k} \\
-	r_i & r_j & r_k\\
-	s_i & s_j & s_k
-	}
+	\item vectorial: \(\vec{r} \cross \vec{s} =
+	\begin{vmatrix}
+		\hat{i} & \hat{j} & \hat{k} \\
+		r_i & r_j & r_k\\
+		s_i & s_j & s_k
+	\end{vmatrix}
 	= (r_j s_k - r_k s_j) \hat{i} + (r_k s_i - r_i s_k) \hat{j} + (r_i s_j - r_j s_i) \hat{k} 
 	\)
 \end{itemize}

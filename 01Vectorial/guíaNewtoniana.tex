@@ -17,51 +17,6 @@
 \section*{Ecuaciones de la dinámica - 2"a ley de Newton}
 
 
-\item
-\textbf{Las fuerzas conservativas, las dependientes de un potencial | Péndulo}\\
-\begin{minipage}[t][1.8cm]{0.73\textwidth}
-%\textbf{Péndulo} [Marion () ex. 7.2] \\
-Obtenga la ecuación diferencial que describe la dinámica de una pesa que ``pendulea'' en el extremo de una cuerda.
-\end{minipage}
-\begin{minipage}[c][3.2cm][t]{0.2\textwidth}
-%	\includegraphics[width=\textwidth]{marion_fig7_1}
-%	\includegraphics[width=\textwidth]{\detokenize{pénduloHorizontal}}
-	\begin{tikzpicture}[scale= 1.0]
-	\draw [arrows=-latex] (-1,2) -> (-1,1) node [above=15, right=2] {\(\vec{g}\)}; % g vertical
-		\draw [ultra thick] (-1.5,3) -- (2,3);
-		\fill [pattern = north east lines] (-1.5,3) rectangle (2,3.2); % techo
-		\draw [dashed] (0,3) -- (0,-.25);	% vertical
-		\draw [thick] (0,3) -- +(-60:3) node[midway,above,right=2] {\(\ell\)};	% inclinada +:relativa, -60 grados, longitud 3
-		\shade [ball color=black!80] ($(0,3)+(-60:3)$) circle(0.25) node [] {\color{white} $m$};
-    \draw [arrows=-latex] (0,.4) -> (1.25,.4) node [midway, above] {\( \psi \)}; % desplazamiento horizontal
-		\draw [arrows=-latex] (0,0) arc [start angle=-90, end angle=-65, radius=3] node [below=12, left=8] {\( \varphi \)};
-	\end{tikzpicture}
-\end{minipage}
-\begin{enumerate}
-	\item Asumiendo que el péndulo oscila dentro del plano \(\hat{x}, \hat{y}\).
-		¿En que sistema de coordenadas resolverá el problema? 
-		¿Cuál coordenada es relevante para describir la dinámica? 
-	\item Enumere las aproximaciones del modelo de péndulo que resolverá que lo diferencian de uno que puede armar en el laboratorio.
-	\item Calcule la energía potencial de la pesa en el campo gravitatorio.
-	¿Para qué sirve eso?
-	Las fuerzas que surgen de un campo son fácilmente calculables usando que \(\vec{F} = - \vec{\nabla} V\), es decir, \emph{la fuerza es igual al negativo del gradiente del potencial}.
-	\item Escriba la 2.a ley de Newton y proyecte en la dirección de la coordenada relevante.
-	\item Resuelva la ecuación de la dinámica y obtenga la frecuencia de oscilación.
-\end{enumerate}
-%\vspace{-2.5cm}
-
-
-%\subsection*{Fuerza como gradiente de un potencial}
-%% Vizcaino carpeta
-%\item Una partícula esta sometida a una fuerza \(\vec{F}(x)= \left( -k x + \frac{a}{x^3}\right) \hat{x}\)
-%\begin{enumerate}
-%    \item Hallar el potencial \(U(x)\) y graficarlo.
-%    \item Discutir los tipos de movimientos posibles.
-%    \item Determinar las posiciones de equilibrio estable y encuentre la solución general de la dinámica de la partícula, \(\vec{r}(t)\).
-%    \item Interpretar el movimiento en el límite \(E^2 \gg k a\). ¿Cuanto vale el periodo de las oscilaciones?
-%    \item Ídem. anterior en el límite \(E^2 \rightarrow k a\) con \(E^2 > k a\).
-%\end{enumerate}
-
 
 
 %\item

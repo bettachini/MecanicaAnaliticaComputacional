@@ -1,6 +1,9 @@
 *Solved.*
 .ipynb_checkpoints/
 *.log
+*.loc
+*.soc
+*.toc
 *.aux
 *.out
 *.bak

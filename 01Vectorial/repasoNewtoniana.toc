@@ -1,4 +1,4 @@
-\babel@toc {spanish}{}
+\babel@toc {spanish}{}\relax 
 \beamer@sectionintoc {1}{Magnitudes vectoriales}{2}{0}{1}
 \beamer@sectionintoc {2}{Leyes de Newton}{15}{0}{2}
 \beamer@sectionintoc {3}{Sistemas de coordenadas}{25}{0}{3}

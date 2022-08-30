@@ -1,6 +1,6 @@
 \documentclass[11pt, spanish, a4paper, twoside]{article}
 
-\input{../LaTeX/introUNLaM}
+\input{../figurasLaTeX/introUNLaM}
 
 \begin{document}
 \begin{center}
@@ -67,19 +67,20 @@ Para este sistema de poleas determine:
 
 
 
-\item 
+\item
+\begin{minipage}[t][5cm]{0.65\textwidth}
 \textbf{Pesos enlazados por una cuerda} [Taylor 7.50]\\
-Una pesa de de masa \(m_1\) está posada sobre una mesa horizontal.
-Está atada a una cuerda dispuesta horizontalmente hasta una pequeña polea (masa despreciable) que no ofrece fricción en el borde de la mesa.
-En el otro extremo de la cuerda cuelga otra pesa de masa \(m_2\).
-
-Llame las distancias a \(m_1\) y \(m_2\) desde la polea \(x\) e \(y\) respectivamente.
-Estas satisfacen la ecuación de restricción \(f (x, y) = x + y -l = 0\), siendo \(l\) la longitud de la cuerda.
+Una partícula de de masa \(m\) posada sobre una mesa horizontal está atada a otra de masa \(M\) con una cuerda de longitud \(l\) que atraviesa un hueco en una mesa que no ofrece fricción.
+La última pende vertical con una distancia a la mesa \(y = l - r\) función de la distancia de la primera al hueco \(r\).
 \begin{enumerate}
-\item Escriba las dos ecuaciones de Lagrange modificadas y resuélvalas (juntos con la ecuación de restricción) para \(x, y\) y para el multiplicador de Lagrange \(\lambda\).
-\item Encuentre las fuerzas de tensión sobre ambas masas.
-\item Verifique sus respuestas resolviendo el problema con la metodología Newtoniana.
+\item Asumiendo que \(\theta\) no necesariamente es constante escriba las ecuaciones de Lagrange para \(r\) e  \(y\).
+\item Resuélva el sistema para \(r, y\) y el multiplicador de Lagrange \(\lambda\) encontrando las fuerzas de tensión sobre ambas masas.
 \end{enumerate}
+\end{minipage}
+\begin{minipage}[c][0cm][t]{0.3\textwidth}
+	\includegraphics[width=\textwidth]{cmchap6_fig6_5}
+\end{minipage}
+
 
 
 

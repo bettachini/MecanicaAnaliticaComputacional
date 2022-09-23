@@ -1,14 +1,11 @@
-# Bibliografía
+# Bibliografía | Mecánica analítica computacional
 
-![UNLaM | DIIT](../LaTeX/ambos.png "UNLaM | DIIT")  
-![by-nc-sa.png](../LaTeX/by-nc-sa.png "CC-BY-NC-SA") 2022 [Víctor A. Bettachini](mailto:vbettachini@unlam.edu.ar)  
+![UNLaM | DIIT](../figurasLaTeX/ambos.png "UNLaM | DIIT")  
 <!---
+ ![by-nc-sa.png](../figurasLaTeX/by-nc-sa.png "CC-BY-NC-SA") 2022 [Víctor A. Bettachini](mailto:vbettachini@unlam.edu.ar)  
 ![UNLaM | DIIT](figuras/ambos.png "UNLaM | DIIT")  
 © 2021 [Víctor A. Bettachini](mailto:vbettachini@unlam.edu.ar)  
 -->
-Mecánica General  
-Departamento de Ingeniería e Investigación Tecnológica  
-Universidad Nacional de La Matanza   
 
 ___
 
@@ -30,3 +27,4 @@ Descárgue este listado a su dispositivo y haga _doble clic_ en ellos para abrir
 -	[Ferdinand Pierre Beer, E. Russell Johnston, y Elliot R Eisenberg. Mecánica vectorial para ingenieros Dinámica. 9.a. McGraw-Hill, 2010.](https://mega.nz/#!6UQDVCgJ!G6VvNkdJ8azLwDVdNcKnC0MNhy07zawyxdnlZQG8vWk)
 -	[Ferdinand Pierre Beer, E. Russell Johnston, y Elliot R Eisenberg. Mecánica vectorial para ingenieros Estática. México: McGraw-Hill, 2007.](https://mega.nz/#!fJQhFIhS!CWTe2ATXi-9fp_kFG0ZhlEeFuFZzvjEreq6F5i-uQTc)
 - [Cornelius Lanczos. The Variational Principles of Mechanics. University of Toronto press, 1952.](https://mega.nz/file/3FInUCYT#AuIn60lyVdc7Mhg2TJmHiVQKeSccd9e9VCED1wjc61A)
+- [Douglas Cline. Variational Principles in Classical Mechanics. University of Rocherster River Campus Libraries, Rochester, Nueva York, E.U.A. 2021.](http://classicalmechanics.lib.rochester.edu/)

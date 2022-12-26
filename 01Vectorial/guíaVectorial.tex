@@ -1,0 +1,130 @@
+\documentclass[11pt, spanish, a4paper, twoside]{article}
+
+\input{../figurasLaTeX/introUNLaM}
+
+\begin{document}
+\begin{center}
+  % \textsc{\large Mecánica general}\\
+	\textsc{\large Vectores posición y velocidad. Energía cinética}
+\end{center}
+%De poder resolver estos problemas en forma autónoma puede asumir que adquirió los conocimientos mínimos sobre los temas abordados.
+%No dude en consultar a docentes y compañeros si no puede terminarlos.
+% Los problemas marcados con * son opcionales.
+
+
+			
+
+\begin{enumerate}
+	\section*{Vector posición}
+	
+	\item
+		\begin{minipage}[t][6cm]{0.55\textwidth}
+			\textbf{Posición suma}\\
+			\begin{enumerate}
+				\item Guardar en una variable llamada \verb"a_r" un vector que indique la posición $\vec{r}_a = 3 \hat{e}_x + 0 \hat{e}_y + 5 \hat{e}_z$. 
+				\item Guardar $\vec{r}_b = -5 \hat{e}_x + (-5) \hat{e}_y + 7 \hat{e}_z$ en \verb"b_r".
+				\item Restar las variables correspondientes para realizar $\Delta \vec{r}_{a \to b} = \vec{r}_b - \vec{r}_a$ y guardar el resultado en \verb"ab_deltaR".
+				\item Guardar en \verb"c_r" el resultado de $\vec{r}_a +\Delta \vec{r}_{a \to b}$.
+				\item Para verificar que todo se hizo bien leer \verb"c_r" y comprobar que $\vec{r}_c = \vec{r}_b$.
+			\end{enumerate}
+		\end{minipage}
+		\begin{minipage}[c][1cm][t]{0.4\textwidth}
+			% https://tex.stackexchange.com/questions/117140/easiest-way-to-draw-a-3d-coordinate-system-with-axis-labels-and-ticks-in-tikz
+			\begin{tikzpicture}[x=0.5cm,y=0.5cm,z=0.3cm, scale=0.85]
+				% The axes
+				\draw[-LaTeX] (xyz cs:x=-8.5) -- (xyz cs:x=8.5) node[above] {$x$};
+				\draw[-LaTeX] (xyz cs:y=-5.5) -- (xyz cs:y=8.5) node[right] {$z$};
+				\draw[-LaTeX] (xyz cs:z=-8.5) -- (xyz cs:z=8.5) node[right] {$y$};
+				% The thin ticks
+				\foreach \cooZ in {-5,-4,...,8} {
+					\draw (-1.5pt,\cooZ) -- (1.5pt,\cooZ);
+				}
+				\foreach \coo in {-8,-7,...,8}
+				{
+					\draw (\coo,-1.5pt) -- (\coo,1.5pt);
+					\draw (xyz cs:y=-0.15pt,z=\coo) -- (xyz cs:y=0.15pt,z=\coo);
+				}
+				% The thick ticks
+				\foreach \coo in {-5,5}
+				{
+					\draw[thick] (\coo,-3pt) -- (\coo,3pt) node[below=6pt] {\coo};
+					\draw[thick] (-3pt,\coo) -- (3pt,\coo) node[left=6pt] {\coo};
+					\draw[thick] (xyz cs:y=-0.3pt,z=\coo) -- (xyz cs:y=0.3pt,z=\coo) node[below=8pt] {\coo};
+				}
+				% base of versors
+				\coordinate (O) at (0,0,0);
+				\draw[thick,blue,-LaTeX] (O) -- (1,0,0) node[anchor=north]{$\hat{e}_x$};
+				\draw[thick,blue,-LaTeX] (O) -- (0,0,1) node[anchor=west]{$\hat{e}_y$};
+				\draw[thick,blue,-LaTeX] (O) -- (0,1,0) node[anchor=east]{$\hat{e}_z$};
+				% Dashed lines for the points
+				\draw[dashed]
+				(xyz cs:z=-5) --
+				+(0,7) coordinate (u) --
+				(xyz cs:y=7) --
+				+(-5,0) --
+				++(xyz cs:x=-5,z=-5) coordinate (v) --
+				+(0,-7) coordinate (w) --
+				cycle;
+				\draw[dashed] (u) -- (v);
+				\draw[dashed] (-5,7) -- (-5,0) -- (w);
+				\draw[dashed] (3,0) |- (0,5);
+				% Dots and labels for
+				\coordinate (a) at (3,5);
+				\coordinate (b) at (v);
+				\node[fill,circle,inner sep=1.5pt,label={above right:$(3,0,5)$}] at (a) {};
+				\node[fill,circle,inner sep=1.5pt,label={above right:$(-5,-5,7)$}] at (b) {};
+				\draw[red,-LaTeX] (O) -- (a) node [midway, above, left]{$\vec{r}_a$};
+				\draw[red,-LaTeX] (O) -- (b) node [midway, below]{$\vec{r}_b$};
+				% % The origin
+				% \node[align=center] at (3,-3) (ori) {(0,0,0)\\\text{origen}};
+				% \draw[-LaTeX,help lines] (ori) .. controls (1,-2) and (1.2,-1.5) .. (0,0,0);
+			\end{tikzpicture}
+		\end{minipage}
+
+
+	\item
+		\begin{minipage}[t][5cm]{0.5\textwidth}
+			\textbf{Posición en función de una variable}\\
+			Hay una partícula engarzada en un aro de radio $R$.
+			Por lo que desde su centro su radio es constante.
+			Basta para describir su posición conocer el ángulo $\varphi$
+			\begin{enumerate}
+				\item Cosa.
+			\end{enumerate}
+		\end{minipage}
+		\begin{minipage}[c][1cm][t]{0.45\textwidth}
+		\end{minipage}
+
+
+	\item
+		\begin{minipage}[t][5cm]{0.5\textwidth}
+			\textbf{Péndulo doble}\\
+			\begin{enumerate}
+				\item Cosa.
+			\end{enumerate}
+		\end{minipage}
+		\begin{minipage}[c][1cm][t]{0.45\textwidth}
+		\end{minipage}
+	
+		\item
+		\begin{minipage}[t][5cm]{0.5\textwidth}
+			\textbf{Péndulo con punto de suspensión libre}\\
+			\begin{enumerate}
+				\item Cosa.
+			\end{enumerate}
+		\end{minipage}
+		\begin{minipage}[c][1cm][t]{0.45\textwidth}
+		\end{minipage}
+	
+
+	\section*{Energía cinética}
+	\item
+		Calcule la energía cinética de un sistema de dos partícula de masas \(m_1\) y \(m_2\)  que se desplazan en una única dimensión.
+
+
+	\item
+		Calcule las energías cinéticas del sistema para ambos péndulos en sendos problemas anteriores.
+
+
+\end{enumerate}
+\end{document}

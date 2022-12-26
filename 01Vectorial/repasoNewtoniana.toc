@@ -1,5 +1,0 @@
-\babel@toc {spanish}{}
-\beamer@sectionintoc {1}{Magnitudes vectoriales}{2}{0}{1}
-\beamer@sectionintoc {2}{Leyes de Newton}{15}{0}{2}
-\beamer@sectionintoc {3}{Sistemas de coordenadas}{25}{0}{3}
-\beamer@sectionintoc {4}{Dinámica}{34}{0}{4}

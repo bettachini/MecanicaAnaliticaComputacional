@@ -1,4 +1,4 @@
-# UNLaM_MecanicaGeneral
+# MecanicaAnaliticaComputacional
 
 Repositorio de la asignatura [Mecánica Analítica Computacional](https://ingenieria.unlam.edu.ar/preview.php?seccion=3&idArticulo=510)  
 Carrera de grado en [Ingeniería Mecánica](https://ingenieria.unlam.edu.ar/index.php?seccion=3&idArticulo=371)  

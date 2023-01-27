@@ -18,7 +18,7 @@
 	\section*{Vector posición}
 	
 	\item
-		\begin{minipage}[t][6cm]{0.55\textwidth}
+		\begin{minipage}[t][5cm]{0.55\textwidth}
 			\textbf{Posición suma}\\
 			\begin{enumerate}
 				\item Guardar en una variable llamada \verb"a_r" un vector que indique la posición $\vec{r}_a = 3 \hat{e}_x + 0 \hat{e}_y + 5 \hat{e}_z$. 
@@ -83,47 +83,81 @@
 
 
 	\item
-		\begin{minipage}[t][5cm]{0.5\textwidth}
+		\begin{minipage}[t][2.5cm]{0.7\textwidth}
 			\textbf{Posición en función de una variable}\\
-			Hay una partícula engarzada en un aro de radio $R$.
-			Por lo que desde su centro su radio es constante.
-			Basta para describir su posición conocer el ángulo $\varphi$
+			Una partícula de masa \(m\) está engarzada en un aro de radio $R$, por lo que su radio medido desde el centro del aro es constante.
+			Basta entonces conocer el ángulo $\varphi$ para describir su posición.
 			\begin{enumerate}
-				\item Cosa.
+				\item Escríbala en coordenadas cartesianas.
+				\item Calcule la velocidad.
 			\end{enumerate}
 		\end{minipage}
-		\begin{minipage}[c][1cm][t]{0.45\textwidth}
+		\begin{minipage}[c][1.5cm][t]{0.15\textwidth}
+			\begin{tikzpicture}[x=0.5cm,y=0.5cm,z=0.3cm, scale=1]
+				% The axes
+				\draw [-LaTeX] (0,0) -- (5,0) node[above] {$x$};
+				\draw [-LaTeX] (0,0) -- (0,5) node[right] {$y$};
+				\draw [very thick] (0,0) circle [radius= 4];
+				\draw [-LaTeX, dashed] (1,0) arc [radius=1, start angle=0, end angle=300] node[midway,left] {$\varphi$};
+				\draw [dashed] (0,0) -- ($(0,0)+(-60:4)$) node [midway,right] {$R$}; 
+				\shade [ball color=black!80] ($(0,0)+(-60:4)$) circle(0.5) node [] {\color{white} $m$};
+			\end{tikzpicture}
 		\end{minipage}
 
 
-	\item
-		\begin{minipage}[t][5cm]{0.5\textwidth}
-			\textbf{Péndulo doble}\\
-			\begin{enumerate}
-				\item Cosa.
-			\end{enumerate}
-		\end{minipage}
-		\begin{minipage}[c][1cm][t]{0.45\textwidth}
-		\end{minipage}
-	
-		\item
-		\begin{minipage}[t][5cm]{0.5\textwidth}
-			\textbf{Péndulo con punto de suspensión libre}\\
-			\begin{enumerate}
-				\item Cosa.
-			\end{enumerate}
-		\end{minipage}
-		\begin{minipage}[c][1cm][t]{0.45\textwidth}
-		\end{minipage}
-	
 
 	\section*{Energía cinética}
-	\item
-		Calcule la energía cinética de un sistema de dos partícula de masas \(m_1\) y \(m_2\)  que se desplazan en una única dimensión.
+
+		\item
+		\begin{minipage}[t][4cm]{0.6\textwidth}
+			\textbf{Péndulo con punto de suspensión libre} [Landau \S5 ej. 2]\\
+			Péndulo plano de masa \(m_2\), cuyo punto de suspensión (de masa \(m_1\)) puede desplazarse en el mismo plano sobre una recta horizontal.\\
+			La cuerda que une las partículas de masas \(m_1\) y \(m_2\) se considera rígida (no se dobla) y por tanto mantiene una distancia constante de \(\ell\) entre ambas.\\
+			Escriba la energía cinética, \(T\) en función de las coordenadas indicadas por las figura: \(x, \phi\).
+		\end{minipage}
+		\begin{minipage}[c][1cm][t]{0.35\textwidth}
+			\includegraphics[width=\textwidth]{landauS52_fig2.png}
+		\end{minipage}
 
 
-	\item
-		Calcule las energías cinéticas del sistema para ambos péndulos en sendos problemas anteriores.
+		\item
+			\begin{minipage}[t][4cm]{0.7\textwidth}
+				\textbf{Péndulo doble} [Landau \S5 ej. 1]\\
+				Un péndulo doble oscila en un plano en función de las coordenadas generalizadas sugeridas por las figura.\\
+				Calcule su energía cinética.\\
+				% Ayuda: \( \cos(\alpha \pm \beta) = \cos{ \alpha} \cos{ \beta \mp \sin \alpha} \sin{ \beta } \)
+			\end{minipage}
+			\begin{minipage}[c][0.5cm][t]{0.3\textwidth}
+				\includegraphics[width=0.75\textwidth]{landauS52_fig1.png}
+			\end{minipage}
+
+
+		\item
+			\begin{minipage}[t][7cm]{0.55\textwidth}
+				\textbf{Péndulo con punto de suspensión en rotación} [Marion (e) ex. 7.5] [Landau \S5 ej. 3]\\
+				El punto de suspensión de un péndulo de longitud \(b\) se mueve en el plano plano se desplaza en un círculo vertical de radio \(a\) con una frecuencia constante \(\omega\).
+
+				Calcule la energía cinética para la partícula de masa \(m\).
+				\end{minipage}
+			\begin{minipage}[c][3cm][t]{0.5\textwidth}
+				\includegraphics[width=0.75\textwidth]{marion_fig7_3.png}
+				% \includegraphics[width=0.75\textwidth]{landauS52_fig3.png}
+			\end{minipage}
+
+
+
+		\item \begin{minipage}[t][4.5cm]{0.65\textwidth}
+			\textbf{Pesas acopladas rotando en torno a eje} [Landau \S5 ej. 4]\\
+			La partícula con \(m_2\) se desplaza sobre un eje vertical, y todo el sistema gira con una velocidad angular constante \(\Omega\) en torno a ese eje.
+			El ángulo de apertura \(\theta\) es variable.
+
+			Calcule la energía cinética para cada una de las tres masas y la del sistema en su conjunto.
+		\end{minipage}
+			\begin{minipage}[c][5cm][t]{0.35\textwidth}
+			\includegraphics[width=0.75\textwidth]{landauS52_fig4.png}
+		\end{minipage}
+
+
 
 
 \end{enumerate}

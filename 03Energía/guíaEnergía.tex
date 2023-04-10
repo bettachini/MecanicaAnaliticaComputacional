@@ -4,6 +4,7 @@
 
 
 \begin{document}
+
 \begin{center}
   % \textsc{\large Mecánica general}\\
   \textsc{\large Coordenadas generalizadas | Ligaduras | Energía}
@@ -12,37 +13,38 @@
 Los problemas marcados con (*) tienen alguna dificultad adicional, no dude en consultar.
 
 \begin{enumerate}
-\item \begin{minipage}[t][7.1cm]{0.75\textwidth}
-\textbf{Péndulo simple} [Marion (e) ex. 7.2] \\
-Obtenga la ecuación diferencial que describe la dinámica de una pesa que ``pendulea'' en el extremo de una cuerda.
-\begin{enumerate}
-	\item Si el péndulo oscila dentro del plano \(\hat{x}, \hat{y}\).
-		¿En que sistema de coordenadas resolverá el problema? 
-		¿Cuál coordenada es relevante para describir la dinámica? 
-	\item Enumere las aproximaciones del modelo de péndulo que resolverá que lo diferencian de uno que puede armar en el laboratorio.
-	\item Calcule la energía potencial de la pesa en el campo gravitatorio.
-	¿Para qué sirve eso?
-	Las fuerzas que surgen de un campo son fácilmente calculables usando que \(\vec{F} = - \vec{\nabla} V\), es decir, \emph{la fuerza es igual al negativo del gradiente del potencial}.
-	\item Escriba la 2.a ley de Newton para la coordenada relevante.
-	\item Resuelva la ecuación de la dinámica y obtenga la frecuencia de oscilación.
-\end{enumerate}
-\end{minipage}
-\begin{minipage}[c][0cm][t]{0.2\textwidth}
-%	\includegraphics[width=\textwidth]{marion_fig7_1}
-%	\includegraphics[width=\textwidth]{\detokenize{pénduloHorizontal}}
-	\begin{tikzpicture}[scale= 1.0]
-	\draw [arrows=-latex] (-1,2) -> (-1,1) node [above=15, right=2] {\(\vec{g}\)}; % g vertical
-		\draw [ultra thick] (-1.5,3) -- (2,3);
-		\fill [pattern = north east lines] (-1.5,3) rectangle (2,3.2); % techo
-		\draw [dashed] (0,3) -- (0,-.25);	% vertical
-		\draw [thick] (0,3) -- +(-60:3) node[midway,above,right=2] {\(\ell\)};	% inclinada +:relativa, -60 grados, longitud 3
-		\shade [ball color=black!80] ($(0,3)+(-60:3)$) circle(0.25) node [] {\color{white} $m$};
-    \draw [arrows=-latex] (0,.4) -> (1.25,.4) node [midway, above] {\( \psi \)}; % desplazamiento horizontal
-		\draw [arrows=-latex] (0,0) arc [start angle=-90, end angle=-65, radius=3] node [below=12, left=8] {\( \varphi \)};
-	\end{tikzpicture}
-\end{minipage}
-%\vspace{-2.5cm}
 
+		%\item \begin{minipage}[t][7.1cm]{0.75\textwidth}
+%\textbf{Péndulo simple} [Marion (e) ex. 7.2] \\
+%Obtenga la ecuación diferencial que describe la dinámica de una pesa que ``pendulea'' en el extremo de una cuerda.
+%\begin{enumerate}
+%	\item Si el péndulo oscila dentro del plano \(\hat{x}, \hat{y}\).
+%		¿En que sistema de coordenadas resolverá el problema? 
+%		¿Cuál coordenada es relevante para describir la dinámica? 
+%	\item Enumere las aproximaciones del modelo de péndulo que resolverá que lo diferencian de uno que puede armar en el laboratorio.
+%	\item Calcule la energía potencial de la pesa en el campo gravitatorio.
+%	¿Para qué sirve eso?
+%	Las fuerzas que surgen de un campo son fácilmente calculables usando que \(\vec{F} = - \vec{\nabla} V\), es decir, \emph{la fuerza es igual al negativo del gradiente del potencial}.
+%	\item Escriba la 2.a ley de Newton para la coordenada relevante.
+%	\item Resuelva la ecuación de la dinámica y obtenga la frecuencia de oscilación.
+%\end{enumerate}
+%\end{minipage}
+%\begin{minipage}[c][0cm][t]{0.2\textwidth}
+%%	\includegraphics[width=\textwidth]{marion_fig7_1}
+%%	\includegraphics[width=\textwidth]{\detokenize{pénduloHorizontal}}
+%	\begin{tikzpicture}[scale= 1.0]
+%	\draw [arrows=-latex] (-1,2) -> (-1,1) node [above=15, right=2] {\(\vec{g}\)}; % g vertical
+%		\draw [ultra thick] (-1.5,3) -- (2,3);
+%		\fill [pattern = north east lines] (-1.5,3) rectangle (2,3.2); % techo
+%		\draw [dashed] (0,3) -- (0,-.25);	% vertical
+%		\draw [thick] (0,3) -- +(-60:3) node[midway,above,right=2] {\(\ell\)};	% inclinada +:relativa, -60 grados, longitud 3
+%		\shade [ball color=black!80] ($(0,3)+(-60:3)$) circle(0.25) node [] {\color{white} $m$};
+%    \draw [arrows=-latex] (0,.4) -> (1.25,.4) node [midway, above] {\( \psi \)}; % desplazamiento horizontal
+%		\draw [arrows=-latex] (0,0) arc [start angle=-90, end angle=-65, radius=3] node [below=12, left=8] {\( \varphi \)};
+%	\end{tikzpicture}
+%\end{minipage}
+%%\vspace{-2.5cm}
+%
 
 %\subsection*{Fuerza como gradiente de un potencial}
 %% Vizcaino carpeta
@@ -111,28 +113,34 @@ Ayuda: \( \cos(\alpha \pm \beta) = \cos{ \alpha} \cos{ \beta \mp \sin \alpha} \s
 
 
 
-\item \begin{minipage}[t][7cm]{0.5\textwidth}
-(*) \textbf{Péndulo con punto de suspensión en rotación} [Marion (e) ex. 7.5] [Landau \S5 ej. 3]\\
-El punto de suspensión de un péndulo que se mueve en el plano plano se desplaza en un círculo vertical de radio \(a\) con una frecuencia \(\omega\).
+\item
+	\begin{minipage}[t][7.1cm]{0.5\textwidth}
+		(*) \textbf{Péndulo con punto de suspensión en rotación} [Marion (e) ex. 7.5] [Landau \S5 ej. 3]\\
 
-Calcule la energía cinética, \(T\) y potencial, \(V\).
-\end{minipage}
+		Una partícula de masa \(m\) pende de una barra rígida de longitud \(b\).
+		El punto de suspensión engarzado en un aro de radio \(a\) dispuesto verticalmente rota respecta a su centro con una frecuencia \(\omega\) constante.
+		Se asume que todas las posiciones se encuentran en un único plano bidimensional y que la masa de la barra rígida tiene masa despreciable frente a \(m\).
+
+		Calcule la energía cinética, \(T\) y potencial, \(V\) de la partícula con masa \(m\).\end{minipage}
 	\begin{minipage}[c][3cm][t]{0.5\textwidth}
-	\includegraphics[width=0.75\textwidth]{marion_fig7_3.png}
-	% \includegraphics[width=0.75\textwidth]{landauS52_fig3.png}
-\end{minipage}
+		\includegraphics[width=0.75\textwidth]{marion_fig7_3.png}
+		% \includegraphics[width=0.75\textwidth]{landauS52_fig3.png}
+	\end{minipage}
 
 
 
-\item \begin{minipage}[t][4.5cm]{0.65\textwidth}
-(*) \textbf{Pesas acopladas rotando en torno a eje} [Landau \S5 ej. 4]\\
-La partícula con \(m_2\) se desplaza sobre un eje vertical, y todo el sistema gira con una velocidad angular constante \(\Omega\) en torno a ese eje.
+\item
+	\begin{minipage}[t][4.5cm]{0.65\textwidth}
+		(*) \textbf{Pesas acopladas rotando en torno a eje} [Landau \S5 ej. 4]\\
 
-Calcule la energía cinética, \(T\) y potencial, \(V\).
-\end{minipage}
-	\begin{minipage}[c][5cm][t]{0.35\textwidth}
-	\includegraphics[width=0.75\textwidth]{landauS52_fig4.png}
-\end{minipage}
+		La partícula con \(m_2\) se desplaza sobre un eje vertical, y todo el sistema gira con una velocidad angular constante \(\Omega\) en torno a ese eje.
+		Dicha partícula está unida por barras de longitud \(a\) y masa despecible a otras dos de masa \(m_1\) que a su vez pendend de sendas barras idénticas del punto fijo \(A\) que describen un ángulo de apertura respecto al eje \(\theta\) que es variable.
+
+			Calcule la energía cinética para cada una de las tres masas y exprese en la forma más compacta posible la del sistema en su conjunto.
+	\end{minipage}
+	\begin{minipage}[c][1cm][t]{0.35\textwidth}
+		\includegraphics[width=0.75\textwidth]{landauS52_fig4.png}
+	\end{minipage}
 
 
 

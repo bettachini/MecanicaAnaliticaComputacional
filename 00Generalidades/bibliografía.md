@@ -13,30 +13,29 @@ Los siguientes son **enlaces de descarga** de archivos en formato `pdf` o `djvu`
 
 
 ## Básica
-- [Lev Davidovich Landau y E. M. Lifshitz. Mecánica. 2.a. edición. Curso de física teórica. Reverté, 1994.](https://mega.nz/file/CQInnIzJ#WenBhiu1wz57v2ulGmgfrlKzgLoNSPh4HBzWYFGh6_4)
+- [Lev Davidovich Landau y E. M. Lifshitz, _Mecánica - Curso de física teórica_ (Reverté, Barcelona, Estado Español, 2.a. edición, 1994)](https://mega.nz/file/CQInnIzJ#WenBhiu1wz57v2ulGmgfrlKzgLoNSPh4HBzWYFGh6_4)
 
-- [Oscar E. Martinez. Ondas es física. Buenos Aires, Argentina: Eudeba, 2008.](https://mega.nz/file/FoQSlapS#zNyZ2byn7Gdqiq6ytYdkMBq0Ap70Lq2MP4C8vSYnu-g)
+- [Oscar E. Martinez, _Ondas es física_ (Eudeba, Buenos Aires, Argentina, 2008)](https://mega.nz/file/FoQSlapS#zNyZ2byn7Gdqiq6ytYdkMBq0Ap70Lq2MP4C8vSYnu-g)
 
 	
 ## Complementaria
-- [Jerry B. Marion. Dinamica clásica de las partículas y sistemas. 2.a. edición. Reverté, 1975.](https://mega.nz/file/TUAhyIpZ#BGkPyVtYnsWMi7Zj8xHXxGBJ904Ty1NAolxNev8Etf8)
+- [Jerry B. Marion, _Dinamica clásica de las partículas y sistemas_ (Reverté, Barcelona, Estado Español, 2.a. edición, 1975)](https://mega.nz/file/TUAhyIpZ#BGkPyVtYnsWMi7Zj8xHXxGBJ904Ty1NAolxNev8Etf8)
+    - [Stephen T. Thornton y Jerry B. Marion, _Classical Dynamics of Particles and Systems_ (Thomson Brooks/Cole, Belmonte, Estados Unidos de América,  5.a edición, 2004)](https://mega.nz/file/PcREiRSJ#CXoEn0igVkDCpuck6JjzIVIKMrhYzf6huJmsJva_cLQ)
 
-- [Stephen T. Thornton y Jerry B. Marion. Classical Dynamics of Particles and Systems. 5th edition. Thomson Brooks/Cole, 2004.](https://mega.nz/file/PcREiRSJ#CXoEn0igVkDCpuck6JjzIVIKMrhYzf6huJmsJva_cLQ)
+- [S. M. Targ, _Curso breve de mecánica teórica_ (Mir, Moscú, Unión de Repúblicas Socialistas Soviéticas, 2.a edición, 1976)](https://mega.nz/file/7NxzCKpY#R5-ZuR5dQfoDIp2QBIinKF0EME4owobnfURzEVqhtV0)
 
-- [S. M. Targ. Curso breve de mecánica teórica. 2.a. edición, Moscú: Mir, 1976.](https://mega.nz/file/7NxzCKpY#R5-ZuR5dQfoDIp2QBIinKF0EME4owobnfURzEVqhtV0)
+- [Juan Gualterio Roederer, _Mecánica elemental_ (Eudeba, Buenos Aires, Argentina, 2.a. edición, 2008)](https://mega.nz/file/6VJ1WKYL#HOTfjWIW_sKxjT7Aq6I2aBm3tG9_EvNCkrDrjPl4pF4)
 
-- [Juan Gualterio Roederer. Mecánica elemental. 2.a. edición. Buenos Aires, Argentina: Eudeba, 2008.](https://mega.nz/file/6VJ1WKYL#HOTfjWIW_sKxjT7Aq6I2aBm3tG9_EvNCkrDrjPl4pF4)
+- [John Robert Taylor, _Classical Mechanics_ (University Science Books, Sausalito, Estados Unidos de América, 2005)](https://mega.nz/file/6MAzQIYD#M_XCQkAuWDU6F4Oro7GV2nUMsu012ihTFIMlrNJiP38)
 
-- [John Robert Taylor. Classical Mechanics. University Science Books, 2005.](https://mega.nz/file/6MAzQIYD#M_XCQkAuWDU6F4Oro7GV2nUMsu012ihTFIMlrNJiP38)
+- Ferdinand Pierre Beer, E. Russell Johnston, y Elliot R Eisenberg, _Mecánica vectorial para ingenieros -_
+    - [_Dinámica_ (McGraw-Hill, México DF, México, 9.a. edición, 2010)](https://mega.nz/#!6UQDVCgJ!G6VvNkdJ8azLwDVdNcKnC0MNhy07zawyxdnlZQG8vWk)
+    - [_Estática_ (cGraw-Hill, México DF, México, 8.a edición 2007)](https://mega.nz/#!fJQhFIhS!CWTe2ATXi-9fp_kFG0ZhlEeFuFZzvjEreq6F5i-uQTc)
 
--	[Ferdinand Pierre Beer, E. Russell Johnston, y Elliot R Eisenberg. Mecánica vectorial para ingenieros Dinámica. 9.a. edición. McGraw-Hill, 2010.](https://mega.nz/#!6UQDVCgJ!G6VvNkdJ8azLwDVdNcKnC0MNhy07zawyxdnlZQG8vWk)
+- [Cornelius Lanczos, _The Variational Principles of Mechanics_ (University of Toronto press, Toronto, Canadá, 1952).](https://mega.nz/file/3FInUCYT#AuIn60lyVdc7Mhg2TJmHiVQKeSccd9e9VCED1wjc61A)
 
--	[Ferdinand Pierre Beer, E. Russell Johnston, y Elliot R Eisenberg. Mecánica vectorial para ingenieros Estática. México: McGraw-Hill, 2007.](https://mega.nz/#!fJQhFIhS!CWTe2ATXi-9fp_kFG0ZhlEeFuFZzvjEreq6F5i-uQTc)
+- [Douglas Cline, _Variational Principles in Classical Mechanics_ (University of Rocherster River Campus Libraries, Rochester, Nueva York, Estados Unidos de América, 2021)](http://classicalmechanics.lib.rochester.edu/)
 
-- [Cornelius Lanczos. The Variational Principles of Mechanics. University of Toronto press, 1952.](https://mega.nz/file/3FInUCYT#AuIn60lyVdc7Mhg2TJmHiVQKeSccd9e9VCED1wjc61A)
+- [Alrasheed, S., _Principles of Mechanics_ (Springer Cham, Cham, cantón de Zug, Confederación Suiza, 1.er edición, 2019)](https://doi.org/10.1007/978-3-030-15195-9)
 
-- [Douglas Cline. Variational Principles in Classical Mechanics. University of Rocherster River Campus Libraries, Rochester, Nueva York, E.U.A. 2021.](http://classicalmechanics.lib.rochester.edu/)
-
-- [Alrasheed, S. Principles of Mechanics. Springer Cham (Cham, cantón de Zug, Confederación Suiza) 1st edition, 2019](https://doi.org/10.1007/978-3-030-15195-9)
-
-- [Moebs, W. et al. Física universitaria, volúmen 1. Rice University (Houston, Texas, EUA) 2021](https://openstax.org/details/books/f%C3%ADsica-universitaria-volumen-1)
+- [Moebs, W. et al. _Física universitaria - Volúmen 1_ (Rice University, Houston, Estados Unidos de América, 2021)](https://openstax.org/details/books/f%C3%ADsica-universitaria-volumen-1)

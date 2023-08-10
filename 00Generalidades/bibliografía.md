@@ -30,7 +30,7 @@ Los siguientes son **enlaces de descarga** de archivos en formato `pdf` o `djvu`
 
 - Ferdinand Pierre Beer, E. Russell Johnston, y Elliot R Eisenberg, _Mecánica vectorial para ingenieros -_
     - [_Dinámica_ (McGraw-Hill, México DF, México, 9.a. edición, 2010)](https://mega.nz/#!6UQDVCgJ!G6VvNkdJ8azLwDVdNcKnC0MNhy07zawyxdnlZQG8vWk)
-    - [_Estática_ (cGraw-Hill, México DF, México, 8.a edición 2007)](https://mega.nz/#!fJQhFIhS!CWTe2ATXi-9fp_kFG0ZhlEeFuFZzvjEreq6F5i-uQTc)
+    - [_Estática_ (cGraw-Hill, México DF, México, 9.a edición 2010)](https://archive.org/download/MecanicaVectorialParaIngenierosBeer9naEdicion/Mec%C3%A1nica%20Vectorial%20Para%20Ingenieros%20-%20Beer%209na%20edicion.pdf)
 
 - [Cornelius Lanczos, _The Variational Principles of Mechanics_ (University of Toronto press, Toronto, Canadá, 1952).](https://mega.nz/file/3FInUCYT#AuIn60lyVdc7Mhg2TJmHiVQKeSccd9e9VCED1wjc61A)
 

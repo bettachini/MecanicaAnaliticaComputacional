@@ -20,7 +20,7 @@
 \begin{document}
 
 \title{Curso de ingeniería centrado en código}
-\subtitle{Experiencia adquirida como legado de la pandemia}
+\subtitle{Capitalizando lo desarrollado durante el confinamiento}
 \author[vbettachini@unlam.edu.ar]{Bettachini, V.A.}
 \institute[]{
 	Ingeniería Mecánica, DIIT, UNLaM
@@ -57,8 +57,8 @@
 					\item Profesor: \textbf{cada} clase transcribe (o presenta)
 					% 	teoría y ejemplos de resolución al 
 					\item Alumno: pizarrón (\emph{Powerpoint}) \(\rightarrow\) cuaderno
-					\item Modelado y cálculos: \textbf{vuelven} a hacerse
 					\item Resuelto en papel \(\implies\) debe \textbf{transcribirse}
+					\item Modelado y cálculos: se \textbf{reiteran}
 				\end{itemize}
 			\end{column}
 		\end{columns}
@@ -71,13 +71,13 @@
 				\includegraphics[width= \columnwidth]{"Screenshot 2023-09-18 at 12-24-03 Google Colaboratory"}
 			\end{column}
 			\begin{column}{0.65\textwidth}
-				s. XXI: minimizar el tedio del \emph{c\&p}
+				s. XXI: minimizar el tedio
 				\begin{itemize}[<+->]
 					% \item Alumnos y docentes pierden tiempo (y se aburren) copiando una y otra vez las mismas cosas
 					\item Profesor: actualiza código en repositorio
 					\item Alumno: repositorio del curso \(\rightarrow\) propio
+					\item Código modificable \(\implies\) \textbf{re-utilizable} 
 					\item Modelado y cálculos: \textbf{única vez}
-					\item Código provisto \(\implies\) es \textbf{re-utilizable} 
 				\end{itemize}
 			\end{column}
 		\end{columns}
@@ -85,39 +85,79 @@
 \end{frame}
 
 
+\begin{frame}
+	\frametitle{Los futuros ingenieros deben poder escribir código}
+	\pause
+	\begin{block}{}
+		\begin{itemize}[<+->]
+			\item Usan calculadora pues \textbf{aprendieron} aritmética en la primaria.
+			\item Usarán álgebra computacional pues \textbf{aprobaron} álgebra y análisis.
+			\begin{itemize}[<+->]
+				\item Enfocarse en nuevas habilidades, no en cálculos automatizables.
+				%\item Álgebra y análisis simbólico
+				\item Con cálculo numérico resolverán lo imposible en pizarrón/papel.
+			\end{itemize}
+			\item Enfoque constructivista de la re-utilización del código
+			\begin{itemize}[<+->]
+				\item El código inicial es provisto por el docente.
+				\item Modificaciones aditivas resuelven nuevas problemáticas.
+				\item Alumno se torna autónomo reutilizando el propio.
+			\end{itemize}
+		\end{itemize}
+	\end{block}
+		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
+		\only<2>{\includegraphics[height= 2cm]{reglacalculadora}}
+		\uncover<3->{\includegraphics[width= 0.49\textwidth]{hard}}
+		\uncover<5->{\includegraphics[width= 0.49\textwidth]{impracticable}}
+\end{frame}
+
 
 \begin{frame}
-	\frametitle{s.XXI: todo el material disponible en línea}
+	\frametitle{s.XXI: todo material debe estar disponible en línea}
 	\pause
-	\begin{block}{Cuaderno Jupyter: texto + ecuaciones + código}
+	\begin{block}{Cuaderno programable en línea: texto + ecuaciones + código}
 		\includegraphics[width= \columnwidth]{screenshot_JupyterLab}
 	\end{block}
 \end{frame}
 
 
 \begin{frame}
-	\frametitle{¿Por qué formar con código en ingenierías no informáticas?}
-	\pause
-	\begin{block}{}
+	\frametitle{Cursada centrada en el código}
+	\begin{block}{Teoría y ejercicios resueltos en cuadernos programables}
 		\begin{itemize}[<+->]
-			\item Calculadora de bolsillo \(\rightarrow\) \textbf{no repetir} aritmética de primaria.
-			\item Sistema de álgebra computacional 
-			\begin{itemize}[<+->]
-				\item \(\rightarrow\) \textbf{no repetir} asignaturas de álgebra y análisis matemático.\\
-				Enfocarse en nuevas habilidades, no en cálculos automatizables.
-				\item El cálculo numérico resuelve lo imposible en papel/pizarrón.
-			\end{itemize}
-			\item Enfoque constructivista de la re-utilización del código
-			\begin{itemize}[<+->]
-				\item El código inicial es provisto por el docente.
-				\item Cada nuevo desafío se ataca agregando partes al código previo.
-				\item Finalmente el alumno recicla el propio.
-			\end{itemize}
+			\item En línea se distribuye la teoría y se resuelven ejercicios.
+			\item Modificando el código se resuelven guías semanales de ejercicios.
+			\item Se asiste a los alumnos con consultas asincrónicas.
+			% \item Se responzabiliza al alumno con la primer lectura de la teoría.
+			\item Cuadernos multi-usuario, se incentiva el trabajo remoto colaborativo.
+			\item Todos sus ejercicios tienen fecha límite de entrega para su corrección.
 		\end{itemize}
 	\end{block}
-		\uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
-		\uncover<5->{\includegraphics[height= 2cm]{hard}}
+
+	\pause
+  \begin{columns}[b]
+    \begin{column}{0.35\textwidth}
+			\begin{block}{Aula invertida}
+				\includegraphics[width= \columnwidth]{diagramaTiempo2.png}
+			\end{block}
+    \end{column}
+    \begin{column}{0.6\textwidth}
+			\begin{block}{}
+				\begin{tabular}{lll}
+					\hline
+					Sincrónico & Teoría & Ejercicios\\
+					\hline
+					Antes & Leer y aplicar & Iniciarles\\
+					Durante & Aclarar dudas & Terminarles\\
+					% Durante & Aclarar dudas & \begin{tabular}{@{}c@{}}Terminarles\\(semanal)\end{tabular}\\
+					Luego & \begin{tabular}{@{}c@{}}Consultas\\adicionales\end{tabular} & \begin{tabular}{@{}c@{}}Correcciones\\del docente\end{tabular}\\
+					\hline
+				\end{tabular}
+			\end{block}
+    \end{column}
+  \end{columns}
 \end{frame}
+
 
 
 \begin{frame}
@@ -137,45 +177,28 @@
 
 
 
-\begin{frame}
-	\frametitle{Gestión de recursos: tiempo, personal e infraestructura}
-  \begin{columns}[b]
-    \begin{column}{0.35\textwidth}
-			\begin{block}{Aula invertida}
-				\includegraphics[width= \columnwidth]{diagramaTiempo2.png}
-			\end{block}
-    \end{column}
-    \begin{column}{0.6\textwidth}
-			\begin{block}{}
-				\begin{tabular}{lll}
-					\hline
-					Sincrónico & Teoría & Ejercicios\\
-					\hline
-					Antes & Leer y aplicar & Iniciar\\
-					Durante & Aclarar dudas & \begin{tabular}{@{}c@{}}Terminarles\\(semanal)\end{tabular}\\
-					Luego & \begin{tabular}{@{}c@{}}Consultas\\adicionales\end{tabular} & \begin{tabular}{@{}c@{}}Correcciones\\del docente\end{tabular}\\
-					\hline
-				\end{tabular}
-			\end{block}
-    \end{column}
-  \end{columns}
-\end{frame}
-
 
 \begin{frame}
-	\frametitle{Pasos futuros}
+	\frametitle{Actualidad del proyecto}
+	\pause
 	\begin{block}{}
- 		\begin{description}[<+->]
-			\item [Replicar] En 2024 Física II adoptará simulaciones en cuadernos Jupyter.
-			\item [Adaptar] Retro-alimentación de los alumnos mejora:
+		\begin{description}[<+->]
+			\item [2023] Retro-alimentación de los alumnos mejoró:
 				\begin{itemize}
 					\item Apuntes y código en el repositorio.
-					\item Metodología de ejercitación y evaluación.
+					\item Metodología ejercitación y evaluación.\\
+							Mayor exigencia de ejercicios \(\rightarrow\) mejor respuesta.
 				\end{itemize}
-			\item [Actualizar] Incorporar \emph{prompt engineering} a lo enseñado. Que los alumnos exploten sistemas de inteligencia artificial para generar código útil aunque no dominen la sintáxis del lenguaje de programación.
-			\item [Difundir] Asesorar y colaborar a quienes quieran incorporar esta metodología en el DIIT.
+			\item [2024] 
+				\begin{itemize}
+					\item Física II empleará simulaciones provistas por nosotros.
+					\item \emph{Prompt engineering}: alumnos generarán código con IA.
+				\end{itemize}
+			% \item [202x] Difundir la metodología en el DIIT.
 		\end{description}
 	\end{block}
+	\uncover<6->{\includegraphics[height= 3cm]{cuñaAnillosN}}
+	\uncover<7->{\includegraphics[height= 3cm]{copilot}}
 \end{frame}
 
 

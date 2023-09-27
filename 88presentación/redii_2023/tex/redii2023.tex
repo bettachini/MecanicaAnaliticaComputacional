@@ -9,9 +9,30 @@
 \usepackage{url}
 \usepackage{verbatim}
 \usepackage{graphicx}
-\usepackage{cite}
+% \usepackage{cite}
 \hyphenation{op-tical net-works semi-conduc-tor IEEE-Xplore}
 % updated with editorial comments 8/9/2021
+
+
+%% escritura en castellano con todas los caracteres no ASCII
+\usepackage[T1]{fontenc}  % 8-bit encoding. Acentuados como único caracter.
+\usepackage[utf8]{inputenc}
+\usepackage[spanish, es-nodecimaldot, es-tabla]{babel} % http://minisconlatex.blogspot.com.ar/2013/03/latex-en-espanol.html
+
+%% biblatex
+\usepackage[style = numeric, backend = biber, sorting = none, doi = false, isbn = false, url = true]{biblatex}
+% \usepackage[defernumbers = true, style = numeric, backend = biber, sorting = none, doi = false, isbn = false, url = true]{biblatex}
+% \usepackage[style = numeric, backend = biber, sorting = none]{biblatex}    % REFERENCIAS como section
+\AtEveryBibitem{
+    \clearfield{urlyear}
+    \clearfield{urlmonth}
+} % Do not show the "(visited on <date>)" on the references
+\DefineBibliographyStrings{spanish}{}
+\usepackage{csquotes}
+\addbibresource{./edu.bib}
+\renewcommand*{\bibfont}{\fontsize{9}{12}\selectfont}
+
+
 
 \begin{document}
 
@@ -40,6 +61,9 @@ This document describes the most common article elements and how to use the IEEE
 Article submission, IEEE, IEEEtran, journal, \LaTeX, paper, template, typesetting.
 \end{IEEEkeywords}
 
+\section{Introducción}
+Autoreferencia \cite{bettachini_experiencia_2021}.
+
 \section{Introduction}
 \IEEEPARstart{T}{his} file is intended to serve as a ``sample article file''
 for IEEE journal papers produced under \LaTeX\ using
@@ -56,7 +80,7 @@ The following online groups are helpful to beginning and experienced \LaTeX\ use
 \end{list}
 
 \section{Other Resources}
-See \cite{ref1,ref2,ref3,ref4,ref5} for resources on formatting math into text and additional help in working with \LaTeX .
+% See \cite{ref1,ref2,ref3,ref4,ref5} for resources on formatting math into text and additional help in working with \LaTeX .
 
 \section{Text}
 For some of the remainer of this sample we will use dummy text to fill out paragraphs rather than use live text that may violate a copyright.
@@ -64,7 +88,7 @@ For some of the remainer of this sample we will use dummy text to fill out parag
 Itam, que ipiti sum dem velit la sum et dionet quatibus apitet voloritet audam, qui aliciant voloreicid quaspe volorem ut maximusandit faccum conemporerum aut ellatur, nobis arcimus.
 Fugit odi ut pliquia incitium latum que cusapere perit molupta eaquaeria quod ut optatem poreiur? Quiaerr ovitior suntiant litio bearciur?
 
-Onseque sequaes rectur autate minullore nusae nestiberum, sum voluptatio. Et ratem sequiam quaspername nos rem repudandae volum consequis nos eium aut as molupta tectum ulparumquam ut maximillesti consequas quas inctia cum volectinusa porrum unt eius cusaest exeritatur? Nias es enist fugit pa vollum reium essusam nist et pa aceaqui quo elibusdandis deligendus que nullaci lloreri bla que sa coreriam explacc atiumquos simolorpore, non prehendunt lam que occum\cite{ref6} si aut aut maximus eliaeruntia dia sequiamenime natem sendae ipidemp orehend uciisi omnienetus most verum, ommolendi omnimus, est, veni aut ipsa volendelist mo conserum volores estisciis recessi nveles ut poressitatur sitiis ex endi diti volum dolupta aut aut odi as eatquo cullabo remquis toreptum et des accus dolende pores sequas dolores tinust quas expel moditae ne sum quiatis nis endipie nihilis etum fugiae audi dia quiasit quibus.
+% Onseque sequaes rectur autate minullore nusae nestiberum, sum voluptatio. Et ratem sequiam quaspername nos rem repudandae volum consequis nos eium aut as molupta tectum ulparumquam ut maximillesti consequas quas inctia cum volectinusa porrum unt eius cusaest exeritatur? Nias es enist fugit pa vollum reium essusam nist et pa aceaqui quo elibusdandis deligendus que nullaci lloreri bla que sa coreriam explacc atiumquos simolorpore, non prehendunt lam que occum\cite{ref6} si aut aut maximus eliaeruntia dia sequiamenime natem sendae ipidemp orehend uciisi omnienetus most verum, ommolendi omnimus, est, veni aut ipsa volendelist mo conserum volores estisciis recessi nveles ut poressitatur sitiis ex endi diti volum dolupta aut aut odi as eatquo cullabo remquis toreptum et des accus dolende pores sequas dolores tinust quas expel moditae ne sum quiatis nis endipie nihilis etum fugiae audi dia quiasit quibus.
 \IEEEpubidadjcol
 Ibus el et quatemo luptatque doluptaest et pe volent rem ipidusa eribus utem venimolorae dera qui acea quam etur aceruptat.
 Gias anis doluptaspic tem et aliquis alique inctiuntiur?
@@ -85,12 +109,12 @@ Alis nime volorempera perferi sitio denim repudae pre ducilit atatet volecte ssi
 \subsection{Sections and Subsections}
 Enumeration of section headings is desirable, but not required. When numbered, please be consistent throughout the article, that is, all headings and all levels of section headings in the article should be enumerated. Primary headings are designated with Roman numerals, secondary with capital letters, tertiary with Arabic numbers; and quaternary with lowercase letters. Reference and Acknowledgment headings are unlike all other section headings in text. They are never enumerated. They are simply primary headings without labels, regardless of whether the other headings in the article are enumerated. 
 
-\subsection{Citations to the Bibliography}
-The coding for the citations is made with the \LaTeX\ $\backslash${\tt{cite}} command. 
-This will display as: see \cite{ref1}.
-
-For multiple citations code as follows: {\tt{$\backslash$cite\{ref1,ref2,ref3\}}}
- which will produce \cite{ref1,ref2,ref3}. For reference ranges that are not consecutive code as {\tt{$\backslash$cite\{ref1,ref2,ref3,ref9\}}} which will produce  \cite{ref1,ref2,ref3,ref9}
+%\subsection{Citations to the Bibliography}
+%The coding for the citations is made with the \LaTeX\ $\backslash${\tt{cite}} command. 
+%This will display as: see \cite{ref1}.
+%
+%For multiple citations code as follows: {\tt{$\backslash$cite\{ref1,ref2,ref3\}}}
+% which will produce \cite{ref1,ref2,ref3}. For reference ranges that are not consecutive code as {\tt{$\backslash$cite\{ref1,ref2,ref3,ref9\}}} which will produce  \cite{ref1,ref2,ref3,ref9}
 
 \subsection{Lists}
 In this section, we will consider three types of lists: simple unnumbered, numbered, and bulleted. There have been many options added to IEEEtran to enhance the creation of lists. If your lists are more complex than those shown below, please refer to the original ``IEEEtran\_HOWTO.pdf'' for additional options.\\
@@ -211,7 +235,7 @@ Que sunt eum lam eos si dic to estist, culluptium quid qui nestrum nobis reiumqu
 
 Typographical conventions for mathematical formulas have been developed to {\bf provide uniformity and clarity of presentation across mathematical texts}. This enables the readers of those texts to both understand the author's ideas and to grasp new concepts quickly. While software such as \LaTeX \ and MathType\textsuperscript{\textregistered} can produce aesthetically pleasing math when used properly, it is also very easy to misuse the software, potentially resulting in incorrect math display.
 
-IEEE aims to provide authors with the proper guidance on mathematical typesetting style and assist them in writing the best possible article. As such, IEEE has assembled a set of examples of good and bad mathematical typesetting \cite{ref1,ref2,ref3,ref4,ref5}. 
+% IEEE aims to provide authors with the proper guidance on mathematical typesetting style and assist them in writing the best possible article. As such, IEEE has assembled a set of examples of good and bad mathematical typesetting \cite{ref1,ref2,ref3,ref4,ref5}. 
 
 Further examples can be found at \url{http://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/sites/7/IEEE-Math-Typesetting-Guide-for-LaTeX-Users.pdf}
 
@@ -532,55 +556,57 @@ You must declare a $\backslash${\tt{section}} before using any $\backslash${\tt{
 %\section*{Proof of the Second Zonklar Equation}
 %Appendix two text goes here.}
 
+\printbibliography[title= Referencias, heading=bibintoc]
 
 
-\section{References Section}
-You can use a bibliography generated by BibTeX as a .bbl file.
- BibTeX documentation can be easily obtained at:
- http://mirror.ctan.org/biblio/bibtex/contrib/doc/
- The IEEEtran BibTeX style support page is:
- http://www.michaelshell.org/tex/ieeetran/bibtex/
- 
- % argument is your BibTeX string definitions and bibliography database(s)
-%\bibliography{IEEEabrv,../bib/paper}
+%\section{References Section}
+%You can use a bibliography generated by BibTeX as a .bbl file.
+% BibTeX documentation can be easily obtained at:
+% http://mirror.ctan.org/biblio/bibtex/contrib/doc/
+% The IEEEtran BibTeX style support page is:
+% http://www.michaelshell.org/tex/ieeetran/bibtex/
+% 
+% % argument is your BibTeX string definitions and bibliography database(s)
+%%\bibliography{IEEEabrv,../bib/paper}
+%%
+%\section{Simple References}
+%You can manually copy in the resultant .bbl file and set second argument of $\backslash${\tt{begin}} to the number of references
+% (used to reserve space for the reference number labels box).
 %
-\section{Simple References}
-You can manually copy in the resultant .bbl file and set second argument of $\backslash${\tt{begin}} to the number of references
- (used to reserve space for the reference number labels box).
-
-\begin{thebibliography}{1}
-\bibliographystyle{IEEEtran}
-
-\bibitem{ref1}
-{\it{Mathematics Into Type}}. American Mathematical Society. [Online]. Available: https://www.ams.org/arc/styleguide/mit-2.pdf
-
-\bibitem{ref2}
-T. W. Chaundy, P. R. Barrett and C. Batey, {\it{The Printing of Mathematics}}. London, U.K., Oxford Univ. Press, 1954.
-
-\bibitem{ref3}
-F. Mittelbach and M. Goossens, {\it{The \LaTeX Companion}}, 2nd ed. Boston, MA, USA: Pearson, 2004.
-
-\bibitem{ref4}
-G. Gr\"atzer, {\it{More Math Into LaTeX}}, New York, NY, USA: Springer, 2007.
-
-\bibitem{ref5}M. Letourneau and J. W. Sharp, {\it{AMS-StyleGuide-online.pdf,}} American Mathematical Society, Providence, RI, USA, [Online]. Available: http://www.ams.org/arc/styleguide/index.html
-
-\bibitem{ref6}
-H. Sira-Ramirez, ``On the sliding mode control of nonlinear systems,'' \textit{Syst. Control Lett.}, vol. 19, pp. 303--312, 1992.
-
-\bibitem{ref7}
-A. Levant, ``Exact differentiation of signals with unbounded higher derivatives,''  in \textit{Proc. 45th IEEE Conf. Decis.
-Control}, San Diego, CA, USA, 2006, pp. 5585--5590. DOI: 10.1109/CDC.2006.377165.
-
-\bibitem{ref8}
-M. Fliess, C. Join, and H. Sira-Ramirez, ``Non-linear estimation is easy,'' \textit{Int. J. Model., Ident. Control}, vol. 4, no. 1, pp. 12--27, 2008.
-
-\bibitem{ref9}
-R. Ortega, A. Astolfi, G. Bastin, and H. Rodriguez, ``Stabilization of food-chain systems using a port-controlled Hamiltonian description,'' in \textit{Proc. Amer. Control Conf.}, Chicago, IL, USA,
-2000, pp. 2245--2249.
-
-\end{thebibliography}
-
+%
+%\begin{thebibliography}{1}
+%\bibliographystyle{IEEEtran}
+%
+%\bibitem{ref1}
+%{\it{Mathematics Into Type}}. American Mathematical Society. [Online]. Available: https://www.ams.org/arc/styleguide/mit-2.pdf
+%
+%\bibitem{ref2}
+%T. W. Chaundy, P. R. Barrett and C. Batey, {\it{The Printing of Mathematics}}. London, U.K., Oxford Univ. Press, 1954.
+%
+%\bibitem{ref3}
+%F. Mittelbach and M. Goossens, {\it{The \LaTeX Companion}}, 2nd ed. Boston, MA, USA: Pearson, 2004.
+%
+%\bibitem{ref4}
+%G. Gr\"atzer, {\it{More Math Into LaTeX}}, New York, NY, USA: Springer, 2007.
+%
+%\bibitem{ref5}M. Letourneau and J. W. Sharp, {\it{AMS-StyleGuide-online.pdf,}} American Mathematical Society, Providence, RI, USA, [Online]. Available: http://www.ams.org/arc/styleguide/index.html
+%
+%\bibitem{ref6}
+%H. Sira-Ramirez, ``On the sliding mode control of nonlinear systems,'' \textit{Syst. Control Lett.}, vol. 19, pp. 303--312, 1992.
+%
+%\bibitem{ref7}
+%A. Levant, ``Exact differentiation of signals with unbounded higher derivatives,''  in \textit{Proc. 45th IEEE Conf. Decis.
+%Control}, San Diego, CA, USA, 2006, pp. 5585--5590. DOI: 10.1109/CDC.2006.377165.
+%
+%\bibitem{ref8}
+%M. Fliess, C. Join, and H. Sira-Ramirez, ``Non-linear estimation is easy,'' \textit{Int. J. Model., Ident. Control}, vol. 4, no. 1, pp. 12--27, 2008.
+%
+%\bibitem{ref9}
+%R. Ortega, A. Astolfi, G. Bastin, and H. Rodriguez, ``Stabilization of food-chain systems using a port-controlled Hamiltonian description,'' in \textit{Proc. Amer. Control Conf.}, Chicago, IL, USA,
+%2000, pp. 2245--2249.
+%
+%\end{thebibliography}
+%
 
 \newpage
 

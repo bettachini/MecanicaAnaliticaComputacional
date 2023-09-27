@@ -1,0 +1,78 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{bettachini_experiencia_2021}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=920b7f5991149b19254ccb6a628c4049}{%
+           family={Bettachini},
+           familyi={B\bibinitperiod},
+           given={Víctor\bibnamedelima A.},
+           giveni={V\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=0e064f9ddd3be89a348deb9e46402727}{%
+           family={Palazzo},
+           familyi={P\bibinitperiod},
+           given={Edgardo},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Buenos Aires, Argentina}%
+      }
+      \list{publisher}{1}{%
+        {Consejo Federal de Decanos de Ingeniería}%
+      }
+      \strng{namehash}{fea13f44ac003cb73ba8986f20cfd69f}
+      \strng{fullhash}{fea13f44ac003cb73ba8986f20cfd69f}
+      \strng{bibnamehash}{fea13f44ac003cb73ba8986f20cfd69f}
+      \strng{authorbibnamehash}{fea13f44ac003cb73ba8986f20cfd69f}
+      \strng{authornamehash}{fea13f44ac003cb73ba8986f20cfd69f}
+      \strng{authorfullhash}{fea13f44ac003cb73ba8986f20cfd69f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{“Fundamentos de programación” y “Cálculo numérico” se mencionan entre los “descriptores de conocimiento” para un Ingeniero Mecánico en la “Propuesta de Estándares de Segunda Generación para la Acreditación de Carreras de Ingeniería en la República Argentina” aprobado por el Consejo Federal de Decanos de Ingeniería ({CONFEDI}) en 2018, mejor conocido como “Libro Rojo de {CONFEDI}”. Lamentablemente tras que la teoría y uso de estas herramientas son aprendidos por los alumnos no suelen aprovecharse en profundidad en cursos de años posteriores. En este trabajo se describe la experiencia que se tuvo en la asignatura Mecánica general del 3.er año de la carrera en la {UNLaM}. Tradicionalmente los sistemas modelados se limitan a los resolubles analíticamente por trabajar en pizarrón o papel. En este curso, los estudiantes resolvieron sus ejercicios utilizando código en lenguaje Python, haciendo uso de herramientas de este siglo, como bibliotecas de funciones para el cálculo simbólico, numérico, graficación, etc. Todas las clases se dictaron íntegramente usando cuadernos de Jupyter como plataforma. En estos se intercala código con información gráfica y texto incluyendo una clara notación matemática con simbología {LaTeX}. Este código es re-utilizable por el estudiante para resolver la ejercitación del curso con la misma herramienta, así como para ser aprovechado en asignaturas futuras y en su vida profesional. Estos cuadernos se ejecutan sobre software libre. Plataformas web de acceso gratuito a través del navegador permitieron a los estudiantes ejecutarlos en su hogar o trabajo, permitiendo comentar y editar en forma conjunta un mismo cuaderno entre alumnos y/o docentes. La pandemia nos forzó a enseñar a través de una computadora. Tras un periodo inicial de adaptación los estudiantes reconocieron las virtudes de esta metodología. Inclusive la evaluación fue más enriquecedora que en un curso convencional al alcanzar la complejidad de simular sistemas mecánicos similares a los industriales.}
+      \field{day}{6}
+      \field{eventtitle}{11° Congreso Argentino de Enseñanza de la Ingeniería}
+      \field{month}{10}
+      \field{note}{Accepted: 2021-11-01T20:52:11Z Publisher: Cladi}
+      \field{title}{Experiencia de un curso de mecánica racional basado en código}
+      \field{urlday}{24}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{12}
+      \range{pages}{1}
+      \verb{file}
+      \verb Bettachini and Palazzo - 2021 - Experiencia de un curso de mecánica racional basad.pdf:/home/vbettachini/storage/Zotero/storage/F6INSAQR/Bettachini and Palazzo - 2021 - Experiencia de un curso de mecánica racional basad.pdf:application/pdf;Snapshot:/home/vbettachini/storage/Zotero/storage/2T9A9YV2/799.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://repositoriocyt.unlam.edu.ar/handle/123456789/799
+      \endverb
+      \verb{url}
+      \verb http://repositoriocyt.unlam.edu.ar/handle/123456789/799
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

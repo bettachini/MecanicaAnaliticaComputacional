@@ -1,6 +1,7 @@
 *Solved.*
 *Internal.*
 .ipynb_checkpoints/
+
 *.log
 *.loc
 *.soc
@@ -9,4 +10,9 @@
 *.out
 *.bak
 *.swp
+*.bbl
+*.bcf
+*.blg
+*.run.xml
+
 /vieux/**

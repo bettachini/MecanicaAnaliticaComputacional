@@ -17,103 +17,118 @@
 % \section*{Tensores de inercia}
 
 
-	\item Se tiene una barra de \(m= \SI{1}{\kilo\gram}\) de sección despreciable frente a \(l= \SI{1}{\metre}\).
-		De alinear un eje (\(\hat{z}\)) con ella, 
-		\begin{tasks}(2)
-			\task	¿cuales son sus momentos de inercia?,
-			\task ¿existen los productos de inercia? 
-		\end{tasks}
+	\item
+	\textbf{Componentes del tensor de inercia para una barra}\\
+	Se tiene una barra de \(m= \SI{1}{\kilo\gram}\) de sección despreciable frente a \(l= \SI{1}{\metre}\).
+	De alinear un eje (\(\hat{z}\)) con ella, 
+	\begin{tasks}(2)
+		\task	¿cuales son sus momentos de inercia?,
+		\task ¿existen los productos de inercia? 
+	\end{tasks}
 
 
 	\item
-		Dibuje sistemas de ejes conveniente para calcular momentos de inercia.
-		\vspace{-1.1cm}
-		\begin{tasks}(4)
-			\task \includegraphics[width=0.15\textwidth]{o-000}
-			\task \includegraphics[width=0.15\textwidth]{o-001}
-			\task \includegraphics[width=0.15\textwidth]{o-002}
-			\task \includegraphics[width=0.15\textwidth]{o-003}
+	\textbf{Ejes conveniente para el cálculo del momentos de inercia}\\
+	Se dibujan vistas en perspectiva de diversos objetos.
+	Sabre estos dibuje los ejes intersectando en el punto más conveniente para el cálculo de momentos de inercia, esto es, en el centro de masa.
+	Haga lo mismo con los dos ejes que corresponden a la proyección en planta.
+	\vspace{-0.8cm}
+	\begin{tasks}(4)
+		\task \includegraphics[width=0.15\textwidth]{o-000}
+		\task \includegraphics[width=0.15\textwidth]{o-001}
+		\task \includegraphics[width=0.15\textwidth]{o-002}
+		\task \includegraphics[width=0.15\textwidth]{o-003}
+	\end{tasks}
+
+
+
+	\item 
+	\begin{minipage}[t][5.5cm]{0.65\textwidth}
+		\textbf{Péndulo de torsión desbalanceado}\\
+		El sistema que se muestra en la ilustración para \(t=0\) presenta pesos en los extremos de dos brazos.
+		La barra dispuesta verticalmente se mantiene en tal dirección con rulemanes que posibilitan que el eje rote sin fricción con velocidad angular $\Omega$ constante respecto el marco inercial $O_{xyz}$.
+		Para este análisis la masa de brazos y ejes es despreciable frente a la de los pesos \(m\).
+		Calcule: 
+		\begin{tasks} 
+			\task tensor de inercia respecto a A en función del tiempo \(\overline{\overline{I}}_A(t)\) 
+			\task momento angular $\vec{L}_A (t) = \overline{\overline{I}}_A (t) \vec{\Omega}$ y torque $\vec{\tau} (t) = \dot{\vec{L}} (t)$.
 		\end{tasks}
-
-
-
-	\item 
-		\begin{minipage}[t][4.5cm]{0.7\textwidth}
-			\textbf{Péndulo de torsión desbalanceado}\\
-			El sistema que se muestra en la ilustración para \(t=0\) presenta pesos en los extremos de dos brazos.
-			La barra dispuesta verticalmente se mantiene en tal dirección con rulemanes que posibilitan que el eje rote sin fricción con velocidad angular $\Omega$ constante respecto el marco inercial $O_{xyz}$.
-			Para este análisis la masa de brazos y ejes es despreciable frente a la de los pesos \(m\).
-			Calcule: 
-			\begin{tasks} 
-				\task tensor de inercia \(\overline{\overline{I}}(t)\) en función del tiempo respecto a A,
-				\task momento angular $\vec{L}\bigg\rvert_A (t) = \overline{\overline{I}} (t) \vec{\Omega}$ y torque $\vec{\tau} (t) = \dot{\vec{L}} (t)$.
-			\end{tasks}
-		\end{minipage}
-		\begin{minipage}[c][0cm][t]{0.25\textwidth}
-			\includegraphics[width=\textwidth]{o-021}
-		\end{minipage}
-
-
-	\item Calcule los momentos de inercia para una molécula de \isotope{H_2O}.\\
-		En CNPT se abre con un ángulo de \ang{104,5;;} y median \SI{95.84}{\pico\metre} entre \isotope{O} y \isotope{H}.
-
+	\end{minipage}
+	\begin{minipage}[c][0cm][t]{0.3\textwidth}
+		\includegraphics[width=\textwidth]{o-021}
+	\end{minipage}
 
 
 	\item 
-		\begin{minipage}[t][3.7cm]{0.6\textwidth}
-			% \begin{minipage}[t][3.5cm]{0.7\textwidth}
-			% Tensor de inercia de un cubo con arista \(b\).
-			[Marion (e) ex. 11-3] \textbf{Tensor de inercia de un cubo con arista \(b\)}.
-				\begin{enumerate}
-					\item Calcule el tensor de inercia desde el sistema de ejes \(x_i\) con origen en el centro de masa \(O\).
-					\item Use la forma general del teorema de ejes paralelos de Steiner para calcularlo en el sistema \(X_i\) con origen en el vértice \(Q\) 
-				\end{enumerate}
-			\end{minipage}
-			\begin{minipage}[c][1.2cm][t]{0.35\textwidth}
-				\includegraphics[width=\textwidth]{mFig11-8}
-			\end{minipage}
+	\textbf{Molécula de agua}\\
+	Calcule los momentos de inercia para una molécula de \isotope{H_2O}.\\
+	En CNPT se abre con un ángulo de \ang{104,5;;} y median \SI{95.84}{\pico\metre} entre \isotope{O} y \isotope{H}.
 
 
-		\item 
-			\begin{minipage}[t][3.5cm]{0.5\textwidth}
-				En una plancha metálica homogénea se calaron dos aberturas en forma simétrica.
-				Esta \emph{pendulea} desde el punto A manteniendose siempre en el plano \(x,y\) por lo que es relevante conocer su momento de inercia \(I_{zz}\).
-				Por pesado se determinó la $m$ de la planchuela calada y se midieron todas las dimensiones que indica la figura.
-				Calcule \(I_{zz}\) desde A en función de esos datos.
-			\end{minipage}
-			\begin{minipage}[c][1.5cm][t]{0.45\textwidth}
-				\includegraphics[width=\textwidth]{o-023}
-			\end{minipage}
+	\item 
+	\begin{minipage}[t][4.5cm]{0.55\textwidth}
+		% \begin{minipage}[t][3.5cm]{0.7\textwidth}
+		% Tensor de inercia de un cubo con arista \(b\).
+			\textbf{Cubo con arista \(b\)} [Marion (e) ex. 11-3]
+			\begin{enumerate}
+				\item Calcule el tensor de inercia desde el sistema de ejes \(x_i\) con origen en el centro de masa \(O\).
+				\item Use la forma general del teorema de ejes paralelos de Steiner para calcularlo en el sistema \(X_i\) con origen en el vértice \(Q\) 
+			\end{enumerate}
+		\end{minipage}
+		\begin{minipage}[c][2.5cm][t]{0.4\textwidth}
+			\includegraphics[width=\textwidth]{mFig11-8}
+		\end{minipage}
 
 
-		\item 
-			\begin{minipage}[t][1.3cm]{0.65\textwidth}
-				\textbf{Landau \S 32 6}\\%Hallar la energía cinética de un cilindro homogéneo de radio \(a\) que rueda en el interior de una superficie cilíndrica de radio \(R\).
-				Hallar la energía cinética de un cilindro homogéneo de radio \(a\) que rueda en el interior de una superficie cilíndrica de radio \(R\).
-			\end{minipage}
-			\begin{minipage}[c][1.5cm][t]{0.3\textwidth}
-				\includegraphics[width=\textwidth]{lFig41}
-			\end{minipage}
+	\item 
+		\begin{minipage}[t][4.5cm]{0.5\textwidth}
+			\textbf{Planchuela metálica calada}\\
+			En una planchuela metálica homogénea se calaron dos aberturas en forma simétrica.
+			Suspendida desde el punto A \emph{pendulea} en el plano \(x,y\).
+			Por eso es relevante conocer su momento de inercia \(I_{zz}\) desde ese punto.
+			Se midieron todas sus dimensiones que se indican y se determinó su $m$ pesándole. 
+		\end{minipage}
+		\begin{minipage}[c][2cm][t]{0.45\textwidth}
+			\includegraphics[width=\textwidth]{o-023}
+		\end{minipage}
+			\begin{enumerate}
+				\item Calcular la densidad de la planchuela contemplando el área faltante por los calados.
+				\item ídem. \(I_{zz}\) de una planchuela sin calado desde su centro geométrico.
+				\item Trasladarle con el teorema de Steiner al punto A.
+				\item Calcular \(I_{zz}\) de un circulo calado como si fuera de metal.
+				\item Trasladar a A estos círculos calados.
+				\item Finalmente restar los \(I_{zz}\) de los círculos en A al 
+					Restar dos veces (dos calados) de los círculos trasladados a A al \(I_{zz}\) de la planchuela sin calado en A. Así se habrá obtenido el de la planchuela calada en A.
+			\end{enumerate}
 
 
-
-		\item 
-			\begin{minipage}[t][3.5cm]{0.5\textwidth}
-				\textbf{Landau \S 32 2e} y \textbf{Landau \S 32 7}\\
-				Calcule:
-				\begin{enumerate}
-						% \item \textbf{Landau \S 32 2e} Calcule los momentos principales de inercia de un cono homogéneo de altura \(h\) y radio \(R\).
-					\item En un sistema de ejes conveniente calcule el tensor de inercia de este cono homogéneo de altura \(h\) y radio en su base \(R\).
-					\item Energía cinética de dicho cono rodando sobre el plano \(X Y\).
-						El contacto instantáneo \(\overline{O A}\) forma un ángulo de \(\theta\) con \(\hat{X}\).
-						% \textbf{Landau \S 32 7} Hallar la energía cinética de un cono homogéneo que rueda sobre un plano.
-				\end{enumerate}
-			\end{minipage}
-			\begin{minipage}[c][1cm][t]{0.45\textwidth}
-				\includegraphics[width=\textwidth]{lFig42}
-			\end{minipage}
+	\item 
+		\begin{minipage}[t][2.3cm]{0.65\textwidth}
+			\textbf{Cilindro rodando en semi-cilindro} [Landau \S 32 6]\\
+			%Hallar la energía cinética de un cilindro homogéneo de radio \(a\) que rueda en el interior de una superficie cilíndrica de radio \(R\).
+			Hallar la energía cinética de un cilindro homogéneo de radio \(a\) que rueda en el interior de una superficie cilíndrica de radio \(R\).
+		\end{minipage}
+		\begin{minipage}[c][1cm][t]{0.3\textwidth}
+			\includegraphics[width=\textwidth]{lFig41}
+		\end{minipage}
 
 
-	\end{enumerate}
+	\item 
+		\begin{minipage}[t][3.5cm]{0.5\textwidth}
+			\textbf{Cono rodante sobre un plano} [Landau \S 32 2e y Landau \S 32 7]\\
+			\begin{enumerate}
+					% \item \textbf{Landau \S 32 2e} Calcule los momentos principales de inercia de un cono homogéneo de altura \(h\) y radio \(R\).
+				\item En un sistema de ejes conveniente calcule el tensor de inercia de este cono homogéneo de altura \(h\) y radio en su base \(R\).
+				\item Obtenga Energía cinética de dicho cono rodando sobre el plano \(X Y\).
+					El contacto instantáneo \(\overline{O A}\) forma un ángulo de \(\theta\) con \(\hat{X}\).
+					% \textbf{Landau \S 32 7} Hallar la energía cinética de un cono homogéneo que rueda sobre un plano.
+			\end{enumerate}
+		\end{minipage}
+		\begin{minipage}[c][1cm][t]{0.45\textwidth}
+			\includegraphics[width=\textwidth]{lFig42}
+		\end{minipage}
+
+
+\end{enumerate}
 
 \end{document}

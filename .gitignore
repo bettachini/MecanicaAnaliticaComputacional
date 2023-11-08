@@ -14,5 +14,7 @@
 *.bcf
 *.blg
 *.run.xml
+*.synctex.gz
+*.fdb_latexmk
 
 /vieux/**

@@ -2,21 +2,21 @@
 *Internal.*
 .ipynb_checkpoints/
 
-*.log
-*.loc
-*.soc
-*.toc
-*.aux
-*.out
-*.bak
-*.swp
-*.bbl
-*.bcf
-*.blg
-*.run.xml
-*.synctex.gz
-*.fdb_latexmk
-*.fls
+**/*.log
+**/*.loc
+**/*.soc
+**/*.toc
+**/*.aux
+**/*.out
+**/*.bak
+**/*.swp
+**/*.bbl
+**/*.bcf
+**/*.blg
+**/*.run.xml
+**/*.synctex.gz
+**/*.fdb_latexmk
+**/*.fls
 
 
 /vieux/**

@@ -22,9 +22,10 @@
 \title[A code centred mechanics subject]{A rational mechanics course where everything\\is made with Python code}
 % \subtitle{Capitalizando lo desarrollado durante el confinamiento}
 \author[vbettachini@unlam.edu.ar]{Bettachini, Víctor A.; Real, Mariano A.; Palazzo, Edgardo}
-%\institute[]{
-%	Ingeniería Mecánica, DIIT, UNLaM
-%}
+\institute[]{
+	Dept. of Engineering (DIIT), Universidad Nacional de La Matanza\\
+	Universidad Tecnológica Nacional\\ARGENTINA
+}
 \date[2023-11-23]{
 	New Media Pedagogy 23
 }
@@ -44,7 +45,7 @@
 
 \begin{frame}
 	\frametitle{Value students and professors time}
-	Licklider (1957): 85\% of ``thinking'' are actually mundane task (calculations, drawing, etc.)
+	Licklider (1957): 85\% of ``thinking'' are actually mundane task (calculations, drawings, etc.)
 	\pause
 	\begin{block}{}
 	  \begin{columns}[b]
@@ -52,12 +53,12 @@
 				\includegraphics[width= \columnwidth]{1930s-1940s-man-teacher-professor-vintage-images}
 			\end{column}
 			\begin{column}{0.65\textwidth}
-				Classroom and practice: an excercise on transcription
+				Most current classrooms: an excercise on transcription
 				\begin{itemize}[<+->]
-					\item Professor: lessons \(\xrightarrow{by\, heart}\) blackboard/slides
-					\item Student: blackboard/slides \(\xrightarrow{copies}\) notebooks
-					\item Práctice \textbf{reiterate} diagrames, calculations, etc.
-					\item Boredom \(\implies \downarrow\) concentration on the subject
+					\item Professor: prepares lessons \(\xrightarrow{by\, heart}\) blackboard/slides
+					\item Student: blackboard/slides \(\xrightarrow{transcribes}\) own notebooks
+					\item Practice \textbf{reiterate} diagrams, calculations, etc.
+					\item Boredom \(\rightarrow \) loss of concentration on the subject
 				\end{itemize}
 			\end{column}
 		\end{columns}
@@ -69,11 +70,12 @@
 				\includegraphics[width= \columnwidth]{"Screenshot 2023-09-18 at 12-24-03 Google Colaboratory"}
 			\end{column}
 			\begin{column}{0.65\textwidth}
+				Digital course material with embedded code
 				\begin{itemize}[<+->]
-					\item Professor: ideas \(\rightarrow\) new code/notes in repository
-					\item Student: course repository \(\rightarrow\) its own modifiable one
-					\item Use code to solve problems = \textbf{recycle} professor's code
-					\item Modifiying it solves different problems
+					\item Professor: ideas \(\xrightarrow{updates}\) code/theory in repository
+					\item Student: course repository \(\xrightarrow{clones}\) its own modifiable one
+					\item \textbf{Recycles} professor's code to solve new problems
+					%\item Modifiying it solves different problems
 				\end{itemize}
 			\end{column}
 		\end{columns}
@@ -81,153 +83,14 @@
 \end{frame}
 
 
-\begin{frame}
-	\frametitle{The course setup: Google Colaboratory}
-	% \pause
-	\begin{block}{}
-		% \begin{itemize}[<+->]
-		\begin{itemize}
-			\item It runs Jupyter notebooks online, and it's free.
-			\item Students can collaborate remotely, working on the same notebook.
-			\item Teachers can edit and comment the work of students.
-		\end{itemize}
-		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
-	\includegraphics[width= 0.7\textwidth]{comentariosColab}
-	\end{block}
-	% \pause
-\end{frame}
 
 \begin{frame}
-	\frametitle{The course setup: GitHub}
-	% \pause
-	\begin{block}{}
-		% \begin{itemize}[<+->]
-		\begin{itemize}
-			\item Course material, accesible in a clear way, and easy to keep updated.
-			\item Google Colaboratory loads Jupyter Notebooks directly from GitHub.
-		\end{itemize}
-		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
-	\includegraphics[width= 0.7\textwidth]{repositorioGithub}
-	\end{block}
-	% \pause
-\end{frame}
-
-\begin{frame}
-	\frametitle{Course Overview}
-	% \pause
-	Class 1: Concise Mathematical Notation
-	\begin{block}{}
-		\begin{itemize}
-			\item Latex typesetting, standard for the American Mathematical Society
-		\end{itemize}
-		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
-	\includegraphics[width= 0.7\textwidth]{clase1péndulo}
-	\end{block}
-	% \pause
-\end{frame}
-
-\begin{frame}
-	\frametitle{Course Overview}
-	% \pause
-	Class 1: precise and reproducible graphics
-	\begin{block}{}
-		\begin{itemize}
-			\item The use of Python code for producing graphics is explicit, making the students play with it.
-		\end{itemize}
-		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
-	\includegraphics[width= 0.7\textwidth]{clase1gráficos}
-	\end{block}
-	% \pause
-\end{frame}
-
-\begin{frame}
-	\frametitle{Course Overview}
-	% \pause
-	Class 3: symbolic calculations
-	\begin{block}{}
-		\begin{itemize}
-			\item These students have completed courses in Calculus and Algebra, now it's time to focus on applying the tools acquired in those courses.
-		\end{itemize}
-		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
-	\includegraphics[width= 0.7\textwidth]{clase3sympy}
-	\end{block}
-	% \pause
-\end{frame}
-
-\begin{frame}
-	\frametitle{Course Overview}
-	% \pause
-	Class 4: Dynamics
-	\begin{block}{}
-		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
-	\includegraphics[width= 0.7\textwidth]{clase5EulerLagrange.png}
-	\end{block}
-	% \pause
-\end{frame}
-
-\begin{frame}
-	\frametitle{Course Overview}
-	% \pause
-	Class 4: Automation of resolutions
-	\begin{block}{}
-		\begin{itemize}
-			\item No heavy calculations consuming the energy of the students.
-			\item Their complexity does not limit the mechanical problems that can be tackled.
-		\end{itemize}
-		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
-	\includegraphics[width= 0.7\textwidth]{clase4Aceleraciones}
-	\end{block}
-	% \pause
-\end{frame}
-
-\begin{frame}
-	\frametitle{Course Overview}
-	% \pause
-	Class 5: Numerical analysis
-	\begin{block}{}
-		\begin{itemize}
-			\item Explicit solutions.
-		\end{itemize}
-		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
-	\includegraphics[width= 0.7\textwidth]{clase5Soluciones.png}
-	\end{block}
-	% \pause
-\end{frame}
-
-\begin{frame}
-	\frametitle{Course Overview}
-	% \pause
-	Class 5: analysis of results
-	\begin{block}{}
-		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
-	\includegraphics[width= 0.7\textwidth]{clase5Representación}
-	\end{block}
-	% \pause
-\end{frame}
-
-\begin{frame}
-	\frametitle{Course Overview}
-	% \pause
-	Class 7: Adding complexity
-	\begin{block}{}
-		\begin{itemize}
-			\item Reuse code from previous classes to study complex situations.
-			\item Similar to real world problems.
-		\end{itemize}
-		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
-	\includegraphics[width= 0.7\textwidth]{clase7esquema.png}
-	\end{block}
-	% \pause
-\end{frame}
-
-
-\begin{frame}
-	\frametitle{Engineering students must take advantage of code at every single lecture}
+	\frametitle{Engineering students can take advantage of code at every single lecture}
 	\pause
 	\begin{block}{}
 		\begin{itemize}[<+->]
 			\item Currently they use a pocket calculator \textbf{after they learnt} learning arithmetics at school
-			\item They'll employ computational algebra \textbf{after they learnt} algebra and calculus
+			\item Now they'll employ computational algebra \textbf{after they learnt} algebra and calculus
 			\begin{itemize}[<+->]
 				\item Focus on new skills, not in automatable calculations
 				%\item Álgebra y análisis simbólico
@@ -235,48 +98,196 @@
 			\end{itemize}
 			\end{itemize}
 		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
-	\only<2>{\includegraphics[height= 2cm]{reglacalculadora}}
-	\uncover<3->{\includegraphics[width= 0.49\textwidth]{hard}}
-	\uncover<5->{\includegraphics[width= 0.49\textwidth]{impracticable}}
+	\includegraphics[height= 2.5 cm]{reglacalculadora}
+	\uncover<3->{\includegraphics[height= 2.5 cm]{hard}}
+	% \uncover<5->{\includegraphics[width= 0.49\textwidth]{impracticable}}
 	\end{block}
 	\pause
 	\begin{block}{}
 		Papert (1980) ``...the best learning takes place when the learner takes charge''
 		\begin{itemize}[<+->]
-			\item An expample problem is solved by the professor provided code
-			\item The student modifies it to solve other related problems
-			\item Gradually he becomes autonomous by reusing not the provided but his own code
+			\item An example problem is solved by the professor provided code
+			\item The student \textbf{recycles} it to solve other related problems
+			\item Gradually becoming autonomous by reusing not the provided but his own code
 		\end{itemize}
 	\end{block}
 \end{frame}
 
 
 \begin{frame}
-	\frametitle{All course material can be edited on-line}
-	\pause
-	\begin{block}{On-line programmable notebook: text + equations + code}
+	\frametitle{Tools | Jupyter notebook: text + equations + executable code}
+	%\pause
+	\begin{block}{}
+	% \begin{block}{On-line programmable notebook: text + equations + code}
 		\includegraphics[width= \columnwidth]{screenshot_JupyterLab}
 	\end{block}
 \end{frame}
 
 
+
+
 \begin{frame}
-	\frametitle{Synchronical and asynchronical work on the code}
-	\begin{block}{New theory alongisde its worked examples in programmable notebooks}
+	\frametitle{Tools | Google Colaboratory runs Jupyter on-line}
+	% \pause
+	\begin{block}{}
+		% \begin{itemize}[<+->]
+		\begin{itemize}
+			\item The platform allows professors to edit and comment on the work of students.
+			% \item It runs Jupyter notebooks online, and it's free.
+			\item Students can collaborate remotely, working on the same Jupyter notebook.
+		\end{itemize}
+		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
+	\includegraphics[width= 0.8\textwidth]{comentariosColab}
+	\end{block}
+	% \pause
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Tools | All material in a GitHub repository}
+	% \pause
+	\begin{block}{}
+		% \begin{itemize}[<+->]
+		\begin{itemize}
+			\item Clearly organised, freely accesible, and easy to update.
+			\item Google Colaboratory loads Jupyter notebooks directly from GitHub.
+		\end{itemize}
+		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
+	\includegraphics[width= 0.8\textwidth]{repositorioGithub}
+	\end{block}
+	% \pause
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Tools | From the 1st class | \LaTeX \,: concise mathematical notation}
+	% \pause
+	\begin{block}{}
+		\begin{itemize}
+			\item \LaTeX \, typesetting follows strictly the standards of the American Mathematical Society
+		\end{itemize}
+		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
+	\includegraphics[width= 0.8\textwidth]{clase1péndulo}
+	\end{block}
+	% \pause
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Tools | 1st class | Matplotlib: precise and reproducible graphics}
+	% \pause
+	\begin{block}{}
+		\begin{itemize}
+			\item Explicit Python code for producing graphics. Students are enticed to play with it.
+		\end{itemize}
+		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
+	\includegraphics[width= 0.8\textwidth]{clase1gráficos}
+	\end{block}
+	% \pause
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Tools | 3rd class | SymPy: symbolic calculations}
+	% \pause
+	\begin{block}{}
+		\begin{itemize}
+			\item Students effort centred on new subjects by freeing them  of calculus and algebraic tasks.
+		\end{itemize}
+		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
+	\includegraphics[width= 0.9\textwidth]{clase3sympy}
+	\end{block}
+	% \pause
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Tools | 4th class | Equations for Lagrangian dynamics}
+	% \pause
+	\begin{block}{}
+		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
+	\includegraphics[width= 0.9\textwidth]{clase5EulerLagrange.png}
+	\end{block}
+	% \pause
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Tools | 4th class | Automatisation of resolutions}
+	% \pause
+	\begin{block}{}
+		\begin{itemize}
+			% \item No heavy calculations consuming the energy of the students.
+			\item Mathematical complexity doesn't limit the scope of tackled mechanical problems.
+		\end{itemize}
+		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
+	\includegraphics[width= \textwidth]{clase4Aceleraciones}
+	\end{block}
+	% \pause
+\end{frame}
+
+\begin{frame}
+	\frametitle{Tools | 5th class | SciPy: numerical computation of results}
+	% \pause
+	\begin{block}{}
+		%\begin{itemize}
+		%	\item Explicit solutions.
+		%\end{itemize}
+		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
+	\includegraphics[width= \textwidth]{clase5Soluciones.png}
+	\end{block}
+	% \pause
+\end{frame}
+
+\begin{frame}
+	\frametitle{Tools | 5th class | Graphical analysis of numerical results}
+	% \pause
+	%Class 5: analysis of results
+	\begin{block}{}
+		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
+	\includegraphics[width= \textwidth]{clase5Representación}
+	\end{block}
+	% \pause
+\end{frame}
+
+\begin{frame}
+	\frametitle{Tools | 7th class | Adding complexity}
+	% \pause
+	%Class 7: Adding complexity
+	\begin{block}{}
+		\begin{itemize}
+			\item Code from previous classes is \textbf{recycled} to model more realistic devices.
+			%\item Gradual increase in complexity of simulated mechanical devices.
+		\end{itemize}
+		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
+	\includegraphics[width= \textwidth]{clase7esquema.png}
+	\end{block}
+	% \pause
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Methodology | Weekly cycle of our flipped classroom}
+	\begin{block}{}
+	% \begin{block}{New theory alongisde its worked examples in programmable notebooks}
 		\begin{itemize}[<+->]
-			\item On-line 24/7 \textbf{asynchronical} consultations that are \textbf{public} for others to see
-			\item \textbf{Remote collaboration} on multi-user notebooks
-			\item Weekly meetings to \textbf{synchronically} unfinished assignments with TA's assistance
-			\item On a weekly basis these \textbf{must} be turned-in for scoring
+			\item New theory (Jupyter notebooks and videos) and assignments published on-line
+			\item Previous week assignments \textbf{must} be turned-in for scoring
+			\item On-line 24/7 \textbf{asynchronical} consultations that are \textbf{public} to other students
+			\item \textbf{synchronical} meetings with TA's to finish assignments
+%			%\item \textbf{Remote collaboration} on multi-user notebooks
+			%\item Weekly meetings to \textbf{synchronically} unfinished assignments with TA's assistance
+			% \item On a weekly basis these \textbf{must} be turned-in for scoring
 		\end{itemize}
 	\end{block}
 	\begin{columns}[b]<1->
-    \begin{column}{0.35\textwidth}
-			\begin{block}{Flipped classroom}
-				\includegraphics[width= \columnwidth]{invertedClassroomSchedule.png}
+    \begin{column}{0.4\textwidth}
+			\begin{block}{}
+			%\begin{block}{Flipped classroom}
+				\includegraphics[width= \columnwidth]{flippedClassroomSchedule.png}
 			\end{block}
     \end{column}
-    \begin{column}{0.6\textwidth}
+    \begin{column}{0.55\textwidth}
 			\begin{block}{}
 				\begin{tabular}{lll}
 					\hline
@@ -294,42 +305,44 @@
 \end{frame}
 
 
-
 \begin{frame}
-	\frametitle{Asynchronic corrections and remote assistance}
-	\begin{block}{Student's work can be commented and edited in Google Colaboratory}
+	\frametitle{Tools | Google Colaboratory: asynchronic remote assistance}
+	\begin{block}{}
+	% \begin{block}{Student's work can be commented and edited in Google Colaboratory}
 		\includegraphics[width= \columnwidth]{comentariosColab}
 	\end{block}
 \end{frame}
 
-\begin{frame}
-	\frametitle{Exams}
-	\begin{block}{The exam is just another excercise.}
-		\begin{itemize}
-			\item The students send their notebook.
-			\item Feedback is inserted in between the student's work.
-		\end{itemize}
-		\includegraphics[width= \columnwidth]{parcial}
-	\end{block}
-\end{frame}
-
 
 
 \begin{frame}
-	\frametitle{Individualized student follow-up at Microsoft Teams}
+	\frametitle{Tools | Microsoft Teams: individualized student follow-up}
 	\begin{block}{A record of the weekly turn-up of assignments}
 		\includegraphics[width= \columnwidth]{seguimiento}
 	\end{block}
 \end{frame}
 
 
+%\begin{frame}
+%	\frametitle{Methodology | Exams are just another assignment}
+%	\begin{block}{}
+%	% \begin{block}{The exam is just another excercise.}
+%		\begin{itemize}
+%			\item The students send their notebook file.
+%			\item Feedback is inserted in between the student's work.
+%		\end{itemize}
+%		\includegraphics[width= \columnwidth]{parcial}
+%	\end{block}
+%\end{frame}
+
+
 \begin{frame}
-	\frametitle{Summary}
+	\frametitle{Course | Summary of methodology}
 	\begin{block}{A course centred on code}
 		\begin{itemize}[<+->]
-			\item Theory: text + equations + executable cod in digital notebooks.
+			\item Theory: text + equations + executable code in digital notebooks.
 			\item Reinforced by: suggested bibliography and short professor's videos.
-			\item assignments: professor's code recycling.
+			\item Assignments: professor's code recycling.
 			\item On-line:
 			\begin{itemize}[<+->]
 				\item Remote collaboration and correction
@@ -338,40 +351,65 @@
 			\end{itemize}
 		\end{itemize}
 	\end{block}
-	\begin{block}{Inverted classroom}
+	\begin{block}{Flipped classroom}
 		\begin{itemize}[<+->]
 			\item Theory: emphasis on student's autonomus reading
-			\item Consultations: mostly on-line asynchronical and of public access
-			\item TA personal assisantace when completing assignments in synchronical meetings
+			\item Consultations: mostly on-line asynchronical and publicly accessible
+			\item Synchronical mettings: TA's personal assistance for completing assignments
 			%\item Práctica: Docente asiste personalmente cuando más se lo requiere, para finalizar ejercicios.
 		\end{itemize}
 	\end{block}
 \end{frame}
 
-
-
 \begin{frame}
-	\frametitle{Current developments}
-	\pause
-	\begin{block}{}
-		\begin{description}[<+->]
-			\item [2023] Students feedback improved:
+	\frametitle{Course | Latest developments}
+\begin{columns}[b]
+   \begin{column}{0.47\textwidth}
+			\begin{block}{}
+				2023: student's feedback improved:
 				\begin{itemize}
-					\item Theory notes and code at repository
-					\item Grading of assignments methodology\\
-							Evaluating each one of them \(\rightarrow\) higher student's performance
+					\item Repository material: theory notes and code revised from class to class
+					\item Evaluation: grading each assignment led to a higher student's performance
 				\end{itemize}
-			\item [2024]
+				2024:
 				\begin{itemize}
-					\item A course on optics and waves will incorporate part of the methodology
-					\item AI assistance in code generation employing \emph{GitHub Copilot}
+					\item AI: students to code in \emph{GitHub Codespaces} with \emph{GitHub Copilot}
+					\item Translation: repository content to English (collaborations welcome!)
 				\end{itemize}
-			% \item [202x] Difundir la metodología en el DIIT.
-		\end{description}
-	\end{block}
-	\uncover<6->{\includegraphics[height= 3cm]{cuñaAnillosN}}
-	\uncover<7->{\includegraphics[height= 3cm]{copilot}}
+			\end{block}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+			\begin{block}{GitHub Copilot AI assists with coding}
+			%\begin{block}{Flipped classroom}
+				\includegraphics[width= \columnwidth]{copilot}
+			\end{block}
+    \end{column}
+	\end{columns}
 \end{frame}
+
+
+%\begin{frame}
+	%\frametitle{Course | Current and next steps}
+	%% \pause
+	%\begin{block}{}
+		%\begin{description}[<+->]
+			%\item [2023] Students feedback improved:
+				%\begin{itemize}
+					%\item Repository material: theory notes and code revised from class to class
+					%\item Evaluation: grading each assignment led to a higher student's performance
+				%\end{itemize}
+			%\item [2024]
+				%\begin{itemize}
+					%%\item A course on optics and waves will incorporate part of the methodology
+					%\item AI assistance in code generation by \emph{GitHub Copilot} on \emph{GitHub Codespaces}
+					%\item Translate repository content to English (collaborations welcome!)
+				%\end{itemize}
+			%% \item [202x] Difundir la metodología en el DIIT.
+		%\end{description}
+	%\end{block}
+	%\uncover<6->{\includegraphics[height= 3.5cm]{cuñaAnillosN}}
+	%\uncover<7->{\includegraphics[height= 3.5cm]{copilot}}
+%\end{frame}
 
 
 \end{document}

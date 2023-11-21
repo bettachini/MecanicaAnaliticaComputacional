@@ -7,7 +7,7 @@
 
 %% Spanska!
 \usepackage[utf8]{inputenc}
-\usepackage{lmodern} % no producia letras en matemático | Ref: https://tex.stackexchange.com/questions/250413/error-when-using-greek-symbol-in-subscript-in-beamer-presentation 
+\usepackage{lmodern} % no producia letras en matemático | Ref: https://tex.stackexchange.com/questions/250413/error-when-using-greek-symbol-in-subscript-in-beamer-presentation
 \usepackage[spanish]{babel}
 \def\spanishoptions{argentina}
 
@@ -33,7 +33,7 @@
   \includegraphics[width=\paperwidth, height=\paperheight]{diit_titre_background}
 }	% unset background % https://tex.stackexchange.com/questions/201013/how-to-include-a-background-image-to-only-one-page-of-a-beamer-presentation
 
-\begin{frame} 
+\begin{frame}
   \titlepage
 \end{frame}
 
@@ -78,6 +78,146 @@
 			\end{column}
 		\end{columns}
 	\end{block}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{The course setup: Google Colaboratory}
+	% \pause
+	\begin{block}{}
+		% \begin{itemize}[<+->]
+		\begin{itemize}
+			\item It runs Jupyter notebooks online, and it's free.
+			\item Students can collaborate remotely, working on the same notebook.
+			\item Teachers can edit and comment the work of students.
+		\end{itemize}
+		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
+	\includegraphics[width= 0.7\textwidth]{comentariosColab}
+	\end{block}
+	% \pause
+\end{frame}
+
+\begin{frame}
+	\frametitle{The course setup: GitHub}
+	% \pause
+	\begin{block}{}
+		% \begin{itemize}[<+->]
+		\begin{itemize}
+			\item Course material, accesible in a clear way, and easy to keep updated.
+			\item Google Colaboratory loads Jupyter Notebooks directly from GitHub.
+		\end{itemize}
+		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
+	\includegraphics[width= 0.7\textwidth]{repositorioGithub}
+	\end{block}
+	% \pause
+\end{frame}
+
+\begin{frame}
+	\frametitle{Course Overview}
+	% \pause
+	Class 1: Concise Mathematical Notation
+	\begin{block}{}
+		\begin{itemize}
+			\item Latex typesetting, standard for the American Mathematical Society
+		\end{itemize}
+		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
+	\includegraphics[width= 0.7\textwidth]{clase1péndulo}
+	\end{block}
+	% \pause
+\end{frame}
+
+\begin{frame}
+	\frametitle{Course Overview}
+	% \pause
+	Class 1: precise and reproducible graphics
+	\begin{block}{}
+		\begin{itemize}
+			\item The use of Python code for producing graphics is explicit, making the students play with it.
+		\end{itemize}
+		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
+	\includegraphics[width= 0.7\textwidth]{clase1gráficos}
+	\end{block}
+	% \pause
+\end{frame}
+
+\begin{frame}
+	\frametitle{Course Overview}
+	% \pause
+	Class 3: symbolic calculations
+	\begin{block}{}
+		\begin{itemize}
+			\item These students have completed courses in Calculus and Algebra, now it's time to focus on applying the tools acquired in those courses.
+		\end{itemize}
+		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
+	\includegraphics[width= 0.7\textwidth]{clase3sympy}
+	\end{block}
+	% \pause
+\end{frame}
+
+\begin{frame}
+	\frametitle{Course Overview}
+	% \pause
+	Class 4: Dynamics
+	\begin{block}{}
+		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
+	\includegraphics[width= 0.7\textwidth]{clase5EulerLagrange.png}
+	\end{block}
+	% \pause
+\end{frame}
+
+\begin{frame}
+	\frametitle{Course Overview}
+	% \pause
+	Class 4: Automation of resolutions
+	\begin{block}{}
+		\begin{itemize}
+			\item No heavy calculations consuming the energy of the students.
+			\item Their complexity does not limit the mechanical problems that can be tackled.
+		\end{itemize}
+		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
+	\includegraphics[width= 0.7\textwidth]{clase4Aceleraciones}
+	\end{block}
+	% \pause
+\end{frame}
+
+\begin{frame}
+	\frametitle{Course Overview}
+	% \pause
+	Class 5: Numerical analysis
+	\begin{block}{}
+		\begin{itemize}
+			\item Explicit solutions.
+		\end{itemize}
+		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
+	\includegraphics[width= 0.7\textwidth]{clase5Soluciones.png}
+	\end{block}
+	% \pause
+\end{frame}
+
+\begin{frame}
+	\frametitle{Course Overview}
+	% \pause
+	Class 5: analysis of results
+	\begin{block}{}
+		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
+	\includegraphics[width= 0.7\textwidth]{clase5Representación}
+	\end{block}
+	% \pause
+\end{frame}
+
+\begin{frame}
+	\frametitle{Course Overview}
+	% \pause
+	Class 7: Adding complexity
+	\begin{block}{}
+		\begin{itemize}
+			\item Reuse code from previous classes to study complex situations.
+			\item Similar to real world problems.
+		\end{itemize}
+		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
+	\includegraphics[width= 0.7\textwidth]{clase7esquema.png}
+	\end{block}
+	% \pause
 \end{frame}
 
 
@@ -132,7 +272,7 @@
 	\end{block}
 	\begin{columns}[b]<1->
     \begin{column}{0.35\textwidth}
-			\begin{block}{Inverted classroom}
+			\begin{block}{Flipped classroom}
 				\includegraphics[width= \columnwidth]{invertedClassroomSchedule.png}
 			\end{block}
     \end{column}
@@ -140,7 +280,7 @@
 			\begin{block}{}
 				\begin{tabular}{lll}
 					\hline
-					Synchronical & Theory & Assignments\\
+					Synchronic & Theory & Assignments\\
 					\hline
 					Before & Read and apply  & Start them\\
 					During & Consultations & Complete them\\
@@ -156,11 +296,23 @@
 
 
 \begin{frame}
-	\frametitle{Asynchronical corrections and remote assistance}
+	\frametitle{Asynchronic corrections and remote assistance}
 	\begin{block}{Student's work can be commented and edited in Google Colaboratory}
 		\includegraphics[width= \columnwidth]{comentariosColab}
 	\end{block}
 \end{frame}
+
+\begin{frame}
+	\frametitle{Exams}
+	\begin{block}{The exam is just another excercise.}
+		\begin{itemize}
+			\item The students send their notebook.
+			\item Feedback is inserted in between the student's work.
+		\end{itemize}
+		\includegraphics[width= \columnwidth]{parcial}
+	\end{block}
+\end{frame}
+
 
 
 \begin{frame}
@@ -195,7 +347,7 @@
 		\end{itemize}
 	\end{block}
 \end{frame}
-	
+
 
 
 \begin{frame}
@@ -209,7 +361,7 @@
 					\item Grading of assignments methodology\\
 							Evaluating each one of them \(\rightarrow\) higher student's performance
 				\end{itemize}
-			\item [2024] 
+			\item [2024]
 				\begin{itemize}
 					\item A course on optics and waves will incorporate part of the methodology
 					\item AI assistance in code generation employing \emph{GitHub Copilot}

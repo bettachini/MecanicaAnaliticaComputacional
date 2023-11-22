@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1700657963 "/home/vbettachini/documents/universitet/unlam/MecanicaAnaliticaComputacional/88presentación/nmp2023/nmp23.tex" "nmp23.pdf" "nmp23" 1700657969 0
+["pdflatex"] 1700690583 "/home/vbettachini/documents/universitet/unlam/MecanicaAnaliticaComputacional/88presentación/nmp2023/nmp23.tex" "nmp23.pdf" "nmp23" 1700690590 0
   "../figuras//1930s-1940s-man-teacher-professor-vintage-images.jpg" 1655733063 110318 4d60d16b1a7044cf97f35614694f64ab ""
   "../figuras//Logo-UTN-Header.png" 1700653490 18816 d98cdca604fe3126ae167fd1f77924fb ""
   "../figuras//Screenshot 2023-09-18 at 12-24-03 Google Colaboratory.png" 1695276016 143218 d76dc6c87d2aa6b2f134f2a7923bca9c ""
@@ -21,7 +21,7 @@
   "../figuras//seguimiento.png" 1695276016 171257 3dac0f30f9a45bc69c27373b5027e606 ""
   "../figuras/reglaCalculadora.jpg" 1655733064 170053 7fbae8274f738552e6b3283cc84d398e ""
   "/etc/texmf/web2c/texmf.cnf" 1686481304 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/vbettachini/documents/universitet/unlam/MecanicaAnaliticaComputacional/88presentación/nmp2023/nmp23.tex" 1700657962 15941 255b251782d6140acec1f04c55c4f600 ""
+  "/home/vbettachini/documents/universitet/unlam/MecanicaAnaliticaComputacional/88presentación/nmp2023/nmp23.tex" 1700690577 16140 f815ce5ad86edd761c8ec922540048e8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1246382020 924 9904cf1d39e9767e7a3622f2a125a565 ""
@@ -214,6 +214,7 @@
   "/usr/share/texmf/fonts/tfm/public/lm/lmsy8.tfm" 1148093231 1304 cdc9a17df9ef0d2dc320eff37bbab1c4 ""
   "/usr/share/texmf/fonts/tfm/public/lm/rm-lmss10.tfm" 1254269338 10976 59d4d2acacc56ba9abc92645023932ec ""
   "/usr/share/texmf/fonts/tfm/public/lm/rm-lmss12.tfm" 1254269338 11024 7a83ae8920360cd8bd5d0289069119dc ""
+  "/usr/share/texmf/fonts/tfm/public/lm/rm-lmss17.tfm" 1254269338 11040 703db6eee3cd6f6cd9800b057b63d1d3 ""
   "/usr/share/texmf/fonts/tfm/public/lm/rm-lmss8.tfm" 1254269338 10976 d5243dcaf5ba5ee7825c8438c6b7a7ea ""
   "/usr/share/texmf/fonts/tfm/public/lm/rm-lmssbx10.tfm" 1254269338 10956 dad25672db463289a56f0700c0488a86 ""
   "/usr/share/texmf/fonts/tfm/public/lm/rm-lmsso10.tfm" 1254269338 11124 45afcc3392e4ed490e3ca106dafbddb6 ""
@@ -221,6 +222,7 @@
   "/usr/share/texmf/fonts/tfm/public/lm/rm-lmsso8.tfm" 1254269338 11116 d670ad90f18594ffaf944880fa74d3a0 ""
   "/usr/share/texmf/fonts/type1/public/lm/lmss10.pfb" 1255129361 97408 f595704ec2a07246c2d6f7b602587452 ""
   "/usr/share/texmf/fonts/type1/public/lm/lmss12.pfb" 1255129361 96107 daf52840b555e3b38f9679b629b5e2df ""
+  "/usr/share/texmf/fonts/type1/public/lm/lmss17.pfb" 1255129361 97155 77b0a2ea02ee9c950117adae5f41f9c9 ""
   "/usr/share/texmf/fonts/type1/public/lm/lmss8.pfb" 1255129361 94400 e33ecfb646a9f148e2e53da01a9168fe ""
   "/usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb" 1255129361 119663 e82fa1a58f98ccd89bdbd77311ac9cf1 ""
   "/usr/share/texmf/fonts/type1/public/lm/lmsso8.pfb" 1255129361 106860 a773e4958b589eadcc5b01a914624508 ""
@@ -236,10 +238,10 @@
   "beamercolorthemebeaver.sty" 1699655374 1299 2c2342a3f05ed42435cb3aa9b3cdd647 ""
   "beamerthemeBoadilla.sty" 1699655374 892 ba8cb4bada99fd87675e1758ff674258 ""
   "logos.png" 1700651859 54637 fe92466465ca08dfcb12afc05bd1b421 ""
-  "nmp23.aux" 1700657968 3467 eede86bffae16769324a1efa0e07b27c "pdflatex"
-  "nmp23.nav" 1700657968 1976 3e7ea45815805f6f4fe55af66f1d2d53 "pdflatex"
-  "nmp23.out" 1700657964 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "nmp23.tex" 1700657962 15941 255b251782d6140acec1f04c55c4f600 ""
+  "nmp23.aux" 1700690589 3725 d72d549643dc5ca135748c6e62210565 "pdflatex"
+  "nmp23.nav" 1700690589 2162 5d6537cbdc9feaefacd39015a0544356 "pdflatex"
+  "nmp23.out" 1700690584 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "nmp23.tex" 1700690577 16140 f815ce5ad86edd761c8ec922540048e8 ""
   (generated)
   "nmp23.aux"
   "nmp23.log"

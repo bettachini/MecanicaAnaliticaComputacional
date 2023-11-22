@@ -4,6 +4,41 @@
 \beamertemplatenavigationsymbolsempty %% Sin barra navegación
 \usecolortheme{beaver}
 
+\defbeamertemplate{footline}{special footline}{%
+  %special footline
+}
+
+%% EDIT from me: In my case it worked, when I changed \setbeamertemplate
+%% to \defbeamertemplate
+%\setbeamertemplate{footline}{%
+\defbeamertemplate{footline}{%
+  normal footline
+}
+
+
+\makeatletter
+\def\ps@navigation@titlepage{%
+%% EDIT from me: the second braces need to be optional braces
+%  \setbeamertemplate{footline}{special footline}
+  \setbeamertemplate{footline}[special footline]
+  \@nameuse{ps@navigation}
+}
+\addtobeamertemplate{title page}{\thispagestyle{navigation@titlepage}}{}
+\makeatother
+
+\AtBeginSection[]{%
+\begingroup
+%% EDIT from me: again, there need to be optional braces
+%\setbeamertemplate{footline}{special footline}
+\setbeamertemplate{footline}[special footline]
+\begin{frame}
+  \sectionpage
+\end{frame}
+\endgroup
+}
+
+\apptocmd{\tableofcontents}{\thispagestyle{navigation@titlepage}}{}{}
+
 
 %% Spanska!
 \usepackage[utf8]{inputenc}
@@ -21,26 +56,32 @@
 
 \title[A code centred mechanics subject]{A rational mechanics course where everything\\is made with Python code}
 % \subtitle{Capitalizando lo desarrollado durante el confinamiento}
-\author[vbettachini@unlam.edu.ar]{Bettachini, Víctor A.; Real, Mariano A.; Palazzo, Edgardo}
+\author[vbettachini@unlam.edu.ar]{Bettachini, Víctor A.\textsuperscript{1} Real, Mariano A.\textsuperscript{1} Palazzo, Edgardo\textsuperscript{2}}
 \institute[]{
-	Dept. of Engineering (DIIT), Universidad Nacional de La Matanza\\
-	Universidad Tecnológica Nacional\\ARGENTINA
+	\includegraphics[height= 0.05\textwidth]{ambos}
+	\includegraphics[height= 0.05\textwidth]{Logo-UTN-Header}\\
+	\textsuperscript{1} DIIT, Universidad Nacional de La Matanza, \textsuperscript{2} FRA, Universidad Tecnológica Nacional, ARGENTINA
 }
 \date[2023-11-23]{
-	New Media Pedagogy 23
+	New Media Pedagogy 23: research trends,\\ methodological challenges and succesful\\ implementations\\
+	21-24 november 2023\\
+	\includegraphics[height= 0.05\textwidth]{logos}
+	% \includegraphics[width= 0.3\textwidth]{logos}
 }
 
-\usebackgroundtemplate{
-  \includegraphics[width=\paperwidth, height=\paperheight]{diit_titre_background}
-}	% unset background % https://tex.stackexchange.com/questions/201013/how-to-include-a-background-image-to-only-one-page-of-a-beamer-presentation
+%\usebackgroundtemplate{
+%  \includegraphics[width=\paperwidth, height=\paperheight]{diit_titre_background}
+%}	% unset background % https://tex.stackexchange.com/questions/201013/how-to-include-a-background-image-to-only-one-page-of-a-beamer-presentation
+
 
 \begin{frame}
   \titlepage
 \end{frame}
 
-\usebackgroundtemplate{
-  \includegraphics[width=\paperwidth, height=\paperheight]{diit_background}
-} %% https://mprnotes.wordpress.com/2009/08/14/changing-background-image-of-latex-beamer/
+
+%\usebackgroundtemplate{
+%  \includegraphics[width=\paperwidth, height=\paperheight]{diit_background}
+%} %% https://mprnotes.wordpress.com/2009/08/14/changing-background-image-of-latex-beamer/
 
 
 \begin{frame}

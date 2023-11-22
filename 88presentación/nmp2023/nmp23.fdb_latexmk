@@ -1,7 +1,9 @@
 # Fdb version 4
-["pdflatex"] 1700592142 "/home/vbettachini/documents/universitet/unlam/MecanicaAnaliticaComputacional/88presentación/nmp2023/nmp23.tex" "nmp23.pdf" "nmp23" 1700592149 0
+["pdflatex"] 1700654370 "/home/vbettachini/documents/universitet/unlam/MecanicaAnaliticaComputacional/88presentación/nmp2023/nmp23.tex" "nmp23.pdf" "nmp23" 1700654376 0
   "../figuras//1930s-1940s-man-teacher-professor-vintage-images.jpg" 1655733063 110318 4d60d16b1a7044cf97f35614694f64ab ""
+  "../figuras//Logo-UTN-Header.png" 1700653490 18816 d98cdca604fe3126ae167fd1f77924fb ""
   "../figuras//Screenshot 2023-09-18 at 12-24-03 Google Colaboratory.png" 1695276016 143218 d76dc6c87d2aa6b2f134f2a7923bca9c ""
+  "../figuras//ambos.png" 1655733064 10894 926de7d9c22c6708985bd48324f53d2a ""
   "../figuras//clase1gráficos.png" 1655733064 49994 03bbf80c1aac5f353b271345e54452d7 ""
   "../figuras//clase1péndulo.png" 1655733064 63264 168010cc97a6f671c8d7728233b59fb5 ""
   "../figuras//clase3sympy.png" 1655733064 53597 d5f4b92b1ce29c68fa90b3fcfdd2b74a ""
@@ -18,10 +20,8 @@
   "../figuras//screenshot_JupyterLab.png" 1655733064 133209 fa876df6a0408282618b671541532d8d ""
   "../figuras//seguimiento.png" 1695276016 171257 3dac0f30f9a45bc69c27373b5027e606 ""
   "../figuras/reglaCalculadora.jpg" 1655733064 170053 7fbae8274f738552e6b3283cc84d398e ""
-  "../unlam_mep2023/graphs//diit_background.png" 1699655374 46495 d00d9943533886aec1312900aed6d8a3 ""
-  "../unlam_mep2023/graphs//diit_titre_background.png" 1699655374 131885 f1ce7e9bad5acf151e5b166a00925f8e ""
   "/etc/texmf/web2c/texmf.cnf" 1686481304 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/vbettachini/documents/universitet/unlam/MecanicaAnaliticaComputacional/88presentación/nmp2023/nmp23.tex" 1700592142 14014 3abbc35a20b0ef9e056a38b6f21ae4c8 ""
+  "/home/vbettachini/documents/universitet/unlam/MecanicaAnaliticaComputacional/88presentación/nmp2023/nmp23.tex" 1700654370 15294 e3441f9a9b63744f6e966a3d605b2600 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1246382020 924 9904cf1d39e9767e7a3622f2a125a565 ""
@@ -236,10 +236,11 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1690125842 6526225 095be565eaff5a7fa1a899cef9071666 ""
   "beamercolorthemebeaver.sty" 1699655374 1299 2c2342a3f05ed42435cb3aa9b3cdd647 ""
   "beamerthemeBoadilla.sty" 1699655374 892 ba8cb4bada99fd87675e1758ff674258 ""
-  "nmp23.aux" 1700592149 3467 19c1611261231a2c597384b94dbd4882 "pdflatex"
-  "nmp23.nav" 1700592149 1976 6f6796ca95cd4ab8b35993abf3aba794 "pdflatex"
-  "nmp23.out" 1700592143 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "nmp23.tex" 1700592142 14014 3abbc35a20b0ef9e056a38b6f21ae4c8 ""
+  "logos.png" 1700651859 54637 fe92466465ca08dfcb12afc05bd1b421 ""
+  "nmp23.aux" 1700654376 3467 19c1611261231a2c597384b94dbd4882 "pdflatex"
+  "nmp23.nav" 1700654376 1976 6f6796ca95cd4ab8b35993abf3aba794 "pdflatex"
+  "nmp23.out" 1700654371 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "nmp23.tex" 1700654370 15294 e3441f9a9b63744f6e966a3d605b2600 ""
   (generated)
   "nmp23.aux"
   "nmp23.log"

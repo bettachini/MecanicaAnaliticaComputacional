@@ -1,0 +1,4 @@
+* cambié unos pocos typos que había
+* modifiqué la diapo 3: pasaron a ser doas diapositivas. Creo que esto te ayuda a enfatizar, menos texto en una única diapo.
+* Te sumé al final un gracias
+* Tal vez sumaría el número de proyecto (UNLaM research grant, C2-ING-109) pero nos dieron finalmente tan poca guita que me duele llamarlo grant siquiera.

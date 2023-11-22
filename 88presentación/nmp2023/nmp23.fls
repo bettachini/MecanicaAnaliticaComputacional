@@ -1493,6 +1493,10 @@ INPUT ../figuras//clase7esquema.png
 INPUT ../figuras//clase7esquema.png
 INPUT ../figuras//clase7esquema.png
 INPUT ../figuras//clase7esquema.png
+INPUT ../figuras//copilot.png
+INPUT ../figuras//copilot.png
+INPUT ../figuras//copilot.png
+INPUT ../figuras//copilot.png
 INPUT ../figuras//flippedClassroomSchedule.png
 INPUT ../figuras//flippedClassroomSchedule.png
 INPUT ../figuras//flippedClassroomSchedule.png
@@ -1513,10 +1517,6 @@ INPUT ../figuras//seguimiento.png
 INPUT ../figuras//seguimiento.png
 INPUT ../figuras//seguimiento.png
 INPUT ../figuras//seguimiento.png
-INPUT ../figuras//copilot.png
-INPUT ../figuras//copilot.png
-INPUT ../figuras//copilot.png
-INPUT ../figuras//copilot.png
 OUTPUT nmp23.nav
 OUTPUT nmp23.toc
 OUTPUT nmp23.snm
@@ -1529,7 +1529,6 @@ INPUT /usr/share/texmf/fonts/type1/public/lm/lmss10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmss12.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmss8.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb
-INPUT /usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsso8.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb

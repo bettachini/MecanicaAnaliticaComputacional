@@ -2,20 +2,28 @@
 
 *) Title sounds corky, tbd:
 A Rational Mechanics course where everything\\is made with Python code
+- No lo voy a cambiar, pues es el informado en el programa.
 
 *) Figure repositoriogithub.png: we need a new one with the new repository.
+- Done
 
 *) Class 7: add more figures.
+- No tengo candidatos
 
 *) Examen: se podría mostrar mejor que recibe el estudiante y luego que agregó el estudiante con las correcciones y comentarios.
+- Nah...
 
 *) Slides after course overview: that should be condensed.
+- Habría, pero ya fue
 
 *) Inverted classroom -> Inverted Classroom
 Figure for flipped classroom: fix inverted and synchronical.
+- Hecho
 
 *) working on this for summary: digital competencies and comunicational skills (for collaborating remotely while developing software)
+- En otra vida
 
 *) Current developments:
 - Future EM course.
 - Employ Github Copilot (we should test this with jupyter, right? I'm on it.)
+  - Ya lo cambiamos para hacerlo central

@@ -1,0 +1,198 @@
+Of the 16 weekly online meetings throughout the semester, 13 of them present new topics. Some of these topics were selected to illustrate the progression of the course.
+
+\textbf{Class 1.} Review of Newtonian mechanics, analysis, and algebra required to obtain the ideal pendulum dynamics revisiting the approximations and calculations seen in Physics 1. This theory material is distributed in this and subsequent classes in a Jupyter notebook. Students are encouraged to review the LaTeX notation with which the teacher writes mathematical formulas such as those shown in Figure \ref{fig:clase1pendulo}.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=3.5in]{figuras/clase1péndulo.png}
+\caption{The theory is presented in Jupyter notebooks. All mathematical formulas are expressed in standardized \LaTeX notation that students can edit or copy for their own purposes.}
+\label{fig:clase1pendulo}
+\end{figure}
+
+In addition to the reiteration of what has already been seen in previous courses, in this first class, we already advance in the use of code to analyze results. Figure \ref{fig:clase1graficos} shows instructions for the Matplotlib library to graph the solution for the ideal pendulum dynamics.
+
+
+\textbf{Class 3.} Starting from this class, the Sympy library is applied in class for automatic symbolic calculation. Figure \ref{fig:clase3sympy} shows how to calculate the kinetic energy of a system with two generalized coordinates differentiated in its reference system.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=3.5in]{figuras/clase3sympy.png}
+\caption{First symbolic calculations using the SymPy library.}
+\label{fig:clase3sympy}
+\end{figure}
+
+\textbf{Class 4.} The Euler-Lagrange equations allow students to obtain the equations that describe the dynamics of a system. Figure \ref{fig:clase4euler} shows how functions of the Sympy library facilitate obtaining such equations for a system with two degrees of freedom.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=3.5in]{figuras/clase5EulerLagrange.png}
+\caption{Application of SymPy functions to generate the Euler-Lagrange differential equations that describe the dynamics of a system.}
+\label{fig:clase4euler}
+\end{figure}
+
+So far, code has been used to perform the same steps that are solved on a blackboard or paper in a conventional rational mechanics course to arrive at differential equations that are only solved for trivial cases. In contrast, using Sympy quickly solves complex systems for accelerations as a function of generalized coordinates and velocities as shown in Figure \ref{fig:clase4ac}. Performing such a task manually would require a non-negligible amount of time and effort even for this system with only two degrees of freedom.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=3.5in]{figuras/clase4Aceleraciones.png}
+\caption{The resolution of systems of differential equations of certain complexity is avoided in conventional courses. In this course, it only takes a couple of lines of code with functions of the Sympy library.}
+\label{fig:clase4ac}
+\end{figure}
+
+\textbf{Class 5.} Students passed a numerical calculus course to enroll in this course where such knowledge will be used. In class, the fundamentals of numerical resolution methods for differential equations are reviewed and how they would be implemented in a state vector notation suitable for efficient processing. Such a review is presented to students with the same methodology as for other topics, in Jupyter notebooks that students can edit, as shown in Figure \ref{fig:clase5res}.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=3.5in]{figuras/clase5Euler.png}
+\caption{Prior to proceeding with numerical resolution of differential equations, a review of its fundamentals is presented in Jupyter notebooks.}
+\label{fig:clase5res}
+\end{figure}
+
+Immediately after the review of fundamentals, the functions of the scientific calculation library Scipy are shown in action to efficiently obtain solutions for the dynamics of a two-degree-of-freedom system as illustrated in Figure \ref{fig:clase5sol}.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=3.5in]{figuras/clase5Soluciones.png}
+\caption{The system of equations for the dynamics of a two-degree-of-freedom system is numerically solved with functions of the SciPy library.}
+\label{fig:clase5sol}
+\end{figure}
+
+
+The generalized positions and velocities obtained numerically in the range of times of interest are graphically represented. Figure \ref{fig:clase5rep} shows such a representation that serves to discuss with the students whether the behavior of the system is consistent with what can be predicted from a qualitative analysis of this simple system. Confirming that the symbolic and numerical calculation tools used obtain correct results gives confidence in them in view of applying them to more complex systems.
+
+\subsection{Class 7.} Non-conservative forces are incorporated into the codes, which ultimately are the majority of those that can affect an industrial mechanical device. As a first example, the analogy of pendulum oscillations is extended to a damped system shown in Figure \ref{fig:clase7esquema} to analyze non-conservative forces. In this system, a linear damper acts with velocity. This non-conservative force could not be analyzed with the code of previous classes.}
+\label{fig:clase7esquema}
+\end{figure}
+
+
+The figure \ref{fig:clase7amo} shows the graph that allows analyzing the dynamics calculated with the same procedure and code that has been used in the previous classes.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=3.5in]{figuras/clase7amortiguado.png}
+\caption{The range of analyzable factors is gradually extended. In this system, a linear damper with velocity acts. This non-conservative force could not be analyzed with the code of previous classes.}
+\label{fig:clase7amo}
+\end{figure}
+
+\textbf{Next classes.} The usual syllabus of a course in rational mechanics is completed by focusing on extensive systems analyzed within the framework of the rigid body and the analysis of forced oscillations in systems with multiple degrees of freedom. Towards the end of the course, students have already developed the ability to autonomously analyze "realistic" systems in terms of being more similar to mechanical devices existing in the industry. To capture this, they are proposed to calculate the torques that the motors of a highly simplified industrial robotic arm must perform so that it performs a sequence of movements. Examples of the result of students' work in response to this proposal are shown in figure \ref{fig:robotarm}.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=3.5in]{figuras/robotArm.png}
+\caption{For an industrial mechanical arm to perform even a simple movement, its motors must apply a sequence of torques. Students calculate them in a work that reflects their mastery of analytical and computer tools whose use was learned in the course.}
+\label{fig:robotarm}
+\end{figure}
+
+Source: Conversation with Bing, 11/27/2023
+(1) . https://bing.com/search?q=%22translate+from+spanish+to+english%3a+%22%2buser_input.
+(2) How to Translate Languages in Python - Python Code. https://thepythoncode.com/article/translate-text-in-python.
+(3) undefined. http://www.bing.com/translator/?ref=TThis&text=&from=es&to=en.
+(4) undefined. http://domain.example.
+
+
+
+
+
+
+
+
+% De los 16 encuentros semanales en línea a lo largo del cuatrimestre en 13 de ellos se presentan nuevos temas. De estos se seleccionaron algunos para ilustrar la progresión del curso.
+
+% \textbf{Clase 1.} Repaso de la mecánica Newtoniana, el análisis y el álgebra requeridos para obtener la dinámica del péndulo ideal revisitando las aproximaciones y cálculos vistos en Física 1. Este material de teoría se distribuye tanto en esta como en las subsiguientes clases en un cuaderno Jupyter. Se anima a los alumnos a revisar la notación LaTeX con las que el docente escribe fórmulas matemáticas como las que se muestran en la figura \ref{fig:clase1pendulo}. 
+
+% \begin{figure}[!ht]
+% \centering
+% \includegraphics[width=3.5in]{figuras/clase1péndulo.png}
+% \caption{La teoría se presenta en cuadernos Jupyter. Todos las fórmulas matemáticas se expresan en notación estandarizada \LaTeX que los alumnos pueden editar o copiar para sus propios fines.}
+% \label{fig:clase1pendulo}
+% \end{figure}
+
+% En adición a la reiteración de lo ya visto en cursos anteriores en esta primera clase ya se avanza en el uso de código para analizar resultados. La figura \ref{fig:clase1graficos} muestra instrucciones para que la biblioteca Matplotlib grafique la solución para la dinámica del péndulo ideal.
+
+% \begin{figure}[!ht]
+% \centering
+% \includegraphics[width=3.5in]{figuras/clase1péndulo.png}
+% \caption{Desde la primera clase se hace explícito a los estudiantes el código utilizado para el análisis de sistemas. Aquí las funciones de Matplotib para graficar la dinámica de un péndulo ideal.}
+% \label{fig:clase1graficos}
+% \end{figure}
+
+% \textbf{Clase 3.} A partir de esta clase se aplica en clase la biblioteca Sympy para el cálculo simbólico automático. La figura \ref{fig:clase3sympy} muestra cómo para calcular la energía cinética de un sistema con dos coordenadas generalizadas se diferencia en su sistema de referencia.
+
+% \begin{figure}[!ht]
+% \centering
+% \includegraphics[width=3.5in]{figuras/clase3sympy.png}
+% \caption{Primeros cálculos simbólicos utilizando la biblioteca SymPy.}
+% \label{fig:clase3sympy}
+% \end{figure}
+
+% \textbf{Clase 4.} Las ecuaciones de Euler-Lagrange permiten a los alumnos obtener las ecuaciones que describen la dinámica de un sistema. La figura \ref{fig:clase4euler} muestra como funciones de la biblioteca Sympy facilitan el obtener tales ecuaciones para un sistema de dos grados de libertad.
+
+% \begin{figure}[!ht]
+% \centering
+% \includegraphics[width=3.5in]{figuras/clase5EulerLagrange.png}
+% \caption{Aplicación de funciones de SymPy para general las ecuaciones diferenciales de Euler-Lagrange que describen la dinámica de un sistema.}
+% \label{fig:clase4euler}
+% \end{figure}
+
+% Hasta aquí se ha utilizado el código para realizar los mismos pasos que en un curso de mecánica racional convencional se resuelven en pizarrón o papel para arribar a ecuaciones diferenciales que solo se resuelven para casos triviales. En contrapartida utilizando Sympy se resuelven rápidamente sistemas complejos para aceleraciones en función de coordenadas y velocidades generalizadas como se muestra en la figura \ref{fig:clase4ac}. Realizar tal tarea manualmente insumiría un tiempo y esfuerzo no despreciable inclusive para este sistema con meros dos grados de libertad.
+
+% \begin{figure}[!ht]
+% \centering
+% \includegraphics[width=3.5in]{figuras/clase4Aceleraciones.png}
+% \caption{La resolución de sistemas de ecuaciones diferenciales de cierta complejidad se evita en cursos convencionales. En este curso solo insume un par de líneas de código con funciones de la biblioteca Sympy.}
+% \label{fig:clase4ac}
+% \end{figure}
+
+% \textbf{Clase 5.} Los estudiantes aprobaron un curso de cálculo numérico para poder inscribirse a este curso en el que se hará uso de tales conocimientos. En clase se repasan los fundamentos de los métodos de resolución numérica de ecuaciones diferenciales y cómo se implementarían en una notación de vectores de estado adecuada para un eficiente procesamiento. Tal repaso se presenta a los estudiantes con la misma metodología que para los otros temas, en cuadernos Jupyter que los alumnos pueden editar, como se muestra en la figura \ref{fig:clase5res}.  
+
+% \begin{figure}[!ht]
+% \centering
+% \includegraphics[width=3.5in]{figuras/clase5Euler.png}
+% \caption{Previo a proceder a la resolución numérica de ecuaciones diferenciales se presenta, en cuadernos de Jupyter, un repaso de sus fundamentos.}
+% \label{fig:clase5res}
+% \end{figure}
+
+% Inmediatamente tras el repaso de fundamentos se muestran en acción las funciones de la biblioteca de cálculo científico Scipy para obtener eficientemente las soluciones para la dinámica de un sistema de dos grados de libertad como se ilustra en la figura \ref{fig:clase5sol}.
+
+% \begin{figure}[!ht]
+% \centering
+% \includegraphics[width=3.5in]{figuras/clase5Soluciones.png}
+% \caption{Se resuelve numéricamente el sistema de ecuaciones para la dinámica de un sistema de dos grados de libertad con funciones de la biblioteca SciPy.}
+% \label{fig:clase5sol}
+% \end{figure}
+
+% Las posiciones y velocidades generalizadas en el rango de tiempos de interés obtenidas numéricamente se representan gráficamente. La figura \ref{fig:clase5rep} muestra tal representación que sirve para discutir con los alumnos si el comportamiento del sistema se condice con el que puede predecirse de un análisis cualitativo de este sistema simple. El comprobar que las herramientas utilizadas de cálculo simbólico y numérico obtienen resultados correctos confiere confianza en los mismos en vistas de aplicarles a sistemas más complejos.
+
+% \begin{figure}[!ht]
+% \centering
+% \includegraphics[width=3.5in]{figuras/clase5Representación.png}
+% \caption{Visualización de resultados obtenidos por cálculo numérico. Corroborando que lo representado corresponde con un análisis cualitativo de la dinámica del sistema se crea confianza en los alumnos en esta herramienta.}
+% \label{fig:clase5rep}
+% \end{figure}
+
+% \subsection{Clase 7.} Se incorpora a los códigos el análisis de fuerzas no conservativas que a fin de cuentas son la mayoría de las que pueden afectar a un dispositivo mecánico industrial. Como primer ejemplo se extiende la analogía de las oscilaciones del péndulo a un sistema amortiguado que se muestra en la figura \ref{fig:clase7esquema}.
+
+% \begin{figure}[!ht]
+% \centering
+% \includegraphics[width=3.5in]{figuras/clase7esquema.png}
+% \caption{Paulatinamente se extiende el rango de factores analizables. En este sistema actúa un amortiguador lineal con la velocidad. Esta fuerza no conservativa no podía analizarse con el código de clases precedentes.}
+% \label{fig:clase7esquema}
+% \end{figure}
+
+% La figura \ref{fig:clase7amo} muestra la gráfica que permite analizar la dinámica calculada con el mismo procedimiento y código que se viene utilizando en las clases precedentes.
+
+% \begin{figure}[!ht]
+% \centering
+% \includegraphics[width=3.5in]{figuras/clase7amortiguado.png}
+% \caption{Paulatinamente se extiende el rango de factores analizables. En este sistema actúa un amortiguador lineal con la velocidad. Esta fuerza no conservativa no podía analizarse con el código de clases precedentes.}
+% \label{fig:clase7amo}
+% \end{figure}
+
+% \textbf{Siguientes clases.} El temario habitual de un curso de mecánica racional se va completando centrándose en sistemas extensos analizados en el marco del cuerpo rígido y el análisis de oscilaciones forzadas en sistemas de múltiples grados de libertad. Hacia finales del curso los alumnos ya han desarrollado la habilidad de analizar en forma autónoma sistemas “realistas” en términos de ser más semejantes a dispositivos mecánicos existentes en la industria. Para plasmar esto último se les propone que calculen los torques que deben realizar los motores de un muy simplificado brazo robótico industrial para que este realice una secuencia de movimientos. Ejemplos del resultado del trabajo de alumnos en respuesta a esta propuesta se muestran en la figura \ref{fig:robotarm}.
+
+% \begin{figure}[!ht]
+% \centering
+% \includegraphics[width=3.5in]{figuras/robotArm.png}
+% \caption{Para que un brazo mecánica industrial  realice aún un simple movimiento se requiere que sus motores apliquen una secuencia de torques. Los alumnos realizan el cálculo de los mismos en un trabajo que plasma su dominio de las herramientas analíticas e informáticas cuyo uso fue aprendido en el curso.}
+% \label{fig:robotarm}
+% \end{figure}

@@ -1,0 +1,33 @@
+Resumen:
+Hay que recortar: Máximo 200 palabras
+
+Herramientas:
+
+- La figura de Teams no es la correcta.
+
+Conclusiones:
+- Referencia [4,17,18]:  17 y 18 no existen. 4 aparece más de una vez en el .bib
+
+Referencias:
+- Agregué referencias al final del .bib.
+- Revisar "markdown".
+- Revisar "ams".
+- Revisar "colab".
+- Revisar "repositorio victor": debería ser otro tipo de referencia, algo más destacado.
+- Revisar "creative"
+
+
+============================
+MR (2023-11-25):
+
+- Modifiqué el estilo de LaTeX al que piden en la página de la conferencia.
+- Hay que reveer el abstract y keyworkds, puse uno rápido que contuviese más o menos todo lo que comentó Víctor durante la presentación.
+- Hay que sumar lo de Aula Invertida al texto.
+- Hay que modificar las citas al estilo que solicitan en la conferencia(ver \template de la conferencia)
+- Gran parte de la traducción la hice de forma automática, hay volver a chequearla.
+
+- Incluir en future work que se está trabajando en incluir nuevas herramientas (ie. AI tipo github copilot)
+
+
+
+

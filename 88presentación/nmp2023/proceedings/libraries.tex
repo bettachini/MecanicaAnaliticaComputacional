@@ -1,0 +1,11 @@
+
+The Python programming language is by default devoid of scientific and engineering calculation capabilities. 
+This is a design decision to require that such functionalities be added by specialized libraries, whose development is carried out by users who apply them in various fields of science and technology.
+A conscious decision was made to use the most standard and lesser in number to address the distinct requirements of the course:
+\begin{itemize}
+    \item Capability for symbolic algebra and calculus as provided by the Sympy library.
+    Its \textit{Mechanics} module is particularly useful to generate equations for the dynamics of rigid body systems with multiple degrees of freedom and in various reference frames \cite{sympy}.
+    \item Differential equation systems are solved by numerical methods supported by functions for the manipulation of algebraic elements of the Numpy library \cite{numpy} and the numerical optimization and integration algorithms of Scipy \cite{SciPy}.
+    \item Engineering analysis of numerical results is usually interpreted with graphical representations. 
+    This capability is provided by functions of the Matplotlib library \cite{matplotlib}.
+\end{itemize}

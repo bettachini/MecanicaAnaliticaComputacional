@@ -9,8 +9,8 @@
 
 ___
 
-Los siguientes son **enlaces de descarga** de archivos en formato `pdf` o `djvu`.
-
+Los siguientes son **enlaces de descarga** de archivos en formato `pdf` o `djvu`.  
+Ninguno de estos archivos son propiedad o están alojados en servidores de la Universidad.
 
 ## Básica
 - [Lev Davidovich Landau y E. M. Lifshitz, _Mecánica - Curso de física teórica_ (Reverté, Barcelona, Estado Español, 2.a. edición, 1994)](https://mega.nz/file/CQInnIzJ#WenBhiu1wz57v2ulGmgfrlKzgLoNSPh4HBzWYFGh6_4)
@@ -36,6 +36,6 @@ Los siguientes son **enlaces de descarga** de archivos en formato `pdf` o `djvu`
 
 - [Douglas Cline, _Variational Principles in Classical Mechanics_ (University of Rocherster River Campus Libraries, Rochester, Estados Unidos de América, 2021)](http://classicalmechanics.lib.rochester.edu/)
 
-- [Alrasheed, S., _Principles of Mechanics_ (Springer Cham, Cham, Confederación Suiza, 1.er edición, 2019)](https://doi.org/10.1007/978-3-030-15195-9)
+- [S. Alrasheed, _Principles of Mechanics_ (Springer Cham, Cham, Confederación Suiza, 1.er edición, 2019)](https://doi.org/10.1007/978-3-030-15195-9)
 
-- [Moebs, W. et al. _Física universitaria - Volúmen 1_ (Rice University, Houston, Estados Unidos de América, 2021)](https://openstax.org/details/books/f%C3%ADsica-universitaria-volumen-1)
+- [W. Moebs et al., _Física universitaria - Volúmen 1_ (Rice University, Houston, Estados Unidos de América, 2021)](https://openstax.org/details/books/f%C3%ADsica-universitaria-volumen-1)

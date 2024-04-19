@@ -35,7 +35,7 @@ Ninguno de estos archivos son propiedad o están alojados en servidores de la Un
 
 ### Mecánica vectorial y analítica
 
-- [S. M. Targ, _Curso breve de mecánica teórica_ (Mir, Moscú, Unión de Repúblicas Socialistas Soviéticas, 2.a edición, 1976)](https://mega.nz/file/7NxzCKpY#R5-ZuR5dQfoDIp2QBIinKF0EME4owobnfURzEVqhtV0)
+- [S. M. Targ, _Curso breve de mecánica teórica_ (Mir, Moscú, Unión de Repúblicas Socialistas Soviéticas, 2.a edición, 1976)](https://mega.nz/file/eEIwRILJ#NPN0DRdhy0H8I_91WrzEyVr3FmU-sRyK3tHm3BbjxYg)
 
 
 ### Mecánica analítica

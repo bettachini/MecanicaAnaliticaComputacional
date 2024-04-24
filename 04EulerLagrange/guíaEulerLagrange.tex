@@ -37,14 +37,20 @@ Aplique la ecuación de Euler-Lagrange para obtener las ecuaciones de la dinámi
 
 
 \item
-	\begin{minipage}[t][3.85cm]{0.7\textwidth}
+	\begin{minipage}[t][4.5cm]{0.7\textwidth}
 		\textbf{Plano inclinado móvil}\\
 		Un bloque de masa \(m\) está originalmente inmovil sobre un plano de inclinación \(\theta\) que no le presenta fricción y de masa \(M\).
 		Este último puede deslizar sobre la superficie horizontal que tampoco le presenta fricción alguna.
 		Denomine con \(c\) la coordenada para la posición de este último, en la dirección y sentido indicado por la flecha; y con \(d\) la del bloque superior en el sentido descendente.
 		\begin{enumerate}
-			\item Obtenga la ecuación de Euler-Lagrange para \(c\) y aquella para \(d\).
-			% \item (*) Intente resolver con la 2.a ley de Newton, \(\vec{F} = m \vec{a}\).
+			\item Obtenga la ecuación de Euler-Lagrange para \(c\) y aquella para \(d\).\\ 
+			Resultado:
+	\(
+		M \ddot{c} - m \cos{\left(\theta \right)} \ddot{d} + m \ddot{c} = 0
+		\qquad
+		m \left(g \sin{\left(\theta \right)} + \cos{\left(\theta \right)} \ddot{c} - \ddot{d }\right) = 0
+	\)
+				% \item (*) Intente resolver con la 2.a ley de Newton, \(\vec{F} = m \vec{a}\).
 		\end{enumerate}
 	\end{minipage}
 	\begin{minipage}[c][0cm][t]{0.3\textwidth}
@@ -53,12 +59,7 @@ Aplique la ecuación de Euler-Lagrange para obtener las ecuaciones de la dinámi
 	Habrá notado que no podría responder a una pregunta como ``De soltar el bloque más pequeño, ¿que aceleración tiene el plano?'' pues obtuvo un sistema de dos ecuaciones diferenciales ligadas.
 	En la clase siguiente aprenderá a resolver el sistema usando SymPy.
 	
-	Resultado:\\
-	\(
-		M \ddot{c} - m \cos{\left(\theta \right)} \ddot{d} + m \ddot{c} = 0
-		\qquad
-		m \left(g \sin{\left(\theta \right)} + \cos{\left(\theta \right)} \ddot{c} - \ddot{d }\right) = 0
-	\)
+
 
 
 \item
@@ -76,8 +77,8 @@ Aplique la ecuación de Euler-Lagrange para obtener las ecuaciones de la dinámi
 	\end{minipage}
 	Resultado:\\
 	\(
-		l m \left(g \sin{\left(\varphi \right)} + l \ddot{\varphi} + \cos{\left(\beta + \varphi \right)} \ddot{x}\right) = 0 \\
-		M g \sin{\left(\beta \right)} - M \ddot{x} + g m \sin{\left(\beta \right)} + l m \sin{\left(\beta + \varphi \right)} \dot{\varphi}^{2} - l m \cos{\left(\beta + \varphi \right)} \ddot{\varphi} - m \ddot{x} = 0
+		\ell m \left(g \sin{\left(\varphi \right)} + \ell \ddot{\varphi} + \cos{\left(\beta + \varphi \right)} \ddot{x}\right) = 0 \\
+		M g \sin{\left(\beta \right)} - M \ddot{x} + g m \sin{\left(\beta \right)} + \ell m \sin{\left(\beta + \varphi \right)} \dot{\varphi}^{2} - \ell m \cos{\left(\beta + \varphi \right)} \ddot{\varphi} - m \ddot{x} = 0
 	\)
 
 
@@ -95,8 +96,9 @@ Aplique la ecuación de Euler-Lagrange para obtener las ecuaciones de la dinámi
 	\begin{enumerate}
 		\item  Encuentre una ecuación para la dinámica en función de \(d\), la distancia de la partícula a la intersección.\\
 		Resultado: \(- \omega^{2} m d + k d + m \ddot{d} = 0\)
-		\item (*) Obtenga \(d(t)\) asumiendo las condición iniciales que desee. Esto implica resolver la ecuación diferencial de segundo orden que obtuvo en el punto anterior, pero que debe resultarle familial, pues se se trata de la solución para un péndulo ideal, la de un oscilador armónico simple.  
-		\item (*) Existe un ``valor especial'' para \(\omega\). ¿Cuál sería y por qué es especial?
+		\item (*) Obtenga \(d(t)\) asumiendo las condición iniciales que desee. Esto implica resolver la ecuación diferencial de segundo orden que obtuvo en el punto anterior.
+			Esta debe resultarle familiar pues no es otra que la solución para un péndulo ideal, la de un oscilador armónico simple.  
+		\item (*) Existe un ``valor especial'' para \(\omega\). ¿Cuál sería y que implica para \(d(t)\)? Note que puede responder esto sin haber resuelto el punto anterior.
 	\end{enumerate}
 
 

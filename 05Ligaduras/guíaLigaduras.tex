@@ -42,7 +42,7 @@ Los problemas marcados con (*) tienen alguna dificultad adicional, no dude en co
 	\begin{enumerate}
 		\item Describa la ligadura contemplando el ángulo de rotación del aro.
 		\item Obtenga la ecuación de Euler-Lagrange para la dinámica.
-\end{enumerate}
+	\end{enumerate}
 \end{minipage}
 \begin{minipage}[c][0cm][t]{0.2\textwidth}
 	% \hspace{0.5cm}
@@ -51,7 +51,7 @@ Los problemas marcados con (*) tienen alguna dificultad adicional, no dude en co
 
 
 \item 
-\begin{minipage}[t][5cm]{0.7\textwidth}
+\begin{minipage}[t][8cm]{0.7\textwidth}
 	\textbf{Péndulo de pesas engarzadas y acopladas}\\ 
 	Dos partículas de masa \(m_1\) y \(m_2\) están unidas por una barra rígida inextensible de longitud \(\ell\) y masa despreciable frente a las anteriores.
 	La de \(m_1\) se mueve solo sobre el eje \(x\) y la de \(m_2\) solo sobre el \(y\).
@@ -65,7 +65,10 @@ Los problemas marcados con (*) tienen alguna dificultad adicional, no dude en co
 		\item \(y\)
 		\item \(\theta\)
 	\end{enumerate*}\\ % https://tex.stackexchange.com/questions/591120/how-can-you-put-items-on-one-line-and-center-them
-	Tras resolver ambos casos, ¿cuál preferiría para trabajar?
+	Tras resolver ambos casos, ¿cuál preferiría para trabajar?\\
+		Resultados:\\
+		$\ddot{y} = \frac{- \ell^{2} m_{1} y \dot{y}^{2} + g m_{2} \left(\ell^{2} - y^{2}\right)^{2}}{\ell^{4} m_{2} + \ell^{2} m_{1} y^{2} - 2 \ell^{2} m_{2} y^{2} - m_{1} y^{4} + m_{2} y^{4}}$\\
+		$\ddot{\theta} = \frac{\left(\ell m_{1} \cos{\left(\theta \right)} \dot{\theta}^{2} - \ell m_{2} \cos{\left(\theta \right)} \dot{\theta}^{2} - g m_{2}\right) \sin{\left(\theta \right)}}{\ell \left(m_{1} \cos^{2}{\left(\theta \right)} + m_{2} \sin^{2}{\left(\theta \right)}\right)}$
 	\item (*) ¿Cuál es el período de movimiento de pequeñas oscilaciones para el caso \(m_1 = m_2 = m\)?
 \end{enumerate}
 \end{minipage}
@@ -85,8 +88,16 @@ Los problemas marcados con (*) tienen alguna dificultad adicional, no dude en co
 		\item Modele las ligaduras que proveen las cuerdas en dos funciones.
 		\item Haciendo uso de estas últimas reemplace en las posiciones para expresarles en función de solo dos \(y_i\).
 		\item Calcule energías potenciales y cinéticas contemplando los momentos de inercia de las poleas. Recuerde la relacíón entre el perímetro (circunferencia) de un círculo y su radio para escribir la velocidad angular en función del \(\dot{y}_i\) correspondiente.
-		\item Obtenga las dos ecuaciones de Euler-Lagrange.
-		\item Resuelva este sistema de ecuaciones para obtener las dos correspondientes aceleraciones generalizadas y con estas escribir las aceleraciones de los cuatro cuerpos en cuestión.
+		\item Obtenga las dos ecuaciones de Euler-Lagrange.\\
+		Resultados:\\
+		$- g m_{1} + g m_{2} + g m_{3} + g m_{p} + m_{1} \ddot{y}_{1} + m_{2} \ddot{y}_{1} - m_{2} \ddot{y}_{2} + m_{3} \ddot{y}_{1} + m_{3} \ddot{y}_{2} + \frac{3 m_{p} \ddot{y}_{1}}{2} = 0$\\
+		$- g m_{2} + g m_{3} - m_{2} \ddot{y}_{1} + m_{2} \ddot{y}_{2} + m_{3} \ddot{y}_{1} + m_{3} \ddot{y}_{2} + \frac{m_{p} \ddot{y}_{2}}{2} = 0$
+		\item Resuelva este sistema de ecuaciones para obtener las dos correspondientes aceleraciones generalizadas y con estas escribir las aceleraciones de los cuatro cuerpos en cuestión.\\
+		Resultados:\\
+		$\ddot{y}_{1} = \frac{4 g m_{1} m_{2} + 4 g m_{1} m_{3} + 2 g m_{1} m_{p} - 16 g m_{2} m_{3} - 6 g m_{2} m_{p} - 6 g m_{3} m_{p} - 2 g m_{p}^{2}}{4 m_{1} m_{2} + 4 m_{1} m_{3} + 2 m_{1} m_{p} + 16 m_{2} m_{3} + 8 m_{2} m_{p} + 8 m_{3} m_{p} + 3 m_{p}^{2}}$\\
+		$\ddot{y}_{2} = \frac{8 g m_{1} m_{2} - 8 g m_{1} m_{3} + 2 g m_{2} m_{p} - 2 g m_{3} m_{p}}{4 m_{1} m_{2} + 4 m_{1} m_{3} + 2 m_{1} m_{p} + 16 m_{2} m_{3} + 8 m_{2} m_{p} + 8 m_{3} m_{p} + 3 m_{p}^{2}}$\\
+		$\ddot{y}_{3} = - \frac{8 g m_{1} m_{2} - 8 g m_{1} m_{3} + 2 g m_{2} m_{p} - 2 g m_{3} m_{p}}{4 m_{1} m_{2} + 4 m_{1} m_{3} + 2 m_{1} m_{p} + 16 m_{2} m_{3} + 8 m_{2} m_{p} + 8 m_{3} m_{p} + 3 m_{p}^{2}}$\\
+		$\ddot{y}_{p} = - \frac{4 g m_{1} m_{2} + 4 g m_{1} m_{3} + 2 g m_{1} m_{p} - 16 g m_{2} m_{3} - 6 g m_{2} m_{p} - 6 g m_{3} m_{p} - 2 g m_{p}^{2}}{4 m_{1} m_{2} + 4 m_{1} m_{3} + 2 m_{1} m_{p} + 16 m_{2} m_{3} + 8 m_{2} m_{p} + 8 m_{3} m_{p} + 3 m_{p}^{2}}$
 	\end{enumerate}
 \end{minipage}
 \begin{minipage}[c][0cm][t]{0.3\textwidth}

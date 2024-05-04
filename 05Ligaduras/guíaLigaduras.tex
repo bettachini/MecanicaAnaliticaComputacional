@@ -40,8 +40,11 @@ Los problemas marcados con (*) tienen alguna dificultad adicional, no dude en co
 	El otro extremo se ata con un nudo de masa \(M> m\) a un aro de masa \(m_a\), enrollándose parcialmente en torno a éste.
 	El radio del aro es \(R\) y puede rotar libremente, lo que hace que éste y el nudo presenten momentos de inercia \(m_a R^2\) y \(M R^2\) respectivamente.
 	\begin{enumerate}
-		\item Describa la ligadura contemplando el ángulo de rotación del aro.
-		\item Obtenga la ecuación de Euler-Lagrange para la dinámica.
+		\item Escriba la posición de las partículas con masa con origen el centro del aro.
+		\item Describa la ligadura conemplando el ángulo del aro medido desde la horizontal.
+		\item Obtenga la ecuación de Euler-Lagrange para la dinámica.\\
+		Resultado:
+		$R \left(- 2 M R \ddot{\theta} + M g \cos{\left(\theta \right)} - R m \ddot{\theta} - R m_{a} \ddot{\theta} - g m\right) = 0$
 	\end{enumerate}
 \end{minipage}
 \begin{minipage}[c][0cm][t]{0.2\textwidth}
@@ -51,31 +54,33 @@ Los problemas marcados con (*) tienen alguna dificultad adicional, no dude en co
 
 
 \item 
-\begin{minipage}[t][8cm]{0.7\textwidth}
+\begin{minipage}[t][1.5cm]{0.7\textwidth}
 	\textbf{Péndulo de pesas engarzadas y acopladas}\\ 
 	Dos partículas de masa \(m_1\) y \(m_2\) están unidas por una barra rígida inextensible de longitud \(\ell\) y masa despreciable frente a las anteriores.
 	La de \(m_1\) se mueve solo sobre el eje \(x\) y la de \(m_2\) solo sobre el \(y\).
-\begin{enumerate}
-	\item Despeje la aceleración en la ecuación de Euler-Lagrange para una única coordenada generalizada\\
-	\begin{enumerate*}[
-				itemjoin=\quad,
-				before=\hspace*{\fill},
-				after=\hspace*{\labelwidth}\hspace*{-\labelsep}\hspace*{\fill},
-			]
-		\item \(y\)
-		\item \(\theta\)
-	\end{enumerate*}\\ % https://tex.stackexchange.com/questions/591120/how-can-you-put-items-on-one-line-and-center-them
-	Tras resolver ambos casos, ¿cuál preferiría para trabajar?\\
-		Resultados:\\
-		$\ddot{y} = \frac{- \ell^{2} m_{1} y \dot{y}^{2} + g m_{2} \left(\ell^{2} - y^{2}\right)^{2}}{\ell^{4} m_{2} + \ell^{2} m_{1} y^{2} - 2 \ell^{2} m_{2} y^{2} - m_{1} y^{4} + m_{2} y^{4}}$\\
-		$\ddot{\theta} = \frac{\left(\ell m_{1} \cos{\left(\theta \right)} \dot{\theta}^{2} - \ell m_{2} \cos{\left(\theta \right)} \dot{\theta}^{2} - g m_{2}\right) \sin{\left(\theta \right)}}{\ell \left(m_{1} \cos^{2}{\left(\theta \right)} + m_{2} \sin^{2}{\left(\theta \right)}\right)}$
-	\item (*) ¿Cuál es el período de movimiento de pequeñas oscilaciones para el caso \(m_1 = m_2 = m\)?
-\end{enumerate}
 \end{minipage}
-\begin{minipage}[c][0cm][t]{0.3\textwidth}
+\begin{minipage}[c][2cm][t]{0.3\textwidth}
 	% \hspace{0.5cm}
 	\includegraphics[width=0.75\textwidth]{fcen1-004}
 \end{minipage}
+\begin{enumerate}
+	\item Escriba las posiciones de ambas partículas en función de una única coordenada haciendo uso de la ligadura que impone la barra rígida.
+	Hágalo para:
+	\begin{enumerate*}[
+				%itemjoin=\quad,
+				before=\hspace*{\fill},
+				after=\hspace*{\labelwidth}\hspace*{-\labelsep}\hspace*{\fill},
+			]
+		\item \(y\), la de la partícula con masa \(m_2\),
+		\item y para \(\theta\)
+	\end{enumerate*} % https://tex.stackexchange.com/questions/591120/how-can-you-put-items-on-one-line-and-center-them
+	\item Obtenga las aceleraciones y responda: ¿cuál coordenada generalizada preferiría?\\
+	Resultado:
+		$\ddot{y} = \frac{- \ell^{2} m_{1} y \dot{y}^{2} + g m_{2} \left(\ell^{2} - y^{2}\right)^{2}}{\ell^{4} m_{2} + \ell^{2} m_{1} y^{2} - 2 \ell^{2} m_{2} y^{2} - m_{1} y^{4} + m_{2} y^{4}}$
+		\qquad
+		$\ddot{\theta} = \frac{\left(\ell m_{1} \cos{\left(\theta \right)} \dot{\theta}^{2} - \ell m_{2} \cos{\left(\theta \right)} \dot{\theta}^{2} - g m_{2}\right) \sin{\left(\theta \right)}}{\ell \left(m_{1} \cos^{2}{\left(\theta \right)} + m_{2} \sin^{2}{\left(\theta \right)}\right)}$
+	\item (*) ¿Cuál es el período de movimiento de pequeñas oscilaciones para el caso \(m_1 = m_2 = m\)?
+\end{enumerate}
 
 
 

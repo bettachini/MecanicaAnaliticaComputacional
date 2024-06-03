@@ -12,7 +12,7 @@
 
 \item 
 %\textbf{MIT Pset ? ex ?} 
-\begin{minipage}[t][6.5cm]{0.55\textwidth}
+\begin{minipage}[t][4.8cm]{0.55\textwidth}
 \textbf{Barra que pende de un carro}\\
 Obtenga las ecuaciones que describen la dinámica del sistema.
 El momento de inercia para una barra de masa \(m\) y longitud \(l\) para una rotación desde uno de sus extremos es \(\frac{m}{12} l^2\). 
@@ -51,7 +51,10 @@ Pregunta conceptual:
 	\task \si{\newton \metre}
 	\task Otra
 \end{tasks}
-Obtenga las ecuaciones de la dinámica de Euler-Lagrange. 
+Despeje la aceleración angular de la ecuación para la dinámica de Euler-Lagrange. Resultado:
+\[
+	\ddot{\theta} = \frac{K_{T} \theta + \tau}{L^{2} m \left(\sin^{2}{\left(\phi \right)} - 2\right)}
+\] 
 \end{minipage}
 \begin{minipage}[c][1cm][t]{0.35\textwidth}
 	\includegraphics[width=\textwidth]{pset7ex2}
@@ -75,8 +78,8 @@ Una correa de masa despreciable envuelve al cilindro de menor radio y de ella pe
 Despeje la aceleración angular de la ecuación de la dinámica de Euler-Lagrange. 
 Resultado:\\
 \[
-	\ddot{\theta} = \frac{2 \left(- R_{1}^{2} b \dot{\theta} + R_{1} g m_{0} - R_{2}^{2} k \theta\right)}{2 R_{1}^{2} m_{0} + R_{1}^{2} m_{1} + R_{2}^{2} m_{2}}
-	\]
+	\ddot{\theta} = \frac{2 \left(R_{1} g m_{0} - R_{2}^{2} b \dot{\theta} - R_{2}^{2} k \theta\right)}{2 R_{1}^{2} m_{0} + R_{1}^{2} m_{1} + R_{2}^{2} m_{2}}
+\]
 \end{minipage}
 \begin{minipage}[c][0cm][t]{0.35\textwidth}
 	\includegraphics[width=\textwidth]{pset7ex4}

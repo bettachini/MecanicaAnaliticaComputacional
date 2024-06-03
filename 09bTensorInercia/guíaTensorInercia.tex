@@ -50,20 +50,36 @@
 		Para este análisis la masa de brazos y ejes es despreciable frente a la de los pesos \(m\).
 		Calcule: 
 		\begin{tasks} 
-			\task tensor de inercia respecto a A en función del tiempo \(\overline{\overline{I}}_A(t)\) 
+			\task tensor de inercia respecto a A en función del tiempo \(\overline{\overline{I}}_A(t)\)\\
 			\task momento angular $\vec{L}_A (t) = \overline{\overline{I}}_A (t) \vec{\Omega}$ y torque $\vec{\tau} (t) = \dot{\vec{L}} (t)$.
 		\end{tasks}
 	\end{minipage}
 	\begin{minipage}[c][0cm][t]{0.3\textwidth}
 		\includegraphics[width=\textwidth]{o-021}
 	\end{minipage}
-
+	Respuestas:\\
+			\[
+				\scalebox{0.8}{$
+				\overline{\overline{I}}_A = \left[\begin{matrix}\ell^{2} m \left(- \cos^{2}{\left(\phi \right)} \cos^{2}{\left(\Omega t \right)} - \cos^{2}{\left(\Omega t \right)} + 2\right) & - \ell^{2} m \left(\cos^{2}{\left(\phi \right)} + 1\right) \sin{\left(\Omega t \right)} \cos{\left(\Omega t \right)} & \frac{\ell^{2} m \left(\sin{\left(\Omega t - 2 \phi \right)} - \sin{\left(\Omega t + 2 \phi \right)}\right)}{4}\\- \ell^{2} m \left(\cos^{2}{\left(\phi \right)} + 1\right) \sin{\left(\Omega t \right)} \cos{\left(\Omega t \right)} & \ell^{2} m \left(\sin^{2}{\left(\phi \right)} \sin^{2}{\left(\Omega t \right)} - 2 \sin^{2}{\left(\Omega t \right)} + 2\right) & - \frac{\ell^{2} m \left(\cos{\left(\Omega t - 2 \phi \right)} - \cos{\left(\Omega t + 2 \phi \right)}\right)}{4}\\\ell^{2} m \left(\cos^{2}{\left(\phi \right)} + 1\right) & - \frac{\ell^{2} m \left(\cos{\left(\Omega t - 2 \phi \right)} - \cos{\left(\Omega t + 2 \phi \right)}\right)}{4} & \ell^{2} m \left(\cos^{2}{\left(\phi \right)} + 1\right)\end{matrix}\right]
+				$}
+				\] 
+			\[
+				\vec{L}_A = \left[\begin{matrix}\frac{\Omega \ell^{2} m \left(\sin{\left(\Omega t - 2 \phi \right)} - \sin{\left(\Omega t + 2 \phi \right)}\right)}{4}\\- \frac{\Omega \ell^{2} m \left(\cos{\left(\Omega t - 2 \phi \right)} - \cos{\left(\Omega t + 2 \phi \right)}\right)}{4}\\\Omega \ell^{2} m \left(\cos^{2}{\left(\phi \right)} + 1\right)\end{matrix}\right]
+			\qquad
+				\vec{\tau}_A = \left[\begin{matrix}\frac{\Omega^{2} \ell^{2} m \left(\cos{\left(\Omega t - 2 \phi \right)} - \cos{\left(\Omega t + 2 \phi \right)}\right)}{4}\\\frac{\Omega^{2} \ell^{2} m \left(\sin{\left(\Omega t - 2 \phi \right)} - \sin{\left(\Omega t + 2 \phi \right)}\right)}{4}\\0\end{matrix}\right]
+			\]
 
 	\item 
-	\begin{minipage}[t][2.5cm]{0.75\textwidth}
+	\begin{minipage}[t][2.8cm]{0.75\textwidth}
 		\textbf{Molécula de agua}\\
-		Calcule los momentos de inercia para una molécula de \isotope{H_2O}.\\
+		Calcule los momentos de inercia en el SI para una molécula de \isotope{H_2O}.
 		En CNPT se abre con un ángulo de \ang{104,5;;} y median \SI{95.84}{\pico\metre} entre \isotope{O} y \isotope{H}.
+		Respuesta:\\
+		\[
+			\scalebox{0.8}{$
+			\overline{\overline{I}} = \left[\begin{matrix}1.02353565118967 \cdot 10^{-47} & 0 & 0\\0 & 1.92240664746526 \cdot 10^{-47} & 0\\0 & 0 & 2.94594229865493 \cdot 10^{-47}\end{matrix}\right]
+			$}	
+		\]
 	\end{minipage}
 	\begin{minipage}[c][2cm][t]{0.2\textwidth}
 		\includegraphics[width=\textwidth]{moleculaH2O}
@@ -92,8 +108,9 @@
 			En una planchuela metálica homogénea se calaron dos aberturas en forma simétrica.
 			Suspendida desde el punto A \emph{pendulea} en el plano \(x,y\).
 			Por eso es relevante conocer su momento de inercia \(I_{zz}\) desde ese punto.
-
 			Cuente con los datos disponibles en un taller: espesor $e$ del material, dimensiones del plano y una $m$ de pesada. 
+
+			Se sugiere seguir esta secuencia:			
 		\end{minipage}
 		\begin{minipage}[c][2cm][t]{0.45\textwidth}
 			\includegraphics[width=\textwidth]{o-023}
@@ -106,6 +123,11 @@
 				\item Restando al \(I_{zz}\) de la planchuela sin calado el de los círculos obtenga el de la planchuela calada.
 				\item Nuevamente con Steiner traslade el \(I_{zz}\) de la planchuela calada al punto de penduleo A.
 			\end{enumerate}
+
+			Respuesta:\\
+			\[
+			\overline{\overline{I}} = \left[\begin{matrix}\frac{m \left(6 \pi R^{4} + 24 \pi R^{2} d^{2} - a b^{3}\right)}{12 \cdot \left(2 \pi R^{2} - a b\right)} & 0 & 0\\0 & \frac{m \left(- 3 \pi R^{4} - 3 \pi R^{2} a^{2} + 2 a^{3} b\right)}{6 \left(- 2 \pi R^{2} + a b\right)} & 0\\0 & 0 & \frac{m \left(- 12 \pi R^{4} - 6 \pi R^{2} a^{2} - 24 \pi R^{2} d^{2} + 4 a^{3} b + a b^{3}\right)}{12 \left(- 2 \pi R^{2} + a b\right)}\end{matrix}\right]	
+			\]
 
 
 	\item 

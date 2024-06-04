@@ -34,27 +34,24 @@ bibliography: bettachini.bib
 
 # Optional fields if submitting to a AAS journal too, see this blog post:
 # https://blog.joss.theoj.org/2018/12/a-new-collaboration-with-aas-publishing
-aas-doi: 10.3847/xxxxx <- update this with the DOI from AAS once you know i
+=======
+aas-doi: 10.3847/xxxxx <- update this with the DOI from AAS once you know it.
 aas-journal: Astrophysical Journal <- The name of the AAS journal.
 ---
 
 # Summary
 
-MR: Puse mi filiación actual.No sé si para el proyecto es necesario y conveniente que figure la de UNLaM.
-
 We present a code-based undergraduate course on Analythical Mechanics. 
 It is based on modelling simple mechanical devices as rigid bodies and employing the Euler-Lagrange equation and a set of Jupyter notebooks. The use of a lagrangian approach allows to create a set of functions recurrently applied to different problems, and then for the students to reuse and modify to solve further problems having incresingly complexity.
 
-The whole course is hosted in Github, heavely relies on the use of jupyter notebooks presenting the physics 
+The whole course is hosted in Github, and it heavely relies on the use of jupyter notebooks presenting the physics 
 
-
-
-
-
-
-# ==========================================================================================
+# ==========================================================================================00 
 
 The presented tools are the basis of a inverted classroom course, here the students are presented previously to the theory and problems.
+
+
+
 
 The forces on stars, galaxies, and dark matter under external gravitational
 fields lead to the dynamical evolution of structures in the universe. The orbits

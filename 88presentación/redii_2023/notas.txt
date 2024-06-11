@@ -1,0 +1,17 @@
+Resumen:
+Hay que recortar: Máximo 200 palabras
+
+Herramientas:
+
+- La figura de Teams no es la correcta.
+
+Conclusiones:
+- Referencia [4,17,18]:  17 y 18 no existen. 4 aparece más de una vez en el .bib
+
+Referencias:
+- Agregué referencias al final del .bib.
+- Revisar "markdown".
+- Revisar "ams".
+- Revisar "colab".
+- Revisar "repositorio victor": debería ser otro tipo de referencia, algo más destacado.
+- Revisar "creative"

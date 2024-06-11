@@ -1,0 +1,11 @@
+
+After the folder "english_translation" is moved to its final location:
+introUNLaM:
+- fix paths, %edg fix path
+- Footer: is it "Updated on" or "Updated in" or what?
+
+
+01Vectorial:
+exercisesVector: ready
+vectorKinematics: ready 
+MarkdownLaTeX: ready

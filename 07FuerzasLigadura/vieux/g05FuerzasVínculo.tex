@@ -1,0 +1,109 @@
+\documentclass[11pt,spanish,a4paper]{article}
+
+\input{../introUNLaM}
+
+\begin{document}
+\begin{center}
+  \textsc{\large Mecánica general}\\
+  \textsc{\large Multiplicadores de Lagrange | Fuerzas de vínculo}
+\end{center}
+
+\begin{enumerate}
+
+
+	
+\item \textbf{Péndulo rígido ideal}\\
+\begin{minipage}[t][1.5cm]{0.85\textwidth}
+Calcule la tensión de la cuerda con el método de multiplicadores de Lagrange.
+La restricción es que la pesa se mantiene siempre en \(\vec{r} = l \hat{\rho}\), ergo la función que expresa esto es \(f(\rho) = \rho - l = 0\).
+\end{minipage}
+\begin{minipage}[c][3cm][t]{0.1\textwidth}
+	\includegraphics[width=\textwidth]{marion_fig7_1}
+\end{minipage}
+
+
+
+\item \textbf{Cilindro que rueda por un plano inclinado} [Marion (e) ex. 7.5]\\
+% English \textbf{Marion ejemplo 6.5 y ejemplo 7.9} Disco rodando en un plano inclinado.
+\begin{minipage}[t][3.5cm]{0.7\textwidth}
+	\begin{enumerate}
+		\item Encuentre las ecuaciones de movimiento, 
+		\item la aceleración angular,
+		\item y la fuerzas de vínculo. 
+	\end{enumerate}
+\end{minipage}
+\begin{minipage}[c][2cm][t]{0.25\textwidth}
+	\includegraphics[width=\textwidth]{marion_fig6_7}
+\end{minipage}
+
+
+	
+\item
+\begin{minipage}[t][5.5cm]{0.6\textwidth}
+\textbf{Doble máquina de Atwood} [Marion (e) ex. 7.8 y ejercicio 7-37]\\
+Utilice el sistema de coordenadas indicadas.
+Para este sistema de poleas determine: 
+\begin{enumerate}
+	\item las ecuaciones de movimiento,
+	\item y las tensiones de ambas cuerdas utilizando el método de multiplicadores de Lagrange.
+\end{enumerate}
+\end{minipage}
+\begin{minipage}[c][4cm][t]{0.35\textwidth}
+	\includegraphics[width=\textwidth]{marion_fig7_6}
+\end{minipage}
+
+
+
+\item 
+\textbf{Pesos enlazados por una cuerda} [Taylor 7.50]\\
+Una pesa de de masa \(m_1\) está posada sobre una mesa horizontal.
+Está atada a una cuerda dispuesta horizontalmente hasta una pequeña polea (masa despreciable) que no ofrece fricción en el borde de la mesa.
+En el otro extremo de la cuerda cuelga otra pesa de masa \(m_2\).
+
+Llame las distancias a \(m_1\) y \(m_2\) desde la polea \(x\) e \(y\) respectivamente.
+Estas satisfacen la ecuación de restricción \(f (x, y) = x + y -l = 0\), siendo \(l\) la longitud de la cuerda.
+\begin{enumerate}
+\item Escriba las dos ecuaciones de Lagrange modificadas y resuélvalas (juntos con la ecuación de restricción) para \(x, y\) y para el multiplicador de Lagrange \(\lambda\).
+\item Encuentre las fuerzas de tensión sobre ambas masas.
+\item Verifique sus respuestas resolviendo el problema con la metodología Newtoniana.
+\end{enumerate}
+
+
+
+
+\item 
+\begin{minipage}[t][3cm]{0.65\textwidth}
+\textbf{Partícula deslizando sobre una semi-esfera} [Marion (e) ex. 7.10]\\ 
+La partícula de masa \(m\), considerada puntual, desliza sobre una semi-esfera de radio \(R\) sin fricción.
+Encuentre: 
+\begin{enumerate}
+	\item la fuerza del vínculo, 
+	\item y el ángulo en que la partícula se despega de la semi-esfera.
+\end{enumerate}
+\end{minipage}
+\begin{minipage}[c][0cm][t]{0.3\textwidth}
+	% \includegraphics[width=\textwidth]{marion7_10}
+	\begin{tikzpicture}[scale= 1]
+		\draw [ultra thick] (-3,0) -- (3,0);
+		% \draw [ultra thick] (-3,0) -- (3,0);
+		\fill [pattern = north east lines] (-3,0) rectangle (3,-0.2); % piso
+		\draw [ultra thick] (-2,0) .. controls (-2,2*0.555) and (-2*0.555,2) .. (0,2) .. controls (2*0.555,2) and (2,2*0.555) .. (2,0); % semi esfera
+		% \filldraw (0,2.2) circle (0.2); % masa superior
+		% \fill (2*0.5+.12,1.732+.18) circle [radius=0.25] node [midway, text=white] { \( m \) };
+		\filldraw (2*0.5+.12,1.732+.18) circle (0.2) node [above, right=5] {\(m\)}; % masa a la derecha
+		% \draw (2,2) circle [radius=0.3, color=white, fill=black] node {$T_1$};
+		\draw (0,0) -- (0,2); % linea vertical
+		\draw [-stealth] (0,0) -- (1,1.732) node [midway, anchor=west] {\(R\)}; % linea hacia la derecha
+		\draw [-stealth] (0,1) arc (90:60:1) node [above left] {\(\theta\)}; % arco c/ flecha comenzando en (0,1), de 90 a 60 grados, 1...
+		% \node [circle,draw,label=60:$60^\circ$,label=below:$-90^\circ$] {\(m\)}; 
+		% \node at (-2*0.5+.15,1.732+.15) [circle,draw,fill=black] {\(m\)}; 
+		\draw [-stealth] (-2.5,2) -> (-2.5,1) node [above=15, right=2] {\(\vec{g}\)}; % g vertical
+        \end{tikzpicture}
+\end{minipage}
+
+
+
+
+
+\end{enumerate}
+\end{document}

@@ -1,0 +1,867 @@
+\documentclass[12pt, spanish, a4paper, ]{article}
+% Versión 2.o cuat 2016 Víctor Bettachini < victorbettachini@cnea.gov.ar >
+
+\usepackage[spanish]{babel}
+\addto\shorthandsspanish{\spanishdeactivate{~<>}}
+\usepackage[utf8]{inputenc}
+
+\usepackage{float}
+
+\usepackage{units}
+\usepackage[separate-uncertainty=true, multi-part-units=single, locale=FR]{siunitx}
+
+\usepackage{amsmath}
+\usepackage{amstext}
+\usepackage{amssymb}
+
+\usepackage{cancel}
+
+\renewcommand{\thefootnote}{\roman{footnote}} 
+
+\usepackage{physics}
+
+\usepackage{booktabs} % table rules
+
+\usepackage{graphicx}
+\graphicspath{{./graphs/}{../figurasLaTeX/}}
+
+% \usepackage{tikz}
+% \usetikzlibrary{decorations.pathmorphing}
+% \usetikzlibrary{patterns}
+% \input{DimLinesTikz}
+
+\usepackage{hyperref}
+
+\usepackage[bottom=2cm,top=1cm,width=18cm,nohead]{geometry}
+
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead{}
+\fancyfoot{\href{https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es_ES}{$\vcenter{\hbox{\includegraphics[height=0.4cm]{by-nc-sa_80x15.pdf}}}$} \href{https://ingenieria.unlam.edu.ar/}{DIIT - UNLaM}}
+% \fancyfoot{{\textcopyright DIIT, UNLaM}}
+\fancyfoot[C]{ {\tiny Actualizado al \today} }
+\fancyfoot[R]{Pág. \thepage/\pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% \usepackage{multicol} % lista multicolumna
+
+\usepackage{changes} % textsub super script
+
+
+
+
+\title{Un destilado de \emph{Principios variacionales de la mecánica}}
+\author{Víctor Bettachini}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+%\begin{center}
+%  \textsc{\large Un destilado del libro de Cornelius Lanczos}\\
+%  \textsc{\large ``Principios variacionales de la mecánica''}\\
+%  \textsc{Víctor A. Bettachini}
+%\end{center}
+%
+
+\begin{abstract}
+	El libro \emph{The variational principles of mechanics}\footnote{Cornelius Lanczos. The Variational Principles of Mechanics. University of Toronto press, 1952.
+} usa un enfoque histórico para discutir los principios de la mecánica analítica.
+	Es un texto que me sirvió para entender en que se fundamentan las herramientas que se enseñan en cada curso de mecánica clásica o racional.
+	En este documento presento un \emph{destilado}, o resumen aclaratorio, que escribí a medida que intentaba comprender esta obra de Cornelio Lanczos\footnote{Lánczos Kornél. Físico y matemático húngaro (Székesfehérvár, 1893 - Budapest, 1974).}.
+
+	Indico bajo cada título la sección correspondiente en que se desarrolla el tema en este libro o en la inmejorable obra de referencia sobre el tema, \emph{Mecánica}\footnote{Lev Davidovich Landau y E. M. Lifshitz. Mecánica. 2.a. Curso de física teórica. Reverté, 1994.
+} de Lev Landau\footnote{Físico soviético (Baku, 1908 - Moscú, 1968)}. 
+	% Indico bajo cada título la sección correspondiente en que se desarrolla el tema en este libro o en la inmejorable obra de referencia sobre el tema \emph{Mecánica} de Lev Landau\footnote{\foreignlanguage{russian}{Лев Дави́дович Ланда́у}. Físico soviético (Baku, 1908 - Moscú, 1968)}. 
+	Cada expresión matématica que figura en alguno de estos libros lo numero de igual forma en este documento.
+	En las pocas magnitudes vectoriales utilizadas remarco tal condición con una flecha y escribiéndoles en negrita.
+\end{abstract}
+
+
+\tableofcontents
+
+
+\section{Mecánica: enfoque vectorial vs. analítico}
+\textbf{Referencia: Lanczos I\S1}\\
+
+Para Isaac Newton\footnote{Físico y matemático inglés (Woolsthorpe, Lincolnshire, 1642 - Kensington, Middlesex 1726).} la ley fundamental de la mecánica es aquella que establece \(\va{F}_i= m_i \va{a}_i\) para una partícula \(i\).
+Así tal partícula se mueve libre en el espacio, conservando su momento lineal, hasta tanto actúe una fuerza sobre ella.
+Para una sola partícula este esquema resulta muy simple y adecuado.
+mas cuando se trata de analizar un sistema conformado por muchas de ellas, hay que aislar cada una y obtener las fuerzas que ejerce cada una sobre las otras.
+Estas fuerzas las llamaremos \emph{fuerzas de interacción}.
+
+El desconocimiento de la naturaleza de muchas de estas fuerzas de interacción hacen necesario el uso de postulados adicionales.
+Newton pensó que su tercer ley, ``la acción equivale a la reacción'', se ocuparía de todos estos problemas dinámicos.
+Esto no resultó así, como demuestra el ejemplo de la dinámica de cuerpos rígidos para cuyo análisis hay que \emph{encorsetarse} en presunciones como de que las fuerzas entre componentes del sistema son todas centrales\footnote{En las fuerzas centrales estas apuntan de una partícula a la otra con la que interactua, por tanto la definición excluye a fuerzas observadas en el interior de sólidos debidas a torsión y tensiones de corte que no son colineales con una recta pasando entre los elementos interactuantes.}.
+
+En el enfoque analítico se analiza el \emph{sistema mecánico} en su conjunto, sin aislar fuerzas sobre partículas individuales.
+Si en el enfoque vectorial la fuerza sobre cada punto debe analizarse, en el analítico basta con conocer una única función que depende de la posición (y a veces también la velocidad) de las partículas; esta \emph{función trabajo} contiene en forma implícita todas las fuerzas que actúan sobre las partículas del sistema.
+Para obtener tales fuerzas basta una simple diferenciación de esta función.
+
+Otra ventaja de este último enfoque es el manejo de condiciones auxiliares.
+Muchas veces existen \emph{condiciones dinámicas} que se conocen \emph{a priori} del análisis de un sistema.
+Por ejemplo la distancia entre dos puntos cualesquiera de un cuerpo rígido se mantiene inalterable.
+Tal condición se mantiene gracias a fuertes fuerzas de vínculo entre partículas del sistema.
+El enfoque analítico no requiere determinar tales fuerzas, basta con enunciar la condición entre las posiciones de las partículas.
+Lo mismo se aplica al analizar un fluido; uno se despreocupa de las fuerzas internas.
+
+Pero tal vez la diferencia mas crucial se hace evidente en un sistema complejo.
+En el enfoque vectorial se requiere plantear por separado un elevado número de ecuaciones diferenciales y luego concatenarlas.
+Los \emph{principios variacionales} de la mecánica analítica permiten descubrir la base que todas estas ecuaciones deben respetar.
+Existe un principio, que sostiene que una cantidad llamada \emph{acción} debe ser \emph{estacionaria} (ver sección \ref{trabajosVirtuales}) y el cumplir con solo esta condición permite obtener las ecuaciones diferenciales que describen correctamente la dinámica del sistema.
+
+En resumen:
+\begin{enumerate}
+	\item La mecánica vectorial aísla partículas; la analítica considera el sistema como un todo.
+	\item La vectorial construye una fuerza ejercida sobre cada partícula; la analítica considera una única función que contiene toda la información sobre las fuerzas de interés.
+	\item Si hay fuerzas que mantienen una condición entre coordenadas el enfoque vectorial requiere obtener estas. En el analítico basta enunciar matemáticamente tal relación.
+	\item Con el método analítico se obtiene el conjunto completo de ecuaciones que describen la dinámica a partir de un único principio. Basta con minimizar la cantidad llamada \emph{acción}. 
+\end{enumerate}
+
+
+
+
+\section{El enfoque analítico de la mecánica }
+\textbf{Referencia: Lanczos 0\S1}\\
+
+Para Newton, es decir en la mecánica vectorial, las fuerzas actúan produciendo un cambio en el momento de una partícula
+\begin{equation}
+	\sum \va{F}(t)= \dv{\va{p}}{t}= m \dv{\va{v}}{t},\footnote{La masa solo se puede sacar como constante si descartamos efectos relativistas.}
+\end{equation}
+% Para su contemporaneo Gottfried Leibniz no era el momento lo que describía su estado dinámico  
+en tanto que para su contemporáneo Gottfried Leibniz\footnote{Matemático y físico alemán (Leipzig 1646 - Hanover 1716)} la acción de estas era producir un cambio en una cantidad que denominó \emph{vis viva} (fuerza viviente) que cuantificó en \(m v^2\) que no es otra cosa que el doble de lo que llamamos \emph{energía cinética}.
+Y así como Leibniz reemplazó el momento Newtoniano con la energía cinética, siguiendo con tal línea de razonamiento, reemplazó la fuerza con el \emph{trabajo de la fuerza}.
+Este último fue posteriormente reemplazado con el concepto de \emph{función trabajo}.
+Así Leibniz es el iniciador una nueva rama del estudio de la mecánica llamada \emph{mecánica analítica} que basa su estudio del equilibrio y el movimiento en dos cantidades no vectoriales, sino escalares, la \emph{energía cinética} y la \emph{función trabajo}, esta última a veces reemplazable por una \emph{energía potencial}.
+
+Puede resultar difícil el aceptar que dos magnitudes escalares alcancen para determinar un movimiento siendo este un fenómeno tan relacionable con una determinada dirección.
+El teorema de la energía que establece que la suma de las energías cinéticas y potenciales no varia durante un movimiento da solo \emph{una} ecuación, cuando es evidente que describir el movimiento de solo una partícula requiere de \emph{tres} (las dimensiones espaciales), incrementado tal número si el sistema está compuesto de mas partículas.
+Pero de hecho estas dos cantidades escalares alcanzan para describir la dinámica del más complejo sistema si se las usan en conjunto con un \emph{principio}.
+
+Antes de presentar tal principio, discutiremos tres conceptos fundamentales dentro del enfoque analítico: el trabajo de una fuerza, las coordenadas generalizadas, y la función trabajo. 
+
+
+\subsection{Trabajo de una fuerza}
+En la ecuación Newtoniana \(\va{F}= m \va{a}\) cada lado de la igualdad responde a dos aspectos diferentes de un problema mecánico.
+El lado derecho responde a la calidad inercial de la masa, que es recogida en la energía cinética en el tratamiento analítico.
+El lado izquierdo es el efecto de un campo externo actuando sobre la partícula.
+Aunque estamos acostumbrados a pensar la fuerza como algo primitivo e irreductible, en el enfoque analítico el \emph{trabajo} hecho por la fuerza es nuestra preocupación principal mientras que la fuerza propiamente dicha es una cantidad secundaria que derivamos de la anterior.
+
+El trabajo es una cantidad escalar que se obtiene de integrar la fuerza ejercida sobre la trayectoria de una partícula
+\begin{equation}
+	W= \int \va{F} \cdot \dd\va{r}.
+\end{equation}
+
+Toda fuerza puede descomponerse según el sistema de coordenadas utilizado.
+Para el caso del sistema cartesiano
+\begin{equation}
+	\va{F}= F_x \hat{x}+ F_y \hat{y}+ F_z \hat{z},
+\end{equation}
+
+Pero si analizamos solo una fuerza, nada impide orientar un eje con ella y se puede escribir el trabajo \(W= \int F_x \dd x\).
+Así en forma diferencial puede expresarse un trabajo infinitesimal \(\dd w= F_x \dd x\), que solo será \emph{integrable} si \(F_x\) es la misma cuando se recorre el mismo \(x\).
+Un contraejemplo clásico es el de la fuerza que frena una rueda enclavada de un automóvil.
+El signo de la fuerza de rozamiento cambia para oponerse al desplazamiento.
+
+En este caso unidimensional una trayectoria cerrada obliga a recorrer los mismos puntos en un sentido y otro, pero en el caso general es claro que el trabajo resulta dependiente de la trayectoria y no de sus puntos inicial y final.
+Y como usualmente es posible que las fuerzas involucradas \(\vec{F}= \vec{F}(x,y,z)\) presenten valores que hacen que \(W \neq 0 \) en una trayectoria cerrada (igual punto inicial y final) queda claro que el trabajo infinitesimal no es un verdadero diferencial cuya integral solo depende de los límites de integración, y es esencialmente una cantidad \emph{no integrable}.
+
+Así el trabajo se expresa como una cantidad infinitesimal que es una forma diferencial de primer orden, pero no integrable\footnote{Se utiliza la notación de escribir una barra sobre una cantidad diferencial no integrable.}, 
+\begin{equation}\label{Lanczos17.2}
+	\overline{\dd w}= \displaystyle\sum_{i=1}^{N} F_{xi} \dd x_i+ F_{yi} \dd y_i+ F_{zi} \dd z_i,
+	\tag{Lanczos 17.2}
+\end{equation}
+sumando sobre las \(N\) fuerzas impresas sobre la partícula.
+
+
+\subsection{Coordenadas generalizadas}\label{generalizadas}
+% Los métodos vectoriales son eminentemente útiles en los problemas de estática.
+% Cuando analizamos el movimiento el número de problemas que pueden resolverse por métodos puramente vectoriales es limitado.
+En el enfoque analítico la definición de coordenada es una construcción puramente matemática sin relación con los vectores posición del enfoque Newtoniano.
+Las coordenadas solo deben guardar una relación \emph{uno a uno} con los puntos del espacio físico analizado, luego podemos operar en forma algebraica sobre estas olvidando su sentido físico.
+
+Un sistema de \(P\) partículas que no tiene restricciones a su movimiento presenta en el sistema cartesiano \(x_i, y_i, z_i\) (\(i=1, 2, \ldots, P\)) totalizando \(3P\) coordenadas.
+Su dinámica estará determinada si conocemos \(x_i, y_i, z_i\) en función del tiempo \(t\).
+El mismo problema estará resuelto si estos últimos están expresados en función de unas cantidades \(q_1, q_2, \ldots, q_{3P}\) y conocemos como estas dependen de \(t\).
+Un ejemplo de esto es si aprovechamos la relación con las coordenadas polares
+\begin{equation}\label{Lanczos12.3}
+	\begin{aligned}
+		x &= r \cos{\theta} \sen{\varphi}\\
+		y &= r \sen{\theta} \sen{\varphi}\\
+		z &= r \cos{\varphi}
+	\end{aligned},
+	\tag{Lanczos 12.3}
+\end{equation}
+y obtenemos \(r(t), \theta(t), \varphi(t)\).
+En definitiva no es importante cual sistema de coordenadas se utilice, siempre que para \(P\) partículas definamos unas \(3P\) coordenadas independientes.
+Estas reciben el nombre de \emph{coordenadas generalizadas} \(q_i\), y sus derivadas \(\dot{q}_i= \pdv{q_i}{t}\), el de \emph{velocidades generalizadas}.
+Con estas debemos ser capaces de escribir relaciones \(f_{3P}\) que nos permitan recuperar las variables cartesianas
+\begin{equation}\label{Lanczos12.8}
+	\begin{aligned}
+		x_1 &= f_1(q_i, \ldots, q_n) \\
+		y_1 &= f_2(q_i, \ldots, q_n) \\
+		& \ldots \\
+		y_P &= f_{3P-1}(q_i, \ldots, q_n) \\
+		z_P &= f_{3P}(q_i, \ldots, q_n)
+	\end{aligned}
+	\tag{Lanczos 12.8}
+\end{equation}
+
+En la práctica el número de \(q_i\) que se utilizan suele ser menor a \(3P\) cuando se consideran las condiciones que limitan la dinámica.
+Por ejemplo si un sistema de dos partículas, \(P=2\), está limitado a moverse en un plano tenemos dos \emph{grados de libertad} menos, por lo que nos basta con un número de coordenadas generalizadas \(n= 3\times 2- 2\).
+Así el número de grados de libertad de un sistema es 
+\begin{equation}
+	n= 3 P- K,
+\end{equation}
+siendo \(K\) el número de condiciones cinemáticas, \emph{constreñimientos }o \emph{ligaduras}, impuestas al sistema.
+
+
+
+\subsection{Función trabajo | Fuerzas mono y poligénicas}\label{funcionTrabajo}
+Así como podemos escribir el trabajo infinitesimal para un sistema cartesiano, ecuación \eqref{Lanczos17.2}, podemos hacer lo propio para expresarlo en el sistema de coordenadas generalizadas
+\begin{equation}\label{Lanczos17.3}
+	\overline{\dd w}= F_1 \dd q_1+ F_2 \dd q_2+ \ldots + F_n \dd q_n=  \displaystyle\sum_{i=1}^{n} F_{i} \dd q_i,
+	\tag{Lanczos 17.3}
+\end{equation}
+donde las \(F_i\) son las componentes de las llamamadas \emph{fuerzas generalizadas}.
+
+% Las fuerzas actuando sobre un sistema pueden clasificarse en dos categorías.
+Si bien \(\overline{\dd w}\) es en el caso general una forma diferencial de primer orden, existen casos en que resulta ser una verdadera diferencial de una función, de forma tal que podemos quitar la barra sobre ella, y renombrarla como \(\dd w= \dd U\), siendo
+\begin{equation}\label{Lanczos17.6}
+	U= U(q_1, q_2, \ldots, q_n),
+	\tag{Lanczos 17.6}
+\end{equation}
+la llamada \emph{función trabajo}.
+De esta forma
+\begin{equation}\label{Lanczos17.8}
+	\sum_{i=1}^{n} F_i \dd q_i = \sum_{i=1}^{n} \pdv{U}{q_i} \dd q_i 
+	\Rightarrow F_i = \pdv{U}{q_i},
+	\tag{Lanczos 17.8}
+\end{equation}
+siendo que usualmente se utiliza el negativo de la función trabajo \(V= - U\) para interpretarla como una \emph{energía potencial}, de forma que 
+\begin{align}\label{Lanczos17.10}
+	F_i= - \pdv{V}{q_i},
+	\tag{Lanczos 17.10}
+\end{align}
+siendo \(V= V(q_1, q_2, \ldots, q_n)\).
+
+Las fuerzas de esta clase presentan dos características destacables:
+\begin{enumerate}
+	\item satisfacen la \emph{conservación de la energía} por lo que reciben el nombre de \emph{fuerzas conservativas};
+	\item aunque tengan \(n\) componentes de calculan de una \emph{única función escalar} \(U\).
+\end{enumerate}
+
+La definición de la función trabajo como solo dependiente de las coordenadas generalizadas es demasiado restrictiva, pues bien conocemos casos de fuerzas derivables de funciones trabajo en que el tiempo \(t\) figura explícitamente \(U= U(q_1, q_2, \ldots, q_n,t)\).
+En tales casos se pierde la conservación de la energía, pero las ecuaciones \eqref{Lanczos17.8} siguen siendo válidas.
+Un ejemplo de este caso es el de una partícula con carga eléctrica en un \emph{cyclotron} que luego de cada ciclo regresa al mismo punto de partida pero con una energía cinética mayor.
+Claramente las fuerzas de Lorentz\footnote{\(\va{F}= q (\va{E}+ \va{v}\times \va{B})\)} involucradas se pueden obtener de funciones trabajo\footnote{\(\va{B}= \curl{\va{A}}\) y \(\va{E}= -\grad \varphi - \pdv{\va{A}}{t}\), donde \(\va{A}\) es el denominado potencial vector y \(\varphi\) el eléctrico.}, pero en el caso particular del \emph{cyclotron} el campo eléctrico varia en el tiempo, y por tanto no resulta en una fuerza conservativa.
+
+El caso opuesto, de que conserve la energía pero no pueda definirse una \(U\) es posible.
+Este es el caso de las fuerzas de rozamiento estático que intervienen en el fenómeno de rodadura, que al no haber desplazamiento involucrado no hacen trabajo alguno.
+El caso de este tipo de fuerzas para las cueles no puede idearse una función escalar de las cuales derivarlas se denominan \emph{poligénicas}, por sus múltiples posibles orígenes.
+Este termino está en contraposición al que corresponde a aquellas fuerzas que podemos derivar de una cantidad escalar, la función trabajo \(U\), que denominamos \emph{monogénicas} para tener un término que las englobe indepedientemente de si son o no conservativas.
+
+El caso más general de una fuerza monogénica puede depender tanto de las coordenadas como de las velocidades generalizadas, \(U= U(q_1, \ldots, q_n; \dot{q}_1, \ldots, \dot{q}_n; t)\).
+De hecho este es el caso de las mencionadas fuerzas de Lorentz.
+En tal caso pueden obtenerse las componentes de fuerza como
+\begin{equation}\label{Lanczos17.13}
+	F_i= \pdv{U}{q_i}- \dv{t} \pdv{U}{\dot{q}_i},
+	\tag{Lanczos 17.13}
+\end{equation}
+usando un procedimiento similar al presentado en la sección \ref{EulerLagrange}.
+
+
+%\subsubsection{Conservación de la energía - Sistemas esclerónomos y reónomos} % Lanczos \S 18
+
+
+\section{Principio de trabajos virtuales}\label{trabajosVirtuales} %  Lanczos III\S1
+En la mecánica de Newton un partícula está en equilibrio si la suma de las \(N\) fuerzas actuando sobre esta se anula, \(\displaystyle\sum_{i=1}^N \va{F}= 0\), es decir la fuerza resultante sobre la misma es nula.
+En este enfoque de la mecánica se aísla la partícula y se reemplazan todas las limitaciones a su movimiento con \emph{fuerzas de reacción} que hagan cumplir estas \emph{ligaduras}.
+En el tratamiento analítico descarta estas fuerzas y solo tiene en cuenta las externas.Para esto se realizan \emph{desplazamientos virtuales} que estén en armonía con las \emph{ligaduras}.
+
+De actuar fuerzas resultantes externas \(\va{F}_1, \va{F}_2, \ldots, \va{F}_P\) sobre cada una de las \(P\) particulas que componen un sistema, sus correspondientes \emph{desplazamientos virtuales} los notaremos \(\delta \va{r}_1, \delta \va{r}_2, \ldots, \delta \va{r}_P\)\footnote{Con \(\delta\) se denotan variaciones virtuales. Ver sección \ref{desplazamientoVirtual}.}.
+Con esta notación el \emph{principio de trabajos virtuales} se puede resumir en:
+\begin{quote}
+ ``Un sistema estará en equilibrio si, y solo si, la suma de los trabajos virtuales de todas la fuerzas impresas sobre él se anula'',
+\end{quote}
+\begin{equation}\label{Lanczos31.2}
+	\overline {\delta \omega} = 
+	\va{F}_1 \cdot \delta \va{r}_1+ \va{F}_2 \cdot \delta \va{r}_2+ \ldots+ \va{F}_P \cdot \delta \va{r}_P = 0.
+	\tag{Lanczos 31.2}
+\end{equation}
+Como en el lenguaje analítico utilizamos \emph{coordenadas generalizadas} (ver sección \ref{generalizadas}) reescribimos esta última expresión como
+\begin{equation}\label{Lanczos31.4}
+	\overline {\delta \omega} = 
+	F_1 \delta q_1+ F_2 \delta q_1+ \ldots + F_n \delta q_n = \sum_{i=1}^n F_i \delta q_i = 0. 
+	\tag{Lanczos 31.4}
+\end{equation}
+
+Si desde el punto de vista Newtoniano el principio de equilibrio de un sistema requería que \emph{la suma de las fuerzas impresas con las de reacción sea nula}, desde el punto de vista analítico el trabajo virtual de las fuerzas impresas puede reemplazarse con el valor negativo del trabajo de las fuerzas de reacción.
+Expresado de esta forma llegamos a postular el principio como:
+\begin{quote} 
+``El trabajo virtual de las fuerzas de reacción es siempre cero para cualquier desplazamiento virtual que esté en armonía con las ligaduras cinemáticas dadas''.
+\end{quote} 
+
+%En el caso particular de que las fuerzas impresas \(F_i\) son \emph{monogénicas} (ver \ref{funcionTrabajo}) su trabajo virtual es igual a la variación de la correspondiente función trabajo, es decir \(delta \omega = \dd U(q_1, \ldots, q_n)\).
+%Como se discutió en \ref{funcionTrabajo} esta última es el negativo de la llamada \emph{energía potencial}, es decir \(dd V= - \dd U= - delta \omega\).
+%El equilibrio de un sistema se logra cuando esta última presenta un valor estacionario \(\delta V= 0\).
+%% Para que el equilibrio sea \emph{estable}, \(V\) debe ser un mínimo.
+
+
+% \subsection{¿Que es un desplazamiento virtual? | Principios variacionales}
+
+\subsection{¿Qué es un desplazamiento virtual? | Valor estacionario}\label{desplazamientoVirtual}
+\textbf{Referencia: Lanczos II\S2}\\
+
+En la sección \ref{trabajosVirtuales} se introdujo el uso del símbolo \(\delta\) asociado a un \emph{desplazamiento virtual}.
+El término \emph{virtual} responde a que es una \emph{variación infinitesimal} de la posición que se realizaría con la intención de \emph{explorar matemáticamente} los valores que en el entorno de un punto \(q_1, q_2, \ldots, q_n\) asume una función continua y deferenciable en las coordenadas \(q_i\).
+
+Para ejemplificar la diferencia de tal desplazamiento con uno \emph{real} asociado con una diferenciación, \(\dd q\), imaginemos una esfera en el punto mas profundo de un \emph{bowl}.
+Podemos explorar como cambia la \emph{energía potencial} \(V\) al evaluarla luego de llevar la esfera a una posición colindante a la actual, pero de hecho no buscamos producir ningún desplazamiento de la esfera.
+Habremos hecho un \emph{desplazamiento virtual}, que se hizo con la intención de explorar la consecuencia de todos los posibles desplazamientos \emph{en cualquier forma cinematicamente admisibles}.
+El término que condensa el concepto de un desplazamiento al mismo tiempo \emph{virtual} e \emph{infinitesimal} se denomina \emph{variación}, y se denota con \(\delta\) a sugerencia de Joseph-Louis Lagrange\footnote{Giuseppe Lodovico Lagrangia. Matemático y astrónomo italiano (Turín 1736 - París 1813)}.
+
+Así una variación de la energía potencial representaría
+\begin{equation}\label{Lanczos22.3,6}
+    \delta V = 
+	\pdv{V}{q_1} \delta q_1+ \pdv{V}{q_2} \delta q_2+ \ldots + \pdv{V}{q_n} \delta q_n =
+	\sum^{n}_{i=1} \pdv{V}{q_i} \delta q_i.
+    \tag{Lanczos 22.3,6}
+\end{equation}
+
+Cuando se encuentra el mínimo (o máximo) de una función, como \(V\), la tasa de cambio de esta ante un desplazamiento infinitesimal en cualquiera de sus coordenadas debe ser nula, es decir
+\begin{equation}\label{Lanczos22.7}
+	\pdv{V}{q_i} = 0\; (i= 1, 2, \ldots, n).
+    \tag{Lanczos 22.7}
+\end{equation}
+Y si bien un punto \emph{silla} de \(V\) también cumpliría tal condición, todos los puntos que la cumplen son excepcionales y por tanto se reserva un nombre para ellos; se dice que la función presenta un valor \emph{estacionario} allí.
+% Para que \(V\) sea un valor estacionario esta sumataria debe ser nula, \(\delta V=0\).
+% Puesto que el dezplazamiento es de naturaleza \emph{virtual}, este puede realizarse \emph{en cualquier dirección arbitraria}, y por tanto cada término de la sumatoria debe ser nulo, es decir
+En definitiva convenimos que para que \(V\) presente un valor estacionario en un punto debe cumplirse que \(\delta V=0\) allí.
+
+
+\section{Principio de d'Alembert}
+\textbf{Referencia: Lanczos IV\S1}\\
+
+La 2"a ley de Newton puede escribirse como \(\va{F}- m \va{a}= 0 \), siendo la \(\va{F}\) la fuerza resultante.
+Entonces se puede asumir que la fuerza creada por el movimiento es una \emph{fuerza de inercia} \(\va{I}= - m \va{a}\).
+Así expresada \(\va{F}+ \va{I}=0\) es más que una reformulación de la 2"a ley de Newton, es la expresión de un \emph{principio}.
+Así como en la mecánica Newtoniana el que la fuerza resultante sea nula, \(\va{F}=0\), significa un equilibrio, el agregar la \emph{fuerza de inercia} a un sistema en movimiento permite siempre lograr este ansiado ``equilibrio''.
+De esta forma cualquier criterio que tengamos para un sistema en equilibrio ahora podemos aplicarlo a un sistema en movimiento.
+Jean le Rond d'Alembert\footnote{Matemático y físico francés (París 1717 - París 1783).} lo enunció como:
+\begin{quote}
+``Cualquier sistema de fuerzas está en equilibrio si se agregan a la fuerzas \emph{ejercidas} aquellas de inercia''.
+\end{quote}
+
+Si sumamos a las fuerzas resultantes ejercidas \(\va{F}_i\) sobre una partícula la fuerza de inercia obtenemos la llamada \emph{fuerza efectiva}
+\begin{equation}\label{Lanczos41.5}
+	\va{F}^e_i= \va{F}_i + \va{I}_i.
+	\tag{Lanczos 41.5}
+\end{equation}
+Con esta definición, y sumando sobre las \(P\) partículas de un sistema, puede reformularse el \emph{principio de d'Alembert} como 
+\begin{equation}\label{Lanczos41.6}
+	\overline {\delta \omega^e} = 
+	\displaystyle\sum_{i=1}^P \va{F}^e_i \cdot \delta \va{r}_i \equiv 
+	\displaystyle\sum_{i=1}^P (\va{F}_i - m_i \va{a}_i) \cdot \delta \va{r}_i = 0, 
+	\tag{Lanczos 41.6}
+\end{equation}
+que puesto en palabras es,
+\begin{quote}
+	``El total del trabajo virtual de la fuerzas efectivas es nulo para toda variación reversible que satisfaga las condiciones cinemáticas dadas.''
+\end{quote}
+Esencialmente el principio postula que como el trabajo virtual de las fuerzas impresas sobre un sistema es usualmente distinto de cero, el sistema reaccionará moviendose de forma tal que las fuerzas inerciales hagan nulo \(\overline {\delta \omega^e}\).
+
+La importancia radical del principio de d'Alembert es que permite aplicar el \emph{principio de trabajos virtuales} a cualquier sistema dinámico.
+
+
+\section{Principio de Hamilton: de d'Alembert al Lagrangiano}\label{principioHamilton}
+\textbf{Referencia: Lanczos V\S1}\\
+ 
+% Habiendo convenido que el trabajo tanto de las fuerza virtuales como de las fuerzas inerciales debe ser cero \(\overline{\delta w^e} = 0\)\footnote{\(\overline{\delta w^e}\) se refire al trabajo de las fuerzas efectivas, que incluye las impresas externamente mas las de inercia.}
+
+El principio de d'Alembert establece que \(\overline{\delta \omega^e}= 0\), es decir que el trabajo virtual de las fuerzas efectivas sea nulo.
+El trabajo virtual de la fuerzas impresas puede obtenerse de una forma diferencial monogénica, pero las fuerzas inerciales no, es decir que no pueden deducirse de una función trabajo \(U\).
+William Rowan Hamilton\footnote{Físico y matemático irlandés (Dublín 1805 - Dublín 1865).} mostró que una simple integración respecto del tiempo permite relacionar el trabajo virtual de las fuerzas inerciales con una forma monogénica.
+Su propuesta consiste básicamente en que, de respetarse el principio de d'Alembert, la integración de \(\overline{\delta \omega^e}\) en cualquier intervalo de tiempo también debiera anularse
+\begin{equation}\label{Lanczos51.1}
+	\int^{t_2}_{t_1} \overline{\delta \omega^e} \dd{t}= \int^{t_2}_{t_1} \sum_{i=1}^P \pqty{ \va{F}_i - m_i \dv{\va{v}_i}{t} } \cdot \delta \va{r}_i \dd{t}= 0 
+% \int^{t_2}_{t_1} \delta \over{\omega}^e \dd{t}= \int^{t_2}_{t_1} \sum \left( \va{F}_i - \right) \delta \va{r}_i \dd{t}
+	\tag{Lanczos 51.1}
+\end{equation}
+
+La integral de la resta resultante podría resolverse como la resta de sendas integrales.
+Para analízar la primera, asociada a las \(P\) fuerzas resultantes ejercidas en sendas partícular, debemos recordar que estas pueden descomponerse en \(n\) fuerzas generalizadas monogénicas correspondientes a las \(n\) coordenadas generalizadas\footnote{
+    Una demostración análoga puede seguirse para fuerzas que dependen explícitamente del tiempo \(t\) y/o de velocidades generalizadas \(\dot{q}_i\), pero aquí se omite darlas por claridad.
+}, y que estas a su vez se relacionan con la energía potencial según lo expresado en las ecuaciones \eqref{Lanczos17.8} y \eqref{Lanczos17.10} 
+\begin{equation}\label{Lanczos17.7}
+	\sum_{i=1}^n F_i \dd{q_i}= \sum_{i=1}^n \pdv{U}{q_i} \dd{q_i} \Rightarrow F_i= \pdv{U}{q_i}= - \pdv{V}{q_i} \Rightarrow \sum_{i=1}^P \va{F}_i \cdot \delta \va{r}_i = - \delta V.
+	\tag{Lanczos 17.7}
+\end{equation}
+De integrar esta relación y haciendo uso de la conmutatividad entre diferenciación (integración) y diferenciación\footnote{Tal conmutatividad se demuestra posteriormente en esta sección.} la primera integral resulta ser
+\begin{equation}\label{Lanczos51.2}
+	\int^{t_2}_{t_1} \sum_{i=1}^n \va{F}_i \cdot \delta \va{r}_i \dd{t} = - \int^{t_2}_{t_1} \delta V \dd{t}=
+- \delta \int^{t_2}_{t_1} V \dd{t} ,
+	\tag{Lanczos51.2}
+\end{equation} 
+que representa una variación de la energía potencial del sistema entre \(t_1\) y \(t_2\) para las fuerzas que vulgarmente se denominan conservativas.
+
+En cuanto al termino de las fuerzas inerciales, si asumimos condiciones no relativistas, lo escribimos como 
+\begin{equation}\label{Lanczos51.3A}
+	\int^{t_2}_{t_1} \dv{t} \pqty{m_i \va{v}_i} \cdot \delta \va{r}_i \dd{t}.
+	\tag{Lanczos51.3A}
+\end{equation} 
+Si hacemos uso de la integración por partes\footnote{La integración por partes no es otra cosa que una reescritura de la derivación de un producto:
+\begin{align}
+	% \int u' v & = u v - \int u v' \Rightarrow
+	% \int u' v = \int \dv{t} (u v) - \int u v'\\
+	\int (u \dv{v}{t}+ \dv{u}{t} v) & = \int \dv{(u v)}{t} \Rightarrow
+	\int \dv{u}{t} v = \int \dv{(u v)}{t} - \int u \dv{v}{t}.
+\end{align}
+En este caso \(u= m_i \va{v}_i\) y \(v= \delta \va{r}_i\).
+} para reescribirlo como
+\begin{equation}\label{Lanczos51.3B}
+- \left[ \int^{t_2}_{t_1} \dv{t} \pqty{ m_i \va{v}_i  \cdot \delta \va{r}_i } \dd{t} - \int^{t_2}_{t_1} m_i \va{v}_i \cdot \dv{t} \delta \va{r}_i \dd{t} \right],
+	\tag{Lanczos51.3B}
+\end{equation}
+cuyo primer termino se integra en \(- \eval[ m \va{v}_i \cdot \delta \va{r}_i |^{t_2}_{t_1}\), que es la que se llama un término de borde, y su valor dependerá de su evaluación en \(t_1\) y \(t_2\).
+
+Para resolver el segundo termino de la ecuación \eqref{Lanczos51.3B} hacemos uso de que las operaciones de diferenciación y variación son intercambiables, lo que se denomina propiedad conmutativa\footnote{
+Para probar que diferenciación y variación conmutan debemos interpretar lo que significa la derivada de una variación de \(\va{r}_i (t)\).
+Si nos apartamos en una dirección arbitraria \(\va{\rho} (t)\) en una magnitud \(\epsilon\) nos queda \(\overline{\va{r}_i (t)}= \va{r}_i (t)+ \epsilon \va{\rho} (t)\).
+Así la derivada de tal variación es
+\begin{equation}\label{Lanczos29.1}
+	\dv{t} \delta \va{r}_i= \dv{t}\pqty{\overline{\va{r}_i (t)}- \va{r}_i (t)}= \epsilon \dot{\va{\rho}}_i (t)= \epsilon \va{v}_\rho (t),
+	\tag{Lanczos 29.1}
+\end{equation}
+donde \(\va{v}_\rho (t) \) sería una velocidad de la diferencia con respecto a una \(\va{v}_r (t) \).
+Ahora vemos que sería la variación de una derivada,
+\begin{equation}\label{Lanczos29.3}
+	\delta \dv{t} \va{r}_i= \overline{\dot{\va{r}}_i (t)} - \dot{\va{r}}_i (t)= \pqty{\va{v}_r (t) + \epsilon \va{v}_\rho (t)}- \va{v}_r (t) = \epsilon \va{v}_\rho (t),
+	\tag{Lanczos 29.3}
+\end{equation}
+que al coincidir con la ecuación \eqref{Lanczos29.1} deja demostrada la conmutatividad entre variación y derivación.
+}
+% Para resolver el segundo termino recurrimos a que la operación de diferenciación y la de variación son intercambiables (ver apendice \ref{conmuta}) % \footnote{Ver Lanczos II\S9, ecuación (29.3).} 
+\begin{align}\label{Lanczos51.5A}
+	\int^{t_2}_{t_1} m_i \va{v}_i \cdot \dv{t} \delta \va{r}_i \dd{t} & =
+	\int^{t_2}_{t_1} m_i \va{v}_i \cdot \delta \dv{\va{r}_i}{t} \dd{t} =
+	\int^{t_2}_{t_1} m_i \va{v}_i \cdot \delta \va{v}_i \dd{t}. 
+	\tag{Lanczos 51.5A}
+\end{align}
+El resultado del producto escalar puede obtenerse teniendo en cuenta que la variación de un producto se realiza de igual forma que una derivación, es decir \(\delta(\va{v}_i \cdot \va{v}_i)= \va{v}_i \cdot \delta \va{v}_i +\delta \va{v}_i \cdot \va{v}_i= 2 \va{v}_i \cdot \delta \va{v}_i\), por tanto
+% y operan de igual forma \footnote{La variación de un producto se realiza de igual forma que una derivación: \(\delta(\va{v}_i \cdot \va{v}_i)= \va{v}_i \cdot \delta \va{v}_i 	+ \delta \va{v}_i \cdot \va{v}_i= 2 \va{v}_i \cdot \delta \va{v}_i\).}
+	%  E.g. \(\dv{t} \delta v^2= \delta \dv{t} (v_i \cdot v_1)= \delta \frac{1}{2} \)}
+	%  E.g. \(\dv{t} \delta v^2= \delta \dv{t} (v_i \cdot v_1)= \delta \frac{1}{2} \)}
+\begin{align}\label{Lanczos51.5B}
+	\int^{t_2}_{t_1} m_i \va{v}_i \cdot \delta \va{v}_i \dd{t} & =
+	\int^{t_2}_{t_1} m_i \frac{1}{2} \delta \left( \va{v}_i \cdot \va{v}_i \right) \dd{t} = 
+	% \int^{t_2}_{t_1} m_i \frac{1}{2} \delta \left( \va{v}_i \cdot \va{v}_i \right) \dd{t} = \footnote{\(\dv{t} \delta v^2= \dv{t} \delta(v_i \cdot v_1)\)} \nonumber \\
+	\delta \int^{t_2}_{t_1} \frac{1}{2} m_i v^2 \dd t.
+	\tag{Lanczos 51.5B}
+\end{align}
+
+Sumamos la expresión a la que arribamos en la ecuación \eqref{Lanczos51.2} con la integración del primer término de \eqref{Lanczos51.3B} y con la reformulación de su segundo a la que arribamos en la ecuación \eqref{Lanczos51.5B} y obtenemos
+% la integración de la ecuación (\ref{Lanczos51.3B}) con las reformulaciones de las ecuaciones (\ref{Lanczos51.3A}) y (\ref{Lanczos51.5B}) obtenemos
+\begin{equation}\label{Lanczos51.6}
+	\int^{t_2}_{t_1} \overline{\delta \omega^e} \dd t=
+	- \delta \int^{t_2}_{t_1} V \dd t 
+	- \left[ m \va{v}_i \cdot \delta \va{r}_i \right]\eval^{t_2}_{t_1}
+	+ \delta \int^{t_2}_{t_1} \frac{1}{2} \sum m_i v_i^2 \dd t .
+	% \int^{t_2}_{t_1} \overline{\delta \omega^e} \dd t= \delta \int^{t_2}_{t_1} \frac{1}{2} \sum m_i v_i^2 \dd t - \delta \int^{t_2}_{t_1} V \dd t - \left[ m \va{v}_i \cdot \delta \va{r}_i \right]\eval^{t_2}_{t_1}.
+	\tag{Lanczos51.6}
+\end{equation}
+El último término no es otra cosa que la variación de la energía cinética del sistema \(T\) ente \(t_1\) y \(t_2\), por lo que puede resumirse la ecuación \eqref{Lanczos51.6} en
+\begin{equation}\label{Lanczos51.8}
+    \int^{t_2}_{t_1} \overline{\delta \omega^e} \dd t= \delta \int^{t_2}_{t_1} \left(T - V \right) \dd t - \left[ m \va{v}_i \cdot \delta \va{r}_i \right]\eval^{t_2}_{t_1}.
+    \tag{Lanczos 51.8}
+\end{equation}
+
+Puesto que el objetivo de realizar variaciones en las posiciones recorridas \(\delta \va{r}_i\) es minimizar el trabajo virtual de las fuerzas hasta hacerlo \emph{estacionario}, es decir \(\overline{\delta \omega^e}= 0\), tales variaciones se realizan en el recorrido a lo largo de la integración, no en las posiciones iniciales y finales; es decir \emph{variamos entre límites definidos}, por tanto
+\begin{equation}\label{Lanczos51.9}
+	\delta \va{r}_i\ (t_1)=0 \; \mathrm{y} \; 
+	\delta \va{r}_i\ (t_2)=0,
+	\tag{Lanczos 51.9}
+\end{equation}
+con lo que efectivamente el segundo termino de la ecuación \eqref{Lanczos51.8}, llamado de borde, es nulo.
+
+Arribamos finalmente a que
+\begin{equation}\label{Lanczos51.10}
+    \int^{t_2}_{t_1} \overline{\delta \omega^e} \dd t=
+	\delta \int^{t_2}_{t_1} \left(T - V \right) \dd t= 
+	\delta \int^{t_2}_{t_1} L  \dd t= \delta S,
+    \tag{Lanczos 51.10}
+\end{equation}
+donde \(S\) es la denominada acción obtenida de la integración de
+\begin{equation}\label{Lanczos51.11}
+	L= L(q_i, \dot{q}_i, t) = T - V,
+    \tag{Lanczos 51.11}
+\end{equation}
+que es el denominado \emph{Lagrangiano} del sistema.
+
+Esta reformulación del principio de d'Alembert denominada \emph{principio de Hamilton} establece sencillamente que \(\delta S= 0\), y puede expresarse en palabras como:
+\begin{quote}
+``Dadas las configuración iniciales y finales fruto de la dinámica, la acción debe ser estacionaria para todas las posibles variaciones de la configuración del sistema''. 
+\end{quote}
+
+Este proceder, de encontrar las ecuaciones que describen la dinámica del sistema a través de una minimización de la acción, o \emph{principio de mínima acción}, es común a la mecánica clásica, relativista y ondulatoria.
+Lo único que cambia en cada enfoque es como se escribe el Lagrangiano.
+
+
+\section{Ecuación de Euler-Lagrange}\label{EulerLagrange} % Lanczos II.10 % Landau \SI.2
+\textbf{Referencia: Lanczos II\S10, Landau \S I.2}\\
+  
+
+
+%De producir un pequeño despalazmiento en \(q\) hasta \(q+ \delta q\) la variación en la acción \(S\) es
+%\begin{equation}
+%    L= L(q_i, \dot{q}_i, t) = T - V,
+%    \label{Landau11}
+%\end{equation}
+¿Cómo obtener el valor estacionario de la acción \(S\)?
+La respuesta a como asegurar la condición \(\delta S= 0\) está ligada al concepto de desplazamientos virtuales (ver sección \ref{desplazamientoVirtual}).
+Se trata justamente de explorar el conjunto de variaciones sobre \((q_i, \dot{q}_i, t)\) que efectivamente aseguren minimizar \(S= \int L(q_i, \dot{q}_i, t) \dd t\).
+
+Empezamos analizando la variación del integrando de \(S\), es decir el Lagrangiano ante una variación de coordenadas generalizadas, \(\overline{q_i (t)}= q_i(t) + \delta q_i = q_i (t)+ \epsilon \tilde{q}_i (t)\), y velocidades generalizadas
+\begin{equation}\label{Lanczos210.1}
+	\begin{aligned}
+		\delta L(q_i, \dot{q}_i, t)
+		&= L(q_i+ \delta{q}_i, \dot{q}_i+ \delta \dot{q}_i, t) - L(q_i, \dot{q}_i, t)
+		= \pqty{\pdv{L}{q_i} \delta q_i + \pdv{L}{\dot{q}_i} \delta \dot{q}_i } \notag \\
+		&= L(q_i+ \epsilon \tilde{q}_i, \dot{q}_i+ \epsilon \dot{\tilde{q}}_i, t) - L(q_i, \dot{q}_i, t)
+		= \epsilon \pqty{\pdv{L}{q_i} \tilde{q}_i + \pdv{L}{\dot{q}_i} \dot{\tilde{q}}_i }.
+	\end{aligned}
+  \tag{Lanczos 210.1}
+\end{equation}
+Con esto puede escribirse la variación de \(S\) como
+\begin{equation}\label{Lanczos210.2}
+    \delta S= \delta \int_{t_1}^{t_2 } L \dd{t} = \int_{t_1}^{t_2 } \delta L \dd{t} =
+    \epsilon \int_{t_1}^{t_2 } \pqty{\pdv{L}{q_i} \tilde{q}_i + \pdv{L}{\dot{q}_i} \dot{\tilde{q}}_i } \dd{t}.
+    \tag{Lanczos 210.2}
+\end{equation}
+Puesto que son producto de una variación intencional arbitraria, \(\tilde{q}(t)\) y \(\dot{\tilde{q}}_i(t)\) no son independientes, pero la dependencia entre ambas no puede formularse de forma algebraica.
+Lo que si se puede es eliminar \(\dot{\tilde{q}}_i (t)\) como variable independiente aplicando el método de integración por partes al segundo término de \eqref{Lanczos210.2}
+\begin{equation}\label{Lanczos210.4}
+    \int_{t_1}^{t_2 } \pdv{L}{\dot{q}_i} \dot{\tilde{q}}_i \dd{t} =
+    \pdv{L}{\dot{q}_i} \tilde{q}_i \eval_{t_1}^{t_2} - \int_{t_1}^{t_2 } \pqty{ \dv{t} \pdv{L}{\dot{q}_i} } \tilde{q}_i \dd{t}.
+    \tag{Lanczos 210.4}
+\end{equation}
+El primer término de la ecuación \eqref{Lanczos210.4} se anula pues evalúa en límites temporales definidos donde precisamente no hay variación posible (\(\tilde{q}(t_1)= \tilde{q}(t_2)= 0\)), por tanto la ecuación \eqref{Lanczos210.2} se reduce a 
+\begin{equation}\label{Lanczos210.5}
+	\begin{aligned}
+    \delta S &= 
+    \epsilon \int_{t_1}^{t_2 } \pqty{\pdv{L}{q_i} \tilde{q}_i - \pqty{ \dv{t} \pdv{L}{\dot{q}_i} } \tilde{q}_i } \dd{t} = 
+    \epsilon \int_{t_1}^{t_2 } \pqty{\pdv{L}{q_i} - \dv{t} \pdv{L}{\dot{q}_i} } \tilde{q}_i \dd{t} \\
+		&= \int_{t_1}^{t_2 } \pqty{\pdv{L}{q_i} - \dv{t} \pdv{L}{\dot{q}_i} } \delta q_i \dd{t}.
+	\end{aligned}
+	\tag{Lanczos 210.5}
+\end{equation}
+Si \(S\) debe ser estacionaria, es decir \(\delta S=0\), es claro que la integral debe ser nula ante \(\delta q_i\) arbitrarios.
+Esto se cumple si y solo si la cantidad entre paréntesis se anula\footnote{
+Si buscamos que \(S\) sea estacionaria, es decir \(\delta S=0\), tenemos que asegurar que la integral a la derecha de la ecuación \eqref{Lanczos210.5} sea nula para valores arbitrarios de \(\tilde{q}_i (t)\), y esto se cumplirá solo si la cantidad entre paréntesis \(E(t)= \pdv{L}{q_i} - \dv{t} \pdv{L}{\dot{q}_i}\), se anula entre \(t_1\) y \(t_2\).
+% Si buscamos que \(S\) sea estacionaria, es decir \(\delta S=0\), tenemos que asegurar que la integral sea nula para valores arbitrarios de \(\tilde{q}_i (t)\), y esto se cumplirá solo si la cantidad entre paréntesis \(E(t)= \pdv{L}{q_i} - \dv{t} \pdv{L}{\dot{q}_i}\), se anula entre \(t_1\) y \(t_2\).
+
+La demostración matemática aprovecha el hecho de que podemos elegir un caso particular de de todas las arbitrarias \(\tilde{q}_i (t)\) para que esta sea nula tal vez a excepción de un corto intervalo \(\xi\) en torno a un determinado \(t\) de todo el intervalo (\(t_1 < t < t_2\)).
+Esto haría que solo en este intervalo \(q_i(t)\) pueda variar.
+En un intervalo corto de \(t\) cualquier función continua es casi constante, y por tanto \(E(t)\) podría sacarse de la integral para aproximar la igualdad de la ecuación \eqref{Lanczos210.5} como
+\begin{equation}\label{Lanczos210.8}
+    \delta S \simeq \epsilon E(\xi) \int_{\xi+ \rho}^{\xi - \rho} \tilde{q}_i (t) \dd{t}.
+    \tag{Lanczos 210.8}
+\end{equation}
+El error respecto de la igualdad tiende a desaparecer a medida que \(\rho\) tiene a cero.
+Así que de respetarse la igualdad no quedaría mas remedio que hacer que \(E(\xi)=0\) para cumplir con el supuesto de que \(\delta S=0\).
+Como \(t=\xi\) puede ser cualquiera en el intervalo \(t_1<t<t_2\), concluimos que dentro de este intervalo siempre debiera cumplirse que \(E(t)=0\).
+%\begin{equation}
+%    \pdv{L}{q_i} - \dv{t} \pdv{L}{\dot{q}_i}= 0.
+%    \label{Lanczos210.9}
+%\end{equation}
+
+En definitiva, basta con variar los \(q_i(t)\) hasta lograr dar con aquellos para que \(E(t)=0\) en todo el intervalo para asegurar \(\delta S=0\), es decir, esa es condición \emph{necesaria} para asegurar que \(S\) sea estacionario.
+Además esta condición es \emph{suficiente} pues, como es evidente de revisar la ecuación \eqref{Lanczos210.5}, no importa que valor asuma \(\tilde{q}_i (t)\) dentro del intervalo temporal, si allí \(E(t)=0 \) la integración dará un valor nulo.
+Al probar que \(E(t)=0\) es condición es necesaria y suficiente para que \(\delta S=0\) significa que si la primera es cierta \emph{si y solo si} la segunda también lo es; 
+% Al probar que respetar la ecuación (\ref{Lanczos210.9}) es condición es necesaria y suficiente para que \(\delta S=0\) significa que si la primera es cierta \emph{si y solo si} la segunda también lo es, 
+en resumen, una asegura la otra.
+}
+\begin{equation}
+	\delta S=0 \iff \pdv{L}{q_i} - \dv{t} \pdv{L}{\dot{q}_i}= 0 \; \; \; \forall i.
+    \label{noiEulerLagrange}
+\end{equation}
+
+La demostración de esta relación fue realizada por Lagrange, y es fruto de aplicar a la dinámica el \emph{principio de acción estacionaria} bajo la formulación que estableció Leonhard Euler\footnote{Matemático suizo (Basilea 1707 - San Petersburgo 1783)}. 
+En honor a ambos la ecuación a la derecha de (\ref{noiEulerLagrange}) se denomina \emph{ecuación de Euler-Lagrange}.
+% En honor a ambos la ecuación (\ref{Lanczos210.9}) se denomina \emph{ecuación de Euler-Lagrange}.
+
+Llegamos así a construir una poderosa herramienta para determinar la dinámica de \emph{cualquier sistema físico}:
+basta con idear su Lagrangiano \(L(q_i, \dot{q}_i, t)\), ecuación \eqref{Lanczos51.11}, y luego resolver la correspondiente ecuación de Euler-Lagrange.
+
+
+\section{Cantidades conservadas}
+Un concépto básico del análisis matemático es que si la derivada total de una función \(f\) respecto a alguna variable \(x\) es nula, \(\dv{f}{x}=0\) su integral da cuenta de que tal función es constante respecto a esa variable, \(\int f \dd x= \mathrm{const.}\).
+En la mecánica es útil determinar tales constantes cuando la varible es el tiempo, pues hablamos entonces de cantidades que se mantienen inalteradas durante la dinámica del sistema.
+En particular si tal función es la derivada respecto de \(t\) de otra cantidad, \(f= \pdv{g}{t}= \dot{g}\), y se cumple \(\dv{f}{t}=0\), esta última cantidad \emph{se conserva} durante la dinámica, \(\int f \dd t= \int \dot{g} \dd t= g= \mathrm{const.}\) 
+
+
+\subsection{Coordenadas ignorables| Momentos generalizados} % Lanczos \S V 4
+%Vimos en la sección anterior que cantidad conservada es consecuencia de que \(\pdv{L}{t}=0\), es decir que \(t\) no apareciera \emph{explicitamente} en el Lagrangiano.
+%Este proceder es extensible al conjunto de coordenadas generalizadas \(q_i\).
+\textbf{Referencia: Lanczos V\S4}\\
+
+Puede que en el Lagrangiano no figure explicitamente alguna de las coordenadas generalizadas \(q_n\), aunque si lo haga la correspondiente velocidad \(\dot{q}_n\), así \(L= L(q_1,\ldots,q_{n-1};\dot{q}_1,\ldots,\dot{q}_n;t)\).
+En ese caso la ecuación de Euler-Lagrange (\ref{noiEulerLagrange}) se reduce pues 
+% En ese caso la ecuación de Euler-Lagrange (\ref{Lanczos210.9}) se reduce pues 
+\begin{equation}\label{unsereLanczos54.2}
+    % \pdv{L}{q_n} - \dv{t} \pdv{L}{\dot{q}_n}= 0 \Rightarrow \pdv{L}{\dot{q}_n}= \mathrm{const.}
+    \cancel{\pdv{L}{q_n}} - \dv{t} \pdv{L}{\dot{q}_n}= 0 \Rightarrow \pdv{L}{\dot{q}_n}= \mathrm{const.}
+    \tag{Lanczos 54.2}
+\end{equation}
+
+Por ejemplo una partícula libre en el espacio tendrá una \(T= \frac{m}{2} \dot{x}^2\) con \(V=0\), por lo que la coordenada \(x\) no figurará en el Lagrangiano, y \(\pdv{L}{x}= m x\), cantidad escalar que corresponde a la magnitud del momento lineal \(\vec{p}_x\).
+De forma similar la cantidad conservada de la ecuación \eqref{unsereLanczos54.2} recibe el nombre de \emph{momento generalizado},
+\begin{equation}\label{Lanczos53.4}
+	p_n= \pdv{L}{\dot{q}_n},
+    \tag{Lanczos 53.4}
+\end{equation}
+y permite escribir la correspondiente velocidad generalizada en función de este
+\begin{equation}\label{Lanczos54.5}
+	\dot{q}_n= f(q_1, \ldots, q_{n_1};\dot{q}_1 \ldots, \dot{q}_{n-1};p_n;t).
+    \tag{Lanczos 54.5}
+\end{equation}
+
+El obtener los momentos generalizados \(p_i\) antes de resolver las ecuaciones diferenciales de Euler-Lagrange permite simplificar el Lagrangiano y que estas ecuaciones resulten más sencillas de integrar.
+Básicamente cada vez que encontramos \(\dot{q}_n\) en el Lagrangiano lo reemplazamos por el lado derecho de la igualdad \eqref{Lanczos54.5}.
+
+
+%%\subsection{Principio de Hamilton y conservación de la energía} % Landau \S6
+%%Volvamos sobre el procedimiento variacional que realizamos en la sección \ref{principioHamilton}, para \(\delta \int^{t_2}_{t_1} L  \dd t\), pero ahora analizaremos un desplazamiento virtual \(\delta q_i\) que coincide en todo instante con un desplazamiento real \(\dd q_i\) que transcurre en un tiempo infinitesimal \(\dd t= \epsilon\), \(\delta q_i= \dd q_i= \epsilon \dot{q}_i\).
+%%Tal variación altera las coordenadas \(q_i(t)\) en \(t_1\) y \(t_2\) y no podemos ahora contemplar que esta se realiza entre límites definidos como explicitamos en la ecuación (\ref{Lanczos51.9}), así que ahora nos sobrevive un término de borde al integrar \(L\) entre dos tiempos definidos,
+%%\begin{equation}
+%%	\delta \int^{t_2}_{t_1} L  \dd t=
+%%	\left[ \sum_{i=1}^n \pdv{L}{q_i} \delta q_i \right]^{t_2}_{t_1}.
+%%    \label{Lanczos53.3}
+%%\end{equation}
+%%%%% Igual requiere que el Lagrangiano sea independiente del tiempo 
+%
+%
+%El proceso para eliminar una variables ignorable se resume en tres pasos,
+%\begin{enumerate} 
+%	\item obtener los momento generalizado correspondientes \(\pdv{L}{\dot{q}_i= p_i}\),
+%	\item modificar la función Lagrangiana \(\overline{L}= L- \sum p_i \dot{q}_i\),
+%	\item eliminar \(\dot{q}_i\) valiendose de la expresión del momento que la contiene.
+%\end{enumerate} 
+%
+
+
+% \subsubsection{Ejemplo del movimiento circular: conservación del momento angular}
+% \textbf{(Aún no escrito.)}
+
+\subsection{Conservación de la energía}\label{conservacionEnergia} % Landau \S6
+Analizaremos que cantidad se conserva al diferenciar el Lagrangiano en el tiempo.
+Consideremos el caso particular de un sistema que se denomina \emph{esclerónomo}, en que el tiempo no figura explicitamente ni en la energía cinética ni en la función trabajo.
+Ergo en tales sistemas el Lagrangiano no tiene dependencia explicita con el tiempo, es decir \(L= L(q_i, \dot{q}_i)\) y su derivada respecto al tiempo será
+\begin{equation}\label{Landau6.1a}
+	\dv{L}{t}= \sum_{i=1}^n \pqty{ \pdv{L}{q_i} \dv{q_i}{t}+ \pdv{L}{\dot{q}_i} \dv{\dot{q}_i}{t} }
+	= \sum_{i=1}^n \pqty{ \pdv{L}{q_i} \dot{q}_i+ \pdv{L}{\dot{q}_i} \ddot{q}_i }.
+    \tag{Landau 6.1a}
+\end{equation}
+De la ecuación de Euler-Lagrange recordamos que \(\pdv{L}{q_i}= \dv{t} \dv{L}{\dot{q}_i}\).
+Realizamos ese reemplazo para obtener
+\begin{equation}\label{Landau6.1b}
+	\dv{L}{t}= \sum_{i=1}^n \pqty{ \dv{t} \dv{L}{\dot{q}_i} \dot{q}_i+ \pdv{L}{\dot{q}_i} \ddot{q}_i }
+	= \sum_{i=1}^n \dv{t} \pqty{ \dv{L}{\dot{q}_i} \dot{q}_i }
+	= \dv{t} \sum_{i=1}^n \pqty{ \dv{L}{\dot{q}_i} \dot{q}_i }.
+	\tag{Landau 6.1b}
+\end{equation}
+En esta última expresión identificamos \(\dv{L}{\dot{q}_i}= p_i\), es decir, que se trata de un momento generalizado.
+Juntando ambas derivadas con el tiempo a izquierda de la igualdad llegamos a escribir una cantidad que no presenta variación en el tiempo
+\begin{equation}\label{Landau6.1c}
+	\dv{t }\pqty{ \sum_{i=1}^n \dv{L}{\dot{q}_i} \dot{q}_i - L}= \dv{t} \pqty{ \sum_{i=1}^n p_i \dot{q}_i - L}= 0,
+	\tag{Landau 6.1c}
+\end{equation}
+es decir, la cantidad entre paréntesis se conserva en el tiempo.
+
+La cantidad a la derecha de la expresión \eqref{Landau6.1c} resulta ser algo muy familar en los sistemas mecánicos mas usuales, en los que se cumple que:
+\begin{enumerate}
+	% \item \(L= T-V\). E.g. el clásico Lagrangiano cuando se descartan efectos relativistas.
+	\item \(T\) es cuadrático en las velocidades: \(T= \frac{1}{2} \displaystyle\sum_{i,k=1}^n a_{ik}(q_i, q_k) \dot{q}_i \dot{q}_k\) (e.g. \(T= \frac{m}{2} \dot{x}^2\)), y
+	\item \(V\) no depende de las velocidades: \(\dv{V}{\dot{q}_i}=0\).% \(V \neq V(\dot{q}_i)\).
+\end{enumerate}
+Para estos sistemas la cantidad entre paréntesis de la ecuación \eqref{Landau6.1c} se reduce a
+\begin{equation}\label{unsereLandau6.2}
+	\begin{aligned}
+		\dv{L}{\dot{q}_i} \dot{q}_i - L &=
+		\dv{\pqty{T-V}}{\dot{q}_i} \dot{q}_i - T+ V
+		% \pqty{\dv{\dot{q}_i} T - \dv{\dot{q}_i} V} \dot{q}_i - T+ V= \nonumber \\
+		\pqty{\dv{\dot{q}_i} T - \cancel{\dv{\dot{q}_i} V}} \dot{q}_i - T+ V \\
+		& = \pqty{\dv{\dot{q}_i} \frac{1}{2} \displaystyle\sum_{i,k=1}^n a_{ik}(q_i, q_k) \dot{q}_i \dot{q}_k } \dot{q}_i - T+ V \\
+		& = \pqty{ \displaystyle\sum_{i,k=1}^n a_{ik}(q_i, q_k) \dot{q}_k } \dot{q}_i - T+ V = 2 T - T + V = T+ V = E,
+	\end{aligned}
+	\tag{Landau 6.2}
+\end{equation}
+que no es otra cosa que la familiar \emph{energía mecánica} \(E\).
+
+
+\section{De la formulación Lagrangiana a la Hamiltoniana}
+
+\subsection{Ecuaciones canónicas del movimiento | Hamiltoniano} % Lanczos \S VI 3
+\textbf{Referencia: Lanczos VI\S3}\\
+
+Vimos que podemos determinar la dinámica de un sistema descripto por un Lagrangiano con \(n\) coordenadas generalizadas \(q_i\) no ignorables resolviendo \(n\) ecuaciones de Euler-Lagrange.
+Para finalmente obtener \(q_i= q_i(t)\) tendremos que resolver un sistema de \(n\) ecuaciones son de 2"o grado, lo que puede resultar complicado.
+
+La formulación Hamiltoniana nos ofrece un camino alternativo por el que solo tendremos que resolver ecuaciones de 1"er grado, pero al costo de enfrentarnos a un sistema de \(2n\) ecuaciones diferenciales, lo que puede resultar tedioso.
+
+La cantidad entre paréntesis de la ecuación (\ref{Landau6.1c}) 
+\begin{equation}\label{Lanczos62.3}
+	\sum_{i=1}^n p_i \dot{q}_i - L ,
+    \tag{Lanczos 62.3}
+\end{equation}
+se denomina Hamiltoniano cuando se expresan todos las velocidades generalizas \(\dot{q}_i\) en función de los correspondientes momentos generalizados \(p_i\)
+\begin{equation}\label{Lanczos62.4}
+	H =  H(q_1,\ldots, q_n;p_i, \ldots, p_n; t) .
+    \tag{Lanczos 62.4}
+\end{equation}
+
+Para llegar a la expresión de tales ecuaciones primero analizamos el diferencial del Hamiltoniano\footnote{Para esta demostración obviamos la dependencia explicita con el tiempo del Hamiltoniano, \(H=H(q_i, p_i)\)}
+\begin{equation}\label{unsereLandau40.3}
+	\dd H= \dd \sum_{i=1}^n  \pqty{p_i \dot{q}_i} - \dd L
+	= \sum_{i=1}^n \dd p_i \dot{q}_i+ \sum_{i=1}^n p_i \dd \dot{q}_i - \dd L .
+    \tag{Landau 40.3}
+\end{equation}
+Recordemos que el Lagrangiano tiene por variables independientes las coordenadas y velocidades generalizadas, \(L=L(q_i, \dot{q}_i)\), por lo que el diferencial del último término de la ecuación (\ref{unsereLandau40.3}) es
+\begin{equation}\label{Landau40.1}
+	\dd L= \sum_{i=1}^n \pdv{L}{q_i} \dd q_i+ \sum_{i=1}^n \pdv{L}{\dot{q}_i} \dd \dot{q}_i
+	= \sum_{i=1}^n \dot{p}_i \dd q_i+ \sum_{i=1}^n p_i \dd \dot{q}_i ,
+    \tag{Landau 40.1}
+\end{equation}
+esto recordando la ecuación de Euler-Lagrange y la definición de momento generalizado, 
+\begin{equation}
+	\pdv{L}{q_i}= \dv{t} \pdv{L}{\dot{q}_i}= \dv{t} p_i= \dot{p}_i .
+    \label{alguno}
+\end{equation}
+Reemplazamos ahora el resultado de la ecuación (\ref{Landau40.1}) en la (\ref{unsereLandau40.3})
+\begin{equation}\label{Landau40.3}
+	\dd H = \sum_{i=1}^n \dd p_i \dot{q}_i+ \cancel{\sum_{i=1}^n p_i \dd \dot{q}_i} - \sum_{i=1}^n \dot{p}_i \dd q_i - \cancel{\sum_{i=1}^n p_i \dd \dot{q}_i} 
+	= \sum_{i=1}^n \pqty{ \dot{q}_i \dd p_i - \dot{p}_i \dd q_i } ,
+    \tag{Landau 40.3}
+\end{equation}
+El hecho de que en el Hamiltoniano coordenadas y momentos generalizados son variables independientes permite analizar el diferencial respecto a cada uno por separado
+\begin{equation}\label{Lanczos63.5}
+	\dot{q}_i= \pdv{H}{p_i}\;,\;\dot{p}_i= -\pdv{H}{q_i}.
+    \tag{Lanczos 63.5}
+\end{equation}
+Estas son las \(2\) ecuaciones diferenciales de primer orden que corresponden a cada \(q_i\).
+Carl Gustav Jacob Jacobi\footnote{Matemático alemán (Potsdam 1804 - Berlín 1851)} las nombró \emph{ecuaciones canónicas} por la simple simetría que demuestran entre las así llamadas \emph{variables conjugadas} \(q_i\) y \(p_i\).
+
+
+
+\appendix
+
+\section{Notas}
+Aquí secciones aún por desarrollar.
+
+
+
+\subsection{Sistemas holónomos y no holónomos} 
+\textbf{Referencia: Lanczos II\S6}\\
+
+Dado un condicionanente a la dinámicas del sistema, si la la relación entre sus coordenadas puede darse solo en función de los diferenciales de estos, la condición es \emph{no holónoma} en contraposición a aquellas que pueden darse en función de las coordenadas definidas, 
+\begin{equation}\label{Lanczos16.1}
+	f(q_1,\ldots,q_n) =0,
+	\tag{Lanczos 16.1}
+\end{equation}
+que denominamos \emph{holónomas}.
+De diferenciar tal relación tenemos 
+\begin{equation}\label{Lanczos16.2}
+	\pdv{f}{q_1} \dd q_i+\ldots+ \pdv{f}{q_n} \dd q_n =0,
+	\tag{Lanczos 16.2}
+\end{equation} 
+pero si la condición se expresa de la forma
+\begin{equation}\label{Lanczos16.3}
+	A_1(q_1,\ldots,q_n) \dd q_i+\ldots+ A_n(q_1,\ldots,q_n) \dd q_n =0,
+	\tag{Lanczos 16.3}
+\end{equation} 
+tal relación solo puede reducirse a la forma de la ecuación \eqref{Lanczos16.2} correspondiente a una condición \emph{holónoma}, de cumplirse determinadas condiciones de integración (excepto para \(n=2\) que siempre es integrable), de lo contrario estamos ante una condición \emph{no holónoma}. 
+
+Un ejemplo de condición \emph{no holónoma} es el de rodadura de una bola de billar sobre el paño bidimensional de la mesa.
+La posición de la bola puede darse en función de un par \((x,y)\) de tal superficie, y su orientación (cuanto \emph{rotó} respecto a dos ejes perpendiculares) en función de dos ángulos \((\alpha, \beta)\).
+La pregunta crucial es si a una determinada coordenada \((x,y)\) corresponde una determinada orientación \((\alpha, \beta)\), y la respuesta es que no.
+Hay multitud de caminos partiendo de \((x_0,y_0)\) que resultaran en distintos \((\alpha, \beta)\) que llevan al mismo \((x,y)\).
+Entonces si bien los diferenciales de \((\alpha, \beta)\) son expresables en función de diferenciales de \((x,y)\), tales relaciones diferenciables no son integrables.
+
+
+\subsubsection{Multiplicador de Lagrange}
+El formalísmo analítico puede obtener la magnitud de una fuerza fruto de una condición no holónoma.
+Volvamos al concepto fundamental del valor estacionario para el Lagrangiano \(\delta L=0\)
+\begin{equation}\label{Lanczos25.4}
+	\delta L= \pdv{L}{q_i} \delta q_i+ \ldots+ \pdv{L}{q_n} \delta q_n= 0;
+	\tag{Lanczos 25.4}
+\end{equation}
+y le adicionamos la expresión de la  ecuación \eqref{Lanczos16.3} que expresa la relación a la que es inócuo multiplicar por un factor \(\lambda\) pues a fin de cuentas su suma es nula
+\begin{equation}\label{Lanczos25.5}
+	\pdv{L}{q_i} \delta q_i+ \ldots+ \pdv{L}{q_n} \delta q_n + \lambda \qty[ A_1(q_1,\ldots,q_n) \dd q_i+\ldots+ A_n(q_1,\ldots,q_n) \dd q_n ] = 0
+	\tag{Lanczos 25.5}
+\end{equation}
+
+\textbf{(Aún no terminado.)}
+
+
+\subsection{Fuerzas poligénicas vs. monogénicas}
+\textbf{Referencia: Lanczos V\S1}\\
+
+Para fuerzas poligénicas no puede transformarse el principio de d'Alembert en uno de valor estacionario.
+Ya que las condiciones holónomas es el equivalente mecánico a fuerzas monogénicas, y las no holónomas a poligénicas:
+\begin{quote}
+El principio de Hamilton solo se sostiene para sistemas con fuerzas monogénicas y condiciones holónomas.
+\end{quote}
+
+\textbf{(Aún no terminado.)}
+
+
+\subsection{Sistemas reónomos y esclerónomos, conservación de la energía}
+\textbf{Referencia: Lanczos I\S8}\\
+
+Todo sistema relevante a la dinámica tiene cantidades con dependencia en el tiempo, pero si tal dependencia es \emph{explicita}, sea en \(T\) o en \(U\), no podamos cumplir con las condiciones analizadas en la sección \ref{conservacionEnergia} para asegurar la conservación de la energía.
+
+El físico Ludwig Eduard Boltzmann acuño el término de \emph{reónomo} para las condiciones dinámicas en que el tiempo figura explícitamente.
+En tal caso al recuperar las coordenadas cartesianas, la ecuación \eqref{Lanczos12.8} presenta un \(t\) ineludible en al menos algunas de las \(f_{3N}\) condiciones
+\begin{equation}\label{Lanczos18.3}
+	\begin{aligned}
+		x_1 &= f_1(q_i, \ldots, q_n; t) \\
+		& \ldots \\
+		z_N &= f_{3N}(q_i, \ldots, q_n; t)
+	\end{aligned}
+	\tag{Lanczos 18.3}
+\end{equation}
+Idéntico resultado resulta de usar un marco de referencia en movimiento.
+Al derivar respecto al tiempo para obtener las velocidades figuran ahora términos \(\pdv{f_i}{t}\) que hacen que en \(T\) aparezcan terminos no cuadráticos en \(\dot{q}_i\), sean lineales (\emph{términos giroscópicos}) o inclusive constantes.
+
+Asimismo el tiempo puede figurar explícitamente en \(U\).
+Sea cual fuere el mecanismo, la dependencia explícita en \(t\) hace que no podamos cumplir con las condiciones para la conservación de la energía, como analizamos en la sección \ref{conservacionEnergia}, y entonces extendemos el término de reónomo a todo sistema en que esto suceda.
+El término contrapuesto, sistemas \emph{esclerónomos}, corresponde a aquellos que comunmente se los denomina \emph{sistemas conservativos}.
+
+% \begin{table}[ht]
+%   \centering
+\begin{center}
+  \begin{tabular}{lcc}
+    \toprule
+	Sistema & Condición & Consecuencia\\
+	\midrule
+	Reonómico & \(f(q_i,\ldots,q_n;t)= 0\) o \(U=U(\dot{q}_i)\) & \(E \neq \mathrm{const.}\) \\
+	Esclerónomo & \(f(q_i,\ldots,q_n)= 0\) y \(U\neq U(\dot{q}_i)\)  & \(E =\mathrm{const.}\) \\
+    \bottomrule
+  \end{tabular}
+\end{center}
+  % \caption{Fuerzas y Sistemas}
+%   \label{tb:FuerzasSistemas}
+% \end{table}
+
+Aún así la energía en un sistma reónomo sigue siendo la suma de \(T\) con una potencial \(V\), pero esta última debe ser definida como
+\begin{equation}\label{Lanczos18.5}
+	V= \sum_{i=1}^n \pdv{U}{\dot{q}_i} q_i - U ,
+	\tag{Lanczos 18.5}
+\end{equation} 
+y por supuesto no es constante.
+
+\end{document}

@@ -1,0 +1,174 @@
+% This is samplepaper.tex, a sample chapter demonstrating the
+% LLNCS macro package for Springer Computer Science proceedings;
+% Version 2.21 of 2022/01/12
+%
+\documentclass[runningheads]{llncs}
+%
+\usepackage[T1]{fontenc}
+% T1 fonts will be used to generate the final print and online PDFs,
+% so please use T1 fonts in your manuscript whenever possible.
+% Other font encondings may result in incorrect characters.
+%
+\usepackage{graphicx}
+% Used for displaying a sample figure. If possible, figure files should
+% be included in EPS format.
+%
+% If you use the hyperref package, please uncomment the following two lines
+% to display URLs in blue roman font according to Springer's eBook style:
+%\usepackage{color}
+%\renewcommand\UrlFont{\color{blue}\rmfamily}
+%\urlstyle{rm}
+%
+\usepackage{amsmath,amsfonts}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{array}
+\usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
+\usepackage{textcomp}
+\usepackage{stfloats}
+\usepackage{url}
+\usepackage{verbatim}
+
+
+%% biblatex
+\usepackage[style = numeric, backend = biber, sorting = none, doi = false, isbn = false, url = true]{biblatex}
+% \usepackage[defernumbers = true, style = numeric, backend = biber, sorting = none, doi = false, isbn = false, url = true]{biblatex}
+% \usepackage[style = numeric, backend = biber, sorting = none]{biblatex}    % REFERENCIAS como section
+\AtEveryBibitem{
+    \clearfield{urlyear}
+    \clearfield{urlmonth}
+} % Do not show the "(visited on <date>)" on the references
+\DefineBibliographyStrings{spanish}{}
+\usepackage{csquotes}
+\addbibresource{./bettachini.bib}
+\renewcommand*{\bibfont}{\fontsize{9}{12}\selectfont}
+
+\usepackage{xcolor}
+\newcommand{\MR}[1]{{\color{magenta}#1}}
+
+\usepackage[normalem]{ulem}
+
+
+
+
+\begin{document}
+\title{A code-centric flipped classroom course on analytical mechanics}
+
+%\titlerunning{Experiences on a Comp. Anal. Mech. course...}
+% If the paper title is too long for the running head, you can set
+% an abbreviated paper title here
+
+
+%
+\author{
+	Víctor~A.~Bettachini\inst{1,2}\orcidID{0000-0001-7485-8884} \and
+	Mariano~A.~Real\inst{1,3}\orcidID{0000-0003-3022-7516} \and
+	Edgardo~Palazzo\inst{4}\orcidID{0009-0006-8783-8261}
+}
+%
+\authorrunning{V. A. Bettachini et al.}
+% First names are abbreviated in the running head.
+% If there are more than two authors, 'et al.' is used.
+%
+\institute{
+Universidad Nacional de La Matanza - UNLAM, Buenos Aires, Argentina 
+\email{vbettachini@unlam.edu.ar}\\
+\url{https://ingenieria.unlam.edu.ar/} 
+\and
+Instituto Geográfico Nacional - IGN, Buenos Aires, Argentina
+\and
+Instituto Nacional de Tecnología Industrial - INTI, Buenos Aires, Argentina
+\and
+Universidad Tecnológica Nacional - UTN, Buenos Aires, Argentina\\
+}
+
+
+%
+\maketitle              % typeset the header of the contribution
+%
+\begin{abstract}
+%The abstract should briefly summarize the contents of the paper in 150--250 words.
+\input{abstract}
+
+\keywords{Code \and Flipped Classroom \and Mechanical Engineering}
+\end{abstract}
+
+%
+%
+% \section{Summary}
+% \input{resumen}
+
+
+\section{Introduction}
+
+\subsection{Valuing teachers' and students' time}
+\input{zeit}
+
+\subsection{Numerical analysis and computers}
+\input{numericalAnalysis}
+
+
+\section{Course cornerstones: code reuse and flipped classroom}
+
+\subsection{Analytical mechanics for mechanical engineers}
+\input{analyticalMechanics}
+
+\subsection{Limits on analytical mechanics usefulness}
+\input{limits}
+
+\subsection{Programming vs. code reuse}
+\input{codingVsProgramming}
+
+\subsection{Flipped classroom}
+\input{flippedClassroom}
+
+\section{Course tools}
+
+\subsection{Analytical mechanics and physical modeling}
+\input{classicalTool}
+
+\subsection{Python, Sympy, Numpy, Scipy and Matplotlib}
+\input{libraries}
+
+\subsection{Jupyter Notebooks on Google Colaboratory}
+\input{jupyter}
+
+\subsection{Git Repository on GitHub}
+\input{git}
+\label{sec:git}
+
+\subsection{Learning Management System: Microsoft Teams}
+\input{lms}
+
+\section{Syllabus and schedule}
+\input{cronologia}
+
+\section{Conclusions}
+\input{conclusiones}
+
+\begin{credits}
+\subsubsection{\ackname} 
+The authors would like to thank the coordination of the Mechanical Engineering career at DIIT-UNLaM for accompanying the development and implementation of this course. 
+
+
+\subsubsection{\discintname}
+The authors declare no competing interests.
+\end{credits}
+
+
+\printbibliography[title= References, heading=bibintoc]
+%
+% ---- Bibliography ----
+%
+% BibTeX users should specify bibliography style 'splncs04'.
+% References will then be sorted and formatted in the correct style.
+%
+% \bibliographystyle{splncs04}
+% \bibliography{mybibliography}
+%
+% \begin{thebibliography}{8}
+% \bibitem{ref_article1}
+% Author, F.: Article title. Journal \textbf{2}(5), 99--110 (2016)
+
+% \end{thebibliography}
+\end{document}

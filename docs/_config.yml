@@ -1,0 +1,12 @@
+title: Computational Analytical Mechanics
+email: yoda@force.com
+description: >-
+  Very good my site is!
+baseurl: /MecanicaAnaliticaComputacional
+url: https://bettachini.github.io/
+github_username:  bettachini
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed

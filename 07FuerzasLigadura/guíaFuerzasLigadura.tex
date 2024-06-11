@@ -1,0 +1,126 @@
+\documentclass[11pt, spanish, a4paper, twoside]{article}
+
+\input{../figurasLaTeX/introUNLaM}
+
+\begin{document}
+\begin{center}
+  % \textsc{\large Mecánica general}\\
+  \textsc{\large Fuerzas de ligadura | Multiplicadores de Lagrange} 
+\end{center}
+
+\begin{enumerate}
+
+
+	
+\item 
+\begin{minipage}[t][1.1cm]{0.75\textwidth}
+\textbf{Péndulo rígido ideal}\\
+Calcule la tensión de la cuerda con el método de multiplicadores de Lagrange.
+La restricción es que la pesa se mantiene siempre en \(\vec{r} = \ell \hat{\rho}\), ergo la función que expresa esto es \(f(\rho) = \rho - \ell = 0\).
+\end{minipage}
+\begin{minipage}[c][0cm][t]{0.25\textwidth}
+	\begin{tikzpicture}[scale= 1.0]
+  	\draw [arrows=-latex] (-1,2) -> (-1,1) node [above=15, right=2] {\(\vec{g}\)}; % g vertical
+		\draw [ultra thick] (-1.5,3) -- (2,3);
+		\fill [pattern = north east lines] (-1.5,3) rectangle (2,3.2); % techo
+		\draw [dashed] (0,3) -- (0,-.25);	% vertical
+		\draw [thick] (0,3) -- +(-60:3) node[midway,above,right=2] {\(\ell\)};	% inclinada +:relativa, -60 grados, longitud 3
+		\shade [ball color=black!80] ($(0,3)+(-60:3)$) circle(0.25) node [] {\color{white} $m$};
+    \draw [arrows=-latex] (0,.4) -> (1.25,.4) node [midway, above] {\( \psi \)}; % desplazamiento horizontal
+		\draw [arrows=-latex] (0,0) arc [start angle=-90, end angle=-65, radius=3] node [below=12, left=8] {\( \varphi \)};
+	\end{tikzpicture}
+\end{minipage}
+
+
+
+\item 
+\begin{minipage}[t][4cm]{0.47\textwidth}
+\textbf{Cilindro que rueda por un plano inclinado} [Marion (e) ex. 7.5]\\
+% English \textbf{Marion ejemplo 6.5 y ejemplo 7.9} Disco rodando en un plano inclinado.
+	\begin{enumerate}
+		\item Encuentre las ecuaciones de movimiento, 
+		\item la aceleración angular,
+		\item y la fuerzas de ligadura. 
+	\end{enumerate}
+\end{minipage}
+\begin{minipage}[c][2.5cm][t]{0.3\textwidth}
+	\includegraphics[width=\textwidth]{marion_fig6_7}
+\end{minipage}
+
+
+	
+\item
+\begin{minipage}[t][6.5cm]{0.65\textwidth}
+\textbf{Doble máquina de Atwood} [Marion (e) ej. 7.8 y 7-37]\\
+Utilice el sistema de coordenadas indicadas.
+Para este sistema de poleas determine: 
+\begin{enumerate}
+	\item las ecuaciones de movimiento,
+	\item y las tensiones de ambas cuerdas utilizando el método de multiplicadores de Lagrange.
+\end{enumerate}
+Resultados:\\
+\(
+	Q_{1} = \frac{g \left(32 m_{1} m_{2} m_{3} + 8 m_{1} m_{2} m_{p} + 20 m_{1} m_{3} m_{p} + 4 m_{1} m_{p}^{2} + 8 m_{2} m_{3} m_{p} + 2 m_{2} m_{p}^{2} + 4 m_{3} m_{p}^{2} + m_{p}^{3}\right)}{4 m_{1} m_{2} + 4 m_{1} m_{3} + 2 m_{1} m_{p} + 16 m_{2} m_{3} + 6 m_{2} m_{p} + 14 m_{3} m_{p} + 3 m_{p}^{2}}
+\)\\
+\(
+	Q_{2} = \frac{g m_{3} \cdot \left(16 m_{1} m_{2} + 6 m_{1} m_{p} + 4 m_{2} m_{p} - m_{p}^{2}\right)}{4 m_{1} m_{2} + 4 m_{1} m_{3} + 2 m_{1} m_{p} + 16 m_{2} m_{3} + 6 m_{2} m_{p} + 14 m_{3} m_{p} + 3 m_{p}^{2}}
+\)
+\end{minipage}
+\begin{minipage}[c][0.5cm][t]{0.3\textwidth}
+	\includegraphics[width=\textwidth]{marion_fig7_6}
+\end{minipage}
+
+
+\item
+\begin{minipage}[t][5cm]{0.65\textwidth}
+\textbf{Pesos enlazados por una cuerda} [Taylor 7.50]\\
+Una partícula de de masa \(m\) posada sobre una mesa horizontal está atada a otra de masa \(M\) con una cuerda de longitud \(l\) que atraviesa un hueco en una mesa que no ofrece fricción.
+La última pende vertical con una distancia a la mesa \(y = \ell - \rho\) función de la distancia de la primera al hueco \(\rho\).
+\begin{enumerate}
+\item Asumiendo que \(\theta\) no necesariamente es constante escriba las ecuaciones de Lagrange para \(\rho\) e  \(y\).
+\item Resuélva el sistema para \(\rho, y\) y el multiplicador de Lagrange \(\lambda\) encontrando las fuerzas de tensión sobre ambas masas.
+\end{enumerate}
+\end{minipage}
+\begin{minipage}[c][0cm][t]{0.3\textwidth}
+	\includegraphics[width=\textwidth]{cmchap6_fig6_5}
+\end{minipage}
+
+
+
+
+
+\item 
+\begin{minipage}[t][3cm]{0.62\textwidth}
+\textbf{Partícula deslizando sobre una semi-esfera} [Marion (e) ex. 7.10]\\ 
+La partícula de masa \(m\), considerada puntual, desliza sobre una semi-esfera de radio \(R\) sin fricción.
+Encuentre: 
+\begin{enumerate}
+	\item la fuerza de la ligadura, 
+	\item y el ángulo en que la partícula se despega de la semi-esfera.
+\end{enumerate}
+\end{minipage}
+\begin{minipage}[c][0cm][t]{0.3\textwidth}
+	% \includegraphics[width=\textwidth]{marion7_10}
+	\begin{tikzpicture}[scale= 1.0]
+		\draw [ultra thick] (-3,0) -- (3,0);
+		% \draw [ultra thick] (-3,0) -- (3,0);
+		\fill [pattern = north east lines] (-3,0) rectangle (3,-0.2); % piso
+		\draw [ultra thick] (-2,0) .. controls (-2,2*0.555) and (-2*0.555,2) .. (0,2) .. controls (2*0.555,2) and (2,2*0.555) .. (2,0); % semi esfera
+		% \filldraw (0,2.2) circle (0.2); % masa superior
+		% \fill (2*0.5+.12,1.732+.18) circle [radius=0.25] node [midway, text=white] { \( m \) };
+		% \filldraw (2*0.5+.12,1.732+.18) circle (0.2) node [above, right=5] {\(m\)}; % masa a la derecha
+		\shade [ball color=black!80] (2*0.5+.12,1.732+.18) circle(0.2) node [] {\color{white} $m$};
+		% \draw (2,2) circle [radius=0.3, color=white, fill=black] node {$T_1$};
+		\draw [dashed] (0,0) -- (0,2); % linea vertical
+		\draw [-LaTeX] (0,0) -- (1,1.732) node [midway, anchor=west] {\(R\)}; % linea hacia la derecha
+		\draw [-stealth] (0,1) arc (90:60:1) node [above left] {\(\theta\)}; % arco c/ flecha comenzando en (0,1), de 90 a 60 grados, 1...
+		% \node [circle,draw,label=60:$60^\circ$,label=below:$-90^\circ$] {\(m\)}; 
+		% \node at (-2*0.5+.15,1.732+.15) [circle,draw,fill=black] {\(m\)}; 
+		\draw [-stealth, thick] (-2.5,2) -> (-2.5,1) node [above=15, right=2] {\(\vec{g}\)}; % g vertical
+	\end{tikzpicture}
+\end{minipage}
+
+
+
+\end{enumerate}
+\end{document}

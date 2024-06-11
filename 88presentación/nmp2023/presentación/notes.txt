@@ -1,0 +1,9 @@
+Greetings from the southern tip of Latinamerica.
+We're a group of physicists trying to convey our mechanical engineering students the usefulness of merging coding and physics for their professional carrer.
+For that purpose we apply tools and methodologies I want to tell you about.
+One of those is AI so I hope you'll have questions about it.
+
+In the 50s the american psychologist Licklider found that most of intellectual work are mundane tasks.
+At least in our country classes at university are an excercise on transcription.
+
+Licklider saw at that time the potential of computers to free ourselves of those mundane tasks.

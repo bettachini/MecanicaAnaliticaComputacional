@@ -10,7 +10,6 @@
 
 \begin{enumerate}
 
-
 	
 \item 
 \begin{minipage}[t][1.1cm]{0.75\textwidth}
@@ -120,6 +119,32 @@ Encuentre:
 	\end{tikzpicture}
 \end{minipage}
 
+Para llegar al ángulo de despegue debe resolver la ecuación diferencial a la que arribará tras resolver la problemática de las fuerzas de ligadura, que será $\ddot{\theta} = \frac{g \sin(\theta)}{R}$.
+Esta expresión es integrable para el recorrido que hace la partícula.
+Para facilitar esto se intercala por regla de la cadena derivaciones en función de \(\theta\) en la definición de la aceleración.
+$$
+\ddot{\theta} 
+= \frac{d \dot{\theta} }{d t} 
+= \frac{d \theta}{d t} \frac{d \dot{\theta}}{d \theta} 
+= \dot{\theta} \frac{d \dot{\theta}}{d \theta}
+$$
+
+Como la partícula parte de $\theta(t=0) = 0$ con $\dot{\theta}(t=0) = 0$.
+$$
+\begin{aligned}
+\ddot{\theta} = \dot{\theta} \frac{d \dot{\theta}}{d \theta}
+&= \frac{g}{R} \sin(\theta)\\
+\dot{\theta} d \dot{\theta}
+&= \frac{g}{R} \sin(\theta) d \theta \\
+\int_0^{\dot{\theta}_\mathrm{despegue}} \dot{\theta} d \dot{\theta}
+&= \frac{g}{R} \int_0^{\theta_\mathrm{despegue}} \sin{\theta} d \theta\\
+\frac{\dot{\theta}^2}{2} \bigg|_0^{\dot{\theta}_\mathrm{despegue}}
+&= \frac{g}{R} (-\cos{\theta}) \bigg|_0^{\theta_\mathrm{despegue}}\\
+\frac{\dot{\theta}_\mathrm{despegue}^2}{2}
+&= \frac{g}{R} (-\cos(\theta_\mathrm{despegue}) + 1)\\
+\end{aligned}
+$$
+Con estoy hay que substituir $\dot{\theta}^2$ en una expresión de $F^\mathrm{ligadura}_{\rho}$, que debe ser nula en el momento de despegue.
 
 
 \end{enumerate}

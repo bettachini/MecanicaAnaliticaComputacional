@@ -85,11 +85,9 @@ En [este video](https://ingunlamedu-my.sharepoint.com/:v:/g/personal/vbettachini
 - [Asignatura: programa oficial](https://github.com/bettachini/MecanicaAnaliticaComputacional/blob/master/00Generalidades/programa.pdf?classId=fc1ba4aa-6a5d-4ffa-8fd4-7a06ba08cfcd&classId=660444eb-e3d5-4135-8b70-44d5b04eb604) [pdf]
 
 - [Cronograma](https://github.com/bettachini/MecanicaAnaliticaComputacional/blob/master/00Generalidades/cronograma.md?classId=660444eb-e3d5-4135-8b70-44d5b04eb604)
-
-
-### Ejercicios 
-- g01e01 a entregarse a una hora de publicarse durante el encuentro sincrónico
-- g01e02 a entregarse en la semana siguiente 30' luego de inicido el encuentro sincrónico
+- Ejercicios a entregar  
+  - g01e01 a entregarse a una hora de publicarse durante el encuentro sincrónico
+  - g01e02 a entregarse en la semana siguiente 30' luego de inicido el encuentro sincrónico
 
 
 
@@ -98,7 +96,7 @@ En [este video](https://ingunlamedu-my.sharepoint.com/:v:/g/personal/vbettachini
   - [Función de Python que calcula energía cinética](https://ingunlamedu.sharepoint.com/:v:/s/22sMecAnComputacional/EeyRmWbT-VBAumkHvDos_P0B4miAIUNGdevnJo18gf3B8Q?e=LHqZcv&isSPOFile=1&xsdata=MDV8MDF8fDhjZDAyMTRlYjU1MDQwMTNlN2I3MDhkYjlkYTg4NjYyfDY1OWUxZGJhYjNjYzRkY2M4NzMwZDIzODc3ZTdhYjdifDB8MHw2MzgyNzcxMTkzMzc3NTI1MDN8VW5rbm93bnxWR1ZoYlhOVFpXTjFjbWwwZVZObGNuWnBZMlY4ZXlKV0lqb2lNQzR3TGpBd01EQWlMQ0pRSWpvaVYybHVNeklpTENKQlRpSTZJazkwYUdWeUlpd2lWMVFpT2pFeGZRPT18MXxMM1JsWVcxekx6RTVPbWxCVldoemVUVktaRTU2WkVJNU5qUktiM0JqTVU0MVpucHBkMFZGWm1OMVNYUTJNMjU1TURoUWRra3hRSFJvY21WaFpDNTBZV04yTWk5amFHRnVibVZzY3k4eE9UbzNPREU0TWpZMk5tSmxNbVUwTUdKbFlqRmlOakJrTkRkak16VXpaREF5WlVCMGFISmxZV1F1ZEdGamRqSXZiV1Z6YzJGblpYTXZNVFk1TWpFeE5EZzFPREkxTVE9PXxjMTBiZTZiMzQ2ZGI0MjBlODU2MTA4ZGI5ZGE4ODY2MHxhMDY1YWE5NDc0ODY0NWQ1YWEyYjlkNWQ1ZDAxNzgwYw%3D%3D&sdata=TkllQVYzdXlXR1M0MEw3OVRPQUQ2dkNzQ0d6MFMrY0hMTHBOMVBhY05JOD0%3D&classId=660444eb-e3d5-4135-8b70-44d5b04eb604) [video]
 - [Energía potencial gravitatoria: péndulo con punto de suspensión libre](https://colab.research.google.com/github/bettachini/UNLaM_MecanicaGeneral/blob/master/03Energ%C3%ADa/p%C3%A9nduloSuspensi%C3%B3nTV.ipynb) 
 - [foro de consultas: 02Energía]
-- Ejericios  
+- Ejericios a entregar  
 De aquí en más los ejercicios se entregarán la semana siguiente a su publicación con un límite a los 30' de iniciado el encuentro sincrónico.
   - g02e02
   - g02e03
@@ -113,7 +111,51 @@ De aquí en más los ejercicios se entregarán la semana siguiente a su publicac
 - [Guía de ejercicios | Euler-Lagrange](https://github.com/bettachini/MecanicaAnaliticaComputacional/blob/master/04EulerLagrange/gu%C3%ADaEulerLagrange.pdf?classId=660444eb-e3d5-4135-8b70-44d5b04eb604)
 - [Energía potencial elástica](https://colab.research.google.com/github/bettachini/UNLaM_MecanicaGeneral/blob/master/04EulerLagrange/energ%C3%ADaPotencialEl%C3%A1stica.ipynb)
 - [Partes rotantes en un sistema](https://colab.research.google.com/github/bettachini/MecanicaAnaliticaComputacional/blob/master/04EulerLagrange/partesRotantes.ipynb?classId=660444eb-e3d5-4135-8b70-44d5b04eb604)
-- g03e01c
-- g03e02
-- g03e03
-- g03e04
+- Ejercicios a entregar
+  - g03e01c
+  - g03e02
+  - g03e03
+  - g03e04
+
+
+## 04 Ligaduras
+- [Ligaduras](https://colab.research.google.com/github/bettachini/MecanicaAnaliticaComputacional/blob/master/05Ligaduras/ligadurasFunci%C3%B3n.ipynb)
+- [Máquina de Atwood con ligadura](https://colab.research.google.com/github/bettachini/UNLaM_MecanicaGeneral/blob/master/05Ligaduras/atwoodLigadura.ipynb)
+- [Máquina de Atwood con ligadura: funciones usadas (video)](https://login.microsoftonline.com/659e1dba-b3cc-4dcc-8730-d23877e7ab7b/oauth2/authorize?client%5Fid=00000003%2D0000%2D0ff1%2Dce00%2D000000000000&response%5Fmode=form%5Fpost&response%5Ftype=code%20id%5Ftoken&resource=00000003%2D0000%2D0ff1%2Dce00%2D000000000000&scope=openid&nonce=2AD4CCFAF671C97391C33058B5B390BA9CD316E02FDF2B18%2DF7999B13CDFD0383D3B84CC0D1532762903A6DF411E86F99743C751A289E4A15&redirect%5Furi=https%3A%2F%2Fingunlamedu%2Esharepoint%2Ecom%2F%5Fforms%2Fdefault%2Easpx&state=OD0w&claims=%7B%22id%5Ftoken%22%3A%7B%22xms%5Fcc%22%3A%7B%22values%22%3A%5B%22CP1%22%5D%7D%7D%7D&wsucxt=1&cobrandid=11bd8083%2D87e0%2D41b5%2Dbb78%2D0bc43c8a8e8a&client%2Drequest%2Did=b8e732a1%2Da054%2D5000%2Dc659%2Dfb8c24ed7330)
+- [Resolución de sistemas de ecuaciones diferenciales](https://colab.research.google.com/github/bettachini/UNLaM_MecanicaGeneral/blob/master/05Ligaduras/resoluci%C3%B3nSistemasLineales.ipynb)
+- [Foro de consultas: 04Ligaduras]
+- [Guía de ejercicios | Ligaduras](https://github.com/bettachini/MecanicaAnaliticaComputacional/blob/master/05Ligaduras/gu%C3%ADaLigaduras.pdf)
+- Ejercicios a entregar
+  - g04e02
+  - g04e03
+  - g04e04
+
+
+
+## 05 Simulación numérica
+Es hora de resolver esas ecuaciones diferenciales obtenidas con el método de Euler-Lagrange. Pondremos en práctica lo aprendido de cálculo numérico y obtendremos la dinámica de los sistemas que hemos modelado.  
+- [Máquina de Atwood](https://colab.research.google.com/github/bettachini/UNLaM_MecanicaGeneral/blob/master/06Simulaci%C3%B3n/atwoodSimulaci%C3%B3n_Resuelto.ipynb)
+- [Video - simulación numérica](https://ingunlamedu-my.sharepoint.com/:v:/g/personal/vbettachini_unlam_edu_ar/ERc2isv46_pFjS9cfpEGMb0BT8JMFpxAS6pz7rLQnVVuyw)
+- [Péndulo con punto de suspensión libre](https://colab.research.google.com/github/bettachini/UNLaM_MecanicaGeneral/blob/master/06Simulaci%C3%B3n/p%C3%A9nduloLibreSimulaci%C3%B3n_Resuelto.ipynb)
+- [Foro de consultas: 05Simulación]
+- Ejercicios a entregar
+  - [Guía de ejercicios | Simulación](https://github.com/bettachini/MecanicaAnaliticaComputacional/blob/master/06Simulaci%C3%B3n/gu%C3%ADaSimulaci%C3%B3n.pdf)
+  - g05e02a
+  - g05e02c
+  - g05e03
+  - g05e04
+
+
+  ## 06 Fuerzas de ligadura
+  Tan importante como determinar la dinámica de cada parte de un dispositivo es estimar los esfuerzos que deben soportar. Empezaremos a calcular estos torques y fuerzas.  
+  - [Fuerzas de ligadura](https://colab.research.google.com/github/bettachini/UNLaM_MecanicaGeneral/blob/master/07FuerzasLigadura/fuerzasLigadura.ipynb)
+  - [Fuerzas de ligadura | Péndulo rígido ideal](https://colab.research.google.com/github/bettachini/UNLaM_MecanicaGeneral/blob/master/07FuerzasLigadura/ligaduraP%C3%A9nduloIdeal.ipynb)
+  - [Fuerzas de ligadura | Rodadura](https://colab.research.google.com/github/bettachini/UNLaM_MecanicaGeneral/blob/master/07FuerzasLigadura/rodaduraFuerzasLigadura.ipynb)
+  - [Ejercicios de Fuerzas de ligadura | video](https://ingunlamedu.sharepoint.com/sites/24pMecAnComp/_layouts/15/streamembed.aspx?uniqueId=b4342276-42b9-434a-8748-382b1f1780b3&embed=%7B%22ha%22%3A%22teams%22%2C%22hv%22%3A%22classwork%22%2C%22hm%22%3A%22view%22%2C%22hp%22%3A%22web%22%2C%22nb%22%3Atrue%2C%22hrv%22%3A%22classworkList%22%2C%22hvn%22%3A%22aui.v20240607.5%22%2C%22t0%22%3A922156.0999999999%2C%22t0to%22%3A1718461920575.4%2C%22tcs%22%3A922156.0999999999%2C%22tcsto%22%3A1718461920575.4%2C%22hvm%22%3Afalse%2C%22hsi%22%3A%2261c1e76f-e1b3-42c8-8455-a70dada7043e%22%2C%22he%22%3A%22Prod%22%7D)
+  - [Foro de consultas: 06FuerzasLigadura]
+  - Ejercicios a entregar
+    - [Guía de ejercicios | Fuerzas de ligadura](https://github.com/bettachini/MecanicaAnaliticaComputacional/blob/master/07FuerzasLigadura/gu%C3%ADaFuerzasLigadura.pdf)
+    - g06e03
+    - g06e04
+    - g06e05
+    - [Resolución de la ecuación diferencia en el problema de la semi-esfera](https://ingunlamedu.sharepoint.com/sites/24pMecAnComp/_layouts/15/embed.aspx?uniqueId=7b2b2e9e-5176-4ec4-9290-03030fbc1819&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBfZGlzcGxheW5hbWUiOiJNaWNyb3NvZnQgVGVhbXMgV2ViIENsaWVudCIsImFwcGlkIjoiNWUzY2U2YzAtMmIxZi00Mjg1LThkNGItNzVlZTc4Nzg3MzQ2IiwiYXVkIjoiMDAwMDAwMDMtMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwL2luZ3VubGFtZWR1LnNoYXJlcG9pbnQuY29tQDY1OWUxZGJhLWIzY2MtNGRjYy04NzMwLWQyMzg3N2U3YWI3YiIsImNhY2hla2V5IjoiMGguZnxtZW1iZXJzaGlwfDEwMDMyMDAwNzcwMTA1MzZAbGl2ZS5jb20iLCJjaWQiOiJSck9iK0pLcUdFS2NDcE5SS3pGTFdnPT0iLCJlbmRwb2ludHVybCI6IjJzZ0g0UVFoanZrTDJkdHdVTER0b3J0a1p0Rk1idVVQVWVLbVdBcFo2UkE9IiwiZW5kcG9pbnR1cmxMZW5ndGgiOiIxMjIiLCJleHAiOiIxNzE4NDYzMjQwIiwiZmFtaWx5X25hbWUiOiJCZXR0YWNoaW5pIiwiZ2l2ZW5fbmFtZSI6IlZpY3RvciBBbGV4aXMiLCJpcGFkZHIiOiIyMC4xOTAuMTczLjI1IiwiaXNsb29wYmFjayI6IlRydWUiLCJpc3MiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAiLCJuYmYiOiIxNzE4NDYyOTQwIiwicHVpZCI6IjEwMDMyMDAwNzcwMTA1MzYiLCJzY3AiOiJhbGxmaWxlcy53cml0ZSBncm91cC5yZWFkIGFsbHNpdGVzLndyaXRlIiwic2lnbmluX3N0YXRlIjoiW1wia21zaVwiXSIsInNpdGVpZCI6Ik1ESm1aR1prT0RBdE4yUTJPQzAwTlRObExUZzRORFV0TmpkaFpqbGhNell3WWpCbCIsInRpZCI6IjY1OWUxZGJhLWIzY2MtNGRjYy04NzMwLWQyMzg3N2U3YWI3YiIsInR0IjoiMiIsInVwbiI6InZiZXR0YWNoaW5pQHVubGFtLmVkdS5hciIsInZlciI6Imhhc2hlZHByb29mdG9rZW4ifQ._Poyrhg2BWko-UZl5v0Dq20h-XtWa2vbwVUfN1PPcpQ&embed=%7B%22nb%22%3Atrue%2C%22o%22%3A%22https%3A%2F%2Fassignments.onenote.com%22%2C%22itf%22%3A%22rc%22%2C%22af%22%3Afalse%7D)

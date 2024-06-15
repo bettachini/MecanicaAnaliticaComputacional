@@ -146,16 +146,89 @@ Es hora de resolver esas ecuaciones diferenciales obtenidas con el método de Eu
   - g05e04
 
 
-  ## 06 Fuerzas de ligadura
-  Tan importante como determinar la dinámica de cada parte de un dispositivo es estimar los esfuerzos que deben soportar. Empezaremos a calcular estos torques y fuerzas.  
-  - [Fuerzas de ligadura](https://colab.research.google.com/github/bettachini/UNLaM_MecanicaGeneral/blob/master/07FuerzasLigadura/fuerzasLigadura.ipynb)
-  - [Fuerzas de ligadura | Péndulo rígido ideal](https://colab.research.google.com/github/bettachini/UNLaM_MecanicaGeneral/blob/master/07FuerzasLigadura/ligaduraP%C3%A9nduloIdeal.ipynb)
-  - [Fuerzas de ligadura | Rodadura](https://colab.research.google.com/github/bettachini/UNLaM_MecanicaGeneral/blob/master/07FuerzasLigadura/rodaduraFuerzasLigadura.ipynb)
-  - [Ejercicios de Fuerzas de ligadura | video](https://ingunlamedu.sharepoint.com/sites/24pMecAnComp/_layouts/15/streamembed.aspx?uniqueId=b4342276-42b9-434a-8748-382b1f1780b3&embed=%7B%22ha%22%3A%22teams%22%2C%22hv%22%3A%22classwork%22%2C%22hm%22%3A%22view%22%2C%22hp%22%3A%22web%22%2C%22nb%22%3Atrue%2C%22hrv%22%3A%22classworkList%22%2C%22hvn%22%3A%22aui.v20240607.5%22%2C%22t0%22%3A922156.0999999999%2C%22t0to%22%3A1718461920575.4%2C%22tcs%22%3A922156.0999999999%2C%22tcsto%22%3A1718461920575.4%2C%22hvm%22%3Afalse%2C%22hsi%22%3A%2261c1e76f-e1b3-42c8-8455-a70dada7043e%22%2C%22he%22%3A%22Prod%22%7D)
-  - [Foro de consultas: 06FuerzasLigadura]
+## 06 Fuerzas de ligadura
+Tan importante como determinar la dinámica de cada parte de un dispositivo es estimar los esfuerzos que deben soportar. Empezaremos a calcular estos torques y fuerzas.  
+- [Fuerzas de ligadura](https://colab.research.google.com/github/bettachini/UNLaM_MecanicaGeneral/blob/master/07FuerzasLigadura/fuerzasLigadura.ipynb)
+- [Fuerzas de ligadura | Péndulo rígido ideal](https://colab.research.google.com/github/bettachini/UNLaM_MecanicaGeneral/blob/master/07FuerzasLigadura/ligaduraP%C3%A9nduloIdeal.ipynb)
+- [Fuerzas de ligadura | Rodadura](https://colab.research.google.com/github/bettachini/UNLaM_MecanicaGeneral/blob/master/07FuerzasLigadura/rodaduraFuerzasLigadura.ipynb)
+- [Ejercicios de Fuerzas de ligadura | video](https://ingunlamedu.sharepoint.com/sites/24pMecAnComp/_layouts/15/streamembed.aspx?uniqueId=b4342276-42b9-434a-8748-382b1f1780b3&embed=%7B%22ha%22%3A%22teams%22%2C%22hv%22%3A%22classwork%22%2C%22hm%22%3A%22view%22%2C%22hp%22%3A%22web%22%2C%22nb%22%3Atrue%2C%22hrv%22%3A%22classworkList%22%2C%22hvn%22%3A%22aui.v20240607.5%22%2C%22t0%22%3A922156.0999999999%2C%22t0to%22%3A1718461920575.4%2C%22tcs%22%3A922156.0999999999%2C%22tcsto%22%3A1718461920575.4%2C%22hvm%22%3Afalse%2C%22hsi%22%3A%2261c1e76f-e1b3-42c8-8455-a70dada7043e%22%2C%22he%22%3A%22Prod%22%7D)
+- [Foro de consultas: 06FuerzasLigadura]
+- Ejercicios a entregar
+  - [Guía de ejercicios | Fuerzas de ligadura](https://github.com/bettachini/MecanicaAnaliticaComputacional/blob/master/07FuerzasLigadura/gu%C3%ADaFuerzasLigadura.pdf)
+  - g06e03
+  - g06e04
+  - g06e05
+
+
+## 07 Fuerzas no conservativas
+- [Fuerzas no conservativas y Euler-Lagrange](https://colab.research.google.com/github/bettachini/UNLaM_MecanicaGeneral/blob/master/08NoConservativas/noConservativas.ipynb)
+- [Sistemas con fuerzas no conservativas resueltos con Euler-Lagrange](https://colab.research.google.com/github/bettachini/UNLaM_MecanicaGeneral/blob/master/08NoConservativas/noConservativasEjemplos.ipynb)
+- [Péndulo de torsión desbalanceado | Pregunta conceptual (video)](https://ingunlamedu-my.sharepoint.com/personal/vbettachini_unlam_edu_ar/_layouts/15/stream.aspx?id=%2Fpersonal%2Fvbettachini%5Funlam%5Fedu%5Far%2FDocuments%2F21s%2F07NoConservativas%2F07%5FnoConservativas%5Fej2%2Emp4&nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjo5NzkuODM2LCJ0aW1lc3RhbXBlZExpbmtSZWZlcnJlckluZm8iOnsic2NlbmFyaW8iOiJDaGFwdGVyU2hhcmUiLCJhZGRpdGlvbmFsSW5mbyI6eyJpc1NoYXJlZENoYXB0ZXJBdXRvIjpmYWxzZX19fX0&ga=1&classId=660444eb%2De3d5%2D4135%2D8b70%2D44d5b04eb604&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E1f5c0f91%2D1ba8%2D422d%2Da43a%2D3ddc0400a4d3)
+- [Pëndulo de torsión desbalanceado | Resolución analítica (video)](https://ingunlamedu-my.sharepoint.com/personal/vbettachini_unlam_edu_ar/_layouts/15/stream.aspx?id=%2Fpersonal%2Fvbettachini%5Funlam%5Fedu%5Far%2FDocuments%2F21s%2F07NoConservativas%2F07%5FnoConservativas%5Fej2%2Emp4&nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoyMjIzLjcxOSwidGltZXN0YW1wZWRMaW5rUmVmZXJyZXJJbmZvIjp7InNjZW5hcmlvIjoiQ2hhcHRlclNoYXJlIiwiYWRkaXRpb25hbEluZm8iOnsiaXNTaGFyZWRDaGFwdGVyQXV0byI6ZmFsc2V9fX19&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ebff5c37f%2D430e%2D4401%2D9a10%2Df62bac9cb049)
+- [Foro de consultas 07NoConservativas]
+- Ejercicios a entregar
+  - [Guía de ejercicios | Fuerzas no conservativas](https://github.com/bettachini/UNLaM_MecanicaGeneral/blob/master/08NoConservativas/gu%C3%ADaNoConservativas.pdf)
+  - [Cilindros solidarios | Ayuda para el ejercicio](https://colab.research.google.com/github/bettachini/MecanicaAnaliticaComputacional/blob/master/08NoConservativas/noConservativas_cilindroSolidario_ayuda.ipynb)
+  - g07e02
+  - g07e03
+  - g07e04
+
+
+## 08 Tensor de incercia
+Llegó el momento de estudiar cuerpos sólidos de formas más complejas. Asi como una misma fuerza acelera más o menos distintos cuerpos según su masa un torque varía más o menos la velocidad angular según como está distribuida geométricamente su masa respecto al eje de rotación. El factor de relación es más complejo que una simple magnitud escalar, como la masa. Es el llamado tensor de inercia que en esta guía calcularán para geometrías simples, para luego animarse a atacar dispositivos mecánicos más realistas.
+- [Respaso de momento angular y torque](https://colab.research.google.com/github/bettachini/UNLaM_MecanicaGeneral/blob/master/09bTensorInercia/momento_angular_torque.ipynb)
+- [Tensor de inercia](https://colab.research.google.com/github/bettachini/UNLaM_MecanicaGeneral/blob/master/09bTensorInercia/tensorInercia.ipynb)
+- [Tensor de inercia del Cubo](https://colab.research.google.com/github/bettachini/UNLaM_MecanicaGeneral/blob/master/09bTensorInercia/ej5Cubo.ipynb)
+- [Tensor de inercia (video)](https://ingunlamedu-my.sharepoint.com/personal/vbettachini_unlam_edu_ar/_layouts/15/stream.aspx?id=%2Fpersonal%2Fvbettachini%5Funlam%5Fedu%5Far%2FDocuments%2F21s%2F08TensorInercia%2F08%20%5F%20Din%C3%A1mica%20del%20cuerpo%20r%C3%ADgido%20%5F%20Tensor%20de%20inercia%2D20211028%2Emp4&ga=1)
+- [Condición de rodadura para un cono, pág 180, notas del profesor Abramson](https://mega.nz/file/HIhhCAqD?classId=660444eb-e3d5-4135-8b70-44d5b04eb604#PJhDUAjNeb142l1LWpuZDlhLQRtNSo5-EsiUZhokXTA)
+- [Foro de consultas | 08 Tensor de inercia]
+- Ejercicios a entregar
+  - [Guía de ejercicios | Tensor de inercia](https://github.com/bettachini/MecanicaAnaliticaComputacional/blob/master/09bTensorInercia/gu%C3%ADaTensorInercia.pdf)
+  - Primer fecha
+    - g08e01
+    - g08e02
+    - g08e03
+    - g08e04
+  - Segunda fecha
+    - g08e06
+    - g08e07
+    - g08e08
+    - g08e09
+
+
+## 09 Ecuaciones de Euler de la rotación
+Ahora que saben escribir para un cuerpo sólido el tensor de inercia es hora de empezar a rotarle.
+- [Ecuaciones de Euler de la rotación](https://colab.research.google.com/github/bettachini/UNLaM_MecanicaGeneral/blob/master/10Rotaci%C3%B3nEuler/rotaci%C3%B3nEuler.ipynb)
+- [Ecuaciones de Euler de la rotación (video)](https://ingunlamedu-my.sharepoint.com/:v:/r/personal/vbettachini_unlam_edu_ar/Documents/21s/09Rotaci%C3%B3nEuler/Din%C3%A1mica%20del%20cuerpo%20r%C3%ADgido%20_%20Ecuaciones%20de%20Euler%20de%20la%20rotaci%C3%B3n-20211104.mp4?csf=1&web=1&e=mjCivH&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifSwicGxheWJhY2tPcHRpb25zIjp7InN0YXJ0VGltZUluU2Vjb25kcyI6MzE3Mi41Mn19)
+- [Engranaje desalineado](https://colab.research.google.com/github/bettachini/UNLaM_MecanicaGeneral/blob/master/10Rotaci%C3%B3nEuler/ej1.ipynb)
+- [Engranaje desalineado (video)](https://ingunlamedu-my.sharepoint.com/:v:/r/personal/vbettachini_unlam_edu_ar/Documents/21s/09Rotaci%C3%B3nEuler/Din%C3%A1mica%20del%20cuerpo%20r%C3%ADdigo%20_%20Ecuaciones%20de%20Euler%20de%20la%20rotaci%C3%B3n-20211111.mp4?csf=1&web=1&e=tAKj92&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifSwicGxheWJhY2tPcHRpb25zIjp7InN0YXJ0VGltZUluU2Vjb25kcyI6MTIyLjV9fQ%3D%3D)
+- [Volante de inercia](https://colab.research.google.com/github/bettachini/UNLaM_MecanicaGeneral/blob/master/10Rotaci%C3%B3nEuler/ej4.ipynb)
+- [Foro de consultas | 09 Ecuación de Euler de la rotación]
+- Ejercicios a entregar
+  - [Guía de ejercicios | Rotación Euler](https://github.com/bettachini/MecanicaAnaliticaComputacional/blob/master/10Rotaci%C3%B3nEuler/gu%C3%ADaRotacionEuler.pdf?classId=660444eb-e3d5-4135-8b70-44d5b04eb604)
+  - g09e02
+  - g09e03
+  - g09e05
+
+
+  ## 10 Vibraciones en sistemas de un grado de libertad
+  - [Vibraciones amortiguadas de un único grado de libertad (1GdL)](https://colab.research.google.com/github/bettachini/UNLaM_MecanicaGeneral/blob/master/11Vibraciones1GdL/vibraciones1GdL.ipynb)
+  - [Vibraciones en sistemas de un grado de libertad (video)](https://ingunlamedu-my.sharepoint.com/personal/vbettachini_unlam_edu_ar/_layouts/15/stream.aspx?id=%2Fpersonal%2Fvbettachini%5Funlam%5Fedu%5Far%2FDocuments%2F21s%2F10vibraciones1GdL%2FVibraciones%20en%20sistemas%20de%20un%20grado%20de%20libertad%2D20211118%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0RpcmVjdCJ9fQ&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E6344d159%2D1a40%2D45eb%2Db596%2D0563b5d74d27)
+  - [Forzado armónico de un sistema de 1GdL](https://colab.research.google.com/github/bettachini/UNLaM_MecanicaGeneral/blob/master/11Vibraciones1GdL/arm%C3%B3nico1GdL.ipynb)
+  - [Forzado arbitrario de un sistema de 1GdL](https://colab.research.google.com/github/bettachini/UNLaM_MecanicaGeneral/blob/master/11Vibraciones1GdL/arbitrario1GdL.ipynb?classId=660444eb-e3d5-4135-8b70-44d5b04eb604)
   - Ejercicios a entregar
-    - [Guía de ejercicios | Fuerzas de ligadura](https://github.com/bettachini/MecanicaAnaliticaComputacional/blob/master/07FuerzasLigadura/gu%C3%ADaFuerzasLigadura.pdf)
-    - g06e03
-    - g06e04
-    - g06e05
-    - [Resolución de la ecuación diferencia en el problema de la semi-esfera](https://ingunlamedu.sharepoint.com/sites/24pMecAnComp/_layouts/15/embed.aspx?uniqueId=7b2b2e9e-5176-4ec4-9290-03030fbc1819&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBfZGlzcGxheW5hbWUiOiJNaWNyb3NvZnQgVGVhbXMgV2ViIENsaWVudCIsImFwcGlkIjoiNWUzY2U2YzAtMmIxZi00Mjg1LThkNGItNzVlZTc4Nzg3MzQ2IiwiYXVkIjoiMDAwMDAwMDMtMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwL2luZ3VubGFtZWR1LnNoYXJlcG9pbnQuY29tQDY1OWUxZGJhLWIzY2MtNGRjYy04NzMwLWQyMzg3N2U3YWI3YiIsImNhY2hla2V5IjoiMGguZnxtZW1iZXJzaGlwfDEwMDMyMDAwNzcwMTA1MzZAbGl2ZS5jb20iLCJjaWQiOiJSck9iK0pLcUdFS2NDcE5SS3pGTFdnPT0iLCJlbmRwb2ludHVybCI6IjJzZ0g0UVFoanZrTDJkdHdVTER0b3J0a1p0Rk1idVVQVWVLbVdBcFo2UkE9IiwiZW5kcG9pbnR1cmxMZW5ndGgiOiIxMjIiLCJleHAiOiIxNzE4NDYzMjQwIiwiZmFtaWx5X25hbWUiOiJCZXR0YWNoaW5pIiwiZ2l2ZW5fbmFtZSI6IlZpY3RvciBBbGV4aXMiLCJpcGFkZHIiOiIyMC4xOTAuMTczLjI1IiwiaXNsb29wYmFjayI6IlRydWUiLCJpc3MiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAiLCJuYmYiOiIxNzE4NDYyOTQwIiwicHVpZCI6IjEwMDMyMDAwNzcwMTA1MzYiLCJzY3AiOiJhbGxmaWxlcy53cml0ZSBncm91cC5yZWFkIGFsbHNpdGVzLndyaXRlIiwic2lnbmluX3N0YXRlIjoiW1wia21zaVwiXSIsInNpdGVpZCI6Ik1ESm1aR1prT0RBdE4yUTJPQzAwTlRObExUZzRORFV0TmpkaFpqbGhNell3WWpCbCIsInRpZCI6IjY1OWUxZGJhLWIzY2MtNGRjYy04NzMwLWQyMzg3N2U3YWI3YiIsInR0IjoiMiIsInVwbiI6InZiZXR0YWNoaW5pQHVubGFtLmVkdS5hciIsInZlciI6Imhhc2hlZHByb29mdG9rZW4ifQ._Poyrhg2BWko-UZl5v0Dq20h-XtWa2vbwVUfN1PPcpQ&embed=%7B%22nb%22%3Atrue%2C%22o%22%3A%22https%3A%2F%2Fassignments.onenote.com%22%2C%22itf%22%3A%22rc%22%2C%22af%22%3Afalse%7D)
+    - [Guía de ejercicios | Vibraciones 1GdL](https://github.com/bettachini/UNLaM_MecanicaGeneral/blob/master/11Vibraciones1GdL/gu%C3%ADaVibraciones1GdL.pdf)
+    - g10e01
+    - g10e02
+    - g10e03
+    - g10e04
+
+
+## 11 Vibraciones en sistemas de múltiples grados de libertad
+- [Sistema discreto con múltiples grados de libertad](https://colab.research.google.com/github/bettachini/UNLaM_MecanicaGeneral/blob/master/12VibracionesNGdL/vibracionesNGdL.ipynb)
+- [Vibraciones en múltiples grados de libertad (video)](https://ingunlamedu-my.sharepoint.com/personal/vbettachini_unlam_edu_ar/_layouts/15/stream.aspx?id=%2Fpersonal%2Fvbettachini%5Funlam%5Fedu%5Far%2FDocuments%2F21s%2F11vibracionesNGdL%2FVibraciones%20en%20sistemas%20con%20m%C3%BAltiples%20grados%20de%20libertad%2D20211125%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZyIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZyIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&ga=1)
+- [Foro de consultas | Viblaciones MGdL]
+- Ejercicios a entregar
+  - [Guía de ejercicios | Vibraciones MGdL](https://github.com/bettachini/UNLaM_MecanicaGeneral/blob/master/12VibracionesNGdL/gu%C3%ADaVibracionesNGdL.pdf)
+  - g11e01
+  - g11e02

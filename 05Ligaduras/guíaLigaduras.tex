@@ -34,13 +34,16 @@ Los problemas marcados con (*) tienen alguna dificultad adicional, no dude en co
 
 
 \item 
-	\begin{minipage}[t][2.6cm]{0.8\textwidth}
+	\begin{minipage}[t][3.5cm]{0.8\textwidth}
 		\textbf{Aro y polea}\\
-		Una partícula de masa \(m\) pende de una sección de cuerda de longitud \(y_m\) que sobresale de una polea de radio \(R_p\) y masa despreciable.
+		Una pesa de masa \(m\) pende de una sección de cuerda de longitud \(\ell_{pesa}\) que sobresale a la derecha de una polea de radio \(R_{polea}\) y masa \(m_{poleo}\).
 		La cuerda tiene un longitud total \(\ell\), su  masa es despreciable y gira solidaria con la una polea.
-		El otro extremo se ata con un nudo de masa \(M\) a un aro de masa \(m_a\), enrollándose parcialmente en torno a éste.
-		El centro de la polea está a una altura \(h\) por sobre el del aro de radio \(R\) que como puede rotar libremente presenta un momento de inercia \(m_a R^2\).
-		Denomine el ángulo desde el centro hasta el nudo medido desde la horizontal con \(\theta\). 
+
+		El otro extremo se ata con un nudo de masa \(M_{nude}\) a un aro de masa \(m_{aro}\), enrollándose parcialmente en torno a éste.
+		El centro de la polea está a una altura \(h\) por sobre el del aro de radio \(R_{aro}\) que como puede rotar libremente presenta un momento de inercia \(m_{aro} R_{aro}^2\).
+		
+		Denomine el ángulo desde el centro hasta el nudo medido desde la horizontal con \(\theta\).
+		Recuerde que el sentido positivo para un ángulo es el antihorario. 
 	\end{minipage}
 	\begin{minipage}[c][0cm][t]{0.2\textwidth}
 		% \hspace{0.5cm}
@@ -51,7 +54,7 @@ Los problemas marcados con (*) tienen alguna dificultad adicional, no dude en co
 		\item Describa la función de ligadura y utilícela para expresar las posiciones en función de \(\theta\).
 		\item Obtenga la ecuación de Euler-Lagrange para la dinámica.\\
 		Resultado:
-		$R \left(- M R \ddot{\theta} + M g \cos{\left(\theta \right)} - R m \ddot{\theta} - R m_{a} \ddot{\theta} + g m\right) = 0$
+		\(M_{nudo} R_{aro}^{2} \ddot{\theta}_{aro} + M_{nudo} R_{aro} g \cos{\left(\theta_{aro} \right)} + R_{aro}^{2} m_{aro} \ddot{\theta}_{aro} + \frac{R_{polea}^{2} m_{polea} \ddot{\theta}_{aro}}{2} = 0\)
 	\end{enumerate}
 
 

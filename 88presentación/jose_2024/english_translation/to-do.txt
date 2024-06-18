@@ -1,4 +1,5 @@
 
+
 After the folder "english_translation" is moved to its final location:
 introUNLaM:
 - fix paths, %edg fix path
@@ -6,6 +7,11 @@ introUNLaM:
 
 
 01Vectorial:
-exercisesVector: ready
-vectorKinematics: ready 
-MarkdownLaTeX: ready
+cinemáticaVectorial.ipynb - vectorKinematics.ipynb: ready 
+entregaEjercicios.ipynb: not considered
+estaAsignatura.ipynb - thiscourse.ipynb : pending
+guíaVectorial.pdf - exercisesVector.pdf: ready
+MarkdownLaTeX.ipynb: ready
+
+03Energy:
+ejesPotencial - axesEnergy.ipynb: working on the last section, check this 

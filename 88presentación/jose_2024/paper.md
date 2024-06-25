@@ -52,26 +52,58 @@ We present a code-based undergraduate course on Analytical Mechanics for enginee
 
 It is important to note that the course is designed for a Latin American audience, so its original version is in Spanish CITA-GIT-ESP and addresses specific regional issues.
 
-The entire course is available at GIT-VIC. It heavily relies on the use of Jupyter notebooks to present both the physics concepts and the programs used to solve the examples. The complexity of both the physics and the programs increases incrementally, and students are given tools to modify and reuse throughout the course. Since these are third-year students (mid-career), they have already learned how to solve differential equations. The course gradually introduces computer-based Lagrangian solutions, both analytical and numerical, allowing students to focus on the solutions and the physics of the problems.
+The entire course is available at GIT-VIC. It heavily relies on the use of Jupyter notebooks to present both the physics concepts and the programs used to solve the examples. 
+The complexity of physics and the programs increases incrementally, and students are provided with tools to modify and reuse throughout the course. 
+Since these are third-year students (mid-career), they have already learned how to solve differential equations. 
+The course gradually introduces computer-based Lagrangian solutions, both analytical and numerical, allowing students to focus on the solutions obtained and its physical interpretation.
 
-The online hosting on Colab facilitates self-guided learning, enabling students to use synchronous classroom time to discuss solutions and mistakes they previously addressed independently.
+The online hosting of the notebooks facilitates self-guided learning, avoiding installation and hardware requirement issues, enabling students to use the synchronous classroom time to discuss solutions and mistakes they previously addressed independently at their own pace.
+
 
 ## Statement of need
 
-Latin-american universities require open-source fee-free solutions to introduce students to programming and specially to apply such skills to technical learning as physics. There are deep differences between latin-american syllabus to the ones for anglo-saxon counterparts, eg. Engeneering is a 6 year carreer. It is worth mentioning that this course is tought at University of La Matanza (UNLaM) where most students have a day job and take courses after work, a common situation in latin-american universities. The inverted classroom approach then presents a double advantage, it allows the students to learn at their own time so getting the most from the teaching staff during the class, and romoving  wasted time on transcriptions during a normal usual course. 
+Latin-american universities require open-source fee-free solutions to introduce students to programming and specially to apply such skills to technical learning as physics. 
+There are deep differences between latin-american syllabus to the ones for anglo-saxon counterparts, eg. Engeneering is a six-year carreer. 
+It is worth mentioning that this course is tought at University of La Matanza (UNLaM) where most students have a day job and take courses after work, a common situation in latin-american universities.
+So, the inverted classroom approach presents a double advantage, allowing students to learn at their own pace, getting the most from the teaching staff during the (synchronic time) class, and avoiding wasting time on transcriptions during a usual course. 
 
-It is also found that the knowledge and practice obtained during previous courses not only on numerical analysis, but also on programming as a tool, are seldom exploited at full at later courses. This is why the course presented here it is intended to fully explit such tools.
 
-Traditionally, the physical systems studied in analytical mechanics courses are
-relatively simple in order to limit the time and/or difficulty of mathematical
+It is also found that the knowledge and practice obtained during previous courses not only on numerical analysis, but also on programming as a tool, are seldom exploited at full on later courses. 
+So the course presented here it is intended to fully explit such previous tools.
+
+Traditionally, the physical systems studied in analytical mechanics courses are relatively simple in order to limit the time and/or difficulty of mathematical
 analysis and algebraic calculations required to solve the problems. Such  simplification leads to a later noticeable jump in the complexity when dealing with real problems. The use of modern programming languages and solving packages allows to rapidly introduce the students to life-like problems so avoinding oversimplifications.
 
+Since the Mechanical Engeneer carreer is relatively new at UNLaM, the number of students per class is low, around eight, so the course has been tested on a reduce scale, allowing the teaching staff to provide a personalized teaching experience in the synchronic sections of the course for the moment.
+Larger audiences will provide a challenge, probably requiring to include new teaching assistants to keep the characteristics and advantages described here.
 
 
 ## Overview, Content, and Structure
 
-The full repository of the course in Spanish can be found [here](https://github.com/bettachini/MecanicaAnaliticaComputacional), and a on-going English translated version [here](https://github.com/bettachini/MecanicaAnaliticaComputacional) __hay que modificar el link de inglés__
+The full repository of the course in Spanish can be found [here](https://github.com/bettachini/MecanicaAnaliticaComputacional), and a on-going English translated version [here](https://github.com/bettachini/MecanicaAnaliticaComputacional/blob/master/88presentaci%C3%B3n/jose_2024/english_translation/index.md).
 
+As detailed in the schedule, the 16 weeks of the course are divided into the 12 chapters:
+1. Course methodology, newtonian physics and Sympy introduction.
+2. Degrees of freedom, generalized coordinates and energy.
+3. Euler-Lagrange mechanics, Euler-Lagrange equations.
+4. Constraints as a function of coordinates.
+5. Numerical solutions of Euler-Lagrange equations.
+6. Constraint forces and Lagrange multipliers.
+7. Non-conservative forces in the Euler-Lagrange framework.
+8. Rigid-body and inertia tensor.
+9. Rigid-body, Euler equations.
+10. Final work, presentation of the problem and methodology. Oscillations in one degree of freedom systems, forced oscillations and discrete systems.
+12. Oscillations N-degree of freedom systems. Normal modes of discrete systems.
+
+Each chapter is composed by a set of theoretical notebooks and videos. 
+Also, accompanied by a set of examples, including functions to be modify by the students and incorporated as new tools to solve a small, but mandatory, set of homework problems.
+Since UNLaM relies on MS Teams, all problems are presented through that system, allowing the teaching staff to keep track of the students work.
+The problems must be sent at the end of each class, but here relies another advantage of the online notebooks: the teaching staff check all homework, including side-notes and possible in-notebook help to the students. So, providing another teacher-student asynchronous interaction.
+The students must keep presenting the excesices until solving in full all the excercises. 
+
+
+Notice that a final work is presented during chapter 10 of the course, this work is inteded to be a integrative problem, requiring the students to apply all the syllabus to solve it, producing a notebook to be presented to the teaching staff as a final oral examination. 
+Which is inteded for the students to show the learned skills, both in physics and computational aproach to the problem, and also to generate a well planned oral presentation.
 
 
 ## Conclusions
@@ -97,37 +129,6 @@ Additionally, students express interest in the final examination as it provides 
 
 In relation to the flipped classroom model, students acknowledge that it requires a grater effort, but a majority of them agree that it is a positive and beneficial implementation.
 The authors are confident that the methodology employed in this course offers greater practical utility to students in subsequent subjects and their professional lives, surpassing the benefits of a traditional course.
-
-
-# Mathematics
-
-Single dollars ($) are required for inline mathematics e.g. $f(x) = e^{\pi/x}$
-
-Double dollars make self-standing equations:
-
-$$\Theta(x) = \left\{\begin{array}{l}
-0\textrm{ if } x < 0\cr
-1\textrm{ else}
-\end{array}\right.$$
-
-
-# Citations
-
-## citation
-
- in the ``Astropy`` package [@astropy] (``astropy.units`` and
-``astropy.coordinates``).
-
-``Gala`` was designed to be used by both astronomical researchers and by
-students in courses on gravitational dynamics or astronomy. It has already been
-used in a number of scientific publications [@Pearson:2017] and has also been
-used in graduate courses on Galactic dynamics to, e.g., provide interactive
-visualizations of textbook material [@Binney:2008]. The combination of speed,
-design, and support for Astropy functionality in ``Gala`` will enable exciting
-scientific explorations of forthcoming data releases from the *Gaia* mission
-[@gaia] by students and experts alike.
-
-
 
 
 Citations to entries in paper.bib should be in

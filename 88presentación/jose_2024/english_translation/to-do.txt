@@ -9,9 +9,10 @@ introUNLaM:
 01Vectorial:
 cinemáticaVectorial.ipynb - vectorKinematics.ipynb: ready 
 entregaEjercicios.ipynb: not considered
-estaAsignatura.ipynb - thiscourse.ipynb : pending
 guíaVectorial.pdf - exercisesVector.pdf: ready
 MarkdownLaTeX.ipynb: ready
+estaAsignatura.ipynb - thiscourse.ipynb : pending
+  - porqué se llama mec analit comp? No se que hacer ahí.
 
 03Energy:
 ejesPotencial - axesEnergy.ipynb: working on the last section, check this 

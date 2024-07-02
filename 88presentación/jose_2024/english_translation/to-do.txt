@@ -1,10 +1,17 @@
-
+- Se necesita decidir la ubicación final del directorio en inglés para insertar los vínculos a los acrhivos.
 
 After the folder "english_translation" is moved to its final location:
 introUNLaM:
 - fix paths, %edg fix path
 - Footer: is it "Updated on" or "Updated in" or what?
 
+
+index.md 
+  - Traducir párrafo de la introducción.
+  - week 6: Fuerzas de ligadura por multiplicadores de Lagrange.
+  - week 10: Rotación Euler - euler angles?
+  - week 11: Integrador: enunciado
+  - week 13: Integrador: presentación.
 
 01Vectorial:
 cinemáticaVectorial.ipynb - vectorKinematics.ipynb: ready 

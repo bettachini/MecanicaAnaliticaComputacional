@@ -65,12 +65,10 @@ The online hosting of the notebooks facilitates self-guided learning, avoiding i
 
 
 ## Statement of need
-Two realities facing Latin American public universities face two simultaneous constains: tight budgets and the need to accommodate their classes' schedules to day-working students.
-
+Latin American public universities face two simultaneous constains: tight budgets and the need to accommodate their classes' schedules to day-working students.
 Authorities of these cash-stripped universities often ask that any solution to introduce students to coding skills should be based open-source fee-free resources.
-That is more so in the case for courses that are not directly related to computer science or programming as authorities tend to concentrate on-campus computing resources at computer science departments.
-
-Also as undergraduate programs on engineering at latin-american universities are usually longer than the three-years bachelors at their anglo-saxon counterparts, it is quite common that students are in the labour market while studying, so they have a tight schedule and are not able to attend to the university during the day. 
+That is more so in the case for courses that are not directly related to computer science or programming as on-campus computing resources are usually concentrated at computer science departments.
+Also, as undergraduate programs on engineering at latin-american universities are usually longer than the three-years bachelors at their anglo-saxon counterparts, it is quite common that students are in the labour market while studying, so they have a tight schedule and are not able to attend to the university during the day. 
 <!--
 It is worth mentioning that this course is tought at University of La Matanza (UNLaM), located at the outskirts of Buenos Aires that attracts working students who have a day job and take classes courses mostly at night shifts.
 -->
@@ -86,7 +84,6 @@ https://www.ingenieria.unam.mx/programas_academicos/licenciatura/mecanica_plan20
 Unicamp, Brasil, 10 semestres
 https://www.dac.unicamp.br/sistemas/catalogos/grad/catalogo2023/cursos/10g/sugestao.html
 -->
-
 The course presented here is designed to address these issues by providing a free, online, and asynchronous learning environment that allows students to study at their own pace and use synchronous night-time meetings to discuss and solve problems with the teaching staff, in what is usualled named as an _inverted classroom approach_.
 
 

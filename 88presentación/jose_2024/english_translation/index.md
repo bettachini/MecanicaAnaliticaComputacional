@@ -19,23 +19,25 @@ Como leerán la teoría y empezarán a tratar de resolver ejercicios durante la 
 
 
 ## Contents
+In this proposed schedule for a course of 14 weeks, the topics are divided by areas.
+Some of them are covered through more than one week, so a further descriptor, _Label_, indicates the folders' names where to find each week's material.
 
-The column _Title_ shows the folders' names where to find the material for each week.
-
-| Week  | Area        | Title          | Topics                   |
-|:--:|:-----------:|:---------------:|:-------                |
-| 01 | Newtonian mechanics  | Vector       | Course presentation. Vector calculus using Sympy. |  
-| 02 | Analytical mechanics  | Energy         | Degrees of freedom. Generalized coordinates. Kinetic and potential energies. |
-| 03 | “           | EulerLagrange   | Euler-Lagrange equations. |
-| 04 | “           | Constraints       | Constraints as functions of coordinates. |
-| 05 | Numerical    | Simulation      | Numerical resolution of Euler-Lagrange equations. |
-| 06 | Forces     | ForcesConstraint |  Fuerzas de ligadura por multiplicadores de Lagrange. |
-| 07 | “           | NonConservative | Non conservative forces in the Euler-Lagrange formalism. |
-| 08-09 | Rigid body      | InertiaTensor | Inertia tensor. |
-| 10 | “           | EulerRotation | Euler equations for the rigid body. |
-| 11 | “           | “               | **Integrador: enunciado**. |
-| 12 | Oscillations | OscillationsSDOF | Forced oscillations in single degree of freedom systems. |
-| 13-14 | “           | OscillationsMDOF | **Integrador: presentación**. Modos normales de oscilación en sistemas discretos. |
+| Week | Area                  | Label            | Topics                   |
+|:----:|:---------------------:|:----------------:|:-------                |
+| 01   | Newtonian mechanics   | Vector           | Course presentation. Vector calculus using Sympy. |  
+| 02   | Analytical mechanics  | Energy           | Degrees of freedom. Generalized coordinates. Kinetic and potential energies. |
+| 03   | “                     | EulerLagrange    | Euler-Lagrange equations. |
+| 04   | “                     | Constraints      | Constraints as functions of coordinates. |
+| 05   | Numerical             | Simulation       | Numerical resolution of Euler-Lagrange equations. |
+| 06   | Forces                | ForcesConstraint | Constraints forces by Lagrange multipliers. |
+| 07   | “                     | NonConservative  | Non conservative forces in the Euler-Lagrange formalism. |
+| 08   | Rigid body            | PunctualMasses   | Inertia tensor of point masses systems. Steiner theorem. |
+| 09   | "                     | DistributedMass  | Inertia tensor of masses distributions.  |
+| 10   | “                     | EulerRotation    | Euler equations for the rigid body. |
+| 11   | “                     | "                | **Final project: statement of the problem** |
+| 12   | Oscillations          | OscillationsSDOF | Forced oscillations in single degree of freedom systems. |
+| 13   | “                     | OscillationsMDOF | **Project live presentation** Forced oscillation at multiple degrees of freedom systems. |
+| 14   | “                     | "                | **2.nd chance presentation**                                                       |
 
 
 

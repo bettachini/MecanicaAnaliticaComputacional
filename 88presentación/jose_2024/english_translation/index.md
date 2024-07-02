@@ -20,9 +20,9 @@ Como leerán la teoría y empezarán a tratar de resolver ejercicios durante la 
 
 ## Contents
 In this proposed schedule for a course of 14 weeks, the topics are divided by areas.
-Some of them are covered through more than one week, so a further descriptor, _Label_, indicates the folders' names where to find each week's material.
+Some of them are covered through more than one week, so a further descriptor, _Folder_, indicates where to find each week's material.
 
-| Week | Area                  | Label            | Topics                   |
+| Week | Area                  | Folder            | Topics                   |
 |:----:|:---------------------:|:----------------:|:-------                |
 | 01   | Newtonian mechanics   | Vector           | Course presentation. Vector calculus using Sympy. |  
 | 02   | Analytical mechanics  | Energy           | Degrees of freedom. Generalized coordinates. Kinetic and potential energies. |

@@ -89,7 +89,7 @@ Larger audiences will provide a challenge, probably requiring to include new tea
 
 ## Basis for the syllabus
 Traditionally, the physical systems studied in analytical mechanics courses are relatively simple in order to limit the time and/or difficulty of mathematical
-Such simplification leads to a later noticeable jump in the complexity when dealing with more real problems at later courses. 
+Such simplification leads to a later noticeable jump in the complexity when dealing with more real problems at later courses of the mechanical engineering curricula. 
 Yet knowledge and practice not only on numerical analysis, but also on programming as a tool, were seldom exploited at UNLaM to addreess this issue. 
 The use of modern programming languages and solving packages allows to rapidly introduce the students to life-like problems avoiding oversimplifications.
 
@@ -97,7 +97,7 @@ The use of modern programming languages and solving packages allows to rapidly i
 ## Overview, Content, and Structure
 The full repository of the course in Spanish can be found [here](https://github.com/bettachini/MecanicaAnaliticaComputacional), and a on-going English translated version [here](https://github.com/bettachini/MecanicaAnaliticaComputacional/blob/master/88presentaci%C3%B3n/jose_2024/english_translation/index.md).
 
-As detailed in the schedule, the 16 weeks of the course are divided into the 12 chapters:
+As detailed in the schedule, the 14 weeks of the course are divided into 12 units:
 1. Course methodology, newtonian physics and Sympy introduction.
 2. Degrees of freedom, generalized coordinates and energy.
 3. Euler-Lagrange mechanics, Euler-Lagrange equations.
@@ -107,8 +107,8 @@ As detailed in the schedule, the 16 weeks of the course are divided into the 12 
 7. Non-conservative forces in the Euler-Lagrange framework.
 8. Rigid-body and inertia tensor.
 9. Rigid-body, Euler equations.
-10. Final work, presentation of the problem and methodology. Oscillations in one degree of freedom systems, forced oscillations and discrete systems.
-12. Oscillations N-degree of freedom systems. Normal modes of discrete systems.
+10. Final work, presentation of the problem and methodology. Oscillations in single degree of freedom (SDoF) systems, forced oscillations and discrete systems.
+12. Oscillations multiple degrees of freedom (MDoF) systems. Normal modes of discrete systems.
 
 Each chapter is composed by a set of theoretical notebooks and videos. 
 Also, accompanied by a set of examples, including functions to be modify by the students and incorporated as new tools to solve a small, but mandatory, set of homework problems.
@@ -128,7 +128,7 @@ This course differs from conventional ones by being:
   1. By iteratively modifying previously tested code (initially designed for simpler mechanical systems), students expand their analytical capabilities.
   1. The complexity of the code evolves alongside the mechanical system’s intricacies introduced each class.
   1. This approach eliminates the need to _start from scratch_ when dealing with the extensive calculations required for analyzing complex mechanical systems using the Euler-Lagrange formalism.
-  1 . All systems used are currently available online on a non-cost basis, from the student point of view. Being based on free software, if any of them is later placed behind a paywall, it would be simple to run them from on the premise servers.
+  1. All systems used are currently available online on a non-cost basis, from the student point of view. Being based on free software, if any of them is later placed behind a paywall, it would be simple to run them from on the premise servers.
 - Following a flipped classroom approach
   1. Students are provided with online theory and example problems to study before weekly meetings. These asynchronous activities save classroom time for discussions and problem solving.
   1. During synchronic meetings they can rise to teachers any questions related to theory or problem-solving so they can finish their exercise sets.

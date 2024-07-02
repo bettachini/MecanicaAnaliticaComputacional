@@ -5,6 +5,9 @@ introUNLaM:
 - fix paths, %edg fix path
 - Footer: is it "Updated on" or "Updated in" or what?
 
+Add this to README (Fix path):
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/bettachini/MecanicaAnaliticaComputacional/blob/master/88presentaci%C3%B3n/jose_2024/english_translation/index.md)
+
 
 index.md 
   - Traducir párrafo de la introducción.

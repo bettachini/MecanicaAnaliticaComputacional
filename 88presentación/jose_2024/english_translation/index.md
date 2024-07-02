@@ -37,6 +37,32 @@ The column _Title_ shows the folders' names where to find the material for each 
 | 12 | Oscillations | OscillationsSDOF | Forced oscillations in single degree of freedom systems. |
 | 13-14 | “           | OscillationsMDOF | **Integrador: presentación**. Modos normales de oscilación en sistemas discretos. |
 
+## Bibliography
+
+### Basics
+- Lev Davidovich Landau y E. M. Lifshitz, _Mecánica - Curso de física teórica_ (Reverté, Barcelona, Estado Español, 2.a. edición, 1994)
+- Oscar E. Martinez, _Ondas es física_ (Eudeba, Buenos Aires, Argentina, 2008)
+
+### Vector mechanics
+
+- Juan Gualterio Roederer, _Mecánica elemental_ (Eudeba, Buenos Aires, Argentina, 2.a. edición, 2008)
+- Ferdinand Pierre Beer, E. Russell Johnston, y Elliot R Eisenberg, _Mecánica vectorial para ingenieros -_
+    - _Dinámica_ (McGraw-Hill, México DF, México, 9.a. edición, 2010)
+    - _Estática_ (McGraw-Hill, México DF, México, 9.a edición 2010)
+- W. Moebs et al., _Física universitaria - Volúmen 1_ (Rice University, Houston, Estados Unidos de América, 2021)
+- S. Alrasheed, _Principles of Mechanics_ (Springer Cham, Cham, Confederación Suiza, 1.er edición, 2019)
+
+### Analytical and vector mechanics
+
+- S. M. Targ, _Curso breve de mecánica teórica_ (Mir, Moscú, Unión de Repúblicas Socialistas Soviéticas, 2.a edición, 1976)
+
+### Analytical mechanics
+
+- Jerry B. Marion, _Dinamica clásica de las partículas y sistemas_ (Reverté, Barcelona, Estado Español, 2.a. edición, 1975)
+- Stephen T. Thornton y Jerry B. Marion, _Classical Dynamics of Particles and Systems_ (Thomson Brooks/Cole, Belmont, Estados Unidos de América,  5.a edición, 2004)
+- John Robert Taylor, _Classical Mechanics_ (University Science Books, Sausalito, Estados Unidos de América, 2005)
+- Cornelius Lanczos, _The Variational Principles of Mechanics_ (University of Toronto press, Toronto, Canadá, 1952).
+- Douglas Cline, _Variational Principles in Classical Mechanics_ (University of Rocherster River Campus Libraries, Rochester, Estados Unidos de América, 2021)
 
 
 ## Course outline

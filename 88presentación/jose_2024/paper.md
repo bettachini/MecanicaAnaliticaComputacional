@@ -1,12 +1,12 @@
 ---
-title: 'Analytical mechanics using Python and Lagrange approach'
+title: 'Python-based Lagrange analytical mechanics course'
 tags:
   - Python
   - physics
-  - analythical mechanics
-  - mechanical engeneering
+  - analitical mechanics
+  - mechanical engineering
   - Lagrange
-  - inverted class-room
+  - flipped classroom
 authors:
   - name: Víctor A. Bettachini
 	orcid: 0000-0001-7485-8884
@@ -18,13 +18,13 @@ authors:
     orcid: 0009-0006-8783-8261
     affiliation: "5"
 affiliations:
- - name: Universidad Nacional de La Matanza - UNLAM, Buenos Aires, Argentina.
+ - name: Universidad Nacional de La Matanza - UNLaM, Buenos Aires, Argentina.
    index: 1
  - name: Instituto Geográfico Nacional - IGN, Buenos Aires, Argentina.
    index: 2
  - name: Instituto Nacional de Tecnología Industrial - INTI, Buenos Aires, Argentina.
    index: 3
- - name: INCALIN, Universidad de San Martín - UNSAM, Buenos Aires, Argentina.
+ - name: INCALIN, Universidad de San Martín - UNSaM, Buenos Aires, Argentina.
    index: 4
  - name: Universidad Tecnológica Nacional - UTN, Buenos Aires, Argentina.
    index: 5
@@ -48,38 +48,53 @@ bibliography: bettachini.bib
 
 # Summary
 
-We present a code-based undergraduate course on Analytical Mechanics for engineering students with little to no prior programming knowledge. This 16-week inverted-classroom course focuses on modeling simple mechanical devices as rigid bodies using the Euler-Lagrange equation, facilitated by a set of Jupyter notebooks. The Lagrangian approach allows the creation of a set of functions that can be recurrently applied to different problems. Students can then reuse and modify these functions to solve increasingly complex problems.
+We present a code-based undergraduate course on analytical mechanics for engineering students with little to no prior programming knowledge.
+This 16-week flipped (or inverted) classroom course focuses on providing skills to calculate dynamics and strains of simple mechanical devices modelled as rigid bodies by solving Euler-Lagrange equations.
+Problems sets with increasingly complex exercises are introduced each week.
+Python-based solutions to previous ones are reused by students, that through small incremental modifications over the code presented by the teaching staff, build their own library of solutions to address mechanical modelling challenges.
 
-It is important to note that the course is designed for a Latin American audience, so its original version is in Spanish CITA-GIT-ESP and addresses specific regional issues.
-
-The entire course is available at GIT-VIC. It heavily relies on the use of Jupyter notebooks to present both the physics concepts and the programs used to solve the examples. 
-The complexity of physics and the programs increases incrementally, and students are provided with tools to modify and reuse throughout the course. 
-Since these are third-year students (mid-career), they have already learned how to solve differential equations. 
-The course gradually introduces computer-based Lagrangian solutions, both analytical and numerical, allowing students to focus on the solutions obtained and its physical interpretation.
-
-The online hosting of the notebooks facilitates self-guided learning, avoiding installation and hardware requirement issues, enabling students to use the synchronous classroom time to discuss solutions and mistakes they previously addressed independently at their own pace.
+All this course material is available at GIT-VIC as Jupyter notebooks containing theory and examples exercises alongside the code to solve them.
+Designed for a Latin American audience of third-year students (mid-career), that have already learned how to solve differential equations, its material is in Spanish CITA-GIT-ESP and addresses specific regional issues.
+Students are required to rely on computer-based calculations, both analytical and numerical, so to focus their efforts on the physics modelling and interpretation of results.
+The online hosting and execution of these notebooks avoids installation and hardware requirement issues.
 
 
 ## Statement of need
+Latin American public universities face two simultaneous constains: tight budgets and the need to accommodate their classes' schedules to day-working students.
+Authorities of these cash-stripped universities often ask that any solution to introduce students to coding skills should be based open-source fee-free resources.
+That is more so in the case for courses that are not directly related to computer science or programming as on-campus computing resources are usually concentrated at computer science departments.
+Also, as undergraduate programs on engineering at latin-american universities are usually longer than the three-years bachelors at their anglo-saxon counterparts, it is quite common that students are in the labour market while studying, so they have a tight schedule and are not able to attend to the university during the day. 
+<!--
+It is worth mentioning that this course is tought at University of La Matanza (UNLaM), located at the outskirts of Buenos Aires that attracts working students who have a day job and take classes courses mostly at night shifts.
+-->
 
-Latin-american universities require open-source fee-free solutions to introduce students to programming and specially to apply such skills to technical learning as physics. 
-There are deep differences between latin-american syllabus to the ones for anglo-saxon counterparts, eg. Engeneering is a six-year carreer. 
-It is worth mentioning that this course is tought at University of La Matanza (UNLaM) where most students have a day job and take courses after work, a common situation in latin-american universities.
-So, the inverted classroom approach presents a double advantage, allowing students to learn at their own pace, getting the most from the teaching staff during the (synchronic time) class, and avoiding wasting time on transcriptions during a usual course. 
+<!--
+There are deep differences between engineering syllabus to the ones at anglo-saxon counterparts, as undergraduate engineering courses are usually six-years long.
+-->
+<!--
+UNAM, México, 10 semestres
+https://www.ingenieria.unam.mx/programas_academicos/licenciatura/mecanica_plan2023.php
+-->
+<!--
+Unicamp, Brasil, 10 semestres
+https://www.dac.unicamp.br/sistemas/catalogos/grad/catalogo2023/cursos/10g/sugestao.html
+-->
+The course presented addresses those issues by providing a free, online, and asynchronous learning environment that allows students to study at their own pace through the flipped classroom approach.
+In advance to weekly synchronous meetings, students are required to study the theory and examples provided in the notebooks, as well as try to solve the exercises.
+At the synchronous night-time meetings students are encouraged to ask questions and discuss the problems they could not solve with the teaching staff.
+
+Since the mechanical engineering programme is relatively new at UNLaM, the number of students per class is still low, around eight, so the course has been tested on a reduce scale, allowing the teaching staff to provide a personalized teaching experience at synchronic meetings.
+Larger audiences will provide a challenge, probably requiring to include new teaching assistants as well as introducing automatic grading, to keep the characteristics and advantages described here.
 
 
-It is also found that the knowledge and practice obtained during previous courses not only on numerical analysis, but also on programming as a tool, are seldom exploited at full on later courses. 
-So the course presented here it is intended to fully explit such previous tools.
-
+## Basis for the syllabus
 Traditionally, the physical systems studied in analytical mechanics courses are relatively simple in order to limit the time and/or difficulty of mathematical
-analysis and algebraic calculations required to solve the problems. Such  simplification leads to a later noticeable jump in the complexity when dealing with real problems. The use of modern programming languages and solving packages allows to rapidly introduce the students to life-like problems so avoinding oversimplifications.
-
-Since the Mechanical Engeneer carreer is relatively new at UNLaM, the number of students per class is low, around eight, so the course has been tested on a reduce scale, allowing the teaching staff to provide a personalized teaching experience in the synchronic sections of the course for the moment.
-Larger audiences will provide a challenge, probably requiring to include new teaching assistants to keep the characteristics and advantages described here.
+Such simplification leads to a later noticeable jump in the complexity when dealing with more real problems at later courses. 
+Yet knowledge and practice not only on numerical analysis, but also on programming as a tool, were seldom exploited at UNLaM to addreess this issue. 
+The use of modern programming languages and solving packages allows to rapidly introduce the students to life-like problems avoiding oversimplifications.
 
 
 ## Overview, Content, and Structure
-
 The full repository of the course in Spanish can be found [here](https://github.com/bettachini/MecanicaAnaliticaComputacional), and a on-going English translated version [here](https://github.com/bettachini/MecanicaAnaliticaComputacional/blob/master/88presentaci%C3%B3n/jose_2024/english_translation/index.md).
 
 As detailed in the schedule, the 16 weeks of the course are divided into the 12 chapters:
@@ -107,20 +122,17 @@ Which is inteded for the students to show the learned skills, both in physics an
 
 
 ## Conclusions
-
-This course differs from conventional ones in two ways:
-1. Advantages of Code-Based Learning:
-a. Avoids the repetitive nature of blackboard or paper based calculations. 
-b. By iteratively modifying previously tested code (initially designed for simpler mechanical systems), students expand their analytical capabilities.
-c. The complexity of the code evolves alongside the mechanical system’s intricacies introduced each class.
-d. This approach eliminates the need to \textit{start from scratch} when dealing with the extensive calculations required for analyzing complex mechanical systems using the Euler-Lagrange formalism.
-e. All systems used are currently available online on a non-cost basis, from the student point of view. Being based on free software, if any of them is later placed behind a paywall, it would be simple to run them from on the premise servers.
-
-2. Flipped classroom
-    
-a. Students are provided with online theory and example problems to study before weekly meetings. These asynchronous activities save classroom time for discussions and problem solving.
-b. During synchronic meetings they can rise to teachers any questions related to theory or problem-solving so they can finish their exercise sets.
-c. All exercises are turned-in for evaluation. Compliance is tracked with an online learning management system. 
+This course differs from conventional ones by being:
+- Code-based:
+  1. Avoids the repetitive nature of blackboard or paper based calculations. 
+  1. By iteratively modifying previously tested code (initially designed for simpler mechanical systems), students expand their analytical capabilities.
+  1. The complexity of the code evolves alongside the mechanical system’s intricacies introduced each class.
+  1. This approach eliminates the need to _start from scratch_ when dealing with the extensive calculations required for analyzing complex mechanical systems using the Euler-Lagrange formalism.
+  1 . All systems used are currently available online on a non-cost basis, from the student point of view. Being based on free software, if any of them is later placed behind a paywall, it would be simple to run them from on the premise servers.
+- Following a flipped classroom approach
+  1. Students are provided with online theory and example problems to study before weekly meetings. These asynchronous activities save classroom time for discussions and problem solving.
+  1. During synchronic meetings they can rise to teachers any questions related to theory or problem-solving so they can finish their exercise sets.
+  1. All exercises are turned-in for evaluation. Compliance is tracked with an online learning management system. 
     
 	
 Feedback from students consistently indicates a high level of satisfaction with this course, especially with its code-driven aspect.

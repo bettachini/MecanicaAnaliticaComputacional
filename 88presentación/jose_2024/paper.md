@@ -32,10 +32,9 @@ affiliations:
 date: 02 June 2024
 bibliography: bettachini.bib
 
+lang: "en-GB"
 
-
-
-[Vamos a publicar en: https://jose.theoj.or]:#  
+[Vamos a publicar en: https://jose.theoj.org]:#  
 
 
 
@@ -50,7 +49,7 @@ bibliography: bettachini.bib
 
 We present a code-based undergraduate course on analytical mechanics for engineering students with little to no prior programming knowledge.
 This 16-week flipped (or inverted) classroom course focuses on providing skills to calculate dynamics and strains of simple mechanical devices modelled as rigid bodies by solving Euler-Lagrange equations.
-Problems sets with increasingly complex exercises are introduced each week.
+Problem sets with increasingly complex exercises are introduced each week.
 Python-based solutions to previous ones are reused by students, that through small incremental modifications over the code presented by the teaching staff, build their own library of solutions to address mechanical modelling challenges.
 
 All this course material is available at GIT-VIC as Jupyter notebooks containing theory and examples exercises alongside the code to solve them.
@@ -60,10 +59,10 @@ The online hosting and execution of these notebooks avoids installation and hard
 
 
 ## Statement of need
-Latin American public universities face two simultaneous constains: tight budgets and the need to accommodate their classes' schedules to day-working students.
+Latin-American public universities face two simultaneous constrains: tight budgets and the need to accommodate their classes' schedules to day-working students.
 Authorities of these cash-stripped universities often ask that any solution to introduce students to coding skills should be based open-source fee-free resources.
-That is more so in the case for courses that are not directly related to computer science or programming as on-campus computing resources are usually concentrated at computer science departments.
-Also, as undergraduate programs on engineering at latin-american universities are usually longer than the three-years bachelors at their anglo-saxon counterparts, it is quite common that students are in the labour market while studying, so they have a tight schedule and are not able to attend to the university during the day. 
+That is more so in the case for courses that are not directly related to computer science or programming as the scarce on-campus computing resources are usually concentrated at computer science departments.
+Also, as undergraduate programs on engineering at Latin-American universities are usually longer than the three-years bachelors at their Anglo-Saxon counterparts, it is quite common that students are already in the labour market while studying, so they have a tight schedule and are not able to attend to the university during daytime hours. 
 <!--
 It is worth mentioning that this course is tought at University of La Matanza (UNLaM), located at the outskirts of Buenos Aires that attracts working students who have a day job and take classes courses mostly at night shifts.
 -->
@@ -79,26 +78,27 @@ https://www.ingenieria.unam.mx/programas_academicos/licenciatura/mecanica_plan20
 Unicamp, Brasil, 10 semestres
 https://www.dac.unicamp.br/sistemas/catalogos/grad/catalogo2023/cursos/10g/sugestao.html
 -->
-The course presented addresses those issues by providing a free, online, and asynchronous learning environment that allows students to study at their own pace through the flipped classroom approach.
-In advance to weekly synchronous meetings, students are required to study the theory and examples provided in the notebooks, as well as try to solve the exercises.
-At the synchronous night-time meetings students are encouraged to ask questions and discuss the problems they could not solve with the teaching staff.
 
-Since the mechanical engineering programme is relatively new at UNLaM, the number of students per class is still low, around eight, so the course has been tested on a reduce scale, allowing the teaching staff to provide a personalized teaching experience at synchronic meetings.
+The course presented addresses those issues by providing a free, online, and asynchronous learning environment that allows students to study at their own pace through the flipped classroom approach.
+In advance to weekly synchronous meetings, students are required to study the theory and examples provided in the notebooks, as well as to try to solve the accompanying exercises.
+At the synchronous nighttime meetings students are encouraged to ask questions and discuss the problems they could not solve with the teaching staff.
+
+Since the mechanical engineering programme is relatively new at UNLaM, the number of students per class is still low, around eight, so the course has been tested on a reduced scale, allowing the teaching staff to provide a personalized teaching experience at synchronic meetings.
 Larger audiences will provide a challenge, probably requiring to include new teaching assistants as well as introducing automatic grading, to keep the characteristics and advantages described here.
 
 
 ## Basis for the syllabus
 Traditionally, the physical systems studied in analytical mechanics courses are relatively simple in order to limit the time and/or difficulty of mathematical
 Such simplification leads to a later noticeable jump in the complexity when dealing with more real problems at later courses of the mechanical engineering curricula. 
-Yet knowledge and practice not only on numerical analysis, but also on programming as a tool, were seldom exploited at UNLaM to addreess this issue. 
+Yet knowledge and practice not only on numerical analysis, but also on programming as a tool, were seldom exploited at UNLaM to address this issue. 
 The use of modern programming languages and solving packages allows to rapidly introduce the students to life-like problems avoiding oversimplifications.
 
 
 ## Overview, Content, and Structure
-The full repository of the course in Spanish can be found [here](https://github.com/bettachini/MecanicaAnaliticaComputacional), and a on-going English translated version [here](https://github.com/bettachini/MecanicaAnaliticaComputacional/blob/master/88presentaci%C3%B3n/jose_2024/english_translation/index.md).
+The full repository of the course in Spanish can be found [here](https://github.com/bettachini/MecanicaAnaliticaComputacional), and a ongoing English translated version [here](https://github.com/bettachini/MecanicaAnaliticaComputacional/blob/master/88presentaci%C3%B3n/jose_2024/english_translation/index.md).
 
 As detailed in the schedule, the 14 weeks of the course are divided into 12 units:
-1. Course methodology, newtonian physics and Sympy introduction.
+1. Course methodology, Newtonian physics and Sympy introduction.
 2. Degrees of freedom, generalized coordinates and energy.
 3. Euler-Lagrange mechanics, Euler-Lagrange equations.
 4. Constraints as a function of coordinates.
@@ -111,14 +111,14 @@ As detailed in the schedule, the 14 weeks of the course are divided into 12 unit
 12. Oscillations multiple degrees of freedom (MDoF) systems. Normal modes of discrete systems.
 
 Each chapter is composed by a set of theoretical notebooks and videos. 
-Also, accompanied by a set of examples, including functions to be modify by the students and incorporated as new tools to solve a small, but mandatory, set of homework problems.
+Also, accompanied by a set of examples, including functions to be modified by the students and incorporated as new tools to solve a small, but mandatory, set of homework problems.
 Since UNLaM relies on MS Teams, all problems are presented through that system, allowing the teaching staff to keep track of the students work.
-The problems must be sent at the end of each class, but here relies another advantage of the online notebooks: the teaching staff check all homework, including side-notes and possible in-notebook help to the students. So, providing another teacher-student asynchronous interaction.
-The students must keep presenting the excesices until solving in full all the excercises. 
+The problems must be sent at the end of each class, but here relies on another advantage of the online notebooks: the teaching staff check all homework, including side-notes and possible in-notebook help to the students. So, providing another teacher-student asynchronous interaction.
+The students must keep presenting the exercises until solving them all in full. 
 
 
-Notice that a final work is presented during chapter 10 of the course, this work is inteded to be a integrative problem, requiring the students to apply all the syllabus to solve it, producing a notebook to be presented to the teaching staff as a final oral examination. 
-Which is inteded for the students to show the learned skills, both in physics and computational aproach to the problem, and also to generate a well planned oral presentation.
+Notice that a final work is presented during chapter 10 of the course, this work is intended to be an integrative problem, requiring the students to apply all the syllabus to solve it, producing a notebook to be presented to the teaching staff as a final oral examination. 
+Which is intended for the students to show the learned skills, both in physics and computational approach to the problem, and also to generate a well planned oral presentation.
 
 
 ## Conclusions
@@ -130,8 +130,8 @@ This course differs from conventional ones by being:
   1. This approach eliminates the need to _start from scratch_ when dealing with the extensive calculations required for analyzing complex mechanical systems using the Euler-Lagrange formalism.
   1. All systems used are currently available online on a non-cost basis, from the student point of view. Being based on free software, if any of them is later placed behind a paywall, it would be simple to run them from on the premise servers.
 - Following a flipped classroom approach
-  1. Students are provided with online theory and example problems to study before weekly meetings. These asynchronous activities save classroom time for discussions and problem solving.
-  1. During synchronic meetings they can rise to teachers any questions related to theory or problem-solving so they can finish their exercise sets.
+  1. Students are provided with online theory and example problems to study before weekly meetings. These asynchronous activities save classroom time for discussions and problem-solving.
+  1. During synchronic meetings they can rise to teachers any questions related to theory or problem-solving, so they can finish their exercise sets.
   1. All exercises are turned-in for evaluation. Compliance is tracked with an online learning management system. 
     
 	

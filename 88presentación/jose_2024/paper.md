@@ -150,11 +150,14 @@ Rather than relying solely on repetitive blackboard or paper-based calculations,
 By iteratively modifying and experimenting with the course-provided code used on simpler mechanical systems, the students gradually expand their analytical capabilities, so focusing on the physical aspects and not on the mathematical aspect of the problems.
 This also provides the advantage to increase the complexity of the problems, since numerical approaches can easily be applied by modifying teacher's code.
 
-As the mechanical systems discussed in class become more intricate, so does the complexity of the code. Importantly, this approach eliminates the need to start from scratch when dealing with the extensive calculations required for analyzing complex mechanical systems using the Euler-Lagrange formalism. 
+As the mechanical systems discussed in class become more intricate, so does the complexity of the code.
+Yet, the students are not required to _start from scratch_ when dealing with the extensive calculations required for analyzing complex mechanical systems using the Euler-Lagrange formalism.
 
-An important point is that all the systems used are currently available online at no cost to students, and since they are based on free software, any potential paywalls won’t hinder access; students can always run the systems on local servers.
+Another important point is that all the systems used are currently available online at no cost to students, and since they are based on free software, any potential paywalls won’t hinder access; students can always run the systems on local servers.
 
-The course presented follows a flipped-classroom approach. Students receive online theory materials and example problems to study before weekly meetings. These asynchronous activities free up valuable classroom time for discussions and collaborative problem-solving. During synchronous meetings, students can directly engage with teaching staff, asking questions related to theory and problem-solving. All exercise submissions are tracked through an online learning management system, ensuring accountability and progress.
+As discussed previously, the presented course follows a flipped-classroom approach.
+Students receive online theory materials and example problems to study in anticipation to weekly meetings.
+Asynchronous personal consultations on excercises free-up valuable classroom time for collaborative problem-solving and discussions on difficult concepts of theory.
 
 In summary, this course combines code-based exploration with a flipped classroom model, empowering students into complex mechanical systems while optimizing their learning experience
 	

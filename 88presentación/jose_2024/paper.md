@@ -118,11 +118,12 @@ As detailed in the schedule, the 14 weeks of the course are divided into 12 unit
 Each chapter is composed by a set of theoretical notebooks and videos. 
 Also, accompanied by a set of examples, including functions to be modified by the students and incorporated as new tools to solve a small, but mandatory, set of homework problems.
 Since UNLaM relies on MS Teams, all problems are presented through that system, allowing the teaching staff to keep track of the students work.
-Solved problems must be sent at the beginning of next class.
+__But any LMS, such as Moodle, can provide this service.__
+Solved problems must be submitted at the beginning of next class.
 Until then, for a full week, consultations can be made online to the teaching staff.
 Homework can be checked by them, and provide guidance by including side-notes to help to the students, as well as editing the code.
-This is another advantage of the online notebooks, as they provide another teacher-student asynchronous interaction channel.
-After corrections by the staff, the students must keep presenting their corrected exercises until solving them all in full. 
+This is another advantage of the online notebooks, as they provide an asynchronous interaction channel.
+After corrections by the staff, the students must resubmit their exercises until they are solved in full. 
 
 
 Notice that a final work is presented during chapter 10 of the course, this work is intended to be an integrative problem, requiring the students to apply all the syllabus to solve it, producing a notebook to be presented to the teaching staff as a final oral examination. 
@@ -130,6 +131,7 @@ Which is intended for the students to show the learned skills, both in physics a
 
 
 ## Conclusions
+<!--
 This course differs from conventional ones by being:
 - Code-based:
   1. Avoids the repetitive nature of blackboard or paper based calculations. 
@@ -141,12 +143,12 @@ This course differs from conventional ones by being:
   1. Students are provided with online theory and example problems to study before weekly meetings. These asynchronous activities save classroom time for discussions and problem-solving.
   1. During synchronic meetings they can rise to teachers any questions related to theory or problem-solving, so they can finish their exercise sets.
   1. All exercises are turned-in for evaluation. Compliance is tracked with an online learning management system. 
+-->    
 
-This course stands out from conventional approaches in Latin-American courses by adopting a code-based methodology. Rather than relying solely on repetitive blackboard or paper-based calculations, students engage the problems with code. By iteratively modifying and experimenting with the course-provided code used on simpler mechanical systems, the students gradually expand their analytical capabilities, so focusing on the physical aspects and not on the mathematical aspect of the problems. This also provides the advantage to increase the complexity of the problems, since numerical approaches can be easily be applied by modifying the course provided code.
-
-Feedback from students consistently indicates a high level of satisfaction with this course, especially with its code-driven aspect.
-
-Additionally, students express interest in the final examination as it provides an opportunity to apply both their presentation skills and the knowledge acquired throughout the course.
+This course stands out from conventional approaches in Latin American courses by adopting a code-based methodology.
+Rather than relying solely on repetitive blackboard or paper-based calculations, students engage the problems with code.
+By iteratively modifying and experimenting with the course-provided code used on simpler mechanical systems, the students gradually expand their analytical capabilities, so focusing on the physical aspects and not on the mathematical aspect of the problems.
+This also provides the advantage to increase the complexity of the problems, since numerical approaches can easily be applied by modifying teacher's code.
 
 As the mechanical systems discussed in class become more intricate, so does the complexity of the code. Importantly, this approach eliminates the need to start from scratch when dealing with the extensive calculations required for analyzing complex mechanical systems using the Euler-Lagrange formalism. 
 

@@ -44,11 +44,16 @@ lang: "en-GB"
 ---
 
 
+<!--  Notas sobre modificaciones y cambios realizados
+1. single-degree, single degree: ver nota de estilo de PR. También libro Fasano. Lo usaría como "single degree".
+2. "constraint forces", en Fasano, et al aparece como "constraint reaction" y luego lo llaman fuerza (p. 77)
+-->
+
 
 # Summary
 
 We present a code-based undergraduate course on analytical mechanics for engineering students with little to no prior programming knowledge.
-This 14-week flipped classroom course focuses on providing skills to calculate dynamics and strains of simple mechanical devices modelled as rigid bodies by solving Euler-Lagrange equations.
+This 16-week flipped classroom course focuses on providing skills to calculate dynamics and strains of simple mechanical devices modelled as rigid bodies by solving Euler-Lagrange equations.
 Problem sets with exercises of increasing complexity are introduced each week.
 Python-based solutions to previous ones are reused by students, that through small incremental modifications over the code presented by the teaching staff, build their own library of solutions to address mechanical modelling challenges.
 
@@ -59,8 +64,8 @@ The online hosting and execution of these notebooks avoids installation and hard
 
 
 ## Statement of need
-Latin American public universities face two simultaneous chalenges: tight budgets and the need to accommodate their classes' schedules to day-working students.
-Authorities of these cash-stripped universities often prefer that any solution to introduce students to coding skills should be based upon open-source fee-free resources.
+Latin American public universities face two simultaneous constrains: tight budgets and the need to accommodate their classes' schedules to day-working students.
+Authorities of these cash-stripped universities often ask that any solution to introduce students to coding skills should be based upon open-source fee-free resources.
 That is more so in the case for courses that are not directly related to computer science or programming as the scarce on-campus computing resources are usually concentrated at computer science departments.
 Also, as undergraduate programs on engineering at Latin American universities are usually longer than the three-years bachelors at their Anglo-Saxon counterparts, it is quite common that students are already inserted into the labour market while studying, so they have a tight schedule and are not able to attend to the university during daytime hours. 
 <!--
@@ -80,11 +85,11 @@ https://www.dac.unicamp.br/sistemas/catalogos/grad/catalogo2023/cursos/10g/suges
 -->
 
 The course presented addresses those issues by providing a free, online, and asynchronous learning environment that allows students to study at their own pace through the flipped classroom approach.
-In advance to weekly either online or in presence meetings, students are required to study the theory and examples provided in the notebooks, as well as to try to solve the accompanying exercises.
-During the evening meetings students are encouraged to ask questions and discuss the problems they could not solve with the teaching staff.
+In advance to weekly meetings, students are required to study the theory and examples provided in the notebooks, as well as to initiate solving the accompanying exercises.
+During those evening meetings, either online or in presence, students are encouraged to ask questions and discuss the problems they could not solve with the teaching staff.
 
-Since the mechanical engineering programme is relatively new at UNLaM, the number of students per class is still low (around eight), so the course has been tested on a reduced scale, allowing the teaching staff to provide a personalized teaching experience at synchronic meetings.
-Larger audiences will present a challenge, probably requiring the implementation of automatic grading, to keep the characteristics and advantages described here.
+Since the mechanical engineering programme is relatively new at UNLaM, the number of students per class is still low, around eight, so the course has been tested on a reduced scale, allowing the teaching staff to provide a personalized teaching experience at synchronic meetings.
+Larger audiences will provide a challenge, probably requiring to include new teaching assistants as well as introducing automatic grading, to keep the characteristics and advantages described here.
 
 
 ## Basis for the syllabus
@@ -113,8 +118,11 @@ As detailed in the schedule, the 14 weeks of the course are divided into 12 unit
 Each chapter is composed by a set of theoretical notebooks and videos. 
 Also, accompanied by a set of examples, including functions to be modified by the students and incorporated as new tools to solve a small, but mandatory, set of homework problems.
 Since UNLaM relies on MS Teams, all problems are presented through that system, allowing the teaching staff to keep track of the students work.
-The problems must be sent at the end of each class, but here relies on another advantage of the online notebooks: the teaching staff check all homework, including side-notes and possible in-notebook help to the students. So, providing another teacher-student asynchronous interaction.
-The students must keep presenting the exercises until solving them all in full. 
+Solved problems must be sent at the beginning of next class.
+Until then, for a full week, consultations can be made online to the teaching staff.
+Homework can be checked by them, and provide guidance by including side-notes to help to the students, as well as editing the code.
+This is another advantage of the online notebooks, as they provide another teacher-student asynchronous interaction channel.
+After corrections by the staff, the students must keep presenting their corrected exercises until solving them all in full. 
 
 
 Notice that a final work is presented during chapter 10 of the course, this work is intended to be an integrative problem, requiring the students to apply all the syllabus to solve it, producing a notebook to be presented to the teaching staff as a final oral examination. 
@@ -133,16 +141,28 @@ This course differs from conventional ones by being:
   1. Students are provided with online theory and example problems to study before weekly meetings. These asynchronous activities save classroom time for discussions and problem-solving.
   1. During synchronic meetings they can rise to teachers any questions related to theory or problem-solving, so they can finish their exercise sets.
   1. All exercises are turned-in for evaluation. Compliance is tracked with an online learning management system. 
-    
-	
+
+This course stands out from conventional approaches in Latin-American courses by adopting a code-based methodology. Rather than relying solely on repetitive blackboard or paper-based calculations, students engage the problems with code. By iteratively modifying and experimenting with the course-provided code used on simpler mechanical systems, the students gradually expand their analytical capabilities, so focusing on the physical aspects and not on the mathematical aspect of the problems. This also provides the advantage to increase the complexity of the problems, since numerical approaches can be easily be applied by modifying the course provided code.
+
 Feedback from students consistently indicates a high level of satisfaction with this course, especially with its code-driven aspect.
 
 Additionally, students express interest in the final examination as it provides an opportunity to apply both their presentation skills and the knowledge acquired throughout the course.
 
+As the mechanical systems discussed in class become more intricate, so does the complexity of the code. Importantly, this approach eliminates the need to start from scratch when dealing with the extensive calculations required for analyzing complex mechanical systems using the Euler-Lagrange formalism. 
+
+An important point is that all the systems used are currently available online at no cost to students, and since they are based on free software, any potential paywalls won’t hinder access; students can always run the systems on local servers.
+
+The course presented follows a flipped-classroom approach. Students receive online theory materials and example problems to study before weekly meetings. These asynchronous activities free up valuable classroom time for discussions and collaborative problem-solving. During synchronous meetings, students can directly engage with teaching staff, asking questions related to theory and problem-solving. All exercise submissions are tracked through an online learning management system, ensuring accountability and progress.
+
+In summary, this course combines code-based exploration with a flipped classroom model, empowering students into complex mechanical systems while optimizing their learning experience
+	
+It is important to state that feedback from students consistently indicates a high level of satisfaction with this course, especially with its code-driven aspect.
+Additionally, students express interest in the final examination as it provides an opportunity to apply both their presentation skills and the knowledge acquired throughout the course.
 In relation to the flipped classroom model, students acknowledge that it requires a grater effort, but a majority of them agree that it is a positive and beneficial implementation.
+
 The authors are confident that the methodology employed in this course offers greater practical utility to students in subsequent subjects and their professional lives, surpassing the benefits of a traditional course.
 
-
+<!--
 Citations to entries in paper.bib should be in
 [rMarkdown](http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html)
 format.
@@ -162,3 +182,4 @@ We acknowledge contributions from Brigitta Sipocz, Syrtis Major, and Semyeong
 Oh, and support from Kathryn Johnston during the genesis of this project.
 
 # References
+>

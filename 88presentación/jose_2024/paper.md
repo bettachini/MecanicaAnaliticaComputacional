@@ -48,8 +48,8 @@ lang: "en-GB"
 # Summary
 
 We present a code-based undergraduate course on analytical mechanics for engineering students with little to no prior programming knowledge.
-This 16-week flipped (or inverted) classroom course focuses on providing skills to calculate dynamics and strains of simple mechanical devices modelled as rigid bodies by solving Euler-Lagrange equations.
-Problem sets with increasingly complex exercises are introduced each week.
+This 14-week flipped classroom course focuses on providing skills to calculate dynamics and strains of simple mechanical devices modelled as rigid bodies by solving Euler-Lagrange equations.
+Problem sets with exercises of increasing complexity are introduced each week.
 Python-based solutions to previous ones are reused by students, that through small incremental modifications over the code presented by the teaching staff, build their own library of solutions to address mechanical modelling challenges.
 
 All this course material is available at GIT-VIC as Jupyter notebooks containing theory and examples exercises alongside the code to solve them.
@@ -59,10 +59,10 @@ The online hosting and execution of these notebooks avoids installation and hard
 
 
 ## Statement of need
-Latin-American public universities face two simultaneous constrains: tight budgets and the need to accommodate their classes' schedules to day-working students.
-Authorities of these cash-stripped universities often ask that any solution to introduce students to coding skills should be based open-source fee-free resources.
+Latin American public universities face two simultaneous chalenges: tight budgets and the need to accommodate their classes' schedules to day-working students.
+Authorities of these cash-stripped universities often prefer that any solution to introduce students to coding skills should be based upon open-source fee-free resources.
 That is more so in the case for courses that are not directly related to computer science or programming as the scarce on-campus computing resources are usually concentrated at computer science departments.
-Also, as undergraduate programs on engineering at Latin-American universities are usually longer than the three-years bachelors at their Anglo-Saxon counterparts, it is quite common that students are already in the labour market while studying, so they have a tight schedule and are not able to attend to the university during daytime hours. 
+Also, as undergraduate programs on engineering at Latin American universities are usually longer than the three-years bachelors at their Anglo-Saxon counterparts, it is quite common that students are already inserted into the labour market while studying, so they have a tight schedule and are not able to attend to the university during daytime hours. 
 <!--
 It is worth mentioning that this course is tought at University of La Matanza (UNLaM), located at the outskirts of Buenos Aires that attracts working students who have a day job and take classes courses mostly at night shifts.
 -->
@@ -80,11 +80,11 @@ https://www.dac.unicamp.br/sistemas/catalogos/grad/catalogo2023/cursos/10g/suges
 -->
 
 The course presented addresses those issues by providing a free, online, and asynchronous learning environment that allows students to study at their own pace through the flipped classroom approach.
-In advance to weekly synchronous meetings, students are required to study the theory and examples provided in the notebooks, as well as to try to solve the accompanying exercises.
-At the synchronous nighttime meetings students are encouraged to ask questions and discuss the problems they could not solve with the teaching staff.
+In advance to weekly either online or in presence meetings, students are required to study the theory and examples provided in the notebooks, as well as to try to solve the accompanying exercises.
+During the evening meetings students are encouraged to ask questions and discuss the problems they could not solve with the teaching staff.
 
-Since the mechanical engineering programme is relatively new at UNLaM, the number of students per class is still low, around eight, so the course has been tested on a reduced scale, allowing the teaching staff to provide a personalized teaching experience at synchronic meetings.
-Larger audiences will provide a challenge, probably requiring to include new teaching assistants as well as introducing automatic grading, to keep the characteristics and advantages described here.
+Since the mechanical engineering programme is relatively new at UNLaM, the number of students per class is still low (around eight), so the course has been tested on a reduced scale, allowing the teaching staff to provide a personalized teaching experience at synchronic meetings.
+Larger audiences will present a challenge, probably requiring the implementation of automatic grading, to keep the characteristics and advantages described here.
 
 
 ## Basis for the syllabus
@@ -95,7 +95,7 @@ The use of modern programming languages and solving packages allows to rapidly i
 
 
 ## Overview, Content, and Structure
-The full repository of the course in Spanish can be found [here](https://github.com/bettachini/MecanicaAnaliticaComputacional), and a ongoing English translated version [here](https://github.com/bettachini/MecanicaAnaliticaComputacional/blob/master/88presentaci%C3%B3n/jose_2024/english_translation/index.md).
+The full repository of the course in Spanish can be found [here](https://github.com/bettachini/MecanicaAnaliticaComputacional), and a ongoing English translated version [here](https://github.com/unlam/ComputationalAnalyticalMechanics).
 
 As detailed in the schedule, the 14 weeks of the course are divided into 12 units:
 1. Course methodology, Newtonian physics and Sympy introduction.

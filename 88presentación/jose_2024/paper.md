@@ -53,20 +53,21 @@ lang: "en-GB"
 # Summary
 
 We present a code-based undergraduate course on analytical mechanics for engineering students with little to no prior programming knowledge.
-This 16-week flipped classroom course focuses on providing skills to calculate dynamics and strains of simple mechanical devices modelled as rigid bodies by solving Euler-Lagrange equations.
-Problem sets with exercises of increasing complexity are introduced each week.
-Python-based solutions to previous ones are reused by students, that through small incremental modifications over the code presented by the teaching staff, build their own library of solutions to address mechanical modelling challenges.
+This 16-week flipped classroom course provides skills to calculate dynamics and strains of simple mechanical devices modelled as rigid bodies by solving Euler-Lagrange equations.
+Each example and practice exercise are solved using computer-based analytical and numerical calculations with the aim to deflect students' focus of attention away from repetitive mathematical tasks towards the physics modelling.
 
-All this course material is available at GIT-VIC as Jupyter notebooks containing theory and examples exercises alongside the code to solve them.
-Designed for a Latin American audience of third-year students (mid-career), that have already learned how to solve differential equations, its material is in Spanish CITA-GIT-ESP and addresses specific regional issues.
-Students are required to rely on computer-based calculations, both analytical and numerical, so to focus their efforts on the physics modelling and interpretation of results.
-The online hosting and execution of these notebooks avoids installation and hardware requirement issues.
+The course was designed for a Latin American audience of third-year students (mid-career), that have already learned how to solve differential equations, and addresses specific regional issues.
+Theory and examples exercises alongside the Python code to solve them are presented in Jupyter notebooks, that are hosted and can be run online to avoid installation and hardware requirement issues.
+Currently, the material is in Spanish and only partially translated into English.
 
 
 ## Statement of need
 Latin American public universities face two simultaneous constrains: tight budgets and the need to accommodate their classes' schedules to day-working students.
+<!-->
+Ojalá fuera cierto. Sinceramiento: ni saben que existen las alternativas de software libre.
 Authorities of these cash-stripped universities often ask that any solution to introduce students to coding skills should be based upon open-source fee-free resources.
-That is more so in the case for courses that are not directly related to computer science or programming as the scarce on-campus computing resources are usually concentrated at computer science departments.
+-->
+These cash-stripped universities seldom avail computing resources for courses that are not directly related to computer science or programming 
 Also, as undergraduate programs on engineering at Latin American universities are usually longer than the three-years bachelors at their Anglo-Saxon counterparts, it is quite common that students are already inserted into the labour market while studying, so they have a tight schedule and are not able to attend to the university during daytime hours. 
 <!--
 It is worth mentioning that this course is tought at University of La Matanza (UNLaM), located at the outskirts of Buenos Aires that attracts working students who have a day job and take classes courses mostly at night shifts.
@@ -93,32 +94,66 @@ Larger audiences will provide a challenge, probably requiring to include new tea
 
 
 ## Basis for the syllabus
-Traditionally, the physical systems studied in analytical mechanics courses are relatively simple in order to limit the time and/or difficulty of mathematical
-Such simplification leads to a later noticeable jump in the complexity when dealing with more real problems at later courses of the mechanical engineering curricula. 
+Traditionally, systems dealt with at analytical mechanics courses are as simple as possible in order to limit the extent of the mathematical work required. 
+So, realistic machine parts modelling is seldom undertaken as that would lead to a level of complexity sometimes untenable by students and teaching staff working on the blackboard or paper.
+<!-->
+Such over-simplification leads to a complexity jump at the time more realistic systems are needed to be dealt at later courses of the mechanical engineering curricula. 
+
 Yet knowledge and practice not only on numerical analysis, but also on programming as a tool, were seldom exploited at UNLaM to address this issue. 
-The use of modern programming languages and solving packages allows to rapidly introduce the students to life-like problems avoiding oversimplifications.
+-->
+This course aims to avoid this pitfall by taking advantage of the relative simple syntax of modern programming languages for tackling mathematical problems.
+This allows to rapidly introduce the students to life-like problems avoiding oversimplifications.
+
+A deliberate choice of Python, a general purpose programming language, instead of a more specialized to mathematics ones, such as Octave or Scilab, was made to allow the students to integrate the skills acquired in this course to later subjects of the mechanical engineering curriculum.
+
+Another decision was to solve each one of the examples in the course using code in order to avoid that the students revert to paper solving for the earlier problems sets only to find out that the later ones can't be solved that way, but they had yet developed the skills to face them.
+But, students are not force to start from scratch, each course unit provides a set of code that only need to be slightly modified to solve the exercises.
+
+Python-based solutions to previous ones are reused by students, that through small incremental modifications over the code presented by the teaching staff, build their own library of solutions to address mechanical modelling challenges.
+
+<!-->
+Integrar lo siguiente, tal vez no sea buena idea. No se si aporta algo.
+-->
+As illustrated by ![Figure 1](kineticExcerpt.png), anytime a repetitive task is identified, it is presented to students as a good candidate to be automated by a function.
+
+
 
 
 ## Overview, Content, and Structure
-The full repository of the course in Spanish can be found [here](https://github.com/bettachini/MecanicaAnaliticaComputacional), and a ongoing English translated version [here](https://github.com/unlam/ComputationalAnalyticalMechanics).
+The full repository of the course in Spanish can be found [here](https://github.com/bettachini/MecanicaAnaliticaComputacional), with the ongoing English translated version [here](https://github.com/unlam/ComputationalAnalyticalMechanics).
 
-As detailed in the schedule, the 14 weeks of the course are divided into 12 units:
+The first twelve folders contain the course material, each one corresponding to a unit:
 1. Course methodology, Newtonian physics and Sympy introduction.
 2. Degrees of freedom, generalized coordinates and energy.
 3. Euler-Lagrange mechanics, Euler-Lagrange equations.
 4. Constraints as a function of coordinates.
-5. Numerical solutions of Euler-Lagrange equations.
-6. Constraint forces and Lagrange multipliers.
+5. Numerical solving of Euler-Lagrange equations.
+6. Constraint reactions and Lagrange multipliers.
 7. Non-conservative forces in the Euler-Lagrange framework.
 8. Rigid-body and inertia tensor.
 9. Rigid-body, Euler equations.
-10. Final work, presentation of the problem and methodology. Oscillations in single degree of freedom (SDoF) systems, forced oscillations and discrete systems.
+10. Oscillations in single degree of freedom (SDoF) systems, forced oscillations and discrete systems.
 12. Oscillations multiple degrees of freedom (MDoF) systems. Normal modes of discrete systems.
 
-Each chapter is composed by a set of theoretical notebooks and videos. 
-Also, accompanied by a set of examples, including functions to be modified by the students and incorporated as new tools to solve a small, but mandatory, set of homework problems.
+<!-->
+Also, accompanied by a set of examples, including functions to be modified by the students and incorporated as new tools to solve
+-->
+As stated before, at each folder Jupyter notebooks are provided, containing the theory along the code that solve example exercises.
+The problems at the accompanying sets, in PDF format, are to be solved by the students by modifying the provided code.
+So a new problem sets with exercises of increasing complexity are to be solved almost each new week during the 16-week course.
+Units 8, 9 and 12 are exceptions, that require two weeks each, as they deal with subjects that had shown to be somewhat more demanding to students, so more time is offered to them to finish the corresponding problem sets.
+A further week is reserved for a second opportunity to defend upon the teaching staff a final work.
+The statement for this, presented the thirtieth folder, aims to challenge the student to model a sequence of torques and forces that the motors of a simplified factory robotic arm should apply to make it perform a sequence of movements. 
+The statement of the final work is presented just after unit 9 of the course as it requires the students to apply only the syllabus up until then to solve it.
+The resulting notebook is to be presented to the teaching staff as a final oral examination that is intended to gauge the students' learning, not only on the physics and computational skill required to solve this kind of problems, but also on how to provide a well planned oral presentation.
+<!-->
+Hay que incluir el directorio 13 con este enunciado.
+-->
+
+
+Each unit provides a small, but mandatory, set of homework problems.
 Since UNLaM relies on MS Teams, all problems are presented through that system, allowing the teaching staff to keep track of the students work.
-__But any LMS, such as Moodle, can provide this service.__
+__But any LMS, such as the open source Moodle, can provide this service.__
 Solved problems must be submitted at the beginning of next class.
 Until then, for a full week, consultations can be made online to the teaching staff.
 Homework can be checked by them, and provide guidance by including side-notes to help to the students, as well as editing the code.
@@ -126,8 +161,6 @@ This is another advantage of the online notebooks, as they provide an asynchrono
 After corrections by the staff, the students must resubmit their exercises until they are solved in full. 
 
 
-Notice that a final work is presented during chapter 10 of the course, this work is intended to be an integrative problem, requiring the students to apply all the syllabus to solve it, producing a notebook to be presented to the teaching staff as a final oral examination. 
-Which is intended for the students to show the learned skills, both in physics and computational approach to the problem, and also to generate a well planned oral presentation.
 
 
 ## Conclusions
@@ -151,13 +184,13 @@ By iteratively modifying and experimenting with the course-provided code used on
 This also provides the advantage to increase the complexity of the problems, since numerical approaches can easily be applied by modifying teacher's code.
 
 As the mechanical systems discussed in class become more intricate, so does the complexity of the code.
-Yet, the students are not required to _start from scratch_ when dealing with the extensive calculations required for analyzing complex mechanical systems using the Euler-Lagrange formalism.
+Yet, the students are not required to _start from scratch_ when dealing with the extensive calculations required for analysing complex mechanical systems using the Euler-Lagrange formalism.
 
 Another important point is that all the systems used are currently available online at no cost to students, and since they are based on free software, any potential paywalls won’t hinder access; students can always run the systems on local servers.
 
 As discussed previously, the presented course follows a flipped-classroom approach.
 Students receive online theory materials and example problems to study in anticipation to weekly meetings.
-Asynchronous personal consultations on excercises free-up valuable classroom time for collaborative problem-solving and discussions on difficult concepts of theory.
+Asynchronous personal consultations on exercises free-up valuable classroom time for collaborative problem-solving and discussions on difficult concepts of theory.
 
 In summary, this course combines code-based exploration with a flipped classroom model, empowering students into complex mechanical systems while optimizing their learning experience
 	

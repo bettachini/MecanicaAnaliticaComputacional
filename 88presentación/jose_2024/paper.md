@@ -142,10 +142,10 @@ As stated before, at each folder Jupyter notebooks are provided, containing the 
 The problems at the accompanying sets, in PDF format, are to be solved by the students by modifying the provided code.
 So a new problem sets with exercises of increasing complexity are to be solved almost each new week during the 16-week course.
 Units 8, 9 and 12 are exceptions, that require two weeks each, as they deal with subjects that had shown to be somewhat more demanding to students, so more time is offered to them to finish the corresponding problem sets.
-A further week is reserved for a second opportunity to defend upon the teaching staff a final work.
-The statement for this, presented the thirtieth folder, aims to challenge the student to model a sequence of torques and forces that the motors of a simplified factory robotic arm should apply to make it perform a sequence of movements. 
-The statement of the final work is presented just after unit 9 of the course as it requires the students to apply only the syllabus up until then to solve it.
-The resulting notebook is to be presented to the teaching staff as a final oral examination that is intended to gauge the students' learning, not only on the physics and computational skill required to solve this kind of problems, but also on how to provide a well planned oral presentation.
+A further week is reserved for a second opportunity for students to defend how they solved a final exercise.
+After completing the exercises of the unit 9 the students are presented with a final work, that is to be presented to the teaching staff as a final oral examination that is intended to gauge the students' learning, not only on the physics and computational skill required to solve this kind of problems, but also on how to provide a well planned oral presentation.
+The challenge is to calculate torques and forces that the motors of a simplified factory robotic arm should apply to make it perform a sequence of movements.
+The statement of this final exercise is present at the repository thirtieth folder.
 <!-->
 Hay que incluir el directorio 13 con este enunciado.
 -->

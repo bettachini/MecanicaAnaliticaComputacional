@@ -107,14 +107,15 @@ This allows to rapidly introduce the students to life-like problems avoiding ove
 A deliberate choice of Python, a general purpose programming language, instead of a more specialized to mathematics ones, such as Octave or Scilab, was made to allow the students to integrate the skills acquired in this course to later subjects of the mechanical engineering curriculum.
 
 Another decision was to solve each one of the examples in the course using code in order to avoid that the students revert to paper solving for the earlier problems sets only to find out that the later ones can't be solved that way, but they had yet developed the skills to face them.
-But, students are not force to start from scratch, each course unit provides a set of code that only need to be slightly modified to solve the exercises.
-
-Python-based solutions to previous ones are reused by students, that through small incremental modifications over the code presented by the teaching staff, build their own library of solutions to address mechanical modelling challenges.
+But, students are not forced to start from scratch, as each course unit provides a set of code that needs only slight modifications to solve the exercises.
+This "code-reutilisation" we state is a key feature of the course.
+It forfeits students of the time and effort that requires repeating for each exercise solved on paper the Euler-Lagrange calculations already done by the teaching staff at blackboards or slides.
+By small incremental modifications over the Python code presented by the teaching staff, students build their own library of solutions to address mechanical modelling challenges.
 
 <!-->
 Integrar lo siguiente, tal vez no sea buena idea. No se si aporta algo.
--->
 As illustrated by ![Figure 1](kineticExcerpt.png), anytime a repetitive task is identified, it is presented to students as a good candidate to be automated by a function.
+-->
 
 
 
@@ -138,18 +139,11 @@ The first twelve folders contain the course material, each one corresponding to 
 <!-->
 Also, accompanied by a set of examples, including functions to be modified by the students and incorporated as new tools to solve
 -->
-As stated before, at each folder Jupyter notebooks are provided, containing the theory along the code that solve example exercises.
-The problems at the accompanying sets, in PDF format, are to be solved by the students by modifying the provided code.
-So a new problem sets with exercises of increasing complexity are to be solved almost each new week during the 16-week course.
-Units 8, 9 and 12 are exceptions, that require two weeks each, as they deal with subjects that had shown to be somewhat more demanding to students, so more time is offered to them to finish the corresponding problem sets.
-A further week is reserved for a second opportunity for students to defend how they solved a final exercise.
-After completing the exercises of the unit 9 the students are presented with a final work, that is to be presented to the teaching staff as a final oral examination that is intended to gauge the students' learning, not only on the physics and computational skill required to solve this kind of problems, but also on how to provide a well planned oral presentation.
-The challenge is to calculate torques and forces that the motors of a simplified factory robotic arm should apply to make it perform a sequence of movements.
-The statement of this final exercise is present at the repository thirtieth folder.
-<!-->
-Hay que incluir el directorio 13 con este enunciado.
--->
-
+These folders contain Jupyter notebooks where the whole required theory for the unit subject is presented along code that solves example exercises.
+Accompanying problem sets, in PDF format, are to be solved by the students by modifying the provided code.
+So a new problem sets with exercises of increasing complexity are to be solved almost each new week.
+Units 8, 9 and 12 are exceptions, requiring two weeks each, as they deal with subjects that had shown to be somewhat more demanding to students.
+That's why more time is offered to them to finish the corresponding problem sets.
 
 Each unit provides a small, but mandatory, set of homework problems.
 Since UNLaM relies on MS Teams, all problems are presented through that system, allowing the teaching staff to keep track of the students work.
@@ -160,6 +154,12 @@ Homework can be checked by them, and provide guidance by including side-notes to
 This is another advantage of the online notebooks, as they provide an asynchronous interaction channel.
 After corrections by the staff, the students must resubmit their exercises until they are solved in full. 
 
+Two further weeks complete the 16-week schedule.
+These are reserved for not only for the students to submit overdue exercises but, mainly, to perform an oral presentation on how they solved a final exercise.  
+This exercise is a challenge to calculate torques and forces that the motors of a simplified factory robotic arm should apply to make it perform a sequence of movements.
+As it requires the student to master the skills acquired during the first nine units, its statement is presented at the second week for that unit.
+This arrangement gives enough time for the students to consult on its difficulties and prepare the presentation.
+The oral examination is intended to gauge the students' learning, not only on the physics and computational skill required to solve this kind of problems, but also on how to provide a well planned oral presentation.
 
 
 

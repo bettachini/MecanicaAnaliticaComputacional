@@ -58,17 +58,17 @@ Each example and practice exercise are solved using computer-based analytical an
 
 The course was designed for a Latin American audience of third-year students (mid-career), that have already learned how to solve differential equations, and addresses specific regional issues.
 Theory and examples exercises alongside the Python code to solve them are presented in Jupyter notebooks, that are hosted and can be run online to avoid installation and hardware requirement issues.
-Currently, the material is in Spanish and only partially translated into English.
+Currently, the material is in Spanish and has been only partially translated into English.
 
 
 ## Statement of need
 Latin American public universities face two simultaneous constrains: tight budgets and the need to accommodate their classes' schedules to day-working students.
-<!-->
-Ojalá fuera cierto. Sinceramiento: ni saben que existen las alternativas de software libre.
-Authorities of these cash-stripped universities often ask that any solution to introduce students to coding skills should be based upon open-source fee-free resources.
--->
 These cash-stripped universities seldom avail computing resources for courses that are not directly related to computer science or programming 
 Also, as undergraduate programs on engineering at Latin American universities are usually longer than the three-years bachelors at their Anglo-Saxon counterparts, it is quite common that students are already inserted into the labour market while studying, so they have a tight schedule and are not able to attend to the university during daytime hours. 
+<!--
+Ojalá fuera cierto. Sinceramiento: ni saben que existen las alternativas de software libre. Authorities of these cash-stripped universities often ask that any solution to introduce students to coding skills should be based upon open-source fee-free resources.
+-->
+
 <!--
 It is worth mentioning that this course is tought at University of La Matanza (UNLaM), located at the outskirts of Buenos Aires that attracts working students who have a day job and take classes courses mostly at night shifts.
 -->
@@ -96,7 +96,7 @@ Larger audiences will provide a challenge, probably requiring to include new tea
 ## Basis for the syllabus
 Traditionally, systems dealt with at analytical mechanics courses are as simple as possible in order to limit the extent of the mathematical work required. 
 So, realistic machine parts modelling is seldom undertaken as that would lead to a level of complexity sometimes untenable by students and teaching staff working on the blackboard or paper.
-<!-->
+<!--
 Such over-simplification leads to a complexity jump at the time more realistic systems are needed to be dealt at later courses of the mechanical engineering curricula. 
 
 Yet knowledge and practice not only on numerical analysis, but also on programming as a tool, were seldom exploited at UNLaM to address this issue. 
@@ -104,15 +104,18 @@ Yet knowledge and practice not only on numerical analysis, but also on programmi
 This course aims to avoid this pitfall by taking advantage of the relative simple syntax of modern programming languages for tackling mathematical problems.
 This allows to rapidly introduce the students to life-like problems avoiding oversimplifications.
 
-A deliberate choice of Python, a general purpose programming language, instead of a more specialized to mathematics ones, such as Octave or Scilab, was made to allow the students to integrate the skills acquired in this course to later subjects of the mechanical engineering curriculum.
-
-Another decision was to solve each one of the examples in the course using code in order to avoid that the students revert to paper solving for the earlier problems sets only to find out that the later ones can't be solved that way, but they had yet developed the skills to face them.
-But, students are not forced to start from scratch, as each course unit provides a set of code that needs only slight modifications to solve the exercises.
+A deliberate decision was that each example and exercise in the course is solved through code.
+Students are explicitly advised to avoid the temptation of reverting to solve the simpler problem at the early problem sets on paper.
+Experience at shown that students that do so, find out later that the more complex problems are difficult to solve that way, and by then they had not mastered the skill to solve them using code.
+For this task, students are not forced to start from scratch, as each course unit provides a set of code that needs only slight modifications to solve the exercises.
 This "code-reutilisation" we state is a key feature of the course.
 It forfeits students of the time and effort that requires repeating for each exercise solved on paper the Euler-Lagrange calculations already done by the teaching staff at blackboards or slides.
 By small incremental modifications over the Python code presented by the teaching staff, students build their own library of solutions to address mechanical modelling challenges.
 
-<!-->
+The course uses a general purpose programming language, Python, instead of a more specialized to mathematics ones, such as Octave or Scilab, was made to allow the students to integrate the skills acquired in this course to later subjects of the mechanical engineering curriculum.
+All algebraic or calculus operations required to generate the Euler-Lagrange differential equations are done using the Python library Sympy.
+Their numerical solutions are obtained using Scipy, and the plotting of results is done using Matplotlib.
+<!--
 Integrar lo siguiente, tal vez no sea buena idea. No se si aporta algo.
 As illustrated by ![Figure 1](kineticExcerpt.png), anytime a repetitive task is identified, it is presented to students as a good candidate to be automated by a function.
 -->
@@ -121,8 +124,7 @@ As illustrated by ![Figure 1](kineticExcerpt.png), anytime a repetitive task is 
 
 
 ## Overview, Content, and Structure
-The full repository of the course in Spanish can be found [here](https://github.com/bettachini/MecanicaAnaliticaComputacional), with the ongoing English translated version [here](https://github.com/unlam/ComputationalAnalyticalMechanics).
-
+Full course material is available in a GitHub repository [in Spanish](https://github.com/bettachini/MecanicaAnaliticaComputacional), with an ongoing [translation to English](https://github.com/unlam/ComputationalAnalyticalMechanics).
 The first twelve folders contain the course material, each one corresponding to a unit:
 1. Course methodology, Newtonian physics and Sympy introduction.
 2. Degrees of freedom, generalized coordinates and energy.
@@ -136,7 +138,7 @@ The first twelve folders contain the course material, each one corresponding to 
 10. Oscillations in single degree of freedom (SDoF) systems, forced oscillations and discrete systems.
 12. Oscillations multiple degrees of freedom (MDoF) systems. Normal modes of discrete systems.
 
-<!-->
+<!--
 Also, accompanied by a set of examples, including functions to be modified by the students and incorporated as new tools to solve
 -->
 These folders contain Jupyter notebooks where the whole required theory for the unit subject is presented along code that solves example exercises.
@@ -145,18 +147,15 @@ So a new problem sets with exercises of increasing complexity are to be solved a
 Units 8, 9 and 12 are exceptions, requiring two weeks each, as they deal with subjects that had shown to be somewhat more demanding to students.
 That's why more time is offered to them to finish the corresponding problem sets.
 
-Each unit provides a small, but mandatory, set of homework problems.
-Since UNLaM relies on MS Teams, all problems are presented through that system, allowing the teaching staff to keep track of the students work.
-__But any LMS, such as the open source Moodle, can provide this service.__
-Solved problems must be submitted at the beginning of next class.
+Each unit provides a small, but mandatory, problem set to be solved by the students by the beginning of next class.
 Until then, for a full week, consultations can be made online to the teaching staff.
-Homework can be checked by them, and provide guidance by including side-notes to help to the students, as well as editing the code.
-This is another advantage of the online notebooks, as they provide an asynchronous interaction channel.
-After corrections by the staff, the students must resubmit their exercises until they are solved in full. 
+As they can edit students' code as well as including side-notes to help them, this make Jupyter online notebooks a very useful asynchronous interaction channel. 
+After being submitted these are evaluated by the staff and returned to students, if necessary corrections are needed, until each exercise is fully solved. 
+UNLaM relies on MS Teams to assign and keep track of student's work, __but any LMS__, such as the open source Moodle, can fulfil this task.
 
 Two further weeks complete the 16-week schedule.
-These are reserved for not only for the students to submit overdue exercises but, mainly, to perform an oral presentation on how they solved a final exercise.  
-This exercise is a challenge to calculate torques and forces that the motors of a simplified factory robotic arm should apply to make it perform a sequence of movements.
+These are reserved not only for the students to submit overdue exercises but, mainly, to perform an oral presentation on how they solved a final project.  
+Its aim is to calculate torques and forces that the motors of a simplified factory robotic arm should apply to make it perform a sequence of movements.
 As it requires the student to master the skills acquired during the first nine units, its statement is presented at the second week for that unit.
 This arrangement gives enough time for the students to consult on its difficulties and prepare the presentation.
 The oral examination is intended to gauge the students' learning, not only on the physics and computational skill required to solve this kind of problems, but also on how to provide a well planned oral presentation.

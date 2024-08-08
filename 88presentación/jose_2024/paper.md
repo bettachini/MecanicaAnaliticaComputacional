@@ -59,6 +59,7 @@ Each example and practice exercise are solved using computer-based analytical an
 The course was designed for a Latin American audience of third-year students (mid-career), that have already learned how to solve differential equations, and addresses specific regional issues.
 Theory and examples exercises alongside the Python code to solve them are presented in Jupyter notebooks, that are hosted and can be run online to avoid installation and hardware requirement issues.
 Currently, the material is in Spanish and has been only partially translated into English.
+As it is available at a GitHub repository, and it is free to use and modify under a Creative Commons licence (CC BY-NC-SA 4.0) the community is encouraged to contribute to its translation and improvement.
 
 
 ## Statement of need
@@ -89,32 +90,40 @@ The course presented addresses those issues by providing a free, online, and asy
 In advance to weekly meetings, students are required to study the theory and examples provided in the notebooks, as well as to initiate solving the accompanying exercises.
 During those evening meetings, either online or in presence, students are encouraged to ask questions and discuss the problems they could not solve with the teaching staff.
 
+<!-- ¿No sería mejor esto en otro lado? No se trata de comentar la experiencia sino de proveer material para un curso-->
+<!--
 Since the mechanical engineering programme is relatively new at UNLaM, the number of students per class is still low, around eight, so the course has been tested on a reduced scale, allowing the teaching staff to provide a personalized teaching experience at synchronic meetings.
 Larger audiences will provide a challenge, probably requiring to include new teaching assistants as well as introducing automatic grading, to keep the characteristics and advantages described here.
+-->
 
 
 ## Basis for the syllabus
 Traditionally, systems dealt with at analytical mechanics courses are as simple as possible in order to limit the extent of the mathematical work required. 
 So, realistic machine parts modelling is seldom undertaken as that would lead to a level of complexity sometimes untenable by students and teaching staff working on the blackboard or paper.
+This course aims to avoid this pitfall by taking advantage of the relative simple syntax of modern programming languages for tackling mathematical problems.
+This allows to rapidly introduce the students to life-like problems avoiding oversimplifications.
 <!--
 Such over-simplification leads to a complexity jump at the time more realistic systems are needed to be dealt at later courses of the mechanical engineering curricula. 
 
 Yet knowledge and practice not only on numerical analysis, but also on programming as a tool, were seldom exploited at UNLaM to address this issue. 
 -->
-This course aims to avoid this pitfall by taking advantage of the relative simple syntax of modern programming languages for tackling mathematical problems.
-This allows to rapidly introduce the students to life-like problems avoiding oversimplifications.
 
-A deliberate decision was that each example and exercise in the course is solved through code.
-Students are explicitly advised to avoid the temptation of reverting to solve the simpler problem at the early problem sets on paper.
-Experience at shown that students that do so, find out later that the more complex problems are difficult to solve that way, and by then they had not mastered the skill to solve them using code.
-For this task, students are not forced to start from scratch, as each course unit provides a set of code that needs only slight modifications to solve the exercises.
-This "code-reutilisation" we state is a key feature of the course.
-It forfeits students of the time and effort that requires repeating for each exercise solved on paper the Euler-Lagrange calculations already done by the teaching staff at blackboards or slides.
-By small incremental modifications over the Python code presented by the teaching staff, students build their own library of solutions to address mechanical modelling challenges.
+Each task for the mechanical system modelling as well as the algebraic or calculus operations required to generate the Euler-Lagrange differential equations are done using the _Sympy_ for the _Python_ programming language.
+Although its _physics_ module has its own syntax to model systems and efficiently generate these equations, the course follows the standard mathematical notation and procedures to arrive to them exactly as they would be done on paper.
+The idea is to make the student can verify each step of the process and only later rely on functions that made around these steps avoiding any _black box_ unbeknown to them.
 
+We want to emphasise that the course is not about teaching programming, nor about high-performance modelling of mechanical systems.
+The aim of employing the computer is to free-up students from the repetitive nature of the calculations, so they can focus on the physical aspects of the problems.
+The deliberate decision that everything get solved by code, even the earliest examples, aims to reinforce the advice given to students to avoid solving the initial problem sets on paper. 
+Some students did so at earlier editions of the course did so only to got stuck while solving later more complex problems without the computer help.
+By slight modifications over the Python code presented by the teaching staff, students build their own library of solutions to address mechanical modelling challenges.
+Once the students generate the Euler-Lagrange equations, their numerical solutions are obtained using the _Scipy_ library, and plotted using _Matplotlib_ to better understand the physical implications of the solutions.
+
+<!--
 The course uses a general purpose programming language, Python, instead of a more specialized to mathematics ones, such as Octave or Scilab, was made to allow the students to integrate the skills acquired in this course to later subjects of the mechanical engineering curriculum.
 All algebraic or calculus operations required to generate the Euler-Lagrange differential equations are done using the Python library Sympy.
 Their numerical solutions are obtained using Scipy, and the plotting of results is done using Matplotlib.
+-->
 <!--
 Integrar lo siguiente, tal vez no sea buena idea. No se si aporta algo.
 As illustrated by ![Figure 1](kineticExcerpt.png), anytime a repetitive task is identified, it is presented to students as a good candidate to be automated by a function.

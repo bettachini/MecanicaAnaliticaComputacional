@@ -151,8 +151,9 @@ The first twelve folders contain the course material, each one corresponding to 
 Also, accompanied by a set of examples, including functions to be modified by the students and incorporated as new tools to solve
 -->
 These folders contain Jupyter notebooks where the whole required theory for the unit subject is presented along code that solves example exercises.
-Accompanying problem sets, in PDF format, are to be solved by the students by modifying the provided code.
-So a new problem sets with exercises of increasing complexity are to be solved almost each new week.
+The students only need to modify that code to solve the exercises proposed at the accompanying problem sets.
+These are provides in PDF format alongside their LaTeX source and figure files, so they can be easily modified as well as translated to other languages.
+Problem sets with exercises of increasing complexity are to be solved almost each new week.
 Units 8, 9 and 12 are exceptions, requiring two weeks each, as they deal with subjects that had shown to be somewhat more demanding to students.
 That's why more time is offered to them to finish the corresponding problem sets.
 

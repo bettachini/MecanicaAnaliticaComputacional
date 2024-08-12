@@ -152,7 +152,14 @@ Also, accompanied by a set of examples, including functions to be modified by th
 -->
 These folders contain Jupyter notebooks where the whole required theory for the unit subject is presented along code that solves example exercises.
 The students only need to modify that code to solve the exercises proposed at the accompanying problem sets.
-These are provides in PDF format alongside their LaTeX source and figure files, so they can be easily modified as well as translated to other languages.
+These are provided in PDF format alongside their LaTeX source and figure files, so they can be easily modified as well as translated to other languages.
+The number of exercises in each problem set is kept small in order to make their solving mandatory, but still illustrative of the unit subject application.
+At UNLaM, the university where the course is taught, we employ MS Teams to assign and keep track of student's work, __but any LMS__, such as the open source Moodle, can fulfil this task.
+
+
+Each unit problem set is kept small in order to make their solving mandatory , problem set to be solved by the students by the beginning of next class.
+
+
 Problem sets with exercises of increasing complexity are to be solved almost each new week.
 Units 8, 9 and 12 are exceptions, requiring two weeks each, as they deal with subjects that had shown to be somewhat more demanding to students.
 That's why more time is offered to them to finish the corresponding problem sets.
@@ -161,7 +168,6 @@ Each unit provides a small, but mandatory, problem set to be solved by the stude
 Until then, for a full week, consultations can be made online to the teaching staff.
 As they can edit students' code as well as including side-notes to help them, this make Jupyter online notebooks a very useful asynchronous interaction channel. 
 After being submitted these are evaluated by the staff and returned to students, if necessary corrections are needed, until each exercise is fully solved. 
-UNLaM relies on MS Teams to assign and keep track of student's work, __but any LMS__, such as the open source Moodle, can fulfil this task.
 
 Two further weeks complete the 16-week schedule.
 These are reserved not only for the students to submit overdue exercises but, mainly, to perform an oral presentation on how they solved a final project.  

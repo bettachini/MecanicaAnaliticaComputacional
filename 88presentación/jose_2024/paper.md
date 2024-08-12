@@ -57,9 +57,10 @@ This 16-week flipped classroom course provides skills to calculate dynamics and 
 Each example and practice exercise are solved using computer-based analytical and numerical calculations with the aim to deflect students' focus of attention away from repetitive mathematical tasks towards the physics modelling.
 
 The course was designed for a Latin American audience of third-year students (mid-career), that have already learned how to solve differential equations, and addresses specific regional issues.
-Theory and examples exercises alongside the Python code to solve them are presented in Jupyter notebooks, that are hosted and can be run online to avoid installation and hardware requirement issues.
+Theory and examples exercises alongside the _Python_ code that solves them are presented in _Jupyter notebooks_, that are hosted and can be run online to avoid installation and hardware requirement issues.
 Currently, the material is in Spanish and has been only partially translated into English.
-As it is available at a GitHub repository, and it is free to use and modify under a Creative Commons licence (CC BY-NC-SA 4.0) the community is encouraged to contribute to its translation and improvement.
+As it is available at a GitHub repository.
+As it is free to use and modify under a Creative Commons licence (CC BY-NC-SA 4.0) the community is encouraged to contribute to its translation and improvement.
 
 
 ## Statement of need
@@ -89,12 +90,6 @@ https://www.dac.unicamp.br/sistemas/catalogos/grad/catalogo2023/cursos/10g/suges
 The course presented addresses those issues by providing a free, online, and asynchronous learning environment that allows students to study at their own pace through the flipped classroom approach.
 In advance to weekly meetings, students are required to study the theory and examples provided in the notebooks, as well as to initiate solving the accompanying exercises.
 During those evening meetings, either online or in presence, students are encouraged to ask questions and discuss the problems they could not solve with the teaching staff.
-
-<!-- ¿No sería mejor esto en otro lado? No se trata de comentar la experiencia sino de proveer material para un curso-->
-<!--
-Since the mechanical engineering programme is relatively new at UNLaM, the number of students per class is still low, around eight, so the course has been tested on a reduced scale, allowing the teaching staff to provide a personalized teaching experience at synchronic meetings.
-Larger audiences will provide a challenge, probably requiring to include new teaching assistants as well as introducing automatic grading, to keep the characteristics and advantages described here.
--->
 
 
 ## Basis for the syllabus
@@ -133,6 +128,9 @@ As illustrated by ![Figure 1](kineticExcerpt.png), anytime a repetitive task is 
 
 
 ## Overview, Content, and Structure
+<!--
+Repository
+-->
 Full course material is available in a GitHub repository [in Spanish](https://github.com/bettachini/MecanicaAnaliticaComputacional), with an ongoing [translation to English](https://github.com/unlam/ComputationalAnalyticalMechanics).
 The first twelve folders contain the course material, each one corresponding to a unit:
 1. Course methodology, Newtonian physics and Sympy introduction.
@@ -150,24 +148,11 @@ The first twelve folders contain the course material, each one corresponding to 
 <!--
 Also, accompanied by a set of examples, including functions to be modified by the students and incorporated as new tools to solve
 -->
-These folders contain Jupyter notebooks where the whole required theory for the unit subject is presented along code that solves example exercises.
+Each folder contains Jupyter notebooks with the required theory for the unit subject alongside the code that solves example exercises.
 The students only need to modify that code to solve the exercises proposed at the accompanying problem sets.
-These are provided in PDF format alongside their LaTeX source and figure files, so they can be easily modified as well as translated to other languages.
-The number of exercises in each problem set is kept small in order to make their solving mandatory, but still illustrative of the unit subject application.
-At UNLaM, the university where the course is taught, we employ MS Teams to assign and keep track of student's work, __but any LMS__, such as the open source Moodle, can fulfil this task.
-
-
-Each unit problem set is kept small in order to make their solving mandatory , problem set to be solved by the students by the beginning of next class.
-
-
-Problem sets with exercises of increasing complexity are to be solved almost each new week.
-Units 8, 9 and 12 are exceptions, requiring two weeks each, as they deal with subjects that had shown to be somewhat more demanding to students.
-That's why more time is offered to them to finish the corresponding problem sets.
-
-Each unit provides a small, but mandatory, problem set to be solved by the students by the beginning of next class.
-Until then, for a full week, consultations can be made online to the teaching staff.
-As they can edit students' code as well as including side-notes to help them, this make Jupyter online notebooks a very useful asynchronous interaction channel. 
-After being submitted these are evaluated by the staff and returned to students, if necessary corrections are needed, until each exercise is fully solved. 
+These are provided in PDF format alongside their LaTeX source and figure files allowing their customisation.
+The number of exercises in each problem set, while still being illustrative of the variety of the unit subject applications, is kept small in order to make their solving mandatory on a weekly basis.
+Those of units 8, 9 and 12 are exceptions, requiring two weeks each, as they deal with subjects that had shown to be somewhat more demanding to students.
 
 Two further weeks complete the 16-week schedule.
 These are reserved not only for the students to submit overdue exercises but, mainly, to perform an oral presentation on how they solved a final project.  
@@ -178,8 +163,23 @@ The oral examination is intended to gauge the students' learning, not only on th
 
 
 
-## Conclusions
+## Implementation
+The _Google Colaboratory_ service allows students to read and execute Jupyter notebooks, as it currently demands no payment and can be accessed from any internet browser.
+At _UNLaM_, the university where the course is taught, _SageMaker StudioLab_, _GitHub Codespaces_, _Cocalc_ or indeed _Kaggle_ had also been tested for this purpose but _Colab_, as is commonly known, is currently used as it provides a useful feature for students to pose questions by the way of side-notes to each cell of the notebooks.
+Teaching staff can con reply them individually, and students can re-reply thus providing an asynchronous interaction channel in between the weekly synchronic meetings.
+
+Students are required to submit their solution to the complete course's problem sets.
+_MS Teams_ is used to assign and keep track of student's work, but any LMS, such as the open source _Moodle_, can fulfil this task.
+Teaching staff check the submissions and, if required, returns them with comments to correct them.
+This way, students are encouraged to solve all exercises, as they are mandatory to pass the course, and to ask for help when they are stuck.
+The mechanical engineering programme is relatively new at UNLaM, so the number of students per class is still low, around eight, thus still allowing this personalised tracking of student's progress.
+Larger audiences will provide a challenge, probably requiring to include new teaching assistants as well as introducing automatic grading, to somewhat stick to this methodology.
+
+
+
+## Balance of the methodology
 <!--
+## Conclusions
 This course differs from conventional ones by being:
 - Code-based:
   1. Avoids the repetitive nature of blackboard or paper based calculations. 
@@ -193,9 +193,10 @@ This course differs from conventional ones by being:
   1. All exercises are turned-in for evaluation. Compliance is tracked with an online learning management system. 
 -->    
 
+<!--
 This course stands out from conventional approaches in Latin American courses by adopting a code-based methodology.
 Rather than relying solely on repetitive blackboard or paper-based calculations, students engage the problems with code.
-By iteratively modifying and experimenting with the course-provided code used on simpler mechanical systems, the students gradually expand their analytical capabilities, so focusing on the physical aspects and not on the mathematical aspect of the problems.
+By iteratively modifying and experimenting with example code the students gradually expand their analytical capabilities, so focusing on the physical aspects and not on the mathematical aspect of the problems.
 This also provides the advantage to increase the complexity of the problems, since numerical approaches can easily be applied by modifying teacher's code.
 
 As the mechanical systems discussed in class become more intricate, so does the complexity of the code.
@@ -208,8 +209,8 @@ Students receive online theory materials and example problems to study in antici
 Asynchronous personal consultations on exercises free-up valuable classroom time for collaborative problem-solving and discussions on difficult concepts of theory.
 
 In summary, this course combines code-based exploration with a flipped classroom model, empowering students into complex mechanical systems while optimizing their learning experience
-	
-It is important to state that feedback from students consistently indicates a high level of satisfaction with this course, especially with its code-driven aspect.
+-->
+For the time being, feedback from students consistently indicates a high level of satisfaction with this course, especially with its code-driven aspect.
 Additionally, students express interest in the final examination as it provides an opportunity to apply both their presentation skills and the knowledge acquired throughout the course.
 In relation to the flipped classroom model, students acknowledge that it requires a grater effort, but a majority of them agree that it is a positive and beneficial implementation.
 

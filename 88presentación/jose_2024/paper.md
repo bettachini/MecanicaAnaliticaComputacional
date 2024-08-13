@@ -143,7 +143,7 @@ The first twelve folders contain the course material, each one corresponding to 
 8. Rigid-body and inertia tensor.
 9. Rigid-body, Euler equations.
 10. Oscillations in single degree of freedom (SDoF) systems, forced oscillations and discrete systems.
-12. Oscillations multiple degrees of freedom (MDoF) systems. Normal modes of discrete systems.
+11. Oscillations multiple degrees of freedom (MDoF) systems. Normal modes of discrete systems.
 
 <!--
 Also, accompanied by a set of examples, including functions to be modified by the students and incorporated as new tools to solve
@@ -152,9 +152,9 @@ Each folder contains Jupyter notebooks with the required theory for the unit sub
 The students only need to modify that code to solve the exercises proposed at the accompanying problem sets.
 These are provided in PDF format alongside their LaTeX source and figure files allowing their customisation.
 The number of exercises in each problem set, while still being illustrative of the variety of the unit subject applications, is kept small in order to make their solving mandatory on a weekly basis.
-Those of units 8, 9 and 12 are exceptions, requiring two weeks each, as they deal with subjects that had shown to be somewhat more demanding to students.
+Those of units 8, 9 and 11 are exceptions, requiring two weeks each, as they deal with subjects that had shown to be somewhat more demanding to students.
 
-Two further weeks complete the 16-week schedule.
+Two further weeks complete a 16-week schedule.
 These are reserved not only for the students to submit overdue exercises but, mainly, to perform an oral presentation on how they solved a final project.  
 Its aim is to calculate torques and forces that the motors of a simplified factory robotic arm should apply to make it perform a sequence of movements.
 As it requires the student to master the skills acquired during the first nine units, its statement is presented at the second week for that unit.
@@ -172,14 +172,13 @@ Students are required to submit their solution to the complete course's problem 
 _MS Teams_ is used to assign and keep track of student's work, but any LMS, such as the open source _Moodle_, can fulfil this task.
 Teaching staff check the submissions and, if required, returns them with comments to correct them.
 This way, students are encouraged to solve all exercises, as they are mandatory to pass the course, and to ask for help when they are stuck.
+
+
+## Conclusions
 The mechanical engineering programme is relatively new at UNLaM, so the number of students per class is still low, around eight, thus still allowing this personalised tracking of student's progress.
 Larger audiences will provide a challenge, probably requiring to include new teaching assistants as well as introducing automatic grading, to somewhat stick to this methodology.
-
-
-
-## Balance of the methodology
 <!--
-## Conclusions
+## Balance of the methodology
 This course differs from conventional ones by being:
 - Code-based:
   1. Avoids the repetitive nature of blackboard or paper based calculations. 
@@ -192,7 +191,6 @@ This course differs from conventional ones by being:
   1. During synchronic meetings they can rise to teachers any questions related to theory or problem-solving, so they can finish their exercise sets.
   1. All exercises are turned-in for evaluation. Compliance is tracked with an online learning management system. 
 -->    
-
 <!--
 This course stands out from conventional approaches in Latin American courses by adopting a code-based methodology.
 Rather than relying solely on repetitive blackboard or paper-based calculations, students engage the problems with code.

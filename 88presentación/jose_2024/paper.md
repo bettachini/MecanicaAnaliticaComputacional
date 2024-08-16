@@ -211,6 +211,8 @@ In summary, this course combines code-based exploration with a flipped classroom
 For the time being, feedback from students consistently indicates a high level of satisfaction with this course, especially with its code-driven aspect.
 Additionally, students express interest in the final examination as it provides an opportunity to apply both their presentation skills and the knowledge acquired throughout the course.
 In relation to the flipped classroom model, students acknowledge that it requires a grater effort, but a majority of them agree that it is a positive and beneficial implementation.
+This is in line with previous research on the flipped classroom model for advances mechanical engineering courses. [mason_comparing_2013]
+
 
 The authors are confident that the methodology employed in this course offers greater practical utility to students in subsequent subjects and their professional lives, surpassing the benefits of a traditional course.
 
@@ -232,6 +234,5 @@ Figures can be included like this: ![Example figure.](figure.png)
 
 We acknowledge contributions from Brigitta Sipocz, Syrtis Major, and Semyeong
 Oh, and support from Kathryn Johnston during the genesis of this project.
-
+-->
 # References
->

@@ -29,18 +29,14 @@ affiliations:
  - name: Universidad Tecnológica Nacional - UTN, Buenos Aires, Argentina.
    index: 5
  
-date: 02 June 2024
-bibliography: bettachini.bib
-
+date: 02 September 2024
+bibliography: paper.bib
 lang: "en-GB"
 
-[Vamos a publicar en: https://jose.theoj.org]:#  
-
-
-
-
-
-[# Optional fields if submitting to a AAS journal too, see this blog post:# https://blog.joss.theoj.org/2018/12/a-new-collaboration-with-aas-publishing aas-doi: 10.3847/xxxxx <- update this with the DOI from AAS once you know it. aas-journal: Astrophysical Journal <- The name of the AAS journal.]:#
+# Optional fields if submitting to a AAS journal too, see this blog post:
+# https://blog.joss.theoj.org/2018/12/a-new-collaboration-with-aas-publishing
+aas-doi: 10.3847/xxxxx <- update this with the DOI from AAS once you know it.
+aas-journal: Astrophysical Journal <- The name of the AAS journal.
 ---
 
 

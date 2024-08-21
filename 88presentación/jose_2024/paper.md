@@ -58,9 +58,10 @@ Each example and practice exercise are solved using computer-based analytical an
 
 The course was designed for a Latin American audience of third-year students (mid-career), that have already learned how to solve differential equations, and addresses specific regional issues.
 Theory and examples exercises alongside the _Python_ code that solves them are presented in _Jupyter notebooks_, that are hosted and can be run online to avoid installation and hardware requirement issues.
-Currently, the material is in Spanish and has been only partially translated into English.
-As it is available at a GitHub repository.
-As it is free to use and modify under a Creative Commons licence (CC BY-NC-SA 4.0) the community is encouraged to contribute to its translation and improvement.
+Currently, the material is available at a GitHub repository in Spanish and has been only partially translated into English.
+<!--
+It is free to use and modify under a Creative Commons licence (CC BY-NC-SA 4.0) for the community is encouraged to contribute to its translation and improvement.
+-->
 
 
 ## Statement of need
@@ -103,8 +104,8 @@ Such over-simplification leads to a complexity jump at the time more realistic s
 Yet knowledge and practice not only on numerical analysis, but also on programming as a tool, were seldom exploited at UNLaM to address this issue. 
 -->
 
-Each task for the mechanical system modelling as well as the algebraic or calculus operations required to generate the Euler-Lagrange differential equations are done using the _Sympy_ for the _Python_ programming language.
-Although its _physics_ module has its own syntax to model systems and efficiently generate these equations, the course follows the standard mathematical notation and procedures to arrive to them exactly as they would be done on paper.
+Each task for the mechanical system modelling, as well as the algebraic or calculus operations, required to generate the Euler-Lagrange differential equations are done using the _Sympy_ library for the _Python_ programming language.
+Although its _physics.mechanics_ module provides functionality for deriving equations of motion using [Lagrange’s method](https://docs.sympy.org/latest/modules/physics/mechanics/lagrange.html), this course aims for the student to follow the standard mathematical notation and procedures to produce them in the same way they would have done on paper.
 The idea is to make the student can verify each step of the process and only later rely on functions that made around these steps avoiding any _black box_ unbeknown to them.
 
 We want to emphasise that the course is not about teaching programming, nor about high-performance modelling of mechanical systems.
@@ -211,7 +212,7 @@ In summary, this course combines code-based exploration with a flipped classroom
 For the time being, feedback from students consistently indicates a high level of satisfaction with this course, especially with its code-driven aspect.
 Additionally, students express interest in the final examination as it provides an opportunity to apply both their presentation skills and the knowledge acquired throughout the course.
 In relation to the flipped classroom model, students acknowledge that it requires a grater effort, but a majority of them agree that it is a positive and beneficial implementation.
-This is in line with previous research on the flipped classroom model for advances mechanical engineering courses. [mason_comparing_2013]
+This is in line with previous research on the flipped classroom model for advances mechanical engineering courses [@mason_comparing_2013].
 
 
 The authors are confident that the methodology employed in this course offers greater practical utility to students in subsequent subjects and their professional lives, surpassing the benefits of a traditional course.

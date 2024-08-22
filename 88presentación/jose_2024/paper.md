@@ -47,9 +47,9 @@ We present a code-based undergraduate course on analytical mechanics for enginee
 This 16-week flipped classroom course provides skills to calculate dynamics and strains of simple mechanical devices modelled as rigid bodies by solving Euler-Lagrange equations.
 Each example and practice exercise are solved using computer-based analytical and numerical calculations with the aim to deflect students' focus of attention away from repetitive mathematical tasks towards the physics modelling.
 
-The course was designed for a Latin American audience of third-year students (mid-career), that have already learned how to solve differential equations, and addresses specific regional issues.
-Theory and examples exercises alongside the _Python_ code that solves them are presented in _Jupyter notebooks_, that are hosted and can be run online to avoid installation and hardware requirement issues.
-Currently, the material is available at a GitHub repository in Spanish and has been only partially translated into English.
+The course addresses specific regional issues of third-year Latin American students (mid-career), that by then have learned how to solve ordinary differential equations. 
+Theory and examples exercises alongside the _Python_ code that solves them are presented in _Jupyter notebooks_, that are run online to avoid installation and hardware requirement issues.
+Currently, the material is available in a GitHub repository in Spanish and has only been partially translated into English.
 <!--
 It is free to use and modify under a Creative Commons licence (CC BY-NC-SA 4.0) for the community is encouraged to contribute to its translation and improvement.
 -->

@@ -94,8 +94,20 @@ Such over-simplification leads to a complexity jump at the time more realistic s
 Yet knowledge and practice not only on numerical analysis, but also on programming as a tool, were seldom exploited at UNLaM to address this issue. 
 -->
 
-Each task for the mechanical system modelling, as well as the algebraic or calculus operations, required to generate the Euler-Lagrange differential equations are done using the _Sympy_ library for the _Python_ programming language.
-Although its _physics.mechanics_ module provides functionality for deriving equations of motion using [Lagrange’s method](https://docs.sympy.org/latest/modules/physics/mechanics/lagrange.html), this course aims for the student to follow the standard mathematical notation and procedures to produce them in the same way they would have done on paper.
+Each task for the mechanical system modelling, as well as the algebraic or calculus operations, required to generate the Euler-Lagrange differential equations are done using the _Python_ programming language.
+
+A sub-package of the _SymPy_ library, _physics.mechanics_, is the main tool used.
+It is a port of the [_PyDy_ library](https://www.pydy.org/history.html), which was developed to provide a symbolic mechanics environment for _Python_ as a replacement of the commercial [_Autolev_ software](https://link.springer.com/chapter/10.1007/978-3-642-50995-7_7) that instrumentalised [Kane's method](https://ecommons.cornell.edu/items/1f0e5629-0caa-4be2-8384-8869eb9e4fac) to derive equations of motion at [UC Davis Multibody Dynamics course](https://moorepants.github.io/mae223/).
+
+
+Courses, such as TU Delft's [Multibody Dynamics](https://moorepants.github.io/me41055/), itself a successor of the [UC's course](https://moorepants.github.io/mae223/) of the same name, had for years been applying this library with a similar objective.
+As stated the on-line book on which the course is based, [Learn Multibody Dynamics](https://moorepants.github.io/learn-multibody-dynamics/introduction.html#choice-of-dynamics-formalism), the author chooses to derive equations of motion with the [Kane's method](https://ecommons.cornell.edu/items/1f0e5629-0caa-4be2-8384-8869eb9e4fac) in order to avoid introducing virtual motion concepts and the need of Lagrange multipliers to handle constrains.
+Kane in the preface of his book states that by focusing on motions instead of the physical configuration of the system, his method maximises physical insight.
+
+The course presented here, however, 
+
+
+Although the SymPy _physics.mechanics_ module provides functionality for deriving equations of motion using [Lagrange’s method](https://docs.sympy.org/latest/modules/physics/mechanics/lagrange.html), this course aims for the student to follow the standard mathematical notation and procedures to produce them in the same way they would have done on paper.
 The idea is to make the student can verify each step of the process and only later rely on functions that made around these steps avoiding any _black box_ unbeknown to them.
 
 We want to emphasise that the course is not about teaching programming, nor about high-performance modelling of mechanical systems.
@@ -103,10 +115,9 @@ The aim of employing the computer is to free-up students from the repetitive nat
 The deliberate decision that everything get solved by code, even the earliest examples, aims to reinforce the advice given to students to avoid solving the initial problem sets on paper. 
 Some students did so at earlier editions of the course did so only to got stuck while solving later more complex problems without the computer help.
 By slight modifications over the Python code presented by the teaching staff, students build their own library of solutions to address mechanical modelling challenges.
-Once the students generate the Euler-Lagrange equations, their numerical solutions are obtained using the _Scipy_ library, and plotted using _Matplotlib_ to better understand the physical implications of the solutions.
-
-<!-- ¿Se incluyen referencias a bibliotecas? ¿Hacen eso en artículos de JOSE?
 Once the students generate the Euler-Lagrange equations, their numerical solutions are obtained using the _Scipy_ library [@sciPyNMeth:2020], and plotted using _Matplotlib_[@HunterMatplotlib:2007] to better understand the physical implications of the solutions.
+<!--
+¿Se incluyen referencias a bibliotecas? ¿Hacen eso en artículos de JOSE?
 -->
 
 <!--

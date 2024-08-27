@@ -24,7 +24,7 @@ affiliations:
    index: 2
  - name: Instituto Nacional de Tecnología Industrial - INTI, Buenos Aires, Argentina.
    index: 3
- - name: INCALIN, Universidad de San Martín - UNSaM, Buenos Aires, Argentina.
+ - name: INCALIN, Universidad de San Martín - UNSAM, Buenos Aires, Argentina.
    index: 4
  - name: Universidad Tecnológica Nacional - UTN, Buenos Aires, Argentina.
    index: 5
@@ -39,7 +39,6 @@ lang: "en-GB"
 1. single-degree, single degree: ver nota de estilo de PR. También libro Fasano. Lo usaría como "single degree".
 2. "constraint forces", en Fasano, et al aparece como "constraint reaction" y luego lo llaman fuerza (p. 77)
 -->
-
 
 # Summary
 
@@ -56,8 +55,8 @@ It is free to use and modify under a Creative Commons licence (CC BY-NC-SA 4.0) 
 
 
 ## Statement of need
-Latin American public universities face two simultaneous constrains: tight budgets and the need to accommodate their classes' schedules to day-working students.
-These cash-stripped universities seldom avail computing resources for courses that are not directly related to computer science or programming 
+Latin American public universities face two simultaneous constrains: tight budgets and the need to accommodate their classes' schedules to day-working students [@vallejoGoogle:2022].
+These cash-stripped universities seldom avail computing resources for courses that are not directly related to computer science or programming. 
 Also, as undergraduate programs on engineering at Latin American universities are usually longer than the three-years bachelors at their Anglo-Saxon counterparts, it is quite common that students are already inserted into the labour market while studying, so they have a tight schedule and are not able to attend to the university during daytime hours. 
 <!--
 Ojalá fuera cierto. Sinceramiento: ni saben que existen las alternativas de software libre. Authorities of these cash-stripped universities often ask that any solution to introduce students to coding skills should be based upon open-source fee-free resources.
@@ -95,7 +94,7 @@ Such over-simplification leads to a complexity jump at the time more realistic s
 Yet knowledge and practice not only on numerical analysis, but also on programming as a tool, were seldom exploited at UNLaM to address this issue. 
 -->
 
-Each task for the mechanical system modelling, as well as the algebraic or calculus operations, required to generate the Euler-Lagrange differential equations are done using the _Sympy_ library for the _Python_ programming language.
+Each task for the mechanical system modelling, as well as the algebraic or calculus operations, required to generate the Euler-Lagrange differential equations are done using the _Sympy_ [@sciPyNMeth:2020] library for the _Python_ programming language.
 Although its _physics.mechanics_ module provides functionality for deriving equations of motion using [Lagrange’s method](https://docs.sympy.org/latest/modules/physics/mechanics/lagrange.html), this course aims for the student to follow the standard mathematical notation and procedures to produce them in the same way they would have done on paper.
 The idea is to make the student can verify each step of the process and only later rely on functions that made around these steps avoiding any _black box_ unbeknown to them.
 
@@ -104,7 +103,7 @@ The aim of employing the computer is to free-up students from the repetitive nat
 The deliberate decision that everything get solved by code, even the earliest examples, aims to reinforce the advice given to students to avoid solving the initial problem sets on paper. 
 Some students did so at earlier editions of the course did so only to got stuck while solving later more complex problems without the computer help.
 By slight modifications over the Python code presented by the teaching staff, students build their own library of solutions to address mechanical modelling challenges.
-Once the students generate the Euler-Lagrange equations, their numerical solutions are obtained using the _Scipy_ library, and plotted using _Matplotlib_ to better understand the physical implications of the solutions.
+Once the students generate the Euler-Lagrange equations, their numerical solutions are obtained using the _Scipy_ library, and plotted using _Matplotlib_[@HunterMatplotlib:2007] to better understand the physical implications of the solutions.
 
 <!--
 The course uses a general purpose programming language, Python, instead of a more specialized to mathematics ones, such as Octave or Scilab, was made to allow the students to integrate the skills acquired in this course to later subjects of the mechanical engineering curriculum.

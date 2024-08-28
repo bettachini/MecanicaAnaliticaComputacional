@@ -98,7 +98,8 @@ The required modelling as well as algebraic and calculus operations to generate 
 Its code was ported from the [_PyDy_ library](https://www.pydy.org/history.html), a replacement of [_Autolev_](https://link.springer.com/chapter/10.1007/978-3-642-50995-7_7) a commercial software that instrumentalised the [Kane's method](https://ecommons.cornell.edu/items/1f0e5629-0caa-4be2-8384-8869eb9e4fac).
 As [stated in the online textbook](https://moorepants.github.io/learn-multibody-dynamics/introduction.html#choice-of-dynamics-formalism)
  for the Multibody Dynamics course at TU Delft, a successor to the one _PyDy_ was developed for, this method avoids accounting for non-conservative forces with Lagrange's multipliers, but it requires modelling forces in the system.
- Our course chooses instead to make students model systems solely by its energy, a more traditional approach, in order to immerse into a radically different way to solve mechanical problems.
+ Our choice was instead to make students model systems solely by its energy, a more traditional approach, in order to immerse into a radically different way to solve mechanical problems in their first contact with the subject of analytical mechanics.
+ We think that later on, if they face problems requiring a more efficient method, they will be able to apply these other less abstract methods.
  
 <!--
 A successor to the course for which _PyDy_ was developed, [TU Delft's Multibody Dynamics](https://moorepants.github.io/me41055/), has an [online textbook that states the choice of this method](https://moorepants.github.io/learn-multibody-dynamics/introduction.html#choice-of-dynamics-formalism) to avoid introducing virtual motion concepts and the need of Lagrange multipliers to handle constrains while deriving equations of motion.

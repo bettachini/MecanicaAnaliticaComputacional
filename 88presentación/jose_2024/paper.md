@@ -85,7 +85,7 @@ During those evening meetings, either online or in presence, students are encour
 
 ## Basis for the syllabus
 Traditionally, systems dealt with at analytical mechanics courses are as simple as possible in order to limit the extent of the mathematical work required. 
-So, realistic machine parts modelling is seldom undertaken as that would lead to a level of complexity sometimes untenable by students and teaching staff working on the blackboard or paper.
+So, modelling of multiple machine parts is seldom undertaken as that would lead to a level of complexity sometimes untenable by students and teaching staff working on the blackboard or paper.
 This course aims to avoid this pitfall by taking advantage of the relative simple syntax of modern programming languages for tackling mathematical problems.
 This allows to rapidly introduce the students to life-like problems avoiding oversimplifications.
 <!--
@@ -94,20 +94,20 @@ Such over-simplification leads to a complexity jump at the time more realistic s
 Yet knowledge and practice not only on numerical analysis, but also on programming as a tool, were seldom exploited at UNLaM to address this issue. 
 -->
 
-Each task for the mechanical system modelling, as well as the algebraic or calculus operations, required to generate the Euler-Lagrange differential equations are done using the _Python_ programming language.
+The required modelling as well as algebraic and calculus operations to generate the Euler-Lagrange differential equations are performed using [_physics.mechanics_](https://docs.sympy.org/latest/modules/physics/mechanics/), the symbolics dynamics sub-package of the _SymPy_ library.
+Its code was ported from the [_PyDy_ library](https://www.pydy.org/history.html), a replacement of [_Autolev_](https://link.springer.com/chapter/10.1007/978-3-642-50995-7_7) a commercial software that instrumentalised the [Kane's method](https://ecommons.cornell.edu/items/1f0e5629-0caa-4be2-8384-8869eb9e4fac).
+As [stated in the online textbook](https://moorepants.github.io/learn-multibody-dynamics/introduction.html#choice-of-dynamics-formalism)
+ for the Multibody Dynamics course at TU Delft, a successor to the one _PyDy_ was developed for, this method avoids accounting for non-conservative forces with Lagrange's multipliers, but it requires modelling forces in the system.
+ Our course chooses instead to make students model systems solely by its energy, a more traditional approach, in order to immerse into a radically different way to solve mechanical problems.
+ 
+<!--
+A successor to the course for which _PyDy_ was developed, [TU Delft's Multibody Dynamics](https://moorepants.github.io/me41055/), has an [online textbook that states the choice of this method](https://moorepants.github.io/learn-multibody-dynamics/introduction.html#choice-of-dynamics-formalism) to avoid introducing virtual motion concepts and the need of Lagrange multipliers to handle constrains while deriving equations of motion.
+[Kane's book](https://ecommons.cornell.edu/items/1f0e5629-0caa-4be2-8384-8869eb9e4fac) preface states that by focusing on motions instead of the physical configuration of the system, his method maximises physical insight.
+>
+<!--, previously used at the [UC ' Multibody Dynamics course](https://moorepants.github.io/mae223/).
+-->
 
-A sub-package of the _SymPy_ library, _physics.mechanics_, is the main tool used.
-It is a port of the [_PyDy_ library](https://www.pydy.org/history.html), which was developed to provide a symbolic mechanics environment for _Python_ as a replacement of the commercial [_Autolev_ software](https://link.springer.com/chapter/10.1007/978-3-642-50995-7_7) that instrumentalised [Kane's method](https://ecommons.cornell.edu/items/1f0e5629-0caa-4be2-8384-8869eb9e4fac) to derive equations of motion at [UC Davis Multibody Dynamics course](https://moorepants.github.io/mae223/).
-
-
-Courses, such as TU Delft's [Multibody Dynamics](https://moorepants.github.io/me41055/), itself a successor of the [UC's course](https://moorepants.github.io/mae223/) of the same name, had for years been applying this library with a similar objective.
-As stated the on-line book on which the course is based, [Learn Multibody Dynamics](https://moorepants.github.io/learn-multibody-dynamics/introduction.html#choice-of-dynamics-formalism), the author chooses to derive equations of motion with the [Kane's method](https://ecommons.cornell.edu/items/1f0e5629-0caa-4be2-8384-8869eb9e4fac) in order to avoid introducing virtual motion concepts and the need of Lagrange multipliers to handle constrains.
-Kane in the preface of his book states that by focusing on motions instead of the physical configuration of the system, his method maximises physical insight.
-
-The course presented here, however, 
-
-
-Although the SymPy _physics.mechanics_ module provides functionality for deriving equations of motion using [Lagrange’s method](https://docs.sympy.org/latest/modules/physics/mechanics/lagrange.html), this course aims for the student to follow the standard mathematical notation and procedures to produce them in the same way they would have done on paper.
+Although _physics.mechanics_ provides functionality for deriving equations of motion using [Lagrange’s method](https://docs.sympy.org/latest/modules/physics/mechanics/lagrange.html), this course aims for the student to follow the standard mathematical notation and procedures to produce them in the same way they would have done on paper.
 The idea is to make the student can verify each step of the process and only later rely on functions that made around these steps avoiding any _black box_ unbeknown to them.
 
 We want to emphasise that the course is not about teaching programming, nor about high-performance modelling of mechanical systems.

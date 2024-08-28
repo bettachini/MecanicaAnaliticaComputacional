@@ -27,4 +27,4 @@
     
 [maso]	Tell us the “story” of the project: how did it come to be?
     
-[maso]	Cite key references, including a link to the open archive of the sofware or the learning module.
+[maso]	Cite key references, including a link to the open archive of the software or the learning module.

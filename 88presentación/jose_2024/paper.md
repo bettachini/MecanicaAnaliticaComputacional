@@ -43,8 +43,21 @@ lang: "en-GB"
 # Summary
 
 We present a code-based undergraduate course on analytical mechanics for engineering students with little to no prior programming knowledge.
-This 16-week flipped classroom course provides skills to calculate dynamics and strains of simple mechanical devices modelled as rigid bodies by solving Euler-Lagrange equations.
+This 16-week flipped classroom [@bishop2013flipped:2013] course provides skills to calculate dynamics and strains of simple mechanical devices modelled as rigid bodies by solving Euler-Lagrange equations.
+<!--  Modificado MAR_20240830
 Each example and practice exercise are solved using computer-based analytical and numerical calculations with the aim to deflect students' focus of attention away from repetitive mathematical tasks towards the physics modelling.
+-->
+Each example and practice exercise is solved using computer-based analytical and numerical calculations focusing students' attenttion on physics modelling and not on repetitive mathematical tasks.
+This approach also aims to improve creativity, the studens have to solve problems by trial and error [@freiberg2021creatividad:2021].
+
+<!--  Agregé la frase anterior en función del siguiente trabajo:
+Cita de freiberg2021creatividad:2021
+
+Para mejorar el rendimiento académico se necesita aplicar estrategias de enseñanza y evaluación que desestimulen el aprendizaje Superficial y promuevan el proceso creativo en los estudiantes. Los cambios en las prácticas educativas deberán, además, enfocarse en mejorar el aprendizaje Profundo y la creatividad para ajustar el perfil profesional de habilidades de los egresados al requerido actualmente por el ámbito laboral.
+
+De esta manera, el aprendizaje Profundo se encuentra estrechamente relacionado con un tipo de enseñanza basada en su conocimiento previo, la puesta en práctica a través de pruebas de ensayo y error, y la evaluación holística de los contenidos, entre otras cosas (Biggs & Tang, 2011).
+-->
+
 
 The course addresses specific regional issues of third-year Latin American students (mid-career), that by then have learned how to solve ordinary differential equations. 
 Theory and examples exercises alongside the _Python_ code that solves them are presented in _Jupyter notebooks_, that are run online to avoid installation and hardware requirement issues.
@@ -57,9 +70,11 @@ It is free to use and modify under a Creative Commons licence (CC BY-NC-SA 4.0) 
 ## Statement of need
 Latin American public universities face two simultaneous constrains: tight budgets and the need to accommodate their classes' schedules to day-working students [@vallejoGoogle:2022].
 These cash-stripped universities seldom avail computing resources for courses that are not directly related to computer science or programming. 
-Also, as undergraduate programs on engineering at Latin American universities are usually longer than the three-years bachelors at their Anglo-Saxon counterparts, it is quite common that students are already inserted into the labour market while studying, so they have a tight schedule and are not able to attend to the university during daytime hours. 
+Also, as undergraduate programs on engineering at Latin American universities are usually longer than the three-year bachelor's degrees at their Anglo-Saxon counterparts, it is quite common for students to already be part of the labour market while studying. 
+As a result, they have tight schedules and are often unable to attend to university during daytime hours. 
 <!--
-Ojalá fuera cierto. Sinceramiento: ni saben que existen las alternativas de software libre. Authorities of these cash-stripped universities often ask that any solution to introduce students to coding skills should be based upon open-source fee-free resources.
+Ojalá fuera cierto. Sinceramiento: ni saben que existen las alternativas de software libre. 
+Authorities of these cash-stripped universities often ask that any solution to introduce students to coding skills should be based upon open-source fee-free resources.
 -->
 
 <!--
@@ -78,28 +93,25 @@ Unicamp, Brasil, 10 semestres
 https://www.dac.unicamp.br/sistemas/catalogos/grad/catalogo2023/cursos/10g/sugestao.html
 -->
 
-The course presented addresses those issues by providing a free, online, and asynchronous learning environment that allows students to study at their own pace through the flipped classroom approach.
+The course presented addresses those issues by providing a free, online, and asynchronous learning environment allowing students to study at their own pace through the flipped classroom approach [@morarosFlipping:2015].
 In advance to weekly meetings, students are required to study the theory and examples provided in the notebooks, as well as to initiate solving the accompanying exercises.
-During those evening meetings, either online or in presence, students are encouraged to ask questions and discuss the problems they could not solve with the teaching staff.
+During those evening meetings, whether online or in person, students are encouraged to ask questions and discuss the problems they could not solve with the teaching staff.
 
 
 ## Basis for the syllabus
-Traditionally, systems dealt with at analytical mechanics courses are as simple as possible in order to limit the extent of the mathematical work required. 
-So, modelling of multiple machine parts is seldom undertaken as that would lead to a level of complexity sometimes untenable by students and teaching staff working on the blackboard or paper.
-This course aims to avoid this pitfall by taking advantage of the relative simple syntax of modern programming languages for tackling mathematical problems.
-This allows to rapidly introduce the students to life-like problems avoiding oversimplifications.
-<!--
-Such over-simplification leads to a complexity jump at the time more realistic systems are needed to be dealt at later courses of the mechanical engineering curricula. 
+Traditionally, systems addressed in analytical mechanics courses are as simple as possible in order to limit the extent of the mathematical work required. 
+So, modelling of multiple machine parts is seldom undertaken, as that would lead to a level of complexity sometimes untenable for students and teaching staff working on the blackboard or paper.
+This course aims to avoid this pitfall by taking advantage of the relative simple syntax of modern programming languages to tackle mathematical problems.
+In this way it is possible to rapidly introduce life-like problems avoiding oversimplifications to the students.
 
-Yet knowledge and practice not only on numerical analysis, but also on programming as a tool, were seldom exploited at UNLaM to address this issue. 
--->
 
 The required modelling as well as algebraic and calculus operations to generate the Euler-Lagrange differential equations are performed using [_physics.mechanics_](https://docs.sympy.org/latest/modules/physics/mechanics/), the symbolics dynamics sub-package of the _SymPy_ library.
 Its code was ported from the [_PyDy_ library](https://www.pydy.org/history.html), a replacement of [_Autolev_](https://link.springer.com/chapter/10.1007/978-3-642-50995-7_7) a commercial software that instrumentalised the [Kane's method](https://ecommons.cornell.edu/items/1f0e5629-0caa-4be2-8384-8869eb9e4fac).
 As [stated in the online textbook](https://moorepants.github.io/learn-multibody-dynamics/introduction.html#choice-of-dynamics-formalism)
  for the Multibody Dynamics course at TU Delft, a successor to the one _PyDy_ was developed for, this method avoids accounting for non-conservative forces with Lagrange's multipliers, but it requires modelling forces in the system.
- Our choice was instead to make students model systems solely by its energy, a more traditional approach, in order to immerse into a radically different way to solve mechanical problems in their first contact with the subject of analytical mechanics.
- We think that later on, if they face problems requiring a more efficient method, they will be able to apply these other less abstract methods.
+ Our choice was instead to make students model systems solely by their energy, a more traditional approach, in order to immerse them into a radically different way of solving mechanical problems in their first contact with the subject of analytical mechanics.
+ We think that when facing problems requiring a more efficient method, they will be able to apply such other less abstract methods.
+ 
  
 <!--
 A successor to the course for which _PyDy_ was developed, [TU Delft's Multibody Dynamics](https://moorepants.github.io/me41055/), has an [online textbook that states the choice of this method](https://moorepants.github.io/learn-multibody-dynamics/introduction.html#choice-of-dynamics-formalism) to avoid introducing virtual motion concepts and the need of Lagrange multipliers to handle constrains while deriving equations of motion.
@@ -108,10 +120,10 @@ A successor to the course for which _PyDy_ was developed, [TU Delft's Multibody 
 <!--, previously used at the [UC ' Multibody Dynamics course](https://moorepants.github.io/mae223/).
 -->
 
-Although _physics.mechanics_ provides functionality for deriving equations of motion using [Lagrange’s method](https://docs.sympy.org/latest/modules/physics/mechanics/lagrange.html), this course aims for the student to follow the standard mathematical notation and procedures to produce them in the same way they would have done on paper.
-The idea is to make the student can verify each step of the process and only later rely on functions that made around these steps avoiding any _black box_ unbeknown to them.
+Although _physics.mechanics_ provides functionality for deriving equations of motion using [Lagrange’s method](https://docs.sympy.org/latest/modules/physics/mechanics/lagrange.html), this course aims for the student to follow the standard mathematical notation and procedures, as they would have done on paper.
+The idea is to ensure that students can verify each step of the process and only later rely on functions built around these steps, avoiding any _black box_.
 
-We want to emphasise that the course is not about teaching programming, nor about high-performance modelling of mechanical systems.
+We would like to emphasise that the course is not about teaching programming, nor about high-performance modelling of mechanical systems.
 The aim of employing the computer is to free-up students from the repetitive nature of the calculations, so they can focus on the physical aspects of the problems.
 The deliberate decision that everything get solved by code, even the earliest examples, aims to reinforce the advice given to students to avoid solving the initial problem sets on paper. 
 Some students did so at earlier editions of the course did so only to got stuck while solving later more complex problems without the computer help.

@@ -47,8 +47,8 @@ This 16-week flipped classroom [@bishop2013flipped:2013] course provides skills 
 <!--  Modificado MAR_20240830
 Each example and practice exercise are solved using computer-based analytical and numerical calculations with the aim to deflect students' focus of attention away from repetitive mathematical tasks towards the physics modelling.
 -->
-Each example and practice exercise is solved using computer-based analytical and numerical calculations focusing students' attenttion on physics modelling and not on repetitive mathematical tasks.
-This approach also aims to improve creativity, the studens have to solve problems by trial and error [@freiberg2021creatividad:2021].
+Each example and practice exercise is solved using computer-based analytical and numerical calculations focusing students' attention on physics modelling and not on repetitive mathematical tasks.
+This approach also aims to improve creativity, the students have to solve problems by trial and error [@hoffmann_creatividad_2021:2021].
 
 <!--  Agregé la frase anterior en función del siguiente trabajo:
 Cita de freiberg2021creatividad:2021
@@ -68,7 +68,7 @@ It is free to use and modify under a Creative Commons licence (CC BY-NC-SA 4.0) 
 
 
 ## Statement of need
-Latin American public universities face two simultaneous constrains: tight budgets and the need to accommodate their classes' schedules to day-working students [@vallejoGoogle:2022].
+Latin American public universities face two simultaneous constrains: tight budgets and the need to accommodate their classes' schedules to day-working students [@vallejo_google_2022:2022].
 These cash-stripped universities seldom avail computing resources for courses that are not directly related to computer science or programming. 
 Also, as undergraduate programs on engineering at Latin American universities are usually longer than the three-year bachelor's degrees at their Anglo-Saxon counterparts, it is quite common for students to already be part of the labour market while studying. 
 As a result, they have tight schedules and are often unable to attend to university during daytime hours. 
@@ -93,7 +93,7 @@ Unicamp, Brasil, 10 semestres
 https://www.dac.unicamp.br/sistemas/catalogos/grad/catalogo2023/cursos/10g/sugestao.html
 -->
 
-The course presented addresses those issues by providing a free, online, and asynchronous learning environment allowing students to study at their own pace through the flipped classroom approach [@morarosFlipping:2015].
+The course presented addresses those issues by providing a free, online, and asynchronous learning environment allowing students to study at their own pace through the flipped classroom approach [@moraros_flipping_2015:2015].
 In advance to weekly meetings, students are required to study the theory and examples provided in the notebooks, as well as to initiate solving the accompanying exercises.
 During those evening meetings, whether online or in person, students are encouraged to ask questions and discuss the problems they could not solve with the teaching staff.
 
@@ -107,7 +107,7 @@ In this way it is possible to rapidly introduce life-like problems avoiding over
 Yet knowledge and practice not only on numerical analysis, but also on programming as a tool, were seldom exploited at UNLaM to address this issue. 
 -->
 
-The required modelling as well as algebraic and calculus operations to generate the Euler-Lagrange differential equations are performed using [_physics.mechanics_](https://docs.sympy.org/latest/modules/physics/mechanics/), the symbolics dynamics sub-package of the _SymPy_ library.
+The required modelling as well as algebraic and calculus operations to generate the Euler-Lagrange differential equations are performed using [_physics.mechanics_](https://docs.sympy.org/latest/modules/physics/mechanics/), the symbolic dynamics sub-package of the _SymPy_ library [@10.7717/peerj-cs.103:2017].
 Its code was ported from the [_PyDy_ library](https://www.pydy.org/history.html), a replacement of _Autolev_ [@levinson_autolev_1990:1990],a commercial software that instrumentalised the Kane's method [@kane_dynamics_1985:1985].
 As stated in the online textbook for the [Multibody Dynamics course at TU Delft](https://moorepants.github.io/me41055), a successor to the one _PyDy_ was developed for, this method avoids accounting for non-conservative forces with Lagrange's multipliers, but it requires modelling forces in the system [@jason_k_moore_learn_2024:2024].
  Our choice was instead to make students model systems solely by their energy, a more traditional approach, in order to immerse them into a radically different way of solving mechanical problems in their first contact with the subject of analytical mechanics.

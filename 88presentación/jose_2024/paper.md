@@ -103,13 +103,13 @@ Traditionally, systems addressed in analytical mechanics courses are as simple a
 So, modelling of multiple machine parts is seldom undertaken, as that would lead to a level of complexity sometimes untenable for students and teaching staff working on the blackboard or paper.
 This course aims to avoid this pitfall by taking advantage of the relative simple syntax of modern programming languages to tackle mathematical problems.
 In this way it is possible to rapidly introduce life-like problems avoiding oversimplifications to the students.
-<--
+<!--
 Yet knowledge and practice not only on numerical analysis, but also on programming as a tool, were seldom exploited at UNLaM to address this issue. 
 -->
 
 The required modelling as well as algebraic and calculus operations to generate the Euler-Lagrange differential equations are performed using [_physics.mechanics_](https://docs.sympy.org/latest/modules/physics/mechanics/), the symbolics dynamics sub-package of the _SymPy_ library.
-Its code was ported from the [_PyDy_ library](https://www.pydy.org/history.html), a replacement of _Autolev_ [levinson_autolev_1990:1990],a commercial software that instrumentalised the Kane's method [kane_dynamics_1985:1985].
-As stated in the online textbook for the [Multibody Dynamics course at TU Delft](https://moorepants.github.io/me41055), a successor to the one _PyDy_ was developed for, this method avoids accounting for non-conservative forces with Lagrange's multipliers, but it requires modelling forces in the system [jason_k_moore_learn_2024:2024].
+Its code was ported from the [_PyDy_ library](https://www.pydy.org/history.html), a replacement of _Autolev_ [@levinson_autolev_1990:1990],a commercial software that instrumentalised the Kane's method [@kane_dynamics_1985:1985].
+As stated in the online textbook for the [Multibody Dynamics course at TU Delft](https://moorepants.github.io/me41055), a successor to the one _PyDy_ was developed for, this method avoids accounting for non-conservative forces with Lagrange's multipliers, but it requires modelling forces in the system [@jason_k_moore_learn_2024:2024].
  Our choice was instead to make students model systems solely by their energy, a more traditional approach, in order to immerse them into a radically different way of solving mechanical problems in their first contact with the subject of analytical mechanics.
  We think that when facing problems requiring a more efficient method, they will be able to apply such other less abstract methods.
  

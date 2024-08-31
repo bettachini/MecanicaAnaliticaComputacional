@@ -175,7 +175,7 @@ The number of exercises in each problem set, while still being illustrative of t
 Those of units 8, 9 and 11 are exceptions, requiring two weeks each, as they deal with subjects that had shown to be somewhat more demanding to students.
 
 Two further weeks complete a 16-week schedule.
-These are reserved not only for the students to submit overdue exercises but, mainly, to perform an oral presentation on how they solved a final project.  
+These are reserved not only for the students to submit overdue exercises but, mainly, to perform an oral presentation on how they solved a final project.
 Its aim is to calculate torques and forces that the motors of a simplified factory robotic arm should apply to make it perform a sequence of movements.
 As it requires the student to master the skills acquired during the first nine units, its statement is presented at the second week for that unit.
 This arrangement gives enough time for the students to consult on its difficulties and prepare the presentation.

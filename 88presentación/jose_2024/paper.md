@@ -108,9 +108,8 @@ Yet knowledge and practice not only on numerical analysis, but also on programmi
 -->
 
 The required modelling as well as algebraic and calculus operations to generate the Euler-Lagrange differential equations are performed using [_physics.mechanics_](https://docs.sympy.org/latest/modules/physics/mechanics/), the symbolics dynamics sub-package of the _SymPy_ library.
-Its code was ported from the [_PyDy_ library](https://www.pydy.org/history.html), a replacement of [_Autolev_](https://link.springer.com/chapter/10.1007/978-3-642-50995-7_7) a commercial software that instrumentalised the [Kane's method](https://ecommons.cornell.edu/items/1f0e5629-0caa-4be2-8384-8869eb9e4fac).
-As [stated in the online textbook](https://moorepants.github.io/learn-multibody-dynamics/introduction.html#choice-of-dynamics-formalism)
- for the Multibody Dynamics course at TU Delft, a successor to the one _PyDy_ was developed for, this method avoids accounting for non-conservative forces with Lagrange's multipliers, but it requires modelling forces in the system.
+Its code was ported from the [_PyDy_ library](https://www.pydy.org/history.html), a replacement of _Autolev_ [levinson_autolev_1990:1990],a commercial software that instrumentalised the Kane's method [kane_dynamics_1985:1985].
+As stated in the online textbook for the [Multibody Dynamics course at TU Delft](https://moorepants.github.io/me41055), a successor to the one _PyDy_ was developed for, this method avoids accounting for non-conservative forces with Lagrange's multipliers, but it requires modelling forces in the system [jason_k_moore_learn_2024:2024].
  Our choice was instead to make students model systems solely by their energy, a more traditional approach, in order to immerse them into a radically different way of solving mechanical problems in their first contact with the subject of analytical mechanics.
  We think that when facing problems requiring a more efficient method, they will be able to apply such other less abstract methods.
  

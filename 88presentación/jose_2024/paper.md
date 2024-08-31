@@ -130,7 +130,7 @@ The aim of employing the computer is to free-up students from the repetitive nat
 The deliberate decision that everything get solved by code, even the earliest examples, aims to reinforce the advice given to students to avoid solving the initial problem sets on paper. 
 Some students did so at earlier editions of the course did so only to got stuck while solving later more complex problems without the computer help.
 By slight modifications over the Python code presented by the teaching staff, students build their own library of solutions to address mechanical modelling challenges.
-Once the students generate the Euler-Lagrange equations, their numerical solutions are obtained using the _Scipy_ library [@sciPyNMeth:2020], and plotted using _Matplotlib_[@HunterMatplotlib:2007] to better understand the physical implications of the solutions.
+Once the students generate the Euler-Lagrange equations, their numerical solutions are obtained using the _Scipy_ library [@sciPyNMeth:2020], and plotted using _Matplotlib_ [@HunterMatplotlib:2007] to better understand the physical implications of the solutions.
 <!--
 ¿Se incluyen referencias a bibliotecas? ¿Hacen eso en artículos de JOSE?
 -->

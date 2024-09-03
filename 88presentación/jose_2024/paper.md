@@ -43,7 +43,7 @@ lang: "en-GB"
 # Summary
 
 We present a code-based undergraduate course on analytical mechanics for engineering students with little to no prior programming knowledge.
-This 16-week flipped classroom [@bishop2013flipped:2013] course provides skills to calculate dynamics and strains of simple mechanical devices modelled as rigid bodies by solving Euler-Lagrange equations.
+This 16-week flipped classroom [@bishop2013flipped:2013] course provides skills to calculate dynamics and strains of simple mechanical devices, modelled as rigid bodies by solving Euler-Lagrange equations.
 <!--  Modificado MAR_20240830
 Each example and practice exercise are solved using computer-based analytical and numerical calculations with the aim to deflect students' focus of attention away from repetitive mathematical tasks towards the physics modelling.
 -->
@@ -58,9 +58,8 @@ Para mejorar el rendimiento académico se necesita aplicar estrategias de enseñ
 De esta manera, el aprendizaje Profundo se encuentra estrechamente relacionado con un tipo de enseñanza basada en su conocimiento previo, la puesta en práctica a través de pruebas de ensayo y error, y la evaluación holística de los contenidos, entre otras cosas (Biggs & Tang, 2011).
 -->
 
-
-The course addresses specific regional issues of third-year Latin American students (mid-career), that by then have learned how to solve ordinary differential equations. 
-Theory and examples exercises alongside the _Python_ code that solves them are presented in _Jupyter notebooks_, that are run online to avoid installation and hardware requirement issues.
+The course addresses specific regional issues faced by third-year Latin American students (mid-career), that by then have learned how to solve ordinary differential equations.
+Theory and examples exercises, along with the _Python_ code that solves them are presented in _Jupyter notebooks_ run online to avoid installation and hardware requirement issues.
 Currently, the material is available in a GitHub repository in Spanish and has only been partially translated into English.
 <!--
 It is free to use and modify under a Creative Commons licence (CC BY-NC-SA 4.0) for the community is encouraged to contribute to its translation and improvement.
@@ -99,7 +98,7 @@ During those evening meetings, whether online or in person, students are encoura
 
 
 ## Basis for the syllabus
-Traditionally, systems addressed in analytical mechanics courses are as simple as possible in order to limit the extent of the mathematical work required. 
+Traditionally, systems addressed in analytical mechanics courses are kept as simple as possible, to limit the extent of the mathematical work required.
 So, modelling of multiple machine parts is seldom undertaken, as that would lead to a level of complexity sometimes untenable for students and teaching staff working on the blackboard or paper.
 This course aims to avoid this pitfall by taking advantage of the relative simple syntax of modern programming languages to tackle mathematical problems.
 In this way it is possible to rapidly introduce life-like problems avoiding oversimplifications to the students.
@@ -110,7 +109,7 @@ Yet knowledge and practice not only on numerical analysis, but also on programmi
 The required modelling as well as algebraic and calculus operations to generate the Euler-Lagrange differential equations are performed using [_physics.mechanics_](https://docs.sympy.org/latest/modules/physics/mechanics/), the symbolic dynamics sub-package of the _SymPy_ library [@10.7717/peerj-cs.103:2017].
 Its code was ported from the [_PyDy_ library](https://www.pydy.org/history.html), a replacement of _Autolev_ [@levinson_autolev_1990:1990],a commercial software that instrumentalised the Kane's method [@kane_dynamics_1985:1985].
 As stated in the online textbook for the [Multibody Dynamics course at TU Delft](https://moorepants.github.io/me41055), a successor to the one _PyDy_ was developed for, this method avoids accounting for non-conservative forces with Lagrange's multipliers, but it requires modelling forces in the system [@jason_k_moore_learn_2024:2024].
- Our choice was instead to make students model systems solely by their energy, a more traditional approach, in order to immerse them into a radically different way of solving mechanical problems in their first contact with the subject of analytical mechanics.
+ Our choice was instead to make students model systems solely by their energy, a more traditional approach, in order to immerse them into a radically different way of solving mechanical problems in their first contact with analytical mechanics.
  We think that when facing problems requiring a more efficient method, they will be able to apply such other less abstract methods.
  
  
@@ -126,8 +125,8 @@ The idea is to ensure that students can verify each step of the process and only
 
 We would like to emphasise that the course is not about teaching programming, nor about high-performance modelling of mechanical systems.
 The aim of employing the computer is to free-up students from the repetitive nature of the calculations, so they can focus on the physical aspects of the problems.
-The deliberate decision that everything get solved by code, even the earliest examples, aims to reinforce the advice given to students to avoid solving the initial problem sets on paper. 
-Some students did so at earlier editions of the course did so only to got stuck while solving later more complex problems without the computer help.
+The deliberate decision that everything get solved by code, even the earliest examples, aims to reinforce the advice given to students to avoid solving the initial problem sets on paper.
+Some students did so at earlier editions of the course, only to got stuck later while solving more complex problems without the computer help.
 By slight modifications over the Python code presented by the teaching staff, students build their own library of solutions to address mechanical modelling challenges.
 Once the students generate the Euler-Lagrange equations, their numerical solutions are obtained using the _Scipy_ library [@sciPyNMeth:2020], and plotted using _Matplotlib_ [@HunterMatplotlib:2007] to better understand the physical implications of the solutions.
 <!--
@@ -170,7 +169,8 @@ Also, accompanied by a set of examples, including functions to be modified by th
 -->
 Each folder contains Jupyter notebooks with the required theory for the unit subject alongside the code that solves example exercises.
 The students only need to modify that code to solve the exercises proposed at the accompanying problem sets.
-These are provided in PDF format alongside their LaTeX source and figure files allowing their customisation.
+It is worth mentioning that many problems are modifications of problems presented in the course bibiography, and that they are cited, to help the students follow possible issues and to induce them to further use the textbooks.
+The problem sets are provided in PDF format alongside their LaTeX source and figure files, allowing their customisation.
 The number of exercises in each problem set, while still being illustrative of the variety of the unit subject applications, is kept small in order to make their solving mandatory on a weekly basis.
 Those of units 8, 9 and 11 are exceptions, requiring two weeks each, as they deal with subjects that had shown to be somewhat more demanding to students.
 
@@ -185,18 +185,18 @@ The oral examination is intended to gauge the students' learning, not only on th
 
 ## Implementation
 The _Google Colaboratory_ service allows students to read and execute Jupyter notebooks, as it currently demands no payment and can be accessed from any internet browser.
-At _UNLaM_, the university where the course is taught, _SageMaker StudioLab_, _GitHub Codespaces_, _Cocalc_ or indeed _Kaggle_ had also been tested for this purpose but _Colab_, as is commonly known, is currently used as it provides a useful feature for students to pose questions by the way of side-notes to each cell of the notebooks.
-Teaching staff can con reply them individually, and students can re-reply thus providing an asynchronous interaction channel in between the weekly synchronic meetings.
+At _UNLaM_, the university where the course is taught, _SageMaker StudioLab_, _GitHub Codespaces_, _Cocalc_ or indeed _Kaggle_ had also been tested for this purpose. Nevertheless, Colab, as it is commonly known, is currently used because it provides a useful feature for students to pose questions via side-notes to each cell of the notebooks.
+Teaching staff can reply them individually, and students can re-reply, thus providing an asynchronous interaction channel in between the weekly synchronic meetings.
 
 Students are required to submit their solution to the complete course's problem sets.
 _MS Teams_ is used to assign and keep track of student's work, but any LMS, such as the open source _Moodle_, can fulfil this task.
 Teaching staff check the submissions and, if required, returns them with comments to correct them.
 This way, students are encouraged to solve all exercises, as they are mandatory to pass the course, and to ask for help when they are stuck.
 
-
 ## Conclusions
-The mechanical engineering programme is relatively new at UNLaM, so the number of students per class is still low, around eight, thus still allowing this personalised tracking of student's progress.
-Larger audiences will provide a challenge, probably requiring to include new teaching assistants as well as introducing automatic grading, to somewhat stick to this methodology.
+
+The mechanical engineering programme is relatively new at UNLaM, so the number of students per class is still low, around eight, thus allowing personalised tracking of student's progress.
+Larger audiences will provide a challenge, probably requiring to include new teaching assistants as well as introducing automatic grading, to somewhat keep the current methodology.
 <!--
 ## Balance of the methodology
 This course differs from conventional ones by being:
@@ -233,9 +233,11 @@ Additionally, students express interest in the final examination as it provides 
 In relation to the flipped classroom model, students acknowledge that it requires a grater effort, but a majority of them agree that it is a positive and beneficial implementation.
 This is in line with previous research on the flipped classroom model for advances mechanical engineering courses [@mason_comparing_2013].
 
-
 The authors are confident that the methodology employed in this course offers greater practical utility to students in subsequent subjects and their professional lives, surpassing the benefits of a traditional course.
 
+# Aknowledgments
+
+The authors would like to thank DIIT-UNLaM for its support  and grant C2-ING-109 (2023-2024). __Probablemente Edgardo quiera sumar algo acá de UTN?__
 <!--
 Citations to entries in paper.bib should be in
 [rMarkdown](http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html)
@@ -250,9 +252,6 @@ For a quick reference, the following citation commands can be used:
 
 Figures can be included like this: ![Example figure.](figure.png)
 
-# Acknowledgements
 
-We acknowledge contributions from Brigitta Sipocz, Syrtis Major, and Semyeong
-Oh, and support from Kathryn Johnston during the genesis of this project.
 -->
 # References

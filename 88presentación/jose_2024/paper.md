@@ -43,7 +43,7 @@ lang: "en-GB"
 
 # Summary
 We present a code-based undergraduate course on analytical mechanics for engineering students with little to no prior programming knowledge.
-This 16-week flipped classroom [@bishop2013_flipped_2013:2013] course provides skills to calculate dynamics and strains of simple mechanical devices, modelled as rigid bodies by solving Euler-Lagrange equations.
+This 16-week flipped classroom [@bishop_flipped_2013:2013] course provides skills to calculate dynamics and strains of simple mechanical devices, modelled as rigid bodies by solving Euler-Lagrange equations.
 <!--  Modificado MAR_20240830
 Each example and practice exercise are solved using computer-based analytical and numerical calculations with the aim to deflect students' focus of attention away from repetitive mathematical tasks towards the physics modelling.
 -->
@@ -233,7 +233,7 @@ In summary, this course combines code-based exploration with a flipped classroom
 For the time being, feedback from students consistently indicates a high level of satisfaction with this course, especially with its code-driven aspect.
 Additionally, students express interest in the final examination as it provides an opportunity to apply both their presentation skills and the knowledge acquired throughout the course.
 In relation to the flipped classroom model, students acknowledge that it requires a greater effort, but a majority of them agree that it is a positive and beneficial implementation.
-This is in line with previous research on the flipped classroom model for advanced mechanical engineering courses [@mason_comparing_2013].
+This is in line with previous research on the flipped classroom model for advanced mechanical engineering courses [@masonComparing:2013].
 
 The authors are confident that the methodology employed in this course offers greater practical utility to students in subsequent subjects and their professional lives, surpassing the benefits of a traditional course.
 

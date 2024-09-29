@@ -34,7 +34,6 @@ bibliography: paper.bib
 lang: "en-GB"
 ---
 
-
 <!--  Notas sobre modificaciones y cambios realizados
 1. single-degree, single degree: ver nota de estilo de PR. También libro Fasano. Lo usaría como "single degree".
 2. "constraint forces", en Fasano, et al aparece como "constraint reaction" y luego lo llaman fuerza (p. 77)
@@ -43,7 +42,6 @@ lang: "en-GB"
 
 
 # Summary
-
 We present a code-based undergraduate course on analytical mechanics for engineering students with little to no prior programming knowledge.
 This 16-week flipped classroom [@bishop2013_flipped_2013:2013] course provides skills to calculate dynamics and strains of simple mechanical devices, modelled as rigid bodies by solving Euler-Lagrange equations.
 <!--  Modificado MAR_20240830
@@ -116,7 +114,6 @@ As stated in the online textbook for the [Multibody Dynamics course at TU Delft]
  Our choice was instead to make students model systems solely by their energy, a more traditional approach, in order to immerse them into a radically different way of solving mechanical problems in their first contact with analytical mechanics.
  We think that when facing problems requiring a more efficient method, they will be able to apply such other less abstract methods.
  
- 
 <!--
 A successor to the course for which _PyDy_ was developed, [TU Delft's Multibody Dynamics](https://moorepants.github.io/me41055/), has an [online textbook that states the choice of this method](https://moorepants.github.io/learn-multibody-dynamics/introduction.html#choice-of-dynamics-formalism) to avoid introducing virtual motion concepts and the need of Lagrange multipliers to handle constrains while deriving equations of motion.
 [Kane's book](https://ecommons.cornell.edu/items/1f0e5629-0caa-4be2-8384-8869eb9e4fac) preface states that by focusing on motions instead of the physical configuration of the system, his method maximises physical insight.
@@ -146,7 +143,6 @@ Their numerical solutions are obtained using Scipy, and the plotting of results 
 Integrar lo siguiente, tal vez no sea buena idea. No se si aporta algo.
 As illustrated by ![Figure 1](kineticExcerpt.png), anytime a repetitive task is identified, it is presented to students as a good candidate to be automated by a function.
 -->
-
 
 
 
@@ -189,7 +185,7 @@ The oral examination is intended to gauge the students' learning, not only on th
 
 
 ## Implementation
-The _Google Colaboratory_ service allows students to read and execute Jupyter notebooks, as it currently demands no payment and can be accessed from any internet browser.
+The _Google Colaboratory_ service, commonly known as _Colab_, allows students to read and execute Jupyter notebooks, as it currently demands no payment and can be accessed from any internet browser.
 At _UNLaM_, the university where the course is taught, _SageMaker StudioLab_, _GitHub Codespaces_, _Cocalc_ or indeed _Kaggle_ had also been tested for this purpose. Nevertheless, Colab, as it is commonly known, is currently used because it provides a useful feature for students to pose questions via side-notes to each cell of the notebooks.
 Teaching staff can reply to them individually, and students can re-reply, thus providing an asynchronous interaction channel in between the weekly synchronic meetings.
 
@@ -201,7 +197,6 @@ This way, students are encouraged to solve all exercises, as they are mandatory 
 
 
 ## Conclusions
-
 The mechanical engineering programme is relatively new at UNLaM, so the number of students per class is still low, around eight, thus allowing personalised tracking of student's progress.
 Larger audiences will provide a challenge, probably requiring to include new teaching assistants as well as introducing automatic grading, to somewhat keep the current methodology.
 <!--
@@ -245,23 +240,11 @@ The authors are confident that the methodology employed in this course offers gr
 
 
 # Aknowledgments
-
-The authors would like to thank DIIT-UNLaM for its support  and grant C2-ING-109 (2023-2024). __Probablemente Edgardo quiera sumar algo acá de UTN?__
+The authors would like to thank DIIT-UNLaM for its support  and grant C2-ING-109 (2023-2024).
 <!--
-Citations to entries in paper.bib should be in
-[rMarkdown](http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html)
-format.
+ __Probablemente Edgardo quiera sumar algo acá de UTN?__
 
-For a quick reference, the following citation commands can be used:
-- `@author:2001`  ->  "Author et al. (2001)"
-- `[@author:2001]` -> "(Author et al., 2001)"
-- `[@author1:2001; @author2:2001]` -> "(Author1 et al., 2001; Author2 et al., 2002)"
-
-# Figures
-
-Figures can be included like this: ![Example figure.](figure.png)
 -->
-
 
 
 # References

@@ -8,6 +8,14 @@
 \ProvidesClass{fodami}[2025/02/15 FODAMI paper class]
 \LoadClass[a4paper,10pt]{article}       % Basado en la clase article
 
+%---------- IDIOMA -------------------------------------------------------------
+\RequirePackage[utf8]{inputenc}         % codificación de entrada: utf-8
+\RequirePackage[T1]{fontenc}            % codificación de fuente de salida
+\RequirePackage{lmodern}                % fuente compatible
+\RequirePackage[spanish,es-tabla,es-lcroman]{babel}% español+cambia Cuadro por Tabla
+\DeclareUnicodeCharacter{2212}{\ensuremath{-}}
+\def\andname{,}                         % default: \def{andname}{and}
+
 %---------- BIBLIOGRAFÍA: citar y referenciar ----------------------------------
 \RequirePackage[backend=biber,style=apa,sorting=none,citestyle=numeric]{biblatex}
 \DeclareFieldFormat{labelnumberwidth}{\mkbibbrackets{#1}}
@@ -27,13 +35,7 @@
   {\item}
 \addbibresource{referenciasFODAMI.bib}  % importa archivo con bibliografía
 
-%---------- IDIOMA -------------------------------------------------------------
-\RequirePackage[utf8]{inputenc}         % codificación de entrada: utf-8
-\RequirePackage[T1]{fontenc}            % codificación de fuente de salida
-\RequirePackage{lmodern}                % fuente compatible
-\RequirePackage[spanish,es-tabla,es-lcroman]{babel}% español+cambia Cuadro por Tabla
-\DeclareUnicodeCharacter{2212}{\ensuremath{-}}
-\def\andname{,}                         % default: \def{andname}{and}
+
 
 %---------- SÍMBOLOS MATEMÁTICOS -----------------------------------------------
 \RequirePackage{amsmath,amssymb,amsfonts,amsthm,mathtools}

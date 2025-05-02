@@ -1,0 +1,17 @@
+Resumen:
+
+...
+
+La segunda experiencia aplicó metodologías similares en las unidades de electrostática de un curso de introducción al electromagnetismo, permitiendo a estudiantes analizar distribuciones de carga contínuas mediante cálculos simbólicos y numéricos en Google Colaboratory. Los resultados destacan una mayor comprensión conceptual sin depender de técnicas matemáticas avanzadas.
+
+...
+
+
+----
+
+Autoplagio?
+
+----
+
+Diferenciar el nivel de código en ambos cursos:
+se puede aplicar la metodología a cursos con estudiantes en niveles iniciales, sin pretender que entiendan el código, pero sin perder la utilidad de sus producciones (se puede reutilizar en el futuro).

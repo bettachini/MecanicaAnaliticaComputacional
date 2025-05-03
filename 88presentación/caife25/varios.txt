@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 Los trabajos deben tener una extensión mínima de 6 (seis) páginas y máxima 12 (doce) páginas.
 
 -------
 
+=======
+>>>>>>> 42aec85ac1486e524c879581ac8341c11e841f49
 Resumen:
 
 ...

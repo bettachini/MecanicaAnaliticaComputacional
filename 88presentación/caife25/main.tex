@@ -88,78 +88,92 @@ Ambos casos subrayan cómo la programación accesible (Python) y entornos intera
 
 \section{INTRODUCCIÓN}
 
+\subsection{Mecánica computacional en asignaturas de física}
+En las carreras de ingeniería mecánica las asignaturas de física usualmente tienen por correlativas previas asignaturas de matemática, y como inmediatamente posteriores asignaturas donde se aplican algunos de estos conceptos en sistemas simples.
 
-
-
-\paragraph{Mecánica computacional en asignaturas de física}
-En las carreras de ingeniería las asignaturas de física tienen por correlativas previas asignaturas de matemática, e inmediatamente posteriores asignaturas donde se aplican algunos de estos conceptos en sistemas simples de la carrera de ingeniería en cuestión.
-Como muestra el ejemplo de la figura \ref{fig:correlativasUNLaM}, en una asignatura de mecánica se aplican a asignaturas de mecánica de fluidos,  
-De manera similar en una de electrónica, previo a los primeros cursos de circuitos se trata de explicar el funcionamiento de dispositivos electrónicos discretos fundamentados en la mecánica cuántica y electrostática con base en lo visto en asignaturas de física moderna y electromagnetismo.
+La figura \ref{fig:correlativasUNLaM} ilustra el caso para la asignatura destinada a la mecánica analítica en la Universidad de La Matanza (UNLaM), en la que se dicta el formalismo Lagrangiano para el cálculo de esfuerzos y dinámica de sistemas de cuerpos rígidos simples.
+Tal herramienta encuentra aplicación inmediata en las asignaturas inmediatamente correlativas destinadas a la mecánica de fluidos, el estudio de vibraciones y la dinámica de elementos de máquinas. 
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.6\textwidth]{../figuras/correlativas.pdf}
 	\caption{
-		Correlativas de la asignatura ``Mecánica general'' de la carrera de ingeniería mecánica de la UNLaM.
-		Este curso de mecánica analítica es el umbral entre los otros de física y matemática hacia los más específicos de la carrera.  
+		La asignatura de mecánica analítica de la UNLaM es el umbral entre los otros de física y matemática hacia los más específicos de la carrera.  
 		}
 	\label{fig:correlativasUNLaM}
 \end{figure}
 
+En el caso que ilustra la figura \ref{fig:correlativasUTN} de una asignatura aún más temprana en el plan de la carrera en la Facultad Regional Avellaneda de la Universidad Tecnológica Nacional (UTN-FRA), en que se dictan los rudimentos de electrotécnica, dichos conocimientos encuentran aplicación en correlativas destinadas a ensayos y mediciones en la industria, así como a dispositivos de electrotecnia y electrónica industrial.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.6\textwidth]{../figuras/utn_fra_ingMec_correlativasF2.pdf}
+	\caption{
+		En UTN-FRA la primera asignatura con temática de electromagnetismo abre el camino a otras en que esta se aplica a dispositivos industriales de electrotecnia y electrónica.
+		Se muestran solo las correlativas con aplicación inmediata de conceptos de electromagnetismo. 
+		}
+	\label{fig:correlativasUTN}
+\end{figure}
+
+Tradicionalmente, existe un salto grande en la complejidad de los sistemas físicos analizados en dichos cursos y aquellos analizados en las asignaturas inmediatamente correlativas.
+Una de las razones de esta dificultad es que los alumnos debieran ser capaces de plantear y resolver múltiples ecuaciones del cálculo integro-diferencial en el acotado tiempo de la clase o en el tiempo de estudio en sus casas careciendo en muchos casos de la experiencia suficiente en la aplicación de dicha herramienta en casos que no son los más básicos ejercitados en asignaturas de matemática.
+
+Entendemos que esta falencia puede suplirse introduciendo en las asignaturas de física la mecánica computacional.
+Esta disciplina conjuga la matemática, las distintas ramas de la física y herramientas de ciencias de la computación para explicar y modificar las relaciones entre la dinámica que presentan sistemas de objetos físicos de diversa composición ante diversos forzantes externos.
+
+Pero para explotar esta herramienta entendemos que se necesita de dos condiciones:
+1) desplazar el pizarrón y papel como sustrato del trabajo del docente y el alumno,
+2) no depender de un software específico que limite la posibilidad de adaptar las soluciones y utilizar el código como una herramienta de trabajo. 
 
 
 
-Pero hay un salto grande en el nivel de complejidad entre la física que se enseña en los cursos de física y la física que se aplica en los cursos de ingeniería.
-
-
-\paragraph{Aprovechar código no es programar}
-
-
-\paragraph{El código es el mejor acople con LLMs}
-
-
-
-
-En la tercera década del siglo veintiuno los cursos de ingeniería de las universidades latinoamericanas tienen aún como herramientas centrales el pizarrón y el papel.
+\subsection{Pizarrón y papel: sustrato de las clases en la tercera década del siglo XXI}	
+En la tercera década del siglo veintiuno los cursos de ingeniería de las universidades latinoamericanas tienen aún como herramientas centrales el pizarrón y el papel, una herramienta que data del siglo diecinueve y no ha cambiado en su esencia en los siglos subsiguientes (ver figura \ref{fig:oldSchool}).
 Aun cuando docentes utilicen computadoras con proyectores y los alumnos escriban sus anotaciones en computadoras portátiles, se está reproduciendo el mismo esquema de enseñanza que se utiliza desde el siglo diecinueve; el docente presenta un tema, lo explica y los alumnos toman apuntes.
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[b]{0.395\textwidth}
+	\includegraphics[width=\textwidth]{../figuras/1930s-1940s-man-teacher-professor-vintage-images.jpg}
+	\caption{
+		Docente de física ante un pizarrón en la década de 1930.
+		}
+	\label{fig:oldSchool}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.59\textwidth}
+	\includegraphics[width=\textwidth]{../figuras/systemsEngineering.png}
+	\caption{
+		Docente de análisis matemática ante una proyección en la década de 2010.
+		}
+	\label{fig:oldSchool2010}
+	\end{subfigure}
+	\caption{
+		La enseñanza en la tercera década del siglo XXI reproduce el mismo uso del papel y pizarrones introducido en el siglo XIX.
+		Por más que se incorporó la computadora a la clase, su sub utilización es evidente. 
+		}
+	\label{fig:tradicional}
+\end{figure}
 
 Esta sub explotación del medio digital queda aún más desactualizada en el contexto de una omnipresencia creciente de grandes modelos de lenguaje (LLM) como ChatGPT o DeepSeek, que permiten a los estudiantes obtener una rápida orientación sobre la temática que se está tratando.  
 Entendemos que no es viable pretender que puede escindirse la ejercitación en los cursos de ingeniería del uso de LLM.
-Por el contrario hoy es más acuciante 
 
 Insistir con sustratos de papel y pizarrones incompatibles con los LLM es sumar otra tarea de transcripción a la que ya se condena a alumnos en el clásico esquema de tomar apuntes.
 
-En este trabajo comentamos nuestra experiencia en la utilización de código como herramienta eje de la enseñanza de la ingeniería.
-Nuestros cursos son de física para la ingeniería, y en particular de mecánica analítica y electrostática.
 
 
 
-Todo sistema a analizar en el aula debe trabajarse en el marco de la mecánica computacional.
-Esta disciplina conjuga la matemática, las distintas ramas de la física y herramientas de ciencias de la computación para explicar y modificar las relaciones entre la dinámica que presentan sistemas de objetos físicos de diversa composición ante diversos forzantes externos.  
-
-
-
-
-
-
-
-\section{METODOLOGÍA PEDAGÓGICA CENTRADA EN LA MECÁNICA COMPUTACIONAL}
-
-
-
-
-
-\subsection{Mecánica computacional para abordar más complejidad}
-
-\subsection{Escribir código no es programar}
+\subsection{El código es el mejor acople con LLMs}
 
 Si nos proponemos hacer mecánica computacional en un curso de grado de ingeniería, puede resultar tentador usar algún paquete de software específico para resolver problemas de física, que permita modelizar y simular sistemas utilizando alguna interfaz gráfica.
 O por el contrario, utilizar un paquete de software más específico de matemática computacional, como Mathematica o Matlab.
 
-Entendemos que para que la propuesta pueda ser transversal a varias temáticas debe utilizar una herramienta aun más general. 
+Entendemos que para que la propuesta pueda ser transversal a varias temáticas debe utilizar una herramienta aún más general. 
+En la experiencia reportada se hizo uso de Python, un lenguaje de programación de alto nivel.
 
-
-
+Es importante asumir que aprovechar código no es programar.
+En ninguno de los casos reportados en este trabajo se busca que el alumno aprenda a modelar algorítmicamente teniendo en cuenta cuestiones de la arquitectura informática de los sistemas que utiliza, lo que sería programar.
+Por el contrario, se busca que simplemente pueda plasmar una solución apoyándose en código escrito en un lenguaje de programación de alto nivel y que pueda adaptarlo a sus necesidades.
 
 
 \subsection{Los recursos están: plataformas en línea}
@@ -167,7 +181,7 @@ Entendemos que para que la propuesta pueda ser transversal a varias temáticas d
 Se ha argumentado que las universidades públicas latinoamericanas al enfrentar las restricciones simultáneas de presupuestos ajustados y la necesidad de acomodar los horarios de sus clases a estudiantes que trabajan de día a horarios vespertinos, no cuentan con recursos informáticos para destinar a cursos que no estén directamente relacionados con la informática o la programación 
 \cite{vallejo_google_2022}.%[@vallejo_google_2022:2022].
 
-
+La reciente experiencia del confinamiento por la pandemia de COVID-19 ha demostrado que es posible utilizar plataformas en línea para la enseñanza de asignaturas que no son informáticas.
 
 
 \section{CURSO DE MECÁNICA ANALÍTICA}

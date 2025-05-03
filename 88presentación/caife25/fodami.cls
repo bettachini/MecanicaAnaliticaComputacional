@@ -46,6 +46,9 @@
 \RequirePackage{tgbonum}                % para cambiar fuentes
 \RequirePackage{authblk}                % autores y afiliaciones
 \RequirePackage{graphicx}
+
+\RequirePackage{subcaption}             % múltiples figuras
+
 \RequirePackage{ragged2e}
 \RequirePackage{layout}                 % permite ver la geometria del layout
 \RequirePackage{xcolor}                 % permite el uso de colores

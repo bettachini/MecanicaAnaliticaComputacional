@@ -141,13 +141,13 @@ Pero usualmente se las reduce a un mero uso como proyectores (figura \ref{fig:ol
 	\begin{subfigure}[b]{0.59\textwidth}
 	\includegraphics[width=\textwidth]{../figuras/systemsEngineering.png}
 	\caption{
-		Docente de análisis matemática ante una proyección en la década de 2010.
+		Docente de análisis matemático ante una proyección en la década de 2010.
 		}
 	\label{fig:oldSchool2010}
 	\end{subfigure}
 	\caption{
 		La enseñanza en la tercera década del siglo XXI reproduce el mismo uso del papel y pizarrones introducido en el siglo XIX.
-		Por más que se incorporó la computadora a la clase, su sub utilización es evidente. 
+		Por más que se incorporó la computadora a la clase, su sub utilización es evidente cuando se lo emplea para proyectar lo mismo que puede mostrar un pizarrón. 
 		}
 	\label{fig:tradicional}
 \end{figure}
@@ -231,30 +231,42 @@ Lo que es tal vez más importante, el docente puede comentar y corregir cuaderno
 
 \section{CURSO DE MECÁNICA ANALÍTICA}
 
-\subsection{El docente no está para dar conferencias: aula invertida}
 
-El curso aborda estas cuestiones proporcionando un entorno de aprendizaje gratuito, en línea y asíncrono que permite a los alumnos estudiar a su propio ritmo mediante el enfoque de aula invertida (flipped classroom) \cite{moraros_flipping_2015}.
-%[@moraros_flipping_2015:2015].
-Antes de las reuniones semanales, los alumnos deben estudiar la teoría y los ejemplos proporcionados en los cuadernos, así como iniciar la resolución de los ejercicios que los acompañan.
-Durante esas reuniones vespertinas, ya sean en línea o presenciales, se anima a los alumnos a que formulen preguntas y comenten con el profesorado los problemas que no hayan podido resolver.
+\subsection{Trabajando con dispositivos mecánicos realistas}
+
+La mayor virtud de hacer uso de mecánica computacional en un curso de mecánica analítica es 
+
+que se puede analizar un dispositivo mecánico realista, como el que se muestra en la figura \ref{fig:ejemploDispositivo}.
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.6\textwidth]{../figuras/flippedClassroomSchedule_castellano.png}
+	\includegraphics[width=0.8\textwidth]{../figuras/robotArm.png}
+	\caption{Ejemplo de un dispositivo mecánico realista que se analiza en el curso de mecánica analítica.}
+	\label{fig:ejemploDispositivo}
+\end{figure}
+
+
+\subsection{El docente no está para dar conferencias: aula invertida}
+
+Una fuerte limitación que se enfrenta en la UNLaM es el limitado tiempo de clase.
+Los alumnos en el estadio de cursada de la carrera de ingeniería mecánica en que se dicta la asignatura de mecánica analítica, suelen tener empleos de jornada completa.
+Las escasas horas dentro de la semana se reparten en las diversas asignaturas haciendo que haya poco tiempo para un contacto sincrónico con el docente.  
+
+El curso abordó esta cuestión creaado un entorno de aprendizaje en línea y asíncrono que permite a los alumnos estudiar a su propio ritmo mediante el enfoque de aula invertida (flipped classroom) \cite{moraros_flipping_2015}.
+%[@moraros_flipping_2015:2015].
+Antes de las reuniones semanales, los alumnos deben estudiar la teoría y los ejemplos proporcionados en los cuadernos Jupyter, así como iniciar la resolución de los ejercicios que los acompañan.
+Durante esas reuniones vespertinas, ya sean en línea o presenciales, se anima a los alumnos a que formulen preguntas y comenten con el profesorado los problemas que no hayan podido resolver.
+Fuera de tal horario se hace uso de la plataforma Microsoft Teams para que los alumnos puedan realizar consultas asincrónicas al docente.
+El docente accede a los cuadernos en Google Colaboratory, en el que puede realizar comentarios y correcciones directamente en la celda de código en cuestión donde corresponde hacerlos.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.5\textwidth]{../figuras/flippedClassroomSchedule_castellano.png}
 	\caption{En esta implementación del aula invertida el alumno leer e intenta aplicar nueva teoría antes del encuentro sincrónico con el docente.
 	Este se reserva a resolver dudas y discutir los problemas que no se han podido resolver.}
 	\label{fig:flippedClassroomSchedule}
 \end{figure}
 
-
-\subsection{Se llegan a analizar dispositivos mecánicos realistas}
-
-\begin{figure}
-	\centering
-	\includegraphics[width=\textwidth]{../figuras/robotArm.png}
-	\caption{Ejemplo de un dispositivo mecánico realista que se analiza en el curso de mecánica analítica.}
-	\label{fig:ejemploDispositivo}
-\end{figure}
 
 % \section{CURSO DE ELECTROSTÁTICA ELEMENTAL}
 \input{electrostatica.code}

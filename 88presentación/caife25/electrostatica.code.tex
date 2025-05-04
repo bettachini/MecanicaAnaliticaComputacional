@@ -1,10 +1,6 @@
 \section{CURSO DE INTRODUCCIÓN A LA ELECTROSTÁTICA}
 
-<<<<<<< HEAD
 Las actividades descriptas en esta sección se están desarrollando en un curso de Física 2 de la Universidad Tecnológica Nacional - Facultad Regional Avellaneda (UTN FRA), y están fuertemente inspiradas en el curso de mecánica analítica presentado en la sección anterior \textcolor{red}{(Bettachini y Palazzo, 2022)}.
-=======
-Las actividades descriptas en esta sección se están desarrollando en un curso de Física 2 de la Universidad Tecnológica Nacional - Facultad Regional Avellaneda (UTN FRA), y están fuertemente inspiradas en el curso de mecánica analítica presentado en la sección anterior \text{red}{(Bettachini y Palazzo, 2022)}.
->>>>>>> 42aec85ac1486e524c879581ac8341c11e841f49
 
 La principal diferencia con el curso de mecánica, además de los temas estudiados, es el nivel de avance en sus carreras de las y los estudiantes en sendos cursos. En la materia Física 2 nos encontramos a estudiantes con pocos o nulos conocimientos tanto de programación como de cálculo numérico. Entonces, en este caso, es importante sostener como premisa que el código sea sólo una herramienta que asiste a una mejor adquisición de los conceptos de la materia impartida \textcolor{red}{(Laureline Duvillard, s.f.; Caligaris et al., 2018)}, y su comprensión no se transforme en una dificultad extra. \textcolor{red}{Agregar algo sobre el desafío de escribir código de utilización sencilla y que además sea útil para aplicaciones concretas, reutilizable en el futuro. Bibliotecas propias del curso.}\par
 
@@ -60,22 +56,30 @@ Figura 1: Código simple que genera líneas de campo.
 
 \textcolor{red}{Módulo 4 - Distribuciones de carga contínuas (parte 2): Se obtienen soluciones exactas de configuraciones con distribuciones contínuas, utilizando la biblioteca Sympy para el cálculo de las integrales y los gradientes. En la figura 2 se muestra a modo de ejemplo el cálculo del campo generado por un segmento de carga. Notar que se obtiene el resultado del campo en cualquier posición, no solo en los ejes de simetría, que es una limitación usual al trabajar en papel.}
 
+
+Ver Figura \ref{fig:anillo}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=160mm]{imagenes/anillo-variable.png}
+	\caption{(a) Código para generar una lista de cargas puntuales que representen un anillo con carga variable. (b) La misma lista puede ser generada en una planilla de cálculo e ingresada manualmente. (c) Código muy breve y sencillo para generar las líneas de campo de esta distribución compleja. (d) La figura generada por la función {\tt plotEf()}.}
+    \label{fig:anillo}
+\end{figure}
+
+
 \textcolor{red}{Módulo 5 - Campos y equipotenciales en presencia de conductores: La teoría involucrada para obtener equipotenciales cuando se tienen conductores con carga superficial no uniformes no forma parte de un curso de este nivel. Sin embargo, el análisis de los resultados sí puede incluirse como tarea. En particular, en este curso en el cual se está llevando a cabo la experiencia, los estudiantes realizan una práctica de laboratorio donde mapean el voltaje en una cuba que contiene electrodos extensos mantenidos a potencial constante, para luego estimar las curvas equipotenciales y las líneas de campo correspondientes. Por lo tanto, los análisis que los estudiantes realicen en este módulo son muy similares a dicha tarea de laboratorio. El código necesario para generar los gráficos está esencialmente provisto en bibiliotecas, por lo que los estudiantes sólo deben familiarizarse con la forma de presentar la geometría de los conductores.}
 
 
 Figura 2: Cálculos simbólicos de campos electrostáticos, difíciles de realizar en pizarrón o papel, los realiza la computadora desplazando el esfuerzo del estudiante de realizarles a comprender la implicancia de sus resultados.
 
-<<<<<<< HEAD
 Ver Figura \ref{fig:superficies}.
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=129mm]{imagenes/equipotenciales_superficies.png}
-	\caption{Con una simple línea de código se pueden estudiar las curvas equipotenciales resultantes de la intersección de las superficies equipotenciales con planos a diferentes alturas ($z = 0$, $z = 0.25$ y $z = 0.5$) respecto de las cargas.}
+	\includegraphics[width=160mm]{imagenes/equipotenciales_superficies.png}
+	\caption{Con una simple línea de código se pueden estudiar las curvas equipotenciales resultantes de la intersección de las superficies equipotenciales con planos a diferentes alturas ($z = 0$ y $z = 0.5$) respecto de las cargas.}
     \label{fig:superficies}
 \end{figure}
-=======
->>>>>>> 42aec85ac1486e524c879581ac8341c11e841f49
 
 \textcolor{red}{Módulo 6 - Trabajo final: Se pide la resolución de un problema que involucre más de una de las herramientas usadas anteriormente, y se provee un cuaderno Jupyter en forma de plantilla para facilitar el inicio del trabajo.}
 

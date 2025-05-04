@@ -81,9 +81,8 @@ Ambos casos subrayan cómo la programación accesible (Python) y entornos intera
 
 \section{INTRODUCCIÓN}
 
-\subsection{Mecánica computacional en asignaturas de física}
-En las carreras de ingeniería mecánica las asignaturas de física ofician como el empalme entre las asignaturas básicas y aquellas en que se empiezan a aplicar los conceptos aprendidos en física y matemática a la temática propia de la carrera. 
-Las físicas tienen usualmente por correlativas previas asignaturas de matemática, y como inmediatamente posteriores asignaturas donde se aplican algunos de estos conceptos en sistemas simples.
+\subsection{Las asignaturas de física, puente entre asignaturas básicas y específicas de la ingeniería mecánica}
+En las carreras de ingeniería mecánica las asignaturas de física ofician de puente con aquellas en que se aplica los conceptos tanto de física como de matemática a las temáticas propias de la carrera. 
 La figura \ref{fig:correlativasUNLaM} ilustra el caso para la asignatura destinada a la mecánica analítica en la Universidad de La Matanza (UNLaM), en la que se dicta el formalismo Lagrangiano para el cálculo de esfuerzos y dinámica de sistemas de cuerpos rígidos simples.
 Tal herramienta encuentra aplicación inmediata en las asignaturas inmediatamente correlativas destinadas a la mecánica de fluidos, el estudio de vibraciones y la dinámica de elementos de máquinas. 
 
@@ -106,12 +105,13 @@ Tal herramienta encuentra aplicación inmediata en las asignaturas inmediatament
 	\label{fig:correlativasUTN}
 	\end{subfigure}
 		\caption{
-			En las carreras de ingeniería mecánica las asignaturas de física ofician como el empalme entre las asignaturas básicas y aquellas con la temática propia de la carrera.
+			En las carreras de ingeniería mecánica las asignaturas de física ofician de puente entre las asignaturas básicas y aquellas con la temática propia de la carrera.
 		}
 	\label{fig:correlatividades}
 \end{figure}
 
-En el caso que ilustra la figura \ref{fig:correlativasUTN} de una asignatura aún más temprana en el plan de la carrera en la Facultad Regional Avellaneda de la Universidad Tecnológica Nacional (UTN FRA), en que se dictan los rudimentos de electrotécnica, dichos conocimientos encuentran aplicación en correlativas destinadas a ensayos y mediciones en la industria, así como a dispositivos de electrotecnia y electrónica industrial.
+La figura \ref{fig:correlativasUTN} ilustra el caso de una asignatura aún más temprana en la carrera, en que se dictan los rudimentos de electromagnetismo para estudiantes de la Facultad Regional Avellaneda de la Universidad Tecnológica Nacional (UTN FRA).
+Dichos conocimientos encuentran aplicación en las asignaturas inmediatamente correlativas que tratan ensayos y mediciones en la industria, así como los fundamentos del funcionamiento de dispositivos tanto electrotécnicos como de electrónica industrial.
 
 %\begin{figure}[ht]
 %	\centering
@@ -123,12 +123,19 @@ En el caso que ilustra la figura \ref{fig:correlativasUTN} de una asignatura aú
 %	\label{fig:correlativasUTN}
 %\end{figure}
 
-Tradicionalmente, existe un salto grande en la complejidad de los sistemas físicos analizados en dichos cursos y aquellos analizados en las asignaturas inmediatamente correlativas.
-Una de las razones de esta dificultad es que los alumnos debieran ser capaces de plantear y resolver múltiples ecuaciones del cálculo integro-diferencial en el acotado tiempo de la clase o en el tiempo de estudio en sus casas careciendo en muchos casos de la experiencia suficiente en la aplicación de dicha herramienta en casos que no son los más básicos ejercitados en asignaturas de matemática.
 
-Entendemos que esta falencia puede suplirse introduciendo en las asignaturas de física la mecánica computacional.
+\subsection{La mecánica computacional como herramienta para evitar saltos de complejidad entre asignaturas}
+
+Las modelizaciones que se trabajan en las asignaturas de física, son ``de juguete'', en los términos de que difieren en demasía respecto a dispositivos que puede tener aplicación industrial.
+Como evidencia la figura \ref{fig:correlatividades}, estos son el objeto de las siguientes asignaturas que cursan los alumnos, lo que lleva a un ``salto de complejidad''. %ue usualmente resulta en que en dichas asignaturas se recurre a  desaprovecha lo aprendido en las asignaturas básicas al      
+
+Una de las razones para esto es la carencia que tienen los alumnos de la capacidad de plantear y resolver ecuaciones del cálculo integro-diferencial que requeriría modelar situaciones realistas en clase. 
+Esto puede darse porque el tiempo que esto requeriría excede el disponible en una clase, tal es el caso del curso de mecánica analítica de la UNLaM, donde no solo se requiere resolver analíticamente sistemas de ecuaciones integro-diferenciales, sino también resolverlas numéricamente.
+O puede darse porque los alumnos no han cursado aún las asignaturas de matemática que les permitirían resolverlas, tal el caso de la asignatura de electromagnetismo de la UTN FRA.
+
+Tal falencia puede suplirse introduciendo en las asignaturas de física la mecánica computacional.
 Esta disciplina conjuga la matemática, las distintas ramas de la física y herramientas de ciencias de la computación para explicar y modificar las relaciones entre la dinámica que presentan sistemas de objetos físicos de diversa composición ante diversos forzantes externos.
-Pero para explotar esta herramienta entendemos que se necesita de dos condiciones:
+Pero para una exitosa explotación de esta herramienta en las tempranas asignaturas de una carrera de ingeniería mecánica entendemos que se deben cumplirse dos condiciones:
 1) desplazar el pizarrón y papel como sustrato del trabajo del docente y el alumno,
 2) no depender de un software específico que limite la posibilidad de adaptar las soluciones y utilizar el código como una herramienta de trabajo. 
 
@@ -137,12 +144,8 @@ Pero para explotar esta herramienta entendemos que se necesita de dos condicione
 \subsection{Pizarrón y papel: sustrato de las clases en la tercera década del siglo XXI}	
 
 En la tercera década del siglo XXI los cursos de ingeniería de las universidades latinoamericanas tienen aún como herramientas centrales el papel y el pizarrón.
-Esta última herramienta creada en el siglo XIX sigue siendo el foco de atención en los siglos subsiguientes (ver figura \ref{fig:oldSchool}).
-Se creó así una metodología para la clase en que el docente presenta un tema, lo explica con anotaciones en el pizarrón (figura \ref{fig:oldSchool}) y los alumnos toman apuntes en papel.
-La ejercitación posterior se realiza en papel, y el docente corrige los ejercicios en papel.
-
-En la última década del siglo XX comenzó una incorporación por parte de los docentes del uso de computadoras en el aula.
-Pero usualmente se las reduce a un mero uso como proyectores (figura \ref{fig:oldSchool2010}), y aun cuando los alumnos escriban sus anotaciones en computadoras portátiles, se está al día de hoy reproduciendo el mismo esquema que el del s. XIX.
+Esta última herramienta creada en el siglo XIX sigue siendo el foco de atención en los siglos subsiguientes, como ilustra la figura \ref{fig:oldSchool}, algo no distinto de lo que puede verse en un aula contemporánea.
+Desde entonces la metodología de la clase se resumen en que el docente presenta un tema con anotaciones en el pizarrón, los alumnos toman apuntes en papel, luego realizan la ejercitación, y el docente corrige, en el mismo sustato.
 
 \begin{figure}[ht]
 	\centering
@@ -168,9 +171,12 @@ Pero usualmente se las reduce a un mero uso como proyectores (figura \ref{fig:ol
 	\label{fig:tradicional}
 \end{figure}
 
+En la última década del siglo XX se generalizó el uso de computadoras en el aula por parte de  los docentes, aunque usualmente reducidas a la tarea de ser medio de proyección algo que excluye a los alumnos de uso, como muestra la figura \ref{fig:oldSchool2010}. 
+Aun cuando posteriormente estos comenzaron a realizar sus anotaciones en computadoras portátiles, al día de hoy reproduciendo el mismo esquema que el del s. XIX, una transcripción de lo mostrado en un pizarrón, aunque esto sea electrónico.
+
 Esta sub explotación del medio digital queda aún más desactualizada en el contexto de una omnipresencia creciente de grandes modelos de lenguaje (LLM) como ChatGPT o DeepSeek, que permiten a los estudiantes obtener una rápida orientación sobre la temática que se está tratando.  
 Entendemos que no es viable pretender que puede escindirse la ejercitación en los cursos de ingeniería del uso de LLM.
-Insistir con sustratos de papel y pizarrones incompatibles con los LLM es sumar una tarea adicional de transcripción, de sus anotaciones en papel al teléfono o computadora conectadas a internet, a la que ya se viene condenando a alumnos en el clásico esquema de tomar apuntes.
+Insistir con sustratos de papel y pizarrones incompatibles con los LLM es sumar una tarea adicional de transcripción, de sus anotaciones en papel al teléfono o computadora conectadas a internet, sumada al arcaico proceder de tomar apuntes en clase.
 
 Nuestra propuesta es utilizar un mismo sustrato digital en línea tanto para apoyar el dictado de lecciones por parte del docente así como para la ejercitación de los alumnos.
 Dicho sustrato debe ser capaz no solo de representar todo el contenido gráfico que puede mostrarse en un pizarrón, sino también de plasmar en ecuaciones integro-diferenciales el sistema físico a analizar, resolverles llevándoles a resultados numéricos y generar representaciones de dichos resultados, idealmente gráficos, para permitir verificarles.
@@ -197,7 +203,7 @@ Para ser adecuado a lo necesario en estas asignaturas el código Python este deb
 Para extender la capacidad del Python para cubrir las necesidades para estas tres tareas específicas se recurre a sendas bibliotecas de Python: SymPy, SciPy y Matplotlib.
 SymPy permite operar con álgebra simbólica utilizando la nomenclatura matemática habitual.
 Esto es fundamental para que el docente pueda intercalar en sus explicaciones cálculos realizados por el código que sean inteligibles para el alumno.
-Haciendo uso del formato de cuadernos Jupyter, se intercalan en un mismo documento texto, ecuaciones y gráficos generados en forma externa con aquellos que se producen por el código Python (figura \ref{fig:jupyter}).
+Haciendo uso del formato de cuadernos Jupyter, como el que muestra la figura \ref{fig:jupyter}, se intercalan en un mismo documento texto, ecuaciones y gráficos generados en forma externa con aquellos que se producen por el código Python.
 
 \begin{figure}[ht]
 	\centering
@@ -230,19 +236,59 @@ Una de las funcionalidades de estas plataformas es que permiten compartir el cua
 Lo que es tal vez más importante, el docente puede comentar y corregir cuadernos de los alumnos a distancia y en tiempo real, lo que habilita consultas asincrónicas sobre los ejercicios, y no solo sincrónico como en el caso de las clases presenciales.
 
 
-\subsection{El código acopla mejor con los LLMs que el software específico de mecánica computacional}
+\section{CURSO DE MECÁNICA ANALÍTICA}
+
+\subsection{Trabajando con dispositivos mecánicos realistas}
+
+La complejidad de la matemática para modelizar sistemas crece rápidamente a medida que se contemplan más factores para hacer del modelo más fiel a los factores que se presentan el sistema físico real.
+Una vez esquematizado el sistema físico, como muestra la figura \ref{fig:esquema}, se debe calcular la energía potencial y cinética del sistema, así como los momentos de inercia de los cuerpos que lo componen. 
+A partir de estos generar con el formalismo Lagrangiano las ecuaciones para la dinámica y despejar las aceleraciones es una tarea trivial para las funciones de la biblioteca de álgebra simbólica Sympy, como ilustra la figura \ref{fig:aceleraciones}.
+Como último paso, se resuelven numéricamente las ecuaciones diferenciales generadas con funciones de la biblioteca SciPy, y se representa gráficamente la dinámica del sistema, como muestra la figura \ref{fig:grafico} con auxilio de la biblioteca matplotlib.
+
+\begin{figure}
+	\centering
+	\begin{subfigure}[b]{0.3\textwidth}
+		\includegraphics[width = \textwidth]{../figuras/clase7esquema.png}
+		\caption{Modelizar posiciones, momentos de inercia para calcular energías potenciales y cinéticas.}
+		\label{fig:esquema}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.4\textwidth}
+		\includegraphics[width = \textwidth]{../figuras/clase4Aceleraciones.png}
+		\caption{Generar con formalismo Lagrangiano las ecuaciones diferenciales de la dinámica.}
+		\label{fig:aceleraciones}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.28\textwidth}
+		\includegraphics[width = \textwidth]{../figuras/clase7amortiguado.png}
+		\caption{Obtener una solución numérica de las ecuaciones diferenciales y gráficar la dinámica.}
+		\label{fig:grafico}
+	\end{subfigure}
+	\caption{Estadios de la resolución de un problema por parte de un alumno.}
+	\label{fig:solve}
+\end{figure}
+
+La mayor virtud de hacer uso de mecánica computacional en un curso de mecánica analítica es que la complejidad de la matemática requerida para calcular esfuerzos y dinámica a partir de un modelo de un sistema similar a los industriales no está fuera del alcance de lo realizable en una clase. 
+Ejemplo de esto es el cálculo de torques y fuerza lineales que actúan sobre un brazo robótico, como el que se muestra en la figura \ref{fig:ejemploDispositivo}.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width= \textwidth]{../figuras/robotArm.png}
+	\caption{Ejemplo de un dispositivo mecánico realista que se analiza en el curso de mecánica analítica.}
+	\label{fig:ejemploDispositivo}
+\end{figure}
+
+
+\subsection{Resolver ejercicios con código es más compatible con la inteligencia artificial de los LLM}
 
 El uso de inteligencia artificial por el ámbito educativo es algo inevitable en el presente como lo es en el ámbito profesional de la ingeniería.
 Las interfaces de conversación (chat) de grandes modelos de lenguaje (LLM) en línea como ChatGPT de OpenAI, DeepSeek, GitHub Copilot o Google Gemini son herramientas a las que recurren los alumnos para resolver problemas de física, quieran los docentes o no que las utilicen.
-El procedimiento que sigue un alumno en un curso tradicional involucra una transcripción del enunciado del problema, usualmente en formato papel o documento PDF formateado para impresión, y una nueva transcripción de las respuestas que le brinda el LLM al papel en que resuelven el problema.
-Se pierde así todo registro de la interacción alumno-LLM que que podría ser parte del aprendizaje del alumno en la explotación de dichos sistemas, una competencia fundamental en el ámbito laboral actual.
+El procedimiento que sigue un alumno de un curso tradicional involucra transcripciones desde y hacia el LLM.
+En manera imperfecta escribe su avance en la resolución, o en el peor de los casos el enunciado completo, y nuevamente debe hacer lo propio al papel a partir de las respuestas que obtiene del LLM.
+No queda registro público de la interacción alumno-LLM, pues esto queda como un asunto privado del primero.
 
-Ante tal realidad, entendemos que es mejor transparentar en las asignaturas de las ingenierías mecánicas el uso de LLM para la realización de los ejercicios. 
+En la asignatura de la UNLaM se hace explícita la sugerencia de apoyarse en los LLM para la resolución de los ejercicios al tiempo que se transmite la virtud de guardar registro de consultas (prompts) al LLM adjunto a cada sección correspondiente del código.
 La resolución de problemas a través de código evita transcripciones equívocas, puesto que el LLM interpreta con más fidelidad el código que el texto escrito en lenguaje natural tratando de explicar ambigüedades del problema.
-En particular, se hacie explícito no la sugerencia, sino la obligación de apoyarse en los LLM, para la resolución de los ejercicios con la condición de llevar un registro de consultas (prompts) al LLM.
-
-
-Con esta instrucción los alumnos enfrentan la solución de un problema de física asistiéndose de prompts al LLM que en contrapartida sugiere correcciones a su código, como muestra el ejemplo de la figura \ref{fig:Gemini}.
+Los alumnos enfrentan así su solución asistiéndose de consultas al LLM que en contrapartida sugiere correcciones a su código, como muestra el ejemplo de la figura \ref{fig:Gemini}.
 
 \begin{figure}[ht]
 	\centering
@@ -256,44 +302,40 @@ Con esta instrucción los alumnos enfrentan la solución de un problema de físi
 \end{figure}
 
 
-
-\section{CURSO DE MECÁNICA ANALÍTICA}
-
-
-\subsection{Trabajando con dispositivos mecánicos realistas}
-
-La mayor virtud de hacer uso de mecánica computacional en un curso de mecánica analítica es 
-
-que se puede analizar un dispositivo mecánico realista, como el que se muestra en la figura \ref{fig:ejemploDispositivo}.
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=0.8\textwidth]{../figuras/robotArm.png}
-	\caption{Ejemplo de un dispositivo mecánico realista que se analiza en el curso de mecánica analítica.}
-	\label{fig:ejemploDispositivo}
-\end{figure}
-
-
-\subsection{El docente debe ayudar con los ejercicios, no está para dar conferencias: aula invertida}
+\subsection{Aula invertida: el docente debe ayudar con los ejercicios, no está para dar conferencias}
 
 Una fuerte limitación que se enfrenta en la UNLaM es el limitado tiempo de clase.
 Los alumnos en el estadio de cursada de la carrera de ingeniería mecánica en que se dicta la asignatura de mecánica analítica, suelen tener empleos de jornada completa.
 Las escasas horas dentro de la semana se reparten en las diversas asignaturas haciendo que haya poco tiempo para un contacto sincrónico con el docente.  
 
-El curso abordó esta cuestión creaado un entorno de aprendizaje en línea y asíncrono que permite a los alumnos estudiar a su propio ritmo mediante el enfoque de aula invertida (flipped classroom) \cite{moraros_flipping_2015}.
-%[@moraros_flipping_2015:2015].
+El curso abordó esta cuestión creado un entorno de aprendizaje en línea y asíncrono que permite a los alumnos estudiar a su propio ritmo mediante el enfoque de aula invertida (flipped classroom) \cite{moraros_flipping_2015} que ilustra la figura \ref{fig:flippedClassroomSchedule}.
+
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[b]{0.35\textwidth}
+		\includegraphics[width=\textwidth]{../figuras/flippedClassroomSchedule_castellano.png}
+		\caption{El alumno lee e intenta aplicar nueva teoría antes del encuentro sincrónico con el docente.
+		Este se reserva a resolver dudas y discutir los problemas que no se han podido resolver.}
+		\label{fig:flippedClassroomSchedule}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.6\textwidth}
+		\includegraphics[width=\textwidth]{../figuras/seguimiento.png}
+		\caption{A través del sistema Microsoft Teams se lleva un control de entregas de todos los ejercicios de las guías y de su estado de corrección. A través del mismo los alumnos realizan consultas asincrónicas.}
+		\label{fig:teams}
+	\end{subfigure}
+	\caption{La metodología de aula invertida se apoya en sistemas en línea.}
+	\label{fig:flipped}
+\end{figure}
+
 Antes de las reuniones semanales, los alumnos deben estudiar la teoría y los ejemplos proporcionados en los cuadernos Jupyter, así como iniciar la resolución de los ejercicios que los acompañan.
 Durante esas reuniones vespertinas, ya sean en línea o presenciales, se anima a los alumnos a que formulen preguntas y comenten con el profesorado los problemas que no hayan podido resolver.
 Fuera de tal horario se hace uso de la plataforma Microsoft Teams para que los alumnos puedan realizar consultas asincrónicas al docente.
 El docente accede a los cuadernos en Google Colaboratory, en el que puede realizar comentarios y correcciones directamente en la celda de código en cuestión donde corresponde hacerlos.
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=0.4\textwidth]{../figuras/flippedClassroomSchedule_castellano.png}
-	\caption{En esta implementación del aula invertida el alumno leer e intenta aplicar nueva teoría antes del encuentro sincrónico con el docente.
-	Este se reserva a resolver dudas y discutir los problemas que no se han podido resolver.}
-	\label{fig:flippedClassroomSchedule}
-\end{figure}
+En Teams se hace un seguimiento de los ejercicios que los alumnos van entregando como resueltos en el formato de un enlace a sus copias personales de cuadernos de Jupyter, como ilustra la figura \ref{fig:teams}.
+Todos los ejercicios de las guías deben entregarse para la corrección, una tarea que está al alcance del tiempo disponible por el docente que está centrado en esta tarea y responder consultas en vez de repetir todos los cuatrimestres idéntico soliloquio frente a un pizarrón.
+La evaluación del aprendizaje parte de los registros de entrega de los mencionados ejercicios y la conversación que se tiene con los alumnos.
+Unos pocos minutos de preguntas sobre como estos últimos implementaron una parte del código para resolver una parte específica del problema es tan o más reveladora sobre cuanto aprendió que un examen escrito.
 
 
 % \section{CURSO DE ELECTROSTÁTICA ELEMENTAL}

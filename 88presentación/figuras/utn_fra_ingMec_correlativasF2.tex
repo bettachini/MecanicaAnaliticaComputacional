@@ -11,11 +11,11 @@
 
 \begin{tikzpicture}[auto]
     \node [red] (MG) {Física II\\{\tiny 13}};
-    \node [b, above =of MG, yshift = 0.5 cm ] (EM) {Mediciones y Ensayos\\{\tiny 20}};
+    \node [b, above =of MG, yshift = 0.9 cm ] (EM) {Mediciones y Ensayos\\{\tiny 20}};
     \path [l] (MG) -- (EM);
-    \node [b, above left=of MG, yshift = -0.4 cm ] (MF) {Electrotécnia y Máquinas Eléctricas\\{\tiny 31}};
+    \node [b, above left=of MG, yshift = -0.4 cm ] (MF) {Electrotécnia y\\Máquinas Eléctricas\\{\tiny 31}};
     \path [l] (MG.west) -| (MF.south);
-    \node [b, above right=of MG, yshift = -0.4 cm ] (EIII) {Electrónica y Sistemas de control\\{\tiny 32}};
+    \node [b, above right=of MG, yshift = -0.4 cm ] (EIII) {Electrónica y\\Sistemas de control\\{\tiny 32}};
     \path [l] (MG) -| (EIII);
     \node [b, below left =of MG, xshift=-0.9cm] (FI) {Física I\\{\tiny 4}};
     \path [l] (FI) -- (MG);

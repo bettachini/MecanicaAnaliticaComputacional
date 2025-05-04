@@ -89,24 +89,39 @@ Tal herramienta encuentra aplicación inmediata en las asignaturas inmediatament
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.6\textwidth]{../figuras/correlativas.pdf}
+	\begin{subfigure}[b]{0.5\textwidth}
+	\includegraphics[width=\textwidth]{../figuras/correlativas.pdf}
 	\caption{
 		La asignatura de mecánica analítica de la UNLaM es el umbral entre los otros de física y matemática hacia los más específicos de la carrera.  
 		}
 	\label{fig:correlativasUNLaM}
-\end{figure}
-
-En el caso que ilustra la figura \ref{fig:correlativasUTN} de una asignatura aún más temprana en el plan de la carrera en la Facultad Regional Avellaneda de la Universidad Tecnológica Nacional (UTN-FRA), en que se dictan los rudimentos de electrotécnica, dichos conocimientos encuentran aplicación en correlativas destinadas a ensayos y mediciones en la industria, así como a dispositivos de electrotecnia y electrónica industrial.
-
-\begin{figure}[ht]
-	\centering
-	\includegraphics[width=0.6\textwidth]{../figuras/utn_fra_ingMec_correlativasF2.pdf}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+	\includegraphics[width=\textwidth]{../figuras/utn_fra_ingMec_correlativasF2.pdf}
 	\caption{
-		En UTN-FRA la primera asignatura con temática de electromagnetismo abre el camino a otras en que esta se aplica a dispositivos industriales de electrotecnia y electrónica.
+		En UTN FRA la primera asignatura con temática de electromagnetismo abre el camino a otras en que esta se aplica a dispositivos industriales de electrotecnia y electrónica.
 		Se muestran solo las correlativas con aplicación inmediata de conceptos de electromagnetismo. 
 		}
 	\label{fig:correlativasUTN}
+	\end{subfigure}
+		\caption{
+			En las carreras de ingeniería mecánica las asignaturas de física ofician como el empalme entre las asignaturas básicas y aquellas con la temática propia de la carrera.
+		}
+	\label{fig:correlatividades}
 \end{figure}
+
+En el caso que ilustra la figura \ref{fig:correlativasUTN} de una asignatura aún más temprana en el plan de la carrera en la Facultad Regional Avellaneda de la Universidad Tecnológica Nacional (UTN FRA), en que se dictan los rudimentos de electrotécnica, dichos conocimientos encuentran aplicación en correlativas destinadas a ensayos y mediciones en la industria, así como a dispositivos de electrotecnia y electrónica industrial.
+
+%\begin{figure}[ht]
+%	\centering
+%	\includegraphics[width=0.6\textwidth]{../figuras/utn_fra_ingMec_correlativasF2.pdf}
+%	\caption{
+%		En UTN FRA la primera asignatura con temática de electromagnetismo abre el camino a otras en que esta se aplica a dispositivos industriales de electrotecnia y electrónica.
+%		Se muestran solo las correlativas con aplicación inmediata de conceptos de electromagnetismo. 
+%		}
+%	\label{fig:correlativasUTN}
+%\end{figure}
 
 Tradicionalmente, existe un salto grande en la complejidad de los sistemas físicos analizados en dichos cursos y aquellos analizados en las asignaturas inmediatamente correlativas.
 Una de las razones de esta dificultad es que los alumnos debieran ser capaces de plantear y resolver múltiples ecuaciones del cálculo integro-diferencial en el acotado tiempo de la clase o en el tiempo de estudio en sus casas careciendo en muchos casos de la experiencia suficiente en la aplicación de dicha herramienta en casos que no son los más básicos ejercitados en asignaturas de matemática.
@@ -148,7 +163,7 @@ Pero usualmente se las reduce a un mero uso como proyectores (figura \ref{fig:ol
 	\end{subfigure}
 	\caption{
 		La enseñanza en la tercera década del siglo XXI reproduce el mismo uso del papel y pizarrones introducido en el siglo XIX.
-		Por más que se incorporó la computadora a la clase, su sub utilización es evidente cuando se lo emplea para proyectar lo mismo que puede mostrar un pizarrón. 
+		Por más que se incorporó la computadora a la clase, su sub utilización es evidente cuando solo se emplea para proyectar lo mismo que puede mostrar un pizarrón. 
 		}
 	\label{fig:tradicional}
 \end{figure}
@@ -217,10 +232,17 @@ Lo que es tal vez más importante, el docente puede comentar y corregir cuaderno
 
 \subsection{El código acopla mejor con los LLMs que el software específico de mecánica computacional}
 
-El uso de inteligencia artificial por el ámbito educativo es algo inevitable en el presente y posiblemente sea generalmente aceptado en el futuro.
-Las interfaces de conversación (chat) de grandes modelos de lenguaje (LLM) en línea como ChatGPT de OpenAI, DeepSeek, GitHub Copilot o Google Gemini han demostrado ser herramientas útiles a la hora de ayudar a los alumnos a resolver problemas de física.
+El uso de inteligencia artificial por el ámbito educativo es algo inevitable en el presente como lo es en el ámbito profesional de la ingeniería.
+Las interfaces de conversación (chat) de grandes modelos de lenguaje (LLM) en línea como ChatGPT de OpenAI, DeepSeek, GitHub Copilot o Google Gemini son herramientas a las que recurren los alumnos para resolver problemas de física, quieran los docentes o no que las utilicen.
+El procedimiento que sigue un alumno en un curso tradicional involucra una transcripción del enunciado del problema, usualmente en formato papel o documento PDF formateado para impresión, y una nueva transcripción de las respuestas que le brinda el LLM al papel en que resuelven el problema.
+Se pierde así todo registro de la interacción alumno-LLM que que podría ser parte del aprendizaje del alumno en la explotación de dichos sistemas, una competencia fundamental en el ámbito laboral actual.
 
-Los alumnos puede intentar una primera aproximación a la solución de un problema de física planteando un prompt al LLM o incluso ir corrigendo el código que el LLM le sugiere, como muestra el ejemplo de la figura \ref{fig:Gemini}.
+Ante tal realidad, entendemos que es mejor transparentar en las asignaturas de las ingenierías mecánicas el uso de LLM para la realización de los ejercicios. 
+La resolución de problemas a través de código evita transcripciones equívocas, puesto que el LLM interpreta con más fidelidad el código que el texto escrito en lenguaje natural tratando de explicar ambigüedades del problema.
+En particular, se hacie explícito no la sugerencia, sino la obligación de apoyarse en los LLM, para la resolución de los ejercicios con la condición de llevar un registro de consultas (prompts) al LLM.
+
+
+Con esta instrucción los alumnos enfrentan la solución de un problema de física asistiéndose de prompts al LLM que en contrapartida sugiere correcciones a su código, como muestra el ejemplo de la figura \ref{fig:Gemini}.
 
 \begin{figure}[ht]
 	\centering
@@ -228,7 +250,7 @@ Los alumnos puede intentar una primera aproximación a la solución de un proble
 	% same as above but cropping the lower 1/4
 	\caption{
 		El alumno puede ir refinando su consulta (prompt) para bloque de código para aproximarse a la solución que busca.
-		Aquí dejó constancia como comentario en el bloque de código del prompt que realizó al LLM Gemini de Google.  
+		Aquí dejó constancia como comentario en el bloque de código del prompt que realizó al LLM Gemini de Google dentro de su cuaderno Jupyter ejecutado en el entorno Google Colaboratory.
 		}
 	\label{fig:Gemini}
 \end{figure}

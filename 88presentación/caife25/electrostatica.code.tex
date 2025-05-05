@@ -1,83 +1,59 @@
 \section{CURSO DE INTRODUCCIÓN A LA ELECTROSTÁTICA}
 
-<<<<<<< HEAD
-Las actividades descriptas en esta sección se están desarrollando en un curso de Física 2 de la Universidad Tecnológica Nacional - Facultad Regional Avellaneda (UTN FRA), y están fuertemente inspiradas en el curso de mecánica analítica presentado en la sección anterior \textcolor{red}{(Bettachini y Palazzo, 2022)}.
-=======
-Las actividades descriptas en esta sección se están desarrollando en un curso de Física 2 de la Universidad Tecnológica Nacional - Facultad Regional Avellaneda (UTN FRA), y están fuertemente inspiradas en el curso de mecánica analítica presentado en la sección anterior \text{red}{(Bettachini y Palazzo, 2022)}.
->>>>>>> 42aec85ac1486e524c879581ac8341c11e841f49
+Las actividades descriptas en esta sección, que se están desarrollando en un curso de Física 2 de la Universidad Tecnológica Nacional - Facultad Regional Avellaneda (UTN FRA), están fuertemente inspiradas en el curso de mecánica analítica \cite{bettachini_CLADI_2022} presentado en la sección anterior. La principal diferencia con dicho curso de mecánica, además de los temas estudiados, es el nivel de avance en sus carreras de las y los estudiantes en sendos cursos. En la materia Física 2 nos encontramos con estudiantes que poseen pocos o nulos conocimientos tanto de programación como de cálculo numérico. Entonces, en este caso, es importante sostener como premisa que el código sea sólo una herramienta que asiste a una mejor adquisición de los conceptos de la materia impartida, y que la comprensión del código no se transforme en una dificultad extra. Con este objetivo, las numerosas y avanzadas líneas de código para cálculos complejos y generación de figuras, están encapsuladas en funciones de bibliotecas del paquete {\tt frautnEM} (\url{https://github.com/frautn/frautnEM}), diseñado específicamente para asistir a este curso, de forma que las y los estudiantes solo trabajen con pocas líneas de código sencillo. A su vez, el material que utilizan docentes y estudiantes de este curso está disponible para ser utilizado, descargado y adaptado libremente en el repositorio \url{https://github.com/frautn/F2-electromagnetismo}.\par\medskip
 
-La principal diferencia con el curso de mecánica, además de los temas estudiados, es el nivel de avance en sus carreras de las y los estudiantes en sendos cursos. En la materia Física 2 nos encontramos a estudiantes con pocos o nulos conocimientos tanto de programación como de cálculo numérico. Entonces, en este caso, es importante sostener como premisa que el código sea sólo una herramienta que asiste a una mejor adquisición de los conceptos de la materia impartida \textcolor{red}{(Laureline Duvillard, s.f.; Caligaris et al., 2018)}, y su comprensión no se transforme en una dificultad extra. \textcolor{red}{Agregar algo sobre el desafío de escribir código de utilización sencilla y que además sea útil para aplicaciones concretas, reutilizable en el futuro. Bibliotecas propias del curso.}\par
+El material se presenta a las y los estudiantes dividido en módulos, mediante cuadernos Jupyter que se cargan en la plataforma Google Colaboratory, y que contienen breves explicaciones, ejemplos resueltos con código, y actividades propuestas para ser realizadas reutilizando el código de los ejemplos. Estos módulos asisten a las y los estudiantes de un primer curso de electromagnetismo en la adquisición de conceptos sobre campo y potencial electrostático, distribuciones contínuas de carga, campo y equipotenciales en presencia de conductores, enteramente utilizando código Python. En poco tiempo se encuentran trabajando en ejercicios cuya resolución en papel está descartada, no necesariamente por su dificultad, sino por el volumen de cálculos repetitivos que deberían realizar las y los estudiantes.\par\medskip
 
+\textcolor{red}{Se analizan las líneas de campo y las equipotenciales de distribuciones de cargas arbitrarias, como la mostrada en la figura 1, o incluso visualizaciones en 3 dimensiones, tareas imposibles de implementar si se trabajara en papel. En la misma figura se destaca la simplicidad con la que los estudiantes pueden generar dichos gráficos, mediante el llamado a una única función diseñada específicamente para este curso. A lo largo de toda la experiencia, los estudiantes solo necesitan modificar códigos sencillos.}\par\medskip
 
-\textcolor{red}{Apuntan a asistir a estudiantes de un primer curso de electromagnetismo en la adquisición de conceptos básicos, en particular en la resolución y análisis de problemas de electrostática. Tras las primeras clases desarrolladas en algún formato tradicional, dedicadas a la temática de campo y potencial electrostático, se pasa a una etapa en que se hace uso de código escrito en Python.
-En las primeras de estas clases con código se realizan los mismos cálculos simbólicos que en papel correspondientes a ejercicios de guías anteriores, para así familiarizarse con la nueva metodología. En posteriores clases se encara con esta herramienta problemas que por la complejidad de la matemática asociada resultaría muy tedioso, y propenso a errores, el resolverlos en papel. Delegar los cálculos en la computadora amplía la variedad de situaciones que el alumno puede estudiar y hace que destine más de su tiempo en análisis, que en tareas repetitivas y mundanas.}
-
-\textcolor{red}{Entre los tópicos que la herramienta pone al alcance del alumno, están los cálculos de integrales necesarios para la resolución de problemas con distribuciones de carga contínuas, inabordables en pizarrón o papel con sus conocimientos al momento de cursar esta asignatura. La facilidad para realizar cálculos simbólicos en Python permite que los estudiantes se concentren en analizar los resultados y no en resolver integrales que aún no dominan.}
+Figura: Código simple que genera líneas de campo.
 
 
---- modificar: ---
 
 
-\textcolor{red}{Copiado textual:}\par
-
-Objetivos para estudiantes:
-\begin{itemize}
-
-\item Repasar lo trabajado en clases previas sobre campo y potencial eléctrico con cargas puntuales, y al mismo tiempo validar que la computadora entrega los mismos resultados que los obtenidos en papel y en el pizarrón.
-\item Internalizar que las distribuciones contínuas de carga eléctrica se pueden analizar como formadas por numerosas cargas puntuales, al comprobar que se obtienen resultados muy aproximados a los resultados exactos que se obtienen usando fórmulas conocidas, como pueden ser la del campo eléctrico de esferas, líneas o planos cargados.
-\item Aprovechar las posibilidades de cálculo simbólico que provee la biblioteca SymPy (Meurer et al., 2017) de Python para obtener soluciones exactas a problemas que involucran integrales múltiples complicadas y herramientas de análisis que aún no manejan.
-\item Experimentar con problemas de creciente complejidad reutilizando el código que fueron adaptando a los ejercicios de aprendizaje propuestos.
-\end{itemize}
-    
-Objetivos para docentes:
-\begin{itemize}
-    \item Aprovechar que con el mismo código se pueden resolver problemas mucho más complejos, que antes no se tenían en cuenta para trabajar en pizarrón o para proponer como ejercitación. Esto permite generar distintos ejemplos y situaciones para indagar sobre la comprensión de los temas campo y potencial eléctrico.
-    \item Delegar los cálculos de campos y potenciales eléctricos en presencia de distribuciones de cargas contínuas en la computadora, que involucran herramientas de análisis que los estudiantes de este nivel aún no manejan, y trabajar estos temas íntegramente en Python.
-\end{itemize}
- 
---- fin modificar ---\par
-
-\textcolor{red}{En la tabla 1 se presenta un resumen del contenido de los diferentes bloques o módulos que conforman esta experiencia. Cada módulo puede consistir en uno o más cuadernos Jupyter, y algún material extra como guías de ejercicios, y el tiempo de cada clase puede ser ocupado por el trabajo en uno o más módulos. Las actividades propuestas se insertan en un curso tradicional de introducción al electromagnetismo. En las primeras clases se trabaja con herramientas convencionales, es decir con docentes y estudiantes haciendo uso de pizarrón y papel, la problemática de campo y potencial eléctrico producto de cargas puntuales. Las siguientes clases pasan a desarrollarse enteramente utilizando código escrito en lenguaje Python, que no requieren conocimientos previos de programación ni de cálculo numérico por parte de los estudiantes. Con código simple de utilizar, los estudiantes pueden resolver problemas nuevos realizando pequeñas modificaciones, que en la mayoría de los casos sólo implican cambiar valores de variables de la misma forma que proceden cuando aplican una fórmula conocida a un nuevo problema numérico en papel. El material se presenta mediante cuadernos Jupyter cargados en la plataforma Google Colaboratory, en la cual los estudiantes pueden trabajar desde cualquier dispositivo con un navegador de internet, con el único requisito de acceder a una conexión a internet, sin la necesidad de instalar programas específicos. Este material está disponible para ser utilizado, descargado y adaptado libremente en el repositorio https://github.com/frautn/F2-electromagnetismo.}
-
-\textcolor{red}{¿Tabla?}\par
-% Módulo	Contenido	Objetivos
-% 1	Campo eléctrico de cargas puntuales	Repasar contenidos básicos y familiarizarse con la metodología de trabajo.
-% 2	Potencial con cargas puntuales	Repasar contenidos básicos y familiarizarse con la metodología de trabajo.
-% 3	Distribuciones de carga contínuas	Considerar a las distribuciones contínuas como formadas por numerosas cargas puntuales, y realizar los cálculos con las herramientas de los módulos 1 y 2.
-% 4	Distribuciones de carga contínuas	Utilizar una biblioteca de cálculo simbólico para calcular las integrales mútiples necesarias en estos casos.
-% 5	Campos y equipotenciales en presencia de conductores	Observar en distintas geometrías y sistemas de cargas, como se ajustan las líneas de campo para mantener los potenciales en los conductores (condiciones de contorno) en situaciones de difícil resolución en papel.
-% 6	Trabajo final	Resolver algún problema complejo nuevo.
-% Tabla 1: Desarrollo de los contenidos.
-
-
-\textcolor{red}{Módulos 1 y 2 - Campo y potencial eléctrico de cargas puntuales: Utilizando el código Python provisto por los docentes, los estudiantes comienzan estas actividades reproduciendo algunos de los cálculos de los ejercicios trabajados en las clases anteriores, con el objetivo de repasar los conceptos básicos y familiarizarse con el método de trabajo. Los estudiantes avanzan con la ejecución del código y con los ejercicios propuestos, asistidos por los docentes y también por las celdas escritas en Markdown que contienen breves explicaciones, imágenes y comentarios, intercaladas entre bloques de código Python.
-En poco tiempo se pasa a trabajar en ejercicios cuya resolución en papel está descartada, no por su dificultad, sino por el volumen de cálculos repetitivos que deberían realizar los estudiantes. Se analizan las líneas de campo y las equipotenciales de distribuciones de cargas arbitrarias, como la mostrada en la figura 1, o incluso visualizaciones en 3 dimensiones, tareas imposibles de implementar si se trabajara en papel. En la misma figura se destaca la simplicidad con la que los estudiantes pueden generar dichos gráficos, mediante el llamado a una única función diseñada específicamente para este curso. A lo largo de toda la experiencia, los estudiantes solo necesitan modificar códigos sencillos, como la definición de un campo eléctrico de cargas puntuales, muy similar a un cálculo realizado en papel. En cambio, código avanzado, como el necesario para generar líneas de campo, se provee en una biblioteca propia del curso, para poner el foco en el análisis de los resultados y no en la dificultad del código para generarlos.}
-
-
-Figura 1: Código simple que genera líneas de campo.
-
-\textcolor{red}{Módulo 3 - Distribuciones de carga contínuas (parte 1): Se continúa replicando el mismo código de los módulos 1 y 2, para calcular campos y potenciales de distribuciones contínuas generadas como la suma de muchas cargas puntuales.}
-
-\textcolor{red}{Módulo 4 - Distribuciones de carga contínuas (parte 2): Se obtienen soluciones exactas de configuraciones con distribuciones contínuas, utilizando la biblioteca Sympy para el cálculo de las integrales y los gradientes. En la figura 2 se muestra a modo de ejemplo el cálculo del campo generado por un segmento de carga. Notar que se obtiene el resultado del campo en cualquier posición, no solo en los ejes de simetría, que es una limitación usual al trabajar en papel.}
-
-\textcolor{red}{Módulo 5 - Campos y equipotenciales en presencia de conductores: La teoría involucrada para obtener equipotenciales cuando se tienen conductores con carga superficial no uniformes no forma parte de un curso de este nivel. Sin embargo, el análisis de los resultados sí puede incluirse como tarea. En particular, en este curso en el cual se está llevando a cabo la experiencia, los estudiantes realizan una práctica de laboratorio donde mapean el voltaje en una cuba que contiene electrodos extensos mantenidos a potencial constante, para luego estimar las curvas equipotenciales y las líneas de campo correspondientes. Por lo tanto, los análisis que los estudiantes realicen en este módulo son muy similares a dicha tarea de laboratorio. El código necesario para generar los gráficos está esencialmente provisto en bibiliotecas, por lo que los estudiantes sólo deben familiarizarse con la forma de presentar la geometría de los conductores.}
-
-
-Figura 2: Cálculos simbólicos de campos electrostáticos, difíciles de realizar en pizarrón o papel, los realiza la computadora desplazando el esfuerzo del estudiante de realizarles a comprender la implicancia de sus resultados.
-
-<<<<<<< HEAD
-Ver Figura \ref{fig:superficies}.
+Ver Figura \ref{fig:anillo}.
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=129mm]{imagenes/equipotenciales_superficies.png}
-	\caption{Con una simple línea de código se pueden estudiar las curvas equipotenciales resultantes de la intersección de las superficies equipotenciales con planos a diferentes alturas ($z = 0$, $z = 0.25$ y $z = 0.5$) respecto de las cargas.}
+	\includegraphics[width=160mm]{imagenes/anillo-variable.png}
+	\caption{(a) Código para generar una lista de cargas puntuales que representen un anillo con carga variable. (b) La misma lista puede ser generada en una planilla de cálculo e ingresada manualmente. (c) Código muy breve y sencillo para generar las líneas de campo de esta distribución compleja. (d) La figura generada por la función {\tt plotEf()}.}
+    \label{fig:anillo}
+\end{figure}
+
+
+
+
+Salir del plano. Ver Figura \ref{fig:superficies}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=160mm]{imagenes/equipotenciales_superficies.png}
+	\caption{Con una simple línea de código se pueden estudiar las curvas equipotenciales resultantes de la intersección de las superficies equipotenciales con planos a diferentes alturas ($z = 0$ y $z = 0.5$) respecto de las cargas.}
     \label{fig:superficies}
 \end{figure}
-=======
->>>>>>> 42aec85ac1486e524c879581ac8341c11e841f49
+
+Con esta metodología, los estudiantes pueden:
+\begin{itemize}
+\item repasar lo trabajado en clases previas y adquirir nuevos conceptos sobre campo y potencial eléctrico;
+\item acostumbrarse a que las distribuciones contínuas de carga eléctrica se pueden analizar como formadas por numerosas cargas puntuales, comprobando que se obtienen resultados muy aproximados a los resultados exactos que se obtienen usando fórmulas conocidas, como pueden ser la del campo eléctrico de esferas, líneas o planos cargados;
+\item \textcolor{blue}{no trabarse con integrales que no dominan: más problemas en menos tiempo, más práctica para incorporación de conceptos, velocidad y facilidad para analizar variando parámetros;} 
+\item reutilizar y adaptar código para experimentar con problemas cada vez más complejos, incluso no solo entre los propuestos en esta materia, sirviendo como una herramienta que se pueda aprovechar en otros contextos.
+\end{itemize}
+ 
+En el caso de los docentes, entre sus posibilidades se encuentran:
+\begin{itemize}
+    \item incluir en sus propuestas la resolución y el análisis de problemas que suelen estar descartados en una clase de pizarrón, debido a la dificultad de su abordaje (como es el caso del trabajo en 3 dimensiones) o a la longitud de los cálculos, aprovechando la reutilización de código;
+	\item no destinar excesivo tiempo (de docentes y de estudiantes) repitiendo cálculos pesados, como por ejemplo las integrales múltiples relacionadas a distribuciones contínuas de cargas, y destinar ese tiempo al análisis de un mayor número de situaciones.
+\end{itemize}
+
 
 \textcolor{red}{Módulo 6 - Trabajo final: Se pide la resolución de un problema que involucre más de una de las herramientas usadas anteriormente, y se provee un cuaderno Jupyter en forma de plantilla para facilitar el inicio del trabajo.}
 
+Extra: Aprovechar las posibilidades de cálculo simbólico que provee la biblioteca SymPy (Meurer et al., 2017) de Python para obtener soluciones exactas a problemas que involucran integrales múltiples complicadas y herramientas de análisis que aún no manejan.\par
+\textcolor{red}{Módulo 4 - Distribuciones de carga contínuas (parte 2): Se obtienen soluciones exactas de configuraciones con distribuciones contínuas, utilizando la biblioteca Sympy para el cálculo de las integrales y los gradientes. En la figura 2 se muestra a modo de ejemplo el cálculo del campo generado por un segmento de carga. Notar que se obtiene el resultado del campo en cualquier posición, no solo en los ejes de simetría, que es una limitación usual al trabajar en papel.}\par
+Conductores, simulación de la práctica de laboratorio.\par
+\textcolor{red}{Módulo 5 - Campos y equipotenciales en presencia de conductores: La teoría involucrada para obtener equipotenciales cuando se tienen conductores con carga superficial no uniformes no forma parte de un curso de este nivel. Sin embargo, el análisis de los resultados sí puede incluirse como tarea. En particular, en este curso en el cual se está llevando a cabo la experiencia, los estudiantes realizan una práctica de laboratorio donde mapean el voltaje en una cuba que contiene electrodos extensos mantenidos a potencial constante, para luego estimar las curvas equipotenciales y las líneas de campo correspondientes. Por lo tanto, los análisis que los estudiantes realicen en este módulo son muy similares a dicha tarea de laboratorio. El código necesario para generar los gráficos está esencialmente provisto en bibiliotecas, por lo que los estudiantes sólo deben familiarizarse con la forma de presentar la geometría de los conductores.}\par\medskip  
 
 Conclusiones:\par
+
+“Since the notebooks are interactive, students can change the values of variables in an equation and immediately see what happens. That gives them a better sense of the physical reality underlying the equations,” 

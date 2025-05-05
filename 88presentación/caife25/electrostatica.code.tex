@@ -1,8 +1,6 @@
 \section{CURSO DE INTRODUCCIÓN A LA ELECTROSTÁTICA}
 
-Las actividades descriptas en esta sección se están desarrollando en un curso de Física 2 de la Universidad Tecnológica Nacional - Facultad Regional Avellaneda (UTN FRA), y están fuertemente inspiradas en el curso de mecánica analítica presentado en la sección anterior \textcolor{red}{(Bettachini y Palazzo, 2022)}.
-
-La principal diferencia con el curso de mecánica, además de los temas estudiados, es el nivel de avance en sus carreras de las y los estudiantes en sendos cursos. En la materia Física 2 nos encontramos a estudiantes con pocos o nulos conocimientos tanto de programación como de cálculo numérico. Entonces, en este caso, es importante sostener como premisa que el código sea sólo una herramienta que asiste a una mejor adquisición de los conceptos de la materia impartida \textcolor{red}{(Laureline Duvillard, s.f.; Caligaris et al., 2018)}, y su comprensión no se transforme en una dificultad extra. \textcolor{red}{Agregar algo sobre el desafío de escribir código de utilización sencilla y que además sea útil para aplicaciones concretas, reutilizable en el futuro. Bibliotecas propias del curso.}\par
+Las actividades descriptas en esta sección se están desarrollando en un curso de Física 2 de la Universidad Tecnológica Nacional - Facultad Regional Avellaneda (UTN FRA), y están fuertemente inspiradas en el curso de mecánica analítica \cite{bettachini_CLADI_2022} presentado en la sección anterior. La principal diferencia con dicho curso de mecánica, además de los temas estudiados, es el nivel de avance en sus carreras de las y los estudiantes en sendos cursos. En la materia Física 2 nos encontramos a estudiantes con pocos o nulos conocimientos tanto de programación como de cálculo numérico. Entonces, en este caso, es importante sostener como premisa que el código sea sólo una herramienta que asiste a una mejor adquisición de los conceptos de la materia impartida, y que la comprensión del código no se transforme en una dificultad extra. \textcolor{red}{Agregar algo sobre el desafío de escribir código de utilización sencilla y que además sea útil para aplicaciones concretas, reutilizable en el futuro. Bibliotecas propias del curso.}\par\medskip
 
 
 \textcolor{red}{Apuntan a asistir a estudiantes de un primer curso de electromagnetismo en la adquisición de conceptos básicos, en particular en la resolución y análisis de problemas de electrostática. Tras las primeras clases desarrolladas en algún formato tradicional, dedicadas a la temática de campo y potencial electrostático, se pasa a una etapa en que se hace uso de código escrito en Python.
@@ -16,22 +14,24 @@ En las primeras de estas clases con código se realizan los mismos cálculos sim
 
 \textcolor{red}{Copiado textual:}\par
 
-Objetivos para estudiantes:
+Con esta metodología, los estudiantes pueden:
 \begin{itemize}
-
 \item Repasar lo trabajado en clases previas sobre campo y potencial eléctrico con cargas puntuales, y al mismo tiempo validar que la computadora entrega los mismos resultados que los obtenidos en papel y en el pizarrón.
 \item Internalizar que las distribuciones contínuas de carga eléctrica se pueden analizar como formadas por numerosas cargas puntuales, al comprobar que se obtienen resultados muy aproximados a los resultados exactos que se obtienen usando fórmulas conocidas, como pueden ser la del campo eléctrico de esferas, líneas o planos cargados.
 \item Aprovechar las posibilidades de cálculo simbólico que provee la biblioteca SymPy (Meurer et al., 2017) de Python para obtener soluciones exactas a problemas que involucran integrales múltiples complicadas y herramientas de análisis que aún no manejan.
 \item Experimentar con problemas de creciente complejidad reutilizando el código que fueron adaptando a los ejercicios de aprendizaje propuestos.
 \end{itemize}
-    
-Objetivos para docentes:
-\begin{itemize}
-    \item Aprovechar que con el mismo código se pueden resolver problemas mucho más complejos, que antes no se tenían en cuenta para trabajar en pizarrón o para proponer como ejercitación. Esto permite generar distintos ejemplos y situaciones para indagar sobre la comprensión de los temas campo y potencial eléctrico.
-    \item Delegar los cálculos de campos y potenciales eléctricos en presencia de distribuciones de cargas contínuas en la computadora, que involucran herramientas de análisis que los estudiantes de este nivel aún no manejan, y trabajar estos temas íntegramente en Python.
-\end{itemize}
  
 --- fin modificar ---\par
+
+   
+En el caso de los docentes, entre sus posibilidades se encuentran:
+\begin{itemize}
+    \item proponer la resolución y el análisis de problemas más complejos, que estarían descartados en una clase de pizarrón, aprovechando la sencillez de la reutilización de código;
+	\item no destinar excesivo tiempo (de docentes y de estudiantes) repitiendo cálculos pesados, como por ejemplo las integrales múltiples relacionadas a distribuciones contínuas de cargas, y destinar ese tiempo al análisis de un mayor número de situaciones.
+\end{itemize}
+ 
+
 
 \textcolor{red}{En la tabla 1 se presenta un resumen del contenido de los diferentes bloques o módulos que conforman esta experiencia. Cada módulo puede consistir en uno o más cuadernos Jupyter, y algún material extra como guías de ejercicios, y el tiempo de cada clase puede ser ocupado por el trabajo en uno o más módulos. Las actividades propuestas se insertan en un curso tradicional de introducción al electromagnetismo. En las primeras clases se trabaja con herramientas convencionales, es decir con docentes y estudiantes haciendo uso de pizarrón y papel, la problemática de campo y potencial eléctrico producto de cargas puntuales. Las siguientes clases pasan a desarrollarse enteramente utilizando código escrito en lenguaje Python, que no requieren conocimientos previos de programación ni de cálculo numérico por parte de los estudiantes. Con código simple de utilizar, los estudiantes pueden resolver problemas nuevos realizando pequeñas modificaciones, que en la mayoría de los casos sólo implican cambiar valores de variables de la misma forma que proceden cuando aplican una fórmula conocida a un nuevo problema numérico en papel. El material se presenta mediante cuadernos Jupyter cargados en la plataforma Google Colaboratory, en la cual los estudiantes pueden trabajar desde cualquier dispositivo con un navegador de internet, con el único requisito de acceder a una conexión a internet, sin la necesidad de instalar programas específicos. Este material está disponible para ser utilizado, descargado y adaptado libremente en el repositorio https://github.com/frautn/F2-electromagnetismo.}
 
@@ -85,3 +85,10 @@ Ver Figura \ref{fig:superficies}.
 
 
 Conclusiones:\par
+
+“Since the notebooks are interactive, students can change the values of variables in an equation and immediately see what happens. That gives them a better sense of the physical reality underlying the equations,” 
+
+El empleo de recursos tecnológicos durante el proceso de
+aprendizaje permite que el estudiante ejecute procedimientos
+rutinarios con rapidez y seguridad, posibilitándole así disponer
+de más tiempo para internalizar o comprender conceptos.

@@ -4,16 +4,7 @@ Las actividades descriptas en esta sección, que se están desarrollando en un c
 
 El material se presenta a las y los estudiantes dividido en módulos, mediante cuadernos Jupyter que se cargan en la plataforma Google Colaboratory, y que contienen breves explicaciones, ejemplos resueltos con código, y actividades propuestas para ser realizadas reutilizando el código de los ejemplos. Estos módulos asisten a estudiantes de un primer curso de electromagnetismo en la adquisición de conceptos sobre campo y potencial electrostático, distribuciones contínuas de carga, campo y equipotenciales en presencia de conductores, enteramente utilizando código Python. En poco tiempo se encuentran trabajando en ejercicios cuya resolución en papel está descartada, no necesariamente por su dificultad, sino también por el volumen de cálculos repetitivos que deberían ser realizados.\par\medskip
 
-A modo de ejemplo, la Figura \ref{fig:anillo} muestra como las y los estudiantes generan líneas de campo de un anillo cargado con una distribución de carga no uniforme. La Figura \ref{fig:anillo}(a) es el código provisto con el cuaderno Jupyter para generar una lista de cargas puntuales que simulen una distribución contínua con forma de anillo. Copiando este código, el o la estudiante solo debe modificar la función que calcula la carga en cada ángulo, escribiéndola en un formato familiar, en este caso como {\tt a*cos(2*t)}, siendo {\tt t} el ángulo, el radio del anillo y el número de cargas puntuales utilizadas para representar al anillo.  
-
-\textcolor{red}{Se analizan las líneas de campo y las equipotenciales de distribuciones de cargas arbitrarias, como la mostrada en la figura 1, o incluso visualizaciones en 3 dimensiones, tareas imposibles de implementar si se trabajara en papel. En la misma figura se destaca la simplicidad con la que los estudiantes pueden generar dichos gráficos, mediante el llamado a una única función diseñada específicamente para este curso. A lo largo de toda la experiencia, los estudiantes solo necesitan modificar códigos sencillos.}\par\medskip
-
-Figura: Código simple que genera líneas de campo.
-
-
-
-
-Ver Figura \ref{fig:anillo}.
+A modo de ejemplo, la Figura \ref{fig:anillo} muestra como las y los estudiantes generan líneas de campo de un anillo cargado con una distribución de carga no uniforme. La Figura \ref{fig:anillo}(a) es el código provisto con el cuaderno Jupyter para generar una lista de cargas puntuales que simulen una distribución contínua con forma de anillo. Copiando este código, el o la estudiante solo debe modificar la función que calcula la carga en cada ángulo, escribiéndola en un formato familiar, en este caso como {\tt a*cos(2*t)}, siendo {\tt t} el ángulo, el radio del anillo y el número de cargas puntuales utilizadas para representar al anillo. Si en cambio el estudiante no se siente cómodo adaptando este código de ejmplo, sobre todo a nuevas geometrías, puede optar por generar una lista de cargas como la mostrada en la Figura \ref{fig:anillo}(b) con, por ejemplo, una planilla de cálculo. Una vez generada la lista de cargas, solo es necesaria una línea de código para generar las líneas de campo, como la mostrada en la Figura \ref{fig:anillo}(c), que produce un gráfico como el mostrado en la Figura \ref{fig:anillo}(d).
 
 \begin{figure}[h]
 	\centering
@@ -30,21 +21,21 @@ Salir del plano. Ver Figura \ref{fig:superficies}.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=160mm]{imagenes/equipotenciales_superficies.png}
-	\caption{Con una simple línea de código se pueden estudiar las curvas equipotenciales resultantes de la intersección de las superficies equipotenciales con planos a diferentes alturas ($z = 0$ y $z = 0.5$) respecto de las cargas.}
+	\caption{Con una línea de código simple se pueden estudiar las curvas equipotenciales resultantes de la intersección de las superficies equipotenciales con planos a diferentes alturas ($z = 0$ y $z = 0.5$) respecto de las cargas.}
     \label{fig:superficies}
 \end{figure}
 
-Con esta metodología, los estudiantes pueden:
+Aprovechando la flexibilidad, Con esta metodología, los estudiantes:
 \begin{itemize}
-\item repasar lo trabajado en clases previas y adquirir nuevos conceptos sobre campo y potencial eléctrico;
+\item repasar lo trabajado en clases previas y adquirir nuevos conceptos sobre campo y potencial eléctrico, trabajando en un mayor número de situaciones, con una respuesta rápida sobre sus intuiciones para el análisis;
 \item acostumbrarse a que las distribuciones contínuas de carga eléctrica se pueden analizar como formadas por numerosas cargas puntuales, comprobando que se obtienen resultados muy aproximados a los resultados exactos que se obtienen usando fórmulas conocidas, como pueden ser la del campo eléctrico de esferas, líneas o planos cargados;
 \item \textcolor{blue}{no trabarse con integrales que no dominan: más problemas en menos tiempo, más práctica para incorporación de conceptos, velocidad y facilidad para analizar variando parámetros;} 
 \item reutilizar y adaptar código para experimentar con problemas cada vez más complejos, incluso no solo entre los propuestos en esta materia, sirviendo como una herramienta que se pueda aprovechar en otros contextos.
 \end{itemize}
  
-En el caso de los docentes, entre sus posibilidades se encuentran:
+Y los docentes:
 \begin{itemize}
-    \item incluir en sus propuestas la resolución y el análisis de problemas que suelen estar descartados en una clase de pizarrón, debido a la dificultad de su abordaje (como es el caso del trabajo en 3 dimensiones) o a la longitud de los cálculos, aprovechando la reutilización de código;
+    \item pueden incluir en sus propuestas la resolución y el análisis de problemas que suelen estar descartados en una clase de pizarrón, debido a la dificultad de su abordaje (como es el caso del trabajo en 3 dimensiones) o a la longitud de los cálculos, aprovechando la reutilización de código;
 	\item no destinar excesivo tiempo (de docentes y de estudiantes) repitiendo cálculos pesados, como por ejemplo las integrales múltiples relacionadas a distribuciones contínuas de cargas, y destinar ese tiempo al análisis de un mayor número de situaciones.
 \end{itemize}
 

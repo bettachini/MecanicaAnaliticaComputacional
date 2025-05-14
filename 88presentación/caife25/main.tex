@@ -200,7 +200,7 @@ En ninguno de los casos reportados en este trabajo se busca que el alumno aprend
 Por el contrario, se busca que simplemente pueda plasmar una solución apoyándose en código escrito en un lenguaje de programación de alto nivel y que pueda adaptarlo a sus necesidades.
 
 Para ser adecuado a lo necesario en estas asignaturas el código Python este debe permitir al alumno plantear y resolver álgebra simbólica en particular de ecuaciones integro-diferenciales, obtener sus soluciones numéricas, y generar gráficos.
-Para extender la capacidad del Python para cubrir las necesidades para estas tres tareas específicas se recurre a sendas bibliotecas de Python: SymPy, SciPy y Matplotlib.
+Para extender la capacidad del Python para cubrir las necesidades para estas tres tareas específicas se recurre a sendas bibliotecas de Python: SymPy, SciPy y Matplotlib (\cite{sympy}, \cite{2020SciPy-NMeth}, \cite{Hunter:2007}).
 SymPy permite operar con álgebra simbólica utilizando la nomenclatura matemática habitual.
 Esto es fundamental para que el docente pueda intercalar en sus explicaciones cálculos realizados por el código que sean inteligibles para el alumno.
 Haciendo uso del formato de cuadernos Jupyter, como el que muestra la figura \ref{fig:jupyter}, se intercalan en un mismo documento texto, ecuaciones y gráficos generados en forma externa con aquellos que se producen por el código Python.
@@ -345,6 +345,12 @@ Unos pocos minutos de preguntas sobre como estos últimos implementaron una part
 % ------------------------------------------------------------------------------
 \section{CONCLUSIONES}
 %Se apreciará que las mismas evidencien solidez y coherencia. Pueden incluirse en ellas otras cuestiones, como, por ejemplo, mención de interrogantes no dilucidados que podrían ser abordados en el futuro.
+
+Gracias a la naturaleza interactiva de los cuadernos Jupyter, se comprobó durante las actividades en clase que las y los estudiantes adquieren una mejor comprensión de la física detrás de las ecuaciones, modificando parámetros y obteniendo resultados inmediatamente, resultados que son correctos y no dependientes de sus habilidades matemáticas.\par\medskip
+
+\textcolor{red}{Producen un conjunto de cuadernos que pueden (o son utilizados, referencia, ¿aunque sea de comentarios de los estudiantes?) ser utilizados en cursos posteriores e incluso en aplicaciones profesionales. }\par\medskip  
+
+En la nueva instancia del curso de electrostática que se está desarrollando este año, se planea incluir un módulo con ejercicios de campos y equipotenciales en presencia de conductores. La resolución de estos ejercicios en cursos introductorios en ingeniería se restringe a problemas extremadamente sencillos o con aproximaciones muchas veces exageradas. Sin embargo, el análisis de los resultados de situaciones más complejas puede ser muy valioso, evitando aproximaciones exageradas que puedan formar conceptos erróneos. En particular, se incluirá el análisis numérico de una práctica de laboratorio donde se mapea el voltaje en una cuba que contiene electrodos extensos mantenidos a potencial constante, donde las y los estudiantes sólo deberán describir la geometría de los conductores mediante funciones matemáticas sencillas. \textcolor{red}{(incluir una referencia, un link a la guía de laboratorio publicada en internet, al cuaderno jupyter para este análisis, footnote, o nada?)}
 
 % ------------------------------------------------------------------------------
 \section{AGRADECIMIENTOS}

@@ -26,3 +26,10 @@ se puede aplicar la metodología a cursos con estudiantes en niveles iniciales, 
 - grandes modelos de lenguage o modelos de lenguage grandes?
 
 - Crear el paquete frautnEM en pipy.
+
+
+---- para las conclusiones
+
+Conclusiones:\par
+
+“Since the notebooks are interactive, students can change the values of variables in an equation and immediately see what happens. That gives them a better sense of the physical reality underlying the equations,” 

@@ -172,46 +172,45 @@ Desde entonces la metodología de la clase se resumen en que el docente presenta
 \end{figure}
 
 En las últimas décadas del siglo XX se generalizó el uso de computadoras en el aula, aunque los docentes usualmente les reducen a ser una mera herramienta de proyección, que como muestra la Figura \ref{fig:oldSchool2010} excluye a los alumnos de uso. 
-Aun cuando estos últimos realicen sus anotaciones en computadoras portátiles, reproducen aún el mismo esquema del s. XIX, inviertendo buena parte de su tiempo y atención en transcribir lo mostrado en un pizarrón.
+Y ellos, aun cuando realicen sus anotaciones en computadoras portátiles, reproducen aún el mismo esquema del s. XIX, invirtiendo buena parte de su tiempo y atención en transcribir lo mostrado en un pizarrón.
 
-Esta sub explotación de inherente capacidad de rápida reproducción de la información digital queda aún más fuera del contexto actual ante la omnipresencia de grandes modelos de lenguaje (LLM) como ChatGPT o DeepSeek, que permiten a los estudiantes obtener una rápida orientación sobre la temática que se está tratando.  
+Esta sub explotación en el aula de la inherente capacidad de rápida reproducción de la información digital queda aún más fuera del contexto actual ante la omnipresencia de grandes modelos de lenguaje (LLM) como ChatGPT o DeepSeek, que permiten a los estudiantes obtener una rápida orientación sobre la temática que se está tratando.  
 No es realista pretender que puedan escindirse los LLM de los cursos de ingeniería de aquí en más.
 Los formatos papel y pizarrones fuerzan a una transcripción desde y hacia el medio digital para poder hacer provecho de los LLM.
 Tal transcripción de sus anotaciones en papel al teléfono o computadora conectadas a internet, sumada al arcaico proceder de tomar apuntes en clase, es sumar una tarea adicional que distrae al alumno del pensamiento creativo que debiera ser el foco de su esfuerzo.
 
-Por estas razones es que en los cursos aquí presentado se busca utilizar el mismo formato digital, tanto para el dictado de lecciones por parte del docente, como para la ejercitación por parte de los alumnos.
-Dicho medio no solo es capaz de representar ecuaciones integro-diferenciales el sistema físico a analizar y todo el contenido gráfico que puede mostrarse en un pizarrón, sino también resolverles llevándoles a resultados numéricos y generar representaciones de dichos resultados, idealmente gráficos, para permitir verificarles.
-Esto último con el fin de que el alumno pueda poner en práctica la mecánica computacional como una herramienta de trabajo en la asignatura. 
+Por estas razones es que en los cursos aquí presentados se busca utilizar el mismo formato digital, tanto para el dictado de lecciones por parte del docente, como para la ejercitación por parte de los alumnos.
+Dicho medio no solo es capaz de representar todo el contenido gráfico que puede mostrarse en un pizarrón, incluyendo las ecuaciones integro-diferenciales que modelan cualquier sistema físico a analizar, sino que también permite resolver estas últimas.
+Esto abre el camino a utilizar en clase representaciones gráficas precisa de dichos resultados, y en particular de los obtenidos por métodos del cálculo numérico.
+% Esto último con el fin de que el alumno pueda poner en práctica la mecánica computacional como una herramienta de trabajo en la asignatura. 
 
 
 
-\subsection{El código como una herramienta transversal a toda actividad de la asignatura}
+\subsection{El código como una herramienta central de una asignatura}
 
 Si nos proponemos hacer mecánica computacional en un curso de grado de ingeniería, puede resultar tentador usar algún paquete de software específico para resolver problemas de física, que permita modelizar y simular sistemas utilizando alguna interfaz gráfica, como Comsol Multiphysics, Ansys o SolidWorks.
 O, por el contrario, utilizar un paquete de software más específico de matemática computacional, como Mathematica o Matlab.
 
+Ante este abanico de opciones, no hay que olvidar que las asignaturas de física se ubican al inicio de las carreras de ingeniería mecánica, y el alumno en tal estadio no tiene aún la formación suficiente para comprender en detalle las herramientas de modelización y simulación que ofrecen los paquetes de software específicos de matemática o mecánica computacional.
 Entendemos que para que la propuesta pueda ser transversal a las varias temáticas de las múltiples asignaturas correlativas, se debe utilizar una herramienta aún más general. 
-Puesto que las asignaturas de física se ubican al inicio de las carreras de ingeniería mecánica, el alumno en tal estadio no tiene aún la formación suficiente para comprender en detalle las herramientas de modelización y simulación que ofrecen los paquetes de software específicos de mecánica computacional.
+Con este supuesto es que se optó por hacer uso de Python, un lenguaje de programación de alto nivel.
 
-Con estos supuestos es que se optó en las experiencias reportadas en este trabajo por hacer uso de Python, un lenguaje de programación de alto nivel.
+Para que la implementación de Python sea vista como una continuación de lo aprendido en las asignaturas de matemática, este debe operar el álgebra y análisis simbólico con la misma nomenclatura matemática que se utiliza en el pizarrón.
+Para tal fin se hace uso de la biblioteca SymPy \cite{sympy} que permite operar con álgebra simbólica utilizando la nomenclatura matemática habitual.
+Esto es fundamental para que el docente pueda intercalar en sus explicaciones cálculos realizados por el código que sean inteligibles para el alumno.
+
+Para capitalizar lo aprendido de cálculo numérico en asignaturas precedentes, a los fines de obtener soluciones de las ecuaciones aún de las más complejas ecuaciones integro-diferenciales generadas con auxilio de SymPy, se recurre a la biblioteca SciPy \cite{2020SciPy-NMeth}. Y finalmente, para generar representaciones gráficas de tales resultados, se hace uso de la biblioteca Matplotlib \cite{Hunter:2007}.
 
 
 \subsection{Usar código para hacer menos tediosa la matemática no requiere de saber programar}
 
-En lo referente al software de matemática computacional, se busca que el alumno cimenté su aún escasa puesta en práctica de lo aprendido en las asignaturas de matemática que precedieron a las de física.
-Se pretende que el alumno realice el cálculo simbólico y numérico de ecuaciones integro-diferenciales, en la forma más similar a la que desarrolló en las asignaturas de matemática.
-
-Es importante recalcar que el saber aprovecharse del código no representa saber programar.
+Es importante recalcar que aprovechar código para estas tareas en una asignatura no implica enseñar a programar.
 En ninguno de los casos reportados en este trabajo se busca que el alumno aprenda a modelar algorítmicamente teniendo en cuenta cuestiones de la arquitectura informática de los sistemas que utiliza, lo que sería programar.
-Por el contrario, se busca que simplemente pueda plasmar una solución apoyándose en código escrito en un lenguaje de programación de alto nivel y que pueda adaptarlo a sus necesidades.
+Por el contrario, se busca que simplemente pueda plasmar una solución apoyándose en código ya escrito y solo aprenda a adaptarlo a sus necesidades.
 
-Un fuerte de la matemática computacional es que permite al alumno encarar problemas...
 no se frustran con integrales que aún no dominan \cite{Pekrun2006}, permitiéndoles resolver más problemas con retroalimentación inmediata, que se traduce en más práctica para la incorporación de conceptos; trabajan en forma autónoma; reutilizan y adaptan código para experimentar con problemas cada vez más complejos, incluso no solo entre los propuestos en esta materia, atesorando una herramienta que podrán aprovechar en otros contextos.
 
-Para ser adecuado a lo necesario en estas asignaturas el código Python este debe permitir al alumno plantear y resolver álgebra simbólica en particular de ecuaciones integro-diferenciales, obtener sus soluciones numéricas, y generar gráficos.
-Para extender la capacidad del Python para cubrir las necesidades para estas tres tareas específicas se recurre a sendas bibliotecas de Python: SymPy \cite{sympy}, SciPy \cite{2020SciPy-NMeth} y Matplotlib \cite{Hunter:2007}.
-SymPy permite operar con álgebra simbólica utilizando la nomenclatura matemática habitual.
-Esto es fundamental para que el docente pueda intercalar en sus explicaciones cálculos realizados por el código que sean inteligibles para el alumno.
+
 Haciendo uso del formato de cuadernos Jupyter, como el que muestra la Figura \ref{fig:jupyter}, se intercalan en un mismo documento texto, ecuaciones y gráficos generados en forma externa con aquellos que se producen por el código Python.
 
 \begin{figure}[ht]

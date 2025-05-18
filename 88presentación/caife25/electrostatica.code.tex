@@ -17,7 +17,7 @@ Una vez generada la lista de cargas, solo es necesaria una línea de código par
 % Una vez generada la lista de cargas, solo es necesaria una línea de código para generar las líneas de campo, como la mostrada en la Figura \ref{fig:anillo}-(c), que produce el gráfico mostrado en la Figura \ref{fig:anillo}-(d).
 
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\begin{subfigure}[b]{0.37\textwidth}
 		\includegraphics[width=\textwidth]{imagenes/anillocode2.png}
@@ -29,12 +29,12 @@ Una vez generada la lista de cargas, solo es necesaria una línea de código par
 			\includegraphics[width=.5\textwidth]{imagenes/anillocode3.png}
 			\includegraphics[width=\textwidth]{imagenes/anillocode1.png}
 		\end{center}
-		\caption{La misma lista ingresada manualmente, y el código para generar las líneas de campo.}
+		\caption{La misma lista ingresada manualmente que la función {\tt plotEf()} emplea para generar las líneas de campo.}
   	\label{fig:anillocode1}
 	\end{subfigure}
 	\begin{subfigure}[b]{0.3\textwidth}
 		\includegraphics[width=\textwidth]{imagenes/anillo.png}
-		\caption{La función {\tt plotEf()} muestra distribución de carga y líneas de campo.}
+		\caption{Representación gráfica de la distribución de carga y líneas de campo.}
   	\label{fig:anilloPlot}
 	\end{subfigure}
 	\caption{Cálculo de líneas de campo eléctrico de una distribución de carga en un anillo.}
@@ -52,15 +52,13 @@ Una vez generada la lista de cargas, solo es necesaria una línea de código par
 
 Una gran ventaja de esta metodología es la facilidad con la que se puede salir del plano. La Figura \ref{fig:superficies} muestra un ejemplo de la sencillez con la que se pueden estudiar curvas equipotenciales sin restringirse al plano formado por las cargas. 
 
-\begin{figure}[h]
+\begin{figure}[ht]
 	\centering
 	\includegraphics[width=160mm]{imagenes/equipotenciales_superficies.png}
-	\caption{Curvas equipotenciales a diferentes alturas ($z = 0$ y $z = 0.5$) respecto de las cargas.}
+	\caption{Curvas equipotenciales a diferentes alturas ($z = 0$ y $z = 0.5$) respecto al plano conteniendo las cargas.}
     \label{fig:superficies}
 \end{figure}
 
 En la última clase se pide la resolución de un problema nuevo y se provee un cuaderno Jupyter como plantilla para facilitar el trabajo, que debe ser compartido con los docentes para su evaluación. Dentro de dicho cuaderno se incluyen secciones para ingresar conclusiones sobre los análisis realizados. Específicamente, el problema en esta experiencia consistió en responder preguntas que requirieron la obtención de vectores campo eléctrico, líneas de campo y equipotenciales, y su análisis, de dos segmentos cargados, ubicados no simétricamente. Dichas preguntas no se podrían haber resuelto en papel durante una clase tradicional. Participaron seis grupos de dos o tres integrantes, y todos pudieron responder satisfactoriamente a las preguntas.\par\medskip
 
 En resumen, se observó que las y los estudiantes repasaron lo trabajado en clases previas y sobre nuevos conceptos en un mayor número de situaciones, con una respuesta rápida que facilitó una estrategia de prueba y error para confirmar o corregir sus soluciones. Se acostumbraron a la idea de que las distribuciones continuas de carga se pueden analizar como formadas por numerosas cargas infinitesimales, comprobando que se obtienen resultados muy aproximados a los resultados exactos que se obtienen usando fórmulas conocidas. A su vez, los docentes fuimos capaces de proponer la resolución y el análisis de problemas que suelen estar descartados en una clase de pizarrón, debido a la dificultad de su abordaje (como es el caso del trabajo en 3 dimensiones) o a la longitud de los cálculos, aprovechando la reutilización de código, no destinando excesivo tiempo a la repetición de cálculos pesados, como los involucrados en las integrales múltiples relacionadas a distribuciones continuas de cargas.\par\medskip
-í
-

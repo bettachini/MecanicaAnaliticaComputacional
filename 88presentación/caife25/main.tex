@@ -64,7 +64,7 @@ Este trabajo presenta dos experiencias educativas que integran herramientas comp
 
 La primera propuesta desarrolló un curso de mecánica analítica basado en Python, utilizando Jupyter notebooks y un enfoque de aula invertida. Los estudiantes resuelven ecuaciones de Euler-Lagrange mediante bibliotecas como SymPy y SciPy, centrándose en el modelado físico y evitando simplificaciones pedagógicas. El curso, disponible en GitHub, ha demostrado eficacia en grupos pequeños, aunque requiere adaptaciones para escalabilidad.
 
-La segunda experiencia aplicó metodologías similares en electrostática, permitiendo a alumnos analizar distribuciones de carga continuas mediante cálculos simbólicos y numéricos en Google Colaboratory. Los resultados destacan una mayor comprensión conceptual sin depender de técnicas matemáticas avanzadas.
+La segunda experiencia aplicó metodologías similares en electrostática, permitiendo a alumnos analizar distribuciones de carga continuas mediante cálculos numéricos en Google Colaboratory. Los resultados destacan una mayor comprensión conceptual sin depender de técnicas matemáticas avanzadas.
 
 Ambos casos subrayan cómo la programación accesible (Python) y entornos interactivos (Jupyter) optimizan el tiempo en clase, priorizando el análisis sobre cálculos repetitivos, y ofrecen soluciones viables para instituciones con restricciones presupuestarias o logísticas. Estas estrategias, replicables y de código abierto, podrían extenderse a otras áreas de la física e ingeniería, potenciando el aprendizaje activo en contextos diversos.
 
@@ -171,7 +171,7 @@ Desde entonces la metodología de la clase se resumen en que el docente presenta
 	\label{fig:tradicional}
 \end{figure}
 
-En las últimas décadas del siglo XX se generalizó el uso de computadoras en el aula, aunque los docentes usualmente les reducen a ser una mera herramienta de proyección, que como muestra la Figura \ref{fig:oldSchool2010} excluye a los alumnos de uso. 
+En las últimas décadas del siglo XX se generalizó el uso de computadoras en el aula, aunque los docentes usualmente les reducen a ser una mera herramienta de proyección, que como muestra la Figura \ref{fig:oldSchool2010} excluye a los alumnos de su uso. 
 Y ellos, aun cuando realicen sus anotaciones en computadoras portátiles, reproducen aún el mismo esquema del s. XIX, invirtiendo buena parte de su tiempo y atención en transcribir lo mostrado en un pizarrón.
 
 Esta sub explotación en el aula de la inherente capacidad de rápida reproducción de la información digital queda aún más fuera del contexto actual ante la omnipresencia de grandes modelos de lenguaje (LLM) como ChatGPT o DeepSeek, que permiten a los estudiantes obtener una rápida orientación sobre la temática que se está tratando.  
@@ -181,7 +181,7 @@ Tal transcripción de sus anotaciones en papel al teléfono o computadora conect
 
 Por estas razones es que en los cursos aquí presentados se busca utilizar el mismo formato digital, tanto para el dictado de lecciones por parte del docente, como para la ejercitación por parte de los alumnos.
 Dicho medio no solo es capaz de representar todo el contenido gráfico que puede mostrarse en un pizarrón, incluyendo las ecuaciones integro-diferenciales que modelan cualquier sistema físico a analizar, sino que también permite resolver estas últimas.
-Esto abre el camino a utilizar en clase representaciones gráficas precisa de dichos resultados, y en particular de los obtenidos por métodos del cálculo numérico.
+Esto abre el camino a utilizar en clase representaciones gráficas precisas de dichos resultados, y en particular de los obtenidos por métodos del cálculo numérico.
 % Esto último con el fin de que el alumno pueda poner en práctica la mecánica computacional como una herramienta de trabajo en la asignatura. 
 
 
@@ -211,8 +211,9 @@ Por el contrario, solo se requiere que puedan plasmar una solución a una serie 
 
 El punto de utilizar la herramienta informática es despreocupar a los alumnos del trabajo matemático para centrarlo en los nuevos conceptos que se presentan en la asignatura.
 De igual manera que un alumno de secundaria resuelve aritmética con una calculadora de bolsillo tras haberle aprendido en la primaria, nuestros alumnos automatizan lo aprendido en asignaturas anteriores.
-Y por otra parte, extendemos con un uso sistemático de cálculos simples a la resolución de problemas complejos, que requerirían de cálculos integro-diferenciales que aun no dominan.
-Esto con el fin de evitar la frustración que conlleva un trabajo tan monótono \cite{Pekrun2006}, permitiéndoles resolver más problemas con retroalimentación inmediata, que se traduce en más práctica para la incorporación de conceptos; trabajan en forma autónoma; reutilizan y adaptan código para experimentar con problemas cada vez más complejos, incluso no solo entre los propuestos en esta materia, atesorando una herramienta que podrán aprovechar en otros contextos.
+\textcolor{blue}{Y por otra parte, extendemos con un uso sistemático de cálculos simples a la resolución de problemas complejos, que requerirían de cálculos integro-diferenciales que aun no dominan, evitando la posible frustración de un trabajo tan monótono y que en numerosas ocasiones no puede ser concluido, o lo es en forma incorrecta, debido a las dificultades matemáticas \cite{Pekrun2006}. Esto les permite resolver más problemas con retroalimentación inmediata, que se traduce en más práctica para la incorporación de conceptos, trabajando en forma autónoma, reutilizando y adaptando código para experimentar con problemas cada vez más complejos, incluso no solo entre los propuestos en esta materia, atesorando así una herramienta que podrán aprovechar en otros contextos.}
+\textcolor{red}{Y por otra parte, extendemos con un uso sistemático de cálculos simples a la resolución de problemas complejos, que requerirían de cálculos integro-diferenciales que aun no dominan.
+Esto con el fin de evitar la frustración que conlleva un trabajo tan monótono \cite{Pekrun2006}, permitiéndoles resolver más problemas con retroalimentación inmediata, que se traduce en más práctica para la incorporación de conceptos; trabajan en forma autónoma; reutilizan y adaptan código para experimentar con problemas cada vez más complejos, incluso no solo entre los propuestos en esta materia, atesorando una herramienta que podrán aprovechar en otros contextos.}
 
 Desplazando aún más la idea de que se está pidiendo aprender a programar, el formato digital utilizado en las asignaturas objeto de este trabajo no pone en preeminencia el código en lenguaje Python sobre otro material, como el texto, ecuaciones o gráficos generados en forma externa.
 Dicho formato son los cuadernos Jupyter, como el que muestra la Figura \ref{fig:jupyter}.
@@ -366,9 +367,10 @@ Unos pocos minutos de preguntas sobre como estos últimos implementaron una part
 La naturaleza interactiva de los cuadernos Jupyter permitió a los alumnos adquirir una mejor comprensión de la física detrás de las ecuaciones, modificando parámetros y obteniendo resultados inmediatamente, resultados que son correctos y no dependientes de sus habilidades matemáticas.\par\medskip
 % Gracias a la naturaleza interactiva de los cuadernos Jupyter, se comprobó durante las actividades en clase que las y los estudiantes adquieren una mejor comprensión de la física detrás de las ecuaciones, modificando parámetros y obteniendo resultados inmediatamente, resultados que son correctos y no dependientes de sus habilidades matemáticas.\par\medskip
 
-En la nueva instancia del curso de electrostática que se está desarrollando este año, se planea incluir un módulo con ejercicios de campos y equipotenciales en presencia de conductores. La resolución de estos ejercicios en cursos introductorios en ingeniería se restringe a problemas extremadamente sencillos o con aproximaciones muchas veces exageradas. Sin embargo, el análisis de los resultados de situaciones más complejas puede ser muy valioso, evitando aproximaciones exageradas que puedan formar conceptos erróneos. En particular, se incluirá el análisis numérico de una práctica de laboratorio donde se mapea el voltaje en una cuba que contiene electrodos extensos mantenidos a potencial constante, donde las y los estudiantes solo deberán describir la geometría de los conductores mediante funciones matemáticas sencillas.
+Incentivados por los buenos resultados de las experiencias realizadas, en la nueva instancia del curso de electrostática que se está desarrollando este año, se planea incluir un módulo con ejercicios de campos y equipotenciales en presencia de conductores. La resolución de estos ejercicios en cursos introductorios en ingeniería se restringe a problemas extremadamente sencillos o con aproximaciones muchas veces exageradas. Sin embargo, el análisis de los resultados de situaciones más complejas puede ser muy valioso, evitando aproximaciones exageradas que puedan formar conceptos erróneos. En particular, se incluirá el análisis numérico de una práctica de laboratorio donde se mapea el voltaje en una cuba que contiene electrodos extensos mantenidos a potencial constante, donde las y los estudiantes solo deberán describir la geometría de los conductores mediante funciones matemáticas sencillas.
 % \textcolor{red}{(incluir una referencia, un link a la guía de laboratorio publicada en internet, al cuaderno jupyter para este análisis, footnote, o nada?)}
 
+A su vez, se planea guardar cada uno de los intentos de resolución de problemas de los estudiantes, y no solo el resultado definitivo. Gracias a la utilización de un paquete de funciones propio, se prevee guardar un registro de los parámetros cada vez que los estudiantes ejecuten las funciones, para luego hacer un análisis de sus estrategias de resolución y sus procesos deductivos.
 
 % ------------------------------------------------------------------------------
 \section{AGRADECIMIENTOS}

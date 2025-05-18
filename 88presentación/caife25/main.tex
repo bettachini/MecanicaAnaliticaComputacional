@@ -144,8 +144,8 @@ Y la segunda, no depender de un software específico que limite la posibilidad d
 \subsection{Pizarrón y papel, foco de las clases en la tercera década del siglo XXI}	
 
 En la tercera década del siglo XXI los cursos de ingeniería de las universidades latinoamericanas tienen aún como herramientas centrales el papel y el pizarrón.
-Esta última herramienta creada en el siglo XIX sigue siendo el foco de atención en los siglos subsiguientes, como ilustra la Figura \ref{fig:oldSchool}, algo no distinto de lo que puede verse en un aula contemporánea.
-Desde entonces la metodología de la clase se resumen en que el docente presenta un tema con anotaciones en el pizarrón, los alumnos toman apuntes en papel, luego realizan la ejercitación, y el docente corrige, en el mismo medio.
+Inventado en el siglo XIX, el pizarrón es el foco del aula en los siglos subsiguientes, algo que ilustra la Figura \ref{fig:oldSchool} imagen que podría corresponder a un aula contemporánea.
+Desde entonces la metodología de la clase se resumen en que el docente presenta un tema con anotaciones en el pizarrón, los alumnos toman apuntes en papel, luego realizan la ejercitación, que el docente puede luego corregir en el mismo soporte.
 
 \begin{figure}[ht]
 	\centering
@@ -175,7 +175,7 @@ En las últimas décadas del siglo XX se generalizó el uso de computadoras en e
 Y ellos, aun cuando realicen sus anotaciones en computadoras portátiles, reproducen aún el mismo esquema del s. XIX, invirtiendo buena parte de su tiempo y atención en transcribir lo mostrado en un pizarrón.
 
 Esta sub explotación en el aula de la inherente capacidad de rápida reproducción de la información digital queda aún más fuera del contexto actual ante la omnipresencia de grandes modelos de lenguaje (LLM) como ChatGPT o DeepSeek, que permiten a los estudiantes obtener una rápida orientación sobre la temática que se está tratando.  
-No es realista pretender que puedan escindirse los LLM de los cursos de ingeniería de aquí en más.
+% No es realista pretender que puedan escindirse los LLM de los cursos de ingeniería de aquí en más.
 Los formatos papel y pizarrones fuerzan a una transcripción desde y hacia el medio digital para poder hacer provecho de los LLM.
 Tal transcripción de sus anotaciones en papel al teléfono o computadora conectadas a internet, sumada al arcaico proceder de tomar apuntes en clase, es sumar una tarea adicional que distrae al alumno del pensamiento creativo que debiera ser el foco de su esfuerzo.
 
@@ -186,7 +186,7 @@ Esto abre el camino a utilizar en clase representaciones gráficas precisa de di
 
 
 
-\subsection{El código como una herramienta central de una asignatura}
+\subsection{El código como herramienta central de la asignatura}
 
 Si nos proponemos hacer mecánica computacional en un curso de grado de ingeniería, puede resultar tentador usar algún paquete de software específico para resolver problemas de física, que permita modelizar y simular sistemas utilizando alguna interfaz gráfica, como Comsol Multiphysics, Ansys o SolidWorks.
 O, por el contrario, utilizar un paquete de software más específico de matemática computacional, como Mathematica o Matlab.
@@ -199,19 +199,23 @@ Para que la implementación de Python sea vista como una continuación de lo apr
 Para tal fin se hace uso de la biblioteca SymPy \cite{sympy} que permite operar con álgebra simbólica utilizando la nomenclatura matemática habitual.
 Esto es fundamental para que el docente pueda intercalar en sus explicaciones cálculos realizados por el código que sean inteligibles para el alumno.
 
-Para capitalizar lo aprendido de cálculo numérico en asignaturas precedentes, a los fines de obtener soluciones de las ecuaciones aún de las más complejas ecuaciones integro-diferenciales generadas con auxilio de SymPy, se recurre a la biblioteca SciPy \cite{2020SciPy-NMeth}. Y finalmente, para generar representaciones gráficas de tales resultados, se hace uso de la biblioteca Matplotlib \cite{Hunter:2007}.
+Para capitalizar lo aprendido de cálculo numérico en asignaturas precedentes, a los fines de obtener soluciones de las ecuaciones aún de las más complejas ecuaciones integro-diferenciales generadas con auxilio de SymPy, se recurre a la biblioteca SciPy \cite{2020SciPy-NMeth}.
+Y finalmente, para generar representaciones gráficas de tales resultados, se hace uso de la biblioteca Matplotlib \cite{Hunter:2007}.
 
 
 \subsection{Usar código para hacer menos tediosa la matemática no requiere de saber programar}
 
 Es importante recalcar que aprovechar código para estas tareas en una asignatura no implica enseñar a programar.
 En ninguno de los casos reportados en este trabajo se busca que el alumno aprenda a modelar algorítmicamente teniendo en cuenta cuestiones de la arquitectura informática de los sistemas que utiliza, lo que sería programar.
-Por el contrario, se busca que simplemente pueda plasmar una solución apoyándose en código ya escrito y solo aprenda a adaptarlo a sus necesidades.
+Por el contrario, solo se requiere que puedan plasmar una solución a una serie de problemas que figuran en guías de ejercicios a través de adaptar código escrito por los docentes, un concepto que se denomina reutilización de código.
 
-no se frustran con integrales que aún no dominan \cite{Pekrun2006}, permitiéndoles resolver más problemas con retroalimentación inmediata, que se traduce en más práctica para la incorporación de conceptos; trabajan en forma autónoma; reutilizan y adaptan código para experimentar con problemas cada vez más complejos, incluso no solo entre los propuestos en esta materia, atesorando una herramienta que podrán aprovechar en otros contextos.
+El punto de utilizar la herramienta informática es despreocupar a los alumnos del trabajo matemático para centrarlo en los nuevos conceptos que se presentan en la asignatura.
+De igual manera que un alumno de secundaria resuelve aritmética con una calculadora de bolsillo tras haberle aprendido en la primaria, nuestros alumnos automatizan lo aprendido en asignaturas anteriores.
+Y por otra parte, extendemos con un uso sistemático de cálculos simples a la resolución de problemas complejos, que requerirían de cálculos integro-diferenciales que aun no dominan.
+Esto con el fin de evitar la frustración que conlleva un trabajo tan monótono \cite{Pekrun2006}, permitiéndoles resolver más problemas con retroalimentación inmediata, que se traduce en más práctica para la incorporación de conceptos; trabajan en forma autónoma; reutilizan y adaptan código para experimentar con problemas cada vez más complejos, incluso no solo entre los propuestos en esta materia, atesorando una herramienta que podrán aprovechar en otros contextos.
 
-
-Haciendo uso del formato de cuadernos Jupyter, como el que muestra la Figura \ref{fig:jupyter}, se intercalan en un mismo documento texto, ecuaciones y gráficos generados en forma externa con aquellos que se producen por el código Python.
+Desplazando aún más la idea de que se está pidiendo aprender a programar, el formato digital utilizado en las asignaturas objeto de este trabajo no pone en preeminencia el código en lenguaje Python sobre otro material, como el texto, ecuaciones o gráficos generados en forma externa.
+Dicho formato son los cuadernos Jupyter, como el que muestra la Figura \ref{fig:jupyter}.
 
 \begin{figure}[ht]
 	\centering
@@ -226,7 +230,6 @@ Haciendo uso del formato de cuadernos Jupyter, como el que muestra la Figura \re
 Al ejecutar el código Python en los cuadernos Jupyter, esto permite que el alumno pueda modificar una copia del cuaderno generado por el docente a los fines de resolver cualquier problema similar al de un ejemplo provisto en clase.
 Se quita así la necesidad de que el alumno deba transcribir lecciones, optimizando el uso del tiempo de la clase.
 Y, por otra parte, el docente puede corregir los ejercicios de los alumnos en el mismo cuaderno Jupyter, un formato en que las expresiones matemáticas y gráficos generados por el primero están estandarizados y son, por tanto, rápidamente inteligibles.
-
 
 
 

@@ -89,7 +89,7 @@ Tal herramienta encuentra aplicación inmediata en las asignaturas inmediatament
 \begin{figure}[ht]
 	\centering
 	\begin{subfigure}[b]{0.5\textwidth}
-	\includegraphics[width=\textwidth]{../figuras/correlativas.pdf}
+	\includegraphics[width=\textwidth]{../figuras/correlativas_2.pdf}
 	\caption{
 		La asignatura de mecánica analítica de la UNLaM oficia de umbral hacia las específicas de la carrera.  
 		}
@@ -97,7 +97,7 @@ Tal herramienta encuentra aplicación inmediata en las asignaturas inmediatament
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[b]{0.45\textwidth}
-	\includegraphics[width=\textwidth]{../figuras/utn_fra_ingMec_correlativasF2.pdf}
+	\includegraphics[width=\textwidth]{../figuras/utn_fra_ingMec_correlativasF2_2.pdf}
 	\caption{
 		En UTN FRA la primera asignatura con temática de electromagnetismo abre el camino a otras en que esta se aplica a dispositivos industriales de electrotecnia y electrónica.
 		Se muestran solo las correlativas con aplicación inmediata de conceptos de electromagnetismo. 
@@ -199,7 +199,7 @@ Para que la implementación de Python sea vista como una continuación de lo apr
 Para tal fin se hace uso de la biblioteca SymPy \cite{sympy} que permite operar con álgebra simbólica utilizando la nomenclatura matemática habitual.
 Esto es fundamental para que el docente pueda intercalar en sus explicaciones cálculos realizados por el código que sean inteligibles para el alumno.
 
-Para capitalizar lo aprendido de cálculo numérico en asignaturas precedentes, a los fines de obtener soluciones de las ecuaciones aún de las más complejas ecuaciones integro-diferenciales generadas con auxilio de SymPy, se recurre a la biblioteca SciPy \cite{2020SciPy-NMeth}.
+Para capitalizar lo aprendido de cálculo numérico en asignaturas precedentes, a los fines de obtener soluciones de las ecuaciones aun de las más complejas ecuaciones integro-diferenciales generadas con auxilio de SymPy, se recurre a la biblioteca SciPy \cite{2020SciPy-NMeth}.
 Y finalmente, para generar representaciones gráficas de tales resultados, se hace uso de la biblioteca Matplotlib \cite{Hunter:2007}.
 
 
@@ -207,15 +207,14 @@ Y finalmente, para generar representaciones gráficas de tales resultados, se ha
 
 Es importante recalcar que aprovechar código para estas tareas en una asignatura no implica enseñar a programar.
 En ninguno de los casos reportados en este trabajo se busca que el alumno aprenda a modelar algorítmicamente teniendo en cuenta cuestiones de la arquitectura informática de los sistemas que utiliza, lo que sería programar.
-Por el contrario, solo se requiere que puedan plasmar una solución a una serie de problemas que figuran en guías de ejercicios a través de adaptar código escrito por los docentes, un concepto que se denomina reutilización de código.
+Por el contrario, solo se requiere que plasmen soluciones a la serie de problemas a través de adaptar código escrito por los docentes, un concepto que se denomina reutilización de código.
 
-El punto de utilizar la herramienta informática es despreocupar a los alumnos del trabajo matemático para centrarlo en los nuevos conceptos que se presentan en la asignatura.
+El punto de utilizar la herramienta informática es despreocupar a los alumnos del trabajo matemático para centrarlo en los nuevos conceptos propios de la asignatura.
 De igual manera que un alumno de secundaria resuelve aritmética con una calculadora de bolsillo tras haberle aprendido en la primaria, nuestros alumnos automatizan lo aprendido en asignaturas anteriores.
-\textcolor{blue}{Y por otra parte, extendemos con un uso sistemático de cálculos simples a la resolución de problemas complejos, que requerirían de cálculos integro-diferenciales que aun no dominan, evitando la posible frustración de un trabajo tan monótono y que en numerosas ocasiones no puede ser concluido, o lo es en forma incorrecta, debido a las dificultades matemáticas \cite{Pekrun2006}. Esto les permite resolver más problemas con retroalimentación inmediata, que se traduce en más práctica para la incorporación de conceptos, trabajando en forma autónoma, reutilizando y adaptando código para experimentar con problemas cada vez más complejos, incluso no solo entre los propuestos en esta materia, atesorando así una herramienta que podrán aprovechar en otros contextos.}
-\textcolor{red}{Y por otra parte, extendemos con un uso sistemático de cálculos simples a la resolución de problemas complejos, que requerirían de cálculos integro-diferenciales que aun no dominan.
-Esto con el fin de evitar la frustración que conlleva un trabajo tan monótono \cite{Pekrun2006}, permitiéndoles resolver más problemas con retroalimentación inmediata, que se traduce en más práctica para la incorporación de conceptos; trabajan en forma autónoma; reutilizan y adaptan código para experimentar con problemas cada vez más complejos, incluso no solo entre los propuestos en esta materia, atesorando una herramienta que podrán aprovechar en otros contextos.}
+Por otra parte, extendemos con un uso sistemático de cálculos simples a la resolución de problemas complejos, que requerirían de cálculos integro-diferenciales que aún no dominan, evitando la posible frustración de un trabajo tan monótono y que en numerosas ocasiones no puede ser concluido, o lo es en forma incorrecta, debido a las dificultades matemáticas \cite{Pekrun2006}.
+Esto les permite resolver más problemas con retroalimentación inmediata, que se traduce en más práctica para la incorporación de conceptos, trabajando en forma autónoma, reutilizando y adaptando código para experimentar con problemas cada vez más complejos, incluso no solo entre los propuestos en esta materia, atesorando así una herramienta que podrán aprovechar en otros contextos.
 
-Desplazando aún más la idea de que se está pidiendo aprender a programar, el formato digital utilizado en las asignaturas objeto de este trabajo no pone en preeminencia el código en lenguaje Python sobre otro material, como el texto, ecuaciones o gráficos generados en forma externa.
+Desplazando aún más la idea de que se está pidiendo aprender a programar, el formato digital utilizado no pone en preeminencia el código en lenguaje Python sobre otro material, como el texto, ecuaciones o gráficos generados en forma externa.
 Dicho formato son los cuadernos Jupyter, como el que muestra la Figura \ref{fig:jupyter}.
 
 \begin{figure}[ht]
@@ -230,7 +229,7 @@ Dicho formato son los cuadernos Jupyter, como el que muestra la Figura \ref{fig:
 
 Al ejecutar el código Python en los cuadernos Jupyter, esto permite que el alumno pueda modificar una copia del cuaderno generado por el docente a los fines de resolver cualquier problema similar al de un ejemplo provisto en clase.
 Se quita así la necesidad de que el alumno deba transcribir lecciones, optimizando el uso del tiempo de la clase.
-Y, por otra parte, el docente puede corregir los ejercicios de los alumnos en el mismo cuaderno Jupyter, un formato en que las expresiones matemáticas y gráficos generados por el primero están estandarizados y son, por tanto, rápidamente inteligibles.
+Asimismo, el docente puede corregir los ejercicios de los alumnos en el mismo cuaderno Jupyter, un formato en que las expresiones matemáticas y gráficos generados por el primero están estandarizados y son, por tanto, rápidamente inteligibles.
 
 
 
@@ -243,11 +242,9 @@ La reciente experiencia del confinamiento por la pandemia de COVID-19 ha demostr
 El uso de tales plataformas solo requieren de una conexión a internet.
 El alumno accede a las mismas utilizando una computadora personal, sea en su hogar, en su trabajo o una biblioteca. 
 Incluso, en uno de los cursos reportados en este trabajo, el alumnado ha hecho uso de teléfonos inteligentes, no solo para acceder a los cuadernos Jupyter, sino también para editarlos con la finalidad de resolver los ejercicios.
-
 Existen varias plataformas en línea, y de uso gratuito, que permiten la edición de cuadernos Jupyter y ejecutar código Python en ellos, como Google Colaboratory, GitHub Codespaces, Kaggle o CoCalc, entre otras.
 Una de las funcionalidades de estas plataformas es que permiten compartir el cuaderno Jupyter con otros usuarios, lo que fomenta entre los alumnos al trabajo colaborativo a distancias, una competencia fundamental en el ámbito laboral actual.
 Lo que es tal vez más importante, el docente puede comentar y corregir cuadernos de los alumnos a distancia y en tiempo real, lo que habilita consultas asincrónicas sobre los ejercicios, y no solo sincrónico como en el caso de las clases presenciales.
-
 En estas plataformas los cuadernos con la resolución de ejercicios por parte de los alumnos quedan a resguardo en la cuenta personal de los mismos.
 Pueden así servirles de referencia futura para aplicarse en asignaturas posteriores o incluso en su vida profesional.
 
@@ -258,7 +255,7 @@ Pueden así servirles de referencia futura para aplicarse en asignaturas posteri
 
 La complejidad de la matemática para modelizar sistemas crece rápidamente a medida que se contemplan más factores para hacer del modelo más fiel a los factores que se presentan el sistema físico real.
 Una vez esquematizado el sistema físico, como muestra la Figura \ref{fig:esquema}, se debe calcular la energía potencial y cinética del sistema, así como los momentos de inercia de los cuerpos que lo componen. 
-A partir de estos generar con el formalismo Lagrangiano las ecuaciones para la dinámica y despejar las aceleraciones es una tarea trivial para las funciones de la biblioteca de álgebra simbólica Sympy, como ilustra la Figura \ref{fig:aceleraciones}.
+A partir de estos generar con el formalismo Lagrangiano las ecuaciones para la dinámica y despejar las aceleraciones es una tarea trivial para las funciones de la biblioteca de álgebra simbólica SymPy, como ilustra la Figura \ref{fig:aceleraciones}.
 Como último paso, se resuelven numéricamente las ecuaciones diferenciales generadas con funciones de la biblioteca SciPy, y se representa gráficamente la dinámica del sistema, como muestra la Figura \ref{fig:grafico} con auxilio de la biblioteca matplotlib.
 
 \begin{figure}
@@ -376,8 +373,9 @@ A su vez, se planea guardar cada uno de los intentos de resolución de problemas
 \section{AGRADECIMIENTOS}
 % Adicionalmente, puede incluirse un apartado dedicado a los agradecimientos a personas o instituciones que han contribuido para la realización y/o financiación del trabajo.
 
-Los autores de este trabajo desean agradecer al DIIT de la UNLaM por su apoyo al trabajo aquí reportado que es parte de los proyectos C2-ING-109 (2023-2024) y C2-ING-143 (2025-2026), este último parte del Programa de Investigación Mejora de las Estrategias Pedagógicas dirigido por la Dra. Bettina Donadelllo.
-Ambos proyectos están acreditados en el Programa de Investigación Científica, Desarrollo y Transferencia de Tecnología e Innovaciones (CyTMA2) de la mencionada institución.
+Los autores desean agradecer al DIIT de la UNLaM por su apoyo a través de los proyectos C2-ING-109 (2023-2024) y C2-ING-143 (2025-2026).
+Este último es parte del Programa de Investigación Mejora de las Estrategias Pedagógicas dirigido por la Dra. Bettina Donadelllo.
+Ambos proyectos están acreditados en el Programa de Investigación Científica, Desarrollo y Transferencia de Tecnología e Innovaciones (CyTMA2) del DIIT.
 
 
 % -----------------------------------------------------------------------------	

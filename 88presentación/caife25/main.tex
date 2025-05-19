@@ -85,17 +85,9 @@ Ambos casos subrayan cómo la programación accesible (Python) y entornos intera
 \section{INTRODUCCIÓN}
 
 \subsection{Las asignaturas de física, puente entre asignaturas básicas y específicas de la ingeniería mecánica}
-En las carreras de ingeniería mecánica las asignaturas de física ofician de puente con aquellas en que se 
-\mr{aplican}
-%aplica 
-los conceptos tanto de física como de matemática a las temáticas propias de la carrera. 
-La Figura \ref{fig:correlativasUNLaM} ilustra el caso para 
-\mr{Mecánica General, }
-la asignatura destinada a la mecánica analítica en la Universidad de La Matanza (UNLaM), en la que se dicta el formalismo Lagrangiano para el cálculo de esfuerzos y dinámica de sistemas de cuerpos rígidos simples.
-Tal herramienta encuentra aplicación inmediata en las asignaturas 
-%inmediatamente
-\mr{sacaría el "inmediatamente", para no repetir, tal vez puede decirse: directamente}
-correlativas destinadas a la mecánica de fluidos, el estudio de vibraciones y la dinámica de elementos de máquinas. 
+En las carreras de ingeniería mecánica las asignaturas de física ofician de puente con aquellas en que se aplican los conceptos tanto de física como de matemática a las temáticas propias de la carrera. 
+La Figura \ref{fig:correlativasUNLaM} ilustra el caso para la asignatura destinada a la mecánica analítica en la Universidad de La Matanza (UNLaM), en la que se dicta el formalismo Lagrangiano para el cálculo de esfuerzos y dinámica de sistemas de cuerpos rígidos simples.
+Tal herramienta encuentra aplicación directa en las asignaturas correlativas destinadas a la mecánica de fluidos, el estudio de vibraciones y la dinámica de elementos de máquinas. 
 
 \begin{figure}[ht]
 	\centering
@@ -186,8 +178,6 @@ En las últimas décadas del siglo XX se generalizó el uso de computadoras en e
 Y ellos, aun cuando realicen sus anotaciones en computadoras portátiles, reproducen aún el mismo esquema del s. XIX, invirtiendo buena parte de su tiempo y atención en transcribir lo mostrado en un pizarrón.
 
 Esta sub explotación en el aula de la inherente capacidad de rápida reproducción de la información digital queda aún más fuera del contexto actual ante la omnipresencia de grandes modelos de lenguaje (LLM) como ChatGPT o DeepSeek, que permiten a los estudiantes obtener una rápida orientación sobre la temática que se está tratando.  
-\mr{acá tocás un punto adicional. No les estamos enseñando a les estudiantes a interactuar con los LLM correctamente y utilizarlos con mirada crítica. Por ejemplo, en el caso del problema del half-pipe, algunos lo metían en el LLM y éste asumía que el sistema era puntual, si no razonaban el resultado, no se daban cuenta del error. Tal vez sería importante incuir una línea de esto, se me ocurre algo en la línea de: Pero además, debemos oerientarles en tal sentido, es crítico que los docentes introduzcan estos sistemas y enseñen su uso y limitaciones.}
-% No es realista pretender que puedan escindirse los LLM de los cursos de ingeniería de aquí en más.
 Los formatos papel y pizarrones fuerzan a una transcripción desde y hacia el medio digital para poder hacer provecho de los LLM.
 Tal transcripción de sus anotaciones en papel al teléfono o computadora conectadas a internet, sumada al arcaico proceder de tomar apuntes en clase, es sumar una tarea adicional que distrae al alumno del pensamiento creativo que debiera ser el foco de su esfuerzo.
 
@@ -205,7 +195,7 @@ O, por el contrario, utilizar un paquete de software más específico de matemá
 
 Ante este abanico de opciones, no hay que olvidar que las asignaturas de física se ubican al inicio de las carreras de ingeniería mecánica, y el alumno en tal estadío no tiene aún la formación suficiente para comprender en detalle las herramientas de modelización y simulación que ofrecen los paquetes de software específicos de matemática o mecánica computacional.
 Entendemos que para que la propuesta pueda ser transversal a las varias temáticas de las múltiples asignaturas correlativas, se debe utilizar una herramienta aún más general. 
-Con este supuesto es que se optó por hacer uso de Python, un lenguaje de programación de alto nivel. \mr{Que además resulta ser abierto y libre, virtudes acordes a las limitaciones de las aulas de nuestras universidades.}
+Con este supuesto es que se optó por hacer uso de Python, un lenguaje de programación de alto nivel, que además resulta ser abierto y libre, virtudes acordes a las limitaciones de las aulas de nuestras universidades
 
 Para que la implementación de Python sea vista como una continuación de lo aprendido en las asignaturas de matemática, este debe operar el álgebra y análisis simbólico con la misma nomenclatura matemática que se utiliza en el pizarrón.
 Para tal fin se hace uso de la biblioteca SymPy \cite{sympy} que permite operar con álgebra simbólica utilizando la nomenclatura matemática habitual.
@@ -221,7 +211,7 @@ Es importante recalcar que aprovechar código para estas tareas en una asignatur
 En ninguno de los casos reportados en este trabajo se busca que el alumno aprenda a modelar algorítmicamente teniendo en cuenta cuestiones de la arquitectura informática de los sistemas que utiliza.
 %, lo que sería programar.
 % Propongo estos dos cambios (anterior y siguiente) porque me suena un toque condescendiente con el lector ponerlo tan explícito. Es sólo sugerencia.
-Por el contrario, solo se requiere que plasmen soluciones a la serie de problemas a través de adaptar código escrito por los docentes \mr{(simple reutilización de código).}
+Por el contrario, solo se requiere que plasmen soluciones a la serie de problemas a través de adaptar código escrito por los docentes, algo que no es más que una mera reutilización de este código.
 %, un concepto que se denomina reutilización de código.
 
 El punto de utilizar la herramienta informática es despreocupar a los alumnos del trabajo matemático para centrarlo en los nuevos conceptos propios de la asignatura.
@@ -242,7 +232,7 @@ Dicho formato son los cuadernos Jupyter, como el que muestra la Figura \ref{fig:
 	\label{fig:jupyter}
 \end{figure}
 
-Al ejecutar el código Python en los cuadernos Jupyter, esto permite que el alumno pueda modificar una copia del cuaderno generado por el docente a los fines de resolver cualquier problema similar al de un ejemplo provisto en clase.
+El ejecutar el código Python dentro de cuadernos Jupyter, permite al alumno modificar una copia del cuaderno provisto por el docente a los fines de resolver cualquier problema similar al de un ejemplo provisto en clase.
 Se quita así la necesidad de que el alumno deba transcribir lecciones, optimizando el uso del tiempo de la clase.
 Asimismo, el docente puede corregir los ejercicios de los alumnos en el mismo cuaderno Jupyter, un formato en que las expresiones matemáticas y gráficos generados por el primero están estandarizados y son, por tanto, rápidamente inteligibles.
 
@@ -251,12 +241,12 @@ Asimismo, el docente puede corregir los ejercicios de los alumnos en el mismo cu
 \subsection{Los recursos están: plataformas en línea}
 
 Se ha argumentado que las universidades públicas latinoamericanas enfrentando restricciones simultáneas de presupuestos ajustados y la necesidad de acomodar los horarios de sus clases a estudiantes que trabajan de día a horarios vespertinos, no cuentan con recursos informáticos para destinar a cursos que no estén directamente relacionados con la informática o la programación 
-\cite{vallejo_google_2022}.%[@vallejo_google_2022:2022].
-
-La experiencia del confinamiento por la pandemia de COVID-19 ha demostrado que es posible utilizar plataformas en línea para la enseñanza de asignaturas que no son informáticas.
+\cite{vallejo_google_2022}.
+Sin embargo, la experiencia del confinamiento por la pandemia de COVID-19 ha demostrado que es posible utilizar plataformas en línea para la enseñanza de asignaturas que no son informáticas.
 El uso de tales plataformas solo requieren de una conexión a internet.
 El alumno accede a las mismas utilizando una computadora personal, sea en su hogar, en su trabajo o una biblioteca. 
 Incluso, en uno de los cursos reportados en este trabajo, el alumnado ha hecho uso de teléfonos inteligentes, no solo para acceder a los cuadernos Jupyter, sino también para editarlos con la finalidad de resolver los ejercicios.
+
 Existen varias plataformas en línea, y de uso gratuito, que permiten la edición de cuadernos Jupyter y ejecutar código Python en ellos, como Google Colaboratory, GitHub Codespaces, Kaggle o CoCalc, entre otras.
 Una de las funcionalidades de estas plataformas es que permiten compartir el cuaderno Jupyter con otros usuarios, lo que fomenta entre los alumnos al trabajo colaborativo a distancias, una competencia fundamental en el ámbito laboral actual.
 Lo que es tal vez más importante, el docente puede comentar y corregir cuadernos de los alumnos a distancia y en tiempo real, lo que habilita consultas asincrónicas sobre los ejercicios, y no solo sincrónico como en el caso de las clases presenciales.
@@ -268,11 +258,9 @@ Pueden así servirles de referencia futura para aplicarse en asignaturas posteri
 
 \subsection{Trabajando con dispositivos mecánicos realistas}
 
-La complejidad de la matemática para modelizar sistemas crece rápidamente a medida que se contemplan más factores para hacer del modelo más fiel a los 
-%factores, lo reemplazaría con elementos par aque no repita
-\mr{elementos} que se presentan el sistema físico real.
+La complejidad de la matemática para modelizar sistemas crece rápidamente a medida que se contemplan más factores para hacer del modelo más fiel a los elementos que se presentan el sistema físico real.
 Una vez esquematizado el sistema físico, como muestra la Figura \ref{fig:esquema}, se debe calcular la energía potencial y cinética del sistema, así como los momentos de inercia de los cuerpos que lo componen. 
-A partir de éstos, generar con el formalismo Lagrangiano las ecuaciones para la dinámica y despejar las aceleraciones es una tarea trivial para las funciones de la biblioteca de álgebra simbólica SymPy, como ilustra la Figura \ref{fig:aceleraciones}.
+A partir de estos, generar con el formalismo Lagrangiano las ecuaciones para la dinámica y despejar las aceleraciones es una tarea trivial para las funciones de la biblioteca de álgebra simbólica SymPy, como ilustra la Figura \ref{fig:aceleraciones}.
 Como último paso, se resuelven numéricamente las ecuaciones diferenciales generadas con funciones de la biblioteca SciPy, y se representa gráficamente la dinámica del sistema, como muestra la Figura \ref{fig:grafico} con auxilio de la biblioteca matplotlib.
 
 \begin{figure}
@@ -298,9 +286,7 @@ Como último paso, se resuelven numéricamente las ecuaciones diferenciales gene
 \end{figure}
 
 La mayor virtud de hacer uso de mecánica computacional en un curso de mecánica analítica es que la complejidad de la matemática requerida para calcular esfuerzos y la dinámica a partir de un modelo 
-\mr{industrial realista} 
-%de un sistema similar a los industriales 
-no está fuera del alcance de lo realizable en una clase. 
+industrial realista no está fuera del alcance de lo realizable en una clase. 
 Ejemplo de esto es el cálculo de torques y fuerza lineales que actúan sobre un brazo robótico, como el que se muestra en la Figura \ref{fig:ejemploDispositivo}.
 
 \begin{figure}[ht]
@@ -336,7 +322,13 @@ Los alumnos enfrentan así su solución asistiéndose de consultas al LLM que en
 	\label{fig:Gemini}
 \end{figure}
 
-\mr{Incluiría algún párrafo en el orden de (modificalo o sacalo si no te cierra): Además, es deber del grupo docente entrenar a los estudiantes en este tipo de interacción, ya que el uso de LLMs se ha vuelto omnipresente. En el ejemplo expuesto se muestra el uso explícito para generar código, sin embargo fácilmente puede ser utlizado en infinidad de otros ámbitos, resolución directa del problema, generación de imágenes del problema, de presentaicones, de explicaciones. Pero en todos estos casos es fundamental enseñar cómo ser crítico sobre las respuestas que este tipo de sistemas nos otorgan.}
+Cabe acotar que los docentes debemos paulatinamente convertirnos en  orientadores sobre como guardar un sentido crítico hacia los resultados que arrojan las consultas a los LLM.
+En este curso se mantienen cortas conversaciones con cada alumno sobre que malinterpretaciones podrían estar sucediendo en ambos sentidos de su intercambio con el LLM. 
+
+% \mr{acá tocás un punto adicional. No les estamos enseñando a les estudiantes a interactuar con los LLM correctamente y utilizarlos con mirada crítica. Por ejemplo, en el caso del problema del half-pipe, algunos lo metían en el LLM y éste asumía que el sistema era puntual, si no razonaban el resultado, no se daban cuenta del error. Tal vez sería importante incuir una línea de esto, se me ocurre algo en la línea de: Pero además, debemos oerientarles en tal sentido, es crítico que los docentes introduzcan estos sistemas y enseñen su uso y limitaciones.}
+% No es realista pretender que puedan escindirse los LLM de los cursos de ingeniería de aquí en más.
+
+% \mr{Incluiría algún párrafo en el orden de (modificalo o sacalo si no te cierra): Además, es deber del grupo docente entrenar a los estudiantes en este tipo de interacción, ya que el uso de LLMs se ha vuelto omnipresente. En el ejemplo expuesto se muestra el uso explícito para generar código, sin embargo fácilmente puede ser utlizado en infinidad de otros ámbitos, resolución directa del problema, generación de imágenes del problema, de presentaicones, de explicaciones. Pero en todos estos casos es fundamental enseñar cómo ser crítico sobre las respuestas que este tipo de sistemas nos otorgan.}
 
 \subsection{Aula invertida: el docente debe ayudar con los ejercicios, no está para dar conferencias}
 
@@ -390,7 +382,8 @@ La naturaleza interactiva de los cuadernos Jupyter permitió a los alumnos adqui
 Incentivados por los buenos resultados de las experiencias realizadas, en la nueva instancia del curso de electrostática que se está desarrollando este año, se planea incluir un módulo con ejercicios de campos y equipotenciales en presencia de conductores. La resolución de estos ejercicios en cursos introductorios en ingeniería se restringe a problemas extremadamente sencillos o con aproximaciones muchas veces exageradas. Sin embargo, el análisis de los resultados de situaciones más complejas puede ser muy valioso, evitando aproximaciones exageradas que puedan formar conceptos erróneos. En particular, se incluirá el análisis numérico de una práctica de laboratorio donde se mapea el voltaje en una cuba que contiene electrodos extensos mantenidos a potencial constante, donde las y los estudiantes solo deberán describir la geometría de los conductores mediante funciones matemáticas sencillas.
 % \textcolor{red}{(incluir una referencia, un link a la guía de laboratorio publicada en internet, al cuaderno jupyter para este análisis, footnote, o nada?)}
 
-A su vez, se planea guardar cada uno de los intentos de resolución de problemas de los estudiantes, y no solo el resultado definitivo. Gracias a la utilización de un paquete de funciones propio, se prevee guardar un registro de los parámetros cada vez que los estudiantes ejecuten las funciones, para luego hacer un análisis de sus estrategias de resolución y sus procesos deductivos.
+Se planea también registrar cada intento de resolución de problemas de los estudiantes, no solo el resultado.
+Gracias a la utilización de un paquete de funciones propio, se provee guardar registro de los parámetros cada vez que los estudiantes ejecuten las funciones, habilitando un análisis de sus estrategias de resolución y procesos deductivos.
 
 % ------------------------------------------------------------------------------
 \section{AGRADECIMIENTOS}
@@ -402,7 +395,7 @@ Ambos proyectos están acreditados en el Programa de Investigación Científica,
 
 
 % -----------------------------------------------------------------------------	
-\section{REFERENCIAS}
+% \section{REFERENCIAS}
 
 %Se considera valioso incluir menciones a textos y artículos de publicaciones reconocidas, valorándose la incorporación de aquellas de reciente edición. La forma de indicar las citas bibliográficas en el texto está especificada al final de la sección \textbf{1. INTRODUCCIÓN}. Solamente deben incluirse las referencias citadas en el cuerpo del documento, según su orden de aparición. El formato de las referencias según \textbf{Normas APA (7ª edición, 2024)}. A continuación, se brindan algunos ejemplos:
 %
@@ -487,7 +480,8 @@ Ambos proyectos están acreditados en el Programa de Investigación Científica,
 %\end{itemize}
 %
 % ------------------------------------------------------------------------------
-\renewcommand{\bibname}{Referencias}% cambio de nombre
+\renewcommand{\refname}{REFERENCIAS}% cambio de nombre
+% \renewcommand{\bibname}{Referencias}% cambio de nombre
 %\nocite{*}
 \printbibliography
 

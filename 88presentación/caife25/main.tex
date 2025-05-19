@@ -9,6 +9,9 @@
 % ##############################################################################
 % ##############################################################################
 
+\usepackage{xcolor}
+\newcommand{\mr}[1]{\textcolor{blue}{#1}}
+
 % ---------- TÍTULO ------------------------------------------------------------
 \title{\textbf{INTRODUCCIÓN TEMPRANA DE LA MECÁNICA COMPUTACIONAL EN CURSOS DE ELECTROSTÁTICA Y MECÁNICA ANALÍTICA}}
 
@@ -82,9 +85,17 @@ Ambos casos subrayan cómo la programación accesible (Python) y entornos intera
 \section{INTRODUCCIÓN}
 
 \subsection{Las asignaturas de física, puente entre asignaturas básicas y específicas de la ingeniería mecánica}
-En las carreras de ingeniería mecánica las asignaturas de física ofician de puente con aquellas en que se aplica los conceptos tanto de física como de matemática a las temáticas propias de la carrera. 
-La Figura \ref{fig:correlativasUNLaM} ilustra el caso para la asignatura destinada a la mecánica analítica en la Universidad de La Matanza (UNLaM), en la que se dicta el formalismo Lagrangiano para el cálculo de esfuerzos y dinámica de sistemas de cuerpos rígidos simples.
-Tal herramienta encuentra aplicación inmediata en las asignaturas inmediatamente correlativas destinadas a la mecánica de fluidos, el estudio de vibraciones y la dinámica de elementos de máquinas. 
+En las carreras de ingeniería mecánica las asignaturas de física ofician de puente con aquellas en que se 
+\mr{aplican}
+%aplica 
+los conceptos tanto de física como de matemática a las temáticas propias de la carrera. 
+La Figura \ref{fig:correlativasUNLaM} ilustra el caso para 
+\mr{Mecánica General, }
+la asignatura destinada a la mecánica analítica en la Universidad de La Matanza (UNLaM), en la que se dicta el formalismo Lagrangiano para el cálculo de esfuerzos y dinámica de sistemas de cuerpos rígidos simples.
+Tal herramienta encuentra aplicación inmediata en las asignaturas 
+%inmediatamente
+\mr{sacaría el "inmediatamente", para no repetir, tal vez puede decirse: directamente}
+correlativas destinadas a la mecánica de fluidos, el estudio de vibraciones y la dinámica de elementos de máquinas. 
 
 \begin{figure}[ht]
 	\centering
@@ -126,7 +137,7 @@ Dichos conocimientos encuentran aplicación en las asignaturas inmediatamente co
 
 \subsection{La mecánica computacional como herramienta para evitar saltos de complejidad entre asignaturas}
 
-Las modelizaciones que se trabajan en las asignaturas de física, son ``de juguete'', en los términos de que difieren en demasía respecto a dispositivos que puede tener aplicación industrial.
+Las modelizaciones que se trabajan en las asignaturas de física son ``de juguete'', en los términos de que difieren en demasía respecto a dispositivos que puede tener aplicación industrial.
 Como evidencia la Figura \ref{fig:correlatividades}, estos son el objeto de las siguientes asignaturas que cursan los alumnos, lo que lleva a un ``salto de complejidad''. %ue usualmente resulta en que en dichas asignaturas se recurre a  desaprovecha lo aprendido en las asignaturas básicas al      
 
 Una de las razones para esto es la carencia que tienen los alumnos de la capacidad de plantear y resolver ecuaciones del cálculo integro-diferencial que requeriría modelar situaciones realistas en clase. 
@@ -175,6 +186,7 @@ En las últimas décadas del siglo XX se generalizó el uso de computadoras en e
 Y ellos, aun cuando realicen sus anotaciones en computadoras portátiles, reproducen aún el mismo esquema del s. XIX, invirtiendo buena parte de su tiempo y atención en transcribir lo mostrado en un pizarrón.
 
 Esta sub explotación en el aula de la inherente capacidad de rápida reproducción de la información digital queda aún más fuera del contexto actual ante la omnipresencia de grandes modelos de lenguaje (LLM) como ChatGPT o DeepSeek, que permiten a los estudiantes obtener una rápida orientación sobre la temática que se está tratando.  
+\mr{acá tocás un punto adicional. No les estamos enseñando a les estudiantes a interactuar con los LLM correctamente y utilizarlos con mirada crítica. Por ejemplo, en el caso del problema del half-pipe, algunos lo metían en el LLM y éste asumía que el sistema era puntual, si no razonaban el resultado, no se daban cuenta del error. Tal vez sería importante incuir una línea de esto, se me ocurre algo en la línea de: Pero además, debemos oerientarles en tal sentido, es crítico que los docentes introduzcan estos sistemas y enseñen su uso y limitaciones.}
 % No es realista pretender que puedan escindirse los LLM de los cursos de ingeniería de aquí en más.
 Los formatos papel y pizarrones fuerzan a una transcripción desde y hacia el medio digital para poder hacer provecho de los LLM.
 Tal transcripción de sus anotaciones en papel al teléfono o computadora conectadas a internet, sumada al arcaico proceder de tomar apuntes en clase, es sumar una tarea adicional que distrae al alumno del pensamiento creativo que debiera ser el foco de su esfuerzo.
@@ -191,9 +203,9 @@ Esto abre el camino a utilizar en clase representaciones gráficas precisas de d
 Si nos proponemos hacer mecánica computacional en un curso de grado de ingeniería, puede resultar tentador usar algún paquete de software específico para resolver problemas de física, que permita modelizar y simular sistemas utilizando alguna interfaz gráfica, como Comsol Multiphysics, Ansys o SolidWorks.
 O, por el contrario, utilizar un paquete de software más específico de matemática computacional, como Mathematica o Matlab.
 
-Ante este abanico de opciones, no hay que olvidar que las asignaturas de física se ubican al inicio de las carreras de ingeniería mecánica, y el alumno en tal estadio no tiene aún la formación suficiente para comprender en detalle las herramientas de modelización y simulación que ofrecen los paquetes de software específicos de matemática o mecánica computacional.
+Ante este abanico de opciones, no hay que olvidar que las asignaturas de física se ubican al inicio de las carreras de ingeniería mecánica, y el alumno en tal estadío no tiene aún la formación suficiente para comprender en detalle las herramientas de modelización y simulación que ofrecen los paquetes de software específicos de matemática o mecánica computacional.
 Entendemos que para que la propuesta pueda ser transversal a las varias temáticas de las múltiples asignaturas correlativas, se debe utilizar una herramienta aún más general. 
-Con este supuesto es que se optó por hacer uso de Python, un lenguaje de programación de alto nivel.
+Con este supuesto es que se optó por hacer uso de Python, un lenguaje de programación de alto nivel. \mr{Que además resulta ser abierto y libre, virtudes acordes a las limitaciones de las aulas de nuestras universidades.}
 
 Para que la implementación de Python sea vista como una continuación de lo aprendido en las asignaturas de matemática, este debe operar el álgebra y análisis simbólico con la misma nomenclatura matemática que se utiliza en el pizarrón.
 Para tal fin se hace uso de la biblioteca SymPy \cite{sympy} que permite operar con álgebra simbólica utilizando la nomenclatura matemática habitual.
@@ -206,13 +218,16 @@ Y finalmente, para generar representaciones gráficas de tales resultados, se ha
 \subsection{Usar código para hacer menos tediosa la matemática no requiere de saber programar}
 
 Es importante recalcar que aprovechar código para estas tareas en una asignatura no implica enseñar a programar.
-En ninguno de los casos reportados en este trabajo se busca que el alumno aprenda a modelar algorítmicamente teniendo en cuenta cuestiones de la arquitectura informática de los sistemas que utiliza, lo que sería programar.
-Por el contrario, solo se requiere que plasmen soluciones a la serie de problemas a través de adaptar código escrito por los docentes, un concepto que se denomina reutilización de código.
+En ninguno de los casos reportados en este trabajo se busca que el alumno aprenda a modelar algorítmicamente teniendo en cuenta cuestiones de la arquitectura informática de los sistemas que utiliza.
+%, lo que sería programar.
+% Propongo estos dos cambios (anterior y siguiente) porque me suena un toque condescendiente con el lector ponerlo tan explícito. Es sólo sugerencia.
+Por el contrario, solo se requiere que plasmen soluciones a la serie de problemas a través de adaptar código escrito por los docentes \mr{(simple reutilización de código).}
+%, un concepto que se denomina reutilización de código.
 
 El punto de utilizar la herramienta informática es despreocupar a los alumnos del trabajo matemático para centrarlo en los nuevos conceptos propios de la asignatura.
 De igual manera que un alumno de secundaria resuelve aritmética con una calculadora de bolsillo tras haberle aprendido en la primaria, nuestros alumnos automatizan lo aprendido en asignaturas anteriores.
 Por otra parte, extendemos con un uso sistemático de cálculos simples a la resolución de problemas complejos, que requerirían de cálculos integro-diferenciales que aún no dominan, evitando la posible frustración de un trabajo tan monótono y que en numerosas ocasiones no puede ser concluido, o lo es en forma incorrecta, debido a las dificultades matemáticas \cite{Pekrun2006}.
-Esto les permite resolver más problemas con retroalimentación inmediata, que se traduce en más práctica para la incorporación de conceptos, trabajando en forma autónoma, reutilizando y adaptando código para experimentar con problemas cada vez más complejos, incluso no solo entre los propuestos en esta materia, atesorando así una herramienta que podrán aprovechar en otros contextos.
+Esto permite resolver más problemas con retroalimentación inmediata, que se traduce en más práctica para la incorporación de conceptos, trabajando en forma autónoma, reutilizando y adaptando código para experimentar con problemas cada vez más complejos, incluso no solo entre los propuestos en esta materia, atesorando así una herramienta que podrán aprovechar en otros contextos.
 
 Desplazando aún más la idea de que se está pidiendo aprender a programar, el formato digital utilizado no pone en preeminencia el código en lenguaje Python sobre otro material, como el texto, ecuaciones o gráficos generados en forma externa.
 Dicho formato son los cuadernos Jupyter, como el que muestra la Figura \ref{fig:jupyter}.
@@ -235,10 +250,10 @@ Asimismo, el docente puede corregir los ejercicios de los alumnos en el mismo cu
 
 \subsection{Los recursos están: plataformas en línea}
 
-Se ha argumentado que las universidades públicas latinoamericanas al enfrentar las restricciones simultáneas de presupuestos ajustados y la necesidad de acomodar los horarios de sus clases a estudiantes que trabajan de día a horarios vespertinos, no cuentan con recursos informáticos para destinar a cursos que no estén directamente relacionados con la informática o la programación 
+Se ha argumentado que las universidades públicas latinoamericanas enfrentando restricciones simultáneas de presupuestos ajustados y la necesidad de acomodar los horarios de sus clases a estudiantes que trabajan de día a horarios vespertinos, no cuentan con recursos informáticos para destinar a cursos que no estén directamente relacionados con la informática o la programación 
 \cite{vallejo_google_2022}.%[@vallejo_google_2022:2022].
 
-La reciente experiencia del confinamiento por la pandemia de COVID-19 ha demostrado que es posible utilizar plataformas en línea para la enseñanza de asignaturas que no son informáticas.
+La experiencia del confinamiento por la pandemia de COVID-19 ha demostrado que es posible utilizar plataformas en línea para la enseñanza de asignaturas que no son informáticas.
 El uso de tales plataformas solo requieren de una conexión a internet.
 El alumno accede a las mismas utilizando una computadora personal, sea en su hogar, en su trabajo o una biblioteca. 
 Incluso, en uno de los cursos reportados en este trabajo, el alumnado ha hecho uso de teléfonos inteligentes, no solo para acceder a los cuadernos Jupyter, sino también para editarlos con la finalidad de resolver los ejercicios.
@@ -253,9 +268,11 @@ Pueden así servirles de referencia futura para aplicarse en asignaturas posteri
 
 \subsection{Trabajando con dispositivos mecánicos realistas}
 
-La complejidad de la matemática para modelizar sistemas crece rápidamente a medida que se contemplan más factores para hacer del modelo más fiel a los factores que se presentan el sistema físico real.
+La complejidad de la matemática para modelizar sistemas crece rápidamente a medida que se contemplan más factores para hacer del modelo más fiel a los 
+%factores, lo reemplazaría con elementos par aque no repita
+\mr{elementos} que se presentan el sistema físico real.
 Una vez esquematizado el sistema físico, como muestra la Figura \ref{fig:esquema}, se debe calcular la energía potencial y cinética del sistema, así como los momentos de inercia de los cuerpos que lo componen. 
-A partir de estos generar con el formalismo Lagrangiano las ecuaciones para la dinámica y despejar las aceleraciones es una tarea trivial para las funciones de la biblioteca de álgebra simbólica SymPy, como ilustra la Figura \ref{fig:aceleraciones}.
+A partir de éstos, generar con el formalismo Lagrangiano las ecuaciones para la dinámica y despejar las aceleraciones es una tarea trivial para las funciones de la biblioteca de álgebra simbólica SymPy, como ilustra la Figura \ref{fig:aceleraciones}.
 Como último paso, se resuelven numéricamente las ecuaciones diferenciales generadas con funciones de la biblioteca SciPy, y se representa gráficamente la dinámica del sistema, como muestra la Figura \ref{fig:grafico} con auxilio de la biblioteca matplotlib.
 
 \begin{figure}
@@ -280,7 +297,10 @@ Como último paso, se resuelven numéricamente las ecuaciones diferenciales gene
 	\label{fig:solve}
 \end{figure}
 
-La mayor virtud de hacer uso de mecánica computacional en un curso de mecánica analítica es que la complejidad de la matemática requerida para calcular esfuerzos y dinámica a partir de un modelo de un sistema similar a los industriales no está fuera del alcance de lo realizable en una clase. 
+La mayor virtud de hacer uso de mecánica computacional en un curso de mecánica analítica es que la complejidad de la matemática requerida para calcular esfuerzos y la dinámica a partir de un modelo 
+\mr{industrial realista} 
+%de un sistema similar a los industriales 
+no está fuera del alcance de lo realizable en una clase. 
 Ejemplo de esto es el cálculo de torques y fuerza lineales que actúan sobre un brazo robótico, como el que se muestra en la Figura \ref{fig:ejemploDispositivo}.
 
 \begin{figure}[ht]
@@ -293,8 +313,10 @@ Ejemplo de esto es el cálculo de torques y fuerza lineales que actúan sobre un
 
 \subsection{Resolver ejercicios con código es más compatible con la inteligencia artificial de los LLM}
 
-El uso de inteligencia artificial por el ámbito educativo es algo inevitable en el presente como lo es en el ámbito profesional de la ingeniería.
-Las interfaces de conversación (chat) de grandes modelos de lenguaje (LLM) en línea como ChatGPT de OpenAI, DeepSeek, GitHub Copilot o Google Gemini son herramientas a las que recurren los alumnos para resolver problemas de física, quieran los docentes o no que las utilicen.
+El uso de inteligencia artificial en 
+%por
+el ámbito educativo es algo inevitable en el presente, como lo es en el ámbito profesional de la ingeniería.
+Las interfaces de conversación (chat) de grandes modelos de lenguaje en línea como ChatGPT de OpenAI, DeepSeek, GitHub Copilot o Google Gemini son herramientas a las que recurren los alumnos para resolver problemas de física, quieran los docentes o no que las utilicen.
 El procedimiento que sigue un alumno de un curso tradicional involucra transcripciones desde y hacia el LLM.
 En manera imperfecta escribe su avance en la resolución, o en el peor de los casos el enunciado completo, y nuevamente debe hacer lo propio al papel a partir de las respuestas que obtiene del LLM.
 No queda registro público de la interacción alumno-LLM, pues esto queda como un asunto privado del primero.
@@ -308,12 +330,13 @@ Los alumnos enfrentan así su solución asistiéndose de consultas al LLM que en
 	\includegraphics[width=\textwidth, trim={0 8cm 0 0},clip]{../figuras/gemini.png}
 	% same as above but cropping the lower 1/4
 	\caption{
-		El alumno puede ir refinando su consulta (prompt) para bloque de código para aproximarse a la solución que busca.
+		El alumno puede refinar su consulta (prompt) para cada bloque de código, aproximándose a la solución que busca.
 		Aquí dejó constancia como comentario en el bloque de código del prompt que realizó al LLM Gemini de Google dentro de su cuaderno Jupyter ejecutado en el entorno Google Colaboratory.
 		}
 	\label{fig:Gemini}
 \end{figure}
 
+\mr{Incluiría algún párrafo en el orden de (modificalo o sacalo si no te cierra): Además, es deber del grupo docente entrenar a los estudiantes en este tipo de interacción, ya que el uso de LLMs se ha vuelto omnipresente. En el ejemplo expuesto se muestra el uso explícito para generar código, sin embargo fácilmente puede ser utlizado en infinidad de otros ámbitos, resolución directa del problema, generación de imágenes del problema, de presentaicones, de explicaciones. Pero en todos estos casos es fundamental enseñar cómo ser crítico sobre las respuestas que este tipo de sistemas nos otorgan.}
 
 \subsection{Aula invertida: el docente debe ayudar con los ejercicios, no está para dar conferencias}
 

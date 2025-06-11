@@ -121,17 +121,22 @@ En la Facultad Regional Avellaneda de la Universidad Tecnológica Nacional (UTN 
 
 \subsection{La mecánica computacional como herramienta para evitar saltos de complejidad entre asignaturas}
 
-Usualmente, las modelizaciones que se trabajan en las asignaturas de física son ``de juguete'', en los términos de que difieren en demasía respecto a dispositivos que puede tener aplicación industrial.
-Como evidencia la Figura \ref{fig:correlatividades}, estos son el objeto de las siguientes asignaturas que cursan los alumnos, lo que lleva a un ``salto de complejidad''. %ue usualmente resulta en que en dichas asignaturas se recurre a  desaprovecha lo aprendido en las asignaturas básicas al      
+Usualmente, las modelizaciones que se trabajan en las asignaturas de física son ``de juguete'' 
+y difieren sustancialmente de dispositivos de aplicación industrial reales.
+%, en los términos de que difieren en demasía respecto a dispositivos que puede tener aplicación industrial.
+Como evidencia la Figura \ref{fig:correlatividades}, estos son el objeto de las siguientes asignaturas que cursan los alumnos, lo que lleva a un ``salto de complejidad''. 
+%ue usualmente resulta en que en dichas asignaturas se recurre a  desaprovecha lo aprendido en las asignaturas básicas al      
 
 Hay variadas limitaciones para que en clases de las asignaturas de física se modelen sistemas físicos realistas.
 Puede que su complejidad requiera obtener analíticamente extensos sistemas de ecuaciones integro-diferenciales, tal es el caso del curso de mecánica analítica de la UNLaM, lo que demandaría en papel o pizarrón un tiempo que excede el de la clase.
-O puede que los alumnos no han cursado aún las asignaturas de matemática para resolver analíticamente tales ecuaciones, como sucede en la asignatura de electromagnetismo de la UTN FRA.
+O bien puede que los alumnos no hayan cursado aún las asignaturas de matemática para resolver analíticamente tales ecuaciones, como sucede en la asignatura de electromagnetismo de la UTN FRA.
 
-Ambas falencias pueden suplirse introduciendo en las asignaturas de física la mecánica computacional.
+Ambas falencias pueden suplirse introduciendo mecánica computacional en las asignaturas. 
+%de física la mecánica computacional.
 Esta disciplina conjuga la matemática, las distintas ramas de la física y herramientas de ciencias de la computación para explicar la dinámica de sistemas físicos de diversa composición ante muy variados forzantes externos.
 Entendemos que una exitosa explotación de esta herramienta en las primeras asignaturas de la carrera de ingeniería mecánica requiere se cumplan dos condiciones.
-La primera, desplazar el pizarrón y papel como soportes en que se expresan tanto docentes como alumnos.
+La primera, desplazar el pizarrón y papel tanto para docentes como alumnos.
+%como soportes en que se expresan tanto docentes como alumnos.
 Y la segunda, no depender de un software específico que limite la posibilidad de adaptar las soluciones y utilizar el código como una herramienta de trabajo. 
 
 
@@ -167,32 +172,43 @@ Desde entonces la metodología de la clase se resumen en que el docente presenta
 	\label{fig:tradicional}
 \end{figure}
 
-En las últimas décadas del siglo XX se generalizó el uso de computadoras en el aula, aunque los docentes usualmente les reducen a ser una mera herramienta de proyección, que como muestra la Figura \ref{fig:oldSchool2010} excluye a los alumnos de su uso. 
+En las últimas décadas del siglo XX se generalizó el uso de computadoras en el aula, aunque usualmente les reducen a ser una mera herramienta de proyección, que como muestra la Figura \ref{fig:oldSchool2010}, excluye a los alumnos de su uso. 
 Y ellos, aun cuando realicen sus anotaciones en computadoras portátiles, reproducen aún el mismo esquema del s. XIX, invirtiendo buena parte de su tiempo y atención en transcribir lo mostrado en un pizarrón.
 
 Esta sub explotación en el aula de la inherente capacidad de rápida reproducción de la información digital queda aún más fuera del contexto actual ante la omnipresencia de grandes modelos de lenguaje (LLM) como ChatGPT o DeepSeek, que permiten a los estudiantes obtener una rápida orientación sobre la temática que se está tratando.  
 Los formatos papel y pizarrones fuerzan a una transcripción desde y hacia el medio digital para poder hacer provecho de los LLM.
 Tal transcripción de sus anotaciones en papel al teléfono o computadora conectadas a internet, sumada al arcaico proceder de tomar apuntes en clase, es sumar una tarea adicional que distrae al alumno del pensamiento creativo que debiera ser el foco de su esfuerzo.
 
-Por estas razones es que en los cursos aquí presentados se busca utilizar el mismo formato digital, tanto para el dictado de lecciones por parte del docente, como para la ejercitación por parte de los alumnos.
-Dicho medio no solo es capaz de representar todo el contenido gráfico que puede mostrarse en un pizarrón, incluyendo las ecuaciones integro-diferenciales que modelan cualquier sistema físico a analizar, sino que también permite resolver estas últimas.
-Esto abre el camino a utilizar en clase representaciones gráficas precisas de dichos resultados, y en particular de los obtenidos por métodos del cálculo numérico.
+Por estas razones es que en los cursos aquí presentados se busca utilizar el mismo formato digital para el dictado de lecciones por parte del docente, así como para la ejercitación por parte de los alumnos.
+El formato digital 
+%Dicho medio no solo 
+es capaz de representar todo el contenido gráfico que puede mostrarse en un pizarrón, incluyendo las ecuaciones integro-diferenciales que modelan cualquier sistema físico a analizar, sino que también permite resolver estas últimas.
+Esto abre el camino al uso de representaciones gráficas de resultados precisos 
+%utilizar en clase representaciones gráficas precisas de dichos resultados, y en particular de los 
+obtenidos por métodos del cálculo numérico.
 % Esto último con el fin de que el alumno pueda poner en práctica la mecánica computacional como una herramienta de trabajo en la asignatura. 
 
 
 
 \subsection{El código como herramienta central de la asignatura}
 
-Si nos proponemos hacer mecánica computacional en un curso de grado de ingeniería, puede resultar tentador usar algún paquete de software específico para resolver problemas de física, que permita modelizar y simular sistemas utilizando alguna interfaz gráfica, como Comsol Multiphysics, Ansys o SolidWorks.
+%Si nos proponemos hacer mecánica computacional en un curso de grado de ingeniería, 
+Puede resultar tentador inclinarse por algún paquete de software específico especializado
+%para resolver problemas de física, que permita modelizar y simular sistemas utilizando alguna interfaz gráfica, 
+como Comsol Multiphysics, Ansys o SolidWorks.
 O, por el contrario, utilizar un paquete de software más específico de matemática computacional, como Mathematica o Matlab.
 
-Ante este abanico de opciones, no hay que olvidar que las asignaturas de física se ubican al inicio de las carreras de ingeniería mecánica, y el alumno en tal estadío no tiene aún la formación suficiente para comprender en detalle las herramientas de modelización y simulación que ofrecen los paquetes de software específicos de matemática o mecánica computacional.
-Entendemos que para que la propuesta pueda ser transversal a las varias temáticas de las múltiples asignaturas correlativas, se debe utilizar una herramienta aún más general. 
-Con este supuesto es que se optó por hacer uso de Python, un lenguaje de programación de alto nivel, que además resulta ser abierto y libre, virtudes acordes a las limitaciones de las aulas de nuestras universidades
+Ante este abanico de opciones, no hay que olvidar que las asignaturas de física se ubican al inicio de las carreras de ingeniería mecánica, y el alumno en tal estadío no tiene aún la formación suficiente para comprender en detalle las herramientas de modelización y simulación que ofrecen este tipo de software.
+%los paquetes de software específicos de matemática o mecánica computacional.
+Entendemos que para que la propuesta pueda ser transversal a las temáticas de las múltiples asignaturas correlativas, es superador
+%se debe 
+utilizar una herramienta aún más general. 
+Con este supuesto es que se optó por hacer uso de Python, un lenguaje de programación de alto nivel, que además resulta ser abierto y libre, virtudes acordes a las limitaciones de las aulas de nuestras universidades.
 
 Para que la implementación de Python sea vista como una continuación de lo aprendido en las asignaturas de matemática, este debe operar el álgebra y análisis simbólico con la misma nomenclatura matemática que se utiliza en el pizarrón.
 Para tal fin se hace uso de la biblioteca SymPy \cite{sympy} que permite operar con álgebra simbólica utilizando la nomenclatura matemática habitual.
-Esto es fundamental para que el docente pueda intercalar en sus explicaciones cálculos realizados por el código que sean inteligibles para el alumno.
+%Esto es fundamental para que el 
+Permitiendo que el docente intercale en sus explicaciones cálculos realizados por el código y que resulten familiares e inteligibles para el alumno.
 
 Para capitalizar lo aprendido en asignaturas de cálculo numérico, con el fin de obtener soluciones de las complejas ecuaciones integro-diferenciales generadas con auxilio de SymPy, se recurre a la biblioteca SciPy \cite{2020SciPy-NMeth}.
 Tales resultados se representan gráficamente haciendo uso de la biblioteca Matplotlib \cite{Hunter:2007}.
@@ -207,12 +223,20 @@ En ninguno de los casos reportados en este trabajo se busca que el alumno aprend
 Por el contrario, solo se requiere que plasmen soluciones a la serie de problemas a través de adaptar código escrito por los docentes, algo que no es más que una mera reutilización de este código.
 %, un concepto que se denomina reutilización de código.
 
-El punto de utilizar la herramienta informática es despreocupar a los alumnos del trabajo matemático para centrarlo en los nuevos conceptos propios de la asignatura.
+El eje de la propuesta es despreocupar a los alumnos del trabajo matemático para centrarlos en los nuevos conceptos propios de la asignatura.
+%El punto de utilizar la herramienta informática es despreocupar a los alumnos del trabajo matemático para centrarlos en los nuevos conceptos propios de la asignatura.
 De igual manera que un alumno de secundaria resuelve aritmética con una calculadora de bolsillo tras haberle aprendido en la primaria, nuestros alumnos automatizan lo aprendido en asignaturas anteriores.
-Por otra parte, extendemos con un uso sistemático de cálculos simples a la resolución de problemas complejos, que requerirían de cálculos integro-diferenciales que aún no dominan, evitando la posible frustración de un trabajo tan monótono y que en numerosas ocasiones no puede ser concluido, o lo es en forma incorrecta, debido a las dificultades matemáticas \cite{Pekrun2006}.
-Esto permite resolver más problemas con retroalimentación inmediata, que se traduce en más práctica para la incorporación de conceptos, trabajando en forma autónoma, reutilizando y adaptando código para experimentar con problemas cada vez más complejos, incluso no solo entre los propuestos en esta materia, atesorando así una herramienta que podrán aprovechar en otros contextos.
+Así, extendemos el uso sistemático de cálculos simples a la resolución de problemas complejos, que requerirían de cálculos integro-diferenciales que aún no dominan, evitando la posible frustración de un trabajo tan monótono y que en numerosas ocasiones no puede ser concluido
+%, o lo es en forma incorrecta, 
+debido a las dificultades matemáticas \cite{Pekrun2006}.
+Esto permite resolver más problemas, con retroalimentación inmediata, que se traduce en más práctica para la incorporación de conceptos, trabajando en forma autónoma, reutilizando y adaptando código para experimentar con problemas cada vez más complejos, 
+%incluso no solo entre los propuestos en esta materia, 
+atesorando así una herramienta que podrán aprovechar en otros contextos.
 
-Desplazando aún más la idea de que se está pidiendo aprender a programar, el formato digital utilizado no pone en preeminencia el código en lenguaje Python sobre otro material, como el texto, ecuaciones o gráficos generados en forma externa.
+El formato digital seleccionado son cuadernos Jupyter, donde no pone en preeminencia el código 
+%Desplazando aún más la idea de que se está pidiendo aprender a programar, el formato digital utilizado no pone en preeminencia el código 
+%en lenguaje Python 
+sobre otro material, como el texto, ecuaciones o gráficos generados en forma externa.
 Dicho formato son los cuadernos Jupyter, como el que muestra la Figura \ref{fig:jupyter}.
 
 \begin{figure}[ht]
@@ -226,15 +250,22 @@ Dicho formato son los cuadernos Jupyter, como el que muestra la Figura \ref{fig:
 \end{figure}
 
 El alumno copia el cuaderno Jupyter provisto por el docente, que contiene no solo el contenido teórico de la lección, sino también el código Python que resuelve un problema de ejemplo.
-Modificando ligeramente dicho código puede resolver lo que se le proponen en una guía de ejercicios.
-Siendo la copia digital, el alumno es liberado de la tarea de transcribir lecciones, y su esfuerzo durante la clase puede dirigirse a la resolución de los mencionados ejercicios en cuadernos Jupyter individuales.
-Estos pueden corregirse por el docente en el mismo formato en que las expresiones matemáticas y gráficos primero están estandarizados y son, por tanto, rápidamente inteligibles.
+Modificando ligeramente dicho código puede resolver la ejercitación propuesta en la guía práctica.
+%lo que se le proponen en una guía de ejercicios.
+Siendo la copia digital e inmediata la transcripción se elimina y el alumno centra
+%, el alumno es liberado de la tarea de transcribir lecciones, y 
+su esfuerzo durante la clase 
+%puede dirigirse 
+a la resolución de los mencionados ejercicios en cuadernos Jupyter individuales.
+Estos pueden corregirse por el docente en el mismo formato, manteniendo las expresiones matemáticas y gráficos estandarizados e 
+%y son, por tanto, rápidamente 
+inteligibles.
 
 
 
 \subsection{Los recursos están: plataformas en línea}
 
-Se ha argumentado que las universidades públicas latinoamericanas enfrentando restricciones simultáneas de presupuestos ajustados y la necesidad de acomodar los horarios de sus clases a estudiantes que trabajan de día a horarios vespertinos, no cuentan con recursos informáticos para destinar a cursos que no estén directamente relacionados con la informática o la programación 
+Se ha argumentado que las universidades públicas latinoamericanas enfrentando restricciones simultáneas de presupuestos ajustados y la necesidad de acomodar los horarios de sus clases a estudiantes que trabajan de día a horarios vespertinos. Además, no cuentan con recursos informáticos para destinar a cursos que no estén directamente relacionados con la informática o la programación 
 \cite{vallejo_google_2022}.
 Sin embargo, la experiencia del confinamiento por la pandemia de COVID-19 ha demostrado que es posible utilizar plataformas en línea para la enseñanza de asignaturas que no son informáticas.
 El uso de tales plataformas solo requieren de una conexión a internet.
@@ -242,9 +273,11 @@ El alumno accede a las mismas utilizando una computadora personal, sea en su hog
 Incluso, en uno de los cursos reportados en este trabajo, el alumnado ha hecho uso de teléfonos inteligentes, no solo para acceder a los cuadernos Jupyter, sino también para editarlos con la finalidad de resolver los ejercicios.
 
 Existen varias plataformas en línea, y de uso gratuito, que permiten la edición de cuadernos Jupyter y ejecutar código Python en ellos, como Google Colaboratory, GitHub Codespaces, Kaggle o CoCalc, entre otras.
-Una de las funcionalidades de estas plataformas es que permiten compartir el cuaderno Jupyter con otros usuarios, lo que fomenta entre los alumnos al trabajo colaborativo a distancias, una competencia fundamental en el ámbito laboral actual.
-Lo que es tal vez más importante, el docente puede comentar y corregir cuadernos de los alumnos a distancia y en tiempo real, lo que habilita consultas asincrónicas sobre los ejercicios, y no solo sincrónico como en el caso de las clases presenciales.
-En estas plataformas los cuadernos con la resolución de ejercicios por parte de los alumnos quedan a resguardo en la cuenta personal de los mismos.
+Una de las funcionalidades de estas plataformas es que permiten compartir el cuaderno Jupyter con otros usuarios, lo que fomenta entre los alumnos al trabajo colaborativo a distancia, una competencia fundamental en el ámbito laboral actual.
+Lo que es tal vez más importante, el docente puede comentar y corregir cuadernos de los alumnos a distancia y en tiempo real, habilitando consultas asincrónicas sobre los ejercicios, y no solo sincrónico como en el caso de las clases presenciales.
+En estas plataformas los cuadernos y la resolución de los ejerciciones cada alumno 
+%con la resolución de ejercicios por parte de los alumnos 
+quedan a resguardo en su cuenta personal.
 Pueden así servirles de referencia futura para aplicarse en asignaturas posteriores o incluso en su vida profesional.
 
 
@@ -278,15 +311,14 @@ A partir de estos, generar con el formalismo Lagrangiano las ecuaciones para la 
 	\label{fig:solve}
 \end{figure}
 
-Los sistemas de ecuaciones diferenciales generadas se resuelven numéricamente 
+Los sistemas de ecuaciones diferenciales generados se resuelven numéricamente 
 con funciones de la biblioteca SciPy.
-La dinámica del sistema puede ahora graficarse usando la biblioteca matplotlib  
+La dinámica del sistema puede luego graficarse usando la biblioteca matplotlib  
  (Figura \ref{fig:grafico}). 
 
 
-La mayor virtud de hacer uso de mecánica computacional en un curso de mecánica analítica es que la complejidad de la matemática requerida para calcular esfuerzos y la dinámica a partir de un modelo 
-industrial realista no está fuera del alcance de lo realizable en una clase. 
-Ejemplo de esto es el cálculo de torques y fuerza lineales que actúan sobre un brazo robótico, como el que se muestra en la Figura \ref{fig:ejemploDispositivo}.
+La mayor virtud de hacer uso de mecánica computacional en un curso de mecánica analítica es que la complejidad de la matemática requerida para calcular esfuerzos y la dinámica a partir de un modelo industrial realista no está fuera del alcance de lo realizable en una clase. 
+Ejemplo de esto es el cálculo de torques y fuerzas lineales que actúan sobre un brazo robótico, como el que se muestra en la Figura \ref{fig:ejemploDispositivo}.
 
 \begin{figure}[ht]
 	\centering
@@ -330,10 +362,12 @@ Se tuvieron cortas conversaciones con cada alumno sobre qué malinterpretaciones
 \subsection{Aula invertida: el docente debe ayudar con los ejercicios, no está para dar conferencias}
 
 Una fuerte limitación que se enfrenta en la UNLaM es el limitado tiempo de clase.
-Los alumnos en el estadio de cursada de la carrera de ingeniería mecánica en que se dicta el curso de mecánica analítica, suelen tener empleos de jornada completa.
-Las escasas horas dentro de la semana se reparten en las diversas asignaturas haciendo que haya poco tiempo para un contacto sincrónico con el docente.  
+Los alumnos de ingeniería mecánica en el estadío de cursar
+%da de la carrera de ingeniería mecánica en que se dicta el curso de 
+mecánica analítica, suelen tener empleos de jornada completa.
+Las escasas horas dentro de la semana se reparten en las diversas asignaturas, haciendo que haya poco tiempo para un contacto sincrónico con el docente.  
 
-El curso abordó esta cuestión creando un entorno de aprendizaje en línea y asíncrono que permite a los alumnos estudiar a su propio ritmo mediante el enfoque de aula invertida (flipped classroom) \cite{moraros_flipping_2015} que ilustra la Figura \ref{fig:flippedClassroomSchedule}.
+El curso abordó esta problemática creando un entorno de aprendizaje en línea y asíncrono, que permite a los alumnos estudiar a su propio ritmo mediante el enfoque de aula invertida (flipped classroom) \cite{moraros_flipping_2015} que ilustra la Figura \ref{fig:flippedClassroomSchedule}.
 
 \begin{figure}[ht]
 	\centering
@@ -362,7 +396,7 @@ El docente accede a los cuadernos en Google Colaboratory, en el que puede realiz
 En Teams se hace un seguimiento de los ejercicios que los alumnos van entregando como resueltos en el formato de un enlace a sus copias personales de cuadernos de Jupyter, como ilustra la Figura \ref{fig:teams}.
 Todos los ejercicios de las guías deben entregarse para la corrección, una tarea que está al alcance del tiempo disponible por el docente que está centrado en esta tarea, y en responder consultas, en vez de repetir todos los cuatrimestres idéntico soliloquio frente a un pizarrón.
 La evaluación del aprendizaje parte de los registros de entrega de los mencionados ejercicios y la conversación que se tiene con los alumnos.
-Unos pocos minutos de preguntas sobre como estos últimos implementaron una parte del código para resolver una parte específica del problema es tan o más reveladora sobre cuanto aprendió que un examen escrito.
+Unos pocos minutos de preguntas sobre cómo implementaron una parte del código para resolver una parte específica del problema es tan o más reveladora sobre cuanto aprendieron que un examen escrito.
 
 
 % \section{CURSO DE ELECTROSTÁTICA ELEMENTAL}
@@ -388,18 +422,18 @@ Adaptando el código provisto pudieron responder preguntas de un trabajo final q
 
 La naturaleza interactiva de los cuadernos Jupyter permitió a los alumnos adquirir una mejor comprensión de la física detrás de las ecuaciones, modificando parámetros y obteniendo resultados inmediatamente, resultados que son correctos y no dependientes de sus habilidades matemáticas.
 % Gracias a la naturaleza interactiva de los cuadernos Jupyter, se comprobó durante las actividades en clase que las y los estudiantes adquieren una mejor comprensión de la física detrás de las ecuaciones, modificando parámetros y obteniendo resultados inmediatamente, resultados que son correctos y no dependientes de sus habilidades matemáticas.\par\medskip
-La herramienta permitió evitó restringirse a problemas extremadamente sencillos o con aproximaciones exageradas, que pueden cimentar conceptos erróneos.
-Asimismo hace de las herramientas enseñadas en asignaturas de física algo aplicable a situaciones más realistas habilitando al alumno a comprobar reglas de ingeniería que aprenderá en posteriores asignaturas de la carrera.
+La herramienta evitó restringirse a problemas sencillos o con aproximaciones exageradas, que pueden cimentar conceptos erróneos.
+Asimismo, hace de las herramientas enseñadas en asignaturas de física algo aplicable a situaciones más realistas, habilitando al alumno a comprobar reglas de ingeniería que aprenderá en posteriores asignaturas de la carrera.
 
 % ESTO YA LO DECIMOS EN LA INTRODUCCIÓN
 %La resolución de ejercicios en cursos introductorios en ingeniería suele restringirse a problemas extremadamente sencillos o con aproximaciones muchas veces exageradas.
 %Sin embargo, el análisis de los resultados de situaciones más complejas resulta valioso, evitando aproximaciones exageradas que no solo pueden formar conceptos erróneos, sino hacer de las herramientas de las asignaturas de física algo que no se puede aplicar a situaciones reales.
 
 En el curso de mecánica analítica se modelizó y analizó la dinámica de dispositivos mecánicos realistas, que no podrían haber abordado en una clase tradicional.
-Se está incorporando cuadernos Jupyter para el análisis de vibraciones, para que el alumno cuente con herramientas para encarar problemas de elementos de máquinas y estabilidad de estructuras apenas inicie la cursada de las asignaturas correspondientes.
+Se están incorporando cuadernos Jupyter para el análisis de vibraciones, para que el alumno cuente con herramientas para encarar problemas de elementos de máquinas y estabilidad de estructuras apenas inicie la cursada de las asignaturas correlativas correspondientes.
 
 En el curso de electromagnetismo, se planea incluir un módulo con ejercicios de campos y equipotenciales en presencia de conductores.
-En particular, se incluirá el análisis numérico de una práctica de laboratorio donde se mapea el voltaje en una cuba que contiene electrodos extensos mantenidos a potencial constante, donde las y los estudiantes solo deberán describir la geometría de los conductores mediante funciones matemáticas sencillas.
+En particular, se incluirá el análisis numérico de una práctica de laboratorio, donde se mapea el voltaje en una cuba que contiene electrodos extensos mantenidos a potencial constante, donde las y los estudiantes solo deberán describir la geometría de los conductores mediante funciones matemáticas sencillas.
 % \textcolor{red}{(incluir una referencia, un link a la guía de laboratorio publicada en internet, al cuaderno jupyter para este análisis, footnote, o nada?)}
 % NADA....
 Asimismo, se planea registrar cada intento de resolución de problemas de los estudiantes, no solo el resultado.

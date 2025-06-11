@@ -1,0 +1,13 @@
+
+> El revisor a efectuado esta observación: "Los resultados, no se expresan en
+un ítem aparte."
+> Ademas, Ud, había expresado que desaba introducir algunas modificaciones menores en su trabajo, por lo cual esta es la instancia oportuna para hacerlo.
+> Al enviar el trabajo nuevo, a este correo, indique en el cuerpo del mail las modificaciones que hizo y como tuvo en cuenta lo expresado por el revisor.
+
+Estimados,
+
+Atendiendo la observación del revisor de la omisión de un ítem específico para la presentación de resultados incluimos una sección con tal nombre. A la misma trasladamos lo que se discutía al respecto dentro de los apartados destinados al curso de mecánica analítica, así como el de electrostática. Aprovechando tal unión se resumió en esta nueva sección las coincidencias en ambas experiencias, dejando aclaración explícitica de alguna observaciones adicionales de este último curso.
+
+La otra modificación digna de atención con la versión del manuscrito ya revisada es la inclusión al final de la sección dedicada al trabajo con LLMs de dos breves oraciones sobre adaptaciones al actuar del cuerpo docente de cara al uso que hacen los alumnos de la herramienta.
+
+El resto de las modificaciones son esencialmente de redacción realizadas con el fin de no exceder el límite de 12 páginas para el PDF. Se buscó en todos los casos ser más breves, evitando reiteraciones, pero sin cambiar el sentido original de lo escrito ni su legibilidad.

@@ -6,7 +6,7 @@ un ítem aparte."
 
 Estimados,
 
-Atendiendo la observación del revisor de la omisión de un ítem específico para la presentación de resultados incluimos una sección con tal nombre. A la misma trasladamos lo que se discutía al respecto dentro de los apartados destinados al curso de mecánica analítica, así como el de electrostática. Aprovechando tal unión se resumió en esta nueva sección las coincidencias en ambas experiencias, dejando aclaración explícitica de alguna observaciones adicionales de este último curso.
+Atendiendo la observación del revisor de la omisión de un ítem específico para la presentación de resultados incluimos una sección con tal nombre. A la misma trasladamos lo que se discutía al respecto dentro de los apartados destinados al curso de mecánica analítica, así como el de electrostática. Aprovechando tal unión se resumió en esta nueva sección las coincidencias en ambas experiencias, dejando aclaración explicita de alguna observaciones adicionales de este último curso.
 
 La otra modificación digna de atención con la versión del manuscrito ya revisada es la inclusión al final de la sección dedicada al trabajo con LLMs de dos breves oraciones sobre adaptaciones al actuar del cuerpo docente de cara al uso que hacen los alumnos de la herramienta.
 

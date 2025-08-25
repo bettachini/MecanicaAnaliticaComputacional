@@ -1,0 +1,356 @@
+\documentclass[aspectratio=169]{beamer} % proyector 16:9 | Ref:  https://en.wikibooks.org/wiki/LaTeX/Presentations
+\beamertemplatenavigationsymbolsempty %% Sin barra navegación
+\usetheme{Madrid}
+
+\usepackage{amsmath} % Símbolos matemáticos
+
+%% Spanska!
+\usepackage[spanish]{babel}
+\def\spanishoptions{argentina}
+
+
+%% inclusión de gráficas
+\usepackage{graphicx}	% instalar ghostscript-x para que el dvi muestre los eps
+\graphicspath{ {./figs/} {./imagenes}}
+\usepackage{tikz}
+\usepackage{fmtcount} % For two-digit formatting
+
+
+%% Page numbering
+% Two-digit formatting
+\newcommand{\twodigits}[1]{\ifnum#1<10 0\fi\number#1}
+
+% RELIABLE position adjustment - ALWAYS responds to changes
+\setbeamertemplate{footline}{%
+  \begin{tikzpicture}[remember picture,overlay]
+    % ABSOLUTE coordinates from top-left corner
+    \node[inner sep=0] at ([xshift=2.65cm,yshift=-0.7cm]current page.north west) { % ← Adjust here
+      \textcolor{white}{\Large\twodigits{\insertframenumber}}
+    };
+    %\node[inner sep=0] at ([xshift=9.4cm,yshift=0.55cm]current page.south west) { % ← Adjust here
+    %  % \textcolor{white}{\Large VI encuentro MEP \qquad \qquad \qquad 17/09/2025}
+    %};
+		
+  \end{tikzpicture}
+}
+
+
+%% Customize title page
+
+\setbeamertemplate{title page}{
+  % Right-justified title
+  \begin{flushright}
+    {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par}
+		\vspace*{2.0cm}
+  \end{flushright}
+
+   % Shifted author (right and up)
+  \hspace*{7cm}
+	\raisebox{3cm}{
+    {\footnotesize\usebeamerfont{author}\usebeamercolor[fg]{author}\insertauthor\par}
+  }
+}
+
+
+
+%% Title page data
+\title[Enseñanza basada en código en UNLaM y UTN]{\textcolor{white}{Implementación de la metodología de aula invertida y enseñanza basada en código en cursos de ingeniería en la Universidad Nacional de La Matanza y la Universidad Tecnológica Nacional}}
+\author[Bettachini, V.A.]{
+	\textcolor{white}{
+		Bettachini, V.A.; Gómez, A.; Palazzo, E.; Real, M.
+	}
+}
+%\institute{
+%	\textcolor{schwarzBlau}{
+%		Departamento Servicio Internacional de la Hora\\
+%		Dirección de Geodesia, Dirección Nacional de Servicios Geográficos
+%	}
+%}
+\date[2025-09-17]{
+	\textcolor{white}{17 de septiembre de 2025}
+}
+
+
+%% MEP2025 colour and format
+% Shift frametitle to the right
+\setbeamertemplate{frametitle}{%
+    \vspace*{0.38cm}%
+    \hspace*{4.8cm}%  % 2cm right shift
+    \insertframetitle%
+}
+\setbeamercolor{frametitle}{fg=white} % Set text color to white
+
+
+
+%% Main matter
+\begin{document}
+
+% Cover slide
+\usebackgroundtemplate{
+  \includegraphics[width=\paperwidth, height=\paperheight]{ersteCAIFE}
+} %% https://mprnotes.wordpress.com/2009/08/14/changing-background-image-of-latex-beamer/
+\begin{frame}[plain] % plain required for correct page numbering
+\end{frame}
+
+\definecolor{caifeblue}{HTML}{18204f}
+\setbeamercolor{title}{fg=white,bg=caifeblue}
+
+% Normal blocks
+\setbeamercolor{block title}{fg=white,bg=caifeblue}
+\setbeamercolor{block body}{fg=black,bg=caifeblue!5!white}
+
+
+
+%% Title slide
+\usebackgroundtemplate{
+  \includegraphics[width=\paperwidth, height=\paperheight]{titleBackground}
+	}	% unset background % https://tex.stackexchange.com/questions/201013/how-to-include-a-background-image-to-only-one-page-of-a-beamer-presentation
+\begin{frame}[plain] 
+  %\titlepage
+ 
+	\vspace{0.1cm}
+	
+	\makebox[\textwidth][c]{%
+  \begin{beamercolorbox}[wd=0.85\textwidth,sep=4pt,center,rounded=true,shadow=true]{title}
+    \usebeamerfont{title}\textbf{Introducción temprana de la mecánica computacional\\
+    en cursos de electrostática y mecánica analítica}
+  \end{beamercolorbox}%
+}
+  \vspace{0.1cm}
+
+	\begin{beamercolorbox}[wd=0.21\textwidth,sep=0pt,center,rounded=true,shadow=true]{title}
+    \usebeamerfont{title} {\normalsize\textbf{INTEGRANTES }}
+  \end{beamercolorbox}
+ 	
+	\vspace{-0.3cm}
+ 
+	\begin{flushleft}
+	$\bullet$ Víctor A. Bettachini,
+	Dep. de Ingeniería e Investigaciones Técnológicas, UNLaM
+	\\
+	$\bullet$ Mariano A. Real, Inst. de Calidad Industrial, UNSaM -- INTI
+	\\
+	$\bullet$ Edgardo Palazzo,
+	Dep. de Materias Básicas, UTN--FRA
+  \end{flushleft}
+
+  \vspace{0.1cm}
+
+  % Another box
+  \begin{beamercolorbox}[wd=0.21\textwidth,sep=0pt,center,rounded=true,shadow=true]{title}
+    \usebeamerfont{title} {\normalsize\textbf{SÍNTESIS }}
+  \end{beamercolorbox}
+
+	\vspace{-0.3cm}
+
+	\begin{flushleft}
+	$\bullet$ Garca
+  \end{flushleft}
+
+
+\end{frame}
+
+% Reset counter after title page
+\setcounter{framenumber}{0} % This makes next frame "01"
+
+
+%% Standard slide
+\usebackgroundtemplate{
+  \includegraphics[width=\paperwidth, height=\paperheight]{slideBackground}
+} %% https://mprnotes.wordpress.com/2009/08/14/changing-background-image-of-latex-beamer/
+
+
+\section{Introducción}
+
+\begin{frame}
+	\frametitle{IT en el aula de ingeniería}
+	\begin{columns}
+	\begin{column}{0.47 \textwidth}
+			\begin{block}{Desarrollos en el DIIT}
+			\begin{itemize}[<+->]
+				\item \textcolor{teal}{\textbf{\checkmark}} Básicas: matemática, ciencias 
+				\item \textcolor{red}{\textbf{X}} Específicas: máquinas, electrotécnia
+			\end{itemize}
+			\end{block}
+		\end{column}
+		\pause
+		\begin{column}{0.45 \textwidth}
+			\begin{block}{+ 40 años de atraso}
+				\includegraphics[width= \columnwidth]{trap2}
+			\end{block}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+
+
+
+
+\begin{frame}
+	\frametitle{Ejercitando en línea}
+	SymPy/NumPy/SciPy/matplotlib en Python corriendo en Google Colaboratory.
+\end{frame}
+
+
+\section{UNLaM | Mecánica Analítica Computacional}
+
+
+\begin{frame}
+	\frametitle{UNLaM | Mecánica Analítica}
+	Muestro ejercicios complicados de hacer sin asistencia informática.
+	
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{UNLaM | Inteligencia artificial}
+	Muestro resoluciones hechas por alumnos de LLM (Google Gemini y M\$ Copilot).
+	Comentar la evaluación basada en conversaciones sobre ejercicios resueltos.
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{UNLaM | Difusión de la herramienta}
+	Repo GitHub
+
+	Captura de publicación en JOSE
+\end{frame}
+
+
+
+\begin{frame}
+	\frametitle{UNLaM | Mecánica Analítica}
+	No hay aula sin computadoras $\rightarrow$ celulares.
+
+	¿Muy complejo? ¿Computadoras de escritorio? Están en hogares y trabajos.
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{UNLaM | Mecánica Analítica}
+	\begin{columns}[c]
+    \begin{column}{0.44 \textwidth}
+			\begin{block}{Repositorio GitHub}
+				\includegraphics[width= \columnwidth]{gitHubCAM}
+			\end{block}
+    \end{column}
+		\begin{column}{0.5 \textwidth}
+			\begin{block}{Journal Open Source Education}
+				\includegraphics[width= \columnwidth]{joseCAM}
+			\end{block}
+		\end{column}
+		\end{columns}
+\end{frame}
+
+
+
+
+%\begin{frame}
+%	\frametitle{UNLaM | Aula invertida}
+%	\begin{columns}[c]
+%    \begin{column}{0.6 \textwidth}
+%			\includegraphics[width= \columnwidth]{aulaInvertidaHorario}
+%    \end{column}
+%		\begin{column}{0.4 \textwidth}
+%			\pause
+%			La encuesta y gráficos de sus resultados
+%      \begin{itemize}[<+->]
+%      % \begin{enumerate}[<+->]
+%         \item Campos magnéticos
+%         \item Campos eléctricos
+%         \item Temperatura
+%				 \item Vibraciones
+%				 \item Presión atmosférica
+%      \end{itemize}
+%      % \end{enumerate}
+%    \end{column}
+%  \end{columns}
+%\
+%\end{frame}
+
+
+
+
+\section{UNLaM | Física III}
+
+\begin{frame}
+	\frametitle{UNLaM | Física III}
+	Contar del curso y de los ejercicios hechos en Google Colab.
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{UNLaM | Resultados en curso Física III }
+ \begin{columns}[c]
+    \begin{column}{0.6 \textwidth}
+			\includegraphics[width= \columnwidth]{2025-07-18-154309_1920x1080_scrot.png}
+    \end{column}
+		\begin{column}{0.4 \textwidth}
+			\pause
+			La encuesta y gráficos de sus resultados
+      \begin{itemize}[<+->]
+      % \begin{enumerate}[<+->]
+         \item Campos magnéticos
+         \item Campos eléctricos
+         \item Temperatura
+				 \item Vibraciones
+				 \item Presión atmosférica
+      \end{itemize}
+      % \end{enumerate}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+
+
+\section{UTN | Física II}
+
+\begin{frame}
+	\frametitle{UTN | Física II}
+	Electrostática \& co.
+\end{frame}
+
+
+\section{UTN | Física II}
+\begin{frame}
+	\frametitle{UTN | Resultados en Física II}
+	Resultados sin herramientas de cálculo
+\end{frame}
+
+
+
+\begin{frame}
+	\frametitle{Etapas hacia una implementación}
+	\begin{enumerate}[<+->]
+		\item Contar con muchos ejemplos de anomalías
+		\begin{itemize}
+			\item Series provistas por Gertsvolf del National Research Council de Canadá
+		\end{itemize}
+		\item Implementación local de algoritmos Sub-LOF y CPD
+		\begin{itemize}
+			\item Reproducir resultados de Chen et al. (2024) con series provistas
+		\end{itemize}
+		\item Minar series de tiempo propias en búsqueda de anomalías
+		\begin{itemize}
+			\item Evaluar número de anomalías detectadas con Sub-LOF y CPD
+		\end{itemize}
+		\item Correlacionar anomalías en tiempo con las de parámetros
+		\begin{itemize}
+			\item Registrar series temporales de parámetros internos y ambientales
+			\item Detección \emph{clásica} (Z-score, ARIMA) o con ML (autoencoder)
+			\item Evaluar algoritmos de correlación temporal de sucesos entre series
+		\end{itemize}
+	\end{enumerate}
+\end{frame}
+
+
+% Closing slide
+\usebackgroundtemplate{
+  \includegraphics[width=\paperwidth, height=\paperheight]{lastCAIFE}
+} %% https://mprnotes.wordpress.com/2009/08/14/changing-background-image-of-latex-beamer/
+\begin{frame}[plain] % plain required for correct page numbering
+\end{frame}
+
+
+
+\end{document}

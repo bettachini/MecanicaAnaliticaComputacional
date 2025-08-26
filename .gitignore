@@ -3,6 +3,7 @@
 .ipynb_checkpoints/
 .vscode/
 
+**/*.nav
 **/*.log
 **/*.loc
 **/*.soc

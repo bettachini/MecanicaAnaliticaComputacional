@@ -1,0 +1,4 @@
+UNLaM
+SymPy
+electrotécnia
+matplotlib

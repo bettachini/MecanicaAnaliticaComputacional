@@ -1,6 +1,7 @@
 *Solved.*
 *Internal.*
 .ipynb_checkpoints/
+.vscode/
 
 **/*.log
 **/*.loc

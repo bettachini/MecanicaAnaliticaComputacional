@@ -11,7 +11,7 @@
 
 %% inclusión de gráficas
 \usepackage{graphicx}	% instalar ghostscript-x para que el dvi muestre los eps
-\graphicspath{ {./figs/} {./imagenes}}
+\graphicspath{ {./figs/} {./imagenes} {../figuras/}}
 \usepackage{tikz}
 %\usepackage{fmtcount} % For two-digit formatting
 
@@ -160,20 +160,25 @@
 } %% https://mprnotes.wordpress.com/2009/08/14/changing-background-image-of-latex-beamer/
 
 \begin{frame}
-	\tableofcontents
+	\begin{block}{Temario}
+		\vspace{0.2cm}
+		\tableofcontents
+	\end{block}
 \end{frame}
 
 
-\section{Trasfondo histórico}
-
+\section{Tecnologías en el aula}
 \begin{frame}
-	\tableofcontents[currentsection]
+	\begin{block}{Temario}
+		\vspace{0.2cm}
+		\tableofcontents[currentsection]
+	\end{block}
 \end{frame}
 
 
 
 \begin{frame}
-	\frametitle{Herramientas disponibles en el aula}
+	\frametitle{Herramientas didácticas}
   %\begin{beamercolorbox}[wd=0.21\textwidth,sep=0pt,center,rounded=true,shadow=true]{frametitle}
   %  \usebeamerfont{title}frametitle
   %\end{beamercolorbox}%
@@ -196,7 +201,7 @@
 
 
 \begin{frame}
-	\frametitle{Subutilización de la computadora}
+	\frametitle{Subutilización de la IT}
 	\begin{columns}
 	\begin{column}{0.47 \textwidth}
 			\pause
@@ -215,54 +220,345 @@
 
 
 
-\section{Aplicando código en mecánica analítica}
-
+\section{¿Código en ingeniería mecánica?}
 \begin{frame}
-	\tableofcontents[currentsection]
+	\begin{block}{}
+		\vspace{0.2cm}
+		\tableofcontents[currentsection]
+	\end{block}
 \end{frame}
 
 
 \begin{frame}
 	\frametitle{Mecánica analítica en la UNLaM}
 	\begin{columns}
-	\begin{column}{0.47 \textwidth}
+	\begin{column}{0.37 \textwidth}
 			\pause
-			\begin{block}{Ya aprobaron álgebras y análisis}
+			\begin{block}{Aprobaron álgebras y análisis}
 				\includegraphics[width= \columnwidth]{../figuras/correlativas_2}
 			\end{block}
 		\end{column}
 		\pause
-		\begin{column}{0.45 \textwidth}
+		\begin{column}{0.55 \textwidth}
 			\begin{block}{¿Por qué no automatizarle?}
-				L
+				\includegraphics[width= \columnwidth]{../figuras/hard}
 			\end{block}
 		\end{column}
 	\end{columns}
 \end{frame}
 
 
-
 \begin{frame}
-	\frametitle{Ejercitando en línea}
-	SymPy/NumPy/SciPy/matplotlib en Python corriendo en Google Colaboratory.
+	\frametitle{Valorar el tiempo de docentes y alumnos}
+	\pause
+	\begin{block}{}
+	  \begin{columns}[b]
+			\begin{column}{0.25\textwidth}
+				\includegraphics[width= \columnwidth]{1930s-1940s-man-teacher-professor-vintage-images}
+			\end{column}
+			\begin{column}{0.65\textwidth}
+				\begin{itemize}[<+->]
+					\item Profesor: prepara lecciones \(\xrightarrow{de\, memoria}\) pizarrón/presentación
+					\item Estudiante: del pizarrón/presentación \(\xrightarrow{transcribe}\) propio cuaderno
+					\item Práctica: \textbf{rehacer} los mismo cálculos, diagramas, etc\dots
+					\item Aburrimiento \(\implies \downarrow\) pérdida de concentración en la clase
+				\end{itemize}
+			\end{column}
+		\end{columns}
+	\end{block}
+	\pause
+	Licklider (1957): 85\% de ``pensar'' es lo mundano (calcular, dibujar, etc.)
+	\pause
+	\begin{block}{}
+	  \begin{columns}[b]
+			\begin{column}{0.3\textwidth}
+				\includegraphics[width= \columnwidth]{"Screenshot 2023-09-18 at 12-24-03 Google Colaboratory"}
+			\end{column}
+			\begin{column}{0.65\textwidth}
+				\begin{itemize}[<+->]
+					\item Profesor: ideas \(\xrightarrow{actualiza}\) código/teoría en repositorio
+					\item Estudiante: repositorio del curso \(\xrightarrow{Correlacionar}\) propio repositorio
+					\item \textbf{Recicla} código del profesor para resolver nuevos problemas
+				\end{itemize}
+			\end{column}
+		\end{columns}
+	\end{block}
 \end{frame}
 
 
-\section{UNLaM | Mecánica Analítica Computacional}
 
-
+\section{Herramientas de este siglo para el aula}
 \begin{frame}
-	\frametitle{UNLaM | Mecánica Analítica}
-	Muestro ejercicios complicados de hacer sin asistencia informática.
-	
+	\begin{block}{Temario}
+		\vspace{0.2cm}
+		\tableofcontents[currentsection]
+	\end{block}
 \end{frame}
 
 
 \begin{frame}
-	\frametitle{UNLaM | Inteligencia artificial}
-	Muestro resoluciones hechas por alumnos de LLM (Google Gemini y M\$ Copilot).
-	Comentar la evaluación basada en conversaciones sobre ejercicios resueltos.
+	\frametitle{Cuaderno Jupyter: texto + ecuaciones + código ejecutable}
+	%\pause
+	\begin{block}{}
+	% \begin{block}{On-line programmable notebook: text + equations + code}
+		\includegraphics[width= \columnwidth]{screenshot_JupyterLab}
+	\end{block}
 \end{frame}
+
+
+\begin{frame}
+\frametitle{Google Colaboratory: cuadernos Jupyter en la nube}
+	% \pause
+	\begin{block}{}
+		% \begin{itemize}[<+->]
+		\begin{itemize}
+			\item Profesor puede editar y comentar el trabajo del alumno.
+			% \item It runs Jupyter notebooks online, and it's free.
+			\item Múltiples estudiantes pueden trabajar el mismo cuaderno en forma remota.
+		\end{itemize}
+		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
+		\begin{center}
+			\includegraphics[width= 0.8\textwidth]{comentariosColab}
+		\end{center}
+	\end{block}
+	% \pause
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Repositorio GitHub}
+	% \pause 
+	\begin{block}{}
+		% \begin{itemize}[<+->]
+		\begin{itemize}
+			\item Organizado por tema, acceso libre, fácil de actualizar.
+			\item Google Colaboratory carga cuadernos Jupyter  directamente desde GitHub.
+		\end{itemize}
+		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
+		\begin{center}
+			\includegraphics[width= 0.8\textwidth]{repositorioGithub}
+		\end{center}
+	\end{block}
+	% \pause
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{\LaTeX \,: notación matemática concisa}
+	% \pause
+	\begin{block}{}
+		\begin{itemize}
+			\item \LaTeX \, sigue el estandar de la American Mathematical Society
+		\end{itemize}
+		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
+		\begin{center}
+			\includegraphics[width= 0.8\textwidth]{clase1péndulo}
+		\end{center}
+	\end{block}
+	% \pause
+\end{frame}
+
+
+%\begin{frame}
+%	\frametitle{1er clase | Matplotlib: precise and reproducible graphics}
+%	% \pause
+%	\begin{block}{}
+%		\begin{itemize}
+%			\item Explicit Python code for producing graphics. Students are enticed to play with it.
+%		\end{itemize}
+%		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
+%	\includegraphics[width= 0.8\textwidth]{clase1gráficos}
+%	\end{block}
+%	% \pause
+%\end{frame}
+
+
+\begin{frame}
+	\frametitle{1er clase | SymPy: álgebra y análisis simbólico}
+	% \pause
+	\begin{block}{}
+		\begin{itemize}
+			\item El esfuerzo del estudiante se centra en la nueva temática
+		\end{itemize}
+		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
+		\begin{center}
+			\includegraphics[width= 0.9\textwidth]{clase3sympy}
+		\end{center}
+	\end{block}
+	% \pause
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{3er clase | Dinámica por Euler-Lagrange}
+	% \pause
+	\begin{block}{}
+		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
+		\begin{center}
+			\includegraphics[width= 0.9\textwidth]{clase5EulerLagrange.png}
+		\end{center}
+	\end{block}
+	% \pause
+\end{frame}
+
+
+%\begin{frame}
+%	\frametitle{Tools | 4th class | Automatation of resolutions}
+%	% \pause
+%	\begin{block}{}
+%		\begin{itemize}
+%			% \item No heavy calculations consuming the energy of the students.
+%			\item Mathematical complexity doesn't limit the scope of tackled mechanical problems.
+%		\end{itemize}
+%		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
+%	\includegraphics[width= \textwidth]{clase4Aceleraciones}
+%	\end{block}
+%	% \pause
+%\end{frame}
+
+
+\begin{frame}
+	\frametitle{5ta clase | SciPy: cálculo numérico}
+	% \pause
+	\begin{block}{}
+		%\begin{itemize}
+		%	\item Explicit solutions.
+		%\end{itemize}
+		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
+		\begin{center}
+			\includegraphics[width= 0.9\textwidth]{clase5Soluciones.png}
+		\end{center}
+	\end{block}
+	% \pause
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{5ta clase | Análisis gráfico de resultados}
+	% \pause
+	%Class 5: analysis of results
+	\begin{block}{}
+		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
+		\begin{center}
+			\includegraphics[width= 0.9\textwidth]{clase5Representación}
+		\end{center}
+	\end{block}
+	% \pause
+\end{frame}
+
+
+
+\begin{frame}
+	\frametitle{7ma clase | Fuerzas no conservativas y de ligadura}
+	% \pause
+	%Class 7: Adding complexity
+	%\begin{minipage}{0.6\linewidth}
+	\begin{block}{}
+%		\begin{itemize}
+%			\item Code from previous classes is \textbf{recycled} to model more realistic devices.
+%			%\item Gradual increase in complexity of simulated mechanical devices.
+%		\end{itemize}
+		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
+		\begin{center}
+			\includegraphics[width= 0.4\columnwidth]{clase7esquema.png}\\
+			\includegraphics[width= 0.6\columnwidth]{robotArm.png}
+		\end{center}
+%	\includegraphics[height= 3.35 cm]{clase7esquema.png}
+%	\includegraphics[height= 3.35 cm]{robotArm.png}
+	\end{block}
+	%\end{minipage}
+	% \pause
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{8va clase | GitHub Copilot: código de un LLM}
+	% \pause
+	%Class 7: Adding complexity
+	\begin{block}{}
+		\begin{itemize}
+			\item Tras dominar lo básico los estudiantes pueden aprovecharse de la IA.
+			%\item Gradual increase in complexity of simulated mechanical devices.
+		\end{itemize}
+		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
+		\begin{center}
+			\includegraphics[width= 0.85\textwidth]{copilot}
+		\end{center}
+	\end{block}
+	% \pause
+\end{frame}
+
+
+
+\begin{frame}
+	\frametitle{Clase invertida | Ciclo semanal}
+	\begin{block}{}
+	% \begin{block}{New theory alongisde its worked examples in programmable notebooks}
+		\begin{itemize}[<+->]
+			\item Cuadernos Jupyter con la nueva teoría y guías de ejercicios publicadas en línea.
+			\item Ejercicios de la semana anterior \textbf{deben} entregarse para evaluación.
+			\item Consultas \textbf{asincrónicas} en línea 24/7 son \textbf{públicas} para otros estudiantes.
+			\item Encuentros \textbf{sincrónicos} con auxiliares para finalizar ejercicios.
+%			%\item \textbf{Remote collaboration} on multi-user notebooks
+			%\item Weekly meetings to \textbf{synchronically} unfinished assignments with TA's assistance
+			% \item On a weekly basis these \textbf{must} be turned-in for scoring
+		\end{itemize}
+	\end{block}
+	\begin{columns}[b]<1->
+    \begin{column}{0.4\textwidth}
+			\begin{block}{}
+			%\begin{block}{Flipped classroom}
+				\includegraphics[width= \columnwidth]{flippedClassroomSchedule_castellano.png}
+			\end{block}
+    \end{column}
+    \begin{column}{0.55\textwidth}
+			\begin{block}{}
+				\begin{tabular}{lll}
+					\hline
+					Sincrónico & Teoría & Ejercicios\\
+					\hline
+					Antes & Leer y aplicar & Iniciarles\\
+					Durante & Consultas & Completarles\\
+					% Durante & Aclarar dudas & \begin{tabular}{@{}c@{}}Terminarles\\(semanal)\end{tabular}\\
+					Luego & \begin{tabular}{@{}l@{}}Aclaraciones\\adicionales\end{tabular} & \begin{tabular}{@{}l@{}}Ayuda de auxiliares\end{tabular}\\
+					\hline
+				\end{tabular}
+			\end{block}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+
+%\begin{frame}
+%	\frametitle{Methodology | Google Colaboratory: asynchronic remote assistance}
+%	\begin{block}{}
+%	% \begin{block}{Student's work can be commented and edited in Google Colaboratory}
+%		\includegraphics[width= \columnwidth]{comentariosColab}
+%	\end{block}
+%\end{frame}
+
+
+
+\begin{frame}
+	\frametitle{Microsoft Teams: seguimiento individualizado}
+	\begin{block}{Registro semalas de entregas de ejercicios}
+		\includegraphics[width= 0.9\columnwidth]{seguimiento}
+	\end{block}
+\end{frame}
+
+
+%\begin{frame}
+%	\frametitle{Methodology | Exams are just another assignment}
+%	\begin{block}{}
+%	% \begin{block}{The exam is just another excercise.}
+%		\begin{itemize}
+%			\item The students send their notebook file.
+%			\item Feedback is inserted in between the student's work.
+%		\end{itemize}
+%		\includegraphics[width= \columnwidth]{parcial}
+%	\end{block}
+%\end{frame}
+
 
 
 \begin{frame}
@@ -273,13 +569,6 @@
 \end{frame}
 
 
-
-\begin{frame}
-	\frametitle{UNLaM | Mecánica Analítica}
-	No hay aula sin computadoras $\rightarrow$ celulares.
-
-	¿Muy complejo? ¿Computadoras de escritorio? Están en hogares y trabajos.
-\end{frame}
 
 
 \begin{frame}

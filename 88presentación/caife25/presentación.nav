@@ -6,7 +6,7 @@
 \headcommand {\beamer@framepages {3}{3}}
 \headcommand {\beamer@sectionpages {1}{3}}
 \headcommand {\beamer@subsectionpages {1}{3}}
-\headcommand {\sectionentry {1}{Herramientas del aula}{4}{Herramientas del aula}{0}}
+\headcommand {\sectionentry {1}{Herramientas usuales}{4}{Herramientas usuales}{0}}
 \headcommand {\slideentry {1}{0}{1}{4/4}{}{0}}
 \headcommand {\beamer@framepages {4}{4}}
 \headcommand {\slideentry {1}{0}{2}{5/6}{}{0}}
@@ -47,34 +47,28 @@
 \headcommand {\beamer@framepages {32}{32}}
 \headcommand {\slideentry {3}{0}{8}{33/39}{}{0}}
 \headcommand {\beamer@framepages {33}{39}}
-\headcommand {\slideentry {3}{0}{9}{40/41}{}{0}}
-\headcommand {\beamer@framepages {40}{41}}
-\headcommand {\slideentry {3}{0}{10}{42/42}{}{0}}
-\headcommand {\beamer@framepages {42}{42}}
-\headcommand {\slideentry {3}{0}{11}{43/44}{}{0}}
-\headcommand {\beamer@framepages {43}{44}}
-\headcommand {\beamer@sectionpages {26}{44}}
-\headcommand {\beamer@subsectionpages {26}{44}}
-\headcommand {\sectionentry {4}{UTN--FRA | Física II}{45}{UTN--FRA | Física II}{0}}
-\headcommand {\slideentry {4}{0}{1}{45/45}{}{0}}
+\headcommand {\beamer@sectionpages {26}{39}}
+\headcommand {\beamer@subsectionpages {26}{39}}
+\headcommand {\sectionentry {4}{UTN--FRA | Física II}{40}{UTN--FRA | Física II}{0}}
+\headcommand {\slideentry {4}{0}{1}{40/40}{}{0}}
+\headcommand {\beamer@framepages {40}{40}}
+\headcommand {\slideentry {4}{0}{2}{41/44}{}{0}}
+\headcommand {\beamer@framepages {41}{44}}
+\headcommand {\slideentry {4}{0}{3}{45/45}{}{0}}
 \headcommand {\beamer@framepages {45}{45}}
-\headcommand {\slideentry {4}{0}{2}{46/49}{}{0}}
-\headcommand {\beamer@framepages {46}{49}}
-\headcommand {\slideentry {4}{0}{3}{50/50}{}{0}}
-\headcommand {\beamer@framepages {50}{50}}
-\headcommand {\slideentry {4}{0}{4}{51/51}{}{0}}
-\headcommand {\beamer@framepages {51}{51}}
-\headcommand {\beamer@sectionpages {45}{51}}
-\headcommand {\beamer@subsectionpages {45}{51}}
-\headcommand {\sectionentry {5}{Para concluir}{52}{Para concluir}{0}}
-\headcommand {\slideentry {5}{0}{1}{52/52}{}{0}}
-\headcommand {\beamer@framepages {52}{52}}
-\headcommand {\slideentry {5}{0}{2}{53/65}{}{0}}
-\headcommand {\beamer@framepages {53}{65}}
-\headcommand {\slideentry {5}{0}{3}{66/66}{}{0}}
-\headcommand {\beamer@framepages {66}{66}}
-\headcommand {\beamer@partpages {1}{66}}
-\headcommand {\beamer@subsectionpages {52}{66}}
-\headcommand {\beamer@sectionpages {52}{66}}
-\headcommand {\beamer@documentpages {66}}
-\headcommand {\gdef \inserttotalframenumber {28}}
+\headcommand {\slideentry {4}{0}{4}{46/46}{}{0}}
+\headcommand {\beamer@framepages {46}{46}}
+\headcommand {\beamer@sectionpages {40}{46}}
+\headcommand {\beamer@subsectionpages {40}{46}}
+\headcommand {\sectionentry {5}{Para concluir}{47}{Para concluir}{0}}
+\headcommand {\slideentry {5}{0}{1}{47/47}{}{0}}
+\headcommand {\beamer@framepages {47}{47}}
+\headcommand {\slideentry {5}{0}{2}{48/59}{}{0}}
+\headcommand {\beamer@framepages {48}{59}}
+\headcommand {\slideentry {5}{0}{3}{60/60}{}{0}}
+\headcommand {\beamer@framepages {60}{60}}
+\headcommand {\beamer@partpages {1}{60}}
+\headcommand {\beamer@subsectionpages {47}{60}}
+\headcommand {\beamer@sectionpages {47}{60}}
+\headcommand {\beamer@documentpages {60}}
+\headcommand {\gdef \inserttotalframenumber {25}}

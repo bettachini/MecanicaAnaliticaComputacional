@@ -87,9 +87,9 @@
 	\vspace{-0.3cm}
 
 	\begin{flushleft}
-	La ejercitación basada en la edición de código extendió el alcance de dos asignaturas:
+	Relevar al estudiante de cálculos repetitivos extendió el alcance de dos asignaturas:
 	\\
-	$\bullet$ Modelar dispositivos industriales realistas con la mecánica analítica.\\ 
+	$\bullet$ Modelar esfuerzas y dinámica de dispositivos industriales realistas con la mecánica analítica.\\ 
 	$\bullet$ Mayor comprensión conceptual de la electrostática al evitar matemática avanzada. 
   \end{flushleft}
 
@@ -119,7 +119,7 @@
 
 
 
-\section{Herramientas usuales}
+\section{Herramientas del aula}
 \begin{frame}
 	\frametitle{Temario}
 	\begin{columns}
@@ -135,7 +135,7 @@
 
 
 \begin{frame}
-	\frametitle{Herramientas en el aula}
+	\frametitle{Herramientas usuales}
   %\begin{beamercolorbox}[wd=0.21\textwidth,sep=0pt,center,rounded=true,shadow=true]{frametitle}
   %  \usebeamerfont{title}frametitle
   %\end{beamercolorbox}%
@@ -260,8 +260,8 @@
 	\begin{block}{}
 		% \begin{itemize}[<+->]
 		\begin{itemize}
+			\item Organizado por tema, acceso libre, fácil de actualizar.
 			\item Google Colaboratory carga cuadernos Jupyter  directamente desde GitHub.
-			\item Organizado por tema, de acceso libre, fácil de actualizar, y \textbf{clonable} por el alumno.
 		\end{itemize}
 		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
 		\begin{center}
@@ -281,12 +281,11 @@
 				\includegraphics[width= \columnwidth]{1930s-1940s-man-teacher-professor-vintage-images}
 			\end{column}
 			\begin{column}{0.7\textwidth}
-				Pizarrón/presentación
 				\begin{itemize}[<+->]
 					\item Profesor: prepara lecciones \(\xrightarrow{de\, memoria}\) pizarrón/presentación
 					\item Estudiante: pizarrón/presentación \(\xrightarrow{transcribe}\) cuaderno
 					\item Práctica: \textbf{rehacer} los mismo cálculos, diagramas, etc\dots
-					\item Lento y reiterativo \(\implies \downarrow\) interés en la asignatura
+					\item Aburrimiento \(\implies \downarrow\) interés en la asignatura
 				\end{itemize}
 			\end{column}
 		\end{columns}
@@ -300,11 +299,10 @@
 				\includegraphics[width= \columnwidth]{"Screenshot 2023-09-18 at 12-24-03 Google Colaboratory"}
 			\end{column}
 			\begin{column}{0.7\textwidth}
-				Cuaderno Jupyter/repositorio GitHub
 				\begin{itemize}[<+->]
 					\item Profesor: ideas \(\xrightarrow{actualiza}\) código/teoría en repositorio
 					\item Estudiante: repositorio del curso \(\xrightarrow{clona}\) uno propio
-					\item Práctica: \textbf{reciclar} código para resolver nuevos problemas
+					\item \textbf{Recicla} código para resolver nuevos problemas
 				\end{itemize}
 			\end{column}
 		\end{columns}
@@ -419,16 +417,24 @@
 
 \begin{frame}
 	\frametitle{7ma clase | Dispositivos}
-	\begin{center}
-		\begin{minipage}{0.6\linewidth}
-			\begin{block}{}
-				\begin{center}
-					\includegraphics[width= 0.55\columnwidth]{clase7esquema.png}\\
-					\includegraphics[width= \columnwidth]{robotArm.png}
-				\end{center}
-			\end{block}
-		\end{minipage}
-	\end{center}
+	% \pause
+	%Class 7: Adding complexity
+	%\begin{minipage}{0.6\linewidth}
+	\begin{block}{}
+%		\begin{itemize}
+%			\item Code from previous classes is \textbf{recycled} to model more realistic devices.
+%			%\item Gradual increase in complexity of simulated mechanical devices.
+%		\end{itemize}
+		% \uncover<4->{\includegraphics[height= 2cm]{ucarecdn}}
+		\begin{center}
+			\includegraphics[width= 0.4\columnwidth]{clase7esquema.png}\\
+			\includegraphics[width= 0.6\columnwidth]{robotArm.png}
+		\end{center}
+%	\includegraphics[height= 3.35 cm]{clase7esquema.png}
+%	\includegraphics[height= 3.35 cm]{robotArm.png}
+	\end{block}
+	%\end{minipage}
+	% \pause
 \end{frame}
 
 
@@ -476,6 +482,98 @@
 
 
 
+\begin{frame}
+	\frametitle{Clase invertida | Ciclo semanal}
+	\begin{columns}[c]
+    \begin{column}{0.4\textwidth}
+			\begin{block}{}
+			%\begin{block}{Flipped classroom}
+				\includegraphics[width= \columnwidth]{flippedClassroomSchedule_castellano.png}
+			\end{block}
+    \end{column}
+    \begin{column}{0.55\textwidth}
+			\begin{block}{}
+				\begin{tabular}{lll}
+					\hline
+					Sincrónico & Teoría & Ejercicios\\
+					\hline
+					Antes & Leer y aplicar & Iniciarles\\
+					Durante & Consultas & Completarles\\
+					% Durante & Aclarar dudas & \begin{tabular}{@{}c@{}}Terminarles\\(semanal)\end{tabular}\\
+					Luego & \begin{tabular}{@{}l@{}}Aclaraciones\\adicionales\end{tabular} & \begin{tabular}{@{}l@{}}Ayuda de auxiliares\end{tabular}\\
+					\hline
+				\end{tabular}
+			\end{block}
+    \end{column}
+  \end{columns}
+	\pause
+	\begin{block}{}
+	% \begin{block}{New theory alongisde its worked examples in programmable notebooks}
+		\begin{itemize}
+			\item Publicación semanal de teoría y ejemplos en cuadernos Jupyter, y guía de ejercicios.
+			\item Ejercicios de la semana anterior \textbf{deben} entregarse para evaluación.
+			\item Las consultas \textbf{asincrónicas} en línea (24/7) son \textbf{públicas} para que otros las aprovechen.
+			\item Encuentros \textbf{sincrónicos} con auxiliares para finalizar ejercicios.
+%			%\item \textbf{Remote collaboration} on multi-user notebooks
+			%\item Weekly meetings to \textbf{synchronically} unfinished assignments with TA's assistance
+			% \item On a weekly basis these \textbf{must} be turned-in for scoring
+		\end{itemize}
+	\end{block}
+
+\end{frame}
+
+
+%\begin{frame}
+%	\frametitle{Methodology | Google Colaboratory: asynchronic remote assistance}
+%	\begin{block}{}
+%	% \begin{block}{Student's work can be commented and edited in Google Colaboratory}
+%		\includegraphics[width= \columnwidth]{comentariosColab}
+%	\end{block}
+%\end{frame}
+
+
+
+\begin{frame}
+	\frametitle{Microsoft Teams: seguimiento individualizado}
+	\begin{block}{Registro de ejercicios entregados}
+		\includegraphics[width= 0.9\columnwidth]{seguimiento}
+	\end{block}
+\end{frame}
+
+
+%\begin{frame}
+%	\frametitle{Methodology | Exams are just another assignment}
+%	\begin{block}{}
+%	% \begin{block}{The exam is just another excercise.}
+%		\begin{itemize}
+%			\item The students send their notebook file.
+%			\item Feedback is inserted in between the student's work.
+%		\end{itemize}
+%		\includegraphics[width= \columnwidth]{parcial}
+%	\end{block}
+%\end{frame}
+
+
+
+
+
+\begin{frame}
+	\frametitle{Acceso libre al material de la asignatura}
+	\begin{columns}[c]
+    \begin{column}{0.44 \textwidth}
+			\begin{block}{Repositorio GitHub}
+				\includegraphics[width= \columnwidth]{gitHubCAM}
+			\end{block}
+    \end{column}
+		\pause
+		\begin{column}{0.5 \textwidth}
+			\begin{block}{Journal Open Source Education}
+				\includegraphics[width= \columnwidth]{joseCAM}
+			\end{block}
+		\end{column}
+		\end{columns}
+\end{frame}
+
 
 
 
@@ -518,7 +616,6 @@
 	\end{columns}
 \end{frame}
 
-
 \begin{frame}
 	\frametitle{Cuadernos Jupyter solo como parte del curso}
 	\begin{columns}[c]
@@ -530,7 +627,7 @@
 		\begin{column}{0.55 \textwidth}
 			\begin{block}{Salvando limitaciones de los alumnos}
 				\begin{itemize}[<+->]
-					\item No han cursado el análisis para estudiar distribuciones de carga eléctrica $\rightarrow$ Campo eléctrico aproximado con cargas discretas.
+					\item No han cursado el análisis para estudiar distribuciones de carga eléctrica $\rightarrow$ Campo elétrico aproximado con cargas discretas.
 					\item Nulos conocimientos de programación y cálculo numérico $\rightarrow$ Funciones encapsuladas.
 					\item El código permite analizar casos realistas a pesar de no dominar la matemática requerida.
 					\item Cuaderno Jupyter de ejercicios en formato de plantilla para completar.
@@ -539,7 +636,6 @@
 		\end{column}
 	\end{columns}
 \end{frame}
-
 
 \begin{frame}
 	\frametitle{Líneas de campo de anillo cargado}
@@ -633,7 +729,6 @@
 					\item ``No hay suficientes computadoras en el campus.''
 					\begin{itemize}[<+->]
 						\item La pandemia demostró que las hay: en hogares y trabajos.
-						\item Se probó en clase editar y ejecutar código en Google Colaboratory usando teléfonos.
 					\end{itemize}
 				\end{itemize}
 			\end{block}
@@ -645,8 +740,10 @@
 					\item Análisis casos realistas.
 					\item Del docente conferenciante $\rightarrow$ mentor ante ejercicios.
 					\item Uso eficiente del tiempo: copiar en papel $\rightarrow$ reciclar código.
-					\item Colaboración remota.
 					\item Asistencia de IA.
+					\item Registro de entregas.
+					\item Colaboración remota.
+					\item Revalorización de la lectura.
 				\end{itemize}
 			\end{block}
 		\end{column}
@@ -661,106 +758,6 @@
 \begin{frame}[plain] % plain required for correct page numbering
 \end{frame}
 
-
-%%% Material extra
-%%% Standard slide
-%\usebackgroundtemplate{
-%  \includegraphics[width=\paperwidth, height=\paperheight]{slideBackground}
-%} %% https://mprnotes.wordpress.com/2009/08/14/changing-background-image-of-latex-beamer/
-%
-%
-%\begin{frame}
-%	\frametitle{Clase invertida | Ciclo semanal}
-%	\begin{columns}[c]
-%    \begin{column}{0.4\textwidth}
-%			\begin{block}{}
-%			%\begin{block}{Flipped classroom}
-%				\includegraphics[width= \columnwidth]{flippedClassroomSchedule_castellano.png}
-%			\end{block}
-%    \end{column}
-%    \begin{column}{0.55\textwidth}
-%			\begin{block}{}
-%				\begin{tabular}{lll}
-%					\hline
-%					Sincrónico & Teoría & Ejercicios\\
-%					\hline
-%					Antes & Leer y aplicar & Iniciarles\\
-%					Durante & Consultas & Completarles\\
-%					% Durante & Aclarar dudas & \begin{tabular}{@{}c@{}}Terminarles\\(semanal)\end{tabular}\\
-%					Luego & \begin{tabular}{@{}l@{}}Aclaraciones\\adicionales\end{tabular} & \begin{tabular}{@{}l@{}}Ayuda de auxiliares\end{tabular}\\
-%					\hline
-%				\end{tabular}
-%			\end{block}
-%    \end{column}
-%  \end{columns}
-%	\pause
-%	\begin{block}{}
-%	% \begin{block}{New theory alongisde its worked examples in programmable notebooks}
-%		\begin{itemize}
-%			\item Publicación semanal de teoría y ejemplos en cuadernos Jupyter, y guía de ejercicios.
-%			\item Ejercicios de la semana anterior \textbf{deben} entregarse para evaluación.
-%			\item Las consultas \textbf{asincrónicas} en línea (24/7) son \textbf{públicas} para que otros las aprovechen.
-%			\item Encuentros \textbf{sincrónicos} con auxiliares para finalizar ejercicios.
-%%			%\item \textbf{Remote collaboration} on multi-user notebooks
-%			%\item Weekly meetings to \textbf{synchronically} unfinished assignments with TA's assistance
-%			% \item On a weekly basis these \textbf{must} be turned-in for scoring
-%		\end{itemize}
-%	\end{block}
-%
-%\end{frame}
-%
-%
-%%\begin{frame}
-%%	\frametitle{Methodology | Google Colaboratory: asynchronic remote assistance}
-%%	\begin{block}{}
-%%	% \begin{block}{Student's work can be commented and edited in Google Colaboratory}
-%%		\includegraphics[width= \columnwidth]{comentariosColab}
-%%	\end{block}
-%%\end{frame}
-%
-%
-%
-%\begin{frame}
-%	\frametitle{Microsoft Teams: seguimiento individualizado}
-%	\begin{block}{Registro de ejercicios entregados}
-%		\includegraphics[width= 0.9\columnwidth]{seguimiento}
-%	\end{block}
-%\end{frame}
-%
-%
-%%\begin{frame}
-%%	\frametitle{Methodology | Exams are just another assignment}
-%%	\begin{block}{}
-%%	% \begin{block}{The exam is just another excercise.}
-%%		\begin{itemize}
-%%			\item The students send their notebook file.
-%%			\item Feedback is inserted in between the student's work.
-%%		\end{itemize}
-%%		\includegraphics[width= \columnwidth]{parcial}
-%%	\end{block}
-%%\end{frame}
-%
-%
-%
-%
-%
-%\begin{frame}
-%	\frametitle{Difusión y acceso libre al material}
-%	\begin{columns}[c]
-%    \begin{column}{0.44 \textwidth}
-%			\begin{block}{Repositorio GitHub}
-%				\includegraphics[width= \columnwidth]{gitHubCAM}
-%			\end{block}
-%    \end{column}
-%		\pause
-%		\begin{column}{0.5 \textwidth}
-%			\begin{block}{Journal Open Source Education}
-%				\includegraphics[width= \columnwidth]{joseCAM}
-%			\end{block}
-%		\end{column}
-%		\end{columns}
-%\end{frame}
-%
 
 
 \end{document}
